@@ -46,11 +46,20 @@ public:
    state slowcalc(state nw, state n, state ne, state w, state c,
                 state e, state sw, state s, state se);
 
+   enum TNeighborhood { vonNeumann, Moore };
+   enum TSymmetry { none, rotate4, rotate8, reflect, rotate4reflect, rotate8reflect };
+
+   /// what is the neighborhood of the loaded rule?
+   TNeighborhood GetNeighborhood() { return neighborhood; }
+
+   /// what is the symmetry set of the loaded rule?
+   TSymmetry GetSymmetry() { return symmetries; }
+
 protected:
 
    unsigned int n_states;
-   enum TNeighborhood { vonNeumann, Moore } neighborhood; // (hopefully will support more in future)
-   enum TSymmetry { none, rotate4, rotate8, reflect, rotate4reflect, rotate8reflect } symmetries;
+   TNeighborhood neighborhood; // (hopefully will support more in future)
+   TSymmetry symmetries;
 
    // we use a lookup table to match inputs to outputs:
    typedef unsigned long long int TBits; 
