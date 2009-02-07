@@ -1,17 +1,11 @@
-# WireWorld
-#
 # rules: 6
 #
 # Golly rule-table format.
 # Each rule: C,N,NE,E,SE,S,SW,W,NW,C'
+# N.B. Where the same variable appears multiple times in a transition,
+# it takes the same value each time.
 #
 # Default for transitions not listed: no change
-#
-# Variables are bound within each transition. 
-# For example, if a={1,2} then 4,a,0->a represents
-# two transitions: 4,1,0->1 and 4,2,0->2
-# (This is why we need to repeat the variables below.
-#  In this case the method isn't really helping.)
 #
 n_states:4
 neighborhood:Moore

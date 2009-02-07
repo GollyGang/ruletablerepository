@@ -42,16 +42,22 @@ int main()
    // parameters for use:
    const string input_filename = "wireworld.table";
 
-   ruletable wireworld_rules;
+   ruletable rules;
 
    cout << "Reading from " << input_filename << "...";
-   string returned = wireworld_rules.ReadFromFile(input_filename);
+   string returned = rules.ReadFromFile(input_filename);
    if(returned.empty())
    {
       cout << "ok.\n";
-      cout << "rule table has " << wireworld_rules.GetNumStates() << " states.\n";
+      cout << "rule table has " << rules.GetNumStates() << " states.\n";
+      cout << "rule table has the " << 
+         ((rules.GetNeighborhood()==ruletable::vonNeumann)?"vonNeumann":"Moore") << " neighborhood.\n";
+      cout << "rule table has symmetries: " << rules.GetSymmetry() << endl;
       cout << "example transition:\n";
-      cout << "0,0,0,0,0,0,0,0,0 -> " << wireworld_rules.slowcalc(0,0,0,0,0,0,0,0,0) << endl;
+      if(rules.GetNeighborhood()==ruletable::vonNeumann)
+         cout << "0,0,0,0,0 -> " << rules.slowcalc(0,0,0,0,0,0,0,0,0) << endl;
+      else
+         cout << "0,0,0,0,0,0,0,0,0 -> " << rules.slowcalc(0,0,0,0,0,0,0,0,0) << endl;
    }
    else
       cout << "error!\n" << returned << endl;
