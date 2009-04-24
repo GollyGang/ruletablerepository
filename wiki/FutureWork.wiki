@@ -3,4 +3,4 @@
 = Introduction =
 
   * permutation symmetry
-  * calcyman's suggestions for other neighbourhoods
+  * calcyman's suggestions for other neighbourhoods: GenericNeighborhoods
