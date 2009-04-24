@@ -2,5 +2,6 @@
 #labels Phase-Design
 = Introduction =
 
-  * permutation symmetry
+  * PermutationSymmetry
   * calcyman's suggestions for other neighbourhoods: GenericNeighborhoods
+  * UnboundVariables
