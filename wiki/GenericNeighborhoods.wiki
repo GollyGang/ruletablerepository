@@ -1,11 +1,15 @@
 #summary Calcyman suggested extending the table format for general neighbourhoods.
 #labels Phase-Implementation
 
-= Introduction =
-> What do you suggest for extended CA neighbourhood rule tables?
+= The discussion so far: =
 
-I'm not sure that it's possible to get this to represent a triangular
-neighbourhood, but it can do hexagonal, 1D and 3D:
+TJH: 
+
+What do you suggest for extended CA neighbourhood rule tables?
+
+Calcyman:
+
+I'm not sure that it's possible to get this to represent a triangular neighbourhood, but it can do hexagonal, 1D and 3D:
 
 {{{
 -----------------------------------------------------------------------
@@ -56,3 +60,33 @@ matrix:0.0,1.0
 #Now add the rest of the rule table information.
 
 }}}
+
+TJH:
+
+This is an interesting idea. Golly would only be able to accept a very limited subset of these, of course.
+
+What about block CA? (partitioning ones, like the Margolus neighbourhood?). Any ideas there? As with the triangular neighbourhood the complication is that the neighbourhood isn't fixed across all cells in all timesteps.
+
+Calcyman: 
+
+It can be accomplished by using a temporal variable, t, that represents the time in generations. Then, the Margolus neighbourhood would become:
+
+{{{
+
+#centre neighbour
+neighbour c={x,y}
+
+#horizontal neighbour
+neighbour h={x+2*((x+t) % 2)-1,y}
+
+#vertical neighbour
+neighbour v={x,y+2*((y+t) % 2)-1}
+
+#diagonal neighbour
+neighbour d={x+2*((x+t) % 2)-1,y+2*((y+t) % 2)-1}
+
+}}}
+
+The percent symbol here is used to represent the modulus operator.
+Now you can see how flexible the system is. By the way, a 2-state
+triangular rule could be expressed as a 64-state hexagonal rule.
