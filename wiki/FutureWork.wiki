@@ -1,0 +1,6 @@
+#summary Discuss proposed changes here
+#labels Phase-Design
+= Introduction =
+
+  * permutation symmetry
+  * calcyman's suggestions for other neighbourhoods
