@@ -1,0 +1,58 @@
+#summary Calcyman suggested extending the table format for general neighbourhoods.
+#labels Phase-Implementation
+
+= Introduction =
+> What do you suggest for extended CA neighbourhood rule tables?
+
+I'm not sure that it's possible to get this to represent a triangular
+neighbourhood, but it can do hexagonal, 1D and 3D:
+
+{{{
+-----------------------------------------------------------------------
+
+#Define number of dimensions
+
+dimensions:{x,y}
+
+#Define neighbourhood
+
+neighbour c={x,y}
+neighbour n={x,y-1}
+neighbour ne={x+1,y-1}
+neighbour e={x+1,y}
+neighbour se={x+1,y+1}
+neighbour s={x,y+1}
+neighbour sw={x-1,y+1}
+neighbour w={x-1,y}
+neighbour nw={x-1,y-1}
+
+#Define symmetries
+#This contains all equivalent permutations of c,n,ne,e,se,s,sw,w,nw:
+#In this case, it represents rotate4 symmetry
+
+symmetry:c,n,ne,e,se,s,sw,w,nw
+symmetry:c,e,se,s,sw,w,nw,n,ne
+symmetry:c,s,sw,w,nw,n,ne,e,se
+symmetry:c,w,nw,n,ne,e,se,s,sw
+
+
+#Define display matrix
+
+matrix:1.0,0.0
+matrix:0.0,1.0
+
+#This is the identity matrix, which means that the world
+#coordinates translate directly into screen coordinates.
+#
+#For hexagonal coordinates, use a matrix of:
+#
+# 1.0,0.5
+# 0.0,0.8660254
+#
+#The display matrix has two rows, and the same number of
+#columns as dimensions. It represents the transformation
+#from world coordinates to display coordinates.
+
+#Now add the rest of the rule table information.
+
+}}}
