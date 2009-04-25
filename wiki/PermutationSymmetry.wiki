@@ -1,0 +1,27 @@
+#summary An idea for a symmetry to vastly simplify rule tables
+
+= Introduction =
+
+Many rule tables, for example Life, are much larger than necessary. There are only really 3 rules (birth/survival on 3 neighbours, survival on 2 neighbours, death otherwise), whereas the rule table is comparatively huge. One way of reducing the size of a rule table would be to allow all permutations to be handled in one line, rather than a line for each permutation.
+
+
+= Details =
+
+An example is my HistoricalLife table. It contains 85 useful rules, which are as follows:
+
+
+56 permutations of 'birth or survival on 3 neighbours'
+28 permutations of 'survival on 2 neighbours'
+A rule to make on cells die and become history cells.
+
+
+The new rules might be expressed like this:
+
+{{{
+-----------------------------------------------------------------------
+
+f,1,1,1,a,b,c,d,e,1 interchange {N,NE,E,SE,S,SW,W,NW}
+1,1,1,a,b,c,d,e,g,1 interchange {N,NE,E,SE,S,SW,W,NW}
+1,i,j,k,l,m,n,o,p,2
+
+}}}
