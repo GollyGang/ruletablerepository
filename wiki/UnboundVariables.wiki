@@ -59,9 +59,11 @@ Bound variables could still be defined with "var ... = {...}", so all existing r
 I think it would be significantly easier for someone new to Golly to use this last rule table as a template for creating a new rule of their own. (?)
 
 Tim Hutton has written:
-{{{Personally I don't mind having a few extra variables, and I think
+{{{
+Personally I don't mind having a few extra variables, and I think
 having both types would be a bit confusing but of course it's an open
-project so lets proceed by consensus.}}}
+project so lets proceed by consensus.
+}}}
 
 Consensus sounds good, and I'll be happy to try for it before digging into ruletable_algo.cpp again -- anything to avoid that project, in fact!
 
