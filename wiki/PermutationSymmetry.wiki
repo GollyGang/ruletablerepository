@@ -25,3 +25,9 @@ f,1,1,1,a,b,c,d,e,1 interchange {N,NE,E,SE,S,SW,W,NW}
 1,i,j,k,l,m,n,o,p,2
 
 }}}
+
+DaveG:
+
+I was surprised that I could get the 80+ rules down to just 12 by using the "rotate8" symmetry parameter; I thought I'd be wishing for the "permutation" parameter a lot more fervently!  But HistoricalLife is a fairly simple rule -- I wouldn't always be able to just sit down and list all the not-rotationally-equivalent permutations, without making mistakes.
+
+On the other hand, what we have in Golly right now certainly seems to work pretty well.  I guess the question is just, how many new rules are people going to want to write?  and how user-friendly do we want to make the process of creating new rules?
