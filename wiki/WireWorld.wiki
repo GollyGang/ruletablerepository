@@ -31,6 +31,6 @@ http://pages.prodigy.net/nylesheise/wireworld.html
 
 http://en.wikipedia.org/wiki/Wireworld
 
-Here is a picture of a programmable computer:
+Here is a picture of a programmable computer. The program and data are stored in the machine's 64 16-bit registers. The program included calculates prime numbers up to 65535 and displays them in the seven-segment display:
 
 http://www.zen6741.zen.co.uk/quinapalus/ww800x600.gif
