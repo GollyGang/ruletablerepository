@@ -1,8 +1,20 @@
 #summary Discuss proposed changes here
-#labels Phase-Design
-= Introduction =
+
+== Format proposals: ==
 
   * PermutationSymmetry
-  * calcyman's suggestions for other neighbourhoods: GenericNeighborhoods
+  * Calcyman's suggestions for other neighbourhoods: GenericNeighborhoods
   * UnboundVariables
   * MargolusNeighborhood
+
+== Website issues: ==
+
+=== Golly access point: ===
+
+I've added a new file in the source repository: golly-archive.html in http://code.google.com/p/ruletablerepository/source/browse/trunk/
+
+This is intended to be Golly's access point for its Online Archives feature, whereby users can browse around the internet safely for patterns and rule tables to click on. We will need to fill it with all the links to the content available here (zip files, mainly), in a nice readable look.
+
+Are we happy with that living in the source repository? It's a bit of a misfit, but I can't think of a better way. We could have it as a download file, but then updating it is a pain - you need to manually delete the old file before uploading the new version else it errors out (you can't overwrite in situ), and you have to type the description and specify the labels afresh each time. And we can't use a wiki page as the access point, as Golly needs the .html. 
+
+--TJH
