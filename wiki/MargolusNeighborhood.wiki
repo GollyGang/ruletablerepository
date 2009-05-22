@@ -6,7 +6,7 @@ See:
   * http://cell-auto.com/neighbourhood/margolus/
   * http://psoup.math.wisc.edu/mcell/rullex_marg.html
 
-=== Proposal ===
+=== Proposal: ===
 
 Here is an example:
 
@@ -63,14 +63,14 @@ var b={0,1,2}
 3,0,0,0 : 3,0,1,0 # sand can appear from the magical source
 }}}
 
-=== Pros/Cons: ===
+=== Features: ===
 
   * 'Margolus' is a new neighborhood type.
   * A new colon separator makes it easier to read than just commas. (This would also be nice for the other neighborhoods, to separate outputs from inputs.)
   * reflect_horizontal (and vertical) are new symmetries that we were missing. 
   * The file format is otherwise identical to the existing ones.
-  * It's longer than MCell's specification string, but much more powerful, allowing multiple states and variables, and different symmetries. And no-change transitions can be skipped, so it's actually more readable.
-  * It's a simpler approach than moving to Calcyman's GenericNeighborhoods. It's more human-readable, which is the main point of the rule table format - we want people to start authoring their own rules, as they have been!
+  * It's longer than MCell's specification string but much more powerful, allowing multiple states and variables, and different symmetries. And no-change transitions can be skipped, so it's actually more readable.
+  * We could use Calcyman's GenericNeighborhoods for the header but is there any need to? This approach is more human-readable, which is the main point of the rule table format - we want people to start authoring their own rules, as they have been!
 
 === Discussion: ===
 
