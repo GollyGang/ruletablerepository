@@ -71,6 +71,7 @@ var b={0,1,2}
   * The file format is otherwise identical to the existing ones.
   * It's longer than MCell's specification string but much more powerful, allowing multiple states and variables, and different symmetries. And no-change transitions can be skipped, so it's actually more readable.
   * We could use Calcyman's GenericNeighborhoods for the header but is there any need to? This approach is more human-readable, which is the main point of the rule table format - we want people to start authoring their own rules, as they have been!
+  * Golly doesn't currently support the Margolus neighborhood directly, but it can be emulated using the Moore neighborhood. I'll upload a script in a moment that converts from .table files such as the above into Moore nhood files.
 
 === Discussion: ===
 
