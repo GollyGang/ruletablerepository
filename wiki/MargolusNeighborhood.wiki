@@ -1,0 +1,76 @@
+#summary A proposal to support the Margolus neighborhood in the .table format
+
+=== What is the Margolus neighborhood? ===
+
+See:
+  * http://cell-auto.com/neighbourhood/margolus/
+  * http://psoup.math.wisc.edu/mcell/rullex_marg.html
+
+=== Proposal ===
+
+Here is an example:
+
+{{{
+# Diffusion Limited Aggregation, in a Margolus neighborhood CA
+
+n_states:3
+neighborhood:Margolus
+symmetries:rotate4reflect
+
+# In the Margolus nhood, the transition a,b,c,d,e,f,g,h means:
+#  a  b     -->    e  f
+#  c  d            g  h
+
+# 0: vacuum
+# 1: gas particle
+# 2: stuck particle
+
+# HPP gas rules:
+1,0,0,0 : 0,0,0,1 # a diagonally-travelling particle keeps going
+1,1,0,0 : 0,0,1,1 # two particles pass through each other
+0,1,1,0 : 1,0,0,1 # two particles collide head-on
+1,1,1,0 : 0,1,1,1 # three particles pass through each other
+
+# plus aggregation rules: (these seem to suffice)
+1,0,2,0 : 2,0,2,0
+1,0,2,2 : 2,0,2,2
+}}}
+
+And another:
+
+{{{
+# A simple CA simulation of sand - inspired by MCell's version.
+
+n_states:4
+neighborhood:Margolus
+symmetries:reflect_horizontal
+
+# In the Margolus nhood, the transition a,b,c,d,e,f,g,h means:
+#  a  b     -->    e  f
+#  c  d            g  h
+
+# 0 : air
+# 1 : sand
+# 2 : wood
+# 3 : magical source of sand
+
+var a={0,1,2}
+var b={0,1,2}
+
+1,1,0,0 : 0,0,1,1 # a pair of sand particles falls
+1,a,0,b : 0,a,1,b # otherwise, sand falls next to a static column
+1,0,a,0 : 0,0,a,1 # otherwise, it can topple
+3,0,0,0 : 3,0,1,0 # sand can appear from the magical source
+}}}
+
+=== Features: ===
+
+  * 'Margolus' is a new neighborhood type.
+  * A new colon separator makes it easier to read than just commas. (This would also be nice for the other neighborhoods, to separate outputs from inputs.)
+  * reflect_horizontal (and vertical) are new symmetries that we were missing. 
+  * The file format is otherwise identical to the existing ones.
+  * It's a simpler approach than moving to Calcyman's GenericNeighborhoods. It's more human-readable, which is the main point of the rule table format - we want people to start authoring their own rules, as they have been!
+
+=== Discussion: ===
+
+I suspect this addition is pretty uncontroversial. It's just an addition to the format, and won't break anything. Thoughts? --TJH
