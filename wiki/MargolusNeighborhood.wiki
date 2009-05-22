@@ -66,7 +66,7 @@ var b={0,1,2}
 === Features: ===
 
   * 'Margolus' is a new neighborhood type.
-  * A new colon separator makes it easier to read than just commas. (This would also be nice for the other neighborhoods, to separate outputs from inputs.)
+  * A new colon separator performs exactly the same job as the comma but makes it easier to read. (We can support this for the other neighborhoods too, to separate outputs from inputs.)
   * reflect_horizontal (and vertical) are new symmetries that we were missing. 
   * The file format is otherwise identical to the existing ones.
   * It's longer than MCell's specification string but much more powerful, allowing multiple states and variables, and different symmetries. And no-change transitions can be skipped, so it's actually more readable.
