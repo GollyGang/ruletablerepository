@@ -5,3 +5,4 @@
   * PermutationSymmetry
   * calcyman's suggestions for other neighbourhoods: GenericNeighborhoods
   * UnboundVariables
+  * MargolusNeighborhood
