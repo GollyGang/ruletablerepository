@@ -76,3 +76,5 @@ var b={0,1,2}
 === Discussion: ===
 
 I suspect this addition is pretty uncontroversial. It's just an addition to the format, and won't break anything. Thoughts? --TJH
+
+Tim Tyler discusses the [http://cell-auto.com/neighbourhood/square4/index.html Square-4 neighborhood] which is related to the Margolus neighborhood. It is actually more appropriate for the Sand CA above, since it covers one particular case where 2 stacked sand particles should topple but don't. We could cover this too at the same time, perhaps with new neighborhood types: square4cyclic, square4figure8h, square4figure8v. But there's not much motivation to do this until we can think of CA we want to support that require these neighborhoods? --TJH
