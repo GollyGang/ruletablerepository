@@ -1,0 +1,15 @@
+#summary Tells you how to use the rule tables listed, in Golly or your own program.
+
+== Use them in Golly ==
+
+The rule table format started with [http://golly.sourceforge.net Golly]'s need to support different CA. Golly is distributed with many of these rule tables already included, so just explore the example patterns to see them in action.
+
+For new .tables files:
+  # Save the .table file into Golly's Rules folder
+  # Use {{{Control | Set Rule...}}} to change to the new rule. 
+
+== Use them in your own programs: ==
+
+Browse the source code [http://code.google.com/p/ruletablerepository/source/browse/trunk here]:
+  * [http://code.google.com/p/ruletablerepository/source/browse/trunk/src/read_ruletable.cpp read_ruletable.cpp] shows how to use the ruletable class to read CA rule tables in your own project.
+  * [http://code.google.com/p/ruletablerepository/source/browse/trunk/src/make-ruletable.cpp make-ruletable.cpp] shows how to create rule table files if you have an existing CA implementation you want to convert.
