@@ -28,45 +28,46 @@ a,0,b,1,c,b
 
 Files in the .table format are in plain ASCII text. Each line is one of the following:
 
-  * *Comment lines* start with a "#" or contain only whitespace.
-  * *{{{n_states:}}}* must be followed by an integer, specifying the number of cell states in the CA (from 0 to n-1 inclusive).
-  * *{{{neighborhood:}}}* specifies the cell neighborhood for the CA update. Currently the following values are supported: {{{vonNeumann}}}, {{{Moore}}}, {{{Margolus}}}.
-  * *{{{symmetries:}}}* specifies that apply to the transitions listed.
-  * *Variables* (*{{{var}}}*) allow transitions to be compactly written using text labels that stand for multiple states.
-  * *Transitions* consist of variable labels and cell states, specifying the inputs and outputs of each transition. Together the set of transitions specifies the behaviour of the CA.
+  * Comment lines are empty or start with a "#".
+  * {{{n_states:}}} (followed by an integer) specifies the number of cell states in the CA (from 0 to n-1 inclusive).
+  * {{{neighborhood:}}} specifies the cell neighborhood for the CA update. Currently the following values are supported: {{{vonNeumann}}}, {{{Moore}}}, {{{Margolus}}}.
+  * {{{symmetries:}}} specifies the spatial symmetries that apply to the transitions listed.
+  * Variables ({{{var}}}) allow transitions to be compactly written using text labels that stand for multiple states.
+  * Transitions consist of variable labels and cell states, specifying the inputs and outputs of each transition. Together the set of transitions specifies the behaviour of the CA.
 
 Important points to note:
 
-  * Valid {{{symmetries:}}} depend on the neighborhood. For example, the {{{Moore}}} neighborhood can have the following symmetries: {{{none}}}, {{{rotate4}}}, {{{rotate8}}}, {{{reflect}}}, {{{rotate4reflect}}}, {{{rotate8reflect}}}. 
+  * Valid symmetries depend on the neighborhood. For example, the {{{Moore}}} neighborhood can have the following symmetries: {{{none}}}, {{{rotate4}}}, {{{rotate8}}}, {{{reflect}}}, {{{rotate4reflect}}}, {{{rotate8reflect}}}. 
   * The three lines that specify {{{n_states}}}, {{{neighborhood}}} and {{{symmetries}}} should appear before the variables and transitions.
   * Variables should appear before the first transition that uses them. For clarity they usually appear before the transitions.
-  * The entries in a transition are separated by commas. An exception to this is when {{{n_states}}} is 10 or less and when no variables are used - in this case no comma should be used. This exception is to allow the 'traditional' list of transitions to be used.
+  * The entries in a transition are separated by commas. An exception to this is when {{{n_states}}} is 10 or less and when no variables are used - in this case no comma should be used, as in Example 1 above. This exception is to allow the 'traditional' list of transitions to be used.
   * The neighborhood type determines the number of entries in the transitions:
     * {{{vonNeumann}}}: C,N,E,S,W,C'
     * {{{Moore}}}: C,N,NE,E,SE,S,SW,W,NW,C'
-    * {{{Margolus}}}: a,b,c,d,a',b',c',d'
+    * {{{Margolus}}}: a,b,c,d,a',b',c',d' (see MargolusNeighborhood)
   * Comments can appear on the same line as transitions, preceded by a "#".
-  * Where the same variable appears more than once in a transition, it stands for the same state each time. A transition can have a variable as its output (C') but only where that variable appears more than once, so that it has a definite value. 
+  * Where the same variable appears more than once in a transition, it stands for the same state each time - they are _bound_. The output of a transition can contain variables but only if those variables also appear in the inputs (the output must be fully defined).
   * Rule tables usually don't specify every possible set of inputs. For those not listed, the input cells remain unchanged.
   * Rules are checked in the order given in the file - the first rule that matches is applied. If you want, you can write rules in the form of general cases and exceptions, as long as the exceptions appear first in the file.
 
+  _Golly also has a page describing the format: [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Help/formats.html#table .table format]_
 
-Therefore, the transition in the example above expands to the following: 
+=== Worked example: ===
+
+Example 2 above contains the {{{rotate4}}} symmetry and three variables. It is therefore equivalent to the rule table below (with no symmetries and no variables):
 {{{
-20212->2
-20213->2
-20312->3
-20313->3
-30212->2
-30213->2
-30312->3
-30313->3
+n_states:4
+neighborhood:vonNeumann
+symmetries:none
+202122
+202132
+203123
+203133
+302122
+302132
+303123
+303133
 }}}
-
-and all 90-degree rotations of those (because of the rotate4 symmetry).
-
-
-Golly has a page describing the format: [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Help/formats.html#table .table format]
 
 == About the development of the format: ==
 
