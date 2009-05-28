@@ -1,5 +1,18 @@
 #summary Discuss proposed changes here
 
+== What needs to change? ==
+
+The biggest limitation of the format at the moment is that only two update schemes are supported: the von Neumann neighborhood and the Moore neighborhood. While these are the most popular by far, a useful CA rule format must support a wide range of options. In the future we would like to support:
+  * the Margolus neighborhood and other partitioning schemes
+  * triangular and hexagonal lattices
+  * 3-dimensional CA, 1-dimensional CA, etc.
+It's not obvious how to support all of these different possibilities. XML is obviously a possibility but makes reading files harder than it need to be. Please get in touch if you have any suggestions!
+
+To avoid bloating the format, we must be careful not to include too much. Some things we *don't* want are:
+  * world specifications: size, wrap-around, etc.
+  * display parameters: color, icons, etc.
+These things will vary with each implementation and belong elsewhere.
+
 == Format proposals: ==
 
   * PermutationSymmetry
