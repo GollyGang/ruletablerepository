@@ -1,0 +1,12 @@
+#summary Discusses what the policy is on submitting new rules to the repository, and how to go about it.
+
+== Submission procedure: ==
+
+ * Join this project. Email one of the owners (on the sidebar on the right) with your Google Account email address to become a project member. You can then add your rules and descriptions and so on.
+ * Alternatively, just attach .table files and mail to: tim.hutton@gmail.com or another owner.
+ * Ruletree (.tree) files, .icons and .colors (Golly-specific things) are very welcome.
+ * I'm most interested in CA that are discussed in published papers, but you can send in any rule tables of your own invention too.
+
+== Will they be accepted? ==
+
+At the moment the answer is probably yes. At some point we'll need quality control guidelines to maintain the signal-to-noise ratio.
