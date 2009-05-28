@@ -26,7 +26,7 @@ a,0,b,1,c,b
 
 == Specification: ==
 
-Files in the .table format are in plain ASCII text. Each line is one of the following six:
+Files in the .table format are in plain ASCII text. Each line is one of the following six types:
 
   # Comment lines are empty or start with a "#".
   # {{{n_states:}}} (followed by an integer) specifies the number of cell states in the CA (from 0 to n-1 inclusive).
@@ -54,6 +54,7 @@ Important points to note:
 
 === Worked example: ===
 
+The following rule table has one variable and rotational symmetry:
 {{{
 n_states:6
 neighborhood:vonNeumann
@@ -62,7 +63,7 @@ var a={1,2}
 0,a,3,4,5,a
 }}}
 
-This rule table is equivalent to the following, when we expand out the variable:
+If we expand out the variable we get the following rule table:
 {{{
 n_states:6
 neighborhood:vonNeumann
@@ -86,7 +87,7 @@ symmetries:none
 0,5,2,3,4,2
 }}}
 
-
+All three of these rule tables are exactly equivalent.
 
 == About the development of the format: ==
 
