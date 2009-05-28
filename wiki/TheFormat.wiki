@@ -54,47 +54,39 @@ Important points to note:
 
 === Worked example: ===
 
-Example 2 above contains the {{{rotate4}}} symmetry and three variables. It is therefore equivalent to the rule table below (with no symmetries and no variables):
 {{{
-n_states:4
+n_states:6
+neighborhood:vonNeumann
+symmetries:rotate4
+var a={1,2}
+0,a,3,4,5,a
+}}}
+
+This rule table is equivalent to the following, when we expand out the variable:
+{{{
+n_states:6
+neighborhood:vonNeumann
+symmetries:rotate4
+0,1,3,4,5,1
+0,2,3,4,5,2
+}}}
+
+If we also expand out the rotate4 symmetry:
+{{{
+n_states:6
 neighborhood:vonNeumann
 symmetries:none
-202122
-202132
-203123
-203133
-302122
-302132
-303123
-303133
-
-221202
-221302
-231203
-231303
-321202
-321302
-331203
-331303
-
-212022
-213022
-212033
-213033
-312022
-313022
-312033
-313033
-
-220212
-230212
-220313
-230313
-320212
-330212
-320313
-330313
+0,1,3,4,5,1
+0,3,4,5,1,1
+0,4,5,1,3,1
+0,5,1,3,4,1
+0,2,3,4,5,2
+0,3,4,5,2,2
+0,4,5,2,3,2
+0,5,2,3,4,2
 }}}
+
+
 
 == About the development of the format: ==
 
