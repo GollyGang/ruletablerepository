@@ -19,6 +19,7 @@ These things will vary with each implementation and belong elsewhere.
   * Calcyman's suggestions for other neighbourhoods: GenericNeighborhoods
   * UnboundVariables
   * MargolusNeighborhood
+  * HexagonalNeighborhood
 
 == Website issues: ==
 
