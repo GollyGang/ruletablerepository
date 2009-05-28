@@ -1,6 +1,18 @@
 #summary The format specification for CA rule table files
 == Examples: ==
 
+Example 1:
+{{{
+# Roger Banks' 1971 CA for universal computation (Banks-I)
+n_states:2
+neighborhood:vonNeumann
+symmetries:rotate4reflect
+111000
+011101
+011111
+}}}
+
+Example 2:
 {{{
 # Signals (2/3) pass alongside a wire (1):
 n_states:4
@@ -14,19 +26,30 @@ a,0,b,1,c,b
 
 == Specification: ==
 
-See the .table files in the Rules folder for more examples. Empty lines and those beginning with the hash symbol "#" are ignored.
+Files in the .table format are in plain ASCII text. Each line is one of the following:
 
-Required descriptors (must appear before other content):
+  * *Comment lines* start with a "#" or contain only whitespace.
+  * *{{{n_states:}}}* must be followed by an integer, specifying the number of cell states in the CA (from 0 to n-1 inclusive).
+  * *{{{neighborhood:}}}* specifies the cell neighborhood for the CA update. Currently the following values are supported: {{{vonNeumann}}}, {{{Moore}}}, {{{Margolus}}}.
+  * *{{{symmetries:}}}* specifies that apply to the transitions listed.
+  * *Variables* (*{{{var}}}*) allow transitions to be compactly written using text labels that stand for multiple states.
+  * *Transitions* consist of variable labels and cell states, specifying the inputs and outputs of each transition. Together the set of transitions specifies the behaviour of the CA.
 
-    * n_states: specifies the number of states in the CA (from 0 to n_states-1 inclusive).
-    * neighborhood: specifies the cell neighborhood for the CA update step. Must be one of: vonNeumann, Moore.
-    * symmetries: can be one of the following: none, rotate4, rotate8, reflect, rotate4reflect, rotate8reflect. Hopefully these are self-explanatory.
+Important points to note:
 
-The rest of the file contains variables and transitions. Variable names should only use the letters a-z,A-Z (case-sensitive). Each variable line should follow the form above to list the states. Variables should appear before the first transition that uses them.
+  * Valid {{{symmetries:}}} depend on the neighborhood. For example, the {{{Moore}}} neighborhood can have the following symmetries: {{{none}}}, {{{rotate4}}}, {{{rotate8}}}, {{{reflect}}}, {{{rotate4reflect}}}, {{{rotate8reflect}}}. 
+  * The three lines that specify {{{n_states}}}, {{{neighborhood}}} and {{{symmetries}}} should appear before the variables and transitions.
+  * Variables should appear before the first transition that uses them. For clarity they usually appear before the transitions.
+  * The entries in a transition are separated by commas. An exception to this is when {{{n_states}}} is 10 or less and when no variables are used - in this case no comma should be used. This exception is to allow the 'traditional' list of transitions to be used.
+  * The neighborhood type determines the number of entries in the transitions:
+    * {{{vonNeumann}}}: C,N,E,S,W,C'
+    * {{{Moore}}}: C,N,NE,E,SE,S,SW,W,NW,C'
+    * {{{Margolus}}}: a,b,c,d,a',b',c',d'
+  * Comments can appear on the same line as transitions, preceded by a "#".
+  * Where the same variable appears more than once in a transition, it stands for the same state each time. A transition can have a variable as its output (C') but only where that variable appears more than once, so that it has a definite value. 
+  * Rule tables usually don't specify every possible set of inputs. For those not listed, the input cells remain unchanged.
+  * Rules are checked in the order given in the file - the first rule that matches is applied. If you want, you can write rules in the form of general cases and exceptions, as long as the exceptions appear first in the file.
 
-Transition lines should have states or variables separated by commas. If there are no variables and n_states<11 then no comma should be used. Only one transition (or variable) should appear on each line. Inputs are listed in the order C,N,E,S,W,C' for the von Neumann neighborhood, and C,N,NE,E,SE,S,SW,W,NW,C' for the Moore neighborhood.
-
-Where the same variable appears more than once in a transition, it stands for the same state each time. A transition can have a variable as its output (C') but only where that variable appears more than once, so that it has a definite value. 
 
 Therefore, the transition in the example above expands to the following: 
 {{{
@@ -42,15 +65,8 @@ Therefore, the transition in the example above expands to the following:
 
 and all 90-degree rotations of those (because of the rotate4 symmetry).
 
-Rule tables usually don't specify every possible set of inputs. For those not listed, the central cell remains unchanged.
 
-Rules are checked in the order given in the file - the first rule that matches is applied. If you want, you can write rules in the form of general cases and exceptions, as long as the exceptions appear first in the file.
-
-(This form of CA rule table representation comes from Gianluca Tempesti's PhD thesis: http://lslwww.epfl.ch/pages/embryonics/thesis/AppendixA.html.)
-
-If you have a C/C++ implementation of a transition function, there is a way to automatically produce a rule table file. See make-ruletable.cpp for instructions. 
-
-Golly has a page describing the format: [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Help/formats.html#table .table format specification]
+Golly has a page describing the format: [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Help/formats.html#table .table format]
 
 == About the development of the format: ==
 
@@ -73,5 +89,7 @@ A different problem was encountered when considering some other rule table forma
 The XLife program has the .r format, e.g. [http://www.filewatcher.com/p/xlife-5.0-1.i386.rpm.211831/usr/lib/xlife/codd/codd.r.html codd.r], where square brackets are used for multiple states. E.g. `0000[45]0` stands for the transitions <tt>0,0,0,0,4 -> 0</tt> and <tt>0,0,0,0,5 -> 0</tt>. This is a big leap forwards, allowing rule tables to be expressed in a reasonably compact form. The problem is that it doesn't provide enough compression.
 
 The adopted solution can be found in Gianluca Tempesti's [http://lslwww.epfl.ch/pages/embryonics/thesis/AppendixA.html thesis] - using variables to stand for multiple states. Then, e.g. for a={1,2,3}, the rule <tt>1,a,3 -> a</tt> would stand for three rules at once: <tt>1,1,3 -> 1</tt> and <tt>1,2,3 -> 2</tt> and <tt>1,3,3 -> 3</tt>. This method gives all the compression of the XLife approach and then some more on top.
+
+If you have a C/C++ implementation of a transition function, there is a way to automatically produce a rule table file. See make-ruletable.cpp for instructions. 
 
   _The format still needs work. Discuss extensions and improvements here: FutureWork_
