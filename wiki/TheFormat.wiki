@@ -73,3 +73,5 @@ A different problem was encountered when considering some other rule table forma
 The XLife program has the .r format, e.g. [http://www.filewatcher.com/p/xlife-5.0-1.i386.rpm.211831/usr/lib/xlife/codd/codd.r.html codd.r], where square brackets are used for multiple states. E.g. `0000[45]0` stands for the transitions <tt>0,0,0,0,4 -> 0</tt> and <tt>0,0,0,0,5 -> 0</tt>. This is a big leap forwards, allowing rule tables to be expressed in a reasonably compact form. The problem is that it doesn't provide enough compression.
 
 The adopted solution can be found in Gianluca Tempesti's [http://lslwww.epfl.ch/pages/embryonics/thesis/AppendixA.html thesis] - using variables to stand for multiple states. Then, e.g. for a={1,2,3}, the rule <tt>1,a,3 -> a</tt> would stand for three rules at once: <tt>1,1,3 -> 1</tt> and <tt>1,2,3 -> 2</tt> and <tt>1,3,3 -> 3</tt>. This method gives all the compression of the XLife approach and then some more on top.
+
+  _The format still needs work. Discuss extensions and improvements here: FutureWork_
