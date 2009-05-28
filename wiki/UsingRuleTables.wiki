@@ -8,7 +8,7 @@ Or, for new .tables files:
   # Save the .table file into Golly's Rules folder
   # Use {{{Control | Set Rule...}}} to change to the new rule. 
 
-Golly also accepts _rule tree_ files
+Golly also accepts _rule tree_ files, which are actually simpler for programs to utilise since they map directly onto a lookup function. More details [http://golly.sourceforge.net/Help/formats.html#tree here]. Golly comes with a utility to convert a rule table into a rule tree. The only disadvantage of rule trees is that they are harder to author directly. At the moment they also only support the von Neumann and Moore neighborhoods.
 
 == 2. Use them in your own programs: ==
 
