@@ -63,7 +63,7 @@ var a={1,2}
 0,a,3,4,5,a
 }}}
 
-If we expand out the variable we get the following rule table:
+If we expand out the variable we get the following equivalent rule table:
 {{{
 n_states:6
 neighborhood:vonNeumann
