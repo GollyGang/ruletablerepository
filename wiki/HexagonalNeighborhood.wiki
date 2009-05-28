@@ -1,3 +1,215 @@
 #summary A proposal to support the hexagonal neighborhood in the rule table format.
 
-We should be able to define the format for the hexagonal neighborhood quite easily, and write a Golly script that converts it to a Moore neighborhood rule table. Please fill in the details if you're keen!
+We should be able to define the format for the hexagonal neighborhood quite easily, and write a Golly script that converts it to a Moore neighborhood rule table.
+
+
+The hexagonal neighbourhood is used by a number of rules. For example, Frank Buss has made an interesting 3-state totalistic rule in the hexagonal neighbourhood. The hexagonal neighbourhood is a subset of the Moore neighbourhood, which means it can be emulated directly in Golly, without any more states. That seems okay, doesn't it?
+
+However, the rule tables end up being much larger than necessary. Because there is no 'hexagonal' symmetry to deal with this, or even a 'rotate2' symmetry, every possible permutation has to be programmed separately. For example, Frank Buss' CA is as follows:
+
+{{{
+
+n_states:3
+neighborhood:Moore
+symmetries:none
+
+var a={0,1,2}
+var b={0,1,2}
+var c={0,1,2}
+var d={0,1,2}
+var e={0,1,2}
+var f={0,1,2}
+var g={0,1,2}
+var h={0,1,2}
+
+var i={0,1}
+var j={0,1}
+var k={0,1}
+var l={0,1}
+
+var m={0,1,2}
+
+
+
+#First Condition
+
+0,2,0,0,a,0,0,0,b,2
+0,0,2,0,a,0,0,0,b,2
+0,0,0,2,a,0,0,0,b,2
+0,0,0,0,a,2,0,0,b,2
+0,0,0,0,a,0,2,0,b,2
+0,0,0,0,a,0,0,2,b,2
+
+
+
+#Second Condition
+
+c,1,2,0,a,0,0,0,b,1
+c,2,1,0,a,0,0,0,b,1
+c,2,0,1,a,0,0,0,b,1
+c,2,0,0,a,1,0,0,b,1
+c,2,0,0,a,0,1,0,b,1
+c,2,0,0,a,0,0,1,b,1
+
+c,1,0,2,a,0,0,0,b,1
+c,0,1,2,a,0,0,0,b,1
+c,0,2,1,a,0,0,0,b,1
+c,0,2,0,a,1,0,0,b,1
+c,0,2,0,a,0,1,0,b,1
+c,0,2,0,a,0,0,1,b,1
+
+c,1,0,0,a,2,0,0,b,1
+c,0,1,0,a,2,0,0,b,1
+c,0,0,1,a,2,0,0,b,1
+c,0,0,2,a,1,0,0,b,1
+c,0,0,2,a,0,1,0,b,1
+c,0,0,2,a,0,0,1,b,1
+
+c,1,0,0,a,0,2,0,b,1
+c,0,1,0,a,0,2,0,b,1
+c,0,0,1,a,0,2,0,b,1
+c,0,0,0,a,1,2,0,b,1
+c,0,0,0,a,2,1,0,b,1
+c,0,0,0,a,2,0,1,b,1
+
+c,1,0,0,a,0,0,2,b,1
+c,0,1,0,a,0,0,2,b,1
+c,0,0,1,a,0,0,2,b,1
+c,0,0,0,a,1,0,2,b,1
+c,0,0,0,a,0,1,2,b,1
+c,0,0,0,a,0,2,1,b,1
+
+
+
+#Third Condition
+
+c,2,2,i,a,j,k,l,b,1
+
+c,2,i,2,a,j,k,l,b,1
+c,i,2,2,a,j,k,l,b,1
+
+c,2,i,j,a,2,k,l,b,1
+c,i,2,j,a,2,k,l,b,1
+c,i,j,2,a,2,k,l,b,1
+
+c,2,i,j,a,k,2,l,b,1
+c,i,2,j,a,k,2,l,b,1
+c,i,j,2,a,k,2,l,b,1
+c,i,j,k,a,2,2,l,b,1
+
+c,2,i,j,a,k,l,2,b,1
+c,i,2,j,a,k,l,2,b,1
+c,i,j,2,a,k,l,2,b,1
+c,i,j,k,a,2,l,2,b,1
+c,i,j,k,a,l,2,2,b,1
+
+
+
+#Fourth Condition
+
+c,2,2,2,a,j,k,l,b,2
+c,2,2,i,a,2,k,l,b,2
+c,2,2,i,a,j,2,l,b,2
+c,2,2,i,a,j,k,2,b,2
+
+c,2,i,2,a,2,k,l,b,2
+c,i,2,2,a,2,k,l,b,2
+c,2,i,2,a,j,2,l,b,2
+c,i,2,2,a,j,2,l,b,2
+c,2,i,2,a,j,k,2,b,2
+c,i,2,2,a,j,k,2,b,2
+
+c,2,i,j,a,2,2,l,b,2
+c,i,2,j,a,2,2,l,b,2
+c,i,j,2,a,2,2,l,b,2
+c,2,i,j,a,2,k,2,b,2
+c,i,2,j,a,2,k,2,b,2
+c,i,j,2,a,2,k,2,b,2
+
+c,2,i,j,a,k,2,2,b,2
+c,i,2,j,a,k,2,2,b,2
+c,i,j,2,a,k,2,2,b,2
+c,i,j,k,a,2,2,2,b,2
+
+
+
+#Fifth Condition
+
+m,a,b,c,d,e,f,g,h,0
+
+}}}
+
+
+How inefficient is that? If you visit [http://www.frank-buss.de/automaton/hexautomaton.html his website], you will see how simply the rule is defined.
+
+Also notice that two of the elements are set to _*a*_ and _*b*_ in every rule, since the neighbourhood actively ignores these cells.
+
+
+Ideally, with the hexagonal neighbourhood, we would have symmetries such as:
+
+  * none
+  * rotate6
+  * reflect
+  * rotate6reflect
+
+
+Look how much the rotate6reflect could potentially compress the rule table:
+
+{{{
+n_states:3
+neighborhood:Hexagonal
+symmetries:rotate6reflect
+
+var a={0,1,2}
+var b={0,1,2}
+var c={0,1,2}
+var d={0,1,2}
+var e={0,1,2}
+var f={0,1,2}
+
+var i={0,1}
+var j={0,1}
+var k={0,1}
+var l={0,1}
+
+var m={0,1,2}
+
+
+
+#First Condition
+
+0,2,0,0,0,0,0,2
+
+
+
+#Second Condition
+
+c,1,2,0,0,0,0,1
+c,1,0,2,0,0,0,1
+c,1,0,0,2,0,0,1
+
+
+
+#Third Condition
+
+c,2,2,i,j,k,l,1
+c,2,i,2,j,k,l,1
+c,2,i,j,2,k,l,1
+
+
+
+#Fourth Condition
+
+c,2,2,2,i,j,k,2
+c,2,2,i,2,j,k,2
+c,2,i,2,j,2,k,2
+
+
+
+#Fifth Condition
+
+m,a,b,c,d,e,f,0
+}}}
+
+
+From 72 rule tables to just 11 is an immense improvement by anyone's standards.
