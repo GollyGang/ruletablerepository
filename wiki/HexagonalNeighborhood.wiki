@@ -1,0 +1,3 @@
+#summary A proposal to support the hexagonal neighborhood in the rule table format.
+
+We should be able to define the format for the hexagonal neighborhood quite easily, and write a Golly script that converts it to a Moore neighborhood rule table. Please fill in the details if you're keen!
