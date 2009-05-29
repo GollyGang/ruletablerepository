@@ -69,3 +69,21 @@ f,1,1,1,a,b,c,d,e,1   # 3-neighbour birth or survival
 }}}
 
 Then 'permutation' is just another symmetry alongside reflections and rotations. This approach is less useful if the permutation symmetry applied to some transitions and not others but I haven't seen an example of this yet. We still have unknown implementation issues with adopting the permutation symmetry but it looks attractive.
+
+
+APG:
+
+
+That _does_ make things a lot simpler. But the 'interchange' approach can be used for other symmetries, like the hexagonal symmetry:
+
+
+interchange {N,NE,E,S,SW,E}
+
+
+Or the _Ben's rule_ symmetry (also used in the MRM rule table):
+
+
+interchange {N,E,S,W}{NE,SE,NW,SW}
+
+
+Maybe we should just add a symmetry type when required.
