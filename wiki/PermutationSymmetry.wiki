@@ -31,3 +31,41 @@ DaveG:
 I was surprised that I could get the 80+ rules down to just 12 by using the "rotate8" symmetry parameter; I thought I'd be wishing for the "permutation" parameter a lot more fervently!  But HistoricalLife is a fairly simple rule -- I wouldn't always be able to just sit down and list all the not-rotationally-equivalent permutations, without making mistakes.
 
 On the other hand, what we have in Golly right now certainly seems to work pretty well.  I guess the question is pretty much the same as for UnboundVariables:  how many new rules are people going to want to write?  and how user-friendly do we want to make the process of creating new rules?
+
+TJH: 
+
+Can I suggest that permutation symmetry would work like this:
+
+{{{
+# Historical Life
+#
+# A rule by Dave Greene
+# Translated by Calcyman
+
+n_states:3
+neighborhood:Moore
+symmetries:permutation
+
+var a={0,2}
+var b={0,2}
+var c={0,2}
+var d={0,2}
+var e={0,2}
+var g={0,2}
+var f={0,1,2}
+
+var i={0,1,2}
+var j={0,1,2}
+var k={0,1,2}
+var l={0,1,2}
+var m={0,1,2}
+var n={0,1,2}
+var o={0,1,2}
+var p={0,1,2}
+
+f,1,1,1,a,b,c,d,e,1   # 3-neighbour birth or survival
+1,1,1,a,b,c,d,e,g,1   # 2-neighbour survival
+1,i,j,k,l,m,n,o,p,2   # Otherwise, On state dies and becomes the history state
+}}}
+
+Then 'permutation' is just another symmetry alongside reflections and rotations. This approach is less useful if the permutation symmetry applied to some transitions and not others but I haven't seen an example of this yet. We still have unknown implementation issues with adopting the permutation symmetry but it looks attractive.
