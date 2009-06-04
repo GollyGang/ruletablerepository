@@ -1,0 +1,102 @@
+#summary The rule tables in our repository.
+
+----
+
+= The Rule Tables: =
+
+==== Von Neumann's CA and close variations ====
+
+Von Neumann, famous for inventing parallel processing and the concept of storing data and instructions in the same tape, created the first cellular automaton in order to allow self-replication. Since then, Renato Nobili and Tim Hutton have successively augmented the rules to simplify the machines.
+
+|| *year* || *rule tables available* || *description* || *links* ||
+|| late 1940's || [http://www.sq3.org.uk/files/JvN29.table JvN29.table] || John von Neumann's original 29-state CA. The rule is very complex, requiring both ordinary and special transmission states, each in the four cardinal directions, both quiescent and excited. The rule also has an extra set of temporary states for construction. || [http://en.wikipedia.org/wiki/Von_Neumann_universal_constructor link] ||
+|| 1994 ||  [http://www.sq3.org.uk/files/Nobili32.table Nobili32.table] || Renato Nobili's extension of von Neumann's 29-state CA to allow easier crossing of wires, leading to enormously simpler machines. The 29-state CA does support wire crossing, but the crossover cannot be constructed by the machine. || ||
+|| 2008 || [http://www.sq3.org.uk/files/Hutton32.table Hutton32.table] || This is a modification of Nobili32 that TJH came up with, to allow simpler construction and rotational invariance. This enables the replicator to construct two copies, perpendicular to each other, so that the replicator grows like a binary tree. Space limitations prevent this from growing exponentially, so it grows quadratically (the fastest possible growth). || [http://www.sq3.org.uk/wiki.pl?ModJvN link] ||
+
+
+==== Codd's CA and descendents ====
+
+Codd produced a much simpler CA to Von Neumann's original 29-state rule, allowing rotational invariance. His design for a self-replicating machine is much more complex, and TJH has only recently implemented it. No-one has produced a tape to allow this machine to self-replicate, but APG made [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Patterns/Other-Rules/Codd/Goucher-replicator.rle.gz a universal constructor] (but not computer) that replicates much faster.
+
+|| 1968 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Codd.table Codd.table] || Edgar F. Codd simplified von Neumann's CA to 8 states. || [http://en.wikipedia.org/wiki/Codd%27s_cellular_automaton link], [http://www.addebook.com/it/uncategorized/cellular-automata_5471.html link] ||
+|| 1973 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Devore.table Devore.table] || John Devore altered Codd's ruleset to allow for more compact machines. Golly has a functioning self-replicator in this ruleset: [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Patterns/Other-Rules/Codd/Devore/Devore-rep.rle Devore-rep.rle].  Additionally,  APG made another replicator that uses a weak form of run-length encoding to compress the size of the tape: [http://myweb.tiscali.co.uk/calcy/life/devore/D-compressed-replicator.gz D-compressed-replicator.gz] || ||
+|| 2009 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Codd2.table Codd2.table] || It was recently realised that Codd's rule table required three extra transitions in order to be able to sheath large complex structures. With this rule, an implementation of Codd's self-replicating machine was created: [http://ruletablerepository.googlecode.com/files/Codd-self-rep.zip Codd-self-rep.zip] || ||
+
+==== Self-replicating loops ====
+
+Christopher Langton altered Codd's ruleset, relinquishing the universality to allow simple self-replicating loops. Several rules have been made to either:
+
+  * Re-introduce the universal computation/construction abilities.
+  * Allow a further reduction in size - culminating in Chou-Reggia's loop.
+  * Simulate evolution and genetic mutation.
+
+
+|| 1984 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Langtons-Loops.table Langtons-Loops.table] || Chris G. Langton extended Codd's rules to allow a totally novel form of simple self-replicator - the loop. This was based on a very simple element of Codd's CA - the periodic emitter. The instructions for extending and turning the pseudopod is simpler in Langton's loops than Codd's CA - it requires half as many pulses to extend and turn the arm. This comes at the expense of removing the ability for universal computation and construction. || [http://en.wikipedia.org/wiki/Langton%27s_loops link] ||
+|| 1989 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Byl-Loop.table Byl-Loop.table] || J. Byl managed to reduce the size of Langton's Loop. Whereas Langton's loop consists of an internal and external sheath, the Byl loop only requires an external sheath. || ||
+|| 1993 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Chou-Reggia-1.table Chou-Reggia-1.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Chou-Reggia-2.table Chou-Reggia-2.table] || A further reduction of Langton's Loops - down to just five cells. This is a modification of Byl's loop that doesn't even need an external sheath. || ||
+|| 1995 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Tempesti.table Tempesti.table] || Gianluca Tempesti's programmable loop that is capable of constructing various things inside itself  - for example the initials of Tempesti's group: "LSL". || ||
+|| 1996 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Perrier.table Perrier.table] || Perrier added universal computation capabilities to Langton's loop by adding a program stack and an extensible data tape. || ||
+|| 1998 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/SDSR-Loop.table SDSR-Loop.table] || Hiroki Sayama introduced a change to Langton's Loops that caused dead loops to disappear, allowing live ones to reproduce further. || ||
+|| 1999 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Evoloop.table Evoloop.table] || Another loop from Sayama, that allows colliding loops to sometimes merge genetic content. Over time, smaller loops appear as these outcompete the larger ones. || ||
+
+
+==== Other universal computation rules ====
+
+|| 1971 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Banks-I.table Banks-I.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Banks-II.table Banks-II.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Banks-III.table Banks-III.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Banks-IV.table Banks-IV.table] || Edwin Roger Banks made CA that supported universal computation and construction, using fewer states than before. The first of these rules allows any finite computation to be calculated (equivalent to WireWorld). The second rule allows a finite starting configuration to have unbounded memory. The third rule is equivalent to the second rule, but it uses the Moore neighbourhood to reduce the number of states to just two. The fourth rule allows universal construction, hence replication. No replicators have been built in Banks-IV, although it is known to be possible. || ||
+|| 1987 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/WireWorld.table WireWorld.table] || Brian Silverman's famous CA for electronic wiring. This uses four states and can compute any finite calculation (like Banks-I). The memory is restricted to the size of the initial configuration, so it cannot expand its circuitry. However, an impressive computer has been built that calculates 16-bit prime numbers. || [http://en.wikipedia.org/wiki/Wireworld link], [http://www.quinapalus.com/wi-index.html link], [http://pages.prodigy.net/nylesheise/wireworld.html link] ||
+|| 2009 || [http://myweb.tiscali.co.uk/calcy/life/wireworld-extendable.zip Extendable WireWorld Rule] || A 17-state rule created by Alan Tennant to support universal computation and construction. Unlike the original WireWorld rule, this rule supports self-replication. APG has included 3 of his replicators in this file (serial tape, 16-layer tape and 64-layer tape). The machines with thicker tapes are larger, but faster. A simple pattern is also included that draws the 'Golly' logo. || ||
+|| 2009 || [http://myweb.tiscali.co.uk/calcy/life/MinskyCA.zip MRM CA] || A 4-state rule made by Paul Chapman to support Minsky Register Machines, up to and including universal MRMs. Included with this rule table is a .colors file and a sample MRM. The supplied MRM, also by Paul Chapman, calculates the nth prime. Paul Chapman has also built MRMs in Life, but they are naturally much slower than the ones in this specialised rule. || [http://www.igblan.free-online.co.uk/igblan/ca/camrm.html link] ||
+
+
+==== Lattice gases ====
+
+|| 1973 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/HPP.table HPP.table] || The HPP lattice gas. This can be simulated in the Margolus rule, but TJH discovered that it is simpler to simulate it in a 32-state rule. Two 'bonus' states are also supplied, the source and sink. Adding these two states gives the rule computation universality. || [http://pages.cs.wisc.edu/~wylie/doc/PhD_thesis.pdf link] ||
+|| 1981 || [http://myweb.tiscali.co.uk/calcy/life/DLA.zip Diffusion-limited aggregation] || Diffusion-limited aggregation using the HPP lattice gas. || [http://en.wikipedia.org/wiki/Diffusion-limited_aggregation link] ||
+
+
+==== Margolus neighbourhood ====
+
+The Margolus neighbourhood is one of the simplest CA neighbourhoods. A description of the rule can be found online, at [http://cell-auto.com/neighbourhood/margolus/ this website]. For each of the rules below, two different rule tables are supplied. One is the actual Margolus rule; the other is an emulation of it using a Moore neighbourhood and extra states.
+
+
+|| 1981 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/DLA-Margolus.table DLA-Margolus.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/DLA-Margolus-emulated.table DLA-Margolus-emulated.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/DLA-Margolus-emulated.colors DLA-Margolus-emulated.colors] || Diffusion-limited aggegation in the Margolus neighbourhood. || [http://en.wikipedia.org/wiki/Diffusion-limited_aggregation link] ||
+|| 1982 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/BBM-Margolus.table BBM-Margolus.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/BBM-Margolus-emulated.table BBM-Margolus-emulated.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/BBM-Margolus-emulated.colors BBM-Margolus-emulated.colors] || Ed Fredkin's Billiard Ball Model in the Margolus neighbourhood. || [http://en.wikipedia.org/wiki/Billiard-Ball_Computer link] ||
+|| 2009 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Sand-Margolus.table Sand-Margolus.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Sand-Margolus-emulated.table Sand-Margolus-emulated.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Sand-Margolus-emulated.colors Sand-Margolus-emulated.colors] || MCell's 'Sand' rule in the Margolus neighbourhood. || ||
+
+
+==== Langton's Ant and other Turing Machines ====
+
+|| 1986 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Langtons-Ant.table Langtons-Ant.table] || Langton's other famous system. An ant moves around an infinite universe, flipping the colour of the squares it lands on and turning left or right accordingly. The ant moves chaotically for the first 10 000 steps, before settling into a sequence where it slowly migrates diagonally. This eventual fate is conjectured to be true of any initial setup. || [http://en.wikipedia.org/wiki/Langton%27s_ant link] ||
+|| 2006 || [http://ruletablerepository.googlecode.com/files/Iceskater%20for%20Golly%202.0.zip Iceskater] || A rule by Jordan Goldstein: "I wrote a rule table based on an idea I had about 2 years ago. ... It's similar to Langton's ant in that it walks around the board modifying a set of inactive cells; however, it never repeats itself and thus grows forever to become an large white blob of chaos. Enjoy---an explanation is included in the zip file." || [http://sourceforge.net/mailarchive/message.php?msg_name=49178558.40409%40gmail.com link] ||
+|| 2008 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Worm-1040512.table Worm-1040512.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Worm-1042015.table Worm-1042015.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Worm-1042020.table Worm-1042020.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Worm-1252121.table Worm-1252121.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Worm-1525115.table Worm-1525115.table] || Dean Hickerson's implementation of Paterson's Worms - The hexagonal neighbourhood is emulated using the Moore neighbourhood. || [http://en.wikipedia.org/wiki/Paterson%27s_worms link] ||
+|| 2009 || [http://myweb.tiscali.co.uk/calcy/life/turing-machines/BusyBeaver3.table 3-state Busy Beaver], [http://myweb.tiscali.co.uk/calcy/life/turing-machines/BusyBeaver5.table 5-state Busy Beaver] || APG has made a program to convert m-state n-symbol Turing machines into Rule Tables. The two example machines are Busy Beavers, Turing machines that try to write as many '1's as possible before halting. To run each machine in Golly, seed the universe with a single cell of state 2. || [http://en.wikipedia.org/wiki/Busy_Beaver link] ||
+
+
+
+==== Life-inspired CAs ====
+
+|| 2007 || [http://ruletablerepository.googlecode.com/files/HistoricalLife.zip Historical Life] || An implementation of the classic game of life that highlights the cells that were ever alive. Rule by Dave Greene, translation to a table by Calcyman. || ||
+|| 2008 || [http://ruletablerepository.googlecode.com/files/LifeHistoryRules.zip Life History and related rules] || An five-state extension of the HistoricalLife rule originally by Brice Due.  The LifeHistory rule includes optional "marked cells" as well as history cells.  Archive also includes an optimized version of HistoricalLife with a colorset to match LifeHistory, and several support scripts for both rules.|| ||
+|| 2009 || [http://ruletablerepository.googlecode.com/files/LifeColor_FrancoisBoisson.zip LifeColor] || A colored variant of the Game of Life, by François Boisson. || ||
+|| 2009 || [http://myweb.tiscali.co.uk/calcy/life/simulators.zip Life Pattern Emulators] || Two rules, one by Dean Hickerson and one by Adam P. Goucher, designed to simulate two of Dean Hickerson's transcendal Life patterns - the Clouds pattern and Prime number generator, respectively. Included are the rule tables, sample patterns and equivalent Life patterns. || ||
+
+
+==== Miscellaneous ====
+
+|| 1989 || [http://myweb.tiscali.co.uk/calcy/life/CyclicCA.table Cyclic CA] || A rule investigated by David Griffeath. This rule is a very basic CA that shows competition emerging from a random initial seed. || [http://en.wikipedia.org/wiki/Cyclic_cellular_automaton link] ||
+|| 1998 || [http://myweb.tiscali.co.uk/calcy/life/JustFriends.table Just Friends] || A non-totalistic 2D binary rule by David Bell. || ||
+
+----
+
+== Credits: ==
+
+  * Langton's Loops, SDSR, Evoloop, Byl, Chou-Reggia 1/2: TJH used the fabulously readable implementation here: [http://necsi.org/postdocs/sayama/sdsr/java/loops.java loops.java], with kind permission from Eli Bachmupsky and Hiroki Sayama. For SDSR and Evoloop, the rule tables were augmented with Java code, so the conversion routine linked-to above was used. In the Byl loop their rule table has an error: transitions 212052 and 212055 contradict each other - only the second is correct.
+  * Banks, Tempesti: TJH copied the rules from their PhD theses, which you can find online
+  * Codd: The XLife file linked above was the only record TJH could find. He converted it by hand. Update: He has just found a link to the scanned book (above), and it turns out that codd.r had a few crucial errors. It all works now.
+  * !JvN29, Nobili32, Hutton32, !WireWorld: TJH started with the C++ implementations in Golly and used the conversion routine.
+  * Langtons-Ant: TJH wrote by hand.
+  * BBM: When TJH realised that we could emulate the Margolus neighbourhood he wrote a [http://golly.cvs.sourceforge.net/viewvc/golly/golly/src/Scripts/Python/Margolus/make-Margolus.py?view=markup Python script] to convert from an [http://psoup.math.wisc.edu/mcell/rullex_marg.html MCell specification string] to a .table file. 
+  * HPP: TJH was all set to make an emulated-Margolus rule for the HPP gas (since MCell has the specification) but then he came across a much nicer way of implementing it directly in a von Neumann neighbourhood CA, so he followed that instead. He had to create reflection states, so it ended up with 34 states in total.
+  * Perrier: Gianluca Tempesti sent TJH the rule table - thanks!
+  * MRM: APG converted this rule from Paul Chapman's website.
+  * WWE: Supplied by Alan Tennant.
