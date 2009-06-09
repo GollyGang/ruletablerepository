@@ -17,6 +17,7 @@ Von Neumann, famous for inventing parallel processing and the concept of storing
 ==== Codd's CA and descendents ====
 
 Codd produced a much simpler CA to Von Neumann's original 29-state rule, allowing rotational invariance. His design for a self-replicating machine is much more complex, and TJH has only recently implemented it. No-one has produced a tape to allow this machine to self-replicate, but APG made [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Patterns/Other-Rules/Codd/Goucher-replicator.rle.gz a universal constructor] (but not computer) that replicates much faster. Since then, Codd's CA has been altered to allow simpler machines to be built, resulting in the Devore and Codd-ICRA variants.
+
 || 1968 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Codd.table Codd.table] || Edgar F. Codd simplified von Neumann's CA to 8 states. || [http://en.wikipedia.org/wiki/Codd%27s_cellular_automaton link], [http://www.addebook.com/it/uncategorized/cellular-automata_5471.html link] ||
 || 1971 || [http://myweb.tiscali.co.uk/calcy/life/Codd-ICRA.zip Codd-ICRA] || A team of Hungarian researchers modified Codd's rules. Crossovers can be made with only nine cells, and gates can be constructed by passing 7-0 signals. This rule table is not the original ruleset, but rather the Codd-ICRA rule with TJH's safe sheathing transitions (see Codd2.table, below). There are three pattern files attached that demonstrate the advantages of the Codd-ICRA variant. || [http://www.inf.u-szeged.hu/actacybernetica/edb/vol03n2/pdf/Takacs_1977_ActaCybernetica.pdf link] ||
 || 1973 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Devore.table Devore.table] || John Devore altered Codd's ruleset to allow for more compact machines. The main difference between Devore's and Codd's cellular automata is that Devore's allows 2x2 blocks of cells to behave like split devices, merge units or one-way diodes. With this rule, a much simpler crossing can be created. Golly has a functioning self-replicator in this ruleset: [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Patterns/Other-Rules/Codd/Devore/Devore-rep.rle Devore-rep.rle].  Additionally,  APG made another replicator that uses a weak form of run-length encoding to compress the size of the tape: [http://myweb.tiscali.co.uk/calcy/life/devore/D-compressed-replicator.gz D-compressed-replicator.gz]. However, APG did not have access to the small crossing, so had to make a large, cumbersome one instead! || ||
@@ -26,9 +27,9 @@ Codd produced a much simpler CA to Von Neumann's original 29-state rule, allowin
 
 Christopher Langton altered Codd's ruleset, relinquishing the universality to allow simple self-replicating loops. Several rules have been made to either:
 
-  * Re-introduce the universal computation/construction abilities.
-  * Allow a further reduction in size - culminating in Chou-Reggia's loop.
-  * Simulate evolution and genetic mutation.
+  * Re-introduce the universal computation/construction abilities. (Tempesti, Perrier)
+  * Allow a further reduction in size (Byl-loop, Chou-Reggia-1, Chou-Reggia-2)
+  * Simulate evolution and genetic mutation. (SDSR, Evoloop, Sexyloop)
 
 
 || 1984 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Langtons-Loops.table Langtons-Loops.table] || Chris G. Langton extended Codd's rules to allow a totally novel form of simple self-replicator - the loop. This was based on a very simple element of Codd's CA - the periodic emitter. The instructions for extending and turning the pseudopod is simpler in Langton's loops than Codd's CA - it requires half as many pulses to extend and turn the arm. This comes at the expense of removing the ability for universal computation and construction. || [http://en.wikipedia.org/wiki/Langton%27s_loops link] ||
@@ -85,6 +86,7 @@ The Margolus neighbourhood is one of the simplest CA neighbourhoods. A descripti
 
 || 1989 || [http://myweb.tiscali.co.uk/calcy/life/CyclicCA.table Cyclic CA] || A rule investigated by David Griffeath. This rule is a very basic CA that shows competition emerging from a random initial seed. || [http://en.wikipedia.org/wiki/Cyclic_cellular_automaton link] ||
 || 1998 || [http://myweb.tiscali.co.uk/calcy/life/JustFriends.table Just Friends] || A non-totalistic 2D binary rule by David Bell. || ||
+|| 2009 || [http://myweb.tiscali.co.uk/calcy/life/TrickyBees.zip Tricky Bees] || Another rule by Alan Tennant. || ||
 
 ----
 
