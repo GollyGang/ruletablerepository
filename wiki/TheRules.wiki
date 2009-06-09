@@ -87,7 +87,7 @@ The Margolus neighbourhood is one of the simplest CA neighbourhoods. A descripti
 
 || 1989 || [http://myweb.tiscali.co.uk/calcy/life/CyclicCA.table Cyclic CA] || A rule investigated by David Griffeath. This rule is a very basic CA that shows competition emerging from a random initial seed. || [http://en.wikipedia.org/wiki/Cyclic_cellular_automaton link] ||
 || 1998 || [http://myweb.tiscali.co.uk/calcy/life/JustFriends.table Just Friends] || A non-totalistic 2D binary rule by David Bell. || ||
-|| 2009 || [http://myweb.tiscali.co.uk/calcy/life/TrickyBees.zip Tricky Bees] || A chaotic rule by Alan Tennant where each state becomes progressively more inert in which patterns are surprisingly tricky to construct. || ||
+|| 2009 || [http://myweb.tiscali.co.uk/calcy/life/TrickyBees.zip Tricky Bees] || A chaotic rule by Alan Tennant where each state becomes progressively more inert in which patterns are surprisingly tricky to construct. This table is actually 17 independent rules, which are combined into one rule table using an 'on' state for each rule. || ||
 
 ----
 
