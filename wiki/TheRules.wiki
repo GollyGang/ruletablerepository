@@ -102,3 +102,4 @@ The Margolus neighbourhood is one of the simplest CA neighbourhoods. A descripti
   * Perrier: Gianluca Tempesti sent TJH the rule table - thanks!
   * MRM: APG converted this rule from Paul Chapman's website.
   * WWE: Supplied by Alan Tennant.
+  * Emulators: Thanks to Andrew Trevorrow for cleaning up the file to work on more platforms.
