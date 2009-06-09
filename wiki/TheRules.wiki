@@ -4,6 +4,7 @@
 
 = The Rule Tables: =
 
+
 ==== Von Neumann's CA and close variations ====
 
 Von Neumann, famous for inventing parallel processing and the concept of storing data and instructions in the same tape, created the first cellular automaton in order to allow self-replication. Since then, Renato Nobili and Tim Hutton have successively augmented the rules to simplify the machines.
@@ -90,6 +91,7 @@ The Margolus neighbourhood is one of the simplest CA neighbourhoods. A descripti
 
 ----
 
+
 == Credits: ==
 
   * Langton's Loops, SDSR, Evoloop, Byl, Chou-Reggia 1/2: TJH used the fabulously readable implementation here: [http://necsi.org/postdocs/sayama/sdsr/java/loops.java loops.java], with kind permission from Eli Bachmupsky and Hiroki Sayama. For SDSR and Evoloop, the rule tables were augmented with Java code, so the conversion routine linked-to above was used. In the Byl loop their rule table has an error: transitions 212052 and 212055 contradict each other - only the second is correct.
@@ -103,3 +105,4 @@ The Margolus neighbourhood is one of the simplest CA neighbourhoods. A descripti
   * MRM: APG converted this rule from Paul Chapman's website.
   * WWE: Supplied by Alan Tennant.
   * Emulators: Thanks to Andrew Trevorrow for cleaning up the file to work on more platforms.
+  * Codd-ICRA: APG converted this rule from the .pdf document, amended and updated it.
