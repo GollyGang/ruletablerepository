@@ -5,8 +5,8 @@ Looking further ahead, here's a sketch of how the rule table format might be ext
 These are just some ideas - please edit or comment to add your opinions. For a good survey on neighborhoods, see http://cell-auto.com/neighbourhood/
 
 || neighborhood || transitions || symmetries ||
-|| <b>vonNeumann</b> || {{{c,n,e,s,w : c'}}} || <b>none</b>, rotate (<b>rotate4</b>), rotate_reflect (<b>rotate4reflect</b>), reflect_horizontal, reflect_vertical, permutation ||
-|| <b>Moore</b> || {{{c,n,ne,e,se,s,sw,w,nw : c'}}} || <b>none</b>, <b>rotate4</b>, <b>rotate8</b>, <b>rotate4reflect</b>, <b>rotate8reflect</b>, reflect_horizontal, reflect_vertical, permutation ||
+|| <b>vonNeumann</b> || {{{c,n,e,s,w : c'}}} || <b>none</b>, rotate (<b>rotate4</b>), rotate_reflect (<b>rotate4reflect</b>), reflect_horizontal (<b>reflect</b>), reflect_vertical, permutation ||
+|| <b>Moore</b> || {{{c,n,ne,e,se,s,sw,w,nw : c'}}} || <b>none</b>, <b>rotate4</b>, <b>rotate8</b>, <b>rotate4reflect</b>, <b>rotate8reflect</b>, reflect_horizontal (<b>reflect</b>), reflect_vertical, permutation ||
 || Moore_radius2 || {{{c,n1..n15 : c'}}} || none, rotate4, rotate8, rotate4reflect, rotate8reflect, reflect_horizontal, reflect_vertical, permutation? ||
 || hexagonal (see HexagonalNeighborhood) || {{{c,ne,e,se,sw,w,nw : c}}} || none, rotate, rotate_reflect, permutation ||
 || triangularVonNeumann || {{{c,n1,n2,n3 : c'}}} || none, rotate, rotate_reflect, permutation ||
