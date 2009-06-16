@@ -1,6 +1,6 @@
 #summary An overview of possible future directions for the rule table format.
 
-Looking further ahead, here's a sketch of how the [TheFormat rule table format] might be extended to support future CA. Items in bold are those currently supported in Golly.
+Looking further ahead, here's a sketch of how the [TheFormat rule table format] might be extended to support future CA (see also: FutureWork). Items in bold are those currently supported in Golly.
 
 These are just some ideas - please edit or comment to add your opinions. For a good survey on neighborhoods, see http://cell-auto.com/neighbourhood/
 
