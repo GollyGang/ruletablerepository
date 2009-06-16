@@ -15,6 +15,7 @@ These things will vary with each implementation and belong elsewhere.
 
 == Format proposals: ==
 
+  * RoadMap : an overview of things we might support
   * PermutationSymmetry
   * Calcyman's suggestions for other neighbourhoods: GenericNeighborhoods
   * UnboundVariables
