@@ -4,21 +4,20 @@ Looking further ahead, here's a sketch of how the [TheFormat rule table format] 
 
 These are just some ideas - please edit or comment to add your opinions. For a good survey on neighborhoods, see http://cell-auto.com/neighbourhood/
 
-|| neighborhood || transitions || symmetries ||
-|| <b>vonNeumann</b> || {{{c,n,e,s,w : c'}}} || <b>none</b>, rotate (<b>rotate4</b>), rotate_reflect (<b>rotate4reflect</b>), reflect_horizontal (<b>reflect</b>), reflect_vertical, permutation ||
-|| <b>Moore</b> || {{{c,n,ne,e,se,s,sw,w,nw : c'}}} || <b>none</b>, <b>rotate4</b>, <b>rotate8</b>, <b>rotate4reflect</b>, <b>rotate8reflect</b>, reflect_horizontal (<b>reflect</b>), reflect_vertical, permutation ||
+|| neighborhood || transitions || symmetries || image ||
+|| <b>vonNeumann</b> || {{{c,n,e,s,w : c'}}} || <b>none</b>, rotate (<b>rotate4</b>), rotate_reflect (<b>rotate4reflect</b>), reflect_horizontal (<b>reflect</b>), reflect_vertical, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/vonNeumann.PNG ||
+|| <b>Moore</b> || {{{c,n,ne,e,se,s,sw,w,nw : c'}}} || <b>none</b>, <b>rotate4</b>, <b>rotate8</b>, <b>rotate4reflect</b>, <b>rotate8reflect</b>, reflect_horizontal (<b>reflect</b>), reflect_vertical, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/moore.PNG ||
 || Moore_radius2 || {{{c,n1..n15 : c'}}} || none, rotate4, rotate8, rotate4reflect, rotate8reflect, reflect_horizontal, reflect_vertical, permutation? ||
-|| hexagonal (see HexagonalNeighborhood) || {{{c,ne,e,se,sw,w,nw : c}}} || none, rotate, rotate_reflect, permutation ||
-|| triangularVonNeumann || {{{c,n1,n2,n3 : c'}}} || none, rotate, rotate_reflect, permutation ||
-|| triangularIntermediate || {{{c,n1..n9 : c'}}} || none, rotate, rotate_reflect, permutation ||
-|| triangularMoore || {{{c,n1..n12 : c'}}} || none, rotate, rotate_reflect, permutation ||
+|| hexagonal (see HexagonalNeighborhood) || {{{c,ne,e,se,sw,w,nw : c}}} || none, rotate, rotate_reflect, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/hexagonal.PNG ||
+|| triangularVonNeumann || {{{c,n1,n2,n3 : c'}}} || none, rotate, rotate_reflect, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/triangularVonNeumann.PNG ||
+|| triangularMoore || {{{c,n1..n12 : c'}}} || none, rotate, rotate_reflect, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/triangularMoore.PNG ||
 || <b>Margolus</b>^*^ (see MargolusNeighborhood) || {{{a,b,c,d : a',b',c',d'}}} || <b>none</b>, rotate (<b>rotate4</b>), rotate_reflect (<b>rotate4reflect</b>), <b>reflect_horizontal</b>, <b>reflect_vertical</b>, permutation ||
 || square4_cyclic, square4_figure8h, square4_figure8v (==square4_reading_order) (see MargolusNeighborhood) || {{{a,b,c,d : a',b',c',d'}}} || none, rotate, rotate_reflect, reflect_horizontal, reflect_vertical, permutation ||
 || square9_reading_order || {{{a,b,c,d,e,f,g,h,i : a',b',c',d',e',f',g',h',i'}}} || none, rotate, rotate_reflect, reflect_horizontal, reflect_vertical, permutation ||
-|| vonNeumann3D || {{{c,x+,x-,y+,y-,z+,z- : c'}}} || none, rotate, rotate_x, rotate_y, rotate_z, reflect_x, reflect_y, reflect_z, rotate_reflect, permutation ||
-|| Moore3D || {{{c,n1..n26 : c'}}} || none, rotate4, rotate8, rotate4_x, rotate4_y, rotate4_z, rotate8_x, rotate8_y, rotate8_z, reflect_x, reflect_y, reflect_z, rotate4_reflect, rotate8_reflect, permutation ||
-|| oneDimensional_radius1 || {{{c,w,e : c'}}} || none, reflect, permutation? ||
-|| oneDimensional_radius2 || {{{c,w2,w,e,e2 : c'}}} || none, reflect, permutation? ||
+|| vonNeumann3D || {{{c,x+,x-,y+,y-,z+,z- : c'}}} || none, rotate, rotate_x, rotate_y, rotate_z, reflect_x, reflect_y, reflect_z, rotate_reflect, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/3dVonNeumann.PNG ||
+|| Moore3D || {{{c,n1..n26 : c'}}} || none, rotate4, rotate8, rotate4_x, rotate4_y, rotate4_z, rotate8_x, rotate8_y, rotate8_z, reflect_x, reflect_y, reflect_z, rotate4_reflect, rotate8_reflect, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/3dMoore.PNG ||
+|| oneDimensional_radius1 || {{{c,w,e : c'}}} || none, reflect, permutation? || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/1dRadius1.PNG ||
+|| oneDimensional_radius2 || {{{c,w2,w,e,e2 : c'}}} || none, reflect, permutation? || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/1dRadius2.PNG ||
 || oneDimensional_partition2 ([http://cell-auto.com/neighbourhood/brickwall/index.html brick wall]) || {{{a,b : a',b'}}} || none, reflect || 
 
 ^*^supported through emulation.
