@@ -18,6 +18,6 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 || Moore3D || {{{c,n1..n26 : c'}}} || none, rotate4, rotate8, rotate4_x, rotate4_y, rotate4_z, rotate8_x, rotate8_y, rotate8_z, reflect_x, reflect_y, reflect_z, rotate4_reflect, rotate8_reflect, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/3dMoore.PNG ||
 || oneDimensional_radius1 || {{{c,w,e : c'}}} || none, reflect, permutation? || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/1dRadius1.PNG ||
 || oneDimensional_radius2 || {{{c,w2,w,e,e2 : c'}}} || none, reflect, permutation? || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/1dRadius2.PNG ||
-|| oneDimensional_partition2 ([http://cell-auto.com/neighbourhood/brickwall/index.html brick wall]) || {{{a,b : a',b'}}} || none, reflect || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/brickWall.PNG ||
+|| oneDimensional_partition2 ([http://cell-auto.com/neighbourhood/brickwall/index.html brick wall]) || {{{a,b : a',b'}}} || none, reflect || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/BrickWall.GIF ||
 
 ^*^supported through emulation.
