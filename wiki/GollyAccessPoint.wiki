@@ -1,0 +1,21 @@
+#summary An access point for Golly to download files
+
+= Introduction =
+
+The Golly Access Point is a stockpile of Golly-compatible files (patterns, rule tables etc.) directly referenced from a HTML document. This has been created because of Golly's new file-downloading capabilities.
+
+
+= Details =
+
+I've added a new file in the source repository: golly-archive.html in:
+http://code.google.com/p/ruletablerepository/source/browse/trunk/
+
+This is intended to be Golly's access point for its Online Archives feature, whereby users can browse around the internet safely for patterns and rule tables to click on. We will need to fill it with all the links to the content available here (zip files, mainly), in a nice readable look.
+
+Are we happy with that living in the source repository? It's a bit of a misfit, but I can't think of a better way. We could have it as a download file, but then updating it is a pain - you need to manually delete the old file before uploading the new version else it errors out (you can't overwrite in situ), and you have to type the description and specify the labels afresh each time. And we can't use a wiki page as the access point, as Golly needs the .html.
+
+If you aren't able to access the source repository yourself, then edit the html file and email it to me. I will need: 
+  # the html file 
+  # a short comment (1 line) summary of what you changed, so we can track the changes. 
+
+--TJH 
