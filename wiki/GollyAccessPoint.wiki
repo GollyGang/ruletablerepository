@@ -2,7 +2,7 @@
 
 = Introduction =
 
-The Golly Access Point is a stockpile of Golly-compatible files (patterns, rule tables etc.) directly referenced from a HTML document. This has been created because of Golly's new file-downloading capabilities.
+The Golly Access Point is a stockpile of Golly-compatible files (patterns, rule tables etc.) directly referenced from a HTML document. This has been created to enhance Golly's new file-downloading capabilities.
 
 
 = Details =
