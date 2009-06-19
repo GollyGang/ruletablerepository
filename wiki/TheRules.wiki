@@ -47,7 +47,7 @@ Christopher Langton altered Codd's ruleset, relinquishing the universality to al
 || 1999 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Evoloop.table Evoloop.table] || Another loop from Sayama, that allows colliding loops to sometimes merge genetic content. Over time, smaller loops appear as these outcompete the larger ones. || ||
 
 
-==== Other universal computation rules ====
+==== Other computation rules ====
 
 This section contains rule tables specifically used to simulate computers. These support logic gates and storage devices easily, making them useful rules for testing logic circuits in a controlled and efficient manner. A potential logic circuit could be designed in a CA to test the schematic without having to consider the layout of the electronic circuit itself.
 
@@ -57,6 +57,7 @@ This section contains rule tables specifically used to simulate computers. These
 || 1987 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/WireWorld.table WireWorld.table] || Brian Silverman's famous CA for electronic wiring. This uses four states and can compute any finite calculation (like Banks-I). The memory is restricted to the size of the initial configuration, so it cannot expand its circuitry. However, an impressive computer has been built that calculates 16-bit prime numbers. || [http://en.wikipedia.org/wiki/Wireworld link], [http://www.quinapalus.com/wi-index.html link], [http://pages.prodigy.net/nylesheise/wireworld.html link] ||
 || 2009 || [http://myweb.tiscali.co.uk/calcy/life/wireworld-extendable.zip Extendable WireWorld Rule] || A 17-state rule created by Alan Tennant to support universal computation and construction. Unlike the original WireWorld rule, this rule supports self-replication. APG has included 3 of his replicators in this file (serial tape, 16-layer tape and 64-layer tape). The machines with thicker tapes are larger, but faster. A simple pattern is also included that draws the 'Golly' logo. || ||
 || 2009 || [http://myweb.tiscali.co.uk/calcy/life/MinskyCA.zip MRM CA] || A 4-state rule made by Paul Chapman to support Minsky Register Machines, up to and including universal MRMs. Included with this rule table is a .colors file and a sample MRM. The supplied MRM, also by Paul Chapman, calculates the nth prime. Paul Chapman has also built MRMs in Life, but they are naturally much slower than the ones in this specialised rule. || [http://www.igblan.free-online.co.uk/igblan/ca/camrm.html link] ||
+|| 2009 || [http://myweb.tiscali.co.uk/calcy/life/switch.zip Switch CA] || A 5-state rule by Alan Tennant. The rule is based on WireWorld, but has been designed so that the construction of logic gates is impossible. Instead, pulse dividers are possible. More interestingly, two of these pulse dividers can be coupled so that an incoming pulse exits on one output path or another, depending on the polarisation of the switch. Each input pulse flips the polarisation. || ||
 
 
 ==== Lattice gases ====
