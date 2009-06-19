@@ -32,4 +32,8 @@ This is intended to be Golly's access point for its Online Archives feature, whe
 
 Are we happy with that living in the source repository? It's a bit of a misfit, but I can't think of a better way. We could have it as a download file, but then updating it is a pain - you need to manually delete the old file before uploading the new version else it errors out (you can't overwrite in situ), and you have to type the description and specify the labels afresh each time. And we can't use a wiki page as the access point, as Golly needs the .html. 
 
+If you aren't able to access the source repository yourself, then edit the html file and email it to me. I will need:
+  # the html file
+  # a short comment (1 line) summary of what you changed, so we can track the changes.
+
 --TJH
