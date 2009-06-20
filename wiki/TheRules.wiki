@@ -1,4 +1,5 @@
 #summary The rule tables in our repository.
+#sidebar RulesTableOfContents
 
 ----
 
