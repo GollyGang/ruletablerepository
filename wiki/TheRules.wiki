@@ -1,5 +1,6 @@
 #summary The rule tables in our repository.
-#sidebar RulesTableOfContents
+
+<wiki:toc max_depth="4" />
 
 ----
 
