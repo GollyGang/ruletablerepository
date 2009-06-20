@@ -1,6 +1,0 @@
-  * [TheRules The Rules]
-  * [TheFormat The Format]
-  * [UsingRuleTables Using Rule Tables]
-  * [SubmittingNewRules Submitting New Rules]
-  * [http://code.google.com/p/ruletablerepository/updates/list Recent Changes]
-  * [FutureWork Future Work]
