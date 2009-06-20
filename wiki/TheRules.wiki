@@ -1,13 +1,18 @@
 #summary The rule tables in our repository.
 
-<wiki:toc max_depth="4" />
+----
+
+= Contents: =
+
+<wiki:toc max_depth="2" />
 
 ----
+
 
 = The Rule Tables: =
 
 
-==== Von Neumann's CA and close variations ====
+== Von Neumann's CA and close variations ==
 
 Von Neumann, famous for inventing parallel processing and the concept of storing data and instructions in the same tape, created the first cellular automaton in order to allow self-replication. Since then, Renato Nobili and Tim Hutton have successively augmented the rules to simplify the machines.
 
@@ -19,7 +24,7 @@ Von Neumann, famous for inventing parallel processing and the concept of storing
 || 2008 || [http://www.sq3.org.uk/files/Hutton32.table Hutton32.table] || This is a modification of Nobili32 that TJH came up with, to allow simpler construction and rotational invariance. This enables the replicator to construct two copies, perpendicular to each other, so that the replicator grows like a binary tree. Space limitations prevent this from growing exponentially, so it grows quadratically (the fastest possible growth). || [http://www.sq3.org.uk/wiki.pl?ModJvN link] ||
 
 
-==== Codd's CA and descendents ====
+== Codd's CA and descendents ==
 
 Codd produced a much simpler CA to Von Neumann's original 29-state rule, allowing rotational invariance. His design for a self-replicating machine is much more complex, and TJH has only recently implemented it. No-one has produced a tape to allow this machine to self-replicate, but APG made [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Patterns/Other-Rules/Codd/Goucher-replicator.rle.gz a universal constructor] (but not computer) that replicates much faster. Since then, Codd's CA has been altered to allow simpler machines to be built, resulting in the Devore and Codd-ICRA variants.
 
@@ -30,7 +35,7 @@ Codd produced a much simpler CA to Von Neumann's original 29-state rule, allowin
 || 1973 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Devore.table Devore.table] || John Devore altered Codd's ruleset to allow for more compact machines. The main difference between Devore's and Codd's cellular automata is that Devore's allows 2x2 blocks of cells to behave like split devices, merge units or one-way diodes. With this rule, a much simpler crossing can be created. Golly has a functioning self-replicator in this ruleset: [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Patterns/Other-Rules/Codd/Devore/Devore-rep.rle Devore-rep.rle].  Additionally,  APG made another replicator that uses a weak form of run-length encoding to compress the size of the tape: [http://myweb.tiscali.co.uk/calcy/life/devore/D-compressed-replicator.gz D-compressed-replicator.gz]. However, APG did not have access to the small crossing, so had to make a large, cumbersome one instead! || ||
 || 2009 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Codd2.table Codd2.table] || It was recently realised that Codd's rule table required three extra transitions in order to be able to sheath large complex structures. With this rule, an implementation of Codd's self-replicating machine was created: [http://ruletablerepository.googlecode.com/files/Codd-self-rep.zip Codd-self-rep.zip]. || ||
 
-==== Self-replicating loops ====
+== Self-replicating loops ==
 
 Christopher Langton altered Codd's ruleset, relinquishing the universality to allow simple self-replicating loops. Several rules have been made to either:
 
@@ -49,7 +54,7 @@ Christopher Langton altered Codd's ruleset, relinquishing the universality to al
 || 1999 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Evoloop.table Evoloop.table] || Another loop from Sayama, that allows colliding loops to sometimes merge genetic content. Over time, smaller loops appear as these outcompete the larger ones. || ||
 
 
-==== Other computation rules ====
+== Other computation rules ==
 
 This section contains rule tables specifically used to simulate computers. These support logic gates and storage devices easily, making them useful rules for testing logic circuits in a controlled and efficient manner. A potential logic circuit could be designed in a CA to test the schematic without having to consider the layout of the electronic circuit itself.
 
@@ -62,7 +67,7 @@ This section contains rule tables specifically used to simulate computers. These
 || 2009 || [http://myweb.tiscali.co.uk/calcy/life/switch.zip Switch CA] || A 5-state rule by Alan Tennant. The rule is based on WireWorld, but has been designed so that the construction of logic gates is impossible. Instead, pulse dividers are possible. More interestingly, two of these pulse dividers can be coupled so that an incoming pulse exits on one output path or another, depending on the polarisation of the switch. Each input pulse flips the polarisation. || ||
 
 
-==== Lattice gases ====
+== Lattice gases ==
 
 A lattice gas is a cellular automaton used specifically to simulate a gas. Whereas actual gases use operate in the 3-dimensional continuous space, lattice gases use the 2-dimensional discrete space. Interestingly, most of the properties of actual gases can be observed in lattice gases.
 
@@ -72,7 +77,7 @@ A lattice gas is a cellular automaton used specifically to simulate a gas. Where
 || 1981 || [http://myweb.tiscali.co.uk/calcy/life/DLA.zip Diffusion-limited aggregation] || Diffusion-limited aggregation using the HPP lattice gas. This model was studied to simulate the fractal growth characterised by electrolysis of copper sulphate. || [http://en.wikipedia.org/wiki/Diffusion-limited_aggregation link] ||
 
 
-==== Margolus neighbourhood ====
+== Margolus neighbourhood ==
 
 The Margolus neighbourhood is one of the simplest CA neighbourhoods. A description of the rule can be found online, at [http://cell-auto.com/neighbourhood/margolus/ this website]. For each of the rules below, two different rule tables are supplied. One is the actual Margolus rule; the other is an emulation of it using a Moore neighbourhood and extra states.
 
@@ -83,7 +88,7 @@ The Margolus neighbourhood is one of the simplest CA neighbourhoods. A descripti
 || 2009 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Sand-Margolus.table Sand-Margolus.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Sand-Margolus-emulated.table Sand-Margolus-emulated.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Sand-Margolus-emulated.colors Sand-Margolus-emulated.colors] || MCell's 'Sand' rule in the Margolus neighbourhood. || ||
 
 
-==== Langton's Ant and other Turing Machines ====
+== Langton's Ant and other Turing Machines ==
 
 These cellular automata simulate Turing Machines, abstract entities that move on a discrete grid, altering the grid and changing direction. In the classical sense, a Turing machine uses a 1-dimensional grid; Langton's Ant uses a 2-dimensional grid.
 
@@ -96,7 +101,7 @@ These cellular automata simulate Turing Machines, abstract entities that move on
 
 
 
-==== Life-inspired CAs ====
+== Life-inspired CAs ==
 
 This section contains rules based on Conway's Game of Life, the most popular CA.
 
@@ -108,7 +113,7 @@ This section contains rules based on Conway's Game of Life, the most popular CA.
 || 2009 || [http://myweb.tiscali.co.uk/calcy/life/simulators.zip Life Pattern Emulators] || Two rules, one by Dean Hickerson and one by Adam P. Goucher, designed to simulate two of Dean Hickerson's transcendal Life patterns - the Clouds pattern and Prime number generator, respectively. Included are the rule tables, sample patterns and equivalent Life patterns. || ||
 
 
-==== Miscellaneous ====
+== Miscellaneous ==
 
 If there is a rule that doesn't fit into one of the above sections, nor does it warrant its own section, it goes here.
 
@@ -121,7 +126,7 @@ If there is a rule that doesn't fit into one of the above sections, nor does it 
 ----
 
 
-== Credits: ==
+= Credits: =
 
   * Langton's Loops, SDSR, Evoloop, Byl, Chou-Reggia 1/2: TJH used the fabulously readable implementation here: [http://necsi.org/postdocs/sayama/sdsr/java/loops.java loops.java], with kind permission from Eli Bachmupsky and Hiroki Sayama. For SDSR and Evoloop, the rule tables were augmented with Java code, so the conversion routine linked-to above was used. In the Byl loop their rule table has an error: transitions 212052 and 212055 contradict each other - only the second is correct.
   * Banks, Tempesti: TJH copied the rules from their PhD theses, which you can find online
