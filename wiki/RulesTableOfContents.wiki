@@ -1,9 +1,9 @@
-  * [RulesVonNeumann Von Neumann's CA and close variations]
-  * [RulesCodd Codd's CA and descendents]
-  * [RulesLoops Self-replicating loops]
-  * [RulesComputers Other computational rules]
-  * [RulesGases Lattice gases]
-  * [RulesMargolus Margolus neighbourhood]
-  * [RulesTuring Langton's Ant and Turing machines]
-  * [RulesLife Life-inspired CAs]
-  * [RulesMisc Miscellaneous rules]
+  * TheRules#Von_Neumann's_CA_and_close_variations
+  * TheRules#Codd's_CA_and_descendents
+  * TheRules#Self-replicating_loops
+  * TheRules#Other_computation_rules
+  * TheRules#Lattice_gases
+  * TheRules#Margolus_neighbourhood
+  * TheRules#Langton's_Ant_and_other_Turing_Machines
+  * TheRules#Life-inspired_CAs
+  * TheRules#Miscellaneous
