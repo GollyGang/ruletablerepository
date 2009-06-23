@@ -8,27 +8,20 @@
 
 ----
 
-
 = The Rule Tables: =
-
 
 == Von Neumann's CA and close variations ==
 
 Von Neumann, famous for inventing parallel processing and the concept of storing data and instructions in the same tape, created the first cellular automaton in order to allow self-replication. Since then, Renato Nobili and Tim Hutton have successively augmented the rules to simplify the machines.
-
-
 
 || *year* || *rule tables available* || *description* || *links* || *images ||
 || late 1940's || [http://www.sq3.org.uk/files/JvN29.table JvN29.table] || John von Neumann's original 29-state CA. The rule is very complex, requiring both ordinary and special transmission states, each in the four cardinal directions, both quiescent and excited. The rule also has an extra set of temporary states for construction. || [http://en.wikipedia.org/wiki/Von_Neumann_universal_constructor link] || http://myweb.tiscali.co.uk/calcy/life/rulesimg/jvn29.PNG ||
 || 1994 ||  [http://www.sq3.org.uk/files/Nobili32.table Nobili32.table] || Renato Nobili's extension of von Neumann's 29-state CA to allow easier crossing of wires, leading to enormously simpler machines. The 29-state CA does support wire crossing, but the crossover cannot be constructed by the machine. Two replicators have been made in this rule. The first, by Nobili and Pesavanto, was the first replicator in a Von Neumann cellular automaton. The second, by Nobili, uses run-length encoding to compress the size of the tape. || [http://www.pd.infn.it/~rnobili/au_cell/ link] || http://myweb.tiscali.co.uk/calcy/life/rulesimg/nobili32.PNG ||
 || 2008 || [http://www.sq3.org.uk/files/Hutton32.table Hutton32.table] || This is a modification of Nobili32 that TJH came up with, to allow simpler construction and rotational invariance. This enables the replicator to construct two copies, perpendicular to each other, so that the replicator grows like a binary tree. Space limitations prevent this from growing exponentially, so it grows quadratically (the fastest possible growth). || [http://www.sq3.org.uk/wiki.pl?ModJvN link] || http://myweb.tiscali.co.uk/calcy/life/rulesimg/hutton32.PNG ||
 
-
 == Codd's CA and descendents ==
 
 Codd produced a much simpler CA to Von Neumann's original 29-state rule, allowing rotational invariance. His design for a self-replicating machine is much more complex, and TJH has only recently implemented it. No-one has produced a tape to allow this machine to self-replicate, but APG made [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Patterns/Other-Rules/Codd/Goucher-replicator.rle.gz a universal constructor] (but not computer) that replicates much faster. Since then, Codd's CA has been altered to allow simpler machines to be built, resulting in the Devore and Codd-ICRA variants.
-
-
 
 || 1968 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Codd.table Codd.table] || Edgar F. Codd simplified von Neumann's CA to 8 states. This is achieved by using a sheath to cover the signal wires, to remove the need for directional arrows. Unfortunately, this means that wires have to be spaced out more than wires in Von Neumann's CA. || [http://en.wikipedia.org/wiki/Codd%27s_cellular_automaton link], [http://www.addebook.com/it/uncategorized/cellular-automata_5471.html link] ||http://myweb.tiscali.co.uk/calcy/life/rulesimg/codd.PNG ||
 || 1971 || [http://myweb.tiscali.co.uk/calcy/life/Codd-ICRA.zip Codd-ICRA] || A team of Hungarian researchers modified Codd's rules. Crossovers can be made with only nine cells, and gates can be constructed by passing 7-0 signals. This rule table is not the original ruleset, but rather the Codd-ICRA rule with TJH's safe sheathing transitions (see Codd2.table, below). There are three pattern files attached that demonstrate the advantages of the Codd-ICRA variant. || [http://www.inf.u-szeged.hu/actacybernetica/edb/vol03n2/pdf/Takacs_1977_ActaCybernetica.pdf link] || http://myweb.tiscali.co.uk/calcy/life/rulesimg/codd-icra.PNG ||
@@ -43,8 +36,6 @@ Christopher Langton altered Codd's ruleset, relinquishing the universality to al
   * Allow a further reduction in size (Byl-loop, Chou-Reggia-1, Chou-Reggia-2)
   * Simulate evolution and genetic mutation. (SDSR, Evoloop, Sexyloop)
 
-
-
 || 1984 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Langtons-Loops.table Langtons-Loops.table] || Chris G. Langton extended Codd's rules to allow a totally novel form of simple self-replicator - the loop. This was based on a very simple element of Codd's CA - the periodic emitter. The instructions for extending and turning the pseudopod is simpler in Langton's loops than Codd's CA - it requires half as many pulses to extend and turn the arm. This comes at the expense of removing the ability for universal computation and construction. || [http://en.wikipedia.org/wiki/Langton%27s_loops link] || http://myweb.tiscali.co.uk/calcy/life/rulesimg/langtonsloops.PNG ||
 || 1989 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Byl-Loop.table Byl-Loop.table] || J. Byl managed to reduce the size of Langton's Loop. Whereas Langton's loop consists of an internal and external sheath, the Byl loop only requires an external sheath. || || http://myweb.tiscali.co.uk/calcy/life/rulesimg/bylloop.PNG ||
 || 1993 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Chou-Reggia-1.table Chou-Reggia-1.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Chou-Reggia-2.table Chou-Reggia-2.table] || A further reduction of Langton's Loops - down to just five cells. This is a modification of Byl's loop that doesn't even need an external sheath. || || http://myweb.tiscali.co.uk/calcy/life/rulesimg/choureggia.PNG ||
@@ -53,12 +44,9 @@ Christopher Langton altered Codd's ruleset, relinquishing the universality to al
 || 1998 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/SDSR-Loop.table SDSR-Loop.table] || Hiroki Sayama introduced a change to Langton's Loops that caused dead loops to disappear, allowing live ones to reproduce further. || || http://myweb.tiscali.co.uk/calcy/life/rulesimg/sdsr.PNG ||
 || 1999 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Evoloop.table Evoloop.table] || Another loop from Sayama, that allows colliding loops to sometimes merge genetic content. Over time, smaller loops appear as these outcompete the larger ones. || || http://myweb.tiscali.co.uk/calcy/life/rulesimg/evoloop.PNG ||
 
-
 == Other computation rules ==
 
 This section contains rule tables specifically used to simulate computers. These support logic gates and storage devices easily, making them useful rules for testing logic circuits in a controlled and efficient manner. A potential logic circuit could be designed in a CA to test the schematic without having to consider the layout of the electronic circuit itself.
-
-
 
 || 1971 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Banks-I.table Banks-I.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Banks-II.table Banks-II.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Banks-III.table Banks-III.table], [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Banks-IV.table Banks-IV.table] || Edwin Roger Banks made CA that supported universal computation and construction, using fewer states than before. The first of these rules allows any finite computation to be calculated (equivalent to WireWorld). The second rule allows a finite starting configuration to have unbounded memory. The third rule is equivalent to the second rule, but it uses the Moore neighbourhood to reduce the number of states to just two. The fourth rule allows universal construction, hence replication. || [http://www.bottomlayer.com/bottom/banks/banks_commentary.htm link] || http://myweb.tiscali.co.uk/calcy/life/rulesimg/banks.PNG ||
 || 1987 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/WireWorld.table WireWorld.table] || Brian Silverman's famous CA for electronic wiring. This uses four states and can compute any finite calculation (like Banks-I). The memory is restricted to the size of the initial configuration, so it cannot expand its circuitry. However, an impressive computer has been built that calculates 16-bit prime numbers. || [http://en.wikipedia.org/wiki/Wireworld link], [http://www.quinapalus.com/wi-index.html link], [http://pages.prodigy.net/nylesheise/wireworld.html link] || http://myweb.tiscali.co.uk/calcy/life/rulesimg/wireworld.PNG ||
@@ -66,14 +54,11 @@ This section contains rule tables specifically used to simulate computers. These
 || 2009 || [http://myweb.tiscali.co.uk/calcy/life/MinskyCA.zip MRM CA] || A 4-state rule made by Paul Chapman to support Minsky Register Machines, up to and including universal MRMs. Included with this rule table is a .colors file and a sample MRM. The supplied MRM, also by Paul Chapman, calculates the nth prime. Paul Chapman has also built MRMs in Life, but they are naturally much slower than the ones in this specialised rule. || [http://www.igblan.free-online.co.uk/igblan/ca/camrm.html link] || http://myweb.tiscali.co.uk/calcy/life/rulesimg/minsky.PNG ||
 || 2009 || [http://myweb.tiscali.co.uk/calcy/life/switch.zip Switch CA] || A 5-state rule by Alan Tennant. The rule is based on WireWorld, but has been designed so that the construction of logic gates is impossible. Instead, pulse dividers are possible. More interestingly, two of these pulse dividers can be coupled so that an incoming pulse exits on one output path or another, depending on the polarisation of the switch. Each input pulse flips the polarisation. || || http://myweb.tiscali.co.uk/calcy/life/rulesimg/switch.PNG ||
 
-
 == Lattice gases ==
 
 A lattice gas is a cellular automaton used specifically to simulate a gas. Whereas actual gases use operate in the 3-dimensional continuous space, lattice gases use the 2-dimensional discrete space. Interestingly, most of the properties of actual gases can be observed in lattice gases.
 
-
-
-|| 1973 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/HPP.table HPP.table] || The HPP lattice gas. This can be simulated in the Margolus rule, but TJH discovered that it is simpler to simulate it in a 32-state rule. Two 'bonus' states are also supplied, the source and sink. || [http://pages.cs.wisc.edu/~wylie/doc/PhD_thesis.pdf link] || http://myweb.tiscali.co.uk/calcy/life/rulesimg/hpp.PNG ||
+|| 1973 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/HPP.table HPP.table] || The HPP lattice gas can be simulated in the Margolus rule, but [http://pages.cs.wisc.edu/~wylie/doc/PhD_thesis.pdf Brian Wylie] showed how to simulate it with 16 states and the von Neumann neighborhood. ||  || http://myweb.tiscali.co.uk/calcy/life/rulesimg/hpp.PNG ||
 || 1981 || [http://myweb.tiscali.co.uk/calcy/life/DLA.zip Diffusion-limited aggregation] || Diffusion-limited aggregation using the HPP lattice gas. This model was studied to simulate the fractal growth characterised by electrolysis of copper sulphate. || [http://en.wikipedia.org/wiki/Diffusion-limited_aggregation link] || http://myweb.tiscali.co.uk/calcy/life/rulesimg/dla.PNG ||
 
 
@@ -105,8 +90,8 @@ These cellular automata simulate Turing Machines, abstract entities that move on
 
 This section contains rules based on Conway's Game of Life, the most popular CA.
 
-
-
+|| 2007 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/LifeOnTheEdge.tree LifeOnTheEdge.tree] || Franklin T. Adams-Watters described a CA in which all the action occurs on the edges of a square grid.  Each edge can be on or off and has six neighbors, three at each end.  An edge is on in the next generation [http://mathworld.wolfram.com/Iff.html iff] exactly two of the edges in its seven edge neighborhood (including the edge itself) are on. || || http://myweb.tiscali.co.uk/calcy/life/rulesimg/lifeontheedge.PNG ||
+|| 2007 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/LifeOnTheSlope.tree LifeOnTheSlope.tree] || An implementation of the above rule, rotated 45° so that only 2 live states are required. || || http://myweb.tiscali.co.uk/calcy/life/rulesimg/lifeontheslope.PNG ||
 || 2007 || [http://ruletablerepository.googlecode.com/files/HistoricalLife.zip Historical Life] || An implementation of the classic game of life that highlights the cells that were ever alive. Rule by Dave Greene, translation to a table by Calcyman. || || http://myweb.tiscali.co.uk/calcy/life/rulesimg/historicallife.PNG ||
 || 2008 || [http://ruletablerepository.googlecode.com/files/LifeHistoryRules.zip Life History and related rules] || An five-state extension of the HistoricalLife rule originally by Brice Due.  The LifeHistory rule includes optional "marked cells" as well as history cells.  Archive also includes an optimized version of HistoricalLife with a colorset to match LifeHistory, and several support scripts for both rules.|| || http://myweb.tiscali.co.uk/calcy/life/rulesimg/lifehistory.PNG ||
 || 2009 || [http://ruletablerepository.googlecode.com/files/LifeColor_FrancoisBoisson.zip LifeColor] || A colored variant of the Game of Life, by François Boisson. || || http://myweb.tiscali.co.uk/calcy/life/rulesimg/quadlife.PNG ||
@@ -121,8 +106,6 @@ If there is a rule that doesn't fit into one of the above sections, nor does it 
 || 1970 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Ed-rep.tree Ed-rep] || In 1970, Terry Winograd proved that Fredkin's replicator CA (the parity rule B1357/S1357) could be extended to N states, as long as N is a prime number. Golly's demo pattern <a href="http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Patterns/Other-Rules/Ed-rep.rle">Ed-rep.rle</a> shows a 7-color photo of Ed Fredkin that replicates itself.|| [http://hdl.handle.net/1721.1/5843 link] || http://ruletablerepository.googlecode.com/files/Ed-rep.png ||
 || 1989 || [http://myweb.tiscali.co.uk/calcy/life/CyclicCA.table Cyclic CA] || A rule investigated by David Griffeath. This rule is a very basic CA that shows competition emerging from a random initial seed. || [http://en.wikipedia.org/wiki/Cyclic_cellular_automaton link] || http://myweb.tiscali.co.uk/calcy/life/rulesimg/cca.PNG ||
 || 1998 || [http://myweb.tiscali.co.uk/calcy/life/JustFriends.table Just Friends] || A non-totalistic 2D binary rule by David Bell. || || http://myweb.tiscali.co.uk/calcy/life/rulesimg/justfriends.PNG ||
-|| 2007 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/LifeOnTheEdge.tree LifeOnTheEdge.tree] || Franklin T. Adams-Watters described a CA in which all the action occurs on the edges of a square grid.  Each edge can be on or off and has six neighbors, three at each end.  An edge is on in the next generation [http://mathworld.wolfram.com/Iff.html iff] exactly two of the edges in its seven edge neighborhood (including the edge itself) are on. || || http://myweb.tiscali.co.uk/calcy/life/rulesimg/lifeontheedge.PNG ||
-|| 2007 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/LifeOnTheSlope.tree LifeOnTheSlope.tree] || An implementation of the above rule, rotated 45° so that only 2 live states are required. || || http://myweb.tiscali.co.uk/calcy/life/rulesimg/lifeontheslope.PNG ||
 || 2009 || [http://myweb.tiscali.co.uk/calcy/life/TrickyBees.zip Tricky Bees] || A chaotic rule by Alan Tennant where each state becomes progressively more inert in which patterns are surprisingly tricky to construct. This table is actually 17 independent rules, which are combined into one rule table using an 'on' state for each rule. || || http://myweb.tiscali.co.uk/calcy/life/rulesimg/trickybees.PNG ||
 
 
