@@ -2,7 +2,7 @@
 
 ----
 
-= Contents: =
+<h1>Contents:</h1>
 
 <wiki:toc max_depth="2" />
 
