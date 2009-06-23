@@ -119,7 +119,7 @@ If there is a rule that doesn't fit into one of the above sections, nor does it 
   * Codd: The XLife file linked above was the only record TJH could find. He converted it by hand. Update: He has just found a link to the scanned book (above), and it turns out that codd.r had a few crucial errors. It all works now.
   * !JvN29, Nobili32, Hutton32, !WireWorld: TJH started with the C++ implementations in Golly and used the conversion routine.
   * Langtons-Ant: TJH wrote by hand.
-  * BBM: When TJH realised that we could emulate the Margolus neighbourhood he wrote a [http://golly.cvs.sourceforge.net/viewvc/golly/golly/src/Scripts/Python/Margolus/make-Margolus.py?view=markup Python script] to convert from an [http://psoup.math.wisc.edu/mcell/rullex_marg.html MCell specification string] to a .table file. 
+  * BBM: When TJH realised that we could emulate the Margolus neighbourhood he wrote a [http://golly.cvs.sourceforge.net/viewvc/golly/golly/src/Scripts/Python/Margolus/convert-MCell-string.py?view=markup Python script] to convert from an [http://psoup.math.wisc.edu/mcell/rullex_marg.html MCell specification string] to a .table file. 
   * HPP: TJH was all set to make an emulated-Margolus rule for the HPP gas (since MCell has the specification) but then he came across a much nicer way of implementing it directly in a von Neumann neighbourhood CA, so he followed that instead. He had to create reflection states, so it ended up with 34 states in total.
   * Perrier: Gianluca Tempesti sent TJH the rule table - thanks!
   * MRM: APG converted this rule from Paul Chapman's website.
