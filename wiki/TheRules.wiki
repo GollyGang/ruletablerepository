@@ -124,5 +124,5 @@ If there is a rule that doesn't fit into one of the above sections, nor does it 
   * Perrier: Gianluca Tempesti sent TJH the rule table - thanks!
   * MRM: APG converted this rule from Paul Chapman's website.
   * WWE: Supplied by Alan Tennant.
-  * Emulators: Thanks to Andrew Trevorrow for cleaning up the file to work on more platforms.
+  * Emulators: Thanks to Andrew Trevorrow for cleaning up the files to work on case-sensitive file systems.
   * Codd-ICRA: APG converted this rule from the .pdf document, amended and updated it.
