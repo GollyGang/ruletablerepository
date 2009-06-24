@@ -58,7 +58,7 @@ This section contains rule tables specifically used to simulate computers. These
 
 A lattice gas is a cellular automaton used specifically to simulate a gas. Whereas actual gases use operate in the 3-dimensional continuous space, lattice gases use the 2-dimensional discrete space. Interestingly, most of the properties of actual gases can be observed in lattice gases.
 
-|| 1973 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/HPP.table HPP.table] || The HPP lattice gas can be simulated in the Margolus rule, but [http://pages.cs.wisc.edu/~wylie/doc/PhD_thesis.pdf Brian Wylie] showed how to simulate it with 16 states and the von Neumann neighborhood. ||  || http://myweb.tiscali.co.uk/calcy/life/rulesimg/hpp.PNG ||
+|| 1973 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/HPP.table HPP.table] || The HPP lattice gas can be simulated in the Margolus rule, but [http://pages.cs.wisc.edu/~wylie/doc/PhD_thesis.pdf Brian Wylie] showed how to simulate it with 16 states and the von Neumann neighborhood. TJH added another 16 'reflection' states to allow the rule to function in a bounded, non-toroidal space. ||  || http://myweb.tiscali.co.uk/calcy/life/rulesimg/hpp.PNG ||
 || 1981 || [http://myweb.tiscali.co.uk/calcy/life/DLA.zip Diffusion-limited aggregation] || Diffusion-limited aggregation using the HPP lattice gas. This model was studied to simulate the fractal growth characterised by electrolysis of copper sulphate. || [http://en.wikipedia.org/wiki/Diffusion-limited_aggregation link] || http://myweb.tiscali.co.uk/calcy/life/rulesimg/dla.PNG ||
 
 
