@@ -32,7 +32,7 @@ Codd produced a much simpler CA to Von Neumann's original 29-state rule, allowin
 
 Christopher Langton altered Codd's ruleset, relinquishing the universality to allow simple self-replicating loops. Several rules have been made to either:
 
-  * Re-introduce the universal computation/construction abilities. (Tempesti, Perrier)
+  * Re-introduce the computation/construction abilities. (Tempesti, Perrier)
   * Allow a further reduction in size (Byl-loop, Chou-Reggia-1, Chou-Reggia-2)
   * Simulate evolution and genetic mutation. (SDSR, Evoloop, Sexyloop)
 
