@@ -1,5 +1,7 @@
 #summary The rule tables in our repository.
 
+<p align="right">[http://code.google.com/p/ruletablerepository/source/list?path=/wiki/TheRules.wiki Detailed page changes]</p>
+
 ----
 
 <h1>Contents:</h1>
