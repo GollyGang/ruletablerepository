@@ -1,5 +1,4 @@
 #summary The rule tables in our repository.
-#sidebar [http://code.google.com/p/ruletablerepository/source/list?path=/wiki/TheRules.wiki Changes]
 
 ----
 
