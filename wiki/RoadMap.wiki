@@ -1,5 +1,7 @@
 #summary An overview of possible future directions for the rule table format.
 
+<p align="right">[http://code.google.com/p/ruletablerepository/source/list?path=/wiki/RoadMap.wiki Detailed page changes]</p>
+
 Looking further ahead, here's a sketch of how the [TheFormat rule table format] might be extended to support future CA (see also: FutureWork). Items in bold are those currently supported in Golly.
 
 These are just some ideas - please edit or comment to add your opinions. For a good survey on neighborhoods, see http://cell-auto.com/neighbourhood/
@@ -18,7 +20,7 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 || square9_reading_order || {{{a,b,c,d,e,f,g,h,i : a',b',c',d',e',f',g',h',i'}}} || none, rotate, rotate_reflect, reflect_horizontal, reflect_vertical, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/Square9.GIF ||
 || vonNeumann3D || {{{c,x+,x-,y+,y-,z+,z- : c'}}} || none, rotate, rotate_x, rotate_y, rotate_z, reflect_x, reflect_y, reflect_z, rotate24, rotate24reflect, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/3dVonNeumann.PNG ||
 || Moore3D || {{{c,n1..n26 : c'}}} || none, rotate4, rotate8, rotate4_x, rotate4_y, rotate4_z, rotate8_x, rotate8_y, rotate8_z, reflect_x, reflect_y, reflect_z, rotate24, rotate24reflect, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/3dMoore.PNG ||
-|| oneDimensional_radius1 || {{{c,w,e : c'}}} || none, reflect, permutation? || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/1dRadius1.PNG ||
+|| oneDimensional || {{{c,w,e : c'}}} || none, reflect, permutation? || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/1dRadius1.PNG ||
 || oneDimensional_radius2 || {{{c,w2,w,e,e2 : c'}}} || none, reflect, permutation? || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/1dRadius2.PNG ||
 || oneDimensional_partition2 ([http://cell-auto.com/neighbourhood/brickwall/index.html brick wall]) || {{{a,b : a',b'}}} || none, reflect || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/BrickWall.GIF ||
 
