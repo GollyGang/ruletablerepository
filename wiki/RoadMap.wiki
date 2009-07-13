@@ -25,3 +25,16 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 || oneDimensional_partition2 ([http://cell-auto.com/neighbourhood/brickwall/index.html brick wall]) || {{{a,b : a',b'}}} || none, reflect || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/BrickWall.GIF ||
 
 ^*^supported through emulation.
+
+
+
+There are some sets of cellular automata that are best supported independently, rather than incorporating them into rule tables:
+
+
+|| Rule set || Parameters ||
+|| <b>Life-like</b> || b0..b8,s0..s8 ||
+|| <b>Generations</b> || b0..b8,s0..s8,n ||
+|| Larger than Life || range,bMin,bMax,sMin,sMax ||
+
+
+The final rule, Larger than Life, relies on large neighbourhoods; these are not currently supported by Golly.
