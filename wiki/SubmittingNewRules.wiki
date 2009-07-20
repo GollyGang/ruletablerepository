@@ -6,6 +6,18 @@
  * Alternatively, just attach .table files and mail to: tim.hutton@gmail.com or another owner.
  * Ruletree (.tree) files, .icons and .colors (Golly-specific things), in addition to sample patterns, are very welcome.
 
+
+
+== Exemplary rule table: ==
+
+Ideally, the rule should be presented in a ZIP compressed archive, containing:
+
+ * The rule table/tree, paired with a complete description.
+ * Colour files and, if necessary, '.icons' files.
+ * Several sample patterns to demonstrate key features; these sample files should be fully explained.
+
+
+
 == Will they be accepted? ==
 
 We're most interested in CA that are discussed in published papers, but please send in any rule tables of your own invention too.
