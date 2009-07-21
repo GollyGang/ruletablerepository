@@ -1,5 +1,7 @@
 #summary Discusses what the policy is on submitting new rules to the repository, and how to go about it.
 
+<p align="right">[http://code.google.com/p/ruletablerepository/source/list?path=/wiki/SubmittingNewRules.wiki detailed page changes]</p>
+
 == Submission procedure: ==
 
  * Join this project. Email one of the owners (on the sidebar on the right) with your Google Account email address to become a project member. You can then add your rules and descriptions and so on. (Please note that executables (whether in zip files or not) will be rejected by gmail and some other mail clients.)
