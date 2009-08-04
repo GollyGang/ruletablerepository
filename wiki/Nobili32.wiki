@@ -1,0 +1,23 @@
+#summary Renato Nobili's 32-state cellular automaton
+
+= Introduction =
+
+Renato Nobili extended von Neumann's 29-state CA to allow easier crossing of wires, leading to enormously simpler machines. Nobili modified the rules so that the confluent state can act as an ideal signal crossing. He also allowed excited confluent states to store data.
+
+= Details =
+
+
+== Signal crossing ==
+
+In the 29-state CA, pulse signal crossing requires a 4x5 configuration. This is demonstrated in William R. Buckley's 'Sphinx' replicator. To achieve packet signal crossing, more complex devices are required. The smallest possible is a 8x8 configuration devised by Gorman, known as the real-time crossing organ, or RTCO. An alternative, which is easier to construct, is the MCO, which comprises three XOR gates. Both of these crossing organs require synchronisation.
+
+However, Nobili added an extra three states (confluent state with vertical signal, confluent state with horizontal signal and confluent state with both horizontal and vertical signals) to allow ideal signal crossing using a passive configuration. Buckley demonstrated the surplusness of Nobili's modification by constructing two pairs of configurations. These four self-replicators are shown in this [http://uncomp.uwe.ac.uk/automata2008/buckley/buckley.pdf PDF file].
+
+
+== Example replicators ==
+
+Golly includes four self-replicating configurations in this rule. NP-replicator, made by Nobili and Pesavento, was the first self-replicating configuration of von Neumann's design.
+
+N-compressed replicator uses run-length encoding to reduce the size of the tape. Each instruction is coded in two parts: The first part is the codon itself; the second part is the number of times to repeat it. This is handled by a specialised organ. However, this results in a larger corpus than a basic replicator.
+
+Buckley's two designs, codon5-auto-retract and codon4-auto-retract, compromise between tape compression and corpus size to minimise the tape length. The first one uses five-bit codons, and is more efficient than the previous replicators due to its 'auto-retract' feature. When a cell is written, the construction arm automatically retracts one cell. The second one is optimised even further: An extra bit is generated internally, resulting in instructions being only four bits, rather than five bits, long.
