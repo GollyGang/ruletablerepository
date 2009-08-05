@@ -22,4 +22,22 @@ Hutton's replicator contains a simple repeater-emitter loop, like Langton's loop
 
 Note that an active tape is not a prerequisite for linear tape-reading. It is possible to build a machine that uses clocks to constantly send out pulses, which are used to read the tape. Adam P. Goucher has built a configuration in Nobili's rule that replicates in just 3.7 million generations, which is over three orders of magnitude faster than any other replicator in the rule. Hutton's ingenious replicator is still over 80 times faster!
 
-Ordinary transmission states can no longer annihilate special transmission states. In von Neumann's and Nobili's cellular automata, this feature was used in the construction arm and tape reader. Tim Hutton conjectures that his modifications do not compromise the computation- and construction-universality of the cellular automaton.
+The body of Tim hutton's replicator, excluding the tape, is very small compared to the replicators of von Neumann's and Nobili's cellular automata. Indeed, it is compact due to its simplicity - it is nowhere near as complex as the classic replicators. The corpus of the machine only performs the following operations:
+
+  # detect a unique mark on the tape as it goes round.
+  # starts and stops a 6-period clock, which extends the tape.
+  # codes for: extend, turn left, turn left, extend some more.
+  # counts when 3 tape marks have gone past, and switches coder.
+  # when finished writing an empty tape of the right length, divert the tape to copy itself into the new holder.
+  # after the tape is copied across, it separates itself from its old tape to prevent infection spreading from multiple copies.
+
+The corpus of the replicator is shown below:
+
+
+http://www.sq3.org.uk/files/modJVN_body.png
+
+
+As you can see, Nobili's quiescent crossover has been used extensively throughout the machine. Even though Hutton accepted this modification of Nobili's, he discarded the other modification; in Hutton's cellular automaton, excited confluent states are now no longer able to store information.
+
+
+Modifying the rules meant that he had to remove some of the functionality of the original rules. Ordinary transmission states can no longer annihilate special transmission states. In von Neumann's and Nobili's cellular automata, this feature was used in the construction arm and tape reader. Hutton's rule still supports the converse: special transmission states can destroy ordinary transmission states. Tim Hutton conjectures that his modifications do not compromise the computation- and construction-universality of the cellular automaton.
