@@ -14,8 +14,10 @@ Stanislaw Ulam suggested that he use a lattice, rather than continuous space. Jo
 The cellular automaton was born!
 
 
-
 = Details =
+
+
+== The states ==
 
 The 29 states are divided into 5 subsets:
 
@@ -72,3 +74,14 @@ Four confluent states:
   * 26) C<sub>01</sub> (quiescent, but will be excited next cycle)
   * 27) C<sub>10</sub> (excited, but will be quiescent next cycle)
   * 28) C<sub>11</sub> (excited for both cycles)
+
+
+== The rules ==
+
+Transmission states carry information at a rate of one bit per timestep. An excited transmission state represents a '1' and a quiescent transmission state represents a '0'. Excited OTSs annihilate STSs and vice-versa. A confluent state can be used to transfer information from an OTS to a STS. An excited STS, however, will destroy the confluent cell.
+
+If a signal reaches the end of a wire, it will create a sensitised state. The following arrangement of signal pulses will determine the cell that the sensitised state will transform into. This is used for constructing arbitrary quiescent configurations.
+
+A confluent state contains two bits of information, and acts as a delay. A confluent state can act as a fanout device, allowing pulses to be duplicated. Finally, if the confluent state has two or more inputs, it acts as an AND gate. The output of the confluent state is the logical conjunction of its inputs.
+
+http://upload.wikimedia.org/wikipedia/commons/5/50/VonNeumann_CA_demo.gif
