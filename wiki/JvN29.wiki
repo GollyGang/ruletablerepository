@@ -85,3 +85,12 @@ If a signal reaches the end of a wire, it will create a sensitised state. The fo
 A confluent state contains two bits of information, and acts as a delay. A confluent state can act as a fanout device, allowing pulses to be duplicated. Finally, if the confluent state has two or more inputs, it acts as an AND gate. The output of the confluent state is the logical conjunction of its inputs.
 
 http://upload.wikimedia.org/wikipedia/commons/5/50/VonNeumann_CA_demo.gif
+
+
+== Configurations ==
+
+The animation shows a very simple configuration, which consists of a loop of ordinary transmission states connected to a line of special transmission states via a confluent state. A packet of information continually loops around the configuration; the confluent state duplicates this information and transfers it to the line of special transmission states. When the signals reach the end of the line, they trigger the production of a sensitised state. The following signals cause it to become an east-directed STS. Hence, the line will continue increasing in length.
+
+Replicators are far more complex. They usually comprise a corpus of approx. 20 000 cells, and a long tape extending to the right. The corpus itself is composed of tape-reading and construction devices, together with a number of organs that decode and encode signal trains. They also require some form of memory to remember the previous bits of an instruction. This usually requires the use of special transmission states. William R. Buckley has devised three self-constructing configurations in this rule, one of which is a [PartialConstructor partial constructor].
+
+Complex devices generally require signals to be crossed. This is not a trivial problem: for individual pulses it can be solved by a small, quiescent configuration, whereas crossing entire packets is accomplished by a much larger, active configuration. Renato Nobili modified the rules to eliminate this problem, but William R. Buckley demonstrated that these modifications are superfluous; for any configuration in [Nobili32 Nobili's rule], an equivalent, but larger, counterpart can be constructed in von Neumann's original rule.
