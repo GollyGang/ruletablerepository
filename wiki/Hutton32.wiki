@@ -2,13 +2,13 @@
 
 = Introduction =
 
-Tim Hutton modified the Nobili32 ruleset to allow simpler construction and rotational invariance. This has led to him being able to construct a form of replicator based on a repeater-emitter loop, similar to Langton's loops.
+Tim Hutton modified the [Nobili32] ruleset to allow simpler construction and rotational invariance. This has led to him being able to construct a form of replicator based on a repeater-emitter loop, similar to Langton's loops.
 
 
 
 = Details =
 
-In Nobili32, automatic retraction is achieved by modifying the constructor to send a 'retract' pulse after constructing each cell. Moreover, two parallel wires, one composed of ordinary transmission states and the other composed of special transmission states, are required to allow articulation. This results in bulky organs, as in von Neumann's original rule.
+In Nobili's cellular automaton, automatic retraction is achieved by modifying the constructor to send a 'retract' pulse after constructing each cell. Moreover, two parallel wires, one composed of ordinary transmission states and the other composed of special transmission states, are required to allow articulation. This results in bulky organs, as in von Neumann's original rule.
 
 In Hutton's rule, on the other hand, auto-retraction is automatically controlled by the rules themselves. This is accomplished by allowing ordinary transmission states to become special transmission states when in close proximity to a sensitised (transition) state. There is also a signal train allowing a simple retraction (101111).
 
