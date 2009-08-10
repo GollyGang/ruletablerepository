@@ -24,3 +24,88 @@ Documenting parts of patterns by selecting rectangular groups of cells and apply
 The text for them would be stored in the RLE or MC file.
 
 Controll click drag to create, right click them choose delete from dropdown menu to remove (or similar). I know there are coding issues with how UI is drawn atm though.
+=3=
+I'm not sure if this is my method or an obvious algebraic method or even if it definitely works but here goes.
+
+It's based on something similar I did for Minesweeper that did work, inspired by something I read online about suprisingly long distance behaviour in certain Minesweeper configuations.
+
+Start with a simple example from WireWorld.
+http://mathworld.wolfram.com/WireWorld.html
+
+Lets say for simplicity:
+
+000
+133
+000
+
+According to the rules of WireWorld this will progress as so.
+
+000
+213
+000
+
+000
+321
+000
+
+000
+332
+000
+
+000
+333
+000
+
+As the signal travels down the wire
+
+First create (a map?) for each state that changes.
+
+All
+000
+133
+000
+
+State 1
+000
+100
+000
+
+State 2
+000
+000
+000
+
+And assign letters to each cell in each map.
+
+All
+abc
+def
+ghi
+
+State 1
+rst
+uvw
+xyz
+
+State 2
+ABC
+DEF
+GHI
+
+Construct the formuli
+
+(I'm using square brackets here to represent subscript)
+
+a[0] = 0
+...
+I[0] = 0
+
+Skip a to i for this next part.
+
+r[n] = (0 < s[n-1] + u[n-1] + v[n-1] < 3)
+...
+I...
+
+Now you can rearange the equation to ask questions like for example, does this cell ever become state 1 or what are all the possiblilites for the previous generation that could lead to this one.
+
+And specifically code could be written to do this for you.
