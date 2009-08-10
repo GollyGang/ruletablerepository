@@ -1,0 +1,12 @@
+Have several of items at the top of the .table file.
+
+n_states: 20
+grid: yes
+space: euclidean
+sides: 4
+dimentions: 2
+neighborhood: Moore
+symmetries: rotate4
+radius: 2
+
+Thus a neighbourhood can be constructed without the need for too many differnt types.
