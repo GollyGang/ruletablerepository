@@ -21,6 +21,7 @@ These things will vary with each implementation and belong elsewhere.
   * UnboundVariables
   * MargolusNeighborhood
   * HexagonalNeighborhood
+  * AlansIdeas
 
 == Website issues: ==
 
