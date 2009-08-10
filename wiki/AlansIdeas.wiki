@@ -1,3 +1,4 @@
+=1=
 Have several of items at the top of the .table file.
 
 n_states: 20
@@ -16,4 +17,10 @@ symmetries: rotate4
 
 radius: 2
 
-Thus a neighbourhood can be constructed without the need for too many differnt types.
+A neighbourhood could then be constructed without the need for too many differnt types.
+=2=
+Documenting parts of patterns by selecting rectangular groups of cells and applying text to them that apear after zooming in past a 1:1 zoom as a fixed size at a fixed or relative orentation to the box, like a label. The box itself could have thin or\and subtley coloured borders.
+
+The text for them would be stored in the RLE or MC file.
+
+Controll click drag to create, right click them choose delete from dropdown menu to remove (or similar). I know there are coding issues with how UI is drawn atm though.
