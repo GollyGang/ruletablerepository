@@ -140,5 +140,8 @@ I...
 
 Now you can rearange the equation to ask questions like for example, does this cell ever become state 1 or what are all the possiblilites for the previous generation that could lead to this one.
 
-And specifically code could be written to do this for you.
+And specifically code could be written into Golly to do this.
+
   I don't really understand your suggestion but either way there's nothing stopping you using this kind of notation in your own tools (e.g. python scripts) before compiling them down to rule tables or rule trees. We decided early on that we didn't want to support [http://www.jcasim.de/ CDL]-style expression languages - and so far we haven't been regretting that decision - even Wireworld is reasonably simple to read in the rule table format. -- TJH
+
+I don't mean a fancy rule, I mean a way to perform other functions in Golly. For example you could request extra information about a cell. For example cell (100, 120) could currently be state 3, and it could be determined that after running the CA for an infinite length of time it would eventually become at some point state 4 and 6 but never states 0, 1, 2, 3 or 5.
