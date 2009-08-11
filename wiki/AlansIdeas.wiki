@@ -13,7 +13,26 @@ radius: 2
 }}}
 
 A neighbourhood could then be constructed without the need for too many differnt types.
-  What is 'grid'? How would non-Euclidean spaces be defined? What does 'sides' mean? Also I can see several problems with this approach - it doesn't adapt to the partitioning neighborhoods very well, for example, and some of these headers won't make sense with some CA. The advantage of our current set of headers (n_states,neighborhood,symmetries) is that they apply to all possible CA, as far as we can tell. Can you clarify your suggestion? -- TJH
+
+  What is 'grid'?
+
+CA's that line up nodes (cells) in a grid. In a practical sence this will always be "yes".
+
+  How would non-Euclidean spaces be defined?
+
+Hyperbolic space for example.
+
+  What does 'sides' mean?
+
+Most CA's use a 4 Sided grid but one in particular uses a 7 sided grid requiring hyperbolic rendering to draw it, there are also 6 sided hexagonal grids and 3 sided grids that work on standard space. 1D CA's are 2 sided grids.
+
+  Also I can see several problems with this approach - it doesn't adapt to the partitioning neighborhoods very well, for example, and some of these headers won't make sense with some CA. The advantage of our current set of headers (n_states,neighborhood,symmetries) is that they apply to all possible CA, as far as we can tell.
+
+The options in 'Neighborhood' depends on some of the others but other that that it is quite simple and consistant. Give me a CA that either in Golly or not yet avalible and I will tell you the set-up for it.
+
+  Can you clarify your suggestion? -- TJH
+
+I hope I have done so, if not please tell me.
 =2=
 Documenting parts of patterns by selecting rectangular groups of cells and applying text to them that apear after zooming in past a 1:1 zoom as a fixed size at a fixed or relative orentation to the box, like a label. The box itself could have thin or\and subtley coloured borders.
 
