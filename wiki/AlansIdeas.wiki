@@ -140,7 +140,7 @@ GHI
 }}}
 
 
-Construct the formuli.
+Construct the algebraic formuli (square brackets = subscript).
 
 {{{
 a[0] = 0
