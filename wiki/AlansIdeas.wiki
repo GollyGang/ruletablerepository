@@ -42,7 +42,7 @@ Controll click drag to create, right click them choose delete from dropdown menu
 
   This suggestion isn't anything to do with rule table files though - you should seek support for this idea on the golly list, not here. Or implement it yourself so we can see an example of what you mean. -- TJH
 
-I can't code it into Golly but do you want me to create a fake screenshot or two to show how it could work?
+I can't code it into Golly but do you want me to create a fake screenshot or two to show how it could work? List pointed me here.
 =3=
 I'm not sure if this is my method or an obvious algebraic method or even if it definitely works but here goes.
 
