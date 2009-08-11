@@ -4,29 +4,35 @@
 
 == Submission procedure: ==
 
- * Join this project. Email one of the owners (on the sidebar on the right) with your Google Account email address to become a project member. You can then add your rules and descriptions and so on. (Please note that executables (whether in zip files or not) will be rejected by gmail and some other mail clients.)
- * Alternatively, just attach .table files and mail to: tim.hutton@gmail.com or another owner.
- * Ruletree (.tree) files, .icons and .colors (Golly-specific things), in addition to sample patterns, are very welcome.
-
-
-
-== Exemplary rule table: ==
-
-Ideally, the rule should be presented in a ZIP compressed archive, containing:
-
- * The rule table/tree, paired with a complete description.
- * Colour files and, if necessary, '.icons' files.
- * Several sample patterns to demonstrate key features; these sample files should be fully explained.
-
-
+Either:
+ <b>Join this project.</b> Email one of the owners (on the sidebar on the right) with your Google Account email address to become a project member. You can then add your rules and descriptions and so on.
+Or:
+ <b>Email</b> your contribution to one of the project members (e.g. [mailto:tim.hutton@gmail.com tim.hutton@gmail.com]). Put together a zip file as described below.
 
 == Will they be accepted? ==
 
-We're most interested in CA that are discussed in published papers, but please send in any rule tables of your own invention too.
+Yes! This is a community project, so anything of interest to the community should be included. If we all work in public then we all get the benefit of cross-fertilizing each others' ideas.
 
-Guidelines:
-  * Include a new rule table. Cell patterns on their own are less likely to be of interest, unless they're spectacular or demonstrate some important method or component.
-  * All patterns and rule tables should have clear explanations of what they do and what motivated their development. (Not all our content currently matches this criterion!)
-  * If your rule table is extremely good or a classic of the literature, please consider submitting it to the Golly project instead, and we'll link to it from here. The Rule Table Repository is more of a community sharing area so has a lower standard of acceptance.
-  * Patterns should accompany each rule table submission, to show what it does. Ensure that the rule name (in the RLE) exactly matches the .table file name case-sensitively. (Some operating systems require this, so we must follow this rule.) Also, by convention all rule names should start with a capital letter.
-  * If adding files or links to TheRules page directly, please make sure that the Golly access page (in the source code repository) is maintained in sync. This means [http://code.google.com/p/ruletablerepository/source/checkout checking-out] the code, and committing changes to golly-archive.html. If you are unable to do this then make your changes to the HTML file and send it to Tim Hutton, together with a brief (single line) description of the changes you made.
+== What to send: ==
+
+Ideally, the rule should be presented in a ZIP compressed archive, containing:
+
+ * The transition file(s) ({{{.table}}}/{{{.tree}}}) containing comments that describe the states and the transitions.
+ * Display files as needed ({{{.colors}}}, {{{.icons}}}).
+ * Several sample patterns ({{{.rle}}}, {{{.mc}}}, etc.) to demonstrate key features; these sample files should contain explanatory comments.
+ * A brief description of the rule, including the person who invented it and so on, so we can add some text to TheRules.
+
+Golly can now open zip files directly - check that your zip file works.
+
+If your rule table is extremely good or a classic of the literature, please consider submitting it to the Golly project instead, and we'll link to it from here. The Rule Table Repository is more of a community sharing area so has a lower standard of acceptance.
+
+== Everything here is free ==
+
+Please bear in mind that all content on the rule table repository is available to the public for free for any purpose. Our source code is available under the GPL license, while the rule tables and so on are all essentially under a public domain license. Please don't submit files that contain other license claims - don't assert copyright on your creations for example. In general the community tries to be very careful to correctly attribute credit but if you're not happy with this rule then don't submit your stuff.
+
+== Editing TheRules page: ==
+
+If you're a project member you can edit TheRules directly to add your contribution. Some things to bear in mind:
+
+  * Please make sure that the Golly access page (in the source code repository) is maintained in sync. This means [http://code.google.com/p/ruletablerepository/source/checkout checking-out] the code, and committing changes to golly-archive.html. If you are unable to do this then make your changes to the HTML file and send it to Tim Hutton, together with a brief (single line) description of the changes you made, for the changelog.
+  * Please upload your zip files to the our file download area so that they are stored here. Currently we link to some files stored elsewhere but this runs the risk of broken links in future.
