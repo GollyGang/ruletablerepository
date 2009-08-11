@@ -1,29 +1,26 @@
 =1=
 Have several of items at the top of the .table file.
 
+{{{
 n_states: 20
-
 grid: yes
-
 space: euclidean
-
 sides: 4
-
 dimentions: 2
-
 neighborhood: Moore
-
 symmetries: rotate4
-
 radius: 2
+}}}
 
 A neighbourhood could then be constructed without the need for too many differnt types.
+  What is 'grid'? How would non-Euclidean spaces be defined? What does 'sides' mean? Also I can see several problems with this approach - it doesn't adapt to the partitioning neighborhoods very well, for example, and some of these headers won't make sense with some CA. The advantage of our current set of headers (n_states,neighborhood,symmetries) is that they apply to all possible CA, as far as we can tell. Can you clarify your suggestion? -- TJH
 =2=
 Documenting parts of patterns by selecting rectangular groups of cells and applying text to them that apear after zooming in past a 1:1 zoom as a fixed size at a fixed or relative orentation to the box, like a label. The box itself could have thin or\and subtley coloured borders.
 
 The text for them would be stored in the RLE or MC file.
 
 Controll click drag to create, right click them choose delete from dropdown menu to remove (or similar). I know there are coding issues with how UI is drawn atm though.
+  This suggestion isn't anything to do with rule table files though - you should seek support for this idea on the golly list, not here. Or implement it yourself so we can see an example of what you mean. -- TJH
 =3=
 I'm not sure if this is my method or an obvious algebraic method or even if it definitely works but here goes.
 
@@ -34,43 +31,37 @@ http://mathworld.wolfram.com/WireWorld.html
 
 Lets say for simplicity:
 
+{{{
 000
-
 133
-
 000
+}}}
 
 According to the rules of WireWorld this will progress as so.
 
+{{{
 000
-
 213
-
 000
+}}}
 
-.
-
+{{{
 000
-
 321
-
 000
+}}}
 
-.
-
+{{{
 000
-
 332
-
 000
+}}}
 
-.
-
+{{{
 000
-
 333
-
 000
+}}}
 
 As the signal travels down the wire
 
@@ -78,80 +69,76 @@ First create (a map?) for each state that changes.
 
 All
 
+{{{
 000
-
 133
-
 000
-
-.
+}}}
 
 State 1
 
+{{{
 000
-
 100
-
 000
-
-.
+}}}
 
 State 2
 
+{{{
 000
-
 000
-
 000
+}}}
 
 And assign letters to each cell in each map.
 
 All
 
+{{{
 abc
-
 def
-
 ghi
-
-.
+}}}
 
 State 1
 
+{{{
 rst
-
 uvw
-
 xyz
-
-.
+}}}
 
 State 2
 
+{{{
 ABC
-
 DEF
-
 GHI
+}}}
 
-.
 
-Construct the formuli. I'm using square brackets here to represent subscript. You will need for now to view source on this to see the fomuli correctly as the Wiki has interpreted some of it and messed it up.
+Construct the formuli.
 
+{{{
 a[0] = 0
 
 ...
 
 I[0] = 0
+}}}
 
 Skip a to i for this next part.
 
+{{{
 r[n] = (0 < s[n-1] + u[n-1] + v[n-1] < 3)
 
 ...
 
 I...
+}}}
 
 Now you can rearange the equation to ask questions like for example, does this cell ever become state 1 or what are all the possiblilites for the previous generation that could lead to this one.
 
 And specifically code could be written to do this for you.
+  I don't really understand your suggestion but either way there's nothing stopping you using this kind of notation in your own tools (e.g. python scripts) before compiling them down to rule tables or rule trees. We decided early on that we didn't want to support [http://www.jcasim.de/ CDL]-style expression languages - and so far we haven't been regretting that decision - even Wireworld is reasonably simple to read in the rule table format. -- TJH
