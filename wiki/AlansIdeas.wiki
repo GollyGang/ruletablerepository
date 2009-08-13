@@ -13,26 +13,19 @@ radius: 2
 }}}
 
 A neighbourhood could then be constructed without the need for too many differnt types.
+ * What is 'grid'? -- TJH
+  * CA's that line up nodes (cells) in a grid. In a practical sence this will always be "yes".  -AT
+   * What's the alternative? -- TJH
+ * How would non-Euclidean spaces be defined? -- TJH
+  * Hyperbolic space for example. -- AT
+   * The space of possible 2D tilings where each cell is the same regular polygon (although we could also consider more general [http://en.wikipedia.org/wiki/Tessellations tessellations]) is given by a table of [http://en.wikipedia.org/wiki/Schl%C3%A4fli_symbol Schläfli symbols] {p,q}. The pairs {3,6}, {4,4} and {6,3} are the three normal grids. Five smaller pairs give the five platonic solids which we're probably not interested in. Larger values (e.g. {7,3} - the packing of heptagons with three around each vertex) are hyperbolic. So having a simple flag saying 'space:euclidean' or 'space:hyperbolic' isn't that useful - it's not specific enough. -- TJH
+ * What does 'sides' mean? -- TJH
+  * Most CA's use a 4 Sided grid but one in particular uses a 7 sided grid requiring hyperbolic rendering to draw it, there are also 6 sided hexagonal grids and 3 sided grids that work on standard space. 1D CA's are 2 sided grids. -- AT
+   * That's one parameter (p) of the Schläfli table, we'd need q as well in order to define the space. What is the 7-sided grid example you mention? -- TJH
+ * Also I can see several problems with this approach - it doesn't adapt to the partitioning neighborhoods very well, for example, and some of these headers won't make sense with some CA. The advantage of our current set of headers (n_states,neighborhood,symmetries) is that they apply to all possible CA, as far as we can tell. -- TJH
+  * The options in 'Neighborhood' depends on some of the others but other that that it is quite simple and consistant. Give me a CA that either in Golly or not yet avalible and I will tell you the set-up for it. -- AT
+   * [http://code.google.com/p/ruletablerepository/wiki/RoadMap square4_cyclic]? You could just specify {{{neighborhood:square4_cyclic}}} as in the RoadMap proposal but then many of your other parameters will be redundant and just add confusion. With our current proposal, if we want to add a {7,3} neighborhood it wouldn't be too hard - we could just say {{{neighborhood:hyperbolic_7_3}}} for example - I don't see a problem with adding neighborhoods as we need them, since making an all-powerful scheme from the outset will add a lot of confusing complexity. And in any case, hyperbolic CA are hugely problematic to implement in terms of cell storage and rendering, so it's not a high priority I wouldn't think. I really appreciate your input though, it is a useful discussion to be having. -- TJH
 
-  What is 'grid'? -- TJH
-
-CA's that line up nodes (cells) in a grid. In a practical sence this will always be "yes".
-
-  How would non-Euclidean spaces be defined? -- TJH
-
-Hyperbolic space for example.
-
-  What does 'sides' mean? -- TJH
-
-Most CA's use a 4 Sided grid but one in particular uses a 7 sided grid requiring hyperbolic rendering to draw it, there are also 6 sided hexagonal grids and 3 sided grids that work on standard space. 1D CA's are 2 sided grids.
-
-  Also I can see several problems with this approach - it doesn't adapt to the partitioning neighborhoods very well, for example, and some of these headers won't make sense with some CA. The advantage of our current set of headers (n_states,neighborhood,symmetries) is that they apply to all possible CA, as far as we can tell. -- TJH
-
-The options in 'Neighborhood' depends on some of the others but other that that it is quite simple and consistant. Give me a CA that either in Golly or not yet avalible and I will tell you the set-up for it.
-
-  Can you clarify your suggestion? -- TJH
-
-I hope I have done so, if not please tell me.
 =2=
 Documenting parts of patterns by selecting rectangular groups of cells and applying text to them that apear after zooming in past a 1:1 zoom as a fixed size at a fixed or relative orentation to the box, like a label. The box itself could have thin or\and subtley coloured borders.
 
@@ -40,9 +33,11 @@ The text for them would be stored in the RLE or MC file.
 
 Controll click drag to create, right click them choose delete from dropdown menu to remove (or similar). I know there are coding issues with how UI is drawn atm though.
 
-  This suggestion isn't anything to do with rule table files though - you should seek support for this idea on the golly list, not here. Or implement it yourself so we can see an example of what you mean. -- TJH
+ This suggestion isn't anything to do with rule table files though - you should seek support for this idea on the golly list, not here. Or implement it yourself so we can see an example of what you mean. -- TJH
 
-I can't code it into Golly but do you want me to create a fake screenshot or two to show how it could work? List pointed me here.
+  I can't code it into Golly but do you want me to create a fake screenshot or two to show how it could work? List pointed me here. -- AT
+
+   Did the list point you here? I don't see that email. I don't think the RTR is the right place to discuss this. --TJH
 =3=
 I'm not sure if this is my method or an obvious algebraic method or even if it definitely works but here goes.
 
@@ -163,7 +158,6 @@ I...
 Now you can rearange the equation to ask questions like for example, does this cell ever become state 1 or what are all the possiblilites for the previous generation that could lead to this one.
 
 And specifically code could be written into Golly to do this.
-
-  I don't really understand your suggestion but either way there's nothing stopping you using this kind of notation in your own tools (e.g. python scripts) before compiling them down to rule tables or rule trees. We decided early on that we didn't want to support [http://www.jcasim.de/ CDL]-style expression languages - and so far we haven't been regretting that decision - even Wireworld is reasonably simple to read in the rule table format. -- TJH
-
-I don't mean a way to change the rule table format, I mean a way to perform other functions in Golly. For example a user could request extra information about a cell. For example cell (100, 120) could currently be state 3, and it could be determined that after running the CA for an infinite length of time it would eventually become at some point state 4 and 6 but never states 0, 1, 2, 3 or 5 without actucally having to run the CA forever to find out.
+ * I don't really understand your suggestion but either way there's nothing stopping you using this kind of notation in your own tools (e.g. python scripts) before compiling them down to rule tables or rule trees. We decided early on that we didn't want to support [http://www.jcasim.de/ CDL]-style expression languages - and so far we haven't been regretting that decision - even Wireworld is reasonably simple to read in the rule table format. -- TJH
+  * I don't mean a way to change the rule table format, I mean a way to perform other functions in Golly. For example a user could request extra information about a cell. For example cell (100, 120) could currently be state 3, and it could be determined that after running the CA for an infinite length of time it would eventually become at some point state 4 and 6 but never states 0, 1, 2, 3 or 5 without actucally having to run the CA forever to find out. --AT
+   * Ah, OK, you're not talking about rule tables. So again this isn't really the right place to discuss this. Why don't you knock up a demo to explore whether this idea would be useful? -- TJH
