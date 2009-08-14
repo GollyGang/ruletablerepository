@@ -33,21 +33,20 @@ A neighbourhood could then be constructed without the need for too many differnt
   * The options in 'Neighborhood' depends on some of the others but other that that it is quite simple and consistant. Give me a CA that either in Golly or not yet avalible and I will tell you the set-up for it. -- AT
    * [http://code.google.com/p/ruletablerepository/wiki/RoadMap square4_cyclic]? You could just specify {{{neighborhood:square4_cyclic}}} as in the RoadMap proposal but then many of your other parameters will be redundant and just add confusion. With our current proposal, if we want to add a {7,3} neighborhood it wouldn't be too hard - we could just say {{{neighborhood:hyperbolic_7_3}}} for example - I don't see a problem with adding neighborhoods as we need them, since making an all-powerful scheme from the outset will add a lot of confusing complexity. And in any case, hyperbolic CA are hugely problematic to implement in terms of cell storage and rendering, so it's not a high priority I wouldn't think. I really appreciate your input though, it is a useful discussion to be having. -- TJH
     * If it is square4_cyclic it will still be a 4 sided (or what the D&S way of saying this) grid and will still have 4 dimentions with a radius of 1. Remembering the structure of the neighborhood naming and what is avalible and what wont work will be more complicated, unless you implement a system like myne but with underscores as feild delimiters -- AT
-
 =2=
 Documenting parts of patterns by selecting rectangular groups of cells and applying text to them that apear after zooming in past a 1:1 zoom as a fixed size at a fixed or relative orentation to the box, like a label. The box itself could have thin or\and subtley coloured borders.
 
 The text for them would be stored in the RLE or MC file.
 
-Controll click drag to create, right click them choose delete from dropdown menu to remove (or similar). I know there are coding issues with how UI is drawn atm though.
+* Controll click drag to create, right click them choose delete from dropdown menu to remove (or similar). I know there are coding issues with how UI is drawn atm though.
 
- This suggestion isn't anything to do with rule table files though - you should seek support for this idea on the golly list, not here. Or implement it yourself so we can see an example of what you mean. -- TJH
+ * This suggestion isn't anything to do with rule table files though - you should seek support for this idea on the golly list, not here. Or implement it yourself so we can see an example of what you mean. -- TJH
 
-  I can't code it into Golly but do you want me to create a fake screenshot or two to show how it could work? List pointed me here. -- AT
+  * I can't code it into Golly but do you want me to create a fake screenshot or two to show how it could work? List pointed me here. -- AT
 
-   Did the list point you here? I don't see that email. I don't think the RTR is the right place to discuss this. --TJH
+   * Did the list point you here? I don't see that email. I don't think the RTR is the right place to discuss this. -- TJH
 
-   Sorry, I'm sure I saw it in my email, want me to remove this or more prefrably move it somewhere else?
+   * Sorry, I'm sure I saw it in my email, want me to remove this or more prefrably move it somewhere else? Also see my reply to this question in the next point. -- AT
 =3=
 I'm not sure if this is my method or an obvious algebraic method or even if it definitely works but here goes.
 
@@ -171,4 +170,7 @@ And specifically code could be written into Golly to do this.
  * I don't really understand your suggestion but either way there's nothing stopping you using this kind of notation in your own tools (e.g. python scripts) before compiling them down to rule tables or rule trees. We decided early on that we didn't want to support [http://www.jcasim.de/ CDL]-style expression languages - and so far we haven't been regretting that decision - even Wireworld is reasonably simple to read in the rule table format. -- TJH
   * I don't mean a way to change the rule table format, I mean a way to perform other functions in Golly. For example a user could request extra information about a cell. For example cell (100, 120) could currently be state 3, and it could be determined that after running the CA for an infinite length of time it would eventually become at some point state 4 and 6 but never states 0, 1, 2, 3 or 5 without actucally having to run the CA forever to find out. --AT
    * Ah, OK, you're not talking about rule tables. So again this isn't really the right place to discuss this. Why don't you knock up a demo to explore whether this idea would be useful? -- TJH
-    * Alan, if you can effect your suggestion in polynomial time then you would win the P=NP? problem, which is worth *$1 000 000 USD*. Good luck! -- APG
+   * Please let me store the idea here for now. -- AT
+   * The demo would involve simplifying any algebraic equation. The coding is beyond me. -- AT
+   * Alan, if you can effect your suggestion in polynomial time then you would win the P=NP? problem, which is worth *$1 000 000 USD*. Good luck! -- APG
+    * Therefore it probbably dosn't do it in polynomial time. -- AT
