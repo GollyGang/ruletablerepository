@@ -38,15 +38,15 @@ Documenting parts of patterns by selecting rectangular groups of cells and apply
 
 The text for them would be stored in the RLE or MC file.
 
-* Controll click drag to create, right click them choose delete from dropdown menu to remove (or similar). I know there are coding issues with how UI is drawn atm though.
+ * Controll click drag to create, right click them choose delete from dropdown menu to remove (or similar). I know there are coding issues with how UI is drawn atm though.
 
- * This suggestion isn't anything to do with rule table files though - you should seek support for this idea on the golly list, not here. Or implement it yourself so we can see an example of what you mean. -- TJH
+  * This suggestion isn't anything to do with rule table files though - you should seek support for this idea on the golly list, not here. Or implement it yourself so we can see an example of what you mean. -- TJH
 
-  * I can't code it into Golly but do you want me to create a fake screenshot or two to show how it could work? List pointed me here. -- AT
+   * I can't code it into Golly but do you want me to create a fake screenshot or two to show how it could work? List pointed me here. -- AT
 
-   * Did the list point you here? I don't see that email. I don't think the RTR is the right place to discuss this. -- TJH
+    * Did the list point you here? I don't see that email. I don't think the RTR is the right place to discuss this. -- TJH
 
-   * Sorry, I'm sure I saw it in my email, want me to remove this or more prefrably move it somewhere else? Also see my reply to this question in the next point. -- AT
+    * Sorry, I'm sure I saw it in my email, want me to remove this or more prefrably move it somewhere else? Also see my reply to this question in the next point. -- AT
 =3=
 I'm not sure if this is my method or an obvious algebraic method or even if it definitely works but here goes.
 
