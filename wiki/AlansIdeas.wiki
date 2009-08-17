@@ -26,7 +26,7 @@ A neighbourhood could then be constructed without the need for too many differnt
   * Most CA's use a 4 Sided grid but one in particular uses a 7 sided grid requiring hyperbolic rendering to draw it, there are also 6 sided hexagonal grids and 3 sided grids that work on standard space. 1D CA's are 2 sided grids. -- AT
    * That's one parameter (p) of the Schläfli table, we'd need q as well in order to define the space. What is the 7-sided grid example you mention? -- TJH
     * Margensterns Trains found somewhere here http://uncomp.uwe.ac.uk sorry thats a bit vaugue as I can't remember exactly what link I found it in. I thought of the name based on it's creator and the terminology used in it's description as Margenstern didnt seem to think it needed a name. I also made a proof of concept for some aspects of the movement of the train in an RT. I presume we don't need this feild then as it can be merged with the D&S stuff in the space type feild -- AT
-      * [http://www.lita.univ-metz.fr/~margens/research.html Margenstern's papers] He talks about the heptagrid ({7,3}) and the pentagrid ({5,4}) but I haven't found the trains CA. -- TJH
+      * [http://www.lita.univ-metz.fr/~margens/research.html Margenstern's papers]. [http://portal.acm.org/citation.cfm?id=771537 This one] talks about trains, and links to some of his other papers that might be relevant. -- TJH
     * I assume that he means Order-3 heptagonal tiling (see Wikipedia). -- APG
      * No, sorry I meant: what is the rule? -- TJH
       * I believe that it's called "Morgenstern's Trains". -- APG
