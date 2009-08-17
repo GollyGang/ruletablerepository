@@ -26,6 +26,7 @@ A neighbourhood could then be constructed without the need for too many differnt
   * Most CA's use a 4 Sided grid but one in particular uses a 7 sided grid requiring hyperbolic rendering to draw it, there are also 6 sided hexagonal grids and 3 sided grids that work on standard space. 1D CA's are 2 sided grids. -- AT
    * That's one parameter (p) of the Schläfli table, we'd need q as well in order to define the space. What is the 7-sided grid example you mention? -- TJH
     * Margensterns Trains found somewhere here http://uncomp.uwe.ac.uk sorry thats a bit vaugue as I can't remember exactly what link I found it in. I thought of the name based on it's creator and the terminology used in it's description as Margenstern didnt seem to think it needed a name. I also made a proof of concept for some aspects of the movement of the train in an RT. I presume we don't need this feild then as it can be merged with the D&S stuff in the space type feild -- AT
+      * [http://www.lita.univ-metz.fr/~margens/research.html Margenstern's papers] He talks about the heptagrid ({7,3}) and the pentagrid ({5,4}) but I haven't found the trains CA. -- TJH
     * I assume that he means Order-3 heptagonal tiling (see Wikipedia). -- APG
      * No, sorry I meant: what is the rule? -- TJH
       * I believe that it's called "Morgenstern's Trains". -- APG
@@ -38,15 +39,12 @@ Documenting parts of patterns by selecting rectangular groups of cells and apply
 
 The text for them would be stored in the RLE or MC file.
 
- * Controll click drag to create, right click them choose delete from dropdown menu to remove (or similar). I know there are coding issues with how UI is drawn atm though.
-
-  * This suggestion isn't anything to do with rule table files though - you should seek support for this idea on the golly list, not here. Or implement it yourself so we can see an example of what you mean. -- TJH
-
-   * I can't code it into Golly but do you want me to create a fake screenshot or two to show how it could work? List pointed me here. -- AT
-
-    * Did the list point you here? I don't see that email. I don't think the RTR is the right place to discuss this. -- TJH
-
-    * Sorry, I'm sure I saw it in my email, want me to remove this or more prefrably move it somewhere else? Also see my reply to this question in the next point. -- AT
+  * Controll click drag to create, right click them choose delete from dropdown menu to remove (or similar). I know there are coding issues with how UI is drawn atm though.
+    * This suggestion isn't anything to do with rule table files though - you should seek support for this idea on the golly list, not here. Or implement it yourself so we can see an example of what you mean. -- TJH
+      * I can't code it into Golly but do you want me to create a fake screenshot or two to show how it could work? List pointed me here. -- AT
+        * Did the list point you here? I don't see that email. I don't think the RTR is the right place to discuss this. -- TJH
+          * Sorry, I'm sure I saw it in my email, want me to remove this or more prefrably move it somewhere else? Also see my reply to this question in the next point. -- AT
+            * No need to remove it. All discussion is welcome - it's just that we should keep this website focussed on the approach of using rule tables, so this discussion will be better served elsewhere. -- TJH
 =3=
 I'm not sure if this is my method or an obvious algebraic method or even if it definitely works but here goes.
 
@@ -167,10 +165,10 @@ I...
 Now you can re-arrange the equation to ask questions like for example, does this cell ever become state 1 or what are all the possibilites for the previous generation that could lead to this one.
 
 And specifically code could be written into Golly to do this.
- * I don't really understand your suggestion but either way there's nothing stopping you using this kind of notation in your own tools (e.g. python scripts) before compiling them down to rule tables or rule trees. We decided early on that we didn't want to support [http://www.jcasim.de/ CDL]-style expression languages - and so far we haven't been regretting that decision - even Wireworld is reasonably simple to read in the rule table format. -- TJH
-  * I don't mean a way to change the rule table format, I mean a way to perform other functions in Golly. For example a user could request extra information about a cell. For example cell (100, 120) could currently be state 3, and it could be determined that after running the CA for an infinite length of time it would eventually become at some point state 4 and 6 but never states 0, 1, 2, 3 or 5 without actucally having to run the CA forever to find out. --AT
-   * Ah, OK, you're not talking about rule tables. So again this isn't really the right place to discuss this. Why don't you knock up a demo to explore whether this idea would be useful? -- TJH
-   * Please let me store the idea here for now. -- AT
-   * The demo would involve simplifying any algebraic equation. The coding is beyond me. -- AT
-   * Alan, if you can effect your suggestion in polynomial time then you would win the P=NP? problem, which is worth *$1 000 000 USD*. Good luck! -- APG
-    * Therefore it probbably dosn't do it in polynomial time. -- AT
+  * I don't really understand your suggestion but either way there's nothing stopping you using this kind of notation in your own tools (e.g. python scripts) before compiling them down to rule tables or rule trees. We decided early on that we didn't want to support [http://www.jcasim.de/ CDL]-style expression languages - and so far we haven't been regretting that decision - even Wireworld is reasonably simple to read in the rule table format. -- TJH
+    * I don't mean a way to change the rule table format, I mean a way to perform other functions in Golly. For example a user could request extra information about a cell. For example cell (100, 120) could currently be state 3, and it could be determined that after running the CA for an infinite length of time it would eventually become at some point state 4 and 6 but never states 0, 1, 2, 3 or 5 without actucally having to run the CA forever to find out. --AT
+      * Ah, OK, you're not talking about rule tables. So again this isn't really the right place to discuss this. Why don't you knock up a demo to explore whether this idea would be useful? -- TJH
+        * Please let me store the idea here for now. -- AT
+        * The demo would involve simplifying any algebraic equation. The coding is beyond me. -- AT
+          * Alan, if you can effect your suggestion in polynomial time then you would win the P=NP? problem, which is worth *$1 000 000 USD*. Good luck! -- APG
+            * Therefore it probbably dosn't do it in polynomial time. -- AT
