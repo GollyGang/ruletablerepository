@@ -104,7 +104,7 @@ Starting sequence:
     # The echo discriminator sends a 7 signal down the "1" wire but this is blocked at v,,i,, and H since these gates are all closed. The echo discriminator also generates a 7 signal on the 'echo receipt' wire for every echo. Gates t0-t11 are closed too but gate t12 has been opened, so the signal passes onto control input e12. 
     # The microprogram sequence beginning e12 is now executed. (Gate t12 is subordinate-restored in TJH's implementation - Codd forgot to close this gate.) So you can see that the control section is just wiring - signals from the input wires are branched out onto certain output wires that lead to the gates. These gate-controlling wires aren't shown in the diagram at the top but can be seen in the implementation which you can download and run.
     
-The machine continues to operate as described. Instructions on the program tape P are sampled in blocks of 4 bits and open various gates in the decoder. Upon read-out (the wire past F) the value stored in decoded and a signal emerges on one of the lines f0-f15, as listed below:
+The machine continues to operate as described. Instructions on the program tape P are sampled in blocks of 4 bits and open various gates in the decoder. Upon read-out (the wire past F) the value stored is decoded and a signal emerges on one of the lines f0-f15, as listed below:
 
 {{{
 f0: (not connected to anything, causes the machine to halt)
@@ -119,12 +119,11 @@ f8: rl
 f9: rr
 f10: m (mark)
 f11: e (erase)
-f12: t(k) : sense the bit (exactly one of C or D must be open) on p_i (if zero) or q_i (if one)
+f12: jump_if_one:k (see below)
 f13: nop
 f14: i (inject the sheathing signal into the new machine)
 f15: j (inject the trigger signal into the new machine)
 }}}
-
 
 With the right instructions on the program tape (P) and the data tape (D), the machine is capable of self-replication. One such program is listed below.
 
@@ -183,7 +182,7 @@ inject:           # done retracting vertically: sheath, trigger, retract and sto
     e,rl,r,r,xr,x,i,j,r,r,rr,r,r,r,stop
 }}}
 
-This program is compiled down to a binary sequence of cells before being written to the program tape (P). Entries following # are comments. Entries ending in colons are labels, as jump destinations, and are replaced by command numbering in the final program. Three parameters are used: N=15 is defined below, while X=22252 and Y=4189 contain the position of the data tape of the new machine, relative to its bottom-left corner.
+This program is compiled down to a binary sequence of cells before being written to the program tape (P), with the 4-bit encoding described above. Entries following # are comments. Entries ending in colons are labels, as jump destinations, and are replaced by command numbering in the final program - the jump_if_one command (1010 = f12) is followed by a [http://en.wikipedia.org/wiki/Unary_coding unary encoding] of the index of the program command (k) to jump to: a string of k ones followed by a zero. Three parameters are used: N=15 is defined below, while X=22252 and Y=4189 contain the position of the data tape of the new machine, relative to its bottom-left corner.
 
 The data tape contains an encoding of the body of the machine:
 {{{
