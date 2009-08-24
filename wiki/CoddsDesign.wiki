@@ -101,9 +101,32 @@ Starting sequence:
     # The next 7 signal exposes the end of the wire for sensing.
     # The next 7 signal causes an echo to return from the marker tape, of type 6 or 7 depending whether the bit was 0 or 1. In this case we know that the first bit is 1, so the echo is a type 7 signal.
     # The echo switch sends the returning echo in the direction of the echo discriminator.
-    # The echo discriminator sends a 7 signal down the "1" wire but this is blocked at v,,i,, and H since these gates are all closed. Gates t0-t11 are closed too but gate t12 has been opened, so the signal passes onto control input e12. 
-    # The microprogram sequence beginning e12 is now executed. (Gate t12 is subordinate-restored in TJH's implementation - Codd forgot to close this gate.)
-    # The machine continues to operate as described. With the right instructions on the program tape (P) and the data tape (D), the machine is capable of self-replication. One such program is listed below.
+    # The echo discriminator sends a 7 signal down the "1" wire but this is blocked at v,,i,, and H since these gates are all closed. The echo discriminator also generates a 7 signal on the 'echo receipt' wire for every echo. Gates t0-t11 are closed too but gate t12 has been opened, so the signal passes onto control input e12. 
+    # The microprogram sequence beginning e12 is now executed. (Gate t12 is subordinate-restored in TJH's implementation - Codd forgot to close this gate.) So you can see that the control section is just wiring - signals from the input wires are branched out onto certain output wires that lead to the gates. These gate-controlling wires aren't shown in the diagram at the top but can be seen in the implementation which you can download and run.
+    
+The machine continues to operate as described. Instructions on the program tape P are sampled in blocks of 4 bits and open various gates in the decoder. Upon read-out (the wire past F) the value stored in decoded and a signal emerges on one of the lines f0-f15, as listed below:
+
+{{{
+f0: (not connected to anything, causes the machine to halt)
+f1: toggle gate C
+f2: toggle gate D
+f3: (no operation (nop); can be used for delaying)
+f4: x (sends 7-6 down whichever of C and/or D is open)
+f5: xl
+f6: xr
+f7: r
+f8: rl
+f9: rr
+f10: m (mark)
+f11: e (erase)
+f12: t(k) : sense the bit (exactly one of C or D must be open) on p_i (if zero) or q_i (if one)
+f13: nop
+f14: i (inject the sheathing signal into the new machine)
+f15: j (inject the trigger signal into the new machine)
+}}}
+
+
+With the right instructions on the program tape (P) and the data tape (D), the machine is capable of self-replication. One such program is listed below.
 
 {{{
 # -- first we jump to a subroutine to prepare for tape copying
