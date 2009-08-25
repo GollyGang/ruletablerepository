@@ -1,10 +1,20 @@
 #summary Codd's 1968 design for a self-replicating computer
 
-Codd's 1968 [http://www.addebook.com/it/uncategorized/cellular-automata_5471.html book] describes his design for a self-replicating computer in an 8-state CA. This page contains a summary of that design, as recently [http://ruletablerepository.googlecode.com/files/Codd-self-rep.zip implemented]. 
+== Introduction ==
+
+Codd's 1968 [http://www.addebook.com/it/uncategorized/cellular-automata_5471.html book] describes his design for a self-replicating computer in an 8-state CA. This page contains a summary of that design, as recently [http://ruletablerepository.googlecode.com/files/Codd-self-rep.zip implemented].
+
+
+
+== Overview ==
 
 http://ruletablerepository.googlecode.com/files/Codd_overview.png
 
 The above image shows an overview of the components in Codd's machine. Letters beside wires indicate where those wires are gated. After initialization from the injection receiver, the periodic emitter sends regular pulses to the echo discriminator and other controls. These pulses are normally blocked since the gates (A, B, C, D, K, M, P, E, F, H, g,,i,,, t,,i,,, u,,i,,, and v,,i,,) are all closed. The control section directs the opening and closing of these gates (along wires not shown), allowing pulses from the periodic emitter to travel through various parts as required: to send commands and sense requests to the tapes, for example, and wait for responses. The echo that returns from the tapes is passed into the echo discriminator that sends a pulse down "0" or "1" depending on the echo's type. These echos can be stored in the 4-bit decoder, if one of u0-u3 or v0-v3 is open. If H is open, the echos can also toggle one of the two 'echo storage' gates leading to control inputs p,,i,, and q,,i,, that are shown as hollow arrowheads. Every echo also generates an echo receipt. The echo switch simply ensures that signals from the coder head towards the tapes, while signals from the tapes head towards the echo discriminator.
+
+
+
+== Control section ==
 
 Inside the control section, Codd's 'microprogram' connects the inputs (s0, etc.) to a sequence of gates to be toggled. The microprogram is listed below:
 {{{
@@ -84,7 +94,10 @@ w_i: t_i, u_i, v_i
 }}}
 The first 10 are program tape commands, while sw stands for sense-and-wait and cs for cap-after-sense.
 
-Starting sequence:
+
+
+== Starting sequence ==
+
   # The injection receiver is where the machine is first triggered. It sets the periodic emitter running (emitting 7 signals) and sends a 7 signal along the input s0 to the control section.
   # The microprogram tells you that s0 sends the sequence: {{{M, x, xr, t12, sw}}}
   # This sequence expands to: {{{M, g7, A, g7, g6, A, g6, g5, A, g5, g5, A, g5, g4, A, g4, g6, A, g6, t12, g7, A, g7, g7, A, g7}}}. This sequence does the following:
@@ -103,8 +116,12 @@ Starting sequence:
     # The echo switch sends the returning echo in the direction of the echo discriminator.
     # The echo discriminator sends a 7 signal down the "1" wire but this is blocked at v,,i,, and H since these gates are all closed. The echo discriminator also generates a 7 signal on the 'echo receipt' wire for every echo. Gates t0-t11 are closed too but gate t12 has been opened, so the signal passes onto control input e12. 
     # The microprogram sequence beginning e12 is now executed. (Gate t12 is subordinate-restored in TJH's implementation - Codd forgot to close this gate.) So you can see that the control section is just wiring - signals from the input wires are branched out onto certain output wires that lead to the gates. These gate-controlling wires aren't shown in the diagram at the top but can be seen in the implementation which you can download and run.
+
+
+
+== The instruction set ==
     
-The machine continues to operate as described. Instructions on the program tape P are sampled in blocks of 4 bits and open various gates in the decoder. Upon read-out (the wire past F) the value stored is decoded and a signal emerges on one of the lines f0-f15, as listed below:
+The machine continues to operate as described. Instructions on the program tape P are sampled in blocks of 4 bits and open various gates in the decoder. Upon read-out (the wire past F) the value stored is decoded and a signal emerges on one of the lines f0-f15, as listed below. These 16 lines each correspond to a unique instruction, which give the same power as Wang's W-machine.
 
 {{{
 f0: (not connected to anything, causes the machine to halt)
@@ -124,6 +141,10 @@ f13: nop
 f14: i (inject the sheathing signal into the new machine)
 f15: j (inject the trigger signal into the new machine)
 }}}
+
+
+
+== Example program ==
 
 With the right instructions on the program tape (P) and the data tape (D), the machine is capable of self-replication. One such program is listed below.
 
