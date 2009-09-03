@@ -34,5 +34,5 @@ Please bear in mind that all content on the rule table repository is available t
 
 If you're a project member you can edit TheRules directly to add your contribution. Some things to bear in mind:
 
-  * Please make sure that the Golly access page (in the source code repository) is maintained in sync. This means [http://code.google.com/p/ruletablerepository/source/checkout checking-out] the code, and committing changes to golly-archive.html. If you are unable to do this then make your changes to the HTML file and send it to Tim Hutton, together with a brief (single line) description of the changes you made, for the changelog.
+  * Please make sure that the GollyAccessPoint is maintained in sync. The page looks wrong in the wiki but this is deliberate - the content is actually meant for access from Golly (Help menu | Online Archives) and looks fine there.
   * Please upload your zip files to the our file download area so that they are stored here. Currently we link to some files stored elsewhere but this runs the risk of broken links in future.
