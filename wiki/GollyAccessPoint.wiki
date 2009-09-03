@@ -77,7 +77,7 @@ and patterns not included in Golly.
    John Devore altered Codd's ruleset to allow for more compact machines.
    Golly has a functioning self-replicator in this ruleset:
    <a href="open:Patterns/Other-Rules/Codd/Devore/Devore-rep.rle">Devore-rep.rle</a>*.
-   Adam Goucher made another replicator that uses a weak form of run-length
+   Adam P. Goucher made another replicator that uses a weak form of run-length
    encoding to compress the size of the tape:
    <a href="get:http://myweb.tiscali.co.uk/calcy/life/devore/D-compressed-replicator.gz">D-compressed-replicator.gz</a>.
 </td></tr></table></td></tr>
@@ -164,7 +164,7 @@ and patterns not included in Golly.
    <a href="get:http://myweb.tiscali.co.uk/calcy/life/wireworld-extendable.zip">WWE</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A 17-state rule created by Alan Tennant to support universal computation and construction.
-   Unlike the original WireWorld rule, this rule supports self-replication. Adam Goucher has
+   Unlike the original WireWorld rule, this rule supports self-replication. Adam P. Goucher has
    included 3 of his replicators in the zip file.
 </td></tr></table></td></tr>
 <tr><td>
@@ -298,7 +298,7 @@ and patterns not included in Golly.
    <a href="get:http://myweb.tiscali.co.uk/calcy/life/turing-machines/BusyBeaver3.table">BusyBeaver3</a>
    <a href="get:http://myweb.tiscali.co.uk/calcy/life/turing-machines/BusyBeaver5.table">BusyBeaver5</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
-   Adam Goucher has made a program to convert m-state n-symbol Turing machines into rule tables.
+   Adam P. Goucher has made a program to convert m-state n-symbol Turing machines into rule tables.
    The two example machines are Busy Beavers, Turing machines that try to write as many
    '1's as possible before halting. To run each machine in Golly, seed the universe with
    a single cell of state 2.
@@ -344,7 +344,7 @@ and patterns not included in Golly.
 <tr><td>
    <a href="get:http://myweb.tiscali.co.uk/calcy/life/simulators.zip">Life Pattern Emulators</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
-   Two rules, "Clouds" by Dean Hickerson and "Primes" by Adam Goucher, designed to simulate
+   Two rules, "Clouds" by Dean Hickerson and "Primes" by Adam P. Goucher, designed to simulate
    two of Dean's transcendental Life patterns.  Included in the zip file are the rule tables,
    sample patterns and equivalent Life patterns.
 </td></tr></table></td></tr>
@@ -385,7 +385,7 @@ and patterns not included in Golly.
 <tr><td>
    <a href="get:http://ruletablerepository.googlecode.com/files/MazeSolver.zip">MazeSolver</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
-   A 13-state rule by Adam Goucher that solves any maze, using a flood fill method to locate the exit,
+   A 13-state rule by Adam P. Goucher that solves any maze, using a flood fill method to locate the exit,
    before backtracking to the start to highlight the shortest possible route.
 </td></tr></table></td></tr>
 </table>
