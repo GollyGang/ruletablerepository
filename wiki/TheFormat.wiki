@@ -116,3 +116,16 @@ The adopted solution can be found in Gianluca Tempesti's [http://lslwww.epfl.ch/
 If you have a C/C++ implementation of a transition function, there is a way to automatically produce a rule table file. See make-ruletable.cpp for instructions. 
 
   _The format still needs work. Discuss extensions and improvements here: FutureWork_
+
+== Comparison of rule table formats: (work in progress) ==
+
+  * [http://www.jcasim.de/ CDL]
+  * cellang
+  * CAXL (some discussion of these above)
+  * DDLab's .vco format (mentioned [http://www.cogs.susx.ac.uk/users/andywu/multi_value/spiral_rule.html here])
+  * CAMEL/CARPET
+  * CLANG
+  * WINALT
+  * CELLAB (I've only heard mention of these four: http://www2.computer.org/portal/web/csdl/doi/10.1109/HCC.2003.1260224)
+  * XLife's .r format (see above)
+  * Golly's .tree format
