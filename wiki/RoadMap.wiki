@@ -26,7 +26,7 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 
 ^*^supported through emulation.
 
-
+Brian Prentice and others have done some work on CA that run on arbitrary tilings: http://linuxenvy.com/bprentice/TiledCA/TiledCA.html
 
 There are some sets of cellular automata that are best supported independently, rather than incorporating them into rule tables:
 
