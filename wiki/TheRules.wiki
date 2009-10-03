@@ -110,7 +110,7 @@ If there is a rule that doesn't fit into one of the above sections, nor does it 
 || 1998 || [http://myweb.tiscali.co.uk/calcy/life/JustFriends.table Just Friends] || A non-totalistic 2D binary rule by David Bell. || http://myweb.tiscali.co.uk/calcy/life/rulesimg/justfriends.PNG ||
 || 2009 || [http://myweb.tiscali.co.uk/calcy/life/TrickyBees.zip Tricky Bees] || A chaotic rule by Alan Tennant where each state becomes progressively more inert in which patterns are surprisingly tricky to construct. This table is actually 17 independent rules, which are combined into one rule table using an 'on' state for each rule. || http://myweb.tiscali.co.uk/calcy/life/rulesimg/trickybees.PNG ||
 || 2009 || [http://ruletablerepository.googlecode.com/files/MazeSolver.zip Maze Solver] || A 13-state rule table that solves any maze, using a flood fill method to locate the exit, before backtracking to the start to highlight the shortest possible route. This rule comes complete with a set of icons. || http://myweb.tiscali.co.uk/calcy/life/rulesimg/mazesolver.PNG ||
-
+|| 2009 || [http://ruletablerepository.googlecode.com/files/Collatz.zip Collatz emulator] || Dean Hickerson created this rule table for determining the number of iterations required for each positive integer to reach 1 in the [http://en.wikipedia.org/wiki/Collatz_conjecture Collatz conjecture]. It is alternatively known as the *3n+1 conjecture* or *Ulam's conjecture*. Coincidentially, Stanislaw Ulam  inspired von Neumann to create cellular automata. || Awaiting image... ||
 
 ----
 
