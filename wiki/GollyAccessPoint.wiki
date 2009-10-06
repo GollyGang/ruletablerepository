@@ -315,7 +315,7 @@ and patterns not included in Golly.
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    Langton's Ant can be modified to count in binary, as shown in this
    <a href="http://mathworld.wolfram.com/Turmite.html">MathWorld article</a>.
-   It is a special case of a Turmite, or 2-dimensional isotropic Turing machine. It differs from Langton's Ant
+   It is a special case of a Turmite, or 2-dimensional isotropic Turing machine. It only differs from Langton's Ant
    in that it moves forwards on a white square, rather than turning left.
    This 'counting ant' was discovered by Ed Pegg, Jr.
 </td></tr></table></td></tr>
