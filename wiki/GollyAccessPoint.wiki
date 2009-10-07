@@ -388,6 +388,11 @@ and patterns not included in Golly.
    shows a 7-color photo of Ed Fredkin that replicates itself.
 </td></tr></table></td></tr>
 <tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Sandpile.zip">Bak-Tang-Wiesenfeld sandpile model</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   A simple 2D model of a sandpile was found to self-organize itself to criticality. <a href="http://en.wikipedia.org/wiki/Bak%E2%80%93Tang%E2%80%93Wiesenfeld_sandpile">Wikipedia</a>
+</td></tr></table></td></tr>
+<tr><td>
    <a href="get:http://myweb.tiscali.co.uk/calcy/life/CyclicCA.table">CyclicCA</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A rule investigated by David Griffeath. This rule is a very basic CA that shows
