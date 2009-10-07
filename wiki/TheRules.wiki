@@ -107,6 +107,7 @@ This section contains rules based on Conway's Game of Life, the most popular CA.
 If there is a rule that doesn't fit into one of the above sections, nor does it warrant its own section, it goes here.
 
 || 1970 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/Ed-rep.tree Ed-rep] || In 1970, Terry Winograd [http://hdl.handle.net/1721.1/5843 proved] that Fredkin's replicator CA (the parity rule B1357/S1357) could be extended to N states, as long as N is a prime number. Golly's demo pattern <a href="http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Patterns/Other-Rules/Ed-rep.rle">Ed-rep.rle</a> shows a 7-color photo of Ed Fredkin that replicates itself.|| http://ruletablerepository.googlecode.com/files/Ed-rep.png ||
+|| 1987 || [http://ruletablerepository.googlecode.com/files/Sandpile.zip Bak-Tang-Wiesenfeld sandpile model] || A simple 2D model of a sandpile was found to self-organize itself to criticality. [http://en.wikipedia.org/wiki/Bak-Tang-Wiesenfeld_sandpile Wikipedia] || http://ruletablerepository.googlecode.com/files/BTWSandpile.png ||
 || 1989 || [http://myweb.tiscali.co.uk/calcy/life/CyclicCA.table Cyclic CA] || A rule investigated by David Griffeath. This rule is a very basic CA that shows competition emerging from a random initial seed. [http://en.wikipedia.org/wiki/Cyclic_cellular_automaton Wikipedia.] || http://myweb.tiscali.co.uk/calcy/life/rulesimg/cca.PNG ||
 || 1998 || [http://myweb.tiscali.co.uk/calcy/life/JustFriends.table Just Friends] || A non-totalistic 2D binary rule by David Bell. || http://myweb.tiscali.co.uk/calcy/life/rulesimg/justfriends.PNG ||
 || 2009 || [http://myweb.tiscali.co.uk/calcy/life/TrickyBees.zip Tricky Bees] || A chaotic rule by Alan Tennant where each state becomes progressively more inert in which patterns are surprisingly tricky to construct. This table is actually 17 independent rules, which are combined into one rule table using an 'on' state for each rule. || http://myweb.tiscali.co.uk/calcy/life/rulesimg/trickybees.PNG ||
@@ -130,3 +131,4 @@ If there is a rule that doesn't fit into one of the above sections, nor does it 
   * WWE: Supplied by Alan Tennant.
   * Emulators: Thanks to Andrew Trevorrow for cleaning up the files to work on case-sensitive file systems.
   * Codd-ICRA: Adam P. Goucher copied this rule from the .pdf document, amended and updated it.
+  * Bak-Tang-Wiesenfeld sandpile model: created by Paul Nasca
