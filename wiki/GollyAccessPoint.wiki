@@ -416,7 +416,7 @@ and patterns not included in Golly.
    before backtracking to the start to highlight the shortest possible route.
 </td></tr></table></td></tr>
 <tr><td>
-   <a href="get:http://ruletablerepository.googlecode.com/files/Collatz.zip">3n+1</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/CollatzConjecture.zip">3n+1</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    Dean Hickerson created this rule table for determining the number of iterations required for each
    positive integer to reach 1 in the
