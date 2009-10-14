@@ -280,6 +280,27 @@ and patterns not included in Golly.
    the color of the squares it lands on and turning left or right accordingly.
 </td></tr></table></td></tr>
 <tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Langtons-Ant-nColor.zip">n-color extension of Langton's Ant</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   A script for creating examples in the n-color extension of Langton's Ant.
+   This package also includes a sample pattern and rule.
+   See the <a href="http://www.youtube.com/watch?v=1X-gtr4pEBU">YouTube video</a>.
+</td></tr></table></td></tr>
+<tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Langtons-Ant-Count.table">Langtons-Ant-Count</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   Langton's Ant can be modified to count in binary, as shown in this
+   <a href="http://mathworld.wolfram.com/Turmite.html">MathWorld article</a>.
+   It is a special case of a Turmite, or 2-dimensional isotropic Turing machine. It only differs from Langton's Ant
+   in that it moves forwards on a white square, rather than turning left.
+   This 'counting ant' was discovered by Ed Pegg, Jr.
+</td></tr></table></td></tr>
+<tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Turmites.zip">Turmites</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   A <a href="http://en.wikipedia.org/wiki/Turmite">Turmite</a> is a 2D Turing machine; a generalization of Langton's Ant to n states and m colors.
+</td></tr></table></td></tr>
+<tr><td>
    <a href="get:http://ruletablerepository.googlecode.com/files/Iceskater%20for%20Golly%202.0.zip">Iceskater</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A rule by Jordan Goldstein. An explanation is included in the zip file.
@@ -302,22 +323,6 @@ and patterns not included in Golly.
    The two example machines are Busy Beavers, Turing machines that try to write as many
    '1's as possible before halting. To run each machine in Golly, seed the universe with
    a single cell of state 2.
-</td></tr></table></td></tr>
-<tr><td>
-   <a href="get:http://ruletablerepository.googlecode.com/files/Langtons-Ant-nColor.zip">n-color extension of Langton's Ant</a>
-</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
-   A script for creating examples in the n-color extension of Langton's Ant.
-   This package also includes a sample pattern and rule.
-   See the <a href="http://www.youtube.com/watch?v=1X-gtr4pEBU">YouTube video</a>.
-</td></tr></table></td></tr>
-<tr><td>
-   <a href="get:http://ruletablerepository.googlecode.com/files/Langtons-Ant-Count.table">Langtons-Ant-Count</a>
-</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
-   Langton's Ant can be modified to count in binary, as shown in this
-   <a href="http://mathworld.wolfram.com/Turmite.html">MathWorld article</a>.
-   It is a special case of a Turmite, or 2-dimensional isotropic Turing machine. It only differs from Langton's Ant
-   in that it moves forwards on a white square, rather than turning left.
-   This 'counting ant' was discovered by Ed Pegg, Jr.
 </td></tr></table></td></tr>
 <tr><td>
    <a href="get:http://ruletablerepository.googlecode.com/files/Turing-wolfram.zip">Turing-wolfram</a>
