@@ -23,6 +23,8 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 || oneDimensional || {{{c,w,e : c'}}} || none, reflect, permutation? || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/1dRadius1.PNG ||
 || oneDimensional_radius2 || {{{c,w2,w,e,e2 : c'}}} || none, reflect, permutation? || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/1dRadius2.PNG ||
 || oneDimensional_partition2 ([http://cell-auto.com/neighbourhood/brickwall/index.html brick wall]) || {{{a,b : a',b'}}} || none, reflect || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/BrickWall.GIF ||
+|| [http://en.wikipedia.org/wiki/E8_lattice E8_lattice] || {{{c,n1..n240 : c'}}} || none, rotation, rotation_reflect, permutation || ||
+|| [http://en.wikipedia.org/wiki/Leech_lattice Leech_lattice] || {{{c,n1..n196560 : c'}}} || none, rotation, rotation_reflect, permutation || ||
 
 ^*^supported through emulation.
 
