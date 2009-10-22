@@ -82,8 +82,8 @@ The Margolus neighbourhood is one of the simplest CA neighbourhoods. A descripti
 
 A number of people have explored CA rules on a hexagonal grid, where each cell has 6 neighbours.  This neighbourhood can be emulated on a square grid by ignoring 2 diagonally opposite neighbours (e.g., NE and SW).
 
-|| 1997 || [http://ruletablerepository.googlecode.com/files/Hex-B2oS2m34.zip Hex-B2oS2m34] || A 2-state non-totalistic CA on a hexagonal grid, by Paul Callahan, as described [http://www.radicaleye.com/lifepage/hexrule.txt here]. || image pending ||
-|| 2003 || [http://ruletablerepository.googlecode.com/files/HexBuss.zip HexBuss] || A 3-state totalistic CA on a hexagonal grid, by Frank Buss. See Frank's [http://www.frank-buss.de/automaton/hexautomaton.html website] for more details. || image pending ||
+|| 1997 || [http://ruletablerepository.googlecode.com/files/Hex-B2oS2m34.zip Hex-B2oS2m34] || A 2-state non-totalistic CA on a hexagonal grid, by Paul Callahan, as described [http://www.radicaleye.com/lifepage/hexrule.txt here]. || http://ruletablerepository.googlecode.com/files/Hex-B2oS2m34.png ||
+|| 2003 || [http://ruletablerepository.googlecode.com/files/HexBuss.zip HexBuss] || A 3-state totalistic CA on a hexagonal grid, by Frank Buss. See Frank's [http://www.frank-buss.de/automaton/hexautomaton.html website] for more details. || http://ruletablerepository.googlecode.com/files/HexBuss.png ||
 
 == Langton's Ant and other Turing Machines ==
 
