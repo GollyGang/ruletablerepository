@@ -23,6 +23,7 @@ and patterns not included in Golly.
 <dd><a href="#comp"><b>Other computation rules</b></a></dd>
 <dd><a href="#gases"><b>Lattice gases</b></a></dd>
 <dd><a href="#margolus"><b>Margolus neighborhood</b></a></dd>
+<dd><a href="#hexagonal"><b>Hexagonal neighborhood</b></a></dd>
 <dd><a href="#turing"><b>Langton's Ant and other Turing Machines</b></a></dd>
 <dd><a href="#life"><b>Life-inspired CAs</b></a></dd>
 <dd><a href="#misc"><b>Miscellaneous</b></a></dd>
@@ -235,6 +236,7 @@ and patterns not included in Golly.
 </table>
 </p>
 
+
 <a name="margolus"></a>
 <h1>Margolus neighborhood</h1>
 
@@ -263,6 +265,27 @@ and patterns not included in Golly.
    <a href="rule:Sand-Margolus-emulated">Sand-Margolus-emulated</a>*
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    MCell's 'Sand' rule in the Margolus neighborhood.
+</td></tr></table></td></tr>
+</table>
+</p>
+
+
+<a name="hexagonal"></a>
+<h1>Hexagonal neighborhood</h1>
+
+<p>
+<table border="0" cellspacing="2" cellpadding="0" width="100%">
+<tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Hex-B2oS2m34.zip">Hex-B2oS2m34</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   A 2-state non-totalistic CA on a hexagonal grid, by Paul Callahan, as described
+  <a href="http://www.radicaleye.com/lifepage/hexrule.txt">here</a>.
+</td></tr></table></td></tr>
+<tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/HexBuss.zip">HexBuss</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   A 3-state totalistic CA on a hexagonal grid, by Frank Buss. See Frank's
+   <a href="http://www.frank-buss.de/automaton/hexautomaton.html">website</a> for more details.
 </td></tr></table></td></tr>
 </table>
 </p>
