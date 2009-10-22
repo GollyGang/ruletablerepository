@@ -276,7 +276,7 @@ and patterns not included in Golly.
 <p>
 <table border="0" cellspacing="2" cellpadding="0" width="100%">
 <tr><td>
-   <a href="get:http://ruletablerepository.googlecode.com/files/Hex-B2oS2m34.zip">Hex-B2oS2m34</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Hex-B2oS2m34.zip">Hex-B2oS2m34 </a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A 2-state non-totalistic CA on a hexagonal grid, by Paul Callahan, as described
   <a href="http://www.radicaleye.com/lifepage/hexrule.txt">here</a>.
