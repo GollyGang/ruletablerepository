@@ -276,10 +276,19 @@ and patterns not included in Golly.
 <p>
 <table border="0" cellspacing="2" cellpadding="0" width="100%">
 <tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Hex-B2omS2.zip">Hex-B2omS2</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   A 2-state non-totalistic CA on a hexagonal grid, by Ken Preston Jr. This rule was first described in
+   <a href="http://www.conwaylife.com/wiki/index.php?title=Lifeline_Volume_2">LifeLine number 2</a>
+   on page 15. The rule name uses Paul Callahan's notation (see below).
+</td></tr></table></td></tr>
+<tr><td>
    <a href="get:http://ruletablerepository.googlecode.com/files/Hex-B2oS2m34.zip">Hex-B2oS2m34 </a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
-   A 2-state non-totalistic CA on a hexagonal grid, by Paul Callahan, as described
-  <a href="http://www.radicaleye.com/lifepage/hexrule.txt">here</a>.
+   A 2-state non-totalistic CA on a hexagonal grid, by Paul Callahan.
+   See Paul's excellent <a href="http://www.radicaleye.com/lifepage/hexrule.txt">article</a>
+   describing the notation used in the rule name, and the many interesting objects he discovered
+   (see the RLE files included in the zip file).
 </td></tr></table></td></tr>
 <tr><td>
    <a href="get:http://ruletablerepository.googlecode.com/files/HexBuss.zip">HexBuss</a>
