@@ -288,7 +288,7 @@ and patterns not included in Golly.
    A 2-state non-totalistic CA on a hexagonal grid, by Paul Callahan.
    See Paul's excellent <a href="http://www.radicaleye.com/lifepage/hexrule.txt">article</a>
    describing the notation used in the rule name, and the many interesting objects he discovered
-   (see the RLE files included in the zip file).
+   (some are included in the zip file).
 </td></tr></table></td></tr>
 <tr><td>
    <a href="get:http://ruletablerepository.googlecode.com/files/HexBuss.zip">HexBuss</a>
