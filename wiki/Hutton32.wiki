@@ -14,7 +14,7 @@ In Hutton's rule, on the other hand, auto-retraction is automatically controlled
 
 The existence of a retraction operation means that a single wire is sufficient for a universal construction arm. This is demonstrated in both Hutton's replicator and the 'golly-constructor.rle' file. The advantage of having one wire is that signal trains are generally shorter, and that there is no need to worry about synchronisation. In Nobili's and von Neumann's rules, bending the construction arm results in one path extending more than the other path (this is the principle behind bimetallic strips).
 
-Instead of using anisotropic signal trains such as 'construct east-directed OTS', rotationally invariant commands such as 'construct forward OTS'. This property, combined with the other features, allows the construction arm to move as freely as the counterpart in Codd's cellular automaton.
+Instead of using anisotropic signal trains such as 'construct east-directed OTS', rotationally invariant commands such as 'construct forward OTS' are used. This property, combined with the other features, allows the construction arm to move as freely as the counterpart in Codd's cellular automaton.
 
 Rotational invariance also means that the machine can construct itself in different orientations. This results in the pattern being able to produce two copies per cycle, each at a different orientation, theoretically allowing exponential growth. However, the replicators soon collide into each other, reducing this to quadratic growth.
 
