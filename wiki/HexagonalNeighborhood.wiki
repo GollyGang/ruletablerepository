@@ -215,3 +215,5 @@ m,a,b,c,d,e,f,0
 From 72 rule tables to just 11 is an immense improvement by anyone's standards.
 
   Brilliant stuff. All I've got to add is that it looks like we really need a PermutationSymmetry for cases like this. Oh, and I wonder if with some suitable slanted hexagon .icons whether the hex nhood will look reasonable in Golly. If you do put any time into a script to perform the emulation step then please consider how possible permutation would be - if it works then we can port it to the main Golly implementation for other cases. --TJH
+
+  I agree. An emulation script would definitely be very helpful. It would be even more helpful if this was implemented. Most hex rules would look much less distorted and more symmetrical. --TCK(The new member)
