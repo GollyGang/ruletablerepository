@@ -283,7 +283,13 @@ and patterns not included in Golly.
    on page 15. The rule name uses Paul Callahan's notation (see below).
 </td></tr></table></td></tr>
 <tr><td>
-   <a href="get:http://ruletablerepository.googlecode.com/files/Hex-B2oS2m34.zip">Hex-B2oS2m34 </a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Snowflake-gen.py">Snowflake-gen.py </a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   A script for generating examples of Norman Packard's snowflake-like CA, described in
+   <a href="http://www.scipress.org/e-library/sof/pdf/0095.PDF">this 1986 paper</a>.
+</td></tr></table></td></tr>
+<tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Hex-B2oS2m34.zip">Hex-B2oS2m34</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A 2-state non-totalistic CA on a hexagonal grid, by Paul Callahan.
    See Paul's excellent <a href="http://www.radicaleye.com/lifepage/hexrule.txt">article</a>
