@@ -12,9 +12,9 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 || vonNeumann_radius2 || {{{c,n1..n12 : c'}}} || none, rotate4, rotate4reflect,  reflect_horizontal, reflect_vertical, inner-outer_permutation, total_permuation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/vonNeumannRadius2.PNG ||
 || Intermediate_radius2 || {{{c,n1..n20 : c'}}} || none, rotate4, rotate4reflect, reflect_horizontal, reflect_vertical, inner-outer_permutation, total_permuation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/intermediateRadius2.PNG ||
 || Moore_radius2 || {{{c,n1..n24 : c'}}} || none, rotate4, rotate8, rotate4reflect, rotate8reflect, reflect_horizontal, reflect_vertical, inner-outer_permutation, total_permuation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/mooreRadius2.PNG ||
-|| hexagonal (see HexagonalNeighborhood) || {{{c,ne,e,se,sw,w,nw : c}}} || none, rotate, rotate_reflect, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/hexagonal.PNG ||
-|| triangularVonNeumann || {{{c,n1,n2,n3 : c'}}} || none, rotate, rotate_reflect, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/triangularVonNeumann.PNG ||
-|| triangularMoore || {{{c,n1..n12 : c'}}} || none, rotate, rotate_reflect, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/triangularMoore.PNG ||
+|| <b>hexagonal</b>^*^ (see HexagonalNeighborhood) || {{{c,ne,e,se,sw,w,nw : c}}} || none, rotate, rotate_reflect, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/hexagonal.PNG ||
+|| <b>triangularVonNeumann</b>^*^ || {{{c,n1,n2,n3 : c'}}} || none, rotate, rotate_reflect, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/triangularVonNeumann.PNG ||
+|| <b>triangularMoore</b>^*^ || {{{c,n1..n12 : c'}}} || none, rotate, rotate_reflect, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/triangularMoore.PNG ||
 || <b>Margolus</b>^*^ (see MargolusNeighborhood) || {{{a,b,c,d : a',b',c',d'}}} || <b>none</b>, rotate (<b>rotate4</b>), rotate_reflect (<b>rotate4reflect</b>), <b>reflect_horizontal</b>, <b>reflect_vertical</b>, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/Margolus.GIF ||
 || square4_cyclic, square4_figure8h, square4_figure8v (==square4_reading_order) (see MargolusNeighborhood) || {{{a,b,c,d : a',b',c',d'}}} || none, rotate, rotate_reflect, reflect_horizontal, reflect_vertical, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/Square4.GIF ||
 || square9_reading_order || {{{a,b,c,d,e,f,g,h,i : a',b',c',d',e',f',g',h',i'}}} || none, rotate, rotate_reflect, reflect_horizontal, reflect_vertical, permutation || http://myweb.tiscali.co.uk/calcy/life/neighbourhoods/Square9.GIF ||
@@ -26,7 +26,7 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 || [http://en.wikipedia.org/wiki/E8_lattice E8_lattice] || {{{c,n1..n240 : c'}}} || none, rotation, rotation_reflect, permutation || ||
 || [http://en.wikipedia.org/wiki/Leech_lattice Leech_lattice] || {{{c,n1..n196560 : c'}}} || none, rotation, rotation_reflect, permutation || ||
 
-^*^supported through emulation.
+^*^Supported in Golly through emulation.
 
 Brian Prentice and others have done some work on CA that run on arbitrary tilings: http://linuxenvy.com/bprentice/TiledCA/TiledCA.html
 
