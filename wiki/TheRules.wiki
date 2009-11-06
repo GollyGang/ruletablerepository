@@ -87,6 +87,14 @@ A number of people have explored various CA rules on a hexagonal grid, where eac
 || 1997 || [http://ruletablerepository.googlecode.com/files/Hex-B2oS2m34.zip Hex-B2oS2m34] || A 2-state non-totalistic CA on a hexagonal grid, by Paul Callahan.  See Paul's excellent [http://www.radicaleye.com/lifepage/hexrule.txt article] describing the notation used in the rule name, and the many interesting objects he discovered (some are included in the zip file). || http://ruletablerepository.googlecode.com/files/Hex-B2oS2m34.png ||
 || 2003 || [http://ruletablerepository.googlecode.com/files/HexBuss.zip HexBuss] || A 3-state totalistic CA on a hexagonal grid, by Frank Buss. See Frank's [http://www.frank-buss.de/automaton/hexautomaton.html website] for more details. || http://ruletablerepository.googlecode.com/files/HexBuss.png ||
 
+== Triangular neighbourhood ==
+
+A triangular grid supports 2 possible neighborhoods.  If only shared edges are allowed then each cell has 3 neighbors.  If shared vertices are allowed then each cell has 12 neighbors (this results in more interesting rules).  A triangular neighbourhood can be emulated on a square grid by dividing each square into 2 triangles, so a 2-state triangular CA can be emulated using 4 states:
+
+http://ruletablerepository.googlecode.com/files/triangular-emulation.png
+
+|| 1994 || [http://ruletablerepository.googlecode.com/files/TriLife.zip TriLife] || 2-state totalistic CA rules on a triangular grid are emulated by a 4-state CA.  Based on the work by Carter Bays (see this [http://www.cse.sc.edu/~bays/trilife3/home.html applet]).  The zip file includes a script for generating TriLife-Bnnn...Snnn... rules, some example rules and patterns, a .icons file, and another script that counts the number of triangles in a TriLife pattern. || http://ruletablerepository.googlecode.com/files/TriLife.png ||
+
 == Langton's Ant and other Turing Machines ==
 
 These cellular automata simulate Turing Machines, abstract entities that move on a discrete grid, altering the grid and changing direction. In the classical sense, a Turing machine uses a 1-dimensional grid; Langton's Ant uses a 2-dimensional grid.
