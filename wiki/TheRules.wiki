@@ -93,7 +93,7 @@ A triangular grid supports 2 possible neighborhoods.  If only shared edges are a
 
 http://ruletablerepository.googlecode.com/files/triangular-emulation.png
 
-|| 1994 || [http://ruletablerepository.googlecode.com/files/TriLife.zip TriLife] || 2-state totalistic CA rules on a triangular grid are emulated by a 4-state CA.  Based on the work by Carter Bays (see this [http://www.cse.sc.edu/~bays/trilife3/home.html applet]).  The zip file includes a script for generating TriLife-Bnnn...Snnn... rules, some example rules and patterns, a .icons file, and another script that counts the number of triangles in a TriLife pattern. || http://ruletablerepository.googlecode.com/files/TriLife.png ||
+|| 1994 || [http://ruletablerepository.googlecode.com/files/TriLife.zip TriLife] || 2-state totalistic CA rules on a triangular grid are emulated by a 4-state CA.  Based on the work by Carter Bays (see this [http://www.cse.sc.edu/~bays/trilife3/home.html applet]).  The zip file includes a script for generating !TriLife-Bnnn...Snnn... rules, some example rules and patterns, a .icons file, and another script that counts the number of triangles in a !TriLife pattern. || http://ruletablerepository.googlecode.com/files/TriLife.png ||
 
 == Langton's Ant and other Turing Machines ==
 
