@@ -313,7 +313,7 @@ and patterns not included in Golly.
 <p>
 <table border="0" cellspacing="2" cellpadding="0" width="100%">
 <tr><td>
-   <a href="get:http://ruletablerepository.googlecode.com/files/TriLife.zip">TriLife</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/TriLife.zip">TriLife </a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    2-state totalistic CA rules on a triangular grid are emulated by a 4-state CA.
    Based on the work by Carter Bays (see this <a href="http://www.cse.sc.edu/~bays/trilife3/home.html">applet</a>).
