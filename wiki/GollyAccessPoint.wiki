@@ -24,6 +24,7 @@ and patterns not included in Golly.
 <dd><a href="#gases"><b>Lattice gases</b></a></dd>
 <dd><a href="#margolus"><b>Margolus neighborhood</b></a></dd>
 <dd><a href="#hexagonal"><b>Hexagonal neighborhood</b></a></dd>
+<dd><a href="#triangular"><b>Triangular neighborhood</b></a></dd>
 <dd><a href="#turing"><b>Langton's Ant and other Turing Machines</b></a></dd>
 <dd><a href="#life"><b>Life-inspired CAs</b></a></dd>
 <dd><a href="#misc"><b>Miscellaneous</b></a></dd>
@@ -301,6 +302,23 @@ and patterns not included in Golly.
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A 3-state totalistic CA on a hexagonal grid, by Frank Buss. See Frank's
    <a href="http://www.frank-buss.de/automaton/hexautomaton.html">website</a> for more details.
+</td></tr></table></td></tr>
+</table>
+</p>
+
+
+<a name="triangular"></a>
+<h1>Triangular neighborhood</h1>
+
+<p>
+<table border="0" cellspacing="2" cellpadding="0" width="100%">
+<tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/TriLife.zip">TriLife</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   2-state totalistic CA rules on a triangular grid are emulated by a 4-state CA.
+   Based on the work by Carter Bays (see this <a href="http://www.cse.sc.edu/~bays/trilife3/home.html">applet</a>).
+   The zip file includes a script for generating TriLife-Bnnn...Snnn... rules, some example rules and patterns,
+   a .icons file, and another script that counts the number of triangles in a TriLife pattern.
 </td></tr></table></td></tr>
 </table>
 </p>
