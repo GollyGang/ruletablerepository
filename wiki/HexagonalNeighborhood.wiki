@@ -218,4 +218,4 @@ From 72 rule tables to just 11 is an immense improvement by anyone's standards.
 
   I agree. An emulation script would definitely be very helpful. It would be even more helpful if this was implemented. Most hex rules would look much less distorted and more symmetrical. --TCK(The new member)
 
-    Since this page was written, Andrew Trevorrow has implemented the "HexBuss" rule using make-ruletree.py, please see the recent golly-test messages. I think there are some changes afoot that will make issues of rule table format less important in cases like this - we'll be writing our rules in python perhaps and having them automatically converted to rule trees. --TJH
+    Since this page was written, Andrew Trevorrow has implemented the "!HexBuss" rule using make-ruletree.py, please see the recent golly-test messages. I think there are some changes afoot that will make issues of rule table format less important in cases like this - we'll be writing our rules in python perhaps and having them automatically converted to rule trees. --TJH
