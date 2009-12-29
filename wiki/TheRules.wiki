@@ -147,7 +147,8 @@ If there is a rule that doesn't fit into one of the above sections, nor does it 
   * HPP: TJH was all set to make an emulated-Margolus rule for the HPP gas (since MCell has the specification) but then he came across a much nicer way of implementing it directly in a von Neumann neighbourhood CA, so he followed that instead. He had to create reflection states, so it ended up with 34 states in total.
   * Perrier: Gianluca Tempesti sent TJH the rule table - thanks!
   * MRM: APG converted this rule from Paul Chapman's website.
-  * WWE: Supplied by Alan Tennant.
+  * WWE1, WWE2, WSwitch & Tricky Bees supplied by Alan Tennant.
+  * WWEJ supplied by Mark Jeronimus.
   * Emulators: Thanks to Andrew Trevorrow for cleaning up the files to work on case-sensitive file systems.
   * Codd-ICRA: Adam P. Goucher copied this rule from the .pdf document, amended and updated it.
   * Bak-Tang-Wiesenfeld sandpile model: created by Paul Nasca
