@@ -43,7 +43,7 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 <h2>Neighbourhoods in four or more dimensions</h2>
 
 || neighborhood || transitions || symmetries || image ||
-|| D4_lattice || {{{c,n1..n24 : c'}}} || none, rotate192, rotate192reflect, permutation || ||
+|| [http://en.wikipedia.org/wiki/Icositetrachoric_honeycomb D4_lattice] || {{{c,n1..n24 : c'}}} || none, rotate192, rotate192reflect, permutation || ||
 || [http://en.wikipedia.org/wiki/E8_lattice E8_lattice] || {{{c,n1..n240 : c'}}} || none, rotate348364800, rotate348364800reflect, permutation || http://ruletablerepository.googlecode.com/files/E8.PNG ||
 || [http://en.wikipedia.org/wiki/Leech_lattice Leech_lattice] || {{{c,n1..n196560 : c'}}} || none, rotate8315553613086720000, rotate8315553613086720000reflect, permutation || ||
 
