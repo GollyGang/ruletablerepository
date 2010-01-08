@@ -17,7 +17,7 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 || <b>hexagonal</b>^*^ (see HexagonalNeighborhood) || {{{c,ne,e,se,sw,w,nw : c}}} || none, rotate, rotate_reflect, permutation || http://ruletablerepository.googlecode.com/files/hexagonal.PNG ||
 || <b>triangularVonNeumann</b>^*^ || {{{c,n1,n2,n3 : c'}}} || none, rotate, rotate_reflect, permutation || http://ruletablerepository.googlecode.com/files/triangularVonNeumann.PNG ||
 || <b>triangularMoore</b>^*^ || {{{c,n1..n12 : c'}}} || none, rotate, rotate_reflect, permutation || http://ruletablerepository.googlecode.com/files/triangularMoore.PNG ||
-|| <b>Penrose tiling</b> || {{{c,n1..n4 : c'}}} || permutation || ||
+|| <b>Penrose tiling</b> || {{{c,n1..n4 : c'}}} || permutation || http://ruletablerepository.googlecode.com/files/Penrose.PNG ||
 
 <h2>Two-dimensional partitioning schemes</h2>
 
