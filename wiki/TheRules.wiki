@@ -145,7 +145,8 @@ If there is a rule that doesn't fit into one of the above sections, nor does it 
   * Perrier: Gianluca Tempesti sent TJH the rule table - thanks!
   * MRM: APG converted this rule from Paul Chapman's website.
   * WWE1, WWE2, WSwitch & Tricky Bees supplied by Alan Tennant.
-  * WWEJ supplied by Mark Jeronimus.
+  * WWEJ and WWEJ2 supplied by Mark Jeronimus.
+  * WWEJ3 created jointly by Alan Tennant and Mark Jeronimus.
   * Emulators: Thanks to Andrew Trevorrow for cleaning up the files to work on case-sensitive file systems.
   * Codd-ICRA: Adam P. Goucher copied this rule from the .pdf document, amended and updated it.
   * Bak-Tang-Wiesenfeld sandpile model: created by Paul Nasca
