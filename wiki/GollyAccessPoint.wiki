@@ -170,6 +170,11 @@ and patterns not included in Golly.
    included 3 of his replicators in the zip file.
 </td></tr></table></td></tr>
 <tr><td>
+   <a href="http://download160.mediafire.com/jlg2ughgudwg/jmydmnybtiz/WWEJ.zip">WWEJ</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   WWEJ is an 11 state rule created by Mark Jeronimus. It is similar to WWE1. Unlike WWE1 or WWE2, WWEJ was designed to use as few extra states as possible. As in WWE1 some WireWorld patterns will need to be modified to work.
+</td></tr></table></td></tr>
+<tr><td>
    <a href="get:http://myweb.tiscali.co.uk/calcy/life/wireworld-extendable-2.zip">WWE2</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A 23-state modification of the Extendable WireWorld rule, again by Alan Tennant.
