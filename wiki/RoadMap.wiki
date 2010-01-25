@@ -12,7 +12,8 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 || <b>vonNeumann</b> || {{{c,n,e,s,w : c'}}} || <b>none</b>, rotate (<b>rotate4</b>), rotate_reflect (<b>rotate4reflect</b>), reflect_horizontal (<b>reflect</b>), reflect_vertical, permutation || http://ruletablerepository.googlecode.com/files/vonNeumann.PNG ||
 || <b>Moore</b> || {{{c,n,ne,e,se,s,sw,w,nw : c'}}} || <b>none</b>, <b>rotate4</b>, <b>rotate8</b>, <b>rotate4reflect</b>, <b>rotate8reflect</b>, reflect_horizontal (<b>reflect</b>), reflect_vertical, permutation || http://ruletablerepository.googlecode.com/files/moore.PNG ||
 || vonNeumann_radius2 || {{{c,n1..n12 : c'}}} || none, rotate4, rotate4reflect,  reflect_horizontal, reflect_vertical, inner-outer_permutation, total_permuation || http://ruletablerepository.googlecode.com/files/vonNeumannRadius2.PNG ||
-|| Intermediate_radius2 || {{{c,n1..n20 : c'}}} || none, rotate4, rotate4reflect, reflect_horizontal, reflect_vertical, inner-outer_permutation, total_permuation || http://ruletablerepository.googlecode.com/files/intermediateRadius2.PNG ||
+|| diamond_radius2 || {{{c,n1..n12 : c'}}} || none, rotate4, rotate4reflect,  reflect_horizontal, reflect_vertical, inner-outer_permutation, total_permuation || http://ruletablerepository.googlecode.com/files/diamondRadius2.PNG ||
+|| disc_radius2, or<br> circle_radius2 || {{{c,n1..n20 : c'}}} || none, rotate4, rotate4reflect, reflect_horizontal, reflect_vertical, inner-outer_permutation, total_permuation || http://ruletablerepository.googlecode.com/files/intermediateRadius2.PNG ||
 || Moore_radius2 || {{{c,n1..n24 : c'}}} || none, rotate4, rotate8, rotate4reflect, rotate8reflect, reflect_horizontal, reflect_vertical, inner-outer_permutation, total_permuation || http://ruletablerepository.googlecode.com/files/mooreRadius2.PNG ||
 || <b>hexagonal</b>^*^ (see HexagonalNeighborhood) || {{{c,ne,e,se,sw,w,nw : c}}} || none, rotate, rotate_reflect, permutation || http://ruletablerepository.googlecode.com/files/hexagonal.PNG ||
 || <b>triangularVonNeumann</b>^*^ || {{{c,n1,n2,n3 : c'}}} || none, rotate, rotate_reflect, permutation || http://ruletablerepository.googlecode.com/files/triangularVonNeumann.PNG ||
@@ -31,7 +32,7 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 || neighborhood || transitions || symmetries || image ||
 || vonNeumann3D || {{{c,x+,x-,y+,y-,z+,z- : c'}}} || none, rotate, rotate_x, rotate_y, rotate_z, reflect_x, reflect_y, reflect_z, rotate24, rotate24reflect, permutation || http://ruletablerepository.googlecode.com/files/3dVonNeumann2.PNG ||
 || Moore3D || {{{c,n1..n26 : c'}}} || none, rotate4, rotate8, rotate4_x, rotate4_y, rotate4_z, rotate8_x, rotate8_y, rotate8_z, reflect_x, reflect_y, reflect_z, rotate24, rotate24reflect, permutation || http://ruletablerepository.googlecode.com/files/3dMoore.PNG ||
-|| faceCentredCubic || {{{c,n1..n12 : c'}}} || none, rotate12, rotate24, rotate24reflect, permutation || http://ruletablerepository.googlecode.com/files/FCC.PNG ||
+|| faceCentredCubic, or<br> dodecahedral, or<br> spherePacking || {{{c,n1..n12 : c'}}} || none, rotate12, rotate24, rotate24reflect, permutation || http://ruletablerepository.googlecode.com/files/FCC.PNG ||
 
 <h2>One-dimensional neighbourhoods and partitioning schemes</h2>
 
