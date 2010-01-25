@@ -178,6 +178,11 @@ and patterns not included in Golly.
    function identically in this rule. Finally, self-modification is much easier.
 </td></tr></table></td></tr>
 <tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/WireWorldMarked1.01.zip">WireWorldMarked</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   A marked version of WireWorld. It supports six extra wire colors but no extra functionality. A marked version of the Quinapalus' Primes Computer is included.
+</td></tr></table></td></tr>
+<tr><td>
    <a href="get:http://myweb.tiscali.co.uk/calcy/life/switch.zip">WSwitch</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A 5-state rule by Alan Tennant. The rule is based on WireWorld, but has been designed
