@@ -33,7 +33,7 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 || neighborhood || transitions || symmetries || image ||
 || vonNeumann3D || {{{c,x+,x-,y+,y-,z+,z- : c'}}} || none, rotate, rotate_x, rotate_y, rotate_z, reflect_x, reflect_y, reflect_z, rotate24, rotate24reflect, permutation || http://ruletablerepository.googlecode.com/files/3dVonNeumann2.PNG ||
 || Moore3D || {{{c,n1..n26 : c'}}} || none, rotate4, rotate8, rotate4_x, rotate4_y, rotate4_z, rotate8_x, rotate8_y, rotate8_z, reflect_x, reflect_y, reflect_z, rotate24, rotate24reflect, permutation || http://ruletablerepository.googlecode.com/files/3dMoore.PNG ||
-|| faceCentredCubic, or<br> dodecahedral, or<br> spherePacking || {{{c,n1..n12 : c'}}} || none, rotate12, rotate24, rotate24reflect, permutation || http://ruletablerepository.googlecode.com/files/FCC.PNG ||
+|| faceCentredCubic || {{{c,n1..n12 : c'}}} || none, rotate12, rotate24, rotate24reflect, permutation || http://ruletablerepository.googlecode.com/files/FCC.PNG ||
 
 <h2>One-dimensional neighbourhoods and partitioning schemes</h2>
 
