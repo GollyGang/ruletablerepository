@@ -1,5 +1,15 @@
 #summary The rule tables in our repository.
 
+
+<wiki:comment>
+====================================================================
+If you change this page, please update the Golly Access Point too!
+====================================================================
+http://code.google.com/p/ruletablerepository/wiki/GollyAccessPoint
+====================================================================
+</wiki:comment>
+
+
 <p align="right">[http://code.google.com/p/ruletablerepository/source/list?path=/wiki/TheRules.wiki Detailed page changes]</p>
 
 ----
