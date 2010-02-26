@@ -383,7 +383,7 @@ and patterns not included in Golly.
    An implementation of the above rule, rotated 45 degrees so that only 2 live states are required.
 </td></tr></table></td></tr>
 <tr><td>
-   <a href="http://with-logic.co.uk/CA/LifeHistoryRules.zip">HistoricalLife</a>
+   <a href="get:http://with-logic.co.uk/CA/LifeHistoryRules.zip">HistoricalLife</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    Includes an implementation of the classic game of life that highlights the cells that were ever alive by Dave Greene, translated to a table by Calcyman and a five-state extension of the HistoricalLife rule originally by Brice Due.
 </td></tr></table></td></tr>
