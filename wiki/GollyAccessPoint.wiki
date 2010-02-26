@@ -66,7 +66,7 @@ and patterns not included in Golly.
    Edgar F. Codd reduced von Neumann's CA to 8 states.
 </td></tr></table></td></tr>
 <tr><td>
-   <a href="get:http://myweb.tiscali.co.uk/calcy/life/Codd-ICRA.zip">Codd-ICRA </a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Codd-ICRA.zip">Codd-ICRA </a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A team of Hungarian researchers modified Codd's rules so that crossovers can be made with
    only nine cells, and gates can be constructed by passing 7-0 signals.
@@ -132,7 +132,7 @@ and patterns not included in Golly.
    Another loop from Sayama, that allows colliding loops to sometimes merge genetic content.
 </td></tr></table></td></tr>
 <tr><td>
-   <a href="get:http://myweb.tiscali.co.uk/calcy/life/GoucherLoops.zip">Goucher's Loops</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/GoucherLoops.zip">Goucher's Loops</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A 24-state version of Langton's loops, that permits construction and computation universality,
    both left and right turns, genome combination and competition.
@@ -162,7 +162,7 @@ and patterns not included in Golly.
    A marked version of WireWorld. It supports six extra wire colors but no extra functionality. A marked version of the Quinapalus' Primes Computer is included.
 </td></tr></table></td></tr>
 <tr><td>
-   <a href="get:http://myweb.tiscali.co.uk/calcy/life/switch.zip">WSwitch</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/switch.zip">WSwitch</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A 5-state rule by Alan Tennant where the construction of logic gates is impossible. Instead several types of pulse divider are possible.
 </td></tr></table></td></tr>
@@ -184,7 +184,7 @@ and patterns not included in Golly.
    using fewer states than before.
 </td></tr></table></td></tr>
 <tr><td>
-   <a href="get:http://myweb.tiscali.co.uk/calcy/life/MinskyCA.zip">MRM</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/MinskyCA.zip">MRM</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A 4-state rule made by Paul Chapman to support Minsky Register Machines, up to and
    including universal MRMs.
@@ -206,7 +206,7 @@ and patterns not included in Golly.
    in a bounded, non-toroidal space.
 </td></tr></table></td></tr>
 <tr><td>
-   <a href="get:http://myweb.tiscali.co.uk/calcy/life/DLA.zip">DLA</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/DLA.zip">DLA</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    Diffusion-limited aggregation using the HPP lattice gas. This model was studied
    to simulate the fractal growth characterised by electrolysis of copper sulphate.
@@ -344,8 +344,8 @@ and patterns not included in Golly.
    is emulated in the Moore neighborhood.
 </td></tr></table></td></tr>
 <tr><td>
-   <a href="get:http://myweb.tiscali.co.uk/calcy/life/turing-machines/BusyBeaver3.table">BusyBeaver3</a>
-   <a href="get:http://myweb.tiscali.co.uk/calcy/life/turing-machines/BusyBeaver5.table">BusyBeaver5</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/BusyBeaver3.table">BusyBeaver3</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/BusyBeaver5.table">BusyBeaver5</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    Adam P. Goucher has made a program to convert m-state n-symbol Turing machines into rule tables.
    The two example machines are Busy Beavers, Turing machines that try to write as many
@@ -385,10 +385,10 @@ and patterns not included in Golly.
 <tr><td>
    <a href="http://with-logic.co.uk/CA/LifeHistoryRules.zip">HistoricalLife</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
-   Include an implementation of the classic game of life that highlights the cells that were ever alive by Dave Greene, translated to a table by Calcyman and a five-state extension of the HistoricalLife rule originally by Brice Due.
+   Includes an implementation of the classic game of life that highlights the cells that were ever alive by Dave Greene, translated to a table by Calcyman and a five-state extension of the HistoricalLife rule originally by Brice Due.
 </td></tr></table></td></tr>
 <tr><td>
-   <a href="get:http://myweb.tiscali.co.uk/calcy/life/simulators.zip">Life Pattern Emulators</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/simulators.zip">Life Pattern Emulators</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    Two rules, "Clouds" by Dean Hickerson and "Primes" by Adam P. Goucher, designed to simulate
    two of Dean's transcendental Life patterns. Included in the zip file are the rule tables,
@@ -416,18 +416,18 @@ and patterns not included in Golly.
    A simple 2D model of a sandpile was found to self-organize itself to criticality. <a href="http://en.wikipedia.org/wiki/Bak%E2%80%93Tang%E2%80%93Wiesenfeld_sandpile">Wikipedia</a>
 </td></tr></table></td></tr>
 <tr><td>
-   <a href="get:http://myweb.tiscali.co.uk/calcy/life/CyclicCA.table">CyclicCA</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/CyclicCA.table">CyclicCA</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A rule investigated by David Griffeath. This rule is a very basic CA that shows
    competition emerging from a random initial seed.
 </td></tr></table></td></tr>
 <tr><td>
-   <a href="get:http://myweb.tiscali.co.uk/calcy/life/JustFriends.table">JustFriends</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/JustFriends.table">JustFriends</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A non-totalistic 2D binary rule by David Bell.
 </td></tr></table></td></tr>
 <tr><td>
-   <a href="get:http://myweb.tiscali.co.uk/calcy/life/TrickyBees.zip">TrickyBees</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/TrickyBees.zip">TrickyBees</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A chaotic rule by Alan Tennant where each state becomes progressively more inert
    in which patterns are surprisingly tricky to construct.
