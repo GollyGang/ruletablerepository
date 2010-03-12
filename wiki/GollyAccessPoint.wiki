@@ -184,6 +184,13 @@ and patterns not included in Golly.
    using fewer states than before.
 </td></tr></table></td></tr>
 <tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Serizawa.zip">Serizawa</a
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   A 3-state von Neumann neighborhood rule capable of universal computation and
+   construction. The self-replicator has not yet been implemented in this rule as 
+   far as we know.
+</td></tr></table></td></tr>
+<tr><td>
    <a href="get:http://ruletablerepository.googlecode.com/files/MinskyCA.zip">MRM</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A 4-state rule made by Paul Chapman to support Minsky Register Machines, up to and
