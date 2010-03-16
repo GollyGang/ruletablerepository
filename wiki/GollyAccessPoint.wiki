@@ -336,6 +336,11 @@ and patterns not included in Golly.
    A <a href="http://en.wikipedia.org/wiki/Turmite">Turmite</a> is a 2D Turing machine; a generalization of Langton's Ant to n states and m colors.
 </td></tr></table></td></tr>
 <tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/AbsoluteTurmites.zip">Absolute Turmites</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   While turmites store their orientation as part of their state, absolute turmites have no orientation. Fewer interesting examples are known. Included are some examples from <a href="http://wolframscience.com">Wolfram's NKS</a> including one recently discovered to be periodic. 
+</td></tr></table></td></tr>
+<tr><td>
    <a href="get:http://ruletablerepository.googlecode.com/files/Iceskater%20for%20Golly%202.0.zip">Iceskater</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A rule by Jordan Goldstein.
