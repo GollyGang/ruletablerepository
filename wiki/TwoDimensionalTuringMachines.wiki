@@ -69,4 +69,5 @@ However there _are_ examples of complex 3-state 2-color 2D Turing machines. Thes
 This pattern is seemingly random for 15.5 million timesteps, before making a repetitive highway.
 
 `{{{0,'N',2},{1,'S',1}},{{0,'E',0},{0,'S',0}},{{1,'W',1},{1,'N',2}}}`<br>
-This patterns grows extremely slowly, so is perhaps doing some form of counting, but appears random.
+This patterns grows extremely slowly, so is perhaps doing some form of counting, but appears random. Here's an animation of the states progressing from 1E9 timesteps up to 100E9 timesteps (100 frames, each 1 billion timesteps): 
+http://ruletablerepository.googlecode.com/files/AlienCounter.gif
