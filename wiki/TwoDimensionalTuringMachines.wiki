@@ -1,0 +1,72 @@
+#summary A collection of 2D Turing Machines (Absolute Turmites)
+
+<b>Table of Contents:</b>
+<wiki:toc>
+
+----
+
+== Background ==
+  * [http://en.wikipedia.org/wiki/Turing_machine Turing machines]
+  * [http://en.wikipedia.org/wiki/Busy_beaver Busy Beavers]
+  * [http://en.wikipedia.org/wiki/Turmite Turmites]
+  * Explore examples using [http://ruletablerepository.googlecode.com/files/AbsoluteTurmites.zip this script] in [http://golly.sourceforge.net Golly].
+
+== Busy Beavers ==
+
+If you know of any research into 2D Busy Beavers, please add it here. (There must be _some_ out there! All 2D Turing machines can be simulated by 1D machines, of course, but even so.)
+
+This is a list of the best known busy beavers. If you find improvements then overwrite the below:
+
+=== 2-state 2-color: ===
+`{{{1,'S',1},{1,'N',1}},{{1,'N',0},{1,'',1}}}`<br>
+6 steps, 4 non-zero cells written.
+
+This is the same as the 1D Busy Beaver.
+
+=== 3-state 2-color: ===
+`{{{1,'S',1},{1,'W',2}},{{0,'W',2},{0,'E',1}},{{1,'N',0},{1,'',1}}}`<br>
+32 steps.<br>
+`{{{1,'W',2},{1,'E',1}},{{1,'S',0},{1,'N',1}},{{1,'N',1},{1,'',1}}}`<br>
+11 non-zero cells written.
+
+(Final result from exhaustive search, unless I had bugs.)
+
+Notice that these values are _higher_ than the best 1D Busy Beavers for these parameters: 21 steps, 6 non-zero cells. Is this true in general? (Obviously the n-dimensional values can never be lower than the (n-1)-dimensional values since the lower-dimensional turmite can always be embedded in the higher-dimensional space.)
+
+=== 2-state 3-color: ===
+`{{{1,'S',1},{2,'N',1},{1,'',0}},{{2,'N',0},{2,'S',1},{1,'N',1}}}`<br>
+38 steps.<br>
+`{{{1,'N',1},{2,'W',1},{0,'E',0}},{{1,'S',0},{2,'N',1},{1,'',1}}}`<br>
+10 non-zero cells written.
+
+(Final result from exhaustive search, unless I had bugs.)
+
+=== 3-state 3-color: ===
+`{{{1,'N',1},{2,'S',2},{2,'S',1}},{{1,'W',2},{1,'N',1},{1,'',0}},{{1,'E',0},{0,'N',0},{0,'N',0}}}`<br>
+9304 steps.<br>
+`{{{2,'W',1},{1,'',0},{2,'E',1}},{{2,'W',2},{0,'E',1},{2,'S',1}},{{1,'E',0},{0,'N',0},{0,'N',0}}}`<br>
+697 non-zero cells written.
+
+These are preliminary results and the results are likely to be much higher.
+
+=== 4-state 2-color: ===
+`{{{0,'S',2},{1,'N',3}},{{1,'W',3},{1,'S',1}},{{1,'S',1},{1,'',0}},{{0,'E',0},{0,'N',0}}}`<br>
+3271 steps.<br>
+`{{{0,'S',1},{1,'',0}},{{1,'N',2},{1,'S',1}},{{0,'W',3},{0,'E',2}},{{1,'E',0},{0,'N',0}}}`<br>
+98 non-zero cells written.
+
+Again these are just preliminary results.
+
+== Searching for high entropy patterns ==
+
+Wolfram says this of 2D Turing machines:
+
+  _"For Turing machines with two or three possible states, only repetitive and nested behavior normally seem to occur. With four states, more complex behavior is possible, but it is still rather rare."_ [http://www.wolframscience.com/nksonline/page-184 (NKS, p.184)]
+ 
+However there _are_ examples of complex 3-state 2-color 2D Turing machines. These below were located by a program searching for patterns with high [http://en.wikipedia.org/wiki/Entropy_%28information_theory%29 entropy]:
+
+`{{{0,'S',1},{1,'W',1}},{{1,'E',2},{1,'S',2}},{{1,'W',0},{0,'N',0}}}`<br>
+This pattern is seemingly random for 15.5 million timesteps, before making a repetitive highway.
+
+`{{{0,'N',2},{1,'S',1}},{{0,'E',0},{0,'S',0}},{{1,'W',1},{1,'N',2}}}`<br>
+This patterns grows extremely slowly, so is perhaps doing some form of counting, but appears random.
