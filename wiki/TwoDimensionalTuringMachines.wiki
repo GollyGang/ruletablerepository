@@ -50,7 +50,13 @@ Notice that the 38 steps case is a 1D machine. However the 10 cells written case
 `{{{2,'W',1},{1,'',0},{2,'E',1}},{{2,'W',2},{0,'E',1},{2,'S',1}},{{1,'E',0},{0,'N',0},{0,'N',0}}}`<br>
 697 non-zero cells written.
 
-These are just examples - the actual record holders will have to be at least as large as the 1D case which is [http://www.cse.unr.edu/~al/BusyBeaver.html _large_].
+These are just examples - the actual record holders will have to be at least as large as the 1D case for which the record is _[http://www.cse.unr.edu/~al/BusyBeaver.html large]_:<br>
+`{{{1,'E',1},{2,'W',0},{1,'W',2}},{{0,'W',0},{2,'E',1},{1,'W',1}},{{1,'',0},{1,'E',0},{1,'E',2}}}`<br>
+(119,112,334,170,342,540 steps, 374,676,383 non-zero cells written)
+
+Here's the 1D machine described as [http://www.cse.unr.edu/~al/busybeaversurprise.html Surprise-In-A-Box]:<br>
+`{{{1,'E',1},{2,'W',1},{1,'W',2}},{{1,'W',0},{2,'E',1},{1,'E',1}},{{0,'',0},{2,'W',0},{0,'W',2}}}`<br>
+(I don't get the joke though (if there is one) - from a rough visual inspection it appears to count on each side (in different ways) and then halt. I don't know enough about 1D Busy Beavers to know whether this in itself is unusual or what. Any ideas? TJH)
 
 === 4-state 2-color: ===
 `{{{0,'S',2},{1,'N',3}},{{1,'W',3},{1,'S',1}},{{1,'S',1},{1,'',0}},{{0,'E',0},{0,'N',0}}}`<br>
