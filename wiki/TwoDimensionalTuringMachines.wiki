@@ -70,4 +70,36 @@ This pattern is seemingly random for 15.5 million timesteps, before making a rep
 
 `{{{0,'N',2},{1,'S',1}},{{0,'E',0},{0,'S',0}},{{1,'W',1},{1,'N',2}}}`<br>
 This patterns grows extremely slowly, so is perhaps doing some form of counting, but appears random. Here's an animation of the states progressing from 1E9 timesteps up to 100E9 timesteps (100 frames, each 1 billion timesteps):<br>
+
 http://ruletablerepository.googlecode.com/files/AlienCounter.gif
+
+The pattern expands at a logarithmic rate, and resembles a binary counter. However, it is not performing traditional binary counting, as long strings of '1' symbols are replaced with alternating '1's and '0's, instead of solid '0's. If the counter didn't produce extra lines, and just worked in one dimension, it would count like so:
+
+{{{
+
+1
+01
+11
+101
+011
+111
+0101
+1101
+1011
+0111
+1111
+10101
+01101
+11101
+01011
+11011
+10111
+01111
+11111
+010101
+
+}}}
+
+Notice that there is 1 one-digit number, 2 two-digit numbers, 3 three-digit numbers, 5 four-digit numbers and 8 five-digit numbers. These correspond to the Fibonacci numbers, which means that it effectively counts in base-phi, where phi is the golden number. This is quite unexpected, as phi is an irrational number, so doesn't usually occur as the base for discrete counting.
+
+However, occasionally a parallel side-branch is created. This makes the counting process less regular, as the branches interfere with each other.
