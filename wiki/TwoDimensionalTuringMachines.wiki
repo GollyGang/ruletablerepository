@@ -7,6 +7,7 @@
 
 == Background ==
   * [http://en.wikipedia.org/wiki/Turing_machine Turing machines]
+  * [http://www.wolframscience.com/nksonline/section-5.3 2D Turing machines]
   * [http://en.wikipedia.org/wiki/Busy_beaver Busy Beavers]
   * [http://en.wikipedia.org/wiki/Turmite Turmites]
   * Explore examples using [http://ruletablerepository.googlecode.com/files/AbsoluteTurmites.zip this script] in [http://golly.sourceforge.net Golly].
