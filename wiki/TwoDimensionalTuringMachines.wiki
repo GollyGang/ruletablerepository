@@ -105,3 +105,27 @@ The pattern expands at a logarithmic rate, and resembles a binary counter. Howev
 Notice that there is 1 one-digit number, 2 two-digit numbers, 3 three-digit numbers, 5 four-digit numbers and 8 five-digit numbers. These correspond to the Fibonacci numbers, which means that it effectively counts in base-phi, where phi is the golden number. This is quite unexpected, as phi is an irrational number, so doesn't usually occur as the base for discrete counting.
 
 However, occasionally a parallel side-branch is created. This makes the counting process less regular, as the branches interfere with each other.
+
+== The examples in Wolfram's A New Kind of Science ==
+
+3-state 2-color 2D Turing machine from NKOS [http://www.wolframscience.com/nksonline/page-184 p184]:<br>
+states: 0=north, 1=SE, 2=SW<br>
+colors: 0=white, 1=grey<br>
+`{{{1,'E',2},{0,'E',1}},{{1,'W',0},{1,'N',1}},{{0,'S',1},{1,'N',0}}}`
+
+Five 4-state 2-color 2D Turing machines from NKOS [http://www.wolframscience.com/nksonline/page-185 p185]:<br>
+states: 0=north, 1=east, 2=south, 3=west<br>
+colors: 0=white, 1=grey<br>
+(a): `{{{1,'S',1},{0,'W',2}},{{1,'S',2},{1,'E',1}},{{1,'N',3},{0,'S',0}},{{0,'E',1},{0,'N',0}}}`<br>
+(b): `{{{1,'E',3},{0,'N',0}},{{1,'W',2},{1,'S',1}},{{0,'N',0},{1,'S',1}},{{1,'E',1},{0,'S',0}}}`<br>
+(c): `{{{1,'W',1},{0,'E',2}},{{0,'E',3},{1,'W',0}},{{0,'N',0},{0,'S',3}},{{1,'S',0},{1,'N',1}}}`<br>
+(d): `{{{0,'E',3},{0,'W',1}},{{1,'N',0},{1,'N',3}},{{0,'W',1},{1,'S',2}},{{1,'S',2},{0,'E',1}}}`<br>
+(e): `{{{1,'N',1},{0,'S',1}},{{1,'S',3},{0,'N',2}},{{1,'W',0},{1,'N',1}},{{1,'S',2},{0,'E',1}}}`
+
+Wolfram devotes [http://www.wolframscience.com/nksonline/page-186 a page] to example (e)
+and [http://www.wolframscience.com/nksonline/page-184 describes it] as: "one example where the behavior seems in many respects completely random." In fact, as I reported [http://forum.wolframscience.com/showthread.php?s=86e914a0e833e3ad447abfd576c8d0a8&threadid=1749 here] the pattern is periodic, with period 2,074,575 and dx=3953, dy=1912.
+
+3-state 2-color 2D Turing machine from NKOS Notes, [http://www.wolframscience.com/nksonline/page-931 p931]:<br>
+states: 0=north, 1=SE, 2=SW<br>
+colors: 0=white, 1=grey<br>
+`{{{1,'N',2},{1,'W',0}},{{0,'W',0},{1,'S',0}},{{1,'S',1},{0,'E',1}}}`
