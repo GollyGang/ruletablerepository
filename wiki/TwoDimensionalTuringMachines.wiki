@@ -13,7 +13,7 @@
 
 == Busy Beavers ==
 
-If you know of any research into 2D Busy Beavers, please add it here. (There must be _some_ out there! All 2D Turing machines can be simulated by 1D machines, of course, but even so.)
+If you know of any research into 2D Busy Beavers, please add it here. (There must be _some_ out there! All 2D Turing machines can be simulated by 1D machines, of course, but only by using more states and/or colors.)
 
 This is a list of the best known busy beavers. If you find improvements then overwrite the below:
 
@@ -39,6 +39,8 @@ Notice that these values are _higher_ than the best 1D Busy Beavers for these pa
 `{{{1,'N',1},{2,'W',1},{0,'E',0}},{{1,'S',0},{2,'N',1},{1,'',1}}}`<br>
 10 non-zero cells written.
 
+Notice that the 38 steps case is a 1D machine. However the 10 cells written case beats the 1D case (6 cells written).
+
 (Final result from exhaustive search, unless I had bugs.)
 
 === 3-state 3-color: ===
@@ -47,13 +49,13 @@ Notice that these values are _higher_ than the best 1D Busy Beavers for these pa
 `{{{2,'W',1},{1,'',0},{2,'E',1}},{{2,'W',2},{0,'E',1},{2,'S',1}},{{1,'E',0},{0,'N',0},{0,'N',0}}}`<br>
 697 non-zero cells written.
 
-These are just examples - the actual record holders will have to be at least as large as the [http://en.wikipedia.org/wiki/Busy_beaver 1D case] which is _large_.
+These are just examples - the actual record holders will have to be at least as large as the 1D case which is [http://www.cse.unr.edu/~al/BusyBeaver.html _large_].
 
 === 4-state 2-color: ===
 `{{{0,'S',2},{1,'N',3}},{{1,'W',3},{1,'S',1}},{{1,'S',1},{1,'',0}},{{0,'E',0},{0,'N',0}}}`<br>
 3271 steps.<br>
-`{{{0,'S',1},{1,'',0}},{{1,'N',2},{1,'S',1}},{{0,'W',3},{0,'E',2}},{{1,'E',0},{0,'N',0}}}`<br>
-98 non-zero cells written.
+`{{{1,'W',2},{1,'E',0}},{{1,'E',0},{1,'',0}},{{1,'N',3},{0,'S',0}},{{1,'N',1},{0,'N',0}}}`<br>
+154 non-zero cells written.
 
 Again these are just preliminary results but already far ahead of the 1D case (107 steps, 13 non-zero cells).
 
@@ -69,7 +71,7 @@ However there _are_ examples of complex 3-state 2-color 2D Turing machines. Thes
 This pattern is seemingly random for 15.5 million timesteps, before making a repetitive highway.
 
 `{{{0,'N',2},{1,'S',1}},{{0,'E',0},{0,'S',0}},{{1,'W',1},{1,'N',2}}}`<br>
-This patterns grows extremely slowly, so is perhaps doing some form of counting, but appears random. Here's an animation of the states progressing from 1E9 timesteps up to 100E9 timesteps (100 frames, each 1 billion timesteps):<br>
+This pattern grows extremely slowly, so is perhaps doing some form of counting, but appears random. Here's an animation of the states progressing from 1E9 timesteps up to 100E9 timesteps (100 frames, each 1 billion timesteps):<br>
 
 http://ruletablerepository.googlecode.com/files/AlienCounter.gif
 
