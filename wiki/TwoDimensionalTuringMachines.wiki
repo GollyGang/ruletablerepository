@@ -1,4 +1,4 @@
-#summary A collection of 2D Turing Machines (Absolute Turmites)
+#summary A collection of 2D Turing Machine programs (Absolute Turmites)
 
 <b>Table of Contents:</b>
 <wiki:toc>
@@ -24,6 +24,8 @@ This is a list of the best known busy beavers. If you find improvements then ove
 
 This is the same as the 1D Busy Beaver.
 
+(In 3D there's no improvement either. And thinking about it, it will be true in all higher dimensions too - there are only 3 moves to be specified so if the 2D case is no improvement over the 1D case then adding further dimensions won't help either. Busy Beavers need to go over their own tracks to really be effective - and from this perspective it's really a surprise that some of the 2D cases outperform the 1D cases. TJH)
+
 === 3-state 2-color: ===
 `{{{1,'S',1},{1,'W',2}},{{0,'W',2},{0,'E',1}},{{1,'N',0},{1,'',1}}}`<br>
 32 steps.<br>
@@ -33,6 +35,8 @@ This is the same as the 1D Busy Beaver.
 (Final result from exhaustive search, unless I had bugs.)
 
 Notice that these values are _higher_ than the best 1D Busy Beavers for these parameters: 21 steps, 6 non-zero cells. Is this true in general? (Obviously the n-dimensional values can never be lower than the (n-1)-dimensional values since the lower-dimensional turmite can always be embedded in the higher-dimensional space.)
+
+(Will the 3D case outperform the 2D case?)
 
 === 2-state 3-color: ===
 `{{{1,'S',1},{2,'N',1},{1,'',0}},{{2,'N',0},{2,'S',1},{1,'N',1}}}`<br>
