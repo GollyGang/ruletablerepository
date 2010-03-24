@@ -63,10 +63,8 @@ Here's the 1D machine described as [http://www.cse.unr.edu/~al/busybeaversurpris
 (I don't get the joke though (if there is one) - from a rough visual inspection it appears to count on each side (in different ways) and then halt. I don't know enough about 1D Busy Beavers to know whether this in itself is unusual or what. Any ideas? TJH)
 
 === 4-state 2-color: ===
-`{{{0,'S',2},{1,'N',3}},{{1,'W',3},{1,'S',1}},{{1,'S',1},{1,'',0}},{{0,'E',0},{0,'N',0}}}`<br>
-3271 steps.<br>
-`{{{1,'W',2},{1,'E',0}},{{1,'E',0},{1,'',0}},{{1,'N',3},{0,'S',0}},{{1,'N',1},{0,'N',0}}}`<br>
-154 non-zero cells written.
+`{{{1,'W',3},{1,'S',2}},{{1,'E',0},{1,'W',3}},{{0,'E',3},{1,'',0}},{{1,'S',1},{0,'N',0}}}`<br>
+3603 steps, 168 non-zero cells written.
 
 Again these are just preliminary results but already far ahead of the 1D case (107 steps, 13 non-zero cells).
 
