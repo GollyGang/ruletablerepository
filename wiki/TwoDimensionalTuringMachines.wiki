@@ -10,7 +10,7 @@
   * [http://www.wolframscience.com/nksonline/section-5.3 2D Turing machines]
   * [http://en.wikipedia.org/wiki/Busy_beaver Busy Beavers]
   * [http://en.wikipedia.org/wiki/Turmite Turmites]
-  * Explore examples using [http://ruletablerepository.googlecode.com/files/AbsoluteTurmites.zip this script] in [http://golly.sourceforge.net Golly].
+  * Run [http://ruletablerepository.googlecode.com/files/AbsoluteTurmites.zip this script] in [http://golly.sourceforge.net Golly] and copy-paste one of the specification strings below into the text box. Each machine is specified as a table of n_states rows by n_colors columns, written in (Western) reading order: the first row first, then then other rows. Each triple is {A,B,C} where A is the new color to write (0-(n_colors-1)), B is the direction to move in (North, South, East, West) or empty to halt, C is the new state to adopt (0-(n_colors-1)).
 
 == Busy Beavers ==
 
