@@ -14,9 +14,13 @@
 
 == Busy Beavers ==
 
-If you know of any research into 2D Busy Beavers, please add it here. (There must be _some_ out there! All 2D Turing machines can be simulated by 1D machines, of course, but only by using more states and/or colors.)
+This is a list of the best known busy beavers. If you find improvements then overwrite the below.
 
-This is a list of the best known busy beavers. If you find improvements then overwrite the below:
+=== Prior work ===
+
+  * Brady, Allen H. (1995) "The Busy Beaver Game and the Meaning of Life". In: Herken, R. "The Universal Turing Machine: a half-century survey". [http://books.google.co.uk/books?id=YafIDVd1Z68C&printsec=frontcover&dq=universal+turing+machine+herken&source=bl&ots=MZUbd8ijxj&sig=peUdViEPp2MVwzYAGbRCXRd1qh4&hl=en&ei=0_ipS5_cLI300gShkfHJAQ&sa=X&oi=book_result&ct=result&resnum=1&ved=0CAYQ6AEwAA#v=onepage&q=&f=false read it here]
+
+(If you know of any other work, please let us know!)
 
 === 2-state 2-color: ===
 `{{{1,'S',1},{1,'N',1}},{{1,'N',0},{1,'',1}}}`<br>
