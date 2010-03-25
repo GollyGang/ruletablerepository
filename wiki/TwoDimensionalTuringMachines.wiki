@@ -31,7 +31,7 @@ This is a 1D Busy Beaver.
 
 (In 3D there's no improvement either. And thinking about it, it will be true in all higher dimensions too - there are only 3 moves to be specified so if the 2D case is no improvement over the 1D case then adding further dimensions won't help either. Busy Beavers need to go over their own tracks to really be effective - and from this perspective it's really a surprise that some of the 2D cases outperform the 1D cases. TJH)
 
-With _relative 1D_ Turmites, the best 2-state 2-color Busy Beaver takes 13 steps and writes 4 non-zero cells: `{{{1,4,1},{1,0,0}},{{1,1,0},{0,1,1}}}` which is an improvement. (For relative turmites: 1=forward, 4=u-turn, 2=right, 8=left, 0=halt. Use [http://ruletablerepository.googlecode.com/files/Turmites.zip Turmite-gen.py])
+With _relative 1D_ Turmites, the best 2-state 2-color Busy Beaver takes 13 steps and writes 4 non-zero cells: `{{{1,4,1},{1,0,0}},{{1,1,0},{0,1,1}}}` which _is_ an improvement. (For relative turmites: 1=forward, 4=u-turn, 2=right, 8=left, 0=halt. Use [http://ruletablerepository.googlecode.com/files/Turmites.zip Turmite-gen.py])
 
 The best relative _2D_ Turmites take 121 steps `{{{1,8,0},{0,8,1}},{{1,0,0},{1,2,0}}}` and write 37 non-zero cells `{{{1,2,1},{1,1,0}},{{1,4,0},{1,0,0}}}` before halting. (Allen H. Brady's results.) 
 
@@ -49,7 +49,7 @@ Notice that these values are _higher_ than the best 1D Busy Beavers for these pa
 
 The best _relative 1D_ turmite takes 82 steps and writes 9 non-zero cells: `{{{1,1,1},{0,1,0}},{{1,4,0},{0,1,2}},{{1,1,0},{1,0,0}}}`
 
-The best relative 2D turmites will exceed 18263 steps and 459 non-zero cells written: `{{{1,2,1},{0,8,0}},{{0,2,0},{1,1,2}},{{0,4,0},{0,0,0}}}`
+The best relative 2D turmite will likely exceed 18263 steps and 459 non-zero cells written: `{{{1,2,1},{0,8,0}},{{0,2,0},{1,1,2}},{{0,4,0},{0,0,0}}}`
 
 === 2-state 3-color: ===
 `{{{1,'S',1},{2,'N',1},{1,'',0}},{{2,'N',0},{2,'S',1},{1,'N',1}}}`<br>
@@ -62,6 +62,8 @@ Notice that the 38 steps case is a 1D machine. However the 10 cells written case
 (Final result from exhaustive search, unless I had bugs.)
 
 The best _relative 1D_ turmite takes 223 steps and writes 19 non-zero cells: `{{{1,4,1},{0,1,0},{2,1,0}},{{2,1,0},{1,0,0},{1,1,0}}}`
+
+The best relative _2D_ turmite will take at least 11367 steps and write 3235 non-zero cells: `{{{1,2,1},{1,1,0},{1,2,0}},{{1,8,1},{2,2,0},{0,0,0}}}`
 
 === 3-state 3-color: ===
 `{{{1,'N',1},{2,'S',2},{2,'S',1}},{{1,'W',2},{1,'N',1},{1,'',0}},{{1,'E',0},{0,'N',0},{0,'N',0}}}`<br>
