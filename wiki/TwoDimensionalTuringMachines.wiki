@@ -19,7 +19,7 @@ This is a list of the best known busy beavers. If you find improvements then ove
 === Prior work ===
 
   * Brady, Allen H. (1995) "The Busy Beaver Game and the Meaning of Life". In: Herken, R. "The Universal Turing Machine: a half-century survey". [http://books.google.co.uk/books?id=YafIDVd1Z68C&lpg=PP1&ots=MZUbd8ijxj&dq=universal%20turing%20machine%20herken&pg=PA237#v=onepage&q=&f=false read it here] 
-    He considered "!TurNing" machines (_relative_ Turmites) and found 2-state 2-color machines that ran for 121 steps and printed 37 non-zero cells before halting. He did the same test on a triangular grid and found machines that took 171 steps and printed 39 non-zero cells before halting. He found 3-state 2-color triangular grid machines that took 1721 steps and printed 351 non-zero cells before halting.
+    He considered "!TurNing" machines (_relative_ Turmites) and found 2-state 2-color machines that ran for 121 steps `{{{1,8,0},{0,8,1}},{{1,0,0},{1,2,0}}}` and printed 37 non-zero cells `{{{1,2,1},{1,1,0}},{{1,4,0},{1,0,0}}}` before halting. (You'll need [http://ruletablerepository.googlecode.com/files/Turmites.zip Turmite-gen.py] to load these specification strings.) He did the same test on a triangular grid and found machines that took 171 steps and printed 39 non-zero cells before halting. He found 3-state 2-color triangular grid machines that took 1721 steps and printed 351 non-zero cells before halting.
 
 (If you know of any other work, please let us know!)
 
