@@ -19,7 +19,7 @@ This is a list of the best known busy beavers. If you find improvements then ove
 === Prior work ===
 
   * Brady, Allen H. (1995) "The Busy Beaver Game and the Meaning of Life". In: Herken, R. "The Universal Turing Machine: a half-century survey". [http://books.google.co.uk/books?id=YafIDVd1Z68C&lpg=PP1&ots=MZUbd8ijxj&dq=universal%20turing%20machine%20herken&pg=PA237#v=onepage&q=&f=false read it here] 
-    He considered "!TurNing" machines (_relative_ Turmites) and found 2-state 2-color machines that ran for 121 steps `{{{1,8,0},{0,8,1}},{{1,0,0},{1,2,0}}}` and printed 37 non-zero cells `{{{1,2,1},{1,1,0}},{{1,4,0},{1,0,0}}}` before halting. (For relative turmites: 1=forward, 4=u-turn, 2=right, 8=left, 0=halt. Use [http://ruletablerepository.googlecode.com/files/Turmites.zip Turmite-gen.py] to load these specification strings.) He did the same test on a triangular grid and found machines that took 171 steps and printed 39 non-zero cells before halting. He found 3-state 2-color triangular grid machines that took 1721 steps and printed 351 non-zero cells before halting.
+    He considered "!TurNing" machines (_relative_ Turmites) and found 2-state 2-color machines that ran for 121 steps and printed 37 non-zero cells before halting. He did the same test on a triangular grid and found machines that took 171 steps and printed 39 non-zero cells before halting. He found 3-state 2-color triangular grid machines that took 1721 steps and printed 351 non-zero cells before halting.
 
 (If you know of any other work, please let us know!)
 
@@ -31,7 +31,9 @@ This is a 1D Busy Beaver.
 
 (In 3D there's no improvement either. And thinking about it, it will be true in all higher dimensions too - there are only 3 moves to be specified so if the 2D case is no improvement over the 1D case then adding further dimensions won't help either. Busy Beavers need to go over their own tracks to really be effective - and from this perspective it's really a surprise that some of the 2D cases outperform the 1D cases. TJH)
 
-(With _relative 1D_ Turmites, the best 2-state 2-color Busy Beaver takes 13 steps and writes 4 non-zero cells: `{{{1,4,1},{1,0,0}},{{1,1,0},{0,1,1}}}` (use [http://ruletablerepository.googlecode.com/files/Turmites.zip Turmite-gen.py]) which is an improvement.)
+With _relative 1D_ Turmites, the best 2-state 2-color Busy Beaver takes 13 steps and writes 4 non-zero cells: `{{{1,4,1},{1,0,0}},{{1,1,0},{0,1,1}}}` which is an improvement. (For relative turmites: 1=forward, 4=u-turn, 2=right, 8=left, 0=halt. Use [http://ruletablerepository.googlecode.com/files/Turmites.zip Turmite-gen.py])
+
+The best relative _2D_ Turmites take 121 steps `{{{1,8,0},{0,8,1}},{{1,0,0},{1,2,0}}}` and write 37 non-zero cells `{{{1,2,1},{1,1,0}},{{1,4,0},{1,0,0}}}` before halting. (Allen H. Brady's results.) 
 
 === 3-state 2-color: ===
 `{{{1,'S',1},{1,'W',2}},{{0,'W',2},{0,'E',1}},{{1,'N',0},{1,'',1}}}`<br>
@@ -45,7 +47,9 @@ Notice that these values are _higher_ than the best 1D Busy Beavers for these pa
 
 (Will the 3D case outperform the 2D case?)
 
-(The best _relative 1D_ turmite takes 82 steps and writes 9 non-zero cells: `{{{1,1,1},{0,1,0}},{{1,4,0},{0,1,2}},{{1,1,0},{1,0,0}}}` - use [http://ruletablerepository.googlecode.com/files/Turmites.zip Turmite-gen.py].)
+The best _relative 1D_ turmite takes 82 steps and writes 9 non-zero cells: `{{{1,1,1},{0,1,0}},{{1,4,0},{0,1,2}},{{1,1,0},{1,0,0}}}`
+
+The best relative 2D turmites will exceed 18263 steps and 459 non-zero cells written: `{{{1,2,1},{0,8,0}},{{0,2,0},{1,1,2}},{{0,4,0},{0,0,0}}}`
 
 === 2-state 3-color: ===
 `{{{1,'S',1},{2,'N',1},{1,'',0}},{{2,'N',0},{2,'S',1},{1,'N',1}}}`<br>
@@ -57,12 +61,12 @@ Notice that the 38 steps case is a 1D machine. However the 10 cells written case
 
 (Final result from exhaustive search, unless I had bugs.)
 
-(The best _relative 1D_ turmite takes 223 steps and writes 19 non-zero cells: `{{{1,4,1},{0,1,0},{2,1,0}},{{2,1,0},{1,0,0},{1,1,0}}}` - use [http://ruletablerepository.googlecode.com/files/Turmites.zip Turmite-gen.py].)
+The best _relative 1D_ turmite takes 223 steps and writes 19 non-zero cells: `{{{1,4,1},{0,1,0},{2,1,0}},{{2,1,0},{1,0,0},{1,1,0}}}`
 
 === 3-state 3-color: ===
 `{{{1,'N',1},{2,'S',2},{2,'S',1}},{{1,'W',2},{1,'N',1},{1,'',0}},{{1,'E',0},{0,'N',0},{0,'N',0}}}`<br>
 9304 steps.<br>
-`{{{2,'W',1},{1,'',0},{2,'E',1}},{{2,'W',2},{0,'E',1},{2,'S',1}},{{1,'É,0},{0,'N',0},{0,'N',0}}}`<br>
+`{{{2,'W',1},{1,'',0},{2,'E',1}},{{2,'W',2},{0,'E',1},{2,'S',1}},{{1,'E',0},{0,'N',0},{0,'N',0}}}`<br>
 697 non-zero cells written.
 
 These are just examples - the actual record holders will have to be at least as large as the 1D case for which the record is _[http://www.cse.unr.edu/~al/BusyBeaver.html large]_:<br>
