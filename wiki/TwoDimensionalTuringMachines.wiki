@@ -63,7 +63,7 @@ Notice that the 38 steps case is a 1D machine. However the 10 cells written case
 
 The best _relative 1D_ turmite takes 223 steps and writes 19 non-zero cells: `{{{1,4,1},{0,1,0},{2,1,0}},{{2,1,0},{1,0,0},{1,1,0}}}`
 
-The best relative _2D_ turmite will take at least 11367 steps and write 3235 non-zero cells: `{{{1,2,1},{1,1,0},{1,2,0}},{{1,8,1},{2,2,0},{0,0,0}}}`
+The best relative _2D_ turmite will take at least 11367 steps and write 3326 non-zero cells: `{{{1,2,1},{1,1,0},{1,2,0}},{{1,8,1},{2,2,0},{1,0,0}}}`
 
 === 3-state 3-color: ===
 `{{{1,'N',1},{2,'S',2},{2,'S',1}},{{1,'W',2},{1,'N',1},{1,'',0}},{{1,'E',0},{0,'N',0},{0,'N',0}}}`<br>
