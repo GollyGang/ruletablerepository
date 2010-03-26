@@ -31,9 +31,9 @@ This is a 1D Busy Beaver.
 
 (In 3D there's no improvement either. And thinking about it, it will be true in all higher dimensions too - there are only 3 moves to be specified so if the 2D case is no improvement over the 1D case then adding further dimensions won't help either. Busy Beavers need to go over their own tracks to really be effective - and from this perspective it's really a surprise that some of the 2D cases outperform the 1D cases. TJH)
 
-With _relative 1D_ Turmites, the best 2-state 2-color Busy Beaver takes 13 steps and writes 4 non-zero cells: `{{{1,4,1},{1,0,0}},{{1,1,0},{0,1,1}}}` which _is_ an improvement. (For relative turmites: 1=forward, 4=u-turn, 2=right, 8=left, 0=halt. Use [http://ruletablerepository.googlecode.com/files/Turmites.zip Turmite-gen.py])
+With _relative 1D_ Turmites, the best 2-state 2-color Busy Beaver takes 13 steps and writes 4 non-zero cells: `{{{1,4,1},{1,0,0}},{{1,1,0},{0,1,1}}}` which _is_ an improvement. (For relative turmites: 1=forward, 4=u-turn, 2=right, 8=left, 0=halt. Use [http://ruletablerepository.googlecode.com/files/Turmites.zip Turmite-gen.py]) Allen H. Brady (in unpublished work) called these systems "Flippers" and discovered this Busy Beaver.
 
-The best relative _2D_ Turmites take 121 steps `{{{1,8,0},{0,8,1}},{{1,0,0},{1,2,0}}}` and write 37 non-zero cells `{{{1,2,1},{1,1,0}},{{1,4,0},{1,0,0}}}` before halting. (Allen H. Brady's results.) 
+The best relative _2D_ Turmites take 121 steps `{{{1,8,0},{0,8,1}},{{1,0,0},{1,2,0}}}` and write 37 non-zero cells `{{{1,2,1},{1,1,0}},{{1,4,0},{1,0,0}}}` before halting. (Allen H. Brady's results from the paper.) 
 
 === 3-state 2-color: ===
 `{{{1,'S',1},{1,'W',2}},{{0,'W',2},{0,'E',1}},{{1,'N',0},{1,'',1}}}`<br>
@@ -86,6 +86,8 @@ Here's the 1D machine described as [http://www.cse.unr.edu/~al/busybeaversurpris
 243 non-zero cells written.
 
 Again these are just preliminary results but already far ahead of the 1D case (107 steps, 13 non-zero cells).
+
+The best _1D relative_ turmite takes at least 15460 steps `{{{1,4,1},{1,1,0}},{{1,1,2},{0,1,0}},{{1,4,3},{1,1,3}},{{0,0,0},{1,1,1}}}` (Allen H. Brady, unpublished) and writes at least 1109 cells `{{{1,2,1},{1,1,2}},{{1,4,0},{1,2,3}},{{1,4,0},{0,1,0}},{{0,1,0},{0,0,0}}}`. That's a pretty amazing leap from 107 steps, 13 cells! 
 
 == Searching for high entropy patterns ==
 
