@@ -57,7 +57,7 @@ The best relative 2D turmite is at least 21790 steps and 2793 non-zero cells wri
 `{{{1,'N',1},{2,'W',1},{0,'E',0}},{{1,'S',0},{2,'N',1},{1,'',1}}}`<br>
 10 non-zero cells written.
 
-Notice that the 38 steps case is a 1D machine. However the 10 cells written case beats the 1D case (6 cells written).
+Notice that the 38 steps case is a 1D machine. However the 10 cells written case beats the 1D case (9 cells written).
 
 (Final result from exhaustive search, unless I had bugs.)
 
