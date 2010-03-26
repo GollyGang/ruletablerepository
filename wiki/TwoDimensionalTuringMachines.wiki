@@ -5,12 +5,38 @@
 
 ----
 
-== Background ==
+== Introduction ==
+
+Turing machines operate on an infinite tape, extending out to infinity in each direction. The tape is divided into cells, each of which can contain a symbol from a finite alphabet. The Turing machine consists of a finite state machine that moves along the tape, reading and writing symbols.
+
+One way to generalise this simple definition is to alter the tape on which the Turing machine inhabits. Since there is only one possible one-dimensional tape, this involves moving into two dimensions. Natural choices for the grid are the square and hexagonal lattices; triangular and Penrose tilings are more exotic.
+
+One important distinction is between _absolute_ and _relative_ 2D Turing machines. Absolute Turing machines specify directions in absolute terms, such as North or East. By contrast, relative Turing machines specify directions relative to the current direction the machine is pointing, such as Forward or Right.
+
+The majority of this article is concerned with Turing machines on a square grid, both absolute and relative. 2D Turing machines are popularly known as Turmites, so we use that term interchangeably with "2D Turing machine".
+
+
+
+== Preliminaries ==
+
+Most of the work in this field was investigated by Wolfram research, and documented in _A New Kind of Science_. A few useful links are below:
+
   * [http://en.wikipedia.org/wiki/Turing_machine Turing machines]
   * [http://www.wolframscience.com/nksonline/section-5.3 2D Turing machines]
   * [http://en.wikipedia.org/wiki/Busy_beaver Busy Beavers]
   * [http://en.wikipedia.org/wiki/Turmite Turmites]
+
+
+
+== Make your own Turmites ==
+
+Tim J. Hutton has kindly provided a script for making and testing absolute Turmites:
+
   * Run [http://ruletablerepository.googlecode.com/files/AbsoluteTurmites.zip this script] in [http://golly.sourceforge.net Golly] and copy-paste one of the specification strings below into the text box. Each machine is specified as a table of n_states rows by n_colors columns, written in (Western) reading order: the first row first, then then other rows. Each triple is {A,B,C} where A is the new color to write (0-(n_colors-1)), B is the direction to move in (North, South, East, West) or empty to halt, C is the new state to adopt (0-(n_colors-1)).
+
+
+He also made a similar script for generating relative Turmites. [http://ruletablerepository.googlecode.com/files/Turmites.zip Turmite-gen.py] It uses a similar notation as the other script. The difference is in how the direction is specified: 1=forward, 4=u-turn, 2=right, 8=left, 0=halt. This also allows Turmites to split into two, by specifying the sum of the directions. For example, 15 would represent movement in all four directions.
+
 
 == Busy Beavers ==
 
@@ -23,73 +49,119 @@ This is a list of the best known busy beavers. If you find improvements then ove
 
 (If you know of any other work, please let us know!)
 
-=== 2-state 2-color: ===
-`{{{1,'S',1},{1,'N',1}},{{1,'N',0},{1,'',1}}}`<br>
-6 steps, 4 non-zero cells written.
 
-This is a 1D Busy Beaver.
+
+=== 2-state 2-color: ===
+
+The best Busy Beaver is specified by the rulestring:
+
+`{{{1,'S',1},{1,'N',1}},{{1,'N',0},{1,'',1}}}`<br>
+
+It takes 6 steps to halt, writing 4 non-zero cells.
+
+This is equivalent to a 1D Busy Beaver.
+
 
 (In 3D there's no improvement either. And thinking about it, it will be true in all higher dimensions too - there are only 3 moves to be specified so if the 2D case is no improvement over the 1D case then adding further dimensions won't help either. Busy Beavers need to go over their own tracks to really be effective - and from this perspective it's really a surprise that some of the 2D cases outperform the 1D cases. TJH)
 
-With _relative 1D_ Turmites, the best 2-state 2-color Busy Beaver takes 13 steps and writes 4 non-zero cells: `{{{1,4,1},{1,0,0}},{{1,1,0},{0,1,1}}}` which _is_ an improvement. (For relative turmites: 1=forward, 4=u-turn, 2=right, 8=left, 0=halt. Use [http://ruletablerepository.googlecode.com/files/Turmites.zip Turmite-gen.py]) Allen H. Brady (in unpublished work) called these systems "Flippers" and discovered this Busy Beaver.
+
+With _relative 1D_ Turmites, the best 2-state 2-color Busy Beaver takes 13 steps and writes 4 non-zero cells: `{{{1,4,1},{1,0,0}},{{1,1,0},{0,1,1}}}` which _is_ an improvement. Allen H. Brady (in unpublished work) called these systems "Flippers" and discovered this Busy Beaver.
+
 
 The best relative _2D_ Turmites take 121 steps `{{{1,8,0},{0,8,1}},{{1,0,0},{1,2,0}}}` and write 37 non-zero cells `{{{1,2,1},{1,1,0}},{{1,4,0},{1,0,0}}}` before halting. (Allen H. Brady's results from the paper.) 
 
+
+
 === 3-state 2-color: ===
+
+An exhaustive search returned the following Busy Beavers. The first holds the record for the longest time before halting; the second writes the most non-zero symbols on the tape:
+
 `{{{1,'S',1},{1,'W',2}},{{0,'W',2},{0,'E',1}},{{1,'N',0},{1,'',1}}}`<br>
 32 steps.<br>
+
 `{{{1,'W',2},{1,'E',1}},{{1,'S',0},{1,'N',1}},{{1,'N',1},{1,'',1}}}`<br>
 11 non-zero cells written.
 
-(Final result from exhaustive search, unless I had bugs.)
 
 Notice that these values are _higher_ than the best 1D Busy Beavers for these parameters: 21 steps, 6 non-zero cells. Is this true in general? (Obviously the n-dimensional values can never be lower than the (n-1)-dimensional values since the lower-dimensional turmite can always be embedded in the higher-dimensional space.)
 
 (Will the 3D case outperform the 2D case?)
 
+
 The best _relative 1D_ turmite takes 82 steps and writes 9 non-zero cells: `{{{1,1,1},{0,1,0}},{{1,4,0},{0,1,2}},{{1,1,0},{1,0,0}}}`
+
 
 The best relative 2D turmite is at least 21790 steps and 2793 non-zero cells written: `{{{1,2,1},{1,1,0}},{{1,2,1},{1,2,2}},{{1,0,0},{1,1,0}}}`
 
+
+
 === 2-state 3-color: ===
+
+In two states and three colours, things begin to get interesting. Universal computation becomes possible for 1D Turing machines, as demonstrated by Alex Smith and Stephen Wolfram.
+
+An exhaustive search returned the following Busy Beavers for the absolute 2D case:
+
 `{{{1,'S',1},{2,'N',1},{1,'',0}},{{2,'N',0},{2,'S',1},{1,'N',1}}}`<br>
 38 steps.<br>
+
 `{{{1,'N',1},{2,'W',1},{0,'E',0}},{{1,'S',0},{2,'N',1},{1,'',1}}}`<br>
 10 non-zero cells written.
 
 Notice that the 38 steps case is a 1D machine. However the 10 cells written case beats the 1D case (9 cells written).
 
-(Final result from exhaustive search, unless I had bugs.)
 
 The best _relative 1D_ turmite takes 223 steps and writes 19 non-zero cells: `{{{1,4,1},{0,1,0},{2,1,0}},{{2,1,0},{1,0,0},{1,1,0}}}`
 
+
 The best relative _2D_ turmite will take at least 11367 steps and write 3326 non-zero cells: `{{{1,2,1},{1,1,0},{1,2,0}},{{1,8,1},{2,2,0},{1,0,0}}}`
 
+
+
 === 3-state 3-color: ===
+
+Here are two example Turing machines, neither of which are record holders:
+
 `{{{1,'N',1},{2,'S',2},{2,'S',1}},{{1,'W',2},{1,'N',1},{1,'',0}},{{1,'E',0},{0,'N',0},{0,'N',0}}}`<br>
 9304 steps.<br>
 `{{{2,'W',1},{1,'',0},{2,'E',1}},{{2,'W',2},{0,'E',1},{2,'S',1}},{{1,'E',0},{0,'N',0},{0,'N',0}}}`<br>
 697 non-zero cells written.
 
+
 These are just examples - the actual record holders will have to be at least as large as the 1D case for which the record is _[http://www.cse.unr.edu/~al/BusyBeaver.html large]_:<br>
 `{{{1,'E',1},{2,'W',0},{1,'W',2}},{{0,'W',0},{2,'E',1},{1,'W',1}},{{1,'',0},{1,'E',0},{1,'E',2}}}`<br>
 (119,112,334,170,342,540 steps, 374,676,383 non-zero cells written)
+
 
 Here's the 1D machine described as [http://www.cse.unr.edu/~al/busybeaversurprise.html Surprise-In-A-Box]:<br>
 `{{{1,'E',1},{2,'W',1},{1,'W',2}},{{1,'W',0},{2,'E',1},{1,'E',1}},{{0,'',0},{2,'W',0},{0,'W',2}}}`<br>
 (I don't get the joke though (if there is one) - from a rough visual inspection it appears to count on each side (in different ways) and then halt. I don't know enough about 1D Busy Beavers to know whether this in itself is unusual or what. Any ideas? TJH)
 
+
+
 === 4-state 2-color: ===
+
+Absolute 2D Turmites again beat the 1D case in the space of 4-state 2-colour Turing machines, as shown by the following two examples:
+
 `{{{1,'E',1},{0,'S',1}},{{1,'N',3},{1,'E',2}},{{0,'W',0},{1,'N',2}},{{1,'W',0},{0,'',0}}}`<br>
 4632 steps<br>
 `{{{1,'E',1},{0,'W',0}},{{1,'W',2},{1,'N',0}},{{1,'W',3},{1,'S',2}},{{1,'N',0},{0,'',0}}}`<br>
 243 non-zero cells written.
 
-Again these are just preliminary results but already far ahead of the 1D case (107 steps, 13 non-zero cells).
+These have not been verified by an exhaustive search, but are already far ahead of the 1D case (107 steps, 13 non-zero cells).
+
 
 The best _1D relative_ turmite takes at least 15460 steps and writes 68 non-zero cells: `{{{1,4,1},{1,1,0}},{{1,1,2},{0,1,0}},{{1,4,3},{1,1,3}},{{0,0,0},{1,1,1}}}` (Allen H. Brady, unpublished). That's a pretty amazing leap from 107 steps, 13 cells! 
 
+
 The best _2D_ relative turmite takes at least 29014 steps and writes 3202 cells `{{{1,8,1},{1,1,0}},{{1,8,1},{1,8,2}},{{1,2,3},{1,1,0}},{{0,1,0},{0,0,0}}}`
+
+
+
+== General findings ==
+
+It appears that relative Turmites in one and two dimensions are almost consistently as good, or better than, their absolute counterparts. For very small numbers of states and symbols, 1D and 2D Turmites perform equally well. However, when the number of states/symbols is increased, the 2D Turmites overtake the 1D Turmites.
+
+
 
 == Searching for high entropy patterns ==
 
@@ -99,15 +171,22 @@ Wolfram says this of 2D Turing machines:
  
 However there _are_ examples of complex 3-state 2-color 2D Turing machines. These below were located by a program searching for patterns with high [http://en.wikipedia.org/wiki/Entropy_%28information_theory%29 entropy]:
 
+
+This pattern is seemingly random for 15.5 million timesteps, before making a repetitive highway:
+
 `{{{0,'S',1},{1,'W',1}},{{1,'E',2},{1,'S',2}},{{1,'W',0},{0,'N',0}}}`<br>
-This pattern is seemingly random for 15.5 million timesteps, before making a repetitive highway.
+
+
+
+This pattern expands at a logarithmic rate, and behaves quite unusually:
 
 `{{{0,'N',2},{1,'S',1}},{{0,'E',0},{0,'S',0}},{{1,'W',1},{1,'N',2}}}`<br>
+
 This pattern grows extremely slowly, so is perhaps doing some form of counting, but appears random. Here's an animation of the states progressing from 1E9 timesteps up to 100E9 timesteps (100 frames, each 1 billion timesteps):<br>
 
 http://ruletablerepository.googlecode.com/files/AlienCounter.gif
 
-The pattern expands at a logarithmic rate, and resembles a binary counter. However, it is not performing traditional binary counting, as long strings of '1' symbols are replaced with alternating '1's and '0's, instead of solid '0's. If the counter didn't produce extra lines, and just worked in one dimension, it would count like so:
+This resembles a form of binary counter. However, it is not performing traditional binary counting, as long strings of '1' symbols are replaced with alternating '1's and '0's, instead of solid '0's. If the counter didn't produce extra lines, and just worked in one dimension, it would count like so:
 
 {{{
 
@@ -137,6 +216,8 @@ The pattern expands at a logarithmic rate, and resembles a binary counter. Howev
 Notice that there is 1 one-digit number, 2 two-digit numbers, 3 three-digit numbers, 5 four-digit numbers and 8 five-digit numbers. These correspond to the Fibonacci numbers, which means that it effectively counts in base-phi, where phi is the golden number. This is quite unexpected, as phi is an irrational number, so doesn't usually occur as the base for discrete counting.
 
 However, occasionally a parallel side-branch is created. This makes the counting process less regular, as the branches interfere with each other.
+
+
 
 == The examples in Wolfram's A New Kind of Science ==
 
