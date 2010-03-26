@@ -49,7 +49,7 @@ Notice that these values are _higher_ than the best 1D Busy Beavers for these pa
 
 The best _relative 1D_ turmite takes 82 steps and writes 9 non-zero cells: `{{{1,1,1},{0,1,0}},{{1,4,0},{0,1,2}},{{1,1,0},{1,0,0}}}`
 
-The best relative 2D turmite will likely exceed 18263 steps and 459 non-zero cells written: `{{{1,2,1},{0,8,0}},{{0,2,0},{1,1,2}},{{0,4,0},{0,0,0}}}`
+The best relative 2D turmite is at least 21790 steps and 2793 non-zero cells written: `{{{1,2,1},{1,1,0}},{{1,2,1},{1,2,2}},{{1,0,0},{1,1,0}}}`
 
 === 2-state 3-color: ===
 `{{{1,'S',1},{2,'N',1},{1,'',0}},{{2,'N',0},{2,'S',1},{1,'N',1}}}`<br>
