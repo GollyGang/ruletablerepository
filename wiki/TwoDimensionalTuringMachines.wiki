@@ -97,7 +97,7 @@ The best relative 2D turmite is at least 21790 steps and 2793 non-zero cells wri
 
 === 2-state 3-color: ===
 
-In two states and three colours, things begin to get interesting. Universal computation becomes possible for 1D Turing machines, as demonstrated by Alex Smith and Stephen Wolfram.
+In two states and three colours, things begin to get interesting. Universal computation becomes possible for 1D Turing machines, as demonstrated by Alex Smith and Stephen Wolfram for `{{{1,'E',1},{2,'W',0},{1,'W',0}},{{2,'W',0},{2,'E',1},{0,'E',0}}}`
 
 An exhaustive search returned the following Busy Beavers for the absolute 2D case:
 
