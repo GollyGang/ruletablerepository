@@ -11,45 +11,44 @@ Turing machines operate on an infinite tape, extending out to infinity in each d
 
 One way to generalise this simple definition is to alter the tape on which the Turing machine inhabits. Since there is only one possible one-dimensional tape, this involves moving into two dimensions. Natural choices for the grid are the square and hexagonal lattices; triangular and Penrose tilings are more exotic.
 
-One important distinction is between _absolute_ and _relative_ 2D Turing machines. Absolute Turing machines specify directions in absolute terms, such as North or East. By contrast, relative Turing machines specify directions relative to the current direction the machine is pointing, such as Forward or Right.
+Another way to generalise the definition is to give the read-write head an orientation, so it moves either _forwards_ or does a _U-turn_ first. We're calling these machines _relative_, since their movement choices are relative to their current orientation. By contrast therefore the standard definition Turing machines are _absolute_.
 
-The majority of this article is concerned with Turing machines on a square grid, both absolute and relative. 2D Turing machines are popularly known as Turmites, so we use that term interchangeably with "2D Turing machine".
+The majority of this article is concerned with Turing machines on a square grid, both absolute and relative. Relative-movement 2D Turing machines are popularly known as Turmites.
 
 
+== Background ==
 
-== Preliminaries ==
-
-Most of the work in this field was investigated by Wolfram research, and documented in _A New Kind of Science_. A few useful links are below:
-
+Wikipedia has some good articles:
   * [http://en.wikipedia.org/wiki/Turing_machine Turing machines]
-  * [http://www.wolframscience.com/nksonline/section-5.3 2D Turing machines]
   * [http://en.wikipedia.org/wiki/Busy_beaver Busy Beavers]
   * [http://en.wikipedia.org/wiki/Turmite Turmites]
 
+Relative-movement Turing machines and 2D Turing machines have been investigated by many people over the years (both extensions are very obvious) but there are only a few papers:
+
+  * Brady, Allen H. (1995) "The Busy Beaver Game and the Meaning of Life". In: Herken, R. "The Universal Turing Machine: a half-century survey". [http://books.google.co.uk/books?id=YafIDVd1Z68C&lpg=PP1&ots=MZUbd8ijxj&dq=universal%20turing%20machine%20herken&pg=PA237#v=onepage&q=&f=false read it here] 
+    He considered "!TurNing" machines (an independent invention of Turmites) and found 2-state 2-color machines that ran for 121 steps and printed 37 non-zero cells before halting. He did the same test on a triangular grid and found machines that took 171 steps and printed 39 non-zero cells before halting. He found 3-state 2-color triangular grid machines that took 1721 steps and printed 351 non-zero cells before halting.
+  * Wolframe, S. (2002) "A New Kind of Science" 
+    He has [http://www.wolframscience.com/nksonline/section-5.3 a section on 2D Turing machines].
 
 
 == Make your own Turmites ==
 
-Tim J. Hutton has kindly provided a script for making and testing absolute Turmites:
+=== Absolute movement: ===
 
-  * Run [http://ruletablerepository.googlecode.com/files/AbsoluteTurmites.zip this script] in [http://golly.sourceforge.net Golly] and copy-paste one of the specification strings below into the text box. Each machine is specified as a table of n_states rows by n_colors columns, written in (Western) reading order: the first row first, then then other rows. Each triple is {A,B,C} where A is the new color to write (0-(n_colors-1)), B is the direction to move in (North, South, East, West) or empty to halt, C is the new state to adopt (0-(n_colors-1)).
+  * Run [http://ruletablerepository.googlecode.com/files/AbsoluteTurmites.zip AbsoluteTurmite-gen.py] in [http://golly.sourceforge.net Golly]. Copy-paste one of the absolute-movement specification strings, e.g.: `{{{1,'E',1},{1,'W',1}},{{1,'W',0},{1,'',0}}}`
+  * Each machine is specified as a table of n_states rows by n_colors columns, written in (Western) reading order: the first row first, then then other rows. 
+  * Each triple is {A,B,C} where A is the new color to write (0-(n_colors-1)), B is the direction to move in (North, South, East, West) or empty to halt, C is the new state to adopt (0-(n_colors-1)).
+  * For example, the triple `{1,'S',3}` means: print a '1', move South, and adopt state 3.
 
+=== Relative movement: ===
 
-He also made a similar script for generating relative Turmites. [http://ruletablerepository.googlecode.com/files/Turmites.zip Turmite-gen.py] It uses a similar notation as the other script. The difference is in how the direction is specified: 1=forward, 4=u-turn, 2=right, 8=left, 0=halt. This also allows Turmites to split into two, by specifying the sum of the directions. For example, 15 would represent movement in all four directions.
-
+  * Run [http://ruletablerepository.googlecode.com/files/single-Turmite-gen.py single-Turmite-gen.py] in [http://golly.sourceforge.net Golly] and copy-paste one of the relative-movement specification strings below into the text box. E.g. `{{{1,2,0},{0,8,0}}}`
+  * It uses a similar notation as the other script. The difference is in how the direction is specified: 1=forward, 4=u-turn, 2=right, 8=left, 0=halt. 
+  * For example, the triple `{1,2,3}` means: print a '1', turn right (and move forward), and adopt state 3.
 
 == Busy Beavers ==
 
 This is a list of the best known busy beavers. If you find improvements then overwrite the below.
-
-=== Prior work ===
-
-  * Brady, Allen H. (1995) "The Busy Beaver Game and the Meaning of Life". In: Herken, R. "The Universal Turing Machine: a half-century survey". [http://books.google.co.uk/books?id=YafIDVd1Z68C&lpg=PP1&ots=MZUbd8ijxj&dq=universal%20turing%20machine%20herken&pg=PA237#v=onepage&q=&f=false read it here] 
-    He considered "!TurNing" machines (_relative_ Turmites) and found 2-state 2-color machines that ran for 121 steps and printed 37 non-zero cells before halting. He did the same test on a triangular grid and found machines that took 171 steps and printed 39 non-zero cells before halting. He found 3-state 2-color triangular grid machines that took 1721 steps and printed 351 non-zero cells before halting.
-
-(If you know of any other work, please let us know!)
-
-
 
 === 2-state 2-color: ===
 
@@ -114,28 +113,6 @@ The best _relative 1D_ turmite takes 223 steps and writes 19 non-zero cells: `{{
 The best relative _2D_ turmite will take at least 11367 steps and write 3326 non-zero cells: `{{{1,2,1},{1,1,0},{1,2,0}},{{1,8,1},{2,2,0},{1,0,0}}}`
 
 
-
-=== 3-state 3-color: ===
-
-Here are two example Turing machines, neither of which are record holders:
-
-`{{{1,'N',1},{2,'S',2},{2,'S',1}},{{1,'W',2},{1,'N',1},{1,'',0}},{{1,'E',0},{0,'N',0},{0,'N',0}}}`<br>
-9304 steps.<br>
-`{{{2,'W',1},{1,'',0},{2,'E',1}},{{2,'W',2},{0,'E',1},{2,'S',1}},{{1,'E',0},{0,'N',0},{0,'N',0}}}`<br>
-697 non-zero cells written.
-
-
-These are just examples - the actual record holders will have to be at least as large as the 1D case for which the record is _[http://www.cse.unr.edu/~al/BusyBeaver.html large]_:<br>
-`{{{1,'E',1},{2,'W',0},{1,'W',2}},{{0,'W',0},{2,'E',1},{1,'W',1}},{{1,'',0},{1,'E',0},{1,'E',2}}}`<br>
-(119,112,334,170,342,540 steps, 374,676,383 non-zero cells written)
-
-
-Here's the 1D machine described as [http://www.cse.unr.edu/~al/busybeaversurprise.html Surprise-In-A-Box]:<br>
-`{{{1,'E',1},{2,'W',1},{1,'W',2}},{{1,'W',0},{2,'E',1},{1,'E',1}},{{0,'',0},{2,'W',0},{0,'W',2}}}`<br>
-(I don't get the joke though (if there is one) - from a rough visual inspection it appears to count on each side (in different ways) and then halt. I don't know enough about 1D Busy Beavers to know whether this in itself is unusual or what. Any ideas? TJH)
-
-
-
 === 4-state 2-color: ===
 
 Absolute 2D Turmites again beat the 1D case in the space of 4-state 2-colour Turing machines, as shown by the following two examples:
@@ -151,6 +128,24 @@ The best _1D relative_ turmite takes at least 48186 steps `{{{1,4,1},{1,1,0}},{{
 
 The best _2D_ relative turmite takes at least 29014 steps and writes 3202 cells `{{{1,8,1},{1,1,0}},{{1,8,1},{1,8,2}},{{1,2,3},{1,1,0}},{{0,1,0},{0,0,0}}}`
 
+=== Beyond: ===
+
+For more states and colors than 2-3, 3-2, 4-2 and 2-4, the Busy Beavers are enormous. 
+
+For example, here are two example 3,3 Turing machines, neither of which are record holders:
+
+`{{{1,'N',1},{2,'S',2},{2,'S',1}},{{1,'W',2},{1,'N',1},{1,'',0}},{{1,'E',0},{0,'N',0},{0,'N',0}}}`<br>
+9304 steps.<br>
+`{{{2,'W',1},{1,'',0},{2,'E',1}},{{2,'W',2},{0,'E',1},{2,'S',1}},{{1,'E',0},{0,'N',0},{0,'N',0}}}`<br>
+697 non-zero cells written.
+
+These are just examples - the actual record holders will have to be at least as large as the 1D case for which the record is _[http://www.cse.unr.edu/~al/BusyBeaver.html large]_:<br>
+`{{{1,'E',1},{2,'W',0},{1,'W',2}},{{0,'W',0},{2,'E',1},{1,'W',1}},{{1,'',0},{1,'E',0},{1,'E',2}}}`<br>
+(119,112,334,170,342,540 steps, 374,676,383 non-zero cells written)
+
+Here's the 3,3 1D machine described as [http://www.cse.unr.edu/~al/busybeaversurprise.html Surprise-In-A-Box]:<br>
+`{{{1,'E',1},{2,'W',1},{1,'W',2}},{{1,'W',0},{2,'E',1},{1,'E',1}},{{0,'',0},{2,'W',0},{0,'W',2}}}`<br>
+(I don't get the joke though (if there is one) - from a rough visual inspection it appears to count on each side (in different ways) and then halt. I don't know enough about 1D Busy Beavers to know whether this in itself is unusual or what. Any ideas? TJH)
 
 
 == General findings ==
