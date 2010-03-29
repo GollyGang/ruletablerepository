@@ -147,9 +147,7 @@ Absolute 2D Turmites again beat the 1D case in the space of 4-state 2-colour Tur
 
 These have not been verified by an exhaustive search, but are already far ahead of the 1D case (107 steps, 13 non-zero cells).
 
-
-The best _1D relative_ turmite takes at least 15460 steps and writes 68 non-zero cells: `{{{1,4,1},{1,1,0}},{{1,1,2},{0,1,0}},{{1,4,3},{1,1,3}},{{0,0,0},{1,1,1}}}` (Allen H. Brady, unpublished). That's a pretty amazing leap from 107 steps, 13 cells! 
-
+The best _1D relative_ turmite takes at least 48186 steps `{{{1,4,1},{1,1,0}},{{1,1,2},{0,1,0}},{{1,4,3},{0,1,3}},{{0,0,0},{1,4,0}}}` and writes 96 non-zero cells : `{{{1,4,1},{1,1,0}},{{1,1,2},{0,1,0}},{{1,1,0},{1,1,3}},{{1,0,0},{0,1,0}}}` (Allen H. Brady, unpublished). That's a pretty amazing leap from 107 steps, 13 cells! 
 
 The best _2D_ relative turmite takes at least 29014 steps and writes 3202 cells `{{{1,8,1},{1,1,0}},{{1,8,1},{1,8,2}},{{1,2,3},{1,1,0}},{{0,1,0},{0,0,0}}}`
 
