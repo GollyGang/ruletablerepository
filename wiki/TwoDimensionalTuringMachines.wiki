@@ -91,6 +91,7 @@ The best _relative 1D_ turmite takes 82 steps and writes 9 non-zero cells: `{{{1
 
 The best relative 2D turmite so far found is `{{{1,2,1},{1,1,0}},{{1,2,1},{1,2,2}},{{1,0,0},{1,1,0}}}` which takes 21790 steps and writes 2793 non-zero cells. If it is not the best, the best will take more than 100,000 steps or move more than 100 squares from the starting position. (These are both easily possible, just not yet explored.)
 
+http://ruletablerepository.googlecode.com/files/RBB32.PNG
 
 === 2-state 3-color: ===
 
@@ -111,6 +112,8 @@ The best _relative 1D_ turmite takes 223 steps and writes 19 non-zero cells: `{{
 
 
 The best relative _2D_ turmite will take at least 11367 steps and write 3326 non-zero cells: `{{{1,2,1},{1,1,0},{1,2,0}},{{1,8,1},{2,2,0},{1,0,0}}}`
+
+http://ruletablerepository.googlecode.com/files/RBB23.PNG
 
 
 === 4-state 2-color: ===
