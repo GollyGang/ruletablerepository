@@ -16,15 +16,15 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 || star_radius2 || {{{c,n,ne,e,se,s,sw,w,nw,N,NE,E,SE,S,SW,W,NW : c'}}} || none, rotate2, rotate4, rotate4reflect,  reflect_horizontal, reflect_vertical, layer_permutation, direction_permutation, layer_direction_permutation, total_permuation || http://ruletablerepository.googlecode.com/files/starNeighborhood.PNG ||
 || disc_radius2, or<br> circle_radius2 || {{{c,n,ne,e,se,s,sw,w,nw,N,NNE,ENE,E,ESE,SSE,S,SSW,WSW,W, : c'}}} || none, rotate2, rotate4, rotate4reflect, reflect_horizontal, reflect_vertical, layer_permutation, total_permuation || http://ruletablerepository.googlecode.com/files/intermediateRadius2.PNG ||
 || Moore_radius2 || {{{c,n,ne,e,se,s,sw,w,nw,N,NNE,NE,ENE,E,ESE,SE,SSE,S,SSW,SW,WSW,W,WNW,NW,NNW : c'}}} || none, rotate2, rotate4, rotate8, rotate4reflect, rotate8reflect, reflect_horizontal, reflect_vertical, layer_permutation, total_permuation || http://ruletablerepository.googlecode.com/files/mooreRadius2.PNG ||
-|| <b>hexagonal</b>^*^ (see HexagonalNeighborhood) || {{{c,n,ne,se,s,sw,nw : c}}} || none, rotate2, rotate3, rotate6, rotate_reflect, reflect_minor, reflect_major, permutation || http://ruletablerepository.googlecode.com/files/hexagonal.PNG ||
-|| <b>triangularVonNeumann</b>^*^ || {{{c,n1,n2,n3 : c'}}} || none, rotate, rotate_reflect, permutation || http://ruletablerepository.googlecode.com/files/triangularVonNeumann.PNG ||
-|| <b>triangularMoore</b>^*^ || {{{c,n1..n12 : c'}}} || none, rotate, rotate_reflect, layer_permutation, total_permutation || http://ruletablerepository.googlecode.com/files/triangularMoore.PNG ||
-|| <b>Penrose tiling</b> || {{{c,n1..n4 : c'}}} || permutation || http://ruletablerepository.googlecode.com/files/Penrose.PNG ||
+|| hexagonal (see HexagonalNeighborhood) || {{{c,n,ne,se,s,sw,nw : c}}} || none, rotate2, rotate3, rotate6, rotate_reflect, reflect_minor, reflect_major, permutation || http://ruletablerepository.googlecode.com/files/hexagonal.PNG ||
+|| triangularVonNeumann || {{{c,n1,n2,n3 : c'}}} || none, rotate, rotate_reflect, permutation || http://ruletablerepository.googlecode.com/files/triangularVonNeumann.PNG ||
+|| triangularMoore || {{{c,n1..n12 : c'}}} || none, rotate, rotate_reflect, layer_permutation, total_permutation || http://ruletablerepository.googlecode.com/files/triangularMoore.PNG ||
+|| Penrose tiling || {{{c,n1..n4 : c'}}} || permutation || http://ruletablerepository.googlecode.com/files/Penrose.PNG ||
 
 <h2>Two-dimensional partitioning schemes</h2>
 
 || neighborhood || transitions || symmetries || image ||
-|| <b>Margolus</b>^*^ (see MargolusNeighborhood) || {{{a,b,c,d : a',b',c',d'}}} || <b>none</b>, rotate (<b>rotate4</b>), rotate_reflect (<b>rotate4reflect</b>), <b>reflect_horizontal</b>, <b>reflect_vertical</b>, permutation || http://ruletablerepository.googlecode.com/files/Margolus.GIF ||
+|| <b>Margolus</b> (see MargolusNeighborhood) (Supported in Golly through an emulation script: emulate-Margolus-table.py) || {{{a,b,c,d : a',b',c',d'}}} || <b>none</b>, rotate (<b>rotate4</b>), rotate_reflect (<b>rotate4reflect</b>), <b>reflect_horizontal</b>, <b>reflect_vertical</b>, permutation || http://ruletablerepository.googlecode.com/files/Margolus.GIF ||
 || square4_cyclic, square4_figure8h, square4_figure8v (==square4_reading_order) (see MargolusNeighborhood) || {{{a,b,c,d : a',b',c',d'}}} || none, rotate, rotate_reflect, reflect_horizontal, reflect_vertical, permutation || http://ruletablerepository.googlecode.com/files/Square4.GIF ||
 || square9_reading_order || {{{a,b,c,d,e,f,g,h,i : a',b',c',d',e',f',g',h',i'}}} || none, rotate, rotate_reflect, reflect_horizontal, reflect_vertical, permutation || http://ruletablerepository.googlecode.com/files/Square9.GIF ||
 
@@ -49,8 +49,6 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 || [http://en.wikipedia.org/wiki/Icositetrachoric_honeycomb D4_lattice] || {{{c,n1..n24 : c'}}} || none, rotate192, rotate192reflect, permutation || http://ruletablerepository.googlecode.com/files/D4lattice.PNG ||
 || [http://en.wikipedia.org/wiki/E8_lattice E8_lattice] || {{{c,n1..n240 : c'}}} || none, rotate348364800, rotate348364800reflect, permutation || http://ruletablerepository.googlecode.com/files/E8.PNG ||
 || [http://en.wikipedia.org/wiki/Leech_lattice Leech_lattice] || {{{c,n1..n196560 : c'}}} || none, rotate8315553613086720000, rotate8315553613086720000reflect, permutation || http://ruletablerepository.googlecode.com/files/leechLattice.PNG ||
-
-^*^Supported in Golly through emulation.
 
 Brian Prentice and others have done some work on CA that run on arbitrary tilings: http://linuxenvy.com/bprentice/TiledCA/TiledCA.html
 
