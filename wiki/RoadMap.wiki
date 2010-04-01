@@ -17,7 +17,7 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 || disc_radius2, or<br> circle_radius2 || {{{c,n,ne,e,se,s,sw,w,nw,N,NNE,ENE,E,ESE,SSE,S,SSW,WSW,W, : c'}}} || none, rotate2, rotate4, rotate4reflect, reflect_horizontal, reflect_vertical, layer_permutation, total_permuation || http://ruletablerepository.googlecode.com/files/intermediateRadius2.PNG ||
 || Moore_radius2 || {{{c,n,ne,e,se,s,sw,w,nw,N,NNE,NE,ENE,E,ESE,SE,SSE,S,SSW,SW,WSW,W,WNW,NW,NNW : c'}}} || none, rotate2, rotate4, rotate8, rotate4reflect, rotate8reflect, reflect_horizontal, reflect_vertical, layer_permutation, total_permuation || http://ruletablerepository.googlecode.com/files/mooreRadius2.PNG ||
 || hexagonal (see HexagonalNeighborhood) || {{{c,n,ne,se,s,sw,nw : c}}} || none, rotate2, rotate3, rotate6, rotate_reflect, reflect_minor, reflect_major, permutation || http://ruletablerepository.googlecode.com/files/hexagonal.PNG ||
-|| triangularVonNeumann || {{{c,n1,n2,n3 : c'}}} || none, rotate, rotate_reflect, permutation || http://ruletablerepository.googlecode.com/files/triangularVonNeumann.PNG ||
+|| triangularVonNeumann || {{{c,n1,n2,n3 : c'}}} || none, rotate, rotate_reflect || http://ruletablerepository.googlecode.com/files/triangularVonNeumann.PNG ||
 || triangularMoore || {{{c,n1..n12 : c'}}} || none, rotate, rotate_reflect, layer_permutation, total_permutation || http://ruletablerepository.googlecode.com/files/triangularMoore.PNG ||
 || Penrose tiling || {{{c,n1..n4 : c'}}} || permutation || http://ruletablerepository.googlecode.com/files/Penrose.PNG ||
 
