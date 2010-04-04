@@ -22,9 +22,17 @@ Ideally, the rule should be presented in a ZIP compressed archive, containing:
  * Several sample patterns ({{{.rle}}}, {{{.mc}}}, etc.) to demonstrate key features; these sample files should contain explanatory comments.
  * A brief description of the rule, including the person who invented it and so on, so we can add some text to TheRules.
 
-Golly can now open zip files directly - check that your zip file works.
+Golly can now open zip files directly, so it's easy to check that your zip file works.
 
 If your rule table is extremely good or a classic of the literature, please consider submitting it to the Golly project instead, and we'll link to it from here. The Rule Table Repository is more of a community sharing area so has a lower standard of acceptance.
+
+== Rule naming conventions ==
+
+Rule names are important.  To emphasize this, please capitalize all rule names and create files like {{{Foo.table}}} rather than {{{foo.table}}}.  Note also that Golly does not support spaces in rule names.
+
+The rule name specified inside an RLE/macrocell file must match exactly the name of any corresponding {{{.table}}}/{{{.tree}}}/{{{.colors}}}/{{{.icons}}} files, otherwise Golly won't be able to find those files on a case-sensitive system like Linux.
+There is one exception:
+If you wish to share the same colors and icons across a set of closely related rules then start each {{{.table}}}/{{{.tree}}} name with the same prefix as the {{{.colors}}}/{{{.icons}}} file but use a different suffix starting with "-".  For example, {{{Foo-1.table}}} and {{{Foo-2.table}}} can both use {{{Foo.colors}}} and {{{Foo.icons}}}.
 
 == Everything here is free ==
 
@@ -35,4 +43,4 @@ Please bear in mind that all content on the rule table repository is available t
 If you're a project member you can edit TheRules directly to add your contribution. Some things to bear in mind:
 
   * Please make sure that the GollyAccessPoint is maintained in sync. The page looks wrong in the wiki but this is deliberate - the content is actually meant for access from Golly (Help menu | Online Archives) and looks fine there.
-  * Please upload your zip files to the our file download area so that they are stored here. Currently we link to some files stored elsewhere but this runs the risk of broken links in future.
+  * Please upload your zip files to the file download area so that they are stored here. Currently we link to some files stored elsewhere but this runs the risk of broken links in future.
