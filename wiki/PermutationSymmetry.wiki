@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Many rule tables, for example Life, are much larger than necessary. There are only really 3 rules (birth/survival on 3 neighbours, survival on 2 neighbours, death otherwise), whereas the rule table is comparatively huge. One way of reducing the size of a rule table would be to allow all permutations to be handled in one line, rather than a line for each permutation.
+Many rule tables, for example Life, are much larger than necessary. There are only really 3 rules (birth/survival on 3 neighbors, survival on 2 neighbors, death otherwise), whereas the rule table is comparatively huge. One way of reducing the size of a rule table would be to allow all permutations to be handled in one line, rather than a line for each permutation.
 
 
 = Details =
@@ -10,8 +10,8 @@ Many rule tables, for example Life, are much larger than necessary. There are on
 An example is my HistoricalLife table. It contains 85 useful rules, which are as follows:
 
 
-56 permutations of 'birth or survival on 3 neighbours'
-28 permutations of 'survival on 2 neighbours'
+56 permutations of 'birth or survival on 3 neighbors'
+28 permutations of 'survival on 2 neighbors'
 A rule to make on cells die and become history cells.
 
 
@@ -63,8 +63,8 @@ var n={0,1,2}
 var o={0,1,2}
 var p={0,1,2}
 
-f,1,1,1,a,b,c,d,e,1   # 3-neighbour birth or survival
-1,1,1,a,b,c,d,e,g,1   # 2-neighbour survival
+f,1,1,1,a,b,c,d,e,1   # 3-neighbor birth or survival
+1,1,1,a,b,c,d,e,g,1   # 2-neighbor survival
 1,i,j,k,l,m,n,o,p,2   # Otherwise, On state dies and becomes the history state
 }}}
 
