@@ -8,7 +8,7 @@ Or, for new .table files:
   # Save the .table file into your rules folder (set in {{{Preferences | Control}}}).
   # Use {{{Control | Set Rule...}}} to change to the new rule. 
 
-Golly also accepts _rule tree_ files, which are actually simpler for programs to utilise since they map directly onto a lookup function. More details [http://golly.sourceforge.net/Help/formats.html#tree here]. Golly comes with a utility to convert a rule table into a rule tree. The only disadvantage of rule trees is that they are harder to author directly. At the moment they also only support the von Neumann and Moore neighborhoods.
+Golly also accepts _rule tree_ files, which are actually simpler for programs to utilise since they map directly onto a lookup function. More details [http://golly.sourceforge.net/Help/formats.html#tree here]. Golly comes with a utility to convert a rule table into a rule tree. Like rule tables, rule trees only support the von Neumann and Moore neighborhoods at the moment. Note that rule trees are not really meant to be authored directly -- the easiest way to create a new .tree file is to use the [http://ruletablerepository.googlecode.com/files/make-ruletree.py make-ruletree.py] script (see the comments at the top of the script).
 
 == 2. Use them in your own programs: ==
 
