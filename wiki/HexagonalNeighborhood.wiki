@@ -3,7 +3,7 @@
 We should be able to define the format for the hexagonal neighborhood quite easily, and write a Golly script that converts it to a Moore neighborhood rule table.
 
 
-The hexagonal neighbourhood is used by a number of rules. For example, Frank Buss has made an interesting 3-state totalistic rule in the hexagonal neighbourhood. The hexagonal neighbourhood is a subset of the Moore neighbourhood, which means it can be emulated directly in Golly, without any more states. That seems okay, doesn't it?
+The hexagonal neighborhood is used by a number of rules. For example, Frank Buss has made an interesting 3-state totalistic rule in the hexagonal neighborhood. The hexagonal neighborhood is a subset of the Moore neighborhood, which means it can be emulated directly in Golly, without any more states. That seems okay, doesn't it?
 
 However, the rule tables end up being much larger than necessary. Because there is no 'hexagonal' symmetry to deal with this, or even a 'rotate2' symmetry, every possible permutation has to be programmed separately. For example, Frank Buss' CA is as follows:
 
@@ -142,10 +142,10 @@ m,a,b,c,d,e,f,g,h,0
 
 How inefficient is that? If you visit [http://www.frank-buss.de/automaton/hexautomaton.html his website], you will see how simply the rule is defined.
 
-Also notice that two of the elements are set to _*a*_ and _*b*_ in every rule, since the neighbourhood actively ignores these cells.
+Also notice that two of the elements are set to _*a*_ and _*b*_ in every rule, since the neighborhood actively ignores these cells.
 
 
-Ideally, with the hexagonal neighbourhood, we would have symmetries such as:
+Ideally, with the hexagonal neighborhood, we would have symmetries such as:
 
   * none
   * rotate6
