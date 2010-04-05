@@ -99,7 +99,7 @@ There are other CA rule table formats out there. The simplest is just to list th
    4 0 2    --->     5
      3
 </pre></tt>
-The inputs are given in the order: centre, north, east, south, west, followed by the updated centre state. For CA that only use states 0-9, no separator is required, so each transition is just a sequence of 6 digits. The .table format supports this, and also the Moore neighbourhood version: C,N,NE,E,SE,S,SW,W,NW,C'. For CA with more than 10 states, commas are used to separate the entries.
+The inputs are given in the order: centre, north, east, south, west, followed by the updated centre state. For CA that only use states 0-9, no separator is required, so each transition is just a sequence of 6 digits. The .table format supports this, and also the Moore neighborhood version: C,N,NE,E,SE,S,SW,W,NW,C'. For CA with more than 10 states, commas are used to separate the entries.
 
 Rather than list every transition, we can skip transitions that make no change to C. We can also skip transitions that are rotated or reflected versions of ones already listed. (More on this later.)
 
