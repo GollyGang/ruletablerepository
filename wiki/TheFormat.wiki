@@ -50,6 +50,11 @@ Important points to note:
   * Rule tables usually don't specify every possible set of inputs. For those not listed, the input cells remain unchanged.
   * Rules are checked in the order given in the file - the first rule that matches is applied. If you want, you can write rules in the form of general cases and exceptions, as long as the exceptions appear first in the file.
 
+Since Golly version 2.2:
+  * Single-state variables are now permitted as the output of a transition.
+  * Variables can now be used inside later variables.
+  * Comments can now be written after a variable declaration.
+
   _Golly also has a page describing the format: [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Help/formats.html#table .table format]_
 
 === Worked example: ===
