@@ -1,15 +1,15 @@
-#summary Calcyman suggested extending the table format for general neighbourhoods.
+#summary Calcyman suggested extending the table format for general neighborhoods.
 #labels Phase-Implementation
 
 = The discussion so far: =
 
 TJH: 
 
-What do you suggest for extended CA neighbourhood rule tables?
+What do you suggest for extended CA neighborhood rule tables?
 
 Calcyman:
 
-I'm not sure that it's possible to get this to represent a triangular neighbourhood, but it can do hexagonal, 1D and 3D:
+I'm not sure that it's possible to get this to represent a triangular neighborhood, but it can do hexagonal, 1D and 3D:
 
 {{{
 -----------------------------------------------------------------------
@@ -18,17 +18,17 @@ I'm not sure that it's possible to get this to represent a triangular neighbourh
 
 dimensions:{x,y}
 
-#Define neighbourhood
+#Define neighborhood
 
-neighbour c={x,y}
-neighbour n={x,y-1}
-neighbour ne={x+1,y-1}
-neighbour e={x+1,y}
-neighbour se={x+1,y+1}
-neighbour s={x,y+1}
-neighbour sw={x-1,y+1}
-neighbour w={x-1,y}
-neighbour nw={x-1,y-1}
+neighbor c={x,y}
+neighbor n={x,y-1}
+neighbor ne={x+1,y-1}
+neighbor e={x+1,y}
+neighbor se={x+1,y+1}
+neighbor s={x,y+1}
+neighbor sw={x-1,y+1}
+neighbor w={x-1,y}
+neighbor nw={x-1,y-1}
 
 #Define symmetries
 #This contains all equivalent permutations of c,n,ne,e,se,s,sw,w,nw:
@@ -65,25 +65,25 @@ TJH:
 
 This is an interesting idea. Golly would only be able to accept a very limited subset of these, of course.
 
-What about block CA? (partitioning ones, like the Margolus neighbourhood?). Any ideas there? As with the triangular neighbourhood the complication is that the neighbourhood isn't fixed across all cells in all timesteps.
+What about block CA? (partitioning ones, like the Margolus neighborhood?). Any ideas there? As with the triangular neighborhood the complication is that the neighborhood isn't fixed across all cells in all timesteps.
 
 Calcyman: 
 
-It can be accomplished by using a temporal variable, t, that represents the time in generations. Then, the Margolus neighbourhood would become:
+It can be accomplished by using a temporal variable, t, that represents the time in generations. Then, the Margolus neighborhood would become:
 
 {{{
 
-#centre neighbour
-neighbour c={x,y}
+#centre neighbor
+neighbor c={x,y}
 
-#horizontal neighbour
-neighbour h={x+2*((x+t) % 2)-1,y}
+#horizontal neighbor
+neighbor h={x+2*((x+t) % 2)-1,y}
 
-#vertical neighbour
-neighbour v={x,y+2*((y+t) % 2)-1}
+#vertical neighbor
+neighbor v={x,y+2*((y+t) % 2)-1}
 
-#diagonal neighbour
-neighbour d={x+2*((x+t) % 2)-1,y+2*((y+t) % 2)-1}
+#diagonal neighbor
+neighbor d={x+2*((x+t) % 2)-1,y+2*((y+t) % 2)-1}
 
 }}}
 
