@@ -28,11 +28,11 @@ If your rule table is extremely good or a classic of the literature, please cons
 
 == Rule naming conventions ==
 
-Rule names are important.  To emphasize this, please capitalize all rule names and create files like {{{Foo.table}}} rather than {{{foo.table}}}.  Note also that Golly does not support spaces in rule names.
+Rule names are important.  To emphasize this, please capitalize all rule names and create files like {{{Foo.table}}} rather than {{{foo.table}}}.  Note that Golly does not support spaces in rule names.  To allow for possible future extensions in the way Golly handles rule names, it's best to use only letters and digits (but see below for how a hyphen can let related rules share the same colors/icons).
 
 The rule name specified inside an RLE/macrocell file must match exactly the name of any corresponding {{{.table}}}/{{{.tree}}}/{{{.colors}}}/{{{.icons}}} files, otherwise Golly won't be able to find those files on a case-sensitive system like Linux.
 There is one exception:
-If you wish to share the same colors and icons across a set of closely related rules then start each {{{.table}}}/{{{.tree}}} name with the same prefix as the {{{.colors}}}/{{{.icons}}} file but use a different suffix starting with "-".  For example, {{{Foo-1.table}}} and {{{Foo-2.table}}} can both use {{{Foo.colors}}} and {{{Foo.icons}}}.
+If you wish to share the same colors and icons across a set of closely related rules then start each {{{.table}}}/{{{.tree}}} name with the same prefix as the {{{.colors}}}/{{{.icons}}} file but use a different suffix starting with a hyphen.  For example, {{{Foo-1.table}}} and {{{Foo-2.table}}} can share {{{Foo.colors}}} and {{{Foo.icons}}} (but if {{{Foo-1.colors}}} also exists then those colors will be used for the Foo-1 rule).
 
 == Everything here is free ==
 
