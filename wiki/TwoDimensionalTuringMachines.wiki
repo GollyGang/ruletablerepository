@@ -7,42 +7,35 @@
 
 == Introduction ==
 
-Turing machines operate on an infinite tape, extending out to infinity in each direction. The tape is divided into cells, each of which can contain a symbol from a finite alphabet. The Turing machine consists of a finite state machine that moves along the tape, reading and writing symbols.
+[http://en.wikipedia.org/wiki/Turing_machine Turing machines] operate on an infinite tape, extending out to infinity in each direction. The tape is divided into cells, each of which can contain a symbol from a finite alphabet. The Turing machine consists of a finite state machine that moves along the tape, reading and writing symbols.
 
 One way to generalise this simple definition is to alter the tape on which the Turing machine inhabits. Since there is only one possible one-dimensional tape, this involves moving into two dimensions. Natural choices for the grid are the square and hexagonal lattices; triangular and Penrose tilings are more exotic.
 
 Another way to generalise the definition is to give the read-write head an orientation, so it moves either _forwards_ or does a _U-turn_ first. We're calling these machines _relative_, since their movement choices are relative to their current orientation. By contrast therefore the standard definition Turing machines are _absolute_.
 
-The majority of this article is concerned with Turing machines on a square grid, both absolute and relative. Relative-movement 2D Turing machines are popularly known as Turmites.
-
+The majority of this article is concerned with Turing machines on a square grid, both absolute and relative. Relative-movement 2D Turing machines are popularly known as [http://en.wikipedia.org/wiki/Turmite Turmites].
 
 == Background ==
-
-Wikipedia has some good articles:
-  * [http://en.wikipedia.org/wiki/Turing_machine Turing machines]
-  * [http://en.wikipedia.org/wiki/Busy_beaver Busy Beavers]
-  * [http://en.wikipedia.org/wiki/Turmite Turmites]
 
 Relative-movement Turing machines and 2D Turing machines have been investigated by many people over the years (both extensions are very obvious) but there are only a few papers:
 
   * Hartmanis, J. and Stearns, R. E. (1965) "On the Computational Complexity of Algorithms" Transactions of the American Mathematical Society, 117: 285-306.
     Pascal Michel [http://www.logique.jussieu.fr/~michel/ha#2d tells us] that this paper discusses 2D Turing machines. I haven't seen a copy myself.
-  * Brady, Allen H. (1995) "The Busy Beaver Game and the Meaning of Life". In: Herken, R. "The Universal Turing Machine: a half-century survey". [http://books.google.co.uk/books?id=YafIDVd1Z68C&lpg=PP1&ots=MZUbd8ijxj&dq=universal%20turing%20machine%20herken&pg=PA237#v=onepage&q=&f=false read it here] 
+  * Brady, Allen H. (1995) "The [http://en.wikipedia.org/wiki/Busy_beaver Busy Beavers] Game and the Meaning of Life". In: Herken, R. "The Universal Turing Machine: a half-century survey". [http://books.google.co.uk/books?id=YafIDVd1Z68C&lpg=PP1&ots=MZUbd8ijxj&dq=universal%20turing%20machine%20herken&pg=PA237#v=onepage&q=&f=false read it here] 
     He considered "!TurNing" machines (an independent invention of Turmites) and found 2-state 2-color machines that ran for 121 steps and printed 37 non-zero cells before halting. He did the same test on a triangular grid and found machines that took 171 steps and printed 39 non-zero cells before halting. He found 3-state 2-color triangular grid machines that took 1721 steps and printed 351 non-zero cells before halting.
   * Wolfram, S. (2002) "A New Kind of Science" 
     He has [http://www.wolframscience.com/nksonline/section-5.3 a section on 2D Turing machines].
 
-
 == Make your own Turmites ==
 
-=== Absolute movement: ===
+=== Absolute movement ===
 
   * Run [http://ruletablerepository.googlecode.com/files/AbsoluteTurmites.zip AbsoluteTurmite-gen.py] in [http://golly.sourceforge.net Golly]. Copy-paste one of the absolute-movement specification strings, e.g.: `{{{1,'E',1},{1,'W',1}},{{1,'W',0},{1,'',0}}}`
   * Each machine is specified as a table of n_states rows by n_colors columns, written in (Western) reading order: the first row first, then then other rows. 
   * Each triple is {A,B,C} where A is the new color to write (0-(n_colors-1)), B is the direction to move in (North, South, East, West) or empty to halt, C is the new state to adopt (0-(n_colors-1)).
   * For example, the triple `{1,'S',3}` means: print a '1', move South, and adopt state 3.
 
-=== Relative movement: ===
+=== Relative movement ===
 
   * Run [http://ruletablerepository.googlecode.com/files/single-Turmite-gen.py single-Turmite-gen.py] in [http://golly.sourceforge.net Golly] and copy-paste one of the relative-movement specification strings below into the text box. E.g. `{{{1,2,0},{0,8,0}}}`
   * It uses a similar notation as the other script. The difference is in how the direction is specified: 1=forward, 4=u-turn, 2=right, 8=left, 0=halt. 
@@ -52,7 +45,7 @@ Relative-movement Turing machines and 2D Turing machines have been investigated 
 
 This is a list of the best known busy beavers. If you find improvements then overwrite the below.
 
-=== 2-state 2-color: ===
+=== 2-state 2-color ===
 
 The best Busy Beaver is specified by the rulestring:
 
@@ -73,7 +66,7 @@ The best relative _2D_ Turmites take 121 steps `{{{1,8,0},{0,8,1}},{{1,0,0},{1,2
 
 
 
-=== 3-state 2-color: ===
+=== 3-state 2-color ===
 
 An exhaustive search returned the following Busy Beavers. The first holds the record for the longest time before halting; the second writes the most non-zero symbols on the tape:
 
@@ -95,7 +88,7 @@ The best relative 2D turmite so far found is `{{{1,2,1},{1,1,0}},{{1,2,1},{1,2,2
 
 http://ruletablerepository.googlecode.com/files/RBB32.PNG
 
-=== 2-state 3-color: ===
+=== 2-state 3-color ===
 
 In two states and three colours, things begin to get interesting. Universal computation becomes possible for 1D Turing machines, as demonstrated by Alex Smith and Stephen Wolfram for `{{{1,'E',1},{2,'W',0},{1,'W',0}},{{2,'W',0},{2,'E',1},{0,'E',0}}}`
 
@@ -118,7 +111,7 @@ The best relative _2D_ turmite will take at least 11367 steps and write 3326 non
 http://ruletablerepository.googlecode.com/files/RBB23.PNG
 
 
-=== 4-state 2-color: ===
+=== 4-state 2-color ===
 
 Absolute 2D Turmites again beat the 1D case in the space of 4-state 2-colour Turing machines, as shown by the following two examples:
 
@@ -133,7 +126,7 @@ The best _1D relative_ turmite takes at least 48186 steps `{{{1,4,1},{1,1,0}},{{
 
 The best _2D_ relative turmite takes at least 29014 steps and writes 3202 cells `{{{1,8,1},{1,1,0}},{{1,8,1},{1,8,2}},{{1,2,3},{1,1,0}},{{0,1,0},{0,0,0}}}`
 
-=== Beyond: ===
+=== Beyond ===
 
 For more states and colors than 2-3, 3-2, 4-2 and 2-4, the Busy Beavers are enormous. 
 
