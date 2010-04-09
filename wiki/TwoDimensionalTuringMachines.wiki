@@ -21,7 +21,7 @@ Relative-movement Turing machines and 2D Turing machines have been investigated 
 
   * Hartmanis, J. and Stearns, R. E. (1965) "On the Computational Complexity of Algorithms" Transactions of the American Mathematical Society, 117: 285-306.
     Pascal Michel [http://www.logique.jussieu.fr/~michel/ha#2d tells us] that this paper discusses 2D Turing machines. I haven't seen a copy myself.
-  * Brady, Allen H. (1995) "The [http://en.wikipedia.org/wiki/Busy_beaver Busy Beavers] Game and the Meaning of Life". In: Herken, R. "The Universal Turing Machine: a half-century survey". [http://books.google.co.uk/books?id=YafIDVd1Z68C&lpg=PP1&ots=MZUbd8ijxj&dq=universal%20turing%20machine%20herken&pg=PA237#v=onepage&q=&f=false read it here] 
+  * Brady, Allen H. (1995) "The [http://en.wikipedia.org/wiki/Busy_beaver Busy Beaver] Game and the Meaning of Life". In: Herken, R. "The Universal Turing Machine: a half-century survey". [http://books.google.co.uk/books?id=YafIDVd1Z68C&lpg=PP1&ots=MZUbd8ijxj&dq=universal%20turing%20machine%20herken&pg=PA237#v=onepage&q=&f=false read it here] 
     He considered "!TurNing" machines (an independent invention of Turmites) and found 2-state 2-color machines that ran for 121 steps and printed 37 non-zero cells before halting. He did the same test on a triangular grid and found machines that took 171 steps and printed 39 non-zero cells before halting. He found 3-state 2-color triangular grid machines that took 1721 steps and printed 351 non-zero cells before halting.
   * Wolfram, S. (2002) "A New Kind of Science" 
     He has [http://www.wolframscience.com/nksonline/section-5.3 a section on 2D Turing machines].
