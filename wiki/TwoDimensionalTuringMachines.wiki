@@ -43,7 +43,7 @@ Relative-movement Turing machines and 2D Turing machines have been investigated 
 
 == Busy Beavers ==
 
-This is a list of the best known busy beavers. If you find improvements then overwrite the below.
+This is a list of the best known [http://en.wikipedia.org/wiki/Busy_beaver busy beavers]. If you find improvements then overwrite the below.
 
 === 2-state 2-color ===
 
