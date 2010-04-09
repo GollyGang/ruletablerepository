@@ -153,7 +153,7 @@ Here's the 3,3 1D machine described as [http://www.cse.unr.edu/~al/busybeaversur
 (I don't get the joke though (if there is one) - from a rough visual inspection it appears to count on each side (in different ways) and then halt. I don't know enough about 1D Busy Beavers to know whether this in itself is unusual or what. Any ideas? TJH)
 
 
-== General findings ==
+=== General findings ===
 
 It appears that relative Turmites in one and two dimensions are almost consistently as good, or better than, their absolute counterparts. For very small numbers of states and symbols, 1D and 2D Turmites perform equally well. However, when the number of states/symbols is increased, the 2D Turmites overtake the 1D Turmites.
 
