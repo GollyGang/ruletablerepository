@@ -137,6 +137,12 @@ and patterns not included in Golly.
    A 24-state version of Langton's loops, that permits construction and computation universality,
    both left and right turns, genome combination and competition.
 </td></tr></table></td></tr>
+</td></tr></table></td></tr>
+<tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Bakker-Loop.zip">Bakker loop</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   Grant Bakker made a 7-state sheath-free loop with the interesting property of sending out 'runners' to start new colonies. His Java implementation is included in the zip.
+</td></tr></table></td></tr>
 </table>
 </p>
 
