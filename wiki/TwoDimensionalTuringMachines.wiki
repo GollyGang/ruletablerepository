@@ -117,8 +117,8 @@ Absolute 2D Turmites again beat the 1D case in the space of 4-state 2-colour Tur
 
 `{{{1,'E',1},{0,'S',1}},{{1,'N',3},{1,'E',2}},{{0,'W',0},{1,'N',2}},{{1,'W',0},{0,'',0}}}`<br>
 4632 steps<br>
-`{{{1,'E',1},{0,'W',0}},{{1,'W',2},{1,'N',0}},{{1,'W',3},{1,'S',2}},{{1,'N',0},{0,'',0}}}`<br>
-243 non-zero cells written.
+`{{{1,'E',1},{0,'W',0}},{{1,'W',3},{1,'S',0}},{{1,'S',0},{1,'',0}},{{1,'W',2},{1,'N',3}}}`<br>
+244 non-zero cells written.
 
 These have not been verified by an exhaustive search, but are already far ahead of the 1D case (107 steps, 13 non-zero cells).
 
