@@ -96,7 +96,7 @@ Universal computation becomes possible for 1D Turing machines, as demonstrated b
 ==== Absolute movement ====
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
 || <b>1D</b> || 107<br><br>`{{{1,'E',1},{1,'W',1}},{{1,'W',0},{0,'W',2}},{{1,'',0},{1,'W',3}},{{1,'E',3},{0,'E',0}}}` || 13<br><br>(same one) ||
-|| <b>2D</b> || 4,632<br><br>`{{{1,'E',1},{0,'S',1}},{{1,'N',3},{1,'E',2}},{{0,'W',0},{1,'N',2}},{{1,'W',0},{0,'',0}}}`<br>http://ruletablerepository.googlecode.com/files/BB_abs_4s_2c_4632steps.png || 244<br><br>`{{{1,'E',1},{0,'W',0}},{{1,'W',3},{1,'S',0}},{{1,'S',0},{1,'',0}},{{1,'W',2},{1,'N',3}}}`<br>http://ruletablerepository.googlecode.com/files/BB_abs_4s_2c_244nonzerocells.png || If better machines exist then they take more than 100,000 steps or move more than 200 squares from the starting position. TJH March 2010. ||
+|| <b>2D</b> || 4,632<br><br>`{{{1,'E',1},{0,'S',1}},{{1,'N',3},{1,'E',2}},{{0,'W',0},{1,'N',2}},{{1,'W',0},{0,'',0}}}`<br><br>http://ruletablerepository.googlecode.com/files/BB_abs_4s_2c_4632steps.png || 244<br><br>`{{{1,'E',1},{0,'W',0}},{{1,'W',3},{1,'S',0}},{{1,'S',0},{1,'',0}},{{1,'W',2},{1,'N',3}}}`<br><br>http://ruletablerepository.googlecode.com/files/BB_abs_4s_2c_244nonzerocells.png || If better machines exist then they take more than 100,000 steps or move more than 200 squares from the starting position. TJH March 2010. ||
 || <b>3D+</b> || ? || ? ||
 
 ==== Relative movement ====
@@ -104,6 +104,18 @@ Universal computation becomes possible for 1D Turing machines, as demonstrated b
 || <b>1D</b> || 48,186<br><br>`{{{1,4,1},{1,1,0}},{{1,1,2},{0,1,0}},{{1,4,3},{0,1,3}},{{0,0,0},{1,4,0}}}` || 96<br><br>`{{{1,4,1},{1,1,0}},{{1,1,2},{0,1,0}},{{1,1,0},{1,1,3}},{{1,0,0},{0,1,0}}}` || Allen H. Brady, unpublished. That's a pretty amazing leap from 107 steps, 13 cells! ||
 || <b>2D</b> || 29,014<br><br>`{{{1,8,1},{1,1,0}},{{1,8,1},{1,8,2}},{{1,2,3},{1,1,0}},{{0,1,0},{0,0,0}}}` || 3,202<br><br>(same one) || This is not expected to be the final result. ||
 || <b>3D+</b> || ? || ? ||
+
+----
+=== 2-state 4-color ===
+
+==== Absolute movement ====
+|| || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
+|| <b>1D</b> || 3,932,964 || 2,050 ||
+|| <b>2D+</b> || ? || ? ||
+
+==== Relative movement ====
+|| || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
+|| <b>1D+</b> || ? || ? ||
 
 === Beyond ===
 
