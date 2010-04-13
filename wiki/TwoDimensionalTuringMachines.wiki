@@ -47,85 +47,63 @@ This is a list of the best known [http://en.wikipedia.org/wiki/Busy_beaver busy 
 
 === 2-state 2-color ===
 
-The best Busy Beaver is specified by the rulestring:
+==== Absolute movement ====
+|| || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
+|| <b>1D</b> || 6<br><br>`{{{1,'E',1},{1,'W',1}},{{1,'W',0},{1,'',1}}}` || 4<br><br>(same one) || ||
+|| <b>2D+</b> || (no improvement) || (no improvement) || In 3D there's no improvement either. And thinking about it, it will be true in all higher dimensions too - there are only 3 moves to be specified so if the 2D case is no improvement over the 1D case then adding further dimensions won't help either. Busy Beavers need to go over their own tracks to really be effective - and from this perspective it's really a surprise that some of the 2D cases outperform the 1D cases. TJH March 2010 ||
 
-`{{{1,'S',1},{1,'N',1}},{{1,'N',0},{1,'',1}}}`<br>
+==== Relative movement ====
+|| || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
+|| <b>1D</b> || 13<br><br>`{{{1,4,1},{1,0,0}},{{1,1,0},{0,1,1}}}` || 4<br><br>(same one) || Allen H. Brady (in unpublished work) called these systems "Flippers" and discovered this Busy Beaver. ||
+|| <b>2D</b> || 121<br><br>`{{{1,8,0},{0,8,1}},{{1,0,0},{1,2,0}}}` || 37<br><br>`{{{1,2,1},{1,1,0}},{{1,4,0},{1,0,0}}}` || Allen H. Brady's results from the paper. ||
+|| <b>3D+</b> || ? || ? || Suspect there won't be improvement, for the same reason as above. ||
 
-It takes 6 steps to halt, writing 4 non-zero cells.
-
-This is equivalent to a 1D Busy Beaver.
-
-
-(In 3D there's no improvement either. And thinking about it, it will be true in all higher dimensions too - there are only 3 moves to be specified so if the 2D case is no improvement over the 1D case then adding further dimensions won't help either. Busy Beavers need to go over their own tracks to really be effective - and from this perspective it's really a surprise that some of the 2D cases outperform the 1D cases. TJH)
-
-
-With _relative 1D_ Turmites, the best 2-state 2-color Busy Beaver takes 13 steps and writes 4 non-zero cells: `{{{1,4,1},{1,0,0}},{{1,1,0},{0,1,1}}}` which _is_ an improvement. Allen H. Brady (in unpublished work) called these systems "Flippers" and discovered this Busy Beaver.
-
-
-The best relative _2D_ Turmites take 121 steps `{{{1,8,0},{0,8,1}},{{1,0,0},{1,2,0}}}` and write 37 non-zero cells `{{{1,2,1},{1,1,0}},{{1,4,0},{1,0,0}}}` before halting. (Allen H. Brady's results from the paper.) 
-
-
-
+----
 === 3-state 2-color ===
 
-An exhaustive search returned the following Busy Beavers. The first holds the record for the longest time before halting; the second writes the most non-zero symbols on the tape:
+==== Absolute movement ====
+|| || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
+|| <b>1D</b> || 21<br><br>`{{{1,'E',1},{1,'',0}},{{1,'W',1},{0,'E',2}},{{1,'W',2},{1,'W',0}}}`|| 6<br><br>`{{{1,'E',1},{1,'W',2}},{{1,'W',0},{1,'E',1}},{{1,'W',1},{1,'',0}}}` ||
+|| <b>2D</b> || 32<br><br>`{{{1,'S',1},{1,'W',2}},{{0,'W',2},{0,'E',1}},{{1,'N',0},{1,'',1}}}` || 11<br><br>`{{{1,'W',2},{1,'E',1}},{{1,'S',0},{1,'N',1}},{{1,'N',1},{1,'',1}}}` || If better machines exist then they take more than 10,000 steps or move more than 100 squares from the starting position. TJH March 2010. ||
+|| <b>3D</b> || ? || ? ||
 
-`{{{1,'S',1},{1,'W',2}},{{0,'W',2},{0,'E',1}},{{1,'N',0},{1,'',1}}}`<br>
-32 steps.<br>
+==== Relative movement ====
+|| || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
+|| <b>1D</b> || 82<br><br>`{{{1,1,1},{0,1,0}},{{1,4,0},{0,1,2}},{{1,1,0},{1,0,0}}}` || 9<br><br>(same one) || If better machines exist then they take more than 1,000 steps or move more than 50 squares from the starting position. TJH March 2010. ||
+|| <b>2D</b> || 21,790<br><br>`{{{1,2,1},{1,1,0}},{{1,2,1},{1,2,2}},{{1,0,0},{1,1,0}}}`<br><br>http://ruletablerepository.googlecode.com/files/RBB32.PNG || 2,793<br><br>(same one) || If it is not the best, the best will take more than 100,000 steps or move more than 100 squares from the starting position. TJH March 2010. ||
+|| <b>3D</b> || ? || ? ||
 
-`{{{1,'W',2},{1,'E',1}},{{1,'S',0},{1,'N',1}},{{1,'N',1},{1,'',1}}}`<br>
-11 non-zero cells written.
-
-
-Notice that these values are _higher_ than the best 1D Busy Beavers for these parameters: 21 steps, 6 non-zero cells. Is this true in general? (Obviously the n-dimensional values can never be lower than the (n-1)-dimensional values since the lower-dimensional turmite can always be embedded in the higher-dimensional space.)
-
-(Will the 3D case outperform the 2D case?)
-
-
-The best _relative 1D_ turmite takes 82 steps and writes 9 non-zero cells: `{{{1,1,1},{0,1,0}},{{1,4,0},{0,1,2}},{{1,1,0},{1,0,0}}}`
-
-The best relative 2D turmite so far found is `{{{1,2,1},{1,1,0}},{{1,2,1},{1,2,2}},{{1,0,0},{1,1,0}}}` which takes 21790 steps and writes 2793 non-zero cells. If it is not the best, the best will take more than 100,000 steps or move more than 100 squares from the starting position. (These are both easily possible, just not yet explored.)
-
-http://ruletablerepository.googlecode.com/files/RBB32.PNG
-
+----
 === 2-state 3-color ===
 
-In two states and three colours, things begin to get interesting. Universal computation becomes possible for 1D Turing machines, as demonstrated by Alex Smith and Stephen Wolfram for `{{{1,'E',1},{2,'W',0},{1,'W',0}},{{2,'W',0},{2,'E',1},{0,'E',0}}}`
+Universal computation becomes possible for 1D Turing machines, as demonstrated by Alex Smith and Stephen Wolfram for `{{{1,'E',1},{2,'W',0},{1,'W',0}},{{2,'W',0},{2,'E',1},{0,'E',0}}}`
 
-An exhaustive search returned the following Busy Beavers for the absolute 2D case:
+==== Absolute movement ====
+|| || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
+|| <b>1D</b> || 38<br><br>`{{{1,'E',1},{2,'W',1},{1,'',0}},{{2,'W',0},{2,'E',1},{1,'W',1}}}` || 9<br><br>(same one) ||
+|| <b>2D</b> || (no improvement) || 10<br><br>`{{{1,'N',1},{2,'W',1},{0,'E',0}},{{1,'S',0},{2,'N',1},{1,'',1}}}` || If better machines exist then they take more than 10,000 steps or move more than 100 squares from the starting position. TJH March 2010. ||
+|| <b>3D+</b> || ? || ? ||
 
-`{{{1,'S',1},{2,'N',1},{1,'',0}},{{2,'N',0},{2,'S',1},{1,'N',1}}}`<br>
-38 steps.<br>
+==== Relative movement ====
+|| || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
+|| <b>1D</b> || 233<br><br>`{{{1,4,1},{0,1,0},{2,1,0}},{{2,1,0},{1,0,0},{1,1,0}}}` || 19<br><br>(same one) || If better machines exist then they take more than 10,000 steps or move more than 100 squares from the starting position. TJH March 2010. ||
+|| <b>2D</b> || 11,367<br><br>`{{{1,2,1},{1,1,0},{1,2,0}},{{1,8,1},{2,2,0},{1,0,0}}}`<br><br>http://ruletablerepository.googlecode.com/files/RBB23.PNG || 3,326<br><br>(same one) || TJH March 2010. ||
+|| <b>3D+</b> || ? || ? ||
 
-`{{{1,'N',1},{2,'W',1},{0,'E',0}},{{1,'S',0},{2,'N',1},{1,'',1}}}`<br>
-10 non-zero cells written.
-
-Notice that the 38 steps case is a 1D machine. However the 10 cells written case beats the 1D case (9 cells written).
-
-
-The best _relative 1D_ turmite takes 223 steps and writes 19 non-zero cells: `{{{1,4,1},{0,1,0},{2,1,0}},{{2,1,0},{1,0,0},{1,1,0}}}`
-
-
-The best relative _2D_ turmite will take at least 11367 steps and write 3326 non-zero cells: `{{{1,2,1},{1,1,0},{1,2,0}},{{1,8,1},{2,2,0},{1,0,0}}}`
-
-http://ruletablerepository.googlecode.com/files/RBB23.PNG
-
-
+----
 === 4-state 2-color ===
 
-Absolute 2D Turmites again beat the 1D case in the space of 4-state 2-colour Turing machines, as shown by the following two examples:
+==== Absolute movement ====
+|| || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
+|| <b>1D</b> || 107<br><br>`{{{1,'E',1},{1,'W',1}},{{1,'W',0},{0,'W',2}},{{1,'',0},{1,'W',3}},{{1,'E',3},{0,'E',0}}}` || 13<br><br>(same one) ||
+|| <b>2D</b> || 4,632<br><br>`{{{1,'E',1},{0,'S',1}},{{1,'N',3},{1,'E',2}},{{0,'W',0},{1,'N',2}},{{1,'W',0},{0,'',0}}}`<br>http://ruletablerepository.googlecode.com/files/BB_abs_4s_2c_4632steps.png || 244<br><br>`{{{1,'E',1},{0,'W',0}},{{1,'W',3},{1,'S',0}},{{1,'S',0},{1,'',0}},{{1,'W',2},{1,'N',3}}}`<br>http://ruletablerepository.googlecode.com/files/BB_abs_4s_2c_244nonzerocells.png || If better machines exist then they take more than 100,000 steps or move more than 200 squares from the starting position. TJH March 2010. ||
+|| <b>3D+</b> || ? || ? ||
 
-`{{{1,'E',1},{0,'S',1}},{{1,'N',3},{1,'E',2}},{{0,'W',0},{1,'N',2}},{{1,'W',0},{0,'',0}}}`<br>
-http://ruletablerepository.googlecode.com/files/BB_abs_4s_2c_4632steps.png 4632 steps
-
-`{{{1,'E',1},{0,'W',0}},{{1,'W',3},{1,'S',0}},{{1,'S',0},{1,'',0}},{{1,'W',2},{1,'N',3}}}`<br>
-http://ruletablerepository.googlecode.com/files/BB_abs_4s_2c_244nonzerocells.png 244 non-zero cells written.
-
-If better machines exist then they take more than 100000 steps or move more than 200 squares from the starting position. Note that these machines are far ahead of the 1D case (107 steps, 13 non-zero cells).
-
-The best _1D relative_ turmite takes at least 48186 steps `{{{1,4,1},{1,1,0}},{{1,1,2},{0,1,0}},{{1,4,3},{0,1,3}},{{0,0,0},{1,4,0}}}` and writes 96 non-zero cells : `{{{1,4,1},{1,1,0}},{{1,1,2},{0,1,0}},{{1,1,0},{1,1,3}},{{1,0,0},{0,1,0}}}` (Allen H. Brady, unpublished). That's a pretty amazing leap from 107 steps, 13 cells! 
-
-The best _2D_ relative turmite takes at least 29014 steps and writes 3202 cells `{{{1,8,1},{1,1,0}},{{1,8,1},{1,8,2}},{{1,2,3},{1,1,0}},{{0,1,0},{0,0,0}}}`
+==== Relative movement ====
+|| || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
+|| <b>1D</b> || 48,186<br><br>`{{{1,4,1},{1,1,0}},{{1,1,2},{0,1,0}},{{1,4,3},{0,1,3}},{{0,0,0},{1,4,0}}}` || 96<br><br>`{{{1,4,1},{1,1,0}},{{1,1,2},{0,1,0}},{{1,1,0},{1,1,3}},{{1,0,0},{0,1,0}}}` || Allen H. Brady, unpublished. That's a pretty amazing leap from 107 steps, 13 cells! ||
+|| <b>2D</b> || 29,014<br><br>`{{{1,8,1},{1,1,0}},{{1,8,1},{1,8,2}},{{1,2,3},{1,1,0}},{{0,1,0},{0,0,0}}}` || 3,202<br><br>(same one) || This is not expected to be the final result. ||
+|| <b>3D+</b> || ? || ? ||
 
 === Beyond ===
 
@@ -144,14 +122,12 @@ These are just examples - the actual record holders will have to be at least as 
 
 Here's the 3,3 1D machine described as [http://www.cse.unr.edu/~al/busybeaversurprise.html Surprise-In-A-Box]:<br>
 `{{{1,'E',1},{2,'W',1},{1,'W',2}},{{1,'W',0},{2,'E',1},{1,'E',1}},{{0,'',0},{2,'W',0},{0,'W',2}}}`<br>
-(I don't get the joke though (if there is one) - from a rough visual inspection it appears to count on each side (in different ways) and then halt. I don't know enough about 1D Busy Beavers to know whether this in itself is unusual or what. Any ideas? TJH)
 
+=== Summary ===
 
-=== General findings ===
-
-It appears that relative Turmites in one and two dimensions are almost consistently as good, or better than, their absolute counterparts. For very small numbers of states and symbols, 1D and 2D Turmites perform equally well. However, when the number of states/symbols is increased, the 2D Turmites overtake the 1D Turmites.
-
-
+  # Going from absolute movement to relative movement improves the score. The only exception found is Sigma_relative(2,2)=4 which is the same as Sigma_absolute(2,2).
+  # Going from 1D to 2D seems to improve the score other than for low numbers of state or colors.
+  # No examples are known where going from 2D to 3D improves the score but this is likely to be true for higher numbers of states and colors for the same reason that the 2D case outperforms the 1D case.
 
 == Searching for high entropy patterns ==
 
