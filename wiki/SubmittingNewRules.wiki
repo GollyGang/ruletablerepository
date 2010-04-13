@@ -17,7 +17,7 @@ Yes! This is a community project, so anything of interest to the community shoul
 
 Ideally, the rule should be presented in a ZIP compressed archive, containing:
 
- * The transition file(s) (.table/.tree) containing comments that describe the states and the transitions.
+ * The transition file(s) (.table or .tree) containing comments that describe the states and the transitions.
  * Display files as needed (.colors, .icons).
  * Several sample patterns (.rle, .mc, etc.) to demonstrate key features; these sample files should contain explanatory comments.
  * A brief description of the rule, including the person who invented it and so on, so we can add some text to TheRules.
@@ -36,7 +36,7 @@ When naming a .table or .tree file please follow these conventions:
 
 == Everything here is free ==
 
-Please bear in mind that all content on the rule table repository is available to the public for free for any purpose. Our source code is available under the GPL license, while the rule tables and so on are all essentially under a public domain license. Please don't submit files that contain other license claims - don't assert copyright on your creations for example. In general the community tries to be very careful to correctly attribute credit but if you're not happy with this rule then don't submit your stuff.
+Please bear in mind that all content in this repository is available to the public for free for any purpose. Our source code is available under the GPL license, while the rule tables and so on are all essentially under a public domain license. Please don't submit files that contain other license claims - don't assert copyright on your creations for example. In general the community tries to be very careful to correctly attribute credit but if you're not happy with this rule then don't submit your stuff.
 
 == Editing TheRules page ==
 
