@@ -223,6 +223,11 @@ and patterns not included in Golly.
    Diffusion-limited aggregation using the HPP lattice gas. This model was studied
    to simulate the fractal growth characterised by electrolysis of copper sulphate.
 </td></tr></table></td></tr>
+<tr><td>
+   <a href="http://ruletablerepository.googlecode.com/files/Pressure.zip">Pressure</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   Pressure is a rule by Dean Hickerson, which is loosely based on gas particles exerting pressure on the walls of a chamber. 
+</td></tr></table></td></tr>
 </table>
 </p>
 
