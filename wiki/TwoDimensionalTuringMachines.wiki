@@ -76,7 +76,7 @@ Detailed results and credits are listed below.
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
 || <b>1D</b> || 13<br><br>`{{{1,4,1},{1,0,0}},{{1,1,0},{0,1,1}}}` || 4<br><br>(same one) || Allen H. Brady (in unpublished work) called these systems "Flippers" and discovered this Busy Beaver. ||
 || <b>2D</b> || 121<br><br>`{{{1,8,0},{0,8,1}},{{1,0,0},{1,2,0}}}` || 37<br><br>`{{{1,2,1},{1,1,0}},{{1,4,0},{1,0,0}}}` || Allen H. Brady's results from the paper. ||
-|| <b>3D+</b> || ? || ? || Suspect there won't be improvement, for the same reason as above. ||
+|| <b>3D+</b> || ? || ? || 
 
 ----
 
