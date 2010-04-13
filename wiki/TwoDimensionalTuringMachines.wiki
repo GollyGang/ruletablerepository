@@ -45,6 +45,26 @@ Relative-movement Turing machines and 2D Turing machines have been investigated 
 
 This is a list of the best known [http://en.wikipedia.org/wiki/Busy_beaver busy beavers]. If you find improvements then overwrite the below.
 
+=== Summary ===
+
+  # Going from absolute movement to relative movement improves the score. The only exception found is Sigma_relative(2,2)=4 which is the same as Sigma_absolute(2,2).
+  # Going from 1D to 2D seems to improve the score other than for low numbers of state or colors.
+  # No examples are known where going from 2D to 3D improves the score but this is likely to be true for higher numbers of states and colors for the same reason that the 2D case outperforms the 1D case.
+
+==== Absolute movement ====
+|| || <b>2-state</b> || <b>3-state</b> || <b>4-state</b> ||
+|| <b>2-color</b> || 1D+: 6(4) || 1D: 21(6)<br>2D: 32(11)<br>3D+: ? || 1D: 107(13)<br>2D: 4632(244)<br>3D+: ? ||
+|| <b>3-color</b> || 1D: 38(9)<br>2D: 38(10)<br>3D+: ? || || ||
+|| <b>4-color</b> || 1D: 3932964(2050)<br>2D+: ? || || ||
+
+==== Relative movement ====
+|| || <b>2-state</b> || <b>3-state</b> || <b>4-state</b> ||
+|| <b>2-color</b> || 1D: 13(4)<br>2D: 121(37)<br>3D: ? || 1D: 82(9)<br>2D: 21790(2793)<br>3D+: ? || 1D: 48186(2050)<br>2D+: ? ||
+|| <b>3-color</b> || 1D: 233(19)<br>2D: 11367(3326)<br>3D+: ? || || ||
+|| <b>4-color</b> || 1D+: ? || || ||
+
+Detailed results and credits are listed below.
+
 === 2-state 2-color ===
 
 ==== Absolute movement ====
@@ -59,6 +79,7 @@ This is a list of the best known [http://en.wikipedia.org/wiki/Busy_beaver busy 
 || <b>3D+</b> || ? || ? || Suspect there won't be improvement, for the same reason as above. ||
 
 ----
+
 === 3-state 2-color ===
 
 ==== Absolute movement ====
@@ -74,6 +95,7 @@ This is a list of the best known [http://en.wikipedia.org/wiki/Busy_beaver busy 
 || <b>3D</b> || ? || ? ||
 
 ----
+
 === 2-state 3-color ===
 
 Universal computation becomes possible for 1D Turing machines, as demonstrated by Alex Smith and Stephen Wolfram for `{{{1,'E',1},{2,'W',0},{1,'W',0}},{{2,'W',0},{2,'E',1},{0,'E',0}}}`
@@ -91,6 +113,7 @@ Universal computation becomes possible for 1D Turing machines, as demonstrated b
 || <b>3D+</b> || ? || ? ||
 
 ----
+
 === 4-state 2-color ===
 
 ==== Absolute movement ====
@@ -106,6 +129,7 @@ Universal computation becomes possible for 1D Turing machines, as demonstrated b
 || <b>3D+</b> || ? || ? ||
 
 ----
+
 === 2-state 4-color ===
 
 ==== Absolute movement ====
@@ -116,6 +140,8 @@ Universal computation becomes possible for 1D Turing machines, as demonstrated b
 ==== Relative movement ====
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
 || <b>1D+</b> || ? || ? ||
+
+----
 
 === Beyond ===
 
@@ -135,11 +161,7 @@ These are just examples - the actual record holders will have to be at least as 
 Here's the 3,3 1D machine described as [http://www.cse.unr.edu/~al/busybeaversurprise.html Surprise-In-A-Box]:<br>
 `{{{1,'E',1},{2,'W',1},{1,'W',2}},{{1,'W',0},{2,'E',1},{1,'E',1}},{{0,'',0},{2,'W',0},{0,'W',2}}}`<br>
 
-=== Summary ===
-
-  # Going from absolute movement to relative movement improves the score. The only exception found is Sigma_relative(2,2)=4 which is the same as Sigma_absolute(2,2).
-  # Going from 1D to 2D seems to improve the score other than for low numbers of state or colors.
-  # No examples are known where going from 2D to 3D improves the score but this is likely to be true for higher numbers of states and colors for the same reason that the 2D case outperforms the 1D case.
+----
 
 == Searching for high entropy patterns ==
 
