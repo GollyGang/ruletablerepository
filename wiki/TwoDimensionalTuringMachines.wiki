@@ -69,7 +69,7 @@ This is a list of the best known [http://en.wikipedia.org/wiki/Busy_beaver busy 
 
 ==== Relative movement ====
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
-|| <b>1D</b> || 82<br><br>`{{{1,1,1},{0,1,0}},{{1,4,0},{0,1,2}},{{1,1,0},{1,0,0}}}` || 9<br><br>(same one) || If better machines exist then they take more than 1,000 steps or move more than 50 squares from the starting position. TJH March 2010. ||
+|| <b>1D</b> || 82<br><br>`{{{1,1,1},{0,1,0}},{{1,4,0},{0,1,2}},{{1,1,0},{1,0,0}}}` || 9<br><br>(same one) || If better machines exist then they take more than 1,000 steps or move more than 50 squares from the starting position. Steps: TJH March 2010. Sigma: Allen H. Brady, unpublished. ||
 || <b>2D</b> || 21,790<br><br>`{{{1,2,1},{1,1,0}},{{1,2,1},{1,2,2}},{{1,0,0},{1,1,0}}}`<br><br>http://ruletablerepository.googlecode.com/files/RBB32.PNG || 2,793<br><br>(same one) || If it is not the best, the best will take more than 100,000 steps or move more than 100 squares from the starting position. TJH March 2010. ||
 || <b>3D</b> || ? || ? ||
 
