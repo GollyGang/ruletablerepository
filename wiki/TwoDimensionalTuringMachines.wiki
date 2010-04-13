@@ -54,7 +54,7 @@ This is a list of the best known [http://en.wikipedia.org/wiki/Busy_beaver busy 
 ==== Absolute movement ====
 || || <b>2-state</b> || <b>3-state</b> || <b>4-state</b> ||
 || <b>2-color</b> || 1D+: 6(4) || 1D: 21(6)<br>2D: 32(11)<br>3D: 32(11)<br>4D+: ? || 1D: 107(13)<br>2D: 4632(244)<br>3D+: ? ||
-|| <b>3-color</b> || 1D: 38(9)<br>2D: 38(10)<br>3D+: ? || || ||
+|| <b>3-color</b> || 1D: 38(9)<br>2D: 38(10)<br>3D: 38(10)<br>4D: ? || || ||
 || <b>4-color</b> || 1D: 3932964(2050)<br>2D+: ? || || ||
 
 ==== Relative movement ====
@@ -105,7 +105,8 @@ Universal computation becomes possible for 1D Turing machines, as demonstrated b
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
 || <b>1D</b> || 38<br><br>`{{{1,'E',1},{2,'W',1},{1,'',0}},{{2,'W',0},{2,'E',1},{1,'W',1}}}` || 9<br><br>(same one) ||
 || <b>2D</b> || (no improvement) || 10<br><br>`{{{1,'N',1},{2,'W',1},{0,'E',0}},{{1,'S',0},{2,'N',1},{1,'',1}}}` || If better machines exist then they take more than 10,000 steps or move more than 100 squares from the starting position. TJH March 2010. ||
-|| <b>3D+</b> || ? || ? ||
+|| <b>3D</b> || (no improvement) || (no improvement) || If better machines exist then they take more than 500 steps or move more than 20 squares from the starting position. TJH April 2010. ||
+|| <b>4D+</b> || ? || ? || Further improvement thought unlikely. ||
 
 ==== Relative movement ====
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
