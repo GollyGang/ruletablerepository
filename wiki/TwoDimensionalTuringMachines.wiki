@@ -53,8 +53,8 @@ This is a list of the best known [http://en.wikipedia.org/wiki/Busy_beaver busy 
 
 ==== Absolute movement ====
 || || <b>2-state</b> || <b>3-state</b> || <b>4-state</b> ||
-|| <b>2-color</b> || 1D: 6(4)<br>2D: 6(4)<br>3D: 6(4)<br>4D: 6(4)<br>5D+: ? || 1D: 21(6)<br>2D: 32(11)<br>3D: 32(11)<br>4D+: ? || 1D: 107(13)<br>2D: 4632(244)<br>3D+: ? ||
-|| <b>3-color</b> || 1D: 38(9)<br>2D: 38(10)<br>3D: 38(10)<br>4D: ? || || ||
+|| <b>2-color</b> || 1D: 6(4)<br>2D: 6(4)<br>3D: 6(4)<br>4D+?: 6(4) || 1D: 21(6)<br>2D: 32(11)<br>3D: 32(11)<br>4D+: ? || 1D: 107(13)<br>2D: 4632(244)<br>3D+: ? ||
+|| <b>3-color</b> || 1D: 38(9)<br>2D: 38(10)<br>3D: 38(10)<br>4D+: ? || || ||
 || <b>4-color</b> || 1D: 3932964(2050)<br>2D+: ? || || ||
 
 ==== Relative movement ====
