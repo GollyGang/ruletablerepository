@@ -84,6 +84,7 @@ A lattice gas is a cellular automaton used specifically to simulate a gas. Where
 
 || 1973 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Rules/HPP.table HPP.table] || The HPP lattice gas can be simulated in the Margolus rule, but [http://pages.cs.wisc.edu/~wylie/doc/PhD_thesis.pdf Brian Wylie] showed how to simulate it with 16 states and the von Neumann neighborhood. TJH added another 16 'reflection' states to allow the rule to function in a bounded, non-toroidal space. || http://ruletablerepository.googlecode.com/files/hpp.PNG ||
 || 1981 || [http://ruletablerepository.googlecode.com/files/DLA.zip Diffusion-limited aggregation] || [http://en.wikipedia.org/wiki/Diffusion-limited_aggregation Diffusion-limited aggregation] using the HPP lattice gas. This model was studied to simulate the fractal growth characterised by electrolysis of copper sulphate. || http://ruletablerepository.googlecode.com/files/dla.PNG ||
+|| 2010 || [http://ruletablerepository.googlecode.com/files/Pressure.zip Pressure] || Pressure is a rule by Dean Hickerson, which is loosely based on gas particles exerting pressure on the walls of a chamber. || http://ruletablerepository.googlecode.com/files/Pressure_thumbnail.png ||
 
 == Margolus neighborhood ==
 
