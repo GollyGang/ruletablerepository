@@ -41,6 +41,12 @@ Relative-movement Turing machines and 2D Turing machines have been investigated 
   * It uses a similar notation as the other script. The difference is in how the direction is specified: 1=forward, 4=u-turn, 2=right, 8=left, 0=halt. 
   * For example, the triple `{1,2,3}` means: print a '1', turn right (and move forward), and adopt state 3.
 
+=== Searching for new champions ===
+
+To find busy beavers you'll need a search program. Here's the one I was using to find all the results listed below: [http://code.google.com/p/terminatingturmites/ Terminating Turmites]
+
+For other programs, the wikipedia page on [http://en.wikipedia.org/wiki/Busy_beaver Busy Beavers] will guide to some.
+
 == Busy Beavers ==
 
 This is a list of the best known [http://en.wikipedia.org/wiki/Busy_beaver busy beavers]. If you find improvements then overwrite the below.
@@ -60,7 +66,7 @@ This is a list of the best known [http://en.wikipedia.org/wiki/Busy_beaver busy 
 ==== Relative movement ====
 || || <b>2-state</b> || <b>3-state</b> || <b>4-state</b> ||
 || <b>2-color</b> || 1D: 13(4)<br>2D: 121(37)<br>3D: ? || 1D: 82(9)<br>2D: 21790(2793)<br>3D+: ? || 1D: 48186(96)<br>2D: >29014(>3202)<br>3D+: ? ||
-|| <b>3-color</b> || 1D: 233(19)<br>2D: 11367(3326)<br>3D+: ? || || ||
+|| <b>3-color</b> || 1D: 233(19)<br>2D: 18877(3326)<br>3D+: ? || || ||
 || <b>4-color</b> || 1D+: ? || || ||
 
 Detailed results and credits are listed below.
