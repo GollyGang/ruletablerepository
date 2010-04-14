@@ -45,7 +45,7 @@ Relative-movement Turing machines and 2D Turing machines have been investigated 
 
 To find busy beavers you'll need a search program. Here's the one I was using to find all the results listed below: [http://code.google.com/p/terminatingturmites/ Terminating Turmites]
 
-For other programs, the wikipedia page on [http://en.wikipedia.org/wiki/Busy_beaver Busy Beavers] will guide to some.
+For other programs, the wikipedia page on busy beavers will guide you to some.
 
 == Busy Beavers ==
 
