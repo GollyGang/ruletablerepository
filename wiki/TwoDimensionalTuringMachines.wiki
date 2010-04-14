@@ -111,7 +111,7 @@ Universal computation becomes possible for 1D Turing machines, as demonstrated b
 ==== Relative movement ====
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
 || <b>1D</b> || 233<br><br>`{{{1,4,1},{0,1,0},{2,1,0}},{{2,1,0},{1,0,0},{1,1,0}}}` || 19<br><br>(same one) || If better machines exist then they take more than 10,000 steps or move more than 100 squares from the starting position. TJH March 2010. ||
-|| <b>2D</b> || 11,367<br><br>`{{{1,2,1},{1,1,0},{1,2,0}},{{1,8,1},{2,2,0},{1,0,0}}}`<br><br>http://ruletablerepository.googlecode.com/files/RBB23.PNG || 3,326<br><br>(same one) || TJH March 2010. ||
+|| <b>2D</b> || 18,877<br><br>`{{{1,1,1},{0,4,0},{1,8,1}},{{2,2,0},{0,1,0},{1,0,0}}}` || 3,326<br><br>`{{{1,2,1},{1,1,0},{1,2,0}},{{1,8,1},{2,2,0},{1,0,0}}}`<br><br>http://ruletablerepository.googlecode.com/files/RBB23.PNG || Steps: TJH April 2010. Sigma: TJH March 2010 ||
 || <b>3D+</b> || ? || ? ||
 
 ----
