@@ -7,6 +7,13 @@ If you change this page, please update the Golly Access Point too!
 ====================================================================
 http://code.google.com/p/ruletablerepository/wiki/GollyAccessPoint
 ====================================================================
+
+
+
+==== Tim, can you do the honours? ====
+
+
+
 </wiki:comment>
 
 
@@ -144,6 +151,7 @@ If there is a rule that doesn't fit into one of the above sections, nor does it 
 || 1987 || [http://ruletablerepository.googlecode.com/files/Sandpile.zip Bak-Tang-Wiesenfeld sandpile model] || A simple 2D model of a sandpile was found to self-organize itself to criticality. [http://en.wikipedia.org/wiki/Bak-Tang-Wiesenfeld_sandpile Wikipedia] || http://ruletablerepository.googlecode.com/files/BTWSandpile.png ||
 || 1989 || [http://ruletablerepository.googlecode.com/files/CyclicCA.table Cyclic CA] || A rule investigated by David Griffeath. This rule is a very basic CA that shows competition emerging from a random initial seed. [http://en.wikipedia.org/wiki/Cyclic_cellular_automaton Wikipedia.] || http://ruletablerepository.googlecode.com/files/cca.PNG ||
 || 1998 || [http://ruletablerepository.googlecode.com/files/JustFriends.table Just Friends] || A non-totalistic 2D binary rule by David Bell. || http://ruletablerepository.googlecode.com/files/justfriends.PNG ||
+|| 2001 || [http://ruletablerepository.googlecode.com/files/PhotonXor.zip The Photon-XOR system] || David Eppstein discovered this one-dimensional system whilst experimenting with the rule B25/S4. It exhibits pseudo-random walks, and can be simulated in O(n log n) time using an algorithm by Tomas Rokicki. By interpreting its walk in binary, it can be used as an (aperiodic) pseudo-random number generator. [[http://yucs.org/~gnivasch/life/photonXOR/index.html Gabriel Nivasch's webpage]] || http://ruletablerepository.googlecode.com/files/PhotonXor.PNG ||
 || 2009 || [http://ruletablerepository.googlecode.com/files/TrickyBees.zip Tricky Bees] || A chaotic rule by Alan Tennant where each state becomes progressively more inert in which patterns are surprisingly tricky to construct. This table is actually 17 independent rules, which are combined into one rule table using an 'on' state for each rule. || http://ruletablerepository.googlecode.com/files/trickybees.PNG ||
 || 2009 || [http://ruletablerepository.googlecode.com/files/MazeSolver.zip Maze Solver] || A 13-state rule table that solves any maze, using a flood fill method to locate the exit, before backtracking to the start to highlight the shortest possible route. This rule comes complete with a set of icons. || http://ruletablerepository.googlecode.com/files/mazesolver.PNG ||
 || 2009 || [http://ruletablerepository.googlecode.com/files/CollatzConjecture.zip Collatz emulator] || Dean Hickerson created this rule table for determining the number of iterations required for each positive integer to reach 1 in the [http://en.wikipedia.org/wiki/Collatz_conjecture Collatz conjecture]. It is alternatively known as the 3n+1 conjecture or Ulam's conjecture. Coincidentially, Stanislaw Ulam  inspired von Neumann to create cellular automata. || http://ruletablerepository.googlecode.com/files/CollatzCA.png ||
