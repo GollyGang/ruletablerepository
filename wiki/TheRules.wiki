@@ -7,13 +7,6 @@ If you change this page, please update the Golly Access Point too!
 ====================================================================
 http://code.google.com/p/ruletablerepository/wiki/GollyAccessPoint
 ====================================================================
-
-
-
-==== Tim, can you do the honours? ====
-
-
-
 </wiki:comment>
 
 
