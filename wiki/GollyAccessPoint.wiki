@@ -449,6 +449,14 @@ and patterns not included in Golly.
    A non-totalistic 2D binary rule by David Bell.
 </td></tr></table></td></tr>
 <tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/PhotonXor.zip">PhotonXor</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   David Eppstein discovered this one-dimensional system whilst experimenting with the rule B25/S4.
+   It exhibits pseudo-random walks, and can be simulated in O(n log n) time using an algorithm by Tomas Rokicki.
+   By interpreting its walk in binary, it can be used as an (aperiodic) pseudo-random number generator --
+   see <a href="http://yucs.org/~gnivasch/life/photonXOR/index.html">Gabriel Nivasch's web page</a>.
+</td></tr></table></td></tr>
+<tr><td>
    <a href="get:http://ruletablerepository.googlecode.com/files/TrickyBees.zip">TrickyBees</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A chaotic rule by Alan Tennant where each state becomes progressively more inert
