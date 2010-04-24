@@ -18,8 +18,7 @@ A rule to make on cells die and become history cells.
 The new rules might be expressed like this:
 
 {{{
------------------------------------------------------------------------
-
+...
 f,1,1,1,a,b,c,d,e,1 interchange {N,NE,E,SE,S,SW,W,NW}
 1,1,1,a,b,c,d,e,g,1 interchange {N,NE,E,SE,S,SW,W,NW}
 1,i,j,k,l,m,n,o,p,2
@@ -44,7 +43,8 @@ Can I suggest that permutation symmetry would work like this:
 
 n_states:3
 neighborhood:Moore
-symmetries:permutation
+symmetries:permute
+# (was 'permutation' but I chose 'permute' to match 'rotate', 'reflect' etc.)
 
 var a={0,2}
 var b={0,2}
@@ -72,18 +72,14 @@ Then 'permutation' is just another symmetry alongside reflections and rotations.
 
 
 APG:
-
-
 That _does_ make things a lot simpler. But the 'interchange' approach can be used for other symmetries, like the hexagonal symmetry:
 
-
-interchange {N,NE,E,S,SW,E}
-
+`interchange {N,NE,E,S,SW,E}`
 
 Or the _Ben's rule_ symmetry (also used in the MRM rule table):
 
-
-interchange {N,E,S,W}{NE,SE,NW,SW}
-
+`interchange {N,E,S,W}{NE,SE,NW,SW}`
 
 Maybe we should just add a symmetry type when required.
+
+  We now have support (`Scripts/Python/RuleTableToTree.py`) for a 'permute' symmetry, and it seems to be working very well - you can try the rule table above! (I've worked out how to apply permutation-respecting-duplicates _after_ substituting the variables, which means I don't need to generate all `numNeighbors!` (factorial) rules for each transition, only those permutations for which the inputs were different.) As part of the same code I've added a HexagonalNeighborhood too, which addresses one of APG's points. --TJH
