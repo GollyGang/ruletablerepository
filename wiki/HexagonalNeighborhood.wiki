@@ -221,3 +221,33 @@ From 72 rule tables to just 11 is an immense improvement by anyone's standards.
     Since this page was written, Andrew Trevorrow has implemented the "!HexBuss" rule using make-ruletree.py, please see the recent golly-test messages. I think there are some changes afoot that will make issues of rule table format less important in cases like this - we'll be writing our rules in python perhaps and having them automatically converted to rule trees. --TJH
 
    I've gone off the idea of doing any sort of automatic conversion.  The latest version of make-ruletree.py is so easy to use that any attempt to automate the process would just make things unnecessarily complicated.  I personally find it much easier to create .tree files (via make-ruletree.py) rather than .table files, so I think this method should somehow be given more prominence.  Perhaps we need a !RuleTrees.wiki page (with a link from the front page) where we can discuss this alternative format and describe how to use make-ruletree.py.  Or if people don't like Python, there are  Java, Perl and C++ examples in the Rules/!TreeGenerators subdir. --AKT
+
+Support has now been added for both the hexagonal neighborhood and the permute symmetry, so the HexBuss rule table can now look like this:
+
+{{{
+n_states:3
+neighborhood:hexagonal
+symmetries:permute
+
+var a={0,1,2}
+var b={0,1,2}
+var c={0,1,2}
+var d={0,1,2}
+var e={0,1,2}
+var f={0,1,2}
+
+var i={0,1}
+var j={0,1}
+var k={0,1}
+var l={0,1}
+
+var m={0,1,2}
+
+0,2,0,0,0,0,0,2
+c,1,2,0,0,0,0,1
+c,2,2,i,j,k,l,1
+c,2,2,2,i,j,k,2
+m,a,b,c,d,e,f,0
+}}}
+
+I just put this here as an example; I agree with Andrew's point that for rules like this a Python (or other language) implementation of the rule (to be used with make-ruletree.py) is a more natural way to express it. But this example hints at where you might want a rule table for more complex rules which would otherwise need too many if-statements if written in Python. --TJH
