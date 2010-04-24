@@ -220,9 +220,42 @@ From 72 rule tables to just 11 is an immense improvement by anyone's standards.
 
     Since this page was written, Andrew Trevorrow has implemented the "!HexBuss" rule using make-ruletree.py, please see the recent golly-test messages. I think there are some changes afoot that will make issues of rule table format less important in cases like this - we'll be writing our rules in python perhaps and having them automatically converted to rule trees. --TJH
 
+Here's Andrew's Python version of the rule:
+{{{
+name = "HexBuss"
+n_states = 3
+n_neighbors = 8
+def transition_function(s):
+   # s[0..8] are cell states in the order NW, NE, SW, SE, N, W, E, S, C
+   # but we ignore the NE and SW corners to emulate a hexagonal grid:
+   #             NW N NE         NW  N
+   #             W  C  E   ->   W  C  E
+   #             SW S SE         S  SE
+   
+   # set n1 and n2 to the number of neighbors in states 1 and 2
+   n1 = 0
+   n2 = 0
+   for i in xrange(8):
+      # ignore s[1] and s[2]
+      if i < 1 or i > 2:
+         if s[i] == 1: n1 += 1
+         if s[i] == 2: n2 += 1
+   
+   if s[8] == 0 and n1 == 0 and n2 == 1:
+      return 2
+   elif n1 == 1 and n2 == 1:
+      return 1
+   elif n2 == 2:
+      return 1
+   elif n2 == 3:
+      return 2
+   else:
+      return 0
+}}}
+
    I've gone off the idea of doing any sort of automatic conversion.  The latest version of make-ruletree.py is so easy to use that any attempt to automate the process would just make things unnecessarily complicated.  I personally find it much easier to create .tree files (via make-ruletree.py) rather than .table files, so I think this method should somehow be given more prominence.  Perhaps we need a !RuleTrees.wiki page (with a link from the front page) where we can discuss this alternative format and describe how to use make-ruletree.py.  Or if people don't like Python, there are  Java, Perl and C++ examples in the Rules/!TreeGenerators subdir. --AKT
 
-Support has now been added for both the hexagonal neighborhood and the permute symmetry, so the HexBuss rule table can now look like this:
+Support has now been added for both the hexagonal neighborhood and the permute symmetry, so the !HexBuss rule table can now look like this:
 
 {{{
 n_states:3
@@ -250,4 +283,4 @@ c,2,2,2,i,j,k,2
 m,a,b,c,d,e,f,0
 }}}
 
-I just put this here as an example; I agree with Andrew's point that for rules like this a Python (or other language) implementation of the rule (to be used with make-ruletree.py) is a more natural way to express it. But this example hints at where you might want a rule table for more complex rules which would otherwise need too many if-statements if written in Python. --TJH
+I just put this here as an example; I agree with Andrew's point that for rules like this a Python (or other language) implementation of the rule (to be used with make-ruletree.py) is often a more natural way to express it. But this example hints at where you might want a rule table for more complex rules which would otherwise need too many if-statements if written in Python. --TJH
