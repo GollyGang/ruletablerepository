@@ -16,7 +16,7 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 || <b>Moore</b> || {{{c,n,ne,e,se,s,sw,w,nw : c'}}} || <b>none</b>, rotate2, <b>rotate4</b>, <b>rotate8</b>, <b>rotate4reflect</b>, <b>rotate8reflect</b>, <b>reflect_horizontal</b> (<b>reflect</b>), reflect_vertical, direction_permutation, total_permutation (<b>permute^*^</b>) || http://ruletablerepository.googlecode.com/files/moore.PNG ||
 || <b>hexagonal^*^</b> (see HexagonalNeighborhood) || {{{c,n,ne,se,s,sw,nw : c}}} || <b>none^*^</b>, <b>rotate2^*^</b>, <b>rotate3^*^</b>, <b>rotate6^*^</b>, <b>rotate6_reflect^*^</b>, reflect_minor?, reflect_major?, <b>permute^*^</b> || http://ruletablerepository.googlecode.com/files/hexagonal.PNG ||
 || <b>triangularVonNeumann^*^</b> || {{{c,n1,n2,n3 : c'}}} || <b>rotate^*^</b>, <b>rotate_reflect^*^</b> (<b>permute^*^</b>) || http://ruletablerepository.googlecode.com/files/triangularVonNeumann.PNG ||
-|| triangularMoore || {{{c,n1..n12 : c'}}} || none, rotate, rotate_reflect, layer_permutation, total_permutation || http://ruletablerepository.googlecode.com/files/triangularMoore.PNG ||
+|| <b>triangularMoore^*^</b> || {{{c,n1..n12 : c'}}} || <b>rotate^*^</b>, <b>rotate_reflect^*^</b>, layer_permutation, total_permutation (<b>permute^*^</b>) || http://ruletablerepository.googlecode.com/files/triangularMoore.PNG ||
 
 <h2>Two-dimensional partitioning schemes</h2>
 
@@ -28,7 +28,7 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 <h2>One-dimensional neighborhoods and partitioning schemes</h2>
 
 || neighborhood || transitions || symmetries || image ||
-|| <b>oneDimensional^*^</b> || {{{c,w,e : c'}}} || <b>none^*^</b>, <b>reflect^*^</b> (permute) || http://ruletablerepository.googlecode.com/files/1dRadius1.PNG ||
+|| <b>oneDimensional^*^</b> || {{{c,w,e : c'}}} || <b>none^*^</b>, <b>reflect^*^</b> (<b>permute^*^</b>) || http://ruletablerepository.googlecode.com/files/1dRadius1.PNG ||
 || oneDimensional_radius2 || {{{c,w2,w,e,e2 : c'}}} || none, reflect, permutation? || http://ruletablerepository.googlecode.com/files/1dRadius2.PNG ||
 || oneDimensional_partition2 ([http://cell-auto.com/neighbourhood/brickwall/index.html brick wall]) || {{{a,b : a',b'}}} || none, reflect || http://ruletablerepository.googlecode.com/files/BrickWall.GIF ||
 
