@@ -30,8 +30,8 @@ Files in the .table format are in plain ASCII text. Each line is one of the foll
 
   # Comment lines are empty or start with a "#".
   # {{{n_states:}}} (followed by an integer) specifies the number of cell states in the CA (from 0 to n-1 inclusive).
-  # {{{neighborhood:}}} specifies the cell neighborhood for the CA update. Currently the following values are supported: {{{vonNeumann}}}, {{{Moore}}}, {{{Margolus}}}.
-  # {{{symmetries:}}} specifies the spatial symmetries that apply to the transitions listed.
+  # {{{neighborhood:}}} specifies the cell neighborhood for the CA update. See RoadMap for the list of supported neighborhoods.
+  # {{{symmetries:}}} specifies the spatial symmetries that apply to the transitions listed. See RoadMap for the symmetries supported by each neighborhood.
   # Variables ({{{var}}}) allow transitions to be compactly written using text labels that stand for multiple states.
   # Transitions consist of variable labels and cell states, specifying the inputs and outputs of each transition. Together the set of transitions specifies the behaviour of the CA.
 
@@ -41,7 +41,7 @@ Important points to note:
   * The three lines that specify {{{n_states}}}, {{{neighborhood}}} and {{{symmetries}}} should appear before the variables and transitions.
   * Variables should appear before the first transition that uses them. For clarity they usually appear before the transitions.
   * The entries in a transition are separated by commas. An exception to this is when {{{n_states}}} is 10 or less and when no variables are used - in this case no comma should be used, as in Example 1 above. This exception is to allow the 'traditional' list of transitions to be used.
-  * The neighborhood type determines the number of entries in the transitions:
+  * The neighborhood type determines the number of entries in the transitions. E.g.:
     * {{{vonNeumann}}}: C,N,E,S,W,C'
     * {{{Moore}}}: C,N,NE,E,SE,S,SW,W,NW,C'
     * {{{Margolus}}}: a,b,c,d,a',b',c',d' (see MargolusNeighborhood)
