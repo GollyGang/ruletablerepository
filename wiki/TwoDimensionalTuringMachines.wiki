@@ -176,7 +176,7 @@ Here's the 3,3 1D machine described as [http://www.cse.unr.edu/~al/busybeaversur
 On a 2D grid of triangular cells, it doesn't make sense to talk about absolute-movement turmites because the triangles aren't all the same way up. Relative-movement turmites on a triangular grid were first studied by Allen H. Brady (ref at the top), and we've added some results of our own:
 
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
-|| <b>2-state 2-color</b> || 171<br><br>`{{{1,2,1},{1,0,0}},{{0,1,1},{1,4,0}}}` || 39<br><br>`{{{1,2,0},{0,2,1}},{{1,0,0},{1,1,0}}}` || Allen H. Brady's results from the paper. ||
+|| <b>2-state 2-color</b> || 171<br><br>`{{{1,2,1},{1,0,0}},{{0,1,1},{1,4,0}}}` || 39<br><br>`{{{1,2,0},{0,2,1}},{{1,0,0},{1,1,0}}}` || Allen H. Brady's results from the paper, confirmed. If better machines exist then they take more than 100,000 steps or move more than 1,000 squares from the starting position. ||
 || <b>3-state 2-color</b> || 4499<br><br>`{{{1,2,1},{0,1,1}},{{1,1,2},{1,2,0}},{{0,4,1},{1,0,0}}}` || 1611<br><br>`{{{1,2,1},{1,2,0}},{{1,1,1},{1,1,2}},{{1,0,0},{0,1,0}}}` || If better machines exist then they take more than 100,000 steps or move more than 100 squares from the starting position. TJH May 2010 ||
 
 Golly 2.2 has a script `TriTurmite-gen.py` for generating CA for these turmites. 
