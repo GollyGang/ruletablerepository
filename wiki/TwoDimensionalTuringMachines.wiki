@@ -179,8 +179,8 @@ On a 2D grid of triangular cells, it doesn't make sense to talk about absolute-m
 || <b>2-state 2-color</b> || 171<br><br>`{{{1,2,1},{1,0,0}},{{0,1,1},{1,4,0}}}` || 39<br><br>`{{{1,2,0},{0,2,1}},{{1,0,0},{1,1,0}}}` || Allen H. Brady's results from the paper. ||
 || <b>3-state 2-color</b> || 4499<br><br>`{{{1,2,1},{0,1,1}},{{1,1,2},{1,2,0}},{{0,4,1},{1,0,0}}}` || 1611<br><br>`{{{1,2,1},{1,2,0}},{{1,1,1},{1,1,2}},{{1,0,0},{0,1,0}}}` || If better machines exist then they take more than 100,000 steps or move more than 100 squares from the starting position. TJH May 2010 ||
 
-Golly 2.2 has a script TriTurmite-gen.py for generating CA for these turmites. 
-
+Golly 2.2 has a script `TriTurmite-gen.py` for generating CA for these turmites. 
+----
 == Searching for high entropy patterns ==
 
 Wolfram says this of 2D Turing machines:
