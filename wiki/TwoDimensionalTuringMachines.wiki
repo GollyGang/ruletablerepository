@@ -175,7 +175,7 @@ Here's the 3,3 1D machine described as [http://www.cse.unr.edu/~al/busybeaversur
 
 On a 2D grid of triangular cells, it doesn't make sense to talk about absolute-movement turmites because the triangles aren't all the same way up. Relative-movement turmites on a triangular grid were first studied by Allen H. Brady (ref at the top), and we've added some results of our own.
 
-Each triple is {A,B,C} where A is the new color to write (0-(n_colors-1)), B is the direction to turn (0=halt, 1=left, 2=right, 4=u-turn), C is the new state to adopt (0-(n_colors-1)). For example, the triple `{1,2,3}` means: print a '1', turn right, and adopt state 3.
+Each triple is {A,B,C} where A is the new color to write: [0,n_colors), B is the direction to turn: {0=halt, 1=left, 2=right, 4=u-turn}, C is the new state to adopt: [0,n_states). For example, the triple `{1,2,3}` means: print a '1', turn right, and adopt state 3.
 
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
 || <b>2-state 2-color</b> || 171<br><br>`{{{1,2,1},{1,0,0}},{{0,1,1},{1,4,0}}}`<br><br>http://ruletablerepository.googlecode.com/files/TriTurmite2s2c_171steps_27cells.png || 39<br><br>`{{{1,2,0},{0,2,1}},{{1,0,0},{1,1,0}}}`<br><br>http://ruletablerepository.googlecode.com/files/TriTurmite2s2c_134steps_39cells.png || Allen H. Brady's results from the paper, confirmed. If better machines exist then they take more than 100,000 steps or move more than 1,000 squares from the starting position. ||
