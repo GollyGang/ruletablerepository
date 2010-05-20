@@ -216,7 +216,8 @@ Extending our convention: 0=halt, 1=no turn, 2=left, 4=right, 8=back-left, 16=ba
 
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
 || <b>2-state 2-color</b> || 54<br><br>`{{{1,16,1},{1,0,0}},{{1,16,0},{1,1,1}}}` || 24<br><br>(same one) || If better machines exist then they take more than 100,000 steps or move more than 50 squares from the starting position. TJH May 2010. ||
-|| <b>3-state 2-color</b> || 44,440<br><br>`{{{0,16,1},{0,16,1}},{{1,1,0},{1,8,2}},{{1,1,0},{1,0,0}}}` || 1,180<br><br>(same one) || Preliminary results. ||
+|| <b>3-state 2-color</b> || 44,440<br><br>`{{{0,16,1},{0,16,1}},{{1,1,0},{1,8,2}},{{1,1,0},{1,0,0}}}` || 1,222<br><br>`{{{1,1,1},{1,8,0}},{{1,1,2},{0,1,0}},{{0,8,0},{1,0,0}}}` || Preliminary results. ||
+|| <b>2-state 3-color</b> || 44,437<br><br>`{{{1,16,1},{1,8,0},{1,16,1}},{{0,1,0},{2,1,0},{1,0,0}}}` || 1,731<br><br>(same one) || Preliminary results. ||
 
 The 2-state 2-color results (54, 24) are significantly smaller than the square-grid (121, 37) and triangular-grid (171, 39) results, which is perhaps surprising since there are more ways for the turmites to turn (6 as opposed to 4 or 3). But the 3-state 2-color steps result (S=44,440) is already far ahead of the square-grid (S=21,790) and triangular-grid result (S=4,499).
 
