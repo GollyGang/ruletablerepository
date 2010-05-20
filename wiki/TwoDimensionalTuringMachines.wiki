@@ -184,6 +184,30 @@ Each triple is {A,B,C} where A is the new color to write: [0,n_colors), B is the
 
 Golly 2.2 has a script `TriTurmite-gen.py` for generating CA for these turmites. 
 ----
+
+== Hexagonal Turmites ==
+
+=== Absolute movement ===
+Here there are 6 directions for the turmites to move in: 'A', 'B', 'C', 'D', 'E', 'F'. Golly 2.2 has a script `AbsoluteHexTurmite-gen.py` for generating CA for these turmites.
+
+|| || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
+|| <b>2-state 2-color</b> || 6<br><br>`{{{1,'A',1},{1,'B',1}},{{1,'D',0},{1,'',0}}}` || 4<br><br>(same one) || If better machines exist then they take more than 100,000 steps or move more than 100 squares from the starting position. TJH May 2010. ||
+|| <b>3-state 2-color</b> || 33<br><br>`{{{1,'A',1},{1,'',0}},{{1,'E',2},{0,'A',2}},{{1,'C',1},{1,'D',0}}}` || 13<br><br>`{{{1,'A',1},{1,'C',2}},{{1,'E',2},{1,'B',0}},{{1,'D',0},{1,'',0}}}` || If better machines exist then they take more than 100,000 steps or move more than 20 squares from the starting position. TJH May 2010. ||
+|| <b>2-state 3-color</b> || 38<br><br>`{{{1,'A',1},{2,'D',1},{1,'',0}},{{2,'D',0},{2,'A',1},{1,'D',1}}}` || 14<br><br>`{{{1,'A',1},{2,'C',1},{1,'',0}},{{2,'D',0},{2,'B',0},{1,'E',0}}}` || If better machines exist then they take more than 100,000 steps or move more than 20 squares from the starting position. TJH May 2010. ||
+
+Note that absolute-movement hexagonal-celled Turing machines can simulate any square grid machine, so their scores can never be lower. But their improvements (where there are any) are surprisingly small in the cases examined.
+
+=== Relative movement ===
+Extending our convention: 0=halt, 1=no turn, 2=left, 4=right, 8=back-left, 16=back-right, 32=u-turn. Golly 2.2 has a script `HexTurmite-gen.py` for generating CA for these turmites. 
+
+|| || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
+|| <b>2-state 2-color</b> || 54<br><br>`{{{1,16,1},{1,0,0}},{{1,16,0},{1,1,1}}}` || 24<br><br>(same one) || If better machines exist then they take more than 100,000 steps or move more than 50 squares from the starting position. TJH May 2010. ||
+|| <b>3-state 2-color</b> || 44,440<br><br>`{{{0,16,1},{0,16,1}},{{1,1,0},{1,8,2}},{{1,1,0},{1,0,0}}}` || 1,180<br><br>(same one) || Preliminary results. ||
+
+The 2-state 2-color results (54, 24) are significantly smaller than the square-grid (121, 37) and triangular-grid (171, 39) results, which is perhaps surprising since there are more ways for the turmites to turn (6 as opposed to 4 or 3). But the 3-state 2-color steps result (S=44,440) is already far ahead of the square-grid (S=21,790) and triangular-grid result (S=4,499).
+
+----
+
 == Searching for high entropy patterns ==
 
 Wolfram says this of 2D Turing machines:
