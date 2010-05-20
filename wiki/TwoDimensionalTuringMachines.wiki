@@ -28,14 +28,14 @@ Relative-movement Turing machines and 2D Turing machines have been investigated 
 
 == Make your own Turmites ==
 
-=== Absolute movement ===
+*Absolute movement*
 
   * Run [http://ruletablerepository.googlecode.com/files/AbsoluteTurmites.zip AbsoluteTurmite-gen.py] in [http://golly.sourceforge.net Golly]. Copy-paste one of the absolute-movement specification strings, e.g.: `{{{1,'E',1},{1,'W',1}},{{1,'W',0},{1,'',0}}}`
   * Each machine is specified as a table of n_states rows by n_colors columns, written in (Western) reading order: the first row first, then then other rows. 
   * Each triple is {A,B,C} where A is the new color to write (0-(n_colors-1)), B is the direction to move in (North, South, East, West) or empty to halt, C is the new state to adopt (0-(n_colors-1)).
   * For example, the triple `{1,'S',3}` means: print a '1', move South, and adopt state 3.
 
-=== Relative movement ===
+*Relative movement*
 
   * Run [http://ruletablerepository.googlecode.com/files/single-Turmite-gen.py single-Turmite-gen.py] in [http://golly.sourceforge.net Golly] and copy-paste one of the relative-movement specification strings below into the text box. E.g. `{{{1,2,0},{0,8,0}}}`
   * It uses a similar notation as the other script. The difference is in how the direction is specified: 1=forward, 4=u-turn, 2=right, 8=left, 0=halt. 
@@ -57,13 +57,15 @@ This is a list of the best known [http://en.wikipedia.org/wiki/Busy_beaver busy 
   # Going from 1D to 2D seems to improve the score other than for low numbers of state or colors.
   # No examples are known where going from 2D to 3D improves the score but this is likely to be true for higher numbers of states and colors for the same reason that the 2D case outperforms the 1D case.
 
-==== Absolute movement ====
+*Absolute movement*
+
 || || <b>2-state</b> || <b>3-state</b> || <b>4-state</b> ||
 || <b>2-color</b> || 1D: 6(4)<br>2D: 6(4)<br>3D: 6(4)<br>4D+?: 6(4) || 1D: 21(6)<br>2D: 32(11)<br>3D: 32(11)<br>4D+: ? || 1D: 107(13)<br>2D: 4632(244)<br>3D+: ? ||
 || <b>3-color</b> || 1D: 38(9)<br>2D: 38(10)<br>3D: 38(10)<br>4D+: ? || || ||
 || <b>4-color</b> || 1D: 3932964(2050)<br>2D+: ? || || ||
 
-==== Relative movement ====
+*Relative movement*
+
 || || <b>2-state</b> || <b>3-state</b> || <b>4-state</b> ||
 || <b>2-color</b> || 1D: 13(4)<br>2D: 121(37)<br>3D: ? || 1D: 82(9)<br>2D: 21790(2793)<br>3D+: ? || 1D: 48186(96)<br>2D: 120697(3202)<br>3D+: ? ||
 || <b>3-color</b> || 1D: 233(19)<br>2D: 69106(5060)<br>3D+: ? || || ||
@@ -73,12 +75,14 @@ Detailed results and credits are listed below.
 
 === 2-state 2-color ===
 
-==== Absolute movement ====
+*Absolute movement*
+
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
 || <b>1D</b> || 6<br><br>`{{{1,'E',1},{1,'W',1}},{{1,'W',0},{1,'',1}}}` || 4<br><br>(same one) || ||
 || <b>2D+</b> || (no improvement) || (no improvement) || In 3D there's no improvement either. And thinking about it, it will be true in all higher dimensions too - there are only 3 moves to be specified so if the 2D case is no improvement over the 1D case then adding further dimensions won't help either. Busy Beavers need to go over their own tracks to really be effective - and from this perspective it's really a surprise that some of the 2D cases outperform the 1D cases. TJH March 2010 ||
 
-==== Relative movement ====
+*Relative movement*
+
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
 || <b>1D</b> || 13<br><br>`{{{1,4,1},{1,0,0}},{{1,1,0},{0,1,1}}}` || 4<br><br>(same one) || Allen H. Brady (in unpublished work) called these systems "Flippers" and discovered this Busy Beaver. ||
 || <b>2D</b> || 121<br><br>`{{{1,8,0},{0,8,1}},{{1,0,0},{1,2,0}}}` || 37<br><br>`{{{1,2,1},{1,1,0}},{{1,4,0},{1,0,0}}}` || Allen H. Brady's results from the paper. ||
@@ -88,14 +92,16 @@ Detailed results and credits are listed below.
 
 === 3-state 2-color ===
 
-==== Absolute movement ====
+*Absolute movement*
+
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
 || <b>1D</b> || 21<br><br>`{{{1,'E',1},{1,'',0}},{{1,'W',1},{0,'E',2}},{{1,'W',2},{1,'W',0}}}`|| 6<br><br>`{{{1,'E',1},{1,'W',2}},{{1,'W',0},{1,'E',1}},{{1,'W',1},{1,'',0}}}` ||
 || <b>2D</b> || 32<br><br>`{{{1,'S',1},{1,'W',2}},{{0,'W',2},{0,'E',1}},{{1,'N',0},{1,'',1}}}` || 11<br><br>`{{{1,'W',2},{1,'E',1}},{{1,'S',0},{1,'N',1}},{{1,'N',1},{1,'',1}}}` || If better machines exist then they take more than 10,000 steps or move more than 100 squares from the starting position. TJH March 2010. ||
 || <b>3D</b> || (no improvement) || (no improvement) || If better machines exist then they take more than 1000 steps or move more than 50 squares from the starting position. TJH April 2010. ||
 || <b>4D+</b> || ? || ? || Unlikely to be any further improvement. ||
 
-==== Relative movement ====
+*Relative movement*
+
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
 || <b>1D</b> || 82<br><br>`{{{1,1,1},{0,1,0}},{{1,4,0},{0,1,2}},{{1,1,0},{1,0,0}}}` || 9<br><br>(same one) || If better machines exist then they take more than 1,000 steps or move more than 50 squares from the starting position. Steps: TJH March 2010. Sigma: Allen H. Brady, unpublished. ||
 || <b>2D</b> || 21,790<br><br>`{{{1,2,1},{1,1,0}},{{1,2,1},{1,2,2}},{{1,0,0},{1,1,0}}}`<br><br>http://ruletablerepository.googlecode.com/files/RBB32.PNG || 2,793<br><br>(same one) || If it is not the best, the best will take more than 200,000 steps or move more than 1,000 squares from the starting position. TJH March 2010. ||
@@ -107,14 +113,16 @@ Detailed results and credits are listed below.
 
 Universal computation becomes possible for 1D Turing machines, as demonstrated by Alex Smith and Stephen Wolfram for `{{{1,'E',1},{2,'W',0},{1,'W',0}},{{2,'W',0},{2,'E',1},{0,'E',0}}}`
 
-==== Absolute movement ====
+*Absolute movement*
+
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
 || <b>1D</b> || 38<br><br>`{{{1,'E',1},{2,'W',1},{1,'',0}},{{2,'W',0},{2,'E',1},{1,'W',1}}}` || 9<br><br>(same one) ||
 || <b>2D</b> || (no improvement) || 10<br><br>`{{{1,'N',1},{2,'W',1},{0,'E',0}},{{1,'S',0},{2,'N',1},{1,'',1}}}` || If better machines exist then they take more than 10,000 steps or move more than 100 squares from the starting position. TJH March 2010. ||
 || <b>3D</b> || (no improvement) || (no improvement) || If better machines exist then they take more than 500 steps or move more than 20 squares from the starting position. TJH April 2010. ||
 || <b>4D+</b> || ? || ? || Further improvement thought unlikely. ||
 
-==== Relative movement ====
+*Relative movement*
+
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
 || <b>1D</b> || 233<br><br>`{{{1,4,1},{0,1,0},{2,1,0}},{{2,1,0},{1,0,0},{1,1,0}}}` || 19<br><br>(same one) || If better machines exist then they take more than 10,000 steps or move more than 100 squares from the starting position. TJH March 2010. ||
 || <b>2D</b> || 69,106<br><br>`{{{1,2,0},{2,4,1},{2,1,0}},{{1,0,0},{2,2,0},{2,1,1}}}`<br><br>http://ruletablerepository.googlecode.com/files/BB_rel_2s_3c_69106steps_5060cells.png || 5,060<br><br>(same one)|| If better machines exist then they take more than 200,000 steps or move more than 200 squares from the starting position. TJH April 2010. ||
@@ -124,13 +132,15 @@ Universal computation becomes possible for 1D Turing machines, as demonstrated b
 
 === 4-state 2-color ===
 
-==== Absolute movement ====
+*Absolute movement*
+
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
 || <b>1D</b> || 107<br><br>`{{{1,'E',1},{1,'W',1}},{{1,'W',0},{0,'W',2}},{{1,'',0},{1,'W',3}},{{1,'E',3},{0,'E',0}}}` || 13<br><br>(same one) ||
 || <b>2D</b> || 4,632<br><br>`{{{1,'E',1},{0,'S',1}},{{1,'N',3},{1,'E',2}},{{0,'W',0},{1,'N',2}},{{1,'W',0},{0,'',0}}}`<br><br>http://ruletablerepository.googlecode.com/files/BB_abs_4s_2c_4632steps.png || 244<br><br>`{{{1,'E',1},{0,'W',0}},{{1,'W',3},{1,'S',0}},{{1,'S',0},{1,'',0}},{{1,'W',2},{1,'N',3}}}`<br><br>http://ruletablerepository.googlecode.com/files/BB_abs_4s_2c_244nonzerocells.png || If better machines exist then they take more than 100,000 steps or move more than 200 squares from the starting position. TJH March 2010. ||
 || <b>3D+</b> || ? || ? ||
 
-==== Relative movement ====
+*Relative movement*
+
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
 || <b>1D</b> || 48,186<br><br>`{{{1,4,1},{1,1,0}},{{1,1,2},{0,1,0}},{{1,4,3},{0,1,3}},{{0,0,0},{1,4,0}}}` || 96<br><br>`{{{1,4,1},{1,1,0}},{{1,1,2},{0,1,0}},{{1,1,0},{1,1,3}},{{1,0,0},{0,1,0}}}` || Allen H. Brady, unpublished. That's a pretty amazing leap from 107 steps, 13 cells! ||
 || <b>2D</b> || 120,697<br><br>`{{{0,2,1},{0,4,2}},{{1,4,1},{0,1,0}},{{0,1,3},{1,0,0}},{{1,1,0},{0,1,0}}}`<br><br>http://ruletablerepository.googlecode.com/files/RBB120697.PNG|| 3,202<br><br>`{{{1,8,1},{1,1,0}},{{1,8,1},{1,8,2}},{{1,2,3},{1,1,0}},{{0,1,0},{0,0,0}}}` || These are not expected to be the final results. ||
@@ -140,12 +150,14 @@ Universal computation becomes possible for 1D Turing machines, as demonstrated b
 
 === 2-state 4-color ===
 
-==== Absolute movement ====
+*Absolute movement*
+
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
 || <b>1D</b> || 3,932,964 || 2,050 ||
 || <b>2D+</b> || ? || ? ||
 
-==== Relative movement ====
+*Relative movement*
+
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
 || <b>1D+</b> || ? || ? ||
 
@@ -187,7 +199,8 @@ Golly 2.2 has a script `TriTurmite-gen.py` for generating CA for these turmites.
 
 == Hexagonal Turmites ==
 
-=== Absolute movement ===
+*Absolute movement*
+
 Here there are 6 directions for the turmites to move in: 'A', 'B', 'C', 'D', 'E', 'F'. Golly 2.2 has a script `AbsoluteHexTurmite-gen.py` for generating CA for these turmites.
 
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
@@ -197,7 +210,8 @@ Here there are 6 directions for the turmites to move in: 'A', 'B', 'C', 'D', 'E'
 
 Note that absolute-movement hexagonal-celled Turing machines can simulate any square grid machine, so their scores can never be lower. But their improvements (where there are any) are surprisingly small in the cases examined.
 
-=== Relative movement ===
+*Relative movement*
+
 Extending our convention: 0=halt, 1=no turn, 2=left, 4=right, 8=back-left, 16=back-right, 32=u-turn. Golly 2.2 has a script `HexTurmite-gen.py` for generating CA for these turmites. 
 
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
