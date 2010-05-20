@@ -183,7 +183,7 @@ Here's the 3,3 1D machine described as [http://www.cse.unr.edu/~al/busybeaversur
 
 ----
 
-== Triangular Turmites ==
+=== Triangular Turmites ===
 
 On a 2D grid of triangular cells, it doesn't make sense to talk about absolute-movement turmites because the triangles aren't all the same way up. Relative-movement turmites on a triangular grid were first studied by Allen H. Brady (ref at the top), and we've added some results of our own.
 
@@ -197,7 +197,7 @@ Each triple is {A,B,C} where A is the new color to write: [0,n_colors), B is the
 Golly 2.2 has a script `TriTurmite-gen.py` for generating CA for these turmites. 
 ----
 
-== Hexagonal Turmites ==
+=== Hexagonal Turmites ===
 
 *Absolute movement*
 
