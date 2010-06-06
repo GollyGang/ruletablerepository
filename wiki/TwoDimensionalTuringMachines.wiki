@@ -5,6 +5,10 @@
 
 ----
 
+== News ==
+
+  * <b>4th June 2010:</b> Georgi Gochev reports a new record Busy Beaver for 5-state 2-color absolute-movement on a square grid.
+
 == Introduction ==
 
 [http://en.wikipedia.org/wiki/Turing_machine Turing machines] operate on an infinite tape, extending out to infinity in each direction. The tape is divided into cells, each of which can contain a symbol from a finite alphabet. The Turing machine consists of a finite state machine that moves along the tape, reading and writing symbols.
@@ -43,9 +47,9 @@ Relative-movement Turing machines and 2D Turing machines have been investigated 
 
 === Searching for new champions ===
 
-To find busy beavers you'll need a search program. Here's the one I was using to find all the results listed below: [http://code.google.com/p/terminatingturmites/ Terminating Turmites]
+To find busy beavers you'll need a search program. Here's the one I was using to find some the results listed below: [http://code.google.com/p/terminatingturmites/ Terminating Turmites]
 
-For other programs, the wikipedia page on busy beavers will guide you to some.
+For other programs, the wikipedia page on busy beavers will guide you.
 
 == Busy Beavers ==
 
@@ -59,16 +63,16 @@ This is a list of the best known [http://en.wikipedia.org/wiki/Busy_beaver busy 
 
 *Absolute movement*
 
-|| || <b>2-state</b> || <b>3-state</b> || <b>4-state</b> ||
-|| <b>2-color</b> || 1D: 6(4)<br>2D: 6(4)<br>3D: 6(4)<br>4D+?: 6(4) || 1D: 21(6)<br>2D: 32(11)<br>3D: 32(11)<br>4D+: ? || 1D: 107(13)<br>2D: 4632(244)<br>3D+: ? ||
+|| || <b>2-state</b> || <b>3-state</b> || <b>4-state</b> || <b>5-state</b> ||
+|| <b>2-color</b> || 1D: 6(4)<br>2D: 6(4)<br>3D: 6(4)<br>4D+?: 6(4) || 1D: 21(6)<br>2D: 32(11)<br>3D: 32(11)<br>4D+: ? || 1D: 107(13)<br>2D: 4,632(244)<br>3D+: ? || 1D: 47,176,870(4,098)<br>2D: 423,734,724(93,431,127)<br>3D+: ? ||
 || <b>3-color</b> || 1D: 38(9)<br>2D: 38(10)<br>3D: 38(10)<br>4D+: ? || || ||
-|| <b>4-color</b> || 1D: 3932964(2050)<br>2D+: ? || || ||
+|| <b>4-color</b> || 1D: 3,932,964(2,050)<br>2D+: ? || || ||
 
 *Relative movement*
 
 || || <b>2-state</b> || <b>3-state</b> || <b>4-state</b> ||
-|| <b>2-color</b> || 1D: 13(4)<br>2D: 121(37)<br>3D: ? || 1D: 82(9)<br>2D: 21790(2793)<br>3D+: ? || 1D: 48186(96)<br>2D: 287251(19875)<br>3D+: ? ||
-|| <b>3-color</b> || 1D: 233(19)<br>2D: 69106(5060)<br>3D+: ? || || ||
+|| <b>2-color</b> || 1D: 13(4)<br>2D: 121(37)<br>3D: ? || 1D: 82(9)<br>2D: 21,790(2,793)<br>3D+: ? || 1D: 48,186(96)<br>2D: 287,251(19,875)<br>3D+: ? ||
+|| <b>3-color</b> || 1D: 233(19)<br>2D: 69,106(5,060)<br>3D+: ? || || ||
 || <b>4-color</b> || 1D+: ? || || ||
 
 Detailed results and credits are listed below.
@@ -163,9 +167,19 @@ Universal computation becomes possible for 1D Turing machines, as demonstrated b
 
 ----
 
+=== 5-state 2-color ===
+
+*Absolute movement*
+
+|| || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
+|| <b>1D</b> || 47,176,870 || 4,098 || Marxen and Buntrock. ||
+|| <b>2D</b> || 423,734,724<br><br>`{{{1,'N',1},{1,'',1}},{{1,'S',2},{0,'W',1}},{{1,'W',3},{0,'E',4}},{{1,'N',0},{0,'S',4}},{{1,'S',2},{1,'N',4}}}` || 93,431,127<br><br>(same one) || Georgi Gochev <geonwk@gmail.com>, June 2010. ||
+
+----
+
 === Beyond ===
 
-For more states and colors than 2-3, 3-2, 4-2 and 2-4, the Busy Beavers are enormous. 
+For more states and colors, the Busy Beavers are enormous. 
 
 For example, here are two example 3,3 Turing machines, neither of which are record holders:
 
