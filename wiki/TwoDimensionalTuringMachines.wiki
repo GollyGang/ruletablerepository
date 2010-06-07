@@ -45,12 +45,6 @@ Relative-movement Turing machines and 2D Turing machines have been investigated 
   * It uses a similar notation as the other script. The difference is in how the direction is specified: 1=forward, 4=u-turn, 2=right, 8=left, 0=halt. 
   * For example, the triple `{1,2,3}` means: print a '1', turn right (and move forward), and adopt state 3.
 
-=== Searching for new champions ===
-
-To find busy beavers you'll need a search program. Here's the one I was using to find some the results listed below: [http://code.google.com/p/terminatingturmites/ Terminating Turmites]
-
-For other programs, the wikipedia page on busy beavers will guide you.
-
 == Busy Beavers ==
 
 This is a list of the best known [http://en.wikipedia.org/wiki/Busy_beaver busy beavers]. If you find improvements then overwrite the below.
@@ -76,6 +70,23 @@ This is a list of the best known [http://en.wikipedia.org/wiki/Busy_beaver busy 
 || <b>4-color</b> || 1D+: ? || || ||
 
 Detailed results and credits are listed below.
+
+=== Searching for new champions ===
+
+To find busy beavers you'll need a search program. Here's the one I was using to find some the results listed below: [http://code.google.com/p/terminatingturmites/ Terminating Turmites]
+
+For other programs, the wikipedia page on busy beavers will guide you.
+
+=== Open Problems ===
+
+  * What acceleration techniques can we find in 2D and higher? Heiner Marxen's macro machines can't obviously be used but can maybe be adapted?
+  http://www.drb.insel.de/~heiner/BB/mabu90.html
+
+  http://www.drb.insel.de/~heiner/BB/macro.html
+
+  * So far no 3D or higher TM has been found that outperforms a 2D one with the same parameters. Do they exist or is 2D somehow special?
+
+  * Can we understand anything about how BBs work or are they 'black boxes'? Some 1D machines (Surprise in a box) appear to have counting components - is there a similar mechanism in 2D?
 
 === 2-state 2-color ===
 
@@ -197,6 +208,16 @@ Here's the 3,3 1D machine described as [http://www.cse.unr.edu/~al/busybeaversur
 
 ----
 
+=== Moore Turmites ===
+
+On a square grid we could also consider turmites that move to a cell within its Moore neighborhood rather than its von Neumann neighborhood. Relative-movement Moore turmites would turn through multiples of 45 degrees.
+
+Note that hexagonal turmites (below) can be viewed as intermediate between von Neumann turmites and Moore turmites, the three cases having 4, 6 and 8 turns/moves to make, respectively.
+
+We haven't investigated Moore turmites yet.
+
+----
+
 === Triangular Turmites ===
 
 On a 2D grid of triangular cells, it doesn't make sense to talk about absolute-movement turmites because the triangles aren't all the same way up. Relative-movement turmites on a triangular grid were first studied by Allen H. Brady (ref at the top), and we've added some results of our own.
@@ -222,6 +243,7 @@ Here there are 6 directions for the turmites to move in: 'A', 'B', 'C', 'D', 'E'
 || <b>2-state 2-color</b> || 6<br><br>`{{{1,'A',1},{1,'B',1}},{{1,'D',0},{1,'',0}}}` || 4<br><br>(same one) || If better machines exist then they take more than 100,000 steps or move more than 100 squares from the starting position. TJH May 2010. ||
 || <b>3-state 2-color</b> || 33<br><br>`{{{1,'A',1},{1,'',0}},{{1,'E',2},{0,'A',2}},{{1,'C',1},{1,'D',0}}}` || 13<br><br>`{{{1,'A',1},{1,'C',2}},{{1,'E',2},{1,'B',0}},{{1,'D',0},{1,'',0}}}` || If better machines exist then they take more than 100,000 steps or move more than 20 squares from the starting position. TJH May 2010. ||
 || <b>2-state 3-color</b> || 38<br><br>`{{{1,'A',1},{2,'D',1},{1,'',0}},{{2,'D',0},{2,'A',1},{1,'D',1}}}` || 14<br><br>`{{{1,'A',1},{2,'C',1},{1,'',0}},{{2,'D',0},{2,'B',0},{1,'E',0}}}` || If better machines exist then they take more than 100,000 steps or move more than 20 squares from the starting position. TJH May 2010. ||
+|| <b>4-state 2-color</b> || 1351<br><br>`{{{1,'A',1},{0,'F',2}},{{1,'B',3},{0,'E',0}},{{1,'D',0},{1,'',0}},{{1,'B',2},{0,'B',0}}}` || 165<br><br>`{{{1,'A',1},{1,'',0}},{{1,'B',2},{0,'E',3}},{{1,'A',3},{1,'C',1}},{{1,'D',1},{1,'B',0}}}` || Preliminary results (9% explored) - not yet beating the square-grid case. TJH June 2010. ||
 || <b>+</b> || ? || ? ||
 
 Note that absolute-movement hexagonal-celled Turing machines can simulate any square grid machine, so their scores can never be lower. But their improvements (where there are any) are surprisingly small in the cases examined.
