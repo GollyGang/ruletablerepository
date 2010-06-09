@@ -4,8 +4,9 @@
 
 Looking further ahead, here's a sketch of how the [TheFormat rule table format] might be extended to support future CA (see also: FutureWork). 
 
-  * Items in bold are those currently supported in Golly.
-  * Items marked with <b>`*`</b> are currently supported but only by an emulation script: see `Scripts/Python/RuleTableToTree.py`
+  * Items in bold are those currently supported in Golly 2.1.
+  * Items marked with <b>`*`</b> are only supported in Golly 2.2.
+  * Items marked with <b>`**`</b> are only supported in a Golly 2.2 emulation script: `Scripts/Python/RuleTableToTree.py`.
 
 These are just some ideas - please edit or comment to add your opinions. For a good survey on neighborhoods, see http://cell-auto.com/neighbourhood/
 
@@ -14,15 +15,15 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 || neighborhood || transitions || symmetries || image ||
 || <b>vonNeumann</b> || {{{c,n,e,s,w : c'}}} || <b>none</b>, rotate2, rotate (<b>rotate4</b>), rotate_reflect (<b>rotate4reflect</b>), <b>reflect_horizontal</b> (<b>reflect</b>), reflect_vertical, <b>permute^*^</b> || http://ruletablerepository.googlecode.com/files/vonNeumann.PNG ||
 || <b>Moore</b> || {{{c,n,ne,e,se,s,sw,w,nw : c'}}} || <b>none</b>, rotate2, <b>rotate4</b>, <b>rotate8</b>, <b>rotate4reflect</b>, <b>rotate8reflect</b>, <b>reflect_horizontal</b> (<b>reflect</b>), reflect_vertical, direction_permutation, total_permutation (<b>permute^*^</b>) || http://ruletablerepository.googlecode.com/files/moore.PNG ||
-|| <b>hexagonal^*^</b> (see HexagonalNeighborhood) || {{{c,n,ne,se,s,sw,nw : c}}} || <b>none^*^</b>, <b>rotate2^*^</b>, <b>rotate3^*^</b>, <b>rotate6^*^</b>, <b>rotate6_reflect^*^</b>, reflect_minor?, reflect_major?, <b>permute^*^</b> || http://ruletablerepository.googlecode.com/files/hexagonal.PNG ||
-|| <b>triangularVonNeumann^*^</b> || {{{c,n1,n2,n3 : c'}}} || <b>none^*^</b>, <b>rotate^*^</b>, <b>rotate_reflect^*^</b> (<b>permute^*^</b>) || http://ruletablerepository.googlecode.com/files/triangularVonNeumann.PNG ||
-|| <b>triangularMoore^*^</b> || {{{c,n1..n12 : c'}}} || <b>none^*^</b>, <b>rotate^*^</b>, <b>rotate_reflect^*^</b>, layer_permutation, total_permutation (<b>permute^*^</b>) || http://ruletablerepository.googlecode.com/files/triangularMoore.PNG ||
+|| <b>hexagonal^*^</b> (see HexagonalNeighborhood) || {{{c,n,ne,se,s,sw,nw : c}}} || <b>none^*^</b>, <b>rotate2^*^</b>, <b>rotate3^*^</b>, <b>rotate6^*^</b>, <b>rotate6reflect^*^</b>, <b>permute^*^</b> || http://ruletablerepository.googlecode.com/files/hexagonal.PNG ||
+|| <b>triangularVonNeumann^**^</b> || {{{c,n1,n2,n3 : c'}}} || <b>none^**^</b>, <b>rotate^**^</b>, <b>rotate_reflect^**^</b> (<b>permute^**^</b>) || http://ruletablerepository.googlecode.com/files/triangularVonNeumann.PNG ||
+|| <b>triangularMoore^**^</b> || {{{c,n1..n12 : c'}}} || <b>none^**^</b>, <b>rotate^**^</b>, <b>rotate_reflect^**^</b>, layer_permutation, total_permutation (<b>permute^**^</b>) || http://ruletablerepository.googlecode.com/files/triangularMoore.PNG ||
 
 <h2>Two-dimensional partitioning schemes</h2>
 
 || neighborhood || transitions || symmetries || image ||
-|| <b>Margolus^*^</b> (see MargolusNeighborhood) || {{{a,b,c,d : a',b',c',d'}}} || <b>none^*^</b>, rotate (<b>rotate4</b>), rotate_reflect (<b>rotate4reflect</b>), <b>reflect_horizontal^*^</b>, <b>reflect_vertical^*^</b>, <b>permute^*^</b> || http://ruletablerepository.googlecode.com/files/Margolus.GIF ||
-|| <b>square4_cyclic^*^</b>, <b>square4_figure8h^*^</b>, <b>square4_figure8v^*^</b> (==square4_reading_order) (see MargolusNeighborhood) || {{{a,b,c,d : a',b',c',d'}}} || <b>none^*^</b>, <b>rotate4^*^</b>, <b>rotate4reflect^*^</b>, <b>reflect_horizontal^*^</b>, <b>reflect_vertical^*^</b>, <b>permute^*^</b> || http://ruletablerepository.googlecode.com/files/Square4.GIF ||
+|| <b>Margolus^**^</b> (see MargolusNeighborhood) || {{{a,b,c,d : a',b',c',d'}}} || <b>none^**^</b>, rotate (<b>rotate4^**^</b>), rotate_reflect (<b>rotate4reflect^**^</b>), <b>reflect_horizontal^**^</b>, <b>reflect_vertical^**^</b>, <b>permute^**^</b> || http://ruletablerepository.googlecode.com/files/Margolus.GIF ||
+|| <b>square4_cyclic^**^</b>, <b>square4_figure8h^**^</b>, <b>square4_figure8v^**^</b> (==square4_reading_order) (see MargolusNeighborhood) || {{{a,b,c,d : a',b',c',d'}}} || <b>none^**^</b>, <b>rotate4^**^</b>, <b>rotate4reflect^**^</b>, <b>reflect_horizontal^**^</b>, <b>reflect_vertical^**^</b>, <b>permute^**^</b> || http://ruletablerepository.googlecode.com/files/Square4.GIF ||
 || square9_reading_order || {{{a,b,c,d,e,f,g,h,i : a',b',c',d',e',f',g',h',i'}}} || none, rotate, rotate_reflect, reflect_horizontal, reflect_vertical, permutation || http://ruletablerepository.googlecode.com/files/Square9.GIF ||
 
 <h2>One-dimensional neighborhoods and partitioning schemes</h2>
