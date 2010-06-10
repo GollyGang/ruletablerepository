@@ -341,3 +341,37 @@ and [http://www.wolframscience.com/nksonline/page-184 describes it] as: "one exa
 states: 0=north, 1=SE, 2=SW<br>
 colors: 0=white, 1=grey<br>
 `{{{1,'N',2},{1,'W',0}},{{0,'W',0},{1,'S',0}},{{1,'S',1},{0,'E',1}}}`
+
+== Machines found by Georgi Gochev ==
+
+Here are two which grow in a steady direction but creating different shapes:
+<br>
+`{{{1,'N',1},{0,'N',1}},{{1,'S',2},{0,'N',1}},{{1,'W',0},{1,'E',3}},{{1,'E',2},{1,'S',3}}}`
+<br>
+`{{{1,'S',1},{0,'N',0}},{{1,'S',2},{1,'W',1}},{{1,'E',3},{1,'W',2}},{{1,'N',0},{1,'S',0}}}`
+
+it is not clear for me if they are going to repeat itsef or are going to produce a highway..
+
+like this one after some complex behaviour creates highway after around 160 million steps:
+<br>
+`{{{1,'S',1},{0,'N',0}},{{1,'S',2},{1,'W',1}},{{1,'E',3},{0,'W',3}},{{1,'N',0},{1,'S',0}}}`
+
+and this is one of my favorite.. In a steadily growing triangle.. on top left side.. creates such a complex shapes,
+combinations of random mess, triangles, highways..simply amazing. After examined it at 300 billion steps doesn't seem to repeat..
+<br>
+`{{{1,'N',1},{0,'N',0}},{{1,'W',2},{0,'E',3}},{{1,'N',3},{1,'S',3}},{{1,'S',1},{1,'W',0}}}`
+
+here are some more:
+
+`{{{1,'S',1},{0,'N',0}},{{1,'S',2},{1,'W',1}},{{1,'E',3},{0,'S',3}},{{1,'N',0},{1,'S',0}}}`
+<br>
+This one is similar to patterns from [http://www.wolframscience.com/nksonline/page-118 NKS p.118]
+
+`{{{1,'N',1},{1,'',1}},{{1,'N',2},{0,'S',2}},{{1,'S',3},{1,'E',2}},{{1,'E',0},{1,'W',4}},{{1,'E',1},{1,'W',4}}}`
+<br>
+Somehow shows Fibonacci numbers sequence.
+
+`{{{1,'N',1},{1,'',1}},{{1,'N',2},{1,'N',0}},{{1,'S',4},{0,'S',4}},{{0,'W',2},{0,'E',4}},{{0,'N',1},{0,'S',3}}}`
+<br>
+Sierpinski triangle.
+
