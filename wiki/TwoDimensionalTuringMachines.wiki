@@ -1,4 +1,4 @@
-#summary A collection of 2D Turing Machine programs (Absolute Turmites)
+#summary A collection of Turing Machines and Turmites
 
 <b>Table of Contents:</b>
 <wiki:toc>
@@ -374,4 +374,3 @@ Somehow shows Fibonacci numbers sequence.
 `{{{1,'N',1},{1,'',1}},{{1,'N',2},{1,'N',0}},{{1,'S',4},{0,'S',4}},{{0,'W',2},{0,'E',4}},{{0,'N',1},{0,'S',3}}}`
 <br>
 Sierpinski triangle.
-
