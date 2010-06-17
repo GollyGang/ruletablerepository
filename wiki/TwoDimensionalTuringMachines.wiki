@@ -262,6 +262,25 @@ The 2-state 2-color results (54, 24) are significantly smaller than the square-g
 
 ----
 
+=== Extinction turmites ===
+
+[http://en.wikipedia.org/wiki/Ed_Pegg,_Jr. Ed Pegg, Jr.] [http://www.mathpuzzle.com/26Mar03.html extended] the turmite idea by allowing turmites to turn _both_ left and right, for example. When turmites collide they annihilate each other. Another form of the busy beaver game is therefore to find turmites that go extinct after writing the most non-zero cells or taking the most steps.
+
+*Relative movement, square grid*
+
+These turmites take advantage of the notation 1=forward, 4=u-turn, 2=right, 8=left, 0=halt. To turn in two or more directions, simply add the values together. E.g. 10=turn left and right.
+
+|| || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
+|| <b>2-state 2-color</b> || 12<br><br>`{{{1, 8, 0}, {1, 2, 1}}, {{1, 10, 0}, {1, 8, 1}}}` || 10<br><br>(same one) || Discovered by Ed Pegg, Jr. ||
+|| <b>3-state 3-color</b> || 204<br><br>`{{{1, 2, 0}, {2, 8, 2}, {2, 1, 1}}, {{1, 1, 2}, {1, 1, 1}, {1, 8, 1}}, {{2, 10, 0}, {2, 8, 1}, {2, 8, 2}}}` || 256<br><br>(same one) || Discovered by Ed Pegg, Jr. ||
+|| <b>+</b> || ? || ? ||
+
+*Absolute movement, 1D, 3D+, triangular grid, hexagonal grid...*
+
+No-one has investigated extinction turmites on these cases, so there's lots left to be discovered.
+
+----
+
 == Searching for high entropy patterns ==
 
 Wolfram says this of 2D Turing machines:
