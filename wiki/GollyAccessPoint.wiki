@@ -476,6 +476,11 @@ and patterns not included in Golly.
    <a href="http://en.wikipedia.org/wiki/Collatz_conjecture">Collatz conjecture</a>
    (also known as the "3n+1" conjecture).
 </td></tr></table></td></tr>
+<tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/RepRoller.zip">RepRoller</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   A simple way of allowing any pattern to be replicated and triggered.
+</td></tr></table></td></tr>
 </table>
 </p>
 
