@@ -263,6 +263,14 @@ The 2-state 2-color results (54, 24) are significantly smaller than the square-g
 
 ----
 
+=== Penrose turmites ===
+
+Turmites on Penrose tilings are especially interesting. Due to the aperiodicity of the tiling, an infinite amount of information can be stored in the initial location of the Turmite. This means that it is possible to engineer a Universal Turmite, where the program is encoded entirely in its initial position, and not in the initial contents of the tape.
+
+However, since the time to halt depends on the position of the Turmite, there is no analogue of the Busy Beaver problem; with a sufficient number of states, a Turmite could take arbitrarily long to halt.
+
+----
+
 === Extinction turmites ===
 
 [http://en.wikipedia.org/wiki/Ed_Pegg,_Jr. Ed Pegg, Jr.] [http://www.mathpuzzle.com/26Mar03.html extended] the turmite idea by allowing turmites to turn _both_ left and right, for example. When turmites collide they annihilate each other. Another form of the busy beaver game is therefore to find turmites that go extinct after writing the most non-zero cells or taking the most steps.
