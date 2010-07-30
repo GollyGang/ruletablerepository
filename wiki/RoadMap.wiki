@@ -69,4 +69,8 @@ There are some sets of cellular automata that are best supported independently, 
 || Larger than Life || range,bMin,bMax,sMin,sMax ||
 
 
-The final rule, Larger than Life, relies on large neighborhoods; these are not currently supported by Golly.
+The final rule, Larger than Life, relies on large neighborhoods; these are not currently supported by Golly. At the time of writing, Mirek's Cellebration (MCell) is the only program capable of running these rules.
+
+CA on Penrose tilings have been intensively investigated by Susan Stepney et al.
+
+Many of these concepts, and much more, have been covered in Andrew Adamatzky's book, Game of Life Cellular Automata (Springer, 2010).
