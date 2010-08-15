@@ -2,7 +2,7 @@
 
 == Introduction ==
 
-Codd's 1968 [http://www.addebook.com/it/uncategorized/cellular-automata_5471.html book] describes his design for a self-replicating computer in an 8-state CA. This page contains a summary of that design, as recently [http://ruletablerepository.googlecode.com/files/Codd-self-rep.zip implemented].
+Codd's 1968 [http://www.addebook.com/it/uncategorized/cellular-automata_5471.html book] describes his design for a self-replicating computer in an 8-state CA. This page contains a summary of that design, as recently [http://ruletablerepository.googlecode.com/files/Codd-self-rep.zip implemented]. You can read a more detailed description in Tim Hutton's [http://www.sq3.org.uk/papers/Hutton_CoddsSelfReplicatingComputer_2010.pdf paper].
 
 
 
