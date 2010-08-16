@@ -481,6 +481,11 @@ and patterns not included in Golly.
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A simple way of allowing any pattern to be replicated and triggered.
 </td></tr></table></td></tr>
+<tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Wave.zip">Wave</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   A cellular automaton by Keiji and metacell implemented within this rule.
+</td></tr></table></td></tr>
 </table>
 </p>
 
