@@ -1,5 +1,7 @@
 #summary Renato Nobili's 32-state cellular automaton
 
+*Rule Table:* [http://www.sq3.org.uk/files/Nobili32.table Nobili32.table]
+
 = Introduction =
 
 Renato Nobili extended von Neumann's 29-state CA to allow easier crossing of wires, leading to enormously simpler machines. Nobili modified the rules so that the confluent state can act as an ideal signal crossing. He also allowed excited confluent states to store data.
@@ -26,8 +28,8 @@ Buckley's two designs, codon5-auto-retract and codon4-auto-retract, compromise b
 = Patterns =
 
 || *pattern name* || *description* || *author* ||
-|| [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Patterns/JvN/codon4-auto-retract.rle codon4-auto-retract.rle] || The replicator in Nobili's cellular automaton with the smallest tape. || William R. Buckley ||
 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Patterns/JvN/codon5-auto-retract.rle codon5-auto-retract.rle] || The first replicator with auto-retraction capabilities. || William R. Buckley ||
+|| [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Patterns/JvN/codon4-auto-retract.rle codon4-auto-retract.rle] || A modification of the above replicator, which uses a four-bit instead of five-bit code. || William R. Buckley ||
 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Patterns/JvN/N-compressed-replicator.rle N-compressed-replicator.rle] || A replicator that uses run-length encoding to reduce the size of the tape. || Renato Nobili ||
 || [http://golly.cvs.sourceforge.net/viewvc/*checkout*/golly/golly/src/Patterns/JvN/NP-replicator.rle.gz NP-replicator.rle.gz] || The very first replicator that conforms to von Neumann's design specifications. Due to an oversight when designing the machine, the tape had to be 'bodged' so that it could replicate successfully. This involved merging the corpus and tape of the replicator. || Renato Nobili, Umberto Pesavento ||
 || [http://ruletablerepository.googlecode.com/files/linear-constructor.zip linear-constructor.zip] || The fastest replicator in the rule, which takes 2.08 million generations to replicate. || Adam P. Goucher ||
