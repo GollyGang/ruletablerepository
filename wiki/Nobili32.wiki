@@ -1,11 +1,13 @@
 #summary Renato Nobili's 32-state cellular automaton
 
-*Rule Table:* [http://www.sq3.org.uk/files/Nobili32.table Nobili32.table]
-
 = Introduction =
 
 Renato Nobili extended von Neumann's 29-state CA to allow easier crossing of wires, leading to enormously simpler machines. Nobili modified the rules so that the confluent state can act as an ideal signal crossing. He also allowed excited confluent states to store data.
 
+
+*Rule Table:* [http://www.sq3.org.uk/files/Nobili32.table Nobili32.table]
+
+http://ruletablerepository.googlecode.com/files/nobili32-big.PNG
 
 = Details =
 
