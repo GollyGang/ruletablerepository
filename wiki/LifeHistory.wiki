@@ -2,18 +2,22 @@
 
 = Introduction =
 
-The LifeHistory rule is a five-state superset of HistoricalLife,
-allowing optional ON and OFF "marked" cells as well as history cells.
-This borrows ideas and colors from Brice Due's {{{"BeforeAfterChange"}}}
-rule variants from Mirek's Cellebration.
+The LifeHistory rule is a seven-state superset of HistoricalLife,
+allowing optional ON and OFF "marked" cells as well as history cells,
+as well as a "start" ON state (#5), and a "killer" OFF state (#6)
+intended to be used when impermeable boundaries are needed (e.g. to
+separate subpatterns in a large stamp collection). This borrows ideas
+and colors from Brice Due's {{{"BeforeAfterChange"}}} rule variants
+from Mirek's Cellebration.
 
 = Details =
 
-Cell state 3 (marked ON) changes to State 4 (marked OFF = red) when
-it dies, and back to State 3 if it turns on again later.  Normal ON
-cells are green, as in the optimized HistoricalLife rule.  State 3 is
-a slightly greenish white to differentiate it from standard colors
-for two-state Life, and State 2 is a darker shade of blue than in
+Cell state 3 (marked ON = white) and state 5 ("start" ON = yellow) will
+change to State 4 (marked OFF = red) when they die, and back to State 3
+if they turn on again later. State 6 is gray.  Normal ON cells are green,
+as in the optimized HistoricalLife rule.  State 3 is a slightly
+greenish white to differentiate it from standard colors for 
+two-state Life, and State 2 is a darker shade of blue than in
 HistoricalLife.
 
 Pasting standard Life or HistoricalLife patterns into a LifeHistory
