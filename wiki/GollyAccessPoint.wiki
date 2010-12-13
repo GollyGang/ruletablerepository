@@ -465,8 +465,10 @@ and patterns not included in Golly.
 <tr><td>
    <a href="get:http://ruletablerepository.googlecode.com/files/MazeSolver.zip">MazeSolver</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
-   A 13-state rule by Adam P. Goucher that solves any maze, using a flood fill method to locate the exit,
-   before backtracking to the start to highlight the shortest possible route.
+   MazeSolver is a 13-state rule that solves any maze, using a flood fill method to locate the exit, before
+   backtracking to the start to highlight the shortest possible route. MazeSolver2 is an extended version
+   that uses the Moore neighborhood to allow diagonal filling and backtracking. The zip file contains the
+   necessary tables, icons and colors, as well as example patterns and scripts for creating random mazes.
 </td></tr></table></td></tr>
 <tr><td>
    <a href="get:http://ruletablerepository.googlecode.com/files/CollatzConjecture.zip">3n+1</a>
