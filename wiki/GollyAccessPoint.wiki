@@ -493,6 +493,12 @@ and patterns not included in Golly.
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    Paul Nasca's ReversibleLife rule, made using the second-order technique.
 </td></tr></table></td></tr>
+<tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Squaredance.zip">Squaredance</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   Squaredance is a rule by Dean Hickerson in which rectangles grow and shrink pseudorandomly.
+   For more details, see readme.txt in the zip file.
+</td></tr></table></td></tr>
 </table>
 </p>
 
