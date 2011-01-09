@@ -155,6 +155,7 @@ If there is a rule that doesn't fit into one of the above sections, nor does it 
 || 2010 || [http://ruletablerepository.googlecode.com/files/RepRoller.zip RepRoller] || A simple way of allowing any pattern to be replicated and triggered. || http://ruletablerepository.googlecode.com/files/RepRoller.png ||
 || 2010 || [http://ruletablerepository.googlecode.com/files/Wave.zip Wave] || A cellular automaton by Keiji and metacell implemented within this rule. || http://ruletablerepository.googlecode.com/files/Wave.PNG ||
 || 2010 || [http://ruletablerepository.googlecode.com/files/reversible_rule_paul.zip ReversibleLife] || Paul Nasca's Reversible Life rule, made using the second-order technique. || http://ruletablerepository.googlecode.com/files/reversible_rule_paul.png ||
+|| 2011 || [http://ruletablerepository.googlecode.com/files/Squaredance.zip Squaredance] || Squaredance is a rule by Dean Hickerson in which rectangles grow and shrink pseudorandomly.  For more details, see readme.txt in the zip file. || http://ruletablerepository.googlecode.com/files/Squaredance.png ||
 
 ----
 
