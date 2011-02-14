@@ -504,6 +504,12 @@ Particles is loosely based on Wireworld, with a few differences: Particles move 
    Squaredance is a rule by Dean Hickerson in which rectangles grow and shrink pseudorandomly.
    For more details, see readme.txt in the zip file.
 </td></tr></table></td></tr>
+<tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Sand.zip">Sand</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   Sand is a rule by Andrew Trevorrow that mimics falling sand. The zip file also contains a number
+   of "sand guns" with various periods (thanks to Dean Hickerson).
+</td></tr></table></td></tr>
 </table>
 </p>
 
