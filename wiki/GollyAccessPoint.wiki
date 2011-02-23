@@ -132,6 +132,14 @@ and patterns not included in Golly.
    Another loop from Sayama, that allows colliding loops to sometimes merge genetic content.
 </td></tr></table></td></tr>
 <tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Sexyloop.zip">Sexyloop</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   Nicolas Oros and Chrystopher L. Nehaniv modified Sayama's evoloop to allow the transfer of genetic material
+   from one loop into another. The zip file contains 3 rule tables (Sexyloop-M1, Sexyloop-M2, F-sexyloop)
+   and some example patterns. Details and references can be found
+   <a href="http://homepages.feis.herts.ac.uk/~on5ag/sexyloop.html">here</a>.
+</td></tr></table></td></tr>
+<tr><td>
    <a href="get:http://ruletablerepository.googlecode.com/files/GoucherLoops.zip">Goucher's Loops</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A 24-state version of Langton's loops, that permits construction and computation universality,
