@@ -5,7 +5,7 @@
 == Submission procedure ==
 
 Either:
- <b>Join this project.</b> Email one of the owners (on the sidebar on the right) with your Google Account email address to become a project member. You can then add your rules and descriptions and so on.
+ <b>Join this project.</b> Email one of the owners with your Google Account email address to become a project member. You can then add your rules and descriptions and so on.
 Or:
  <b>Email</b> your contribution to one of the project members (e.g. [mailto:tim.hutton@gmail.com tim.hutton@gmail.com]). Put together a zip file as described below.
 
