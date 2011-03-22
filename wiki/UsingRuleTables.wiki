@@ -8,12 +8,11 @@ Or, for new .table files:
   # Save the .table file into your rules folder (set in {{{Preferences | Control}}}).
   # Use {{{Control | Set Rule...}}} to change to the new rule. 
 
-Golly also accepts _rule tree_ files, which are actually simpler for programs to utilise since they map directly onto a lookup function. More details [http://golly.sourceforge.net/Help/formats.html#tree here]. Golly comes with a utility to convert a rule table into a rule tree. Like rule tables, rule trees only support the von Neumann and Moore neighborhoods at the moment. Note that rule trees are not really meant to be authored directly -- the easiest way to create a new .tree file is to use the [http://ruletablerepository.googlecode.com/files/make-ruletree.py make-ruletree.py] script (see the comments at the top of the script).
+Golly also accepts _rule tree_ files, which are hard for humans to read and author but simple for programs to utilise since they map directly onto a lookup function. More details [http://golly.sourceforge.net/Help/formats.html#tree here]. Golly comes with a utility ([http://golly.cvs.sourceforge.net/viewvc/golly/golly/src/Scripts/Python/Rule-Generators/RuleTableToTree.py?view=markup RuleTableToTree]) to convert a rule table into a rule tree. Rule trees only support the von Neumann and Moore neighborhoods at the moment. Note that rule trees are not really meant to be authored directly -- the easiest way to create a new .tree file is to use the [http://ruletablerepository.googlecode.com/files/make-ruletree.py make-ruletree.py] script (see the comments at the top of the script).
 
 == 2. Use them in your own programs: ==
-
-Browse the source code [http://code.google.com/p/ruletablerepository/source/browse/trunk here]:
-  * [http://code.google.com/p/ruletablerepository/source/browse/trunk/src/read_ruletable.cpp read_ruletable.cpp] shows how to use the ruletable class to read CA rule tables in your own project. It's only in C++ at the moment - contact us if you need help to use rule tables in your project.
+  * C++: Download or browse the source code [http://code.google.com/p/ruletablerepository/source/browse/trunk/src here]. As an example, [http://code.google.com/p/ruletablerepository/source/browse/trunk/src/read_ruletable.cpp read_ruletable.cpp] shows how to use the ruletable class to read CA rule tables in your own project.
+  * Python: Use [http://golly.cvs.sourceforge.net/viewvc/golly/golly/src/Scripts/Python/glife/ReadRuleTable.py?view=markup ReadRuleTable.py] in your Python project. Strip out the golly bits.
 
 == 3. Export them from other programs: ==
 
