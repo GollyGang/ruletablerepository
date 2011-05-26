@@ -64,7 +64,7 @@ var b={0,1,2}
 
 === Features: ===
 
-  * `Margolus` is a new `neighborhood` type.
+  * Supported `neighborhood` types: `Margolus`, `square4_figure8v`, `square4_figure8h`, `square4_cyclic` (see [http://cell-auto.com/neighbourhood/margolus/ Tim Tyler's page] for an explanation of these).
   * A new colon separator performs exactly the same job as the comma but makes it easier to read. (We also support this for the other neighborhoods, to separate outputs from inputs.)
   * Golly doesn't currently support the Margolus neighborhood directly, but it can be emulated using the Moore neighborhood - use [http://golly.cvs.sourceforge.net/viewvc/golly/golly/src/Scripts/Python/Rule-Generators/RuleTableToTree.py?view=markup Scripts/Python/Rule-Generators/RuleTableToTree.py].
   * Supported symmetries: `none`, `reflect_horizontal`, `reflect_vertical`, `rotate4`, `rotate4reflect`, `permute`
@@ -76,6 +76,4 @@ var b={0,1,2}
   * It's longer than MCell's specification string but much more powerful, allowing multiple states and variables, and different symmetries. And no-change transitions can be skipped, so it's actually more readable.
   * We could use Calcyman's GenericNeighborhoods for the header but is there any need to? This approach is more human-readable, which is the main point of the rule table format - we want people to start authoring their own rules, as they have been!
 
-I suspect this addition is pretty uncontroversial. It's just an addition to the format, and won't break anything. Thoughts? --TJH
-
-Tim Tyler discusses the [http://cell-auto.com/neighbourhood/square4/index.html Square-4 neighborhood] which is related to the Margolus neighborhood. It is actually more appropriate than the Margolus neighborhood for the Sand CA above, since it covers one particular case where 2 stacked sand particles should topple but don't. We could cover this too at the same time, perhaps with new neighborhood types: square4cyclic, square4figure8h, square4figure8v. But there's not much motivation to do this until we can think of CA we want to support that require these neighborhoods? --TJH
+Tim Tyler discusses the [http://cell-auto.com/neighbourhood/square4/index.html Square-4 neighborhood] which is related to the Margolus neighborhood. It is actually more appropriate than the Margolus neighborhood for the Sand CA above, since it covers one particular case where 2 stacked sand particles should topple but don't. See the pattern info in [http://golly.cvs.sourceforge.net/viewvc/golly/golly/src/Patterns/Margolus/Sand-Test.rle?view=markup Patterns/Margolus/Sand-Test.rle] for an example that shows the effect of these different neighborhoods. --TJH
