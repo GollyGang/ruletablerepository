@@ -1,4 +1,57 @@
-#summary A proposal to support the hexagonal neighborhood in the rule table format.
+#summary Documents the hexagonal neighborhood in the rule table format.
+
+Golly supports the hexagonal neighborhood since version 2.2.
+
+=== Use: ===
+
+An example:
+
+{{{
+# Frank Buss' life-like totalistic hexagonal CA:
+
+n_states:3
+neighborhood:hexagonal
+symmetries:permute
+
+var a={0,1,2}
+var b={a}
+var c={a}
+var d={a}
+var e={a}
+var f={a}
+
+var i={0,1}
+var j={i}
+var k={i}
+var l={i}
+
+var m={0,1,2}
+
+0,2,0,0,0,0,0,2
+c,1,2,0,0,0,0,1
+c,2,2,i,j,k,l,1
+c,2,2,2,i,j,k,2
+m,a,b,c,d,e,f,0
+}}}
+
+Compare with his implementation:
+
+{{{
+if (s1 == 0 && s2 == 1 && center == 0) {
+	result = 2;
+} else if (s1 == 1 && s2 == 1) {
+	result = 1;
+} else if (s2 == 2) {
+	result = 1;
+} else if (s2 == 3) {
+	result = 2;
+} else {
+	result = 0;
+}
+# s0, s1 and s2 are the number of color 0, 1 and 2 on the six neighbour fields. s0 is not used in the rule set.
+}}}
+
+=== Previous discussion: ===
 
 We should be able to define the format for the hexagonal neighborhood quite easily, and write a Golly script that converts it to a Moore neighborhood rule table.
 
