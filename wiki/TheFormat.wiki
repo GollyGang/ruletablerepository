@@ -37,14 +37,14 @@ Files in the .table format are in plain ASCII text. Each line is one of the foll
 
 Important points to note:
 
-  * Valid symmetries depend on the neighborhood. For example, the {{{Moore}}} neighborhood can have the following symmetries: {{{none}}}, {{{rotate4}}}, {{{rotate8}}}, {{{reflect}}}, {{{rotate4reflect}}}, {{{rotate8reflect}}}. 
+  * Valid symmetries depend on the neighborhood. For example, the {{{Moore}}} neighborhood can have the following symmetries: {{{none}}}, {{{rotate4}}}, {{{rotate8}}}, {{{reflect}}}={{{reflect_horizontal}}}, {{{rotate4reflect}}}, {{{rotate8reflect}}}, {{{permute}}}. 
   * The three lines that specify {{{n_states}}}, {{{neighborhood}}} and {{{symmetries}}} should appear before the variables and transitions.
   * Variables should appear before the first transition that uses them. For clarity they usually appear before the transitions.
   * The entries in a transition are separated by commas. An exception to this is when {{{n_states}}} is 10 or less and when no variables are used - in this case no comma should be used, as in Example 1 above. This exception is to allow the 'traditional' list of transitions to be used.
   * The neighborhood type determines the number of entries in the transitions. E.g.:
     * {{{vonNeumann}}}: C,N,E,S,W,C'
     * {{{Moore}}}: C,N,NE,E,SE,S,SW,W,NW,C'
-    * {{{Margolus}}}: a,b,c,d,a',b',c',d' (see MargolusNeighborhood)
+    * {{{Margolus}}}: a,b,c,d : a',b',c',d' (see MargolusNeighborhood)
   * Comments can appear on the same line as transitions, preceded by a "#".
   * Where the same variable appears more than once in a transition, it stands for the same state each time - they are _bound_. The output of a transition can contain variables but only if those variables also appear in the inputs (the output must be fully defined).
   * Rule tables usually don't specify every possible set of inputs. For those not listed, the input cells remain unchanged.
@@ -59,7 +59,7 @@ Since Golly version 2.2:
 
 === Worked example: ===
 
-The following rule table has one variable and rotational symmetry:
+The following rule table has rotational symmetry and one variable:
 {{{
 n_states:6
 neighborhood:vonNeumann
