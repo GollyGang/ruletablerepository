@@ -4,9 +4,9 @@
 
 Looking further ahead, here's a sketch of how the [TheFormat rule table format] might be extended to support future CA (see also: FutureWork). 
 
-  * Items in bold are those currently supported in Golly 2.1.
-  * Items marked with <b>`*`</b> are only supported in Golly 2.2.
-  * Items marked with <b>`**`</b> are only supported in a Golly 2.2 emulation script: `Scripts/Python/RuleTableToTree.py`.
+  * Items in bold are those supported since Golly 2.1.
+  * Items marked with <b>`*`</b> are those supported since Golly 2.2.
+  * Items marked with <b>`**`</b> are supported in an emulation script: `Scripts/Python/RuleTableToTree.py` since Golly 2.2.
 
 These are just some ideas - please edit or comment to add your opinions. For a good survey on neighborhoods, see http://cell-auto.com/neighbourhood/
 
