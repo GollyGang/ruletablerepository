@@ -34,7 +34,7 @@ c,2,2,2,i,j,k,2
 m,a,b,c,d,e,f,0
 }}}
 
-Compare with his implementation:
+Compare with [http://www.frank-buss.de/automaton/hexautomaton.html his implementation]:
 
 {{{
 if (s1 == 0 && s2 == 1 && center == 0) {
