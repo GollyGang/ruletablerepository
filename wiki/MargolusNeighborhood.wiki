@@ -1,12 +1,11 @@
 #summary A proposal to support the Margolus neighborhood in the .table format
 
-=== What is the Margolus neighborhood? ===
+What is the Margolus neighborhood? 
 
-See:
   * http://cell-auto.com/neighbourhood/margolus/
   * http://psoup.math.wisc.edu/mcell/rullex_marg.html
 
-=== Proposal: ===
+=== Use: ===
 
 Here is an example:
 
@@ -17,7 +16,7 @@ n_states:3
 neighborhood:Margolus
 symmetries:rotate4reflect
 
-# In the Margolus nhood, the transition a,b,c,d,e,f,g,h means:
+# In the Margolus nhood, the transition a,b,c,d : e,f,g,h means:
 #  a  b     -->    e  f
 #  c  d            g  h
 
@@ -45,7 +44,7 @@ n_states:4
 neighborhood:Margolus
 symmetries:reflect_horizontal
 
-# In the Margolus nhood, the transition a,b,c,d,e,f,g,h means:
+# In the Margolus nhood, the transition a,b,c,d : e,f,g,h means:
 #  a  b     -->    e  f
 #  c  d            g  h
 
@@ -65,15 +64,17 @@ var b={0,1,2}
 
 === Features: ===
 
-  * 'Margolus' is a new neighborhood type.
-  * A new colon separator performs exactly the same job as the comma but makes it easier to read. (We can support this for the other neighborhoods too, to separate outputs from inputs.)
-  * reflect_horizontal (and vertical) are new symmetries that we were missing. 
-  * The file format is otherwise identical to the existing ones.
-  * It's longer than MCell's specification string but much more powerful, allowing multiple states and variables, and different symmetries. And no-change transitions can be skipped, so it's actually more readable.
-  * We could use Calcyman's GenericNeighborhoods for the header but is there any need to? This approach is more human-readable, which is the main point of the rule table format - we want people to start authoring their own rules, as they have been!
-  * Golly doesn't currently support the Margolus neighborhood directly, but it can be emulated using the Moore neighborhood. I'll upload a script in a moment that converts from .table files such as the above into Moore nhood files.
+  * `Margolus` is a new `neighborhood` type.
+  * A new colon separator performs exactly the same job as the comma but makes it easier to read. (We also support this for the other neighborhoods, to separate outputs from inputs.)
+  * Golly doesn't currently support the Margolus neighborhood directly, but it can be emulated using the Moore neighborhood - use [http://golly.cvs.sourceforge.net/viewvc/golly/golly/src/Scripts/Python/Rule-Generators/RuleTableToTree.py?view=markup Scripts/Python/Rule-Generators/RuleTableToTree.py].
+  * Supported symmetries: `none`, `reflect_horizontal`, `reflect_vertical`, `rotate4`, `rotate4reflect`, `permute`
+  * See [http://golly.cvs.sourceforge.net/viewvc/golly/golly/src/Scripts/Python/glife/ReadRuleTable.py?view=markup Scripts/Python/glife/ReadRuleTable.py] and [http://golly.cvs.sourceforge.net/viewvc/golly/golly/src/Scripts/Python/glife/EmulateMargolus.py?view=markup Scripts/Python/glife/EmulateMargolus.py] for implementation details.
 
 === Discussion: ===
+
+  * reflect_horizontal (and vertical) are new symmetries that we were missing. 
+  * It's longer than MCell's specification string but much more powerful, allowing multiple states and variables, and different symmetries. And no-change transitions can be skipped, so it's actually more readable.
+  * We could use Calcyman's GenericNeighborhoods for the header but is there any need to? This approach is more human-readable, which is the main point of the rule table format - we want people to start authoring their own rules, as they have been!
 
 I suspect this addition is pretty uncontroversial. It's just an addition to the format, and won't break anything. Thoughts? --TJH
 
