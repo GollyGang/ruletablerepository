@@ -1,11 +1,51 @@
-#summary An idea for a symmetry to vastly simplify rule tables
+#summary Documents the 'permute' symmetry in the rule table format
 
-= Introduction =
+The permute symmetry has been supported in Golly since version 2.2, both directly (for the vonNeumann, Moore, hexagonal and oneDimensional neighborhoods) and via [http://golly.cvs.sourceforge.net/viewvc/golly/golly/src/Scripts/Python/Rule-Generators/RuleTableToTree.py?view=markup Scripts/Python/RuleTableToTree.py] for all the [https://code.google.com/p/ruletablerepository/wiki/RoadMap others].
+
+= Use: =
+
+The permute symmetry simply means that we ignore the order of the input neighbor cells, as in the Game of Life.
+
+An example:
+
+{{{
+# Historical Life
+#
+# A rule by Dave Greene
+# Translated by Calcyman
+
+n_states:3
+neighborhood:Moore
+symmetries:permute
+
+# 0 : cell was never alive
+# 1 : live cell
+# 2 : cell was alive at some point in the past
+
+var a={0,2}
+var b={a}
+var c={a}
+var d={a}
+var e={a}
+var f={a}
+
+var h={0,1,2}
+var i={h}
+var j={h}
+var k={h}
+var l={h}
+var m={h}
+var n={h}
+var o={h}
+
+h,1,1,1,a,b,c,d,e,1   # exactly 3-neighbors: birth or survival
+1,1,1,a,b,c,d,e,f,1   # living cell has exactly 2-neighbors: survives
+1,h,i,j,k,l,m,n,o,2   # otherwise, living cell dies and becomes the history state
+}}}
+
+= Previous discussion: =
 
 Many rule tables, for example Life, are much larger than necessary. There are only really 3 rules (birth/survival on 3 neighbors, survival on 2 neighbors, death otherwise), whereas the rule table is comparatively huge. One way of reducing the size of a rule table would be to allow all permutations to be handled in one line, rather than a line for each permutation.
-
-
-= Details =
 
 An example is my HistoricalLife table. It contains 85 useful rules, which are as follows:
 
