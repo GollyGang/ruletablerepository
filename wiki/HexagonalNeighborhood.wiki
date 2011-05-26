@@ -51,6 +51,11 @@ if (s1 == 0 && s2 == 1 && center == 0) {
 # s0, s1 and s2 are the number of color 0, 1 and 2 on the six neighbour fields. s0 is not used in the rule set.
 }}}
 
+=== Features: ===
+
+  * Supported symmetries: *none*, *rotate2*, *rotate3*, *rotate6*, *rotate6reflect*, *permute*.
+  * Rendering isn't handled correctly in Golly, the whole grid is on a slant. Improving this is on our task list.
+
 === Previous discussion: ===
 
 We should be able to define the format for the hexagonal neighborhood quite easily, and write a Golly script that converts it to a Moore neighborhood rule table.
