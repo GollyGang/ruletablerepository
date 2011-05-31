@@ -2,6 +2,13 @@
 
 <p align="right">[http://code.google.com/p/ruletablerepository/source/list?path=/wiki/SubmittingNewRules.wiki detailed page changes]</p>
 
+== Before submitting ==
+
+It's always a good idea to get some feedback before presenting your rule to the world as finished work. Good places to do this are:
+
+  * http://www.conwaylife.com/forums/ - you can attach your rule to a forum post.
+  * The Golly mailing list: [mailto:golly-test@lists.sourceforge.net golly-test@lists.sourceforge.net] ([https://sourceforge.net/mailarchive/forum.php?forum_name=golly-test archives])
+
 == Submission procedure ==
 
 Either:
