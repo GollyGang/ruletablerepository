@@ -184,6 +184,11 @@ and patterns not included in Golly.
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
 Particles is loosely based on Wireworld, with a few differences: Particles move through open space instead of wires, and they can also collide to create, move, or remove blocks. This means that a Particles system could reproduce itself. A rule by Joel Walker.
 </td></tr></table></td></tr>
+<tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Blocks_and_Walls_wconradwalden.zip">Blocks And Walls</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+A complex yet simple to use cellular automata that is based loosely off Particles. A rule by Conrad Walden.
+</td></tr></table></td></tr>
 </table>
 </p>
 
