@@ -3,9 +3,13 @@
 
 <wiki:comment>
 ====================================================================
+
+                       *** IMPORTANT **
+
 If you change this page, please update the Golly Access Point too!
-====================================================================
+
 http://code.google.com/p/ruletablerepository/wiki/GollyAccessPoint
+
 ====================================================================
 </wiki:comment>
 
@@ -75,6 +79,7 @@ Brian Silverman's WireWorld rule is available here, together with some interesti
 || 2010 || [http://ruletablerepository.googlecode.com/files/WireWorldMarked1.01.zip WireWorldMarked] || A marked version of WireWorld. It supports six extra wire colors but no extra functionality. A marked version of the Quinapalus' Primes Computer is included. || http://ruletablerepository.googlecode.com/files/WireWorldMarked.png ||
 || 2009 || [http://with-logic.co.uk/CA/WSwitch.zip Switch CA] || WSwitch is a 5-state rule by Alan Tennant. The rule is loosly based on WireWorld. The construction of logic gates is not possible directly. Instead, 3 types of pulse dividers are possible. || http://ruletablerepository.googlecode.com/files/switch.PNG ||
 || 2011 || [http://ruletablerepository.googlecode.com/files/particles.zip Particles] || Particles is loosely based on Wireworld, with a few differences: Particles move through open space instead of wires, and they can also collide to create, move, or remove blocks. This means that a Particles system could reproduce itself. A rule by Joel Walker. || http://ruletablerepository.googlecode.com/files/Particles.png ||
+|| 2011 || [http://ruletablerepository.googlecode.com/files/Blocks_and_Walls_wconradwalden.zip Blocks And Walls] || A complex yet simple to use cellular automata that is based loosely off Particles. A rule by Conrad Walden. || http://ruletablerepository.googlecode.com/files/BlocksAndWallsPNG.png ||
 
 == Other computation rules ==
 
