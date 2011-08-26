@@ -6,7 +6,7 @@
 ----
 
 == News ==
-
+  * <b>26th Aug 2011:</b> Georgi Gochev reports a new record Busy Beaver for 5-state 2-color absolute-movement on a square grid, now up to 25 billion steps.
   * <b>12th Jan 2011:</b> Georgi Gochev reports a new record Busy Beaver for 5-state 2-color absolute-movement on a square grid, now up to 7.1 billion steps.
   * <b>6th July 2010:</b> Georgi Gochev reports a new record Busy Beaver for 5-state 2-color absolute-movement on a square grid, now up to 1.8 billion steps.
   * <b>4th June 2010:</b> Georgi Gochev reports a new record Busy Beaver for 5-state 2-color absolute-movement on a square grid.
@@ -186,7 +186,7 @@ Universal computation becomes possible for 1D Turing machines, as demonstrated b
 
 || || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
 || <b>1D</b> || 47,176,870 || 4,098 || Marxen and Buntrock. ||
-|| <b>2D</b> || 7,131,195,542<br><br>`{{{1,'N',1},{1,'',0}},{{0,'E',2},{1,'W',3}},{{1,'S',4},{0,'W',3}},{{1,'N',2},{1,'S',3}},{{1,'W',3},{0,'E',0}}}` || 935,508,401<br><br>(same one) || Georgi Gochev <geonwk@gmail.com>, Jan 2011. ||
+|| <b>2D</b> || 25,772,988,638<br><br>`{{{1,'N',1},{1,'',0}},{{1,'S',2},{0,'W',3}},{{0,'E',4},{0,'E',3}},{{1,'W',0},{0,'W',1}},{{0,'N',0},{0,'N',1}}}` || 935,508,401<br><br>`{{{1,'N',1},{1,'',0}},{{0,'E',2},{1,'W',3}},{{1,'S',4},{0,'W',3}},{{1,'N',2},{1,'S',3}},{{1,'W',3},{0,'E',0}}}` || Georgi Gochev <geonwk@gmail.com>, Aug 2011. ||
 
 ----
 
@@ -371,41 +371,16 @@ states: 0=north, 1=SE, 2=SW<br>
 colors: 0=white, 1=grey<br>
 `{{{1,'N',2},{1,'W',0}},{{0,'W',0},{1,'S',0}},{{1,'S',1},{0,'E',1}}}`
 
-== Machines found by Georgi Gochev ==
+== Other halting machines found by Georgi Gochev ==
+|| <b>Machine</b> || <b>S (steps)</b> || <b>Sigma (non-zero cells left)</b> ||
+|| `{{{1,'N',1},{1,'',0}},{{1,'E',2},{1,'E',3}},{{1,'W',3},{0,'S',4}},{{0,'W',4},{1,'S',3}},{{1,'E',0},{0,'W',4}}}` || 12,135,580,977 || 319,966 ||
+|| `{{{1,'N',1},{1,'',1}},{{0,'E',2},{1,'W',3}},{{1,'S',4},{0,'W',3}},{{1,'N',2},{1,'S',3}},{{1,'W',3},{0,'E',0}}}` || 7,131,195,542 || 935,508,401 ||
+|| `{{{1,'N',1},{1,'',1}},{{1,'E',2},{1,'N',1}},{{1,'W',3},{0,'E',1}},{{1,'S',0},{1,'S',4}},{{1,'W',2},{0,'E',1}}}` || 1,894,226,289 || 581,857,738 ||
+|| `{{{1,'N',1},{1,'N',4}},{{1,'S',2},{1,'',1}},{{1,'S',4},{1,'S',3}},{{0,'E',2},{0,'W',0}},{{1,'N',0},{0,'S',2}}}` || 1,635,991,442 || 166,125,459 ||
+|| `{{{1,'N',1},{1,'',1}},{{1,'S',2},{0,'W',3}},{{1,'W',4},{0,'E',3}},{{1,'S',2},{1,'N',3}},{{1,'N',0},{0,'S',3}}}` || 1,547,228,624 || 341,883,343 ||
+|| `{{{1,'N',1},{1,'E',3}},{{1,'E',2},{1,'',1}},{{1,'W',3},{1,'N',3}},{{0,'S',0},{0,'W',4}},{{0,'S',3},{0,'N',1}}}` || 1,366,930,758 || 855,482 ||
+|| `{{{1,'N',1},{1,'',1}},{{1,'E',2},{1,'W',1}},{{0,'N',3},{1,'W',4}},{{1,'W',1},{0,'N',4}},{{1,'N',0},{0,'S',1}}}` || 1,187,246,809 || 668,652 ||
+|| `{{{1,'N',1},{1,'',1}},{{1,'S',2},{1,'W',1}},{{1,'N',3},{0,'S',1}},{{0,'N',0},{1,'E',4}},{{1,'N',2},{0,'S',1}}}` || 1,047,936,297 || 314,986,440 ||
+|| `{{{1,'N',1},{1,'',0}},{{0,'S',2},{0,'E',4}},{{0,'W',3},{1,'E',1}},{{1,'W',0},{1,'W',3}},{{0,'W',0},{0,'E',2}}}` || 1,918,870 || 66 ||
 
-Here are two which grow in a steady direction but creating different shapes:
-<br>
-`{{{1,'N',1},{0,'N',1}},{{1,'S',2},{0,'N',1}},{{1,'W',0},{1,'E',3}},{{1,'E',2},{1,'S',3}}}`
-<br>
-`{{{1,'S',1},{0,'N',0}},{{1,'S',2},{1,'W',1}},{{1,'E',3},{1,'W',2}},{{1,'N',0},{1,'S',0}}}`
-
-it is not clear for me if they are going to repeat itsef or are going to produce a highway..
-
-like this one after some complex behaviour creates highway after around 160 million steps:
-<br>
-`{{{1,'S',1},{0,'N',0}},{{1,'S',2},{1,'W',1}},{{1,'E',3},{0,'W',3}},{{1,'N',0},{1,'S',0}}}`
-
-and this is one of my favorite.. In a steadily growing triangle.. on top left side.. creates such a complex shapes,
-combinations of random mess, triangles, highways..simply amazing. After examined it at 300 billion steps doesn't seem to repeat..
-<br>
-`{{{1,'N',1},{0,'N',0}},{{1,'W',2},{0,'E',3}},{{1,'N',3},{1,'S',3}},{{1,'S',1},{1,'W',0}}}`
-
-here are some more:
-
-`{{{1,'S',1},{0,'N',0}},{{1,'S',2},{1,'W',1}},{{1,'E',3},{0,'S',3}},{{1,'N',0},{1,'S',0}}}`
-<br>
-This one is similar to patterns from [http://www.wolframscience.com/nksonline/page-118 NKS p.118]
-
-`{{{1,'N',1},{1,'',1}},{{1,'N',2},{0,'S',2}},{{1,'S',3},{1,'E',2}},{{1,'E',0},{1,'W',4}},{{1,'E',1},{1,'W',4}}}`
-<br>
-Somehow shows Fibonacci numbers sequence.
-
-`{{{1,'N',1},{1,'',1}},{{1,'N',2},{1,'N',0}},{{1,'S',4},{0,'S',4}},{{0,'W',2},{0,'E',4}},{{0,'N',1},{0,'S',3}}}`
-<br>
-Sierpinski triangle.
-
-Also take a look at these.. amazing machines (Jan 2011)<br>
-`{{{1,'N',1},{1,'',1}},{{1,'E',2},{1,'W',1}},{{0,'N',3},{1,'W',4}},{{1,'W',1},{0,'N',4}},{{1,'N',0},{0,'S',1}}}` - 1.2bil steps<br>
-`{{{1,'N',1},{1,'E',3}},{{1,'E',2},{1,'',0}},{{1,'W',3},{1,'N',3}},{{0,'S',0},{0,'W',4}},{{0,'S',3},{0,'N',1}}}` - 1.3bil<br>
-`{{{1,'N',1},{1,'N',4}},{{1,'S',2},{1,'',0}},{{1,'S',4},{1,'S',3}},{{0,'E',2},{0,'W',0}},{{1,'N',0},{0,'S',2}}}` - 1.6bil<br>
  
