@@ -60,7 +60,7 @@ This is a list of the best known [http://en.wikipedia.org/wiki/Busy_beaver busy 
 *Absolute movement*
 
 || || <b>2-state</b> || <b>3-state</b> || <b>4-state</b> || <b>5-state</b> ||
-|| <b>2-color</b> || 1D: 6 (4)<br>2D: 6 (4)<br>3D: 6 (4)<br>4D+?: 6 (4) || 1D: 21 (6)<br>2D: 32 (11)<br>3D: 32 (11)<br>4D+: ? || 1D: 107 (13)<br>2D: 4,632 (244)<br>3D+: ? || 1D: 47,176,870 (4,098)<br>2D: 7,131,195,542 (935,508,401)<br>3D+: ? ||
+|| <b>2-color</b> || 1D: 6 (4)<br>2D: 6 (4)<br>3D: 6 (4)<br>4D+?: 6 (4) || 1D: 21 (6)<br>2D: 32 (11)<br>3D: 32 (11)<br>4D+: ? || 1D: 107 (13)<br>2D: 4,632 (244)<br>3D+: ? || 1D: 47,176,870 (4,098)<br>2D: 25,772,988,638 (935,508,401)<br>3D+: ? ||
 || <b>3-color</b> || 1D: 38 (9)<br>2D: 38 (10)<br>3D: 38 (10)<br>4D+: ? || || ||
 || <b>4-color</b> || 1D: 3,932,964 (2,050)<br>2D+: ? || || ||
 
