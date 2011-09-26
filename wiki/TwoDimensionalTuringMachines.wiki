@@ -38,7 +38,7 @@ Relative-movement Turing machines and 2D Turing machines have been investigated 
 
   * Run [http://ruletablerepository.googlecode.com/files/AbsoluteTurmites.zip AbsoluteTurmite-gen.py] in [http://golly.sourceforge.net Golly]. Copy-paste one of the absolute-movement specification strings, e.g.: `{{{1,'E',1},{1,'W',1}},{{1,'W',0},{1,'',0}}}`
   * Each machine is specified as a table of n_states rows by n_colors columns, written in (Western) reading order: the first row first, then then other rows. 
-  * Each triple is {A,B,C} where A is the new color to write [0,1,2,...,(n_colors-1)], B is the direction to move in (North, South, East, West) or empty to halt, C is the new state to adopt [0,1,2,...,(n_states-1)].
+  * Each triple is {A,B,C} where A is the new color to write: `[0,1,2,...,(n_colors-1)]`, B is the direction to move in (North, South, East, West) or empty to halt, C is the new state to adopt: `[0,1,2,...,(n_states-1)]`.
   * For example, the triple `{1,'S',3}` means: print a '1', move South, and adopt state 3.
 
 *Relative movement*
