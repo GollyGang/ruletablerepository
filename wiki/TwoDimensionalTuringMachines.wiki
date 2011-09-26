@@ -44,7 +44,7 @@ Relative-movement Turing machines and 2D Turing machines have been investigated 
 *Relative movement*
 
   * Run [http://ruletablerepository.googlecode.com/files/single-Turmite-gen.py single-Turmite-gen.py] in [http://golly.sourceforge.net Golly] and copy-paste one of the relative-movement specification strings below into the text box. E.g. `{{{1,2,0},{0,8,0}}}`
-  * It uses a similar notation as the other script. The difference is in how the direction is specified: 1=forward, 4=u-turn, 2=right, 8=left, 0=halt. 
+  * It uses a similar notation as the other script. The difference is in how the direction is specified: 1=forward, 2=right, 4=u-turn, 8=left, 0=halt. (This notation allows turmites to split, e.g. 10=turn left _and_ right.)
   * For example, the triple `{1,2,3}` means: print a '1', turn right (and move forward), and adopt state 3.
 
 == Busy Beavers ==
