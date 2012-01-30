@@ -137,7 +137,7 @@ and patterns not included in Golly.
    Nicolas Oros and Chrystopher L. Nehaniv modified Sayama's evoloop to allow the transfer of genetic material
    from one loop into another. The zip file contains 3 rule tables (Sexyloop-M1, Sexyloop-M2, F-sexyloop)
    and some example patterns. Details and references can be found
-   <a href="http://homepages.feis.herts.ac.uk/~on5ag/sexyloop.html">here</a>.
+   <a href="http://www.socsci.uci.edu/~noros/sexyloop.html">here</a>.
 </td></tr></table></td></tr>
 <tr><td>
    <a href="get:http://ruletablerepository.googlecode.com/files/GoucherLoops.zip">Goucher's Loops</a>
