@@ -529,6 +529,12 @@ A complex yet simple to use cellular automata that is based loosely off Particle
    Sand is a rule by Andrew Trevorrow that mimics falling sand. The zip file also contains a number
    of "sand guns" with various periods (thanks to Dean Hickerson).
 </td></tr></table></td></tr>
+<tr><td>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Snakes.zip">Snakes</a>
+</td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
+   Snakes is a rule by Dean Hickerson in which thin snake-like objects appear to move randomly.
+   For more details, see README.txt in the zip file.
+</td></tr></table></td></tr>
 </table>
 </p>
 
