@@ -166,7 +166,7 @@ If there is a rule that doesn't fit into one of the above sections, nor does it 
 || 2011 || [http://ruletablerepository.googlecode.com/files/Squaredance.zip Squaredance] || Squaredance is a rule by Dean Hickerson in which rectangles grow and shrink pseudorandomly.  For more details, see readme.txt in the zip file. || http://ruletablerepository.googlecode.com/files/Squaredance.png ||
 || 2011 || [http://ruletablerepository.googlecode.com/files/Sand.zip Sand] || A rule by Andrew Trevorrow that mimics falling sand.  The zip file also contains a number of "sand guns" with various periods (thanks to Dean Hickerson). || http://ruletablerepository.googlecode.com/files/Sand.png ||
 || 2012 || [http://ruletablerepository.googlecode.com/files/Snakes.zip Snakes] || A rule by Dean Hickerson in which thin snake-like objects appear to move randomly. For more details, see README.txt in the zip file. || http://ruletablerepository.googlecode.com/files/Snakes.png ||
-|| 2012 || [http://with-logic.co.uk/a/ships.zip Ships] || By Alan Tennant. For construction of large 4 state ships. Based on discoveries in WWEJ3.
+|| 2012 || [http://with-logic.co.uk/a/ships.zip Ships] || By Alan Tennant. For construction of large 4 state ships. Based on discoveries in WWEJ3. || ||
 
 ----
 
