@@ -124,7 +124,7 @@ If you have a C/C++ implementation of a transition function, there is a way to a
 
 == Comparison of rule table formats: (work in progress) ==
 
-  * [http://www.jcasim.de/ CDL]
+  * [http://www.jcasim.de/ CDL] Jorg's 2003 paper on translating CDL into C or Java: [http://www.complex-systems.com/abstracts/v14_i02_a04.html link]
   * cellang
   * CAXL (some discussion of these above)
   * DDLab's .vco format (mentioned [http://www.cogs.susx.ac.uk/users/andywu/multi_value/spiral_rule.html here])
