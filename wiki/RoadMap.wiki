@@ -52,7 +52,7 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 <h2>Exotic neighborhoods</h2>
 
 || neighborhood || transitions || symmetries || image ||
-|| Penrose tiling || {{{c,n1..n4 : c'}}} || permutation || http://ruletablerepository.googlecode.com/files/Penrose.PNG ||
+|| Penrose P3 tiling || {{{c,n1..n4 : c'}}} || permutation || http://ruletablerepository.googlecode.com/files/Penrose.PNG ||
 || [http://en.wikipedia.org/wiki/Demitesseractic_honeycomb F4_lattice] || {{{c,n1..n16 : c'}}} || none, rotate192, rotate192reflect, permutation || http://ruletablerepository.googlecode.com/files/F4lattice.PNG ||
 || [http://en.wikipedia.org/wiki/Icositetrachoric_honeycomb D4_lattice] || {{{c,n1..n24 : c'}}} || none, rotate192, rotate192reflect, permutation || http://ruletablerepository.googlecode.com/files/D4lattice.PNG ||
 || [http://en.wikipedia.org/wiki/E8_lattice E8_lattice] || {{{c,n1..n240 : c'}}} || none, rotate348364800, rotate348364800reflect, permutation || http://ruletablerepository.googlecode.com/files/E8.PNG ||
