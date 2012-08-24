@@ -536,7 +536,7 @@ A complex yet simple to use cellular automata that is based loosely off Particle
    For more details, see README.txt in the zip file.
 </td></tr></table></td></tr>
 <tr><td>
-   <a href="get:http://ruletablerepository.googlecode.com/files/ships1.zip">Ships</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/ships2.zip">Ships</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    By Alan Tennant. For construction of large 4 state ships. Based on discoveries in WWEJ3.
 </td></tr></table></td></tr>
