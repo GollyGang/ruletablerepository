@@ -304,11 +304,11 @@ We'll collect results here. Let us know what you find.
 As far as we know these are the current record holders:
 
 2-state 2-color relative movement:<br>
-`{{{1, 2, 1}, {1, 8, 1}}, {{1, 2, 1}, {0, 2, 0}}}` <br> (4 million timesteps before getting stuck in a loop)
+`{{{1, 2, 1}, {1, 8, 1}}, {{1, 2, 1}, {0, 2, 0}}}` <br> (WormTrails.rle: 4 million timesteps before getting stuck in a loop)
 
 3-state 2-color absolute movement:
-`{{{0,'S',1},{1,'W',1}},{{1,'E',2},{1,'S',2}},{{1,'W',0},{0,'N',0}}}`<br>
-(15.5 million timesteps before making a highway)
+`{{{0,'S',1},{1,'W',1}},{{1,'E',2},{1,'S',2}},{{1,'W',0},{0,'N',0}}}` <br>
+(Perfectionist.rle: 15.5 million timesteps before making a highway)
 
 
 ----
