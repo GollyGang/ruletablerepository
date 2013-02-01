@@ -6,6 +6,7 @@
 ----
 
 == News ==
+  * <b>1st Feb 2013:</b> Ed Pegg, Jr. asks: "What is the longest a machine can run before it becomes predictable? For Langton's Ant, it's around 10000 steps. For Worm Trails, it's 4 million. What 2-color, 2-state turmites are unresolved? Is there a list somewhere?" I've made a new section: Non-halting Busy Beavers
   * <b>26th Aug 2011:</b> Georgi Gochev reports a new record Busy Beaver for 5-state 2-color absolute-movement on a square grid, now up to 25 billion steps.
   * <b>12th Jan 2011:</b> Georgi Gochev reports a new record Busy Beaver for 5-state 2-color absolute-movement on a square grid, now up to 7.1 billion steps.
   * <b>6th July 2010:</b> Georgi Gochev reports a new record Busy Beaver for 5-state 2-color absolute-movement on a square grid, now up to 1.8 billion steps.
@@ -288,6 +289,17 @@ These turmites take advantage of the notation 1=forward, 4=u-turn, 2=right, 8=le
 *Absolute movement, 1D, 3D+, triangular grid, hexagonal grid...*
 
 No-one has investigated extinction turmites on these cases, so there's lots left to be discovered.
+
+----
+
+=== Non-halting Busy Beavers ===
+
+(Asked by Ed Pegg, Jr.)
+
+If we consider turmites _without_ a halting state then there is still an interesting question: 
+  * What turmite runs the longest before making a repetitive highway?
+
+We'll collect results here. Let us know what you find.
 
 ----
 
