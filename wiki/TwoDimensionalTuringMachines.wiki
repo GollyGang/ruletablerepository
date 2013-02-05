@@ -37,14 +37,14 @@ Relative-movement Turing machines and 2D Turing machines have been investigated 
 
 *Absolute movement*
 
-  * Run [http://ruletablerepository.googlecode.com/files/AbsoluteTurmites.zip AbsoluteTurmite-gen.py] in [http://golly.sourceforge.net Golly]. Copy-paste one of the absolute-movement specification strings, e.g.: `{{{1,'E',1},{1,'W',1}},{{1,'W',0},{1,'',0}}}`
+  * Run Scripts/Python/Rule-Generators/AbsoluteTurmite-gen.py in [http://golly.sourceforge.net Golly]. Copy-paste one of the absolute-movement specification strings, e.g.: `{{{1,'E',1},{1,'W',1}},{{1,'W',0},{1,'',0}}}`
   * Each machine is specified as a table of n_states rows by n_colors columns, written in (Western) reading order: the first row first, then then other rows. 
   * Each triple is {A,B,C} where A is the new color to write: `[0,1,2,...,(n_colors-1)]`, B is the direction to move in (North, South, East, West) or empty to halt, C is the new state to adopt: `[0,1,2,...,(n_states-1)]`.
   * For example, the triple `{1,'S',3}` means: print a '1', move South, and adopt state 3.
 
 *Relative movement*
 
-  * Run [http://ruletablerepository.googlecode.com/files/single-Turmite-gen.py single-Turmite-gen.py] in [http://golly.sourceforge.net Golly] and copy-paste one of the relative-movement specification strings below into the text box. E.g. `{{{1,2,0},{0,8,0}}}`
+  * Run Scripts/Python/Rule-Generators/Turmite-gen.py in [http://golly.sourceforge.net Golly] and copy-paste one of the relative-movement specification strings below into the text box. E.g. `{{{1,2,0},{0,8,0}}}`
   * It uses a similar notation as the other script. The difference is in how the direction is specified: 1=forward, 2=right, 4=u-turn, 8=left, 0=halt. (This notation allows turmites to split, e.g. 10=turn left _and_ right.)
   * For example, the triple `{1,2,3}` means: print a '1', turn right (and move forward), and adopt state 3.
 
@@ -303,11 +303,15 @@ We'll collect results here. Let us know what you find.
 
 As far as we know these are the current record holders:
 
-2-state 2-color relative movement:<br>
-`{{{1, 2, 1}, {1, 8, 1}}, {{1, 2, 1}, {0, 2, 0}}}` <br> "Worm Trails": 4 million timesteps before getting stuck in a loop: <br>
+*1-state 2-color relative movement:*<br>
+`{{{1,2,0},{0,8,0}}}`<br>
+Langton's Ant: 10,000 steps before making a highway.
+
+*2-state 2-color relative movement:*<br>
+`{{{1, 2, 1}, {1, 8, 1}}, {{1, 2, 1}, {0, 2, 0}}}` <br> "Worm Trails": 4.3 million timesteps before getting stuck in a loop: <br>
 http://www.mathpuzzle.com/wormtrails.gif
 
-3-state 2-color absolute movement:<br>
+*3-state 2-color absolute movement:*<br>
 `{{{0,'S',1},{1,'W',1}},{{1,'E',2},{1,'S',2}},{{1,'W',0},{0,'N',0}}}` <br>
 ("Perfectionist": 15.5 million timesteps before making a highway)
 
