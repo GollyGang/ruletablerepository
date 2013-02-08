@@ -6,6 +6,7 @@
 ----
 
 == News ==
+  * <b>8th Feb 2013:</b> Georgi Gochev reports a new 2-state 2-color relative-movement non-halting busy beaver: 240 million steps.
   * <b>6th Feb 2013:</b> New 2-state 2-color relative-movement non-halting busy beaver: 18.22 million steps.
   * <b>1st Feb 2013:</b> Ed Pegg, Jr. asks: "What is the longest a machine can run before it becomes predictable? For Langton's Ant, it's around 10000 steps. For Worm Trails, it's 4 million. What 2-color, 2-state turmites are unresolved? Is there a list somewhere?" I've made a new section: Non-halting Busy Beavers
   * <b>26th Aug 2011:</b> Georgi Gochev reports a new record Busy Beaver for 5-state 2-color absolute-movement on a square grid, now up to 25 billion steps.
@@ -309,8 +310,8 @@ As far as we know these are the current record holders:
 Langton's Ant: 10,000 steps before making a highway.
 
 *2-state 2-color relative movement:*<br>
-`{{{1,4,1},{1,1,0}},{{1,1,0},{0,2,1}}}` <br> 18.22 million timesteps before making a highway: <br>
-http://ruletablerepository.googlecode.com/files/turmite_141110110021.png
+`{{{1,1,1},{0,8,1}},{{1,8,1},{0,1,0}}} ` <br> 240 million timesteps before making a twin highway: <br>
+http://ruletablerepository.googlecode.com/files/gochev_240m_turmite.jpg
 
 *3-state 2-color absolute movement:*<br>
 `{{{0,'S',1},{1,'W',1}},{{1,'E',2},{1,'S',2}},{{1,'W',0},{0,'N',0}}}` <br>
