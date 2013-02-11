@@ -311,7 +311,7 @@ As far as we know these are the current record holders:
 Langton's Ant: 10,000 steps before making a highway.
 
 *2-state 2-color relative movement:*<br>
-`{{{1,8,1},{0,2,0}},{{1,8,0},{0,1,0}}} ` <br> 7.735 billion timesteps before making a twin highway: (Georgi Gochev)<br>
+`{{{1,8,1},{0,2,0}},{{1,8,0},{0,1,0}}} ` <br> 7.735 billion timesteps before making a wedge: (Georgi Gochev)<br>
 http://ruletablerepository.googlecode.com/files/gochev_7b_turmite.jpg
 
 *3-state 2-color absolute movement:*<br>
