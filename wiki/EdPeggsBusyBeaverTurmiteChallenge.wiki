@@ -24,18 +24,18 @@ Ed identified 10 machines that are unresolved. Add results below as you find the
 
 || `{{{0,1,1},{x,x,x}},{{1,2,0},{0,8,0}}}` || Highway at 19955 || Langton's Ant x2+1 (found by Mark Jeronimus with the random button `>_<`) ||
 || `{{{1,1,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || Highway at 238,951,300  +100 || By Georgi Gochev ||
-|| `{{{1,2,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || *Highway at 8,362,028,000 +1000* || By Mark Jeronimus. Slightly modified version of a rule by Georgi Gochev ||
+|| `{{{1,2,1},{0,1,0}},{{0,1,0},{0,2,1}}}` || Highway at 576,150,000  +1,000 || By Mark Jeronimus ||
+|| `{{{1,2,1},{0,8,0}},{{1,2,0},{0,1,0}}}` || Highway at 7,734,883,000  +1,000 || By Georgi Gochev ||
 || `{{{1,2,1},{0,8,1}},{{0,1,0},{x,x,x}}}` || Highway at 19954 || Langton's Ant x2 ||
-|| `{{{1,8,1},{0,1,0}},{{0,1,0},{0,8,1}}}` || Highway at 576,150,000  +1,000 || By Mark Jeronimus ||
-|| `{{{1,8,1},{0,2,0}},{{1,8,0},{0,1,0}}}` || Highway at 7,734,883,000  +1,000 || By Georgi Gochev ||
-|| `{{{1,8,1},{0,2,1}},{{1,4,0},{1,1,0}}}` || 2 Highways at 70,500,000 +100,000 || By Georgi Gochev ||
+|| `{{{1,2,1},{0,8,1}},{{1,4,0},{1,1,0}}}` || 2 Highways at 70,500,000 +100,000 || By Georgi Gochev ||
+|| `{{{1,2,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || *Highway at 8,362,028,000 +1000* || By Mark Jeronimus. Slightly modified version of a rule by Georgi Gochev ||
 
 x = don't care
 
 == unresolved 2-state 2-color relative movement turmites ==
 
-|| `{{{1,8,1},{0,4,0}},{{1,2,1},{1,2,0}}}` || Still chaotic at 161,782,124,801 || Turmites! was out of memory (1GiB heap) ||
 || `{{{1,2,0},{1,8,1}},{{1,8,1},{0,8,0}}}` || Still chaotic at 265,309,261,569 || Turmites! was out of memory (1GiB heap) ||
+|| `{{{1,2,1},{0,4,0}},{{1,8,1},{1,8,0}}}` || Still chaotic at 161,782,124,801 || Turmites! was out of memory (1GiB heap) ||
 
 == resolved 1-state 4-color relative movement turmites ==
 
