@@ -51,7 +51,7 @@ These are turmites that last for awhile.
 
 These I haven't resolved yet.  It would be good to get this to under a hundred.
 
-|| `{{{1,4,0},{2,1,0},{3,1,0},{2,2,0}}}` || It occasionally starts counting in binary, making a width-4 extrusion out of the main blob; see, for example, the bottom of the pattern in gens 41633 to 42084. || Dean Hickerson ||
+|| `{{{1,4,0},{2,1,0},{3,1,0},{2,2,0}}}` || Still random at 36,761,920,513 || It occasionally starts counting in binary, making a width-4 extrusion out of the main blob;<br/>see, for example, the bottom of the pattern in gens 41633 to 42084. -- Dean Hickerson ||
 
 || steps run || code ||
 || 67mil  || `{{{1,2,0},{2,1,0},{3,1,0},{0,8,0}}}` ||
