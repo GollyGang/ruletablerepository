@@ -24,7 +24,7 @@ Ed identified 10 machines that are unresolved. Add results below as you find the
 
 || `{{{0,1,1},{x,x,x}},{{1,2,0},{0,8,0}}}` || Highway at 19955 || Langton's Ant x2+1 (found by Mark Jeronimus with the random button `>_<`) ||
 || `{{{1,1,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || Highway at 238,951,300  +100 || By Georgi Gochev ||
-|| `{{{1,2,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || *Highway at 8,362,028,000 +1000* || By Mark Jeronimus. Slightly modified version of a rule by Georgi Gochev. ||
+|| `{{{1,2,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || *Highway at 8,362,028,000 +1000* || By Mark Jeronimus. Slightly modified version of a rule by Georgi Gochev ||
 || `{{{1,2,1},{0,8,1}},{{0,1,0},{x,x,x}}}` || Highway at 19954 || Langton's Ant x2 ||
 || `{{{1,8,1},{0,1,0}},{{0,1,0},{0,8,1}}}` || Highway at 576,150,000  +1,000 || By Mark Jeronimus ||
 || `{{{1,8,1},{0,2,0}},{{1,8,0},{0,1,0}}}` || Highway at 7,734,883,000  +1,000 || By Georgi Gochev ||
@@ -51,6 +51,7 @@ These are turmites that last for awhile.
 
 These I haven't resolved yet.  It would be good to get this to under a hundred.
 
+|| `{{{1,4,0},{2,1,0},{3,1,0},{2,2,0}}}` || It occasionally starts counting in binary, making a width-4 extrusion out of the main blob; see, for example, the bottom of the pattern in gens 41633 to 42084. || Dean Hickerson
 || steps run || code ||
 || 67mil  || `{{{1,2,0},{2,1,0},{3,1,0},{0,8,0}}}` ||
 || 220 million  || `{{{1,2,0},{2,1,0},{3,1,0},{1,8,0}}}` ||
@@ -131,7 +132,6 @@ These I haven't resolved yet.  It would be good to get this to under a hundred.
 || 23mil  || `{{{1,2,0},{2,8,0},{3,8,0},{2,2,0}}}` ||
 || 23mil  || `{{{1,4,0},{2,1,0},{3,1,0},{0,2,0}}}` ||
 || 25mil  || `{{{1,4,0},{2,1,0},{3,1,0},{1,2,0}}}` ||
-|| 40mil  || `{{{1,4,0},{2,1,0},{3,1,0},{2,2,0}}}` ||
 || 42mil  || `{{{1,4,0},{2,1,0},{3,2,0},{0,1,0}}}` ||
 || 25mil  || `{{{1,4,0},{2,1,0},{3,2,0},{0,2,0}}}` ||
 || 23mil  || `{{{1,4,0},{2,1,0},{3,2,0},{0,4,0}}}` ||
