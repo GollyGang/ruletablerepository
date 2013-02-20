@@ -3,12 +3,12 @@
 == Resolved 1-state 3-color relative movement turmites ==
 
 || `{{{1,2,0},{2,1,0},{0,4,0}}}` || *Highway at 67,620,060 +10* ||
-|| `{{{1,2,0},{2,4,0},{0,8,0}}}` || Highway at 2,669,000 +1,000 (Final shape looks like Lanton's Ant) || By Ed Pegg ||
 || `{{{1,4,0},{2,2,0},{1,8,0}}}` || 2 Highways at 18,490,000 +10,000 || By Ed Pegg ||
+|| `{{{1,2,0},{2,4,0},{0,8,0}}}` || Highway at 2,669,000 +1,000 (Final shape looks like Lanton's Ant) || By Ed Pegg ||
 
 == unresolved 1-state 3-color relative movement turmites ==
 
-Ed identified 10 machines that are unresolved. Add results below as you find them:
+Ed identified unresolved machines. Add results below as you find them:
 
 || `{{{1,2,0},{2,1,0},{0,8,0}}}` || Still on grid after 10 billion steps. || 
 || `{{{1,2,0},{2,1,0},{1,8,0}}}` || Still on grid after 10 billion steps. || 
@@ -22,13 +22,14 @@ Ed identified 10 machines that are unresolved. Add results below as you find the
 
 == resolved 2-state 2-color relative movement turmites ==
 
-|| `{{{0,1,1},{x,x,x}},{{1,2,0},{0,8,0}}}` || Highway at 19955 || Langton's Ant x2+1 (found by Mark Jeronimus with the random button `>_<`) ||
-|| `{{{1,1,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || Highway at 238,951,300  +100 || By Georgi Gochev ||
-|| `{{{1,2,1},{0,1,0}},{{0,1,0},{0,2,1}}}` || Highway at 576,150,000  +1,000 || By Mark Jeronimus ||
-|| `{{{1,2,1},{0,8,0}},{{1,2,0},{0,1,0}}}` || Highway at 7,734,883,000  +1,000 || By Georgi Gochev ||
-|| `{{{1,2,1},{0,8,1}},{{0,1,0},{x,x,x}}}` || Highway at 19954 || Langton's Ant x2 ||
-|| `{{{1,2,1},{0,8,1}},{{1,4,0},{1,1,0}}}` || 2 Highways at 70,500,000 +100,000 || By Georgi Gochev ||
 || `{{{1,2,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || *Highway at 8,362,028,000 +1000* || By Mark Jeronimus. Slightly modified version of a rule by Georgi Gochev ||
+|| `{{{1,2,1},{0,8,0}},{{1,2,0},{0,1,0}}}` || Highway at 7,734,883,000  +1,000 || By Georgi Gochev ||
+|| `{{{1,2,1},{0,1,0}},{{0,1,0},{0,2,1}}}` || Highway at 576,150,000  +1,000 || By Mark Jeronimus ||
+|| `{{{1,1,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || Highway at 238,951,300  +100 || By Georgi Gochev ||
+|| `{{{1,2,1},{0,8,1}},{{1,4,0},{1,1,0}}}` || 2 Highways at 70,500,000 +100,000 || By Georgi Gochev ||
+|| `{{{0,1,1},{x,x,x}},{{1,2,0},{0,8,0}}}` || Highway at 19955 || Langton's Ant x2+1 (found by Mark Jeronimus with the random button `>_<`) ||
+|| `{{{1,2,1},{0,8,1}},{{0,1,0},{x,x,x}}}` || Highway at 19954 || Langton's Ant x2 ||
+
 
 x = don't care
 
@@ -42,11 +43,12 @@ x = don't care
 
 These are turmites that last for awhile.
 
-|| `{{{1,2,0},{2,1,0},{3,1,0},{1,4,0}}}` || 2 Binary counting highways at 94,530 +10 ||
-|| `{{{1,2,0},{2,2,0},{3,4,0},{0,4,0}}}` || Highway at 148,485,000 +1,000 || By Ed Pegg ||
-|| `{{{1,2,0},{2,2,0},{3,4,0},{0,8,0}}}` || Highway at 255,030,000 +10,000 ||
 || `{{{1,2,0},{2,4,0},{3,2,0},{3,1,0}}}` || *2 Highways at 4,391,220,000 +10000* || By Dean Hickerson ||
-|| `{{{1,2,0},{2,4,0},{3,4,0},{0,8,0}}}` || Highway at 1,589,104,000 +1,000 (Final shape looks like Lanton's<br/>Ant even though it's stuck in the center for over a billion gens) ||
+|| `{{{1,2,0},{2,4,0},{3,4,0},{0,8,0}}}` || Highway at 1,589,104,000 +1,000 (Final shape looks like Lanton's<br>Ant even though it's stuck in the center for over a billion gens) ||
+|| `{{{1,2,0},{2,2,0},{3,4,0},{0,8,0}}}` || Highway at 255,030,000 +10,000 ||
+|| `{{{1,2,0},{2,2,0},{3,4,0},{0,4,0}}}` || Highway at 148,485,000 +1,000 || By Ed Pegg ||
+|| `{{{1,2,0},{2,1,0},{3,1,0},{1,4,0}}}` || 2 Binary counting highways at 94,530 +10 ||
+
 
 == unresolved 1-state 4-color relative movement turmites ==
 
@@ -67,7 +69,7 @@ It would be good to get these to under a hundred.
 || `{{{1,2,0},{2,1,0},{3,4,0},{1,1,0}}}` || 5,000,000,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,4,0},{1,2,0}}}` || 25,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,4,0},{1,8,0}}}` || 23,000,000  ||  ||
-|| `{{{1,2,0},{2,1,0},{3,8,0},{0,1,0}}}` || 21,000,000  ||  ||
+|| `{{{1,2,0},{2,1,0},{3,8,0},{0,1,0}}}` || 203,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,8,0},{0,2,0}}}` || 21,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,8,0},{0,4,0}}}` || 27,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,8,0},{0,8,0}}}` || 31,000,000  ||  ||
