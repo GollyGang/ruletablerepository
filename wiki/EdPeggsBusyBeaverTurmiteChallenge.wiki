@@ -18,7 +18,7 @@ Ed identified 10 machines that are unresolved. Add results below as you find the
 || `{{{1,2,0},{2,8,0},{1,1,0}}}` || Still on grid after 10 billion steps. || 
 || `{{{1,4,0},{2,1,0},{0,2,0}}}` || Still on grid after 10 billion steps. || 
 || `{{{1,4,0},{2,2,0},{0,1,0}}}` || Still on grid after 10 billion steps. || 
-|| `{{{1,4,0},{2,2,0},{1,1,0}}}` || Binary counting between 2.8 billion and ~100 trillion steps but expected to be unpredictable again after that. || 
+|| `{{{1,4,0},{2,2,0},{1,1,0}}}` || Binary counting between 2.8 billion and ~10 trillion steps but expected to be unpredictable again after that. || 
 
 == resolved 2-state 2-color relative movement turmites ==
 
