@@ -4,7 +4,7 @@
 
 || `{{{1,2,0},{2,1,0},{0,4,0}}}` || *Highway at 67,620,060 +10* ||
 || `{{{1,4,0},{2,2,0},{1,8,0}}}` || 2 Highways at 18,490,000 +10,000 || By Ed Pegg ||
-|| `{{{1,2,0},{2,4,0},{0,8,0}}}` || Highway at 2,669,000 +1,000 (Final shape looks like Lanton's Ant) || By Ed Pegg ||
+|| `{{{1,2,0},{2,4,0},{0,8,0}}}` || Highway at 2,669,000 +1,000 || By Ed Pegg ||
 
 == unresolved 1-state 3-color relative movement turmites ==
 
@@ -44,7 +44,7 @@ x = don't care
 These are turmites that last for awhile.
 
 || `{{{1,2,0},{2,4,0},{3,2,0},{3,1,0}}}` || *2 Highways at 4,391,220,000 +10000* || By Dean Hickerson ||
-|| `{{{1,2,0},{2,4,0},{3,4,0},{0,8,0}}}` || Highway at 1,589,104,000 +1,000 (Final shape looks like Lanton's<br>Ant even though it's stuck in the center for over a billion gens) ||
+|| `{{{1,2,0},{2,4,0},{3,4,0},{0,8,0}}}` || Highway at 1,589,104,000 +1,000 ||
 || `{{{1,2,0},{2,2,0},{3,4,0},{0,8,0}}}` || Highway at 255,030,000 +10,000 ||
 || `{{{1,2,0},{2,2,0},{3,4,0},{0,4,0}}}` || Highway at 148,485,000 +1,000 || By Ed Pegg ||
 || `{{{1,2,0},{2,1,0},{3,1,0},{1,4,0}}}` || 2 Binary counting highways at 94,530 +10 ||
