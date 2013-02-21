@@ -40,7 +40,7 @@ Turmites (2-state 2-color) that last more than 50 million steps.
 == Unresolved 2-state 2-color relative movement turmites ==
 
 || `{{{1,2,0},{1,8,1}},{{1,8,1},{0,8,0}}}` || Still chaotic at 1,021,280,049,409 || Turmites! was out of memory (1.5GiB heap) ||
-|| `{{{1,2,1},{0,2,0}},{{1,4,1},{0,1,0}}}` || Still chaotic at 305,795,580,161 || Turmites! was out of memory (1.5GiB heap) ||
+|| `{{{1,2,1},{0,2,0}},{{1,4,1},{0,1,0}}}` || Still chaotic at 305,795,580,179 || Turmites! was out of memory (1.5GiB heap) ||
 || `{{{1,2,1},{0,4,0}},{{1,8,1},{1,8,0}}}` || Still chaotic at 567,287,499,009 || [http://ruletablerepository.googlecode.com/files/t22r121040181180.png http://ruletablerepository.googlecode.com/files/t22r121040181180_small.png] ||
 
 == Resolved 1-state 4-color relative movement turmites ==
