@@ -7,7 +7,7 @@ Subpage of TwoDimensionalTuringMachines.
 Turmites (1-state 3-color) that last more than 2 million steps.
 
 || `{{{1,2,0},{2,1,0},{0,4,0}}}` || *Highway at 67,620,060 +10* ||Hutton/Pegg || [http://ruletablerepository.googlecode.com/files/t13r120210040.png http://ruletablerepository.googlecode.com/files/t13r120210040_small.png] ||
-|| `{{{1,4,0},{2,2,0},{1,8,0}}}` || 2 Highways at 18,490,000 +10,000 || By Ed Pegg || http://www.mathpuzzle.com/t13d13s25465408.gif ||
+|| `{{{1,4,0},{2,2,0},{1,8,0}}}` || 2 Highways at 18,490,000 +10,000 || By Ed Pegg || [http://ruletablerepository.googlecode.com/files/t13r140220180.png http://ruletablerepository.googlecode.com/files/t13r140220180_small.png] ||
 || `{{{1,2,0},{2,4,0},{0,8,0}}}` || Highway at 2,669,000 +1,000 || By Ed Pegg || ||
 
 == Unresolved 1-state 3-color relative movement turmites ==
