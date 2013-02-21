@@ -138,7 +138,7 @@ It would be good to get these to under a hundred. Behavior is still chaotic afte
 || `{{{1,2,0},{2,8,0},{3,8,0},{2,2,0}}}` || 23,000,000  ||  ||
 || `{{{1,4,0},{2,1,0},{3,1,0},{0,2,0}}}` || 23,000,000  ||  ||
 || `{{{1,4,0},{2,1,0},{3,1,0},{1,2,0}}}` || 25,000,000  ||  ||
-|| `{{{1,4,0},{2,1,0},{3,1,0},{2,2,0}}}` || 36,761,920,513  || binary counting, makes a width-4 extrusion out of the main blob; <br> see bottom of gens 41633 to 42084. -- Dean Hickerson ||
+|| `{{{1,4,0},{2,1,0},{3,1,0},{2,2,0}}}` || 803,430,000,000  || binary counting, makes a width-4 extrusion out of the main blob;<br>see bottom of gens 41633 to 42084. -- Dean Hickerson<br/>Becomes chaotic again after gen 803,430,000,000 after counting to 2<sup>35</sup>. ||
 || `{{{1,4,0},{2,1,0},{3,2,0},{0,1,0}}}` || 42,000,000  ||  ||
 || `{{{1,4,0},{2,1,0},{3,2,0},{0,2,0}}}` || 25,000,000  ||  ||
 || `{{{1,4,0},{2,1,0},{3,2,0},{0,4,0}}}` || 23,000,000  ||  ||
