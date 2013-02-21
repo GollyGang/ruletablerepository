@@ -1,5 +1,7 @@
 = Ed Pegg's Busy Beaver Turmite Challenge =
 
+Subpage of TwoDimensionalTuringMachines.
+
 == Resolved 1-state 3-color relative movement turmites ==
 
 Turmites (1-state 3-color) that last more than 2 million steps.
