@@ -1,0 +1,10 @@
+#summary Unresolved Turmites of 2 state and 2 colors.
+
+= Introduction =
+
+There are over 900 preliminary unresolved turmites.
+
+
+= Details =
+
+This is a list in flux.  Many of these will be weeded out.
