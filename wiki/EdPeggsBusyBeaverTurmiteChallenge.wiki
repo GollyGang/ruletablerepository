@@ -58,8 +58,8 @@ Turmites (1-state 4-color) that last more than 50 million steps.
 It would be good to get these to under a hundred. Behavior is still chaotic after the given number of steps run. If you run any of these for longer, and they don't resolve, put in your number of steps. 
 
 || code || steps run || notes ||
-|| `{{{1,2,0},{2,1,0},{3,1,0},{0,8,0}}}` || 67,000,000  ||  ||
-|| `{{{1,2,0},{2,1,0},{3,1,0},{1,8,0}}}` || Still chaotic at 1,000,000,000<br/>area = ~1,765,744 || [http://ruletablerepository.googlecode.com/files/t14r120210310180.png http://ruletablerepository.googlecode.com/files/t14r120210310180_small.png] ||
+|| `{{{1,2,0},{2,1,0},{3,1,0},{0,8,0}}}` || Still chaotic at 1,000,000,000<br/>Area = ~3,032,820 || [http://ruletablerepository.googlecode.com/files/t14r120210310080.png http://ruletablerepository.googlecode.com/files/t14r120210310080_small.png] ||
+|| `{{{1,2,0},{2,1,0},{3,1,0},{1,8,0}}}` || Still chaotic at 1,000,000,000<br/>Area = ~1,765,744 || [http://ruletablerepository.googlecode.com/files/t14r120210310180.png http://ruletablerepository.googlecode.com/files/t14r120210310180_small.png] ||
 || `{{{1,2,0},{2,1,0},{3,1,0},{2,8,0}}}` || 203,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,2,0},{0,4,0}}}` || 50,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,2,0},{0,8,0}}}` || 30,000,000  ||  ||
