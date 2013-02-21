@@ -12,7 +12,9 @@ Turmites (1-state 3-color) that last more than 2 million steps.
 
 == Unresolved 1-state 3-color relative movement turmites ==
 
-Ed identified these unresolved machines. Add results below as you find them:
+Ed identified these unresolved machines. Add results below as you find them. The image below shows the state of the first eight rules after 20 million steps.
+
+http://www.mathpuzzle.com/t13unresolved.gif
 
 || `{{{1,2,0},{2,1,0},{0,8,0}}}` || Still on grid after 10 billion steps. || 
 || `{{{1,2,0},{2,1,0},{1,8,0}}}` || Still on grid after 10 billion steps. || 
