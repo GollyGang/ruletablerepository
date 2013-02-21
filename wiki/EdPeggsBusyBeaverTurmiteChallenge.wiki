@@ -160,3 +160,7 @@ It would be good to get these to under a hundred. Behavior is still chaotic afte
 || `{{{1,4,0},{2,4,0},{3,2,0},{0,1,0}}}` || 31,000,000  ||  ||
 || `{{{1,4,0},{2,4,0},{3,2,0},{1,1,0}}}` || 21,000,000  ||  ||
 || `{{{1,4,0},{2,4,0},{3,2,0},{2,1,0}}}` || 21,000,000  ||  ||
+
+== Resolved 2-state 3-color relative movement turmites ==
+
+|| `{{{1,1,1},{0,8,1},{1,1,0}},{{2,8,0},{1,1,0},{1,1,1}}}` || diagonal after 10^60 steps by Georgi Gochev ||  http://www.mathpuzzle.com/{{{1,1,1},{0,8,1},{1,1,0}},{{2,8,0},{1,1,0},{1,1,1}}}.jpg||
