@@ -142,7 +142,7 @@ It would be good to get these to under a hundred. Behavior is still chaotic afte
 || `{{{1,2,0},{2,8,0},{3,8,0},{2,2,0}}}` || 23,000,000  ||  ||
 || `{{{1,4,0},{2,1,0},{3,1,0},{0,2,0}}}` || 23,000,000  ||  ||
 || `{{{1,4,0},{2,1,0},{3,1,0},{1,2,0}}}` || 25,000,000  ||  ||
-|| `{{{1,4,0},{2,1,0},{3,1,0},{2,2,0}}}` || 803,430,000,000  || binary counting, makes a width-4 extrusion out of the main blob;<br>see bottom of gens 41633 to 42084. -- Dean Hickerson<br/>Becomes chaotic again after gen 803,430,000,000 after counting to 2<sup>35</sup>. It enters a very long counter again near gen 1.3~1.4 trillion. ||
+|| `{{{1,4,0},{2,1,0},{3,1,0},{2,2,0}}}` || 803,430,000,000  || [http://ruletablerepository.googlecode.com/files/t14r140210310220.png http://ruletablerepository.googlecode.com/files/t14r140210310220_small.png]<br/>Binary counting, makes width-4 extrusions out of the main hull;<br/>see bottom at gens 41633 to 42084. -- Dean Hickerson<br/>First big counter: - 803.43 billion.<br/>Second big counter: 1.3~1.4 trillion - 1.600 trillion.<br/>Third big counter: ~1.75 trillion - ~1.763 trillion.<br/>Fourth big counter: ~1.78 trillion - (expected) 7*10<sup>33</sup>.<br/>Short counters are easyly spotted in the [http://ruletablerepository.googlecode.com/files/t14r140210310220_counterspots.jpg cell visit count map] ||
 || `{{{1,4,0},{2,1,0},{3,2,0},{0,1,0}}}` || 42,000,000  ||  ||
 || `{{{1,4,0},{2,1,0},{3,2,0},{0,2,0}}}` || 25,000,000  ||  ||
 || `{{{1,4,0},{2,1,0},{3,2,0},{0,4,0}}}` || 23,000,000  ||  ||
