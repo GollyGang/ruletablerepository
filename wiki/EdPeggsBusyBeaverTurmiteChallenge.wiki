@@ -30,6 +30,7 @@ Turmites (2-state 2-color) that last more than 50 million steps.
 || `{{{1,2,1},{0,8,0}},{{1,2,0},{0,1,0}}}` || Highway at 7,734,883,000  +1,000 || By Georgi Gochev ||
 || `{{{1,2,1},{0,1,0}},{{0,1,0},{0,2,1}}}` || Highway at 576,150,000  +1,000 || By Mark Jeronimus ||
 || `{{{1,1,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || Highway at 238,951,300  +100 || By Georgi Gochev ||
+|| `{{{1,8,1},{0,2,1}},{{1,4,0},{1,1,0}}}` || Langton switchback at 75,000,000 +100,000 || By Georgi Gochev ||
 || `{{{1,2,1},{0,8,1}},{{1,4,0},{1,1,0}}}` || 2 Highways at 70,500,000 +100,000 || By Georgi Gochev ||
 
 == Unresolved 2-state 2-color relative movement turmites ==
