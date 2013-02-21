@@ -93,7 +93,7 @@ It would be good to get these to under a hundred. Behavior is still chaotic afte
 || `{{{1,2,0},{2,2,0},{3,2,0},{2,8,0}}}` || 103,000,000  ||  ||
 || `{{{1,2,0},{2,2,0},{3,4,0},{0,1,0}}}` || 370,000,000  ||  ||
 || `{{{1,2,0},{2,2,0},{3,4,0},{1,1,0}}}` || 200,000,000  ||  ||
-|| `{{{1,2,0},{2,2,0},{3,8,0},{0,8,0}}}` || 5,000,000,000<br>symmetric, well-known rule  || http://www.mathpuzzle.com/LeftLeftRightRight.gif ||
+|| `{{{1,2,0},{2,2,0},{3,8,0},{0,8,0}}}` || 5,000,000,000<br>symmetric, well-known rule  || [http://ruletablerepository.googlecode.com/files/t14r120220380080.png http://ruletablerepository.googlecode.com/files/t14r120220380080_small.png] ||
 || `{{{1,2,0},{2,2,0},{3,8,0},{1,1,0}}}` || 38,000,000  ||  ||
 || `{{{1,2,0},{2,2,0},{3,8,0},{1,8,0}}}` || 170,000,000  ||  ||
 || `{{{1,2,0},{2,2,0},{3,8,0},{2,1,0}}}` || 52,000,000  ||  ||
