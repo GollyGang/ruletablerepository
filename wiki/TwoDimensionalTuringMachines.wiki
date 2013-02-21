@@ -302,7 +302,7 @@ No-one has investigated extinction turmites on these cases, so there's lots left
 If we consider turmites _without_ a halting state then there is still an interesting question: 
   * What turmite runs the longest before becoming predictable?
 
-We'll collect results here. Let us know what you find.
+Results collected at EdPeggsBusyBeaverTurmiteChallenge. Let us know what you find.
 
 As far as we know these are the current record holders:
 
