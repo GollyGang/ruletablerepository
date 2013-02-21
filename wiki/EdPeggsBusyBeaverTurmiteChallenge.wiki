@@ -1,5 +1,6 @@
 = Ed Pegg's Busy Beaver Turmite Challenge =
 
+What turmite runs the longest before becoming predictable? 
 Subpage of TwoDimensionalTuringMachines.
 
 == Resolved 1-state 3-color relative movement turmites ==
