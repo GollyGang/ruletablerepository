@@ -31,7 +31,7 @@ http://www.mathpuzzle.com/t13unresolved.gif
 Turmites (2-state 2-color) that last more than 50 million steps.
 
 || `{{{1,2,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || *Highway at 8,362,028,000 +1000* || [http://ruletablerepository.googlecode.com/files/t22r121081181010.png http://ruletablerepository.googlecode.com/files/t22r121081181010_small.png]<br/>By Mark Jeronimus. Slightly modified<br/>version of a rule by Georgi Gochev ||
-|| `{{{1,2,1},{0,8,0}},{{1,2,0},{0,1,0}}}` || Highway at 7,734,883,000  +1,000. By Georgi Gochev||  http://ruletablerepository.googlecode.com/files/gochev_7b_turmite.jpg||
+|| `{{{1,2,1},{0,8,0}},{{1,2,0},{0,1,0}}}` || Highway at 7,734,883,000  +1,000. By Georgi Gochev|| [http://ruletablerepository.googlecode.com/files/t22r121080120010_small.png http://ruletablerepository.googlecode.com/files/t22r121080120010_small.png] ||
 || `{{{1,2,1},{0,1,0}},{{0,1,0},{0,2,1}}}` || Highway at 576,150,000  +1,000 || [http://ruletablerepository.googlecode.com/files/t22r121010010021.png http://ruletablerepository.googlecode.com/files/t22r121010010021_small.png] By Mark Jeronimus ||
 || `{{{1,1,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || Highway at 238,951,300  +100. By Georgi Gochev. || [http://ruletablerepository.googlecode.com/files/t22r111081181010.png http://ruletablerepository.googlecode.com/files/t22r111081181010_small.png] By Georgi Gochev ||
 || `{{{1,8,1},{0,2,1}},{{1,4,0},{1,1,0}}}` || Langton switchback at 75,000,000 +100,000 || By Georgi Gochev ||
