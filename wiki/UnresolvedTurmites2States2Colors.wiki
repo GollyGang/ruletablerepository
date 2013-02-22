@@ -9,9 +9,8 @@ There are 880 preliminary unresolved 2-state 2-color turmites.  This is a subpag
 
 Don't worry about the dimensions if you make updates.  Leave the current pictures so that similar turmites can be spotted, but feel free to add new pictures. Lots of groupings of same-behavior turmites are still needed.
 
-|| `{{{1,2,0},{0,2,1}},{{0,2,1},{1,1,0}}}` || chaotic at 40,000 steps<br>population 113 <br>dimensions 19*19 || http://www.mathpuzzle.com/t22r120021021110.gif ||
-|| `{{{0,2,1},{0,8,0}},{{1,4,0},{1,2,1}}}` || chaotic at 40,000 steps<br>population 159 <br>dimensions 19*22 || http://www.mathpuzzle.com/t22r021080140121.gif ||
-|| `{{{1,4,1},{0,2,0}},{{0,8,1},{1,8,0}}}` || chaotic at 40,000 steps<br>population 180 <br>dimensions 19*24 || http://www.mathpuzzle.com/t22r141020081180.gif ||
+|| `{{{1,2,0},{0,2,1}},{{0,2,1},{1,1,0}}}` || chaotic at 52,000,000 steps<br>population 23,921 <br>dimensions 19*19 || http://www.mathpuzzle.com/t22r120021021110.gif ||
+|| `{{{0,2,1},{0,8,0}},{{1,4,0},{1,2,1}}}` || chaotic at 31,000,000 steps<br>population 26,663 <br>dimensions 19*22 || http://www.mathpuzzle.com/t22r021080140121.gif ||
 || `{{{1,2,1},{0,2,0}},{{0,2,0},{0,8,1}}}` <br> `{{{0,2,1},{0,8,0}},{{1,2,0},{0,2,1}}}` || chaotic at 40,000 steps<br>population 198 <br>dimensions 29*30 || http://www.mathpuzzle.com/t22r121020020081.gif ||
 || `{{{0,4,1},{0,2,0}},{{1,4,1},{1,2,0}}}` || chaotic at 40,000 steps<br>population 202 <br>dimensions 24*29 || http://www.mathpuzzle.com/t22r041020141120.gif ||
 || `{{{1,4,1},{0,2,0}},{{1,2,0},{0,4,1}}}` || chaotic at 40,000 steps<br>population 218 <br>dimensions 24*31 || http://www.mathpuzzle.com/t22r141020120041.gif ||
