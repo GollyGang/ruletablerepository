@@ -38,6 +38,7 @@ Turmites (2-state 2-color) that last more than 50 million steps, or that have in
 || `{{{1,2,1},{0,8,1}},{{1,4,0},{1,1,0}}}` || Langton switchback at 70,500,000 +100,000 || [http://ruletablerepository.googlecode.com/files/t22r121081140110.png http://ruletablerepository.googlecode.com/files/t22r121081140110_small.png] By Georgi Gochev ||
 || `{{{0,2,1},{0,2,0}},{{1,2,1},{0,1,0}}}` || trail at around 16 million || by Ed Pegg ||
 || `{{{0,2,1},{1,1,0}},{{1,1,0},{1,1,1}}}` || 4 trails at around 6 million || by Ed Pegg ||
+|| `{{{1,2,0},{1,8,1}},{{1,4,1},{0,8,0}}}` || interesting behavior, trail at 2 million || by Ed Pegg ||
 
 == Unresolved 2-state 2-color relative movement turmites ==
 
