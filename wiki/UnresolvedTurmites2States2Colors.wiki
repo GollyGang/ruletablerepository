@@ -2,7 +2,7 @@
 
 = Introduction =
 
-There are 880 preliminary unresolved turmites.
+There are 880 preliminary unresolved 2-state 2-color turmites.  This is a subpage of EdPeggsBusyBeaverTurmiteChallenge.
 
 
 = Details =
