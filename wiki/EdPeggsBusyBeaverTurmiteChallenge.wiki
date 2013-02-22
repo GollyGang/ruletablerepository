@@ -31,8 +31,8 @@ http://www.mathpuzzle.com/t13unresolved.gif
 
 Turmites (2-state 2-color) that last more than 50 million steps, or that have interesting behavior.
 
-|| `{{{1,2,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || *Highway at 8,362,028,000 +1000* || [http://ruletablerepository.googlecode.com/files/t22r121081181010.png http://ruletablerepository.googlecode.com/files/t22r121081181010_small.png]<br/>By Mark Jeronimus. Slightly modified<br/>version of a rule by Georgi Gochev ||
-|| `{{{1,2,1},{0,8,0}},{{1,2,0},{0,1,0}}}`<br/>Mirror version:<br/>`{{{1,8,1},{0,2,0}},{{1,8,0},{0,1,0}}}` || Wedge at 7,734,883,000  +1,000 || [http://ruletablerepository.googlecode.com/files/t22r121080120010.png http://ruletablerepository.googlecode.com/files/t22r121080120010_small.png] By Georgi Gochev ||
+|| `{{{1,2,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || *Highway at 8,362,028,000 +1000* || [http://ruletablerepository.googlecode.com/files/t22r121081181010.png http://ruletablerepository.googlecode.com/files/t22r121081181010_small.png]<br>By Mark Jeronimus. Slightly modified<br>version of a rule by Georgi Gochev ||
+|| `{{{1,2,1},{0,8,0}},{{1,2,0},{0,1,0}}}`<br>Mirror version:<br>`{{{1,8,1},{0,2,0}},{{1,8,0},{0,1,0}}}` || Wedge at 7,734,883,000  +1,000 || [http://ruletablerepository.googlecode.com/files/t22r121080120010.png http://ruletablerepository.googlecode.com/files/t22r121080120010_small.png] By Georgi Gochev ||
 || `{{{0,2,1},{1,2,0}},{{1,8,1},{0,4,0}}}` || trail at 3,100,000,000 || http://www.mathpuzzle.com/t22r021120181040.gif ||
 || `{{{1,2,1},{0,1,1}},{{1,2,0},{0,8,1}}}` || wedge at 838,149,257 || http://ruletablerepository.googlecode.com/files/{{1,2,1},{0,1,1}},{{1,2,0},{0,8,1}}}.png ||
 || `{{{1,2,1},{0,1,0}},{{0,1,0},{0,2,1}}}` || Highway at 576,150,000  +1,000 || [http://ruletablerepository.googlecode.com/files/t22r121010010021.png http://ruletablerepository.googlecode.com/files/t22r121010010021_small.png] By Mark Jeronimus ||
@@ -41,28 +41,28 @@ Turmites (2-state 2-color) that last more than 50 million steps, or that have in
 || `{{{1,2,1},{0,8,1}},{{1,4,0},{1,1,0}}}` || Langton switchback at 70,500,000 +100,000 || [http://ruletablerepository.googlecode.com/files/t22r121081140110.png http://ruletablerepository.googlecode.com/files/t22r121081140110_small.png] By Georgi Gochev ||
 || `{{{1,2,1},{0,4,0}},{{0,1,0},{1,1,1}}}`|| wedge at 67,689,229 || http://ruletablerepository.googlecode.com/files/{{{1,2,1},{0,4,0}},{{0,1,0},{1,1,1}}}.png ||
 || `{{{1,2,0},{1,4,1}},{{1,1,0},{0,4,1}}}` || trail at 62,000,000 steps || http://www.mathpuzzle.com/t22r120141110041.gif ||
-|| `{{{0,2,1},{0,2,0}},{{1,2,1},{0,1,0}}}` <br> `{{{1,2,0},{0,1,1}},{{0,2,0},{0,2,1}}}` || trail at 15,717,000, interesting behavior || http://www.mathpuzzle.com/t22r021020121010.gif by Ed Pegg ||
+|| `{{{0,2,1},{0,2,0}},{{1,2,1},{0,1,0}}}` <br> `{{{1,2,0},{0,1,1}},{{0,2,0},{0,2,1}}}` || trail at 15,717,000, interesting behavior || http://www.mathpuzzle.com/t22r021020121010.gif<br>by Ed Pegg ||
 || `{{{1,2,0},{0,2,1}},{{1,2,0},{1,8,0}}}` <br> `{{{1,2,1},{1,8,1}},{{1,2,1},{0,2,0}}}` || Worm Trails - stuck at 4 million steps || http://www.mathpuzzle.com/t22r120021120180.gif ||
 || `{{{0,2,1},{1,1,0}},{{1,1,0},{1,1,1}}}` || 4 trails at 1,830,000 million.<br>Likes sets of 4 trails || by Ed Pegg ||
-|| `{{{1,2,0},{1,8,1}},{{0,1,0},{1,2,0}}}`<br/>`{{{0,1,1},{1,2,1}},{{1,2,1},{1,8,0}}}`<br/>180° rotated:<br/>`{{{0,1,1},{1,8,1}},{{1,8,1},{1,2,0}}}` || trapped in a 10*10 square cycle around 300,000 || [http://ruletablerepository.googlecode.com/files/t22r120181010120.png] ||
+|| `{{{1,2,0},{1,8,1}},{{0,1,0},{1,2,0}}}`<br>`{{{0,1,1},{1,2,1}},{{1,2,1},{1,8,0}}}`<br>180° rotated version:<br>`{{{0,1,1},{1,8,1}},{{1,8,1},{1,2,0}}}` || trapped in a 10*10 square cycle around 300,000 || [http://ruletablerepository.googlecode.com/files/t22r120181010120.png] ||
 || `{{{1,2,0},{1,8,1}},{{1,4,1},{0,8,0}}}` || interesting behavior, trail at 373,080 || by Ed Pegg ||
 
 == Unresolved 2-state 2-color relative movement turmites ==
 
 A preliminary list of hundreds is at UnresolvedTurmites2States2Colors. 
 
-|| `{{{1,2,0},{1,8,1}},{{1,8,1},{0,8,0}}}` || Still chaotic at 1,021,280,049,658<br/>Area = ~209,174,272 || [http://ruletablerepository.googlecode.com/files/t22r120181181080.png http://ruletablerepository.googlecode.com/files/t22r120181181080_small.png] ||
-|| `{{{1,2,1},{0,2,0}},{{1,4,1},{0,1,0}}}` || Still chaotic at 305,795,580,179<br/>Area = ~180,359,552 || [http://ruletablerepository.googlecode.com/files/t22r121020141010.png http://ruletablerepository.googlecode.com/files/t22r121020141010_small.png] ||
-|| `{{{1,2,1},{0,4,0}},{{1,8,1},{1,8,0}}}` || Still chaotic at 567,287,499,009<br/>Area = ~216,398,592|| [http://ruletablerepository.googlecode.com/files/t22r121040181180.png http://ruletablerepository.googlecode.com/files/t22r121040181180_small.png] ||
-|| `{{{1,1,1},{0,2,0}},{{1,2,0},{0,1,1}}}` || Still chaotic at 113,486,027,265<br/>Area = ~175,178,368 || [http://ruletablerepository.googlecode.com/files/t22r111020120011.png http://ruletablerepository.googlecode.com/files/t22r111020120011_small.png]||
+|| `{{{1,2,0},{1,8,1}},{{1,8,1},{0,8,0}}}` || Still chaotic at 1,021,280,049,658<br>Area = ~209,174,272 || [http://ruletablerepository.googlecode.com/files/t22r120181181080.png http://ruletablerepository.googlecode.com/files/t22r120181181080_small.png] ||
+|| `{{{1,2,1},{0,2,0}},{{1,4,1},{0,1,0}}}` || Still chaotic at 305,795,580,179<br>Area = ~180,359,552 || [http://ruletablerepository.googlecode.com/files/t22r121020141010.png http://ruletablerepository.googlecode.com/files/t22r121020141010_small.png] ||
+|| `{{{1,2,1},{0,4,0}},{{1,8,1},{1,8,0}}}` || Still chaotic at 567,287,499,009<br>Area = ~216,398,592|| [http://ruletablerepository.googlecode.com/files/t22r121040181180.png http://ruletablerepository.googlecode.com/files/t22r121040181180_small.png] ||
+|| `{{{1,1,1},{0,2,0}},{{1,2,0},{0,1,1}}}` || Still chaotic at 113,486,027,265<br>Area = ~175,178,368 || [http://ruletablerepository.googlecode.com/files/t22r111020120011.png http://ruletablerepository.googlecode.com/files/t22r111020120011_small.png]||
 
 == Resolved 1-state 4-color relative movement turmites ==
 
 Turmites (1-state 4-color) that last more than 50 million steps.
 
-|| `{{{1,2,0},{2,4,0},{3,2,0},{3,1,0}}}` || *2 Highways at 4,391,220,000 +10000* || [http://ruletablerepository.googlecode.com/files/t14r120240320310.png http://ruletablerepository.googlecode.com/files/t14r120240320310_small.png]<br/>By Dean Hickerson ||
+|| `{{{1,2,0},{2,4,0},{3,2,0},{3,1,0}}}` || *2 Highways at 4,391,220,000 +10000* || [http://ruletablerepository.googlecode.com/files/t14r120240320310.png http://ruletablerepository.googlecode.com/files/t14r120240320310_small.png]<br>By Dean Hickerson ||
 || `{{{1,2,0},{2,4,0},{3,4,0},{0,8,0}}}` || Highway at 1,589,104,000 +1,000 || [http://ruletablerepository.googlecode.com/files/t14r120240340080.png http://ruletablerepository.googlecode.com/files/t14r120240340080_small.png] ||
-|| `{{{1,4,0},{2,2,0},{3,8,0},{0,2,0}}}` || Highway at 1,468,709,000 +1000 || [http://ruletablerepository.googlecode.com/files/t14r140220380020.png http://ruletablerepository.googlecode.com/files/t14r140220380020_small.png]<br/>by Ed Pegg Jr ||
+|| `{{{1,4,0},{2,2,0},{3,8,0},{0,2,0}}}` || Highway at 1,468,709,000 +1000 || [http://ruletablerepository.googlecode.com/files/t14r140220380020.png http://ruletablerepository.googlecode.com/files/t14r140220380020_small.png]<br>by Ed Pegg Jr ||
 || `{{{1,4,0},{2,4,0},{3,1,0},{0,2,0}}}` || Highway at 550,000,000<br>by Ed Pegg Jr  || http://www.mathpuzzle.com/t14r140240310020.gif ||
 || `{{{1,2,0},{2,2,0},{3,4,0},{0,8,0}}}` || Highway at 255,030,000 +10,000 || [http://ruletablerepository.googlecode.com/files/t14r120220340080.png http://ruletablerepository.googlecode.com/files/t14r120220340080_small.png] ||
 || `{{{1,2,0},{2,2,0},{3,4,0},{0,4,0}}}` || Highway at 148,485,000 +1,000 || [http://ruletablerepository.googlecode.com/files/t14r120220340040.png http://ruletablerepository.googlecode.com/files/t14r120220340040_small.png] By Ed Pegg ||
@@ -73,8 +73,8 @@ Turmites (1-state 4-color) that last more than 50 million steps.
 It would be good to get these to under a hundred. Behavior is still chaotic after the given number of steps run. If you run any of these for longer, and they don't resolve, put in your number of steps. 
 
 || code || steps run || notes ||
-|| `{{{1,2,0},{2,1,0},{3,1,0},{0,8,0}}}` || Still chaotic at 1,000,000,000<br/>Area = ~3,024,290 || [http://ruletablerepository.googlecode.com/files/t14r120210310080.png http://ruletablerepository.googlecode.com/files/t14r120210310080_small.png] ||
-|| `{{{1,2,0},{2,1,0},{3,1,0},{1,8,0}}}` || Still chaotic at 1,000,000,000<br/>Area = ~2,595,880 || [http://ruletablerepository.googlecode.com/files/t14r120210310180.png http://ruletablerepository.googlecode.com/files/t14r120210310180_small.png] ||
+|| `{{{1,2,0},{2,1,0},{3,1,0},{0,8,0}}}` || Still chaotic at 1,000,000,000<br>Area = ~3,024,290 || [http://ruletablerepository.googlecode.com/files/t14r120210310080.png http://ruletablerepository.googlecode.com/files/t14r120210310080_small.png] ||
+|| `{{{1,2,0},{2,1,0},{3,1,0},{1,8,0}}}` || Still chaotic at 1,000,000,000<br>Area = ~2,595,880 || [http://ruletablerepository.googlecode.com/files/t14r120210310180.png http://ruletablerepository.googlecode.com/files/t14r120210310180_small.png] ||
 || `{{{1,2,0},{2,1,0},{3,1,0},{2,8,0}}}` || 203,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,2,0},{0,4,0}}}` || 50,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,2,0},{0,8,0}}}` || 30,000,000  ||  ||
@@ -88,7 +88,7 @@ It would be good to get these to under a hundred. Behavior is still chaotic afte
 || `{{{1,2,0},{2,1,0},{3,4,0},{1,2,0}}}` || 25,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,4,0},{1,8,0}}}` || 23,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,8,0},{0,1,0}}}` || 203,000,000  ||  ||
-|| `{{{1,2,0},{2,1,0},{3,8,0},{0,2,0}}}` || Still chaotic at 509,528,543,745<br/>Area = ~209,799,168 || [http://ruletablerepository.googlecode.com/files/t14r120210380020.png http://ruletablerepository.googlecode.com/files/t14r120210380020_small.png] ||
+|| `{{{1,2,0},{2,1,0},{3,8,0},{0,2,0}}}` || Still chaotic at 509,528,543,745<br>Area = ~209,799,168 || [http://ruletablerepository.googlecode.com/files/t14r120210380020.png http://ruletablerepository.googlecode.com/files/t14r120210380020_small.png] ||
 || `{{{1,2,0},{2,1,0},{3,8,0},{0,4,0}}}` || 27,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,8,0},{0,8,0}}}` || 31,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,8,0},{1,1,0}}}` || 27,000,000  ||  ||
@@ -127,7 +127,7 @@ It would be good to get these to under a hundred. Behavior is still chaotic afte
 || `{{{1,2,0},{2,4,0},{3,8,0},{2,1,0}}}` || 33,000,000  ||  ||
 || `{{{1,2,0},{2,8,0},{3,1,0},{0,1,0}}}` || 3,300,000,000  ||  ||
 || `{{{1,2,0},{2,8,0},{3,1,0},{0,2,0}}}` || 126,000,000  ||  ||
-|| `{{{1,2,0},{2,8,0},{3,1,0},{0,4,0}}}` || Still chaotic at 11,000,000,000<br/>Area = ~16,608,000 || [http://ruletablerepository.googlecode.com/files/t14r120280310040.png http://ruletablerepository.googlecode.com/files/t14r120280310040_small.png] ||
+|| `{{{1,2,0},{2,8,0},{3,1,0},{0,4,0}}}` || Still chaotic at 11,000,000,000<br>Area = ~16,608,000 || [http://ruletablerepository.googlecode.com/files/t14r120280310040.png http://ruletablerepository.googlecode.com/files/t14r120280310040_small.png] ||
 || `{{{1,2,0},{2,8,0},{3,1,0},{0,8,0}}}` || 130,000,000  ||  ||
 || `{{{1,2,0},{2,8,0},{3,1,0},{1,1,0}}}` || 105,000,000  ||  ||
 || `{{{1,2,0},{2,8,0},{3,1,0},{1,4,0}}}` || 119,000,000  ||  ||
