@@ -859,10 +859,10 @@ Don't worry about the dimensions if you make updates.  Leave the current picture
 || `{{{0,2,1},{1,2,1}},{{1,8,1},{1,8,0}}}` || chaotic at 40,000 steps<br>population 7518<br>dimensions 116*138 || http://www.mathpuzzle.com/t22r021121181180.gif ||
 || `{{{1,2,0},{1,2,1}},{{0,8,0},{1,8,0}}}` || chaotic at 40,000 steps<br>population 7518<br>dimensions 116*138 || http://www.mathpuzzle.com/t22r120121080180.gif ||
 || `{{{1,2,1},{1,1,0}},{{1,1,0},{1,4,0}}}` || chaotic at 40,000 steps<br>population 7652<br>dimensions 102*130 || http://www.mathpuzzle.com/t22r121110110140.gif ||
-|| `{{{1,4,1},{1,2,1}},{{1,8,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 7808<br>dimensions 122*196 || http://www.mathpuzzle.com/t22r141121180111.gif ||
-|| `{{{1,2,1},{0,4,1}},{{1,1,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 7915<br>dimensions 125*130 || http://www.mathpuzzle.com/t22r121041110111.gif ||
-|| `{{{1,2,1},{1,1,0}},{{1,4,0},{0,8,1}}}` || chaotic at 40,000 steps<br>population 8562<br>dimensions 163*171 || http://www.mathpuzzle.com/t22r121110140081.gif ||
-|| `{{{1,4,1},{0,2,0}},{{1,8,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 8789<br>dimensions 153*158 || http://www.mathpuzzle.com/t22r141020180111.gif ||
+|| `{{{1,4,1},{1,2,1}},{{1,8,0},{1,1,1}}}` || chaotic at 1,764,000,000 steps<br>population 31,000,000<br>dimensions 122*196 || http://www.mathpuzzle.com/t22r141121180111.gif ||
+|| `{{{1,2,1},{0,4,1}},{{1,1,0},{1,1,1}}}` || chaotic at 61,000,000 steps<br>population 2,730,000<br>dimensions 125*130 || http://www.mathpuzzle.com/t22r121041110111.gif ||
+|| `{{{1,2,1},{1,1,0}},{{1,4,0},{0,8,1}}}` || chaotic at 287,000,000 steps<br>population 31,632,000<br>dimensions 163*171 || http://www.mathpuzzle.com/t22r121110140081.gif ||
+|| `{{{1,4,1},{0,2,0}},{{1,8,0},{1,1,1}}}` || chaotic at 337,000,000 steps<br>population 37,175,000<br>dimensions 153*158 || http://www.mathpuzzle.com/t22r141020180111.gif ||
 || `{{{1,2,1},{1,2,1}},{{1,1,0},{1,1,1}}}` || chaotic at 100,000,000 steps<br>population 3,940,429<br>dimensions 149*201 || http://www.mathpuzzle.com/t22r121121110111.gif ||
 
 Many of these need to be grouped together.
