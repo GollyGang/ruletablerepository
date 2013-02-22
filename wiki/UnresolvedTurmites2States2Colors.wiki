@@ -26,10 +26,8 @@ Don't worry about the dimensions if you make updates.  Leave the current picture
 || `{{{1,4,1},{0,2,0}},{{0,8,1},{1,2,0}}}` || chaotic at 40,000 steps<br>population 266 <br>dimensions 29*30 || http://www.mathpuzzle.com/t22r141020081120.gif ||
 || `{{{0,4,1},{1,2,0}},{{1,4,1},{0,1,0}}}` || chaotic at 40,000 steps<br>population 266 <br>dimensions 30*31 || http://www.mathpuzzle.com/t22r041120141010.gif ||
 || `{{{0,2,1},{0,2,0}},{{1,2,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 273 <br>dimensions 27*34 || http://www.mathpuzzle.com/t22r021020120111.gif ||
-|| `{{{0,4,1},{0,2,0}},{{1,2,0},{1,8,1}}}` || chaotic at 40,000 steps<br>population 274 <br>dimensions 28*31 || http://www.mathpuzzle.com/t22r041020120181.gif ||
-|| `{{{1,2,1},{1,8,0}},{{0,4,0},{0,2,1}}}` || chaotic at 40,000 steps<br>population 275 <br>dimensions 28*31 || http://www.mathpuzzle.com/t22r121180040021.gif ||
-|| `{{{0,4,1},{0,4,0}},{{1,2,1},{1,2,0}}}` || chaotic at 40,000 steps<br>population 291 <br>dimensions 30*34 || http://www.mathpuzzle.com/t22r041040121120.gif ||
-|| `{{{1,2,0},{0,2,1}},{{1,4,1},{0,4,0}}}` || chaotic at 40,000 steps<br>population 296 <br>dimensions 30*34 || http://www.mathpuzzle.com/t22r120021141040.gif ||
+|| `{{{0,4,1},{0,2,0}},{{1,2,0},{1,8,1}}}` <br> `{{{1,2,1},{1,8,0}},{{0,4,0},{0,2,1}}}` || chaotic at 40,000 steps<br>population 274 <br>dimensions 28*31 || http://www.mathpuzzle.com/t22r041020120181.gif ||
+|| `{{{0,4,1},{0,4,0}},{{1,2,1},{1,2,0}}}` <br> `{{{1,2,0},{0,2,1}},{{1,4,1},{0,4,0}}}` || chaotic at 40,000 steps<br>population 296 <br>dimensions 30*34 || http://www.mathpuzzle.com/t22r120021141040.gif ||
 || `{{{0,2,1},{1,1,0}},{{1,2,1},{0,2,0}}}` || chaotic at 40,000 steps<br>population 305 <br>dimensions 27*40 || http://www.mathpuzzle.com/t22r021110121020.gif ||
 || `{{{0,2,1},{0,2,0}},{{1,4,1},{0,1,0}}}` || chaotic at 40,000 steps<br>population 314 <br>dimensions 30*40 || http://www.mathpuzzle.com/t22r021020141010.gif ||
 || `{{{1,4,0},{0,1,1}},{{0,2,0},{0,2,1}}}` || chaotic at 40,000 steps<br>population 315 <br>dimensions 30*40 || http://www.mathpuzzle.com/t22r140011020021.gif ||
