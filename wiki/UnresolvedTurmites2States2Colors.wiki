@@ -859,7 +859,7 @@ need something?
 || `{{{1,2,0},{1,1,1}},{{1,1,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 4662<br>dimensions 106*122 || http://www.mathpuzzle.com/t22r120111110011.gif ||
 || `{{{1,2,1},{1,1,0}},{{1,4,0},{1,2,0}}}` || chaotic at 40,000 steps<br>population 4760<br>dimensions 77*108 || http://www.mathpuzzle.com/t22r121110140120.gif ||
 || `{{{1,4,1},{1,1,1}},{{1,2,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 4795<br>dimensions 84*88 || http://www.mathpuzzle.com/t22r141111120111.gif ||
-|| `{{{1,2,0},{0,8,1}},{{0,1,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 4808<br>dimensions 134*153 || http://www.mathpuzzle.com/t22r120081010011.gif |
+|| `{{{1,2,0},{0,8,1}},{{0,1,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 4808<br>dimensions 134*153 || http://www.mathpuzzle.com/t22r120081010011.gif ||
 || `{{{0,1,1},{0,1,0}},{{1,2,1},{0,8,0}}}` || chaotic at 40,000 steps<br>population 4809<br>dimensions 134*153 || http://www.mathpuzzle.com/t22r011010121080.gif ||
 || `{{{1,4,1},{1,2,1}},{{1,2,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 4860<br>dimensions 86*100 || http://www.mathpuzzle.com/t22r141121120111.gif ||
 || `{{{1,2,1},{1,1,0}},{{1,4,0},{1,1,0}}}` || chaotic at 40,000 steps<br>population 4862<br>dimensions 86*97 || http://www.mathpuzzle.com/t22r121110140110.gif ||
