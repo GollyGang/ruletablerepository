@@ -2,7 +2,7 @@
 
 = Introduction =
 
-There are 880 preliminary unresolved 2-state 2-color turmites.  This is a subpage of EdPeggsBusyBeaverTurmiteChallenge. The generated patterns were canonicalized with rotations and reflections.
+There are about 700 unresolved 2-state 2-color turmites listed below.  This is a subpage of EdPeggsBusyBeaverTurmiteChallenge. The generated patterns were canonicalized with rotations and reflections.  Not all of them have been run for millions of steps, so quite a few will have trails or traps quickly.  If you find these, feel free to mark them or remove them from the list.  If they last awhile, or show very interesting behavior, move them to the main page.
 
 
 = Details =
