@@ -44,10 +44,9 @@ Don't worry about the dimensions if you make updates.  Leave the current picture
 || `{{{0,1,1},{1,4,0}},{{1,4,1},{0,2,0}}}` || chaotic at 40,000 steps<br>population 407 <br>dimensions 38*39 || http://www.mathpuzzle.com/t22r011140141020.gif ||
 || `{{{1,4,0},{0,2,1}},{{0,1,0},{1,4,1}}}` || chaotic at 40,000 steps<br>population 407 <br>dimensions 38*39 || http://www.mathpuzzle.com/t22r140021010141.gif ||
 || `{{{1,2,0},{1,2,1}},{{1,8,1},{0,4,0}}}` || chaotic at 40,000 steps<br>population 416 <br>dimensions 48*56 || http://www.mathpuzzle.com/t22r120121181040.gif ||
-|| `{{{1,2,1},{1,2,0}},{{0,1,0},{0,4,1}}}` || chaotic at 40,000 steps<br>population 431 <br>dimensions 38*39 || http://www.mathpuzzle.com/t22r121120010041.gif ||
 || `{{{0,2,1},{0,4,0}},{{1,2,1},{1,1,0}}}` <br> `{{{1,2,0},{1,1,1}},{{0,2,0},{0,4,1}}}` || chaotic at 40,000 steps<br>population 433 <br>dimensions 34*41 || http://www.mathpuzzle.com/t22r120111020041.gif ||
-|| `{{{1,4,0},{0,1,1}},{{0,2,0},{1,2,1}}}` <br> `{{{0,2,1},{1,2,0}},{{1,4,1},{0,1,0}}}` || chaotic at 40,000 steps<br>population 434 <br>dimensions 38*39 || http://www.mathpuzzle.com/t22r021120141010.gif ||
 || `{{{1,2,0},{0,1,1}},{{1,4,1},{0,2,0}}}` || chaotic at 40,000 steps<br>population 436 <br>dimensions 34*41 || http://www.mathpuzzle.com/t22r120011141020.gif ||
+|| `{{{1,2,1},{1,2,0}},{{0,1,0},{0,4,1}}}` <br> `{{{1,4,0},{0,1,1}},{{0,2,0},{1,2,1}}}` <br> `{{{0,2,1},{1,2,0}},{{1,4,1},{0,1,0}}}` || chaotic at 23,000,000 steps<br>population 41,000 <br>dimensions 38*39 || http://www.mathpuzzle.com/t22r021120141010.gif ||
 || `{{{1,2,1},{0,1,1}},{{1,4,0},{0,2,0}}}` || chaotic at 40,000 steps<br>population 442 <br>dimensions 39*44 || http://www.mathpuzzle.com/t22r121011140020.gif ||
 || `{{{0,2,1},{0,8,1}},{{1,2,0},{0,2,1}}}` <br> `{{{1,2,1},{0,2,0}},{{0,2,0},{0,8,0}}}` || chaotic at 40,000 steps<br>population 446 <br>dimensions 43*67 || http://www.mathpuzzle.com/t22r121020020080.gif ||
 || `{{{1,2,1},{1,1,1}},{{1,4,0},{0,8,1}}}` || chaotic at 40,000 steps<br>population 447 <br>dimensions 30*32 || http://www.mathpuzzle.com/t22r121111140081.gif ||
