@@ -17,7 +17,6 @@ Don't worry about the dimensions if you make updates.  Leave the current picture
 || `{{{1,2,0},{0,4,1}},{{0,1,0},{1,4,1}}}` <br> `{{{1,2,0},{1,1,1}},{{0,4,1},{0,4,0}}}`|| chaotic at 40,000 steps<br>population 232 <br>dimensions 25*36 || http://www.mathpuzzle.com/t22r120041010141.gif ||
 || `{{{1,2,1},{0,4,0}},{{0,2,1},{1,4,0}}}` <br> `{{{1,4,0},{1,2,1}},{{0,2,1},{0,4,0}}}` || chaotic at 40,000 steps<br>population 240 <br>dimensions 24*28 || http://www.mathpuzzle.com/t22r121040021140.gif ||
 || `{{{0,2,1},{1,2,0}},{{1,8,1},{0,4,0}}}` || chaotic at 40,000 steps<br>population 241 <br>dimensions 32*32 || http://www.mathpuzzle.com/t22r021120181040.gif ||
-|| `{{{1,2,0},{0,1,1}},{{0,2,0},{0,2,1}}}` || chaotic at 40,000 steps<br>population 243 <br>dimensions 35*37 || http://www.mathpuzzle.com/t22r120011020021.gif ||
 || `{{{1,4,1},{1,2,0}},{{0,1,0},{0,4,1}}}` || chaotic at 40,000 steps<br>population 265 <br>dimensions 30*32 || http://www.mathpuzzle.com/t22r141120010041.gif ||
 || `{{{1,4,1},{0,2,0}},{{0,8,1},{1,2,0}}}` || chaotic at 40,000 steps<br>population 266 <br>dimensions 29*30 || http://www.mathpuzzle.com/t22r141020081120.gif ||
 || `{{{0,4,1},{1,2,0}},{{1,4,1},{0,1,0}}}` || chaotic at 40,000 steps<br>population 266 <br>dimensions 30*31 || http://www.mathpuzzle.com/t22r041120141010.gif ||
