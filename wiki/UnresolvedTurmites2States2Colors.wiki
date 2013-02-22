@@ -2,15 +2,13 @@
 
 = Introduction =
 
-There are over 900 preliminary unresolved turmites.
+There are 880 preliminary unresolved turmites.
 
 
 = Details =
 
-need something?
+Don't worry about the dimensions if you make updates.  Leave the current pictures so that similar turmites can be spotted, but feel free to add new pictures.
 
-|| `{{{1,1,1},{0,1,1}},{{1,2,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 44  <br>dimensions 8*25 || http://www.mathpuzzle.com/t22r111011120011.gif ||
-|| `{{{1,2,1},{1,4,1}},{{1,2,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 50  <br>dimensions 12*26 || http://www.mathpuzzle.com/t22r121141120011.gif ||
 || `{{{1,2,0},{0,2,1}},{{0,2,1},{1,1,0}}}` || chaotic at 40,000 steps<br>population 113 <br>dimensions 19*19 || http://www.mathpuzzle.com/t22r120021021110.gif ||
 || `{{{1,4,1},{0,2,1}},{{0,2,1},{1,2,0}}}` || chaotic at 40,000 steps<br>population 151 <br>dimensions 19*20 || http://www.mathpuzzle.com/t22r141021021120.gif ||
 || `{{{1,2,1},{0,8,1}},{{1,4,0},{1,1,0}}}` || chaotic at 40,000 steps<br>population 158 <br>dimensions 19*19 || http://www.mathpuzzle.com/t22r121081140110.gif ||
