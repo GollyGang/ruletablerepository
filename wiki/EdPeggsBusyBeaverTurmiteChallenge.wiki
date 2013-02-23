@@ -159,7 +159,7 @@ It would be good to get these to under a hundred. Behavior is still chaotic afte
 || `{{{1,4,0},{2,1,0},{3,2,0},{0,2,0}}}` || 539,000,000  || Population 970,000 ||
 || `{{{1,4,0},{2,1,0},{3,2,0},{0,4,0}}}` || 572,000,000  || Population 741,811  ||
 || `{{{1,4,0},{2,1,0},{3,2,0},{1,1,0}}}` || 472,000,000  || Population 1,500,000 ||
-|| `{{{1,4,0},{2,1,0},{3,2,0},{1,2,0}}}` || 1,800,000,000  || This rule loves _ternary_ counters inside it's hull. One from ~2,900,000 to ~1,868,000,000, and from 1,870,000,000 to (projected) 14.6 trillion. ||
+|| `{{{1,4,0},{2,1,0},{3,2,0},{1,2,0}}}` || 1,800,000,000  || This rule loves _ternary_ counters inside it's hull.<br>First counter: from ~2,900,000 to ~1,868,000,000.<br>Second counter: from 1,870,000,000 to (projected) 14.6 trillion. ||
 || `{{{1,4,0},{2,1,0},{3,2,0},{1,4,0}}}` || 254,000,000  || Population 788,545 ||
 || `{{{1,4,0},{2,2,0},{3,1,0},{0,1,0}}}` || 254,000,000  || Population 342,384 ||
 || `{{{1,4,0},{2,2,0},{3,1,0},{0,2,0}}}` || 220,000,000  || Population 388,428 ||
