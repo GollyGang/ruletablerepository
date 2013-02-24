@@ -48,7 +48,7 @@ Turmites (2-state 2-color) that last more than 50 million steps, or that have in
 || `{{{1,2,0},{1,8,1}},{{0,1,0},{1,2,0}}}`<br>`{{{0,1,1},{1,2,1}},{{1,2,1},{1,8,0}}}` || Trapped in a 10*10 cycle at 297,000 +1000 || http://ruletablerepository.googlecode.com/files/t22r120181010120.png ||
 || `{{{1,2,0},{1,8,1}},{{1,4,1},{0,8,0}}}` || interesting behavior, trail at 373,080 || by Ed Pegg ||
 || `{{{0,1,1},{0,4,0}},{{1,2,0},{1,4,1}}}`<br>`{{{0,1,1},{1,4,0}},{{1,4,1},{0,8,0}}}`<br>`{{{0,2,1},{1,4,0}},{{1,4,1},{0,1,0}}}`<br>`{{{0,8,1},{0,4,0}},{{1,1,0},{1,4,1}}}`<br>`{{{1,1,1},{1,4,0}},{{0,8,0},{0,4,1}}}`<br>`{{{1,2,1},{1,4,0}},{{0,1,0},{0,4,1}}}`<br>`{{{1,4,0},{0,1,1}},{{0,2,0},{1,4,1}}}`<br>`{{{1,4,0},{0,8,1}},{{0,1,0},{1,4,1}}}` || Infinitely growing spiral with constantly<br>changing random interior. || http://ruletablerepository.googlecode.com/files/t22r011140141080.png<br>by Mark Jeronimus ||
-|| `{{{1,4,1},{0,2,0}},{{1,2,0},{0,8,0}}}`<br>`{{{1,4,1},{0,8,0}},{{1,8,0},{0,2,0}}}` || Unbusy beaver.<br>Highway starts at gen 14 (period = 15) || By Mark Jeronimus ||
+|| `{{{0,4,1},{0,2,0}},{{1,2,1},{1,4,0}}}`<br>`{{{0,4,1},{0,8,0}},{{1,8,1},{1,4,0}}}` || Unbusy beaver.<br>Highway starts at gen 4 (period = 34) || By Mark Jeronimus ||
 
 == Unresolved 2-state 2-color relative movement turmites ==
 
