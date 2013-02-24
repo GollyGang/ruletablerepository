@@ -182,4 +182,4 @@ It would be good to get these to under a hundred. Behavior is still chaotic afte
 
 == Resolved 2-state 3-color relative movement turmites ==
 
-|| `{{{1,1,1},{0,8,1},{1,1,0}},{{2,8,0},{1,1,0},{1,1,1}}}` || diagonal after 10^60 steps by Georgi Gochev ||  http://www.mathpuzzle.com/{{{1,1,1},{0,8,1},{1,1,0}},{{2,8,0},{1,1,0},{1,1,1}}}.jpg||
+|| `{{{1,1,1},{0,8,1},{1,1,0}},{{2,8,0},{1,1,0},{1,1,1}}}` || Diagonal highway at 1.9*10^61 steps<br>(19 245 593 920 695 563 221 920 530 371 554 705 348 128 931 930 634 788 721 876 766)<br>by Georgi Gochev||  http://www.mathpuzzle.com/{{{1,1,1},{0,8,1},{1,1,0}},{{2,8,0},{1,1,0},{1,1,1}}}.jpg||
