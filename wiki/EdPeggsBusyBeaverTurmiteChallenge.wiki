@@ -74,7 +74,9 @@ Turmites (1-state 4-color) that last more than 50 million steps.
 
 == Unresolved 1-state 4-color relative movement turmites ==
 
-It would be good to get these to under a hundred. Behavior is still chaotic after the given number of steps run. If you run any of these for longer, and they don't resolve, put in your number of steps. 
+It would be good to get these to under a hundred. Behavior is still chaotic after the given number of steps run. If you run any of these for longer, and they don't resolve, put in your number of steps.
+
+The population numbers are not the same as the area (number of unique visited cells), and as such will be on average 25% too low if a rule creates cells of state 0 within it's hull.
 
 || code || steps run || notes ||
 || `{{{1,2,0},{2,1,0},{3,1,0},{0,8,0}}}` || Still chaotic at 1,000,000,000<br>Area = ~3,024,290 || [http://ruletablerepository.googlecode.com/files/t14r120210310080.png http://ruletablerepository.googlecode.com/files/t14r120210310080_small.png] ||
