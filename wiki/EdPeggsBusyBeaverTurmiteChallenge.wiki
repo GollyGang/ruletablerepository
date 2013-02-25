@@ -70,6 +70,7 @@ Turmites (1-state 4-color) that last more than 50 million steps.
 || `{{{1,2,0},{2,2,0},{3,4,0},{0,4,0}}}` || Highway at 148,485,000 +1,000 || [http://ruletablerepository.googlecode.com/files/t14r120220340040.png http://ruletablerepository.googlecode.com/files/t14r120220340040_small.png] By Ed Pegg ||
 || `{{{1,2,0},{2,2,0},{3,1,0},{0,4,0}}}` || Highway at 111,000,000<br>By Ed Pegg Jr  || http://www.mathpuzzle.com/t14r120220310040.gif ||
 || `{{{1,4,0},{2,2,0},{3,1,0},{1,8,0}}}` || Highway at 80,301,600 +100 || [http://ruletablerepository.googlecode.com/files/t14r140220310180.png http://ruletablerepository.googlecode.com/files/t14r140220310180_small.png] By Ed Pegg ||
+|| `{{{1,2,0},{2,1,0},{3,4,0},{1,2,0}}}` || Highway at 64,000,000<br>by Ed Pegg Jr  || http://www.mathpuzzle.com/t14r120210340120.gif ||
 
 == Unresolved 1-state 4-color relative movement turmites ==
 
@@ -88,7 +89,6 @@ It would be good to get these to under a hundred. Behavior is still chaotic afte
 || `{{{1,2,0},{2,1,0},{3,4,0},{0,4,0}}}` || 203,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,4,0},{0,8,0}}}` || 20,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,4,0},{1,1,0}}}` || 857,000,000,000  || [http://ruletablerepository.googlecode.com/files/t14r120210340110.png http://www.mathpuzzle.com/countsub.gif] -- Population 2106 -- very slow growth||
-|| `{{{1,2,0},{2,1,0},{3,4,0},{1,2,0}}}` || 25,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,4,0},{1,8,0}}}` || 23,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,8,0},{0,1,0}}}` || 203,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,8,0},{0,2,0}}}` || Still chaotic at 509,528,543,745<br>Area = ~209,799,168 || [http://ruletablerepository.googlecode.com/files/t14r120210380020.png http://ruletablerepository.googlecode.com/files/t14r120210380020_small.png] ||
