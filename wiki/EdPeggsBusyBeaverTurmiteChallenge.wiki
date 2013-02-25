@@ -169,7 +169,7 @@ The population numbers are not the same as the area (number of unique visited ce
 || `{{{1,4,0},{2,2,0},{3,1,0},{1,1,0}}}` || 220,000,000  || Population 451,322 ||
 || `{{{1,4,0},{2,2,0},{3,1,0},{1,2,0}}}` || 237,000,000  || Population 482,880 ||
 || `{{{1,4,0},{2,2,0},{3,1,0},{1,4,0}}}` || 539,000,000  || Population 1,086,000 ||
-|| `{{{1,4,0},{2,2,0},{3,1,0},{2,2,0}}}` || Binary counting highways<br> at 2,717,308,080 +10 and<br>at ~10 trillion steps but<br> expected to be unpredictable<br>again after that -- Tim Hutton || See also: `{{{1,4,0},{2,2,0},{1,1,0}}}` ||
+|| `{{{1,4,0},{2,2,0},{3,1,0},{2,2,0}}}` || Binary counting highways<br> at 2,717,308,080 +10 and<br>at ~10 trillion steps but<br> expected to be unpredictable<br>again after that -- Tim Hutton || See also: `{{{1,4,0},{2,2,0},{1,1,0}}}`<br>Because the 2nd and 4th instructions are equal, this is a trivial expansion of the rule<br>above. Only cells which have been visited once are color 1, all others 0, 2 or 3. ||
 || `{{{1,4,0},{2,2,0},{3,2,0},{0,1,0}}}` || 4,170,000,000  || Population 2.47 million ||
 || `{{{1,4,0},{2,2,0},{3,2,0},{0,8,0}}}` || 4,170,000,000  || Population 2.85 million ||
 || `{{{1,4,0},{2,2,0},{3,2,0},{1,8,0}}}` || 3,190,000,000  || Population 3.11 million ||
