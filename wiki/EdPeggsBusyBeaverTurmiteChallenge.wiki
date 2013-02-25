@@ -94,9 +94,9 @@ It would be good to get these to under a hundred. Behavior is still chaotic afte
 || `{{{1,2,0},{2,1,0},{3,8,0},{0,2,0}}}` || Still chaotic at 509,528,543,745<br>Area = ~209,799,168 || [http://ruletablerepository.googlecode.com/files/t14r120210380020.png http://ruletablerepository.googlecode.com/files/t14r120210380020_small.png] ||
 || `{{{1,2,0},{2,1,0},{3,8,0},{0,4,0}}}` || 1,227,000,000  || Population 2,229,000 ||
 || `{{{1,2,0},{2,1,0},{3,8,0},{0,8,0}}}` || 1,495,000,000  || Population 1,959,000  ||
-|| `{{{1,2,0},{2,1,0},{3,8,0},{1,1,0}}}` || 27,000,000  ||  ||
+|| `{{{1,2,0},{2,1,0},{3,8,0},{1,1,0}}}` || 556,000,000  || Population 1,820,000 ||
 || `{{{1,2,0},{2,1,0},{3,8,0},{1,2,0}}}` || 220,000,000  || Population 995,544  ||
-|| `{{{1,2,0},{2,1,0},{3,8,0},{1,4,0}}}` || 27,000,000  ||  ||
+|| `{{{1,2,0},{2,1,0},{3,8,0},{1,4,0}}}` || 623,000,000  || Population 1,438,000 ||
 || `{{{1,2,0},{2,1,0},{3,8,0},{1,8,0}}}` || 250,000,000  ||  ||
 || `{{{1,2,0},{2,1,0},{3,8,0},{2,1,0}}}` || Still chaotic at 749,869,528,065 || [http://ruletablerepository.googlecode.com/files/t14r120210380210.png http://ruletablerepository.googlecode.com/files/t14r120210380210_small.png] ||
 || `{{{1,2,0},{2,1,0},{3,8,0},{2,2,0}}}` || 2,166,000,000  || Population 3,721,000 ||
