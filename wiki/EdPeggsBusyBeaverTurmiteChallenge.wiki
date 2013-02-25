@@ -53,16 +53,17 @@ Turmites (2-state 2-color) that last more than 50 million steps, or that have in
 
 A preliminary list of hundreds is at UnresolvedTurmites2States2Colors. 
 
+|| `{{{1,2,1},{1,8,1}},{{1,1,0},{0,4,0}}}` || Makes highways _within_ it's hull, then corrupts them.<br>Still chaotic at 21,536,408,833 || [http://ruletablerepository.googlecode.com/files/t22r121181110040.png http://ruletablerepository.googlecode.com/files/t22r121181110040_small.png] by Mark Jeronimus ||
+|| `{{{1,2,1},{0,4,0}},{{1,8,1},{1,8,0}}}` || Still chaotic at 567,287,499,009<br>Area = ~216,398,592|| [http://ruletablerepository.googlecode.com/files/t22r121040181180.png http://ruletablerepository.googlecode.com/files/t22r121040181180_small.png] ||
 || `{{{1,2,0},{1,8,1}},{{1,8,1},{0,8,0}}}` || Still chaotic at 1,021,280,049,658<br>Area = ~209,174,272 || [http://ruletablerepository.googlecode.com/files/t22r120181181080.png http://ruletablerepository.googlecode.com/files/t22r120181181080_small.png] ||
 || `{{{1,2,1},{0,2,0}},{{1,4,1},{0,1,0}}}` || Still chaotic at 305,795,580,179<br>Area = ~180,359,552 || [http://ruletablerepository.googlecode.com/files/t22r121020141010.png http://ruletablerepository.googlecode.com/files/t22r121020141010_small.png] ||
-|| `{{{1,2,1},{0,4,0}},{{1,8,1},{1,8,0}}}` || Still chaotic at 567,287,499,009<br>Area = ~216,398,592|| [http://ruletablerepository.googlecode.com/files/t22r121040181180.png http://ruletablerepository.googlecode.com/files/t22r121040181180_small.png] ||
 || `{{{1,1,1},{0,2,0}},{{1,2,0},{0,1,1}}}` || Still chaotic at 113,486,027,265<br>Area = ~175,178,368 || [http://ruletablerepository.googlecode.com/files/t22r111020120011.png http://ruletablerepository.googlecode.com/files/t22r111020120011_small.png]||
 
 == Resolved 1-state 4-color relative movement turmites ==
 
 Turmites (1-state 4-color) that last more than 50 million steps.
 
-|| `{{{1,2,0},{2,4,0},{3,2,0},{3,1,0}}}` || *2 Highways at 4,391,220,000 +10000* || [http://ruletablerepository.googlecode.com/files/t14r120240320310.png http://ruletablerepository.googlecode.com/files/t14r120240320310_small.png]<br>By Dean Hickerson ||
+|| `{{{1,2,0},{2,4,0},{3,2,0},{3,1,0}}}` || *Dual Highway at 4,391,220,000 +10000* || [http://ruletablerepository.googlecode.com/files/t14r120240320310.png http://ruletablerepository.googlecode.com/files/t14r120240320310_small.png]<br>By Dean Hickerson ||
 || `{{{1,2,0},{2,4,0},{3,4,0},{0,8,0}}}` || Highway at 1,589,104,000 +1,000 || [http://ruletablerepository.googlecode.com/files/t14r120240340080.png http://ruletablerepository.googlecode.com/files/t14r120240340080_small.png] ||
 || `{{{1,4,0},{2,2,0},{3,8,0},{0,2,0}}}` || Highway at 1,468,709,000 +1000 || [http://ruletablerepository.googlecode.com/files/t14r140220380020.png http://ruletablerepository.googlecode.com/files/t14r140220380020_small.png]<br>by Ed Pegg Jr ||
 || `{{{1,4,0},{2,4,0},{3,1,0},{0,2,0}}}` || Highway at 550,000,000<br>by Ed Pegg Jr  || http://www.mathpuzzle.com/t14r140240310020.gif ||
