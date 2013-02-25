@@ -1,4 +1,4 @@
-= Ed Pegg's Busy Beaver Turmite Challenge =
+= Ed Pegg Jr's Busy Beaver Turmite Challenge =
 
 What turmite runs the longest before becoming predictable? 
 Subpage of TwoDimensionalTuringMachines.
@@ -7,9 +7,9 @@ Subpage of TwoDimensionalTuringMachines.
 
 Turmites (1-state 3-color) that last more than 2 million steps.
 
-|| `{{{1,2,0},{2,1,0},{0,4,0}}}` || *Highway at 67,620,060 +10* ||Hutton/Pegg || [http://ruletablerepository.googlecode.com/files/t13r120210040.png http://ruletablerepository.googlecode.com/files/t13r120210040_small.png] ||
-|| `{{{1,4,0},{2,2,0},{1,8,0}}}` || Langton switchback at 18,490,000 +10,000 || By Ed Pegg || [http://ruletablerepository.googlecode.com/files/t13r140220180.png http://ruletablerepository.googlecode.com/files/t13r140220180_small.png] ||
-|| `{{{1,2,0},{2,4,0},{0,8,0}}}` || Highway at 2,669,000 +1,000 || By Ed Pegg || [http://ruletablerepository.googlecode.com/files/t13r120240080.png http://ruletablerepository.googlecode.com/files/t13r120240080_small.png] ||
+|| `{{{1,2,0},{2,1,0},{0,4,0}}}` || *Highway at 67,620,060 +10* || [http://ruletablerepository.googlecode.com/files/t13r120210040.png http://ruletablerepository.googlecode.com/files/t13r120210040_small.png] by Hutton/Pegg ||
+|| `{{{1,4,0},{2,2,0},{1,8,0}}}` || Langton switchback at 18,490,000 +10,000 || [http://ruletablerepository.googlecode.com/files/t13r140220180.png http://ruletablerepository.googlecode.com/files/t13r140220180_small.png] by Ed Pegg Jr ||
+|| `{{{1,2,0},{2,4,0},{0,8,0}}}` || Highway at 2,669,000 +1,000 || [http://ruletablerepository.googlecode.com/files/t13r120240080.png http://ruletablerepository.googlecode.com/files/t13r120240080_small.png] by Ed Pegg ||
 
 == Unresolved 1-state 3-color relative movement turmites ==
 
@@ -31,23 +31,23 @@ http://www.mathpuzzle.com/t13unresolved.gif
 
 Turmites (2-state 2-color) that last more than 50 million steps, or that have interesting behavior.
 
-|| `{{{1,2,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || *Highway at 8,362,028,000 +1000* || [http://ruletablerepository.googlecode.com/files/t22r121081181010.png http://ruletablerepository.googlecode.com/files/t22r121081181010_small.png]<br>by Mark Jeronimus. Slightly modified<br>version of a rule by Georgi Gochev ||
+|| `{{{1,2,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || *Highway at 8,362,028,000 +1000* || [http://ruletablerepository.googlecode.com/files/t22r121081181010.png http://ruletablerepository.googlecode.com/files/t22r121081181010_small.png] by Mark Jeronimus. Slightly modified<br>version of a rule by Georgi Gochev ||
 || `{{{1,2,1},{0,8,0}},{{1,2,0},{0,1,0}}}`<br>Mirror version:<br>`{{{1,8,1},{0,2,0}},{{1,8,0},{0,1,0}}}` || Wedge at 7,734,883,000  +1,000 || [http://ruletablerepository.googlecode.com/files/t22r121080120010.png http://ruletablerepository.googlecode.com/files/t22r121080120010_small.png] By Georgi Gochev ||
 || `{{{0,2,1},{1,2,0}},{{1,8,1},{0,4,0}}}` || Highway at 3,133,860,000 +10,000 || [http://ruletablerepository.googlecode.com/files/t22r021120181040.png http://ruletablerepository.googlecode.com/files/t22r021120181040_small.png] ||
 || `{{{1,2,1},{0,1,1}},{{1,2,0},{0,8,1}}}` || wedge at 838,149,257 || http://ruletablerepository.googlecode.com/files/{{1,2,1},{0,1,1}},{{1,2,0},{0,8,1}}}.png ||
 || `{{{1,2,1},{0,1,0}},{{0,1,0},{0,2,1}}}` || Highway at 576,150,000  +1,000 || [http://ruletablerepository.googlecode.com/files/t22r121010010021.png http://ruletablerepository.googlecode.com/files/t22r121010010021_small.png] by Mark Jeronimus ||
 || `{{{1,1,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || Double highway at 238,951,300 +100 || [http://ruletablerepository.googlecode.com/files/t22r111081181010.png http://ruletablerepository.googlecode.com/files/t22r111081181010_small.png] By Georgi Gochev ||
-|| `{{{0,1,1},{1,2,0}},{{1,2,0},{0,2,1}}}`<br>`{{{1,2,1},{0,2,0}},{{0,1,0},{1,2,1}}}` || Growing boundary after chaos,<br>at 140,900,000 +100,000 || [http://ruletablerepository.googlecode.com/files/t22r121020010121.png http://ruletablerepository.googlecode.com/files/t22r121020010121_small.png]<br>Independently by Ed Pegg and Mark Jeronimus ||
+|| `{{{0,1,1},{1,2,0}},{{1,2,0},{0,2,1}}}`<br>`{{{1,2,1},{0,2,0}},{{0,1,0},{1,2,1}}}` || Growing boundary after chaos,<br>at 140,900,000 +100,000 || [http://ruletablerepository.googlecode.com/files/t22r121020010121.png http://ruletablerepository.googlecode.com/files/t22r121020010121_small.png] Independently by Ed Pegg and Mark Jeronimus ||
 || `{{{1,2,1},{0,8,1}},{{1,4,0},{1,1,0}}}`<br>`{{{1,4,1},{1,1,1}},{{1,2,0},{0,8,0}}}` || Langton switchback at 70,500,000 +100,000 || [http://ruletablerepository.googlecode.com/files/t22r121081140110.png http://ruletablerepository.googlecode.com/files/t22r121081140110_small.png] By Georgi Gochev ||
 || `{{{1,2,1},{0,4,0}},{{0,1,0},{1,1,1}}}`|| wedge at 67,689,229 || http://ruletablerepository.googlecode.com/files/{{{1,2,1},{0,4,0}},{{0,1,0},{1,1,1}}}.png ||
 || `{{{1,2,0},{1,4,1}},{{1,1,0},{0,4,1}}}` || trail at 62,000,000 steps || http://www.mathpuzzle.com/t22r120141110041.gif ||
-|| `{{{0,2,1},{0,2,0}},{{1,2,1},{0,1,0}}}` <br> `{{{1,2,0},{0,1,1}},{{0,2,0},{0,2,1}}}` || Interesting behavior<br>Highway at 15,706,200 + 100 || [http://ruletablerepository.googlecode.com/files/t22r021020121010.png http://ruletablerepository.googlecode.com/files/t22r021020121010_small.png]<br>by Ed Pegg ||
+|| `{{{0,2,1},{0,2,0}},{{1,2,1},{0,1,0}}}` <br> `{{{1,2,0},{0,1,1}},{{0,2,0},{0,2,1}}}` || Interesting behavior<br>Highway at 15,706,200 + 100 || [http://ruletablerepository.googlecode.com/files/t22r021020121010.png http://ruletablerepository.googlecode.com/files/t22r021020121010_small.png] by Ed Pegg ||
 || `{{{1,2,0},{0,2,1}},{{1,2,0},{1,8,0}}}` <br> `{{{1,2,1},{1,8,1}},{{1,2,1},{0,2,0}}}` || "Worm Trails"<br>Stuck at 4,300,340 +10 || [http://ruletablerepository.googlecode.com/files/t22r120021120180.png http://www.mathpuzzle.com/t22r120021120180.gif] ||
 || `{{{0,2,1},{1,1,0}},{{1,1,0},{1,1,1}}}` || Quadruple highway at 1,799,000 +1,000<br>Likes quadruple highways || [http://ruletablerepository.googlecode.com/files/t22r021110110111.png http://ruletablerepository.googlecode.com/files/t22r021110110111_small.png] by Ed Pegg ||
-|| `{{{1,2,1},{0,8,1}},{{1,2,1},{1,1,0}}}`<br>`{{{1,2,0},{1,1,1}},{{1,2,0},{0,8,0}}}` || Trapped in a complex shape at 1,132,000 +1000 || http://ruletablerepository.googlecode.com/files/t22r121081121110.png<br>by Mark Jeronimus||
+|| `{{{1,2,1},{0,8,1}},{{1,2,1},{1,1,0}}}`<br>`{{{1,2,0},{1,1,1}},{{1,2,0},{0,8,0}}}` || Trapped in a complex shape at 1,132,000 +1000 || http://ruletablerepository.googlecode.com/files/t22r121081121110.png by Mark Jeronimus||
 || `{{{1,2,0},{1,8,1}},{{0,1,0},{1,2,0}}}`<br>`{{{0,1,1},{1,2,1}},{{1,2,1},{1,8,0}}}` || Trapped in a 10*10 cycle at 297,000 +1000 || http://ruletablerepository.googlecode.com/files/t22r120181010120.png ||
 || `{{{1,2,0},{1,8,1}},{{1,4,1},{0,8,0}}}` || Interesting behavior<br>Double highway at 373,019 || [http://ruletablerepository.googlecode.com/files/t22r120181141080.png http://ruletablerepository.googlecode.com/files/t22r120181141080_small.png] by Ed Pegg ||
-|| `{{{0,1,1},{0,4,0}},{{1,2,0},{1,4,1}}}`<br>`{{{0,1,1},{1,4,0}},{{1,4,1},{0,8,0}}}`<br>`{{{0,2,1},{1,4,0}},{{1,4,1},{0,1,0}}}`<br>`{{{0,8,1},{0,4,0}},{{1,1,0},{1,4,1}}}`<br>`{{{1,1,1},{1,4,0}},{{0,8,0},{0,4,1}}}`<br>`{{{1,2,1},{1,4,0}},{{0,1,0},{0,4,1}}}`<br>`{{{1,4,0},{0,1,1}},{{0,2,0},{1,4,1}}}`<br>`{{{1,4,0},{0,8,1}},{{0,1,0},{1,4,1}}}` || Infinitely growing spiral with constantly<br>changing random interior. || http://ruletablerepository.googlecode.com/files/t22r011140141080.png<br>by Mark Jeronimus ||
+|| `{{{0,1,1},{0,4,0}},{{1,2,0},{1,4,1}}}`<br>`{{{0,1,1},{1,4,0}},{{1,4,1},{0,8,0}}}`<br>`{{{0,2,1},{1,4,0}},{{1,4,1},{0,1,0}}}`<br>`{{{0,8,1},{0,4,0}},{{1,1,0},{1,4,1}}}`<br>`{{{1,1,1},{1,4,0}},{{0,8,0},{0,4,1}}}`<br>`{{{1,2,1},{1,4,0}},{{0,1,0},{0,4,1}}}`<br>`{{{1,4,0},{0,1,1}},{{0,2,0},{1,4,1}}}`<br>`{{{1,4,0},{0,8,1}},{{0,1,0},{1,4,1}}}` || Infinitely growing spiral with constantly<br>changing random interior. || http://ruletablerepository.googlecode.com/files/t22r011140141080.png by Mark Jeronimus ||
 
 == Unresolved 2-state 2-color relative movement turmites ==
 
@@ -63,14 +63,14 @@ A preliminary list of hundreds is at UnresolvedTurmites2States2Colors.
 
 Turmites (1-state 4-color) that last more than 50 million steps.
 
-|| `{{{1,2,0},{2,4,0},{3,2,0},{3,1,0}}}` || *Dual Highway at 4,391,220,000 +10000* || [http://ruletablerepository.googlecode.com/files/t14r120240320310.png http://ruletablerepository.googlecode.com/files/t14r120240320310_small.png]<br>By Dean Hickerson ||
+|| `{{{1,2,0},{2,4,0},{3,2,0},{3,1,0}}}` || *Dual Highway at 4,391,220,000 +10000* || [http://ruletablerepository.googlecode.com/files/t14r120240320310.png http://ruletablerepository.googlecode.com/files/t14r120240320310_small.png] by Dean Hickerson ||
 || `{{{1,2,0},{2,4,0},{3,4,0},{0,8,0}}}` || Highway at 1,589,104,000 +1,000 || [http://ruletablerepository.googlecode.com/files/t14r120240340080.png http://ruletablerepository.googlecode.com/files/t14r120240340080_small.png] ||
-|| `{{{1,4,0},{2,2,0},{3,8,0},{0,2,0}}}` || Highway at 1,468,709,000 +1000 || [http://ruletablerepository.googlecode.com/files/t14r140220380020.png http://ruletablerepository.googlecode.com/files/t14r140220380020_small.png]<br>by Ed Pegg Jr ||
-|| `{{{1,4,0},{2,4,0},{3,1,0},{0,2,0}}}` || Highway at 550,000,000<br>by Ed Pegg Jr  || http://www.mathpuzzle.com/t14r140240310020.gif ||
+|| `{{{1,4,0},{2,2,0},{3,8,0},{0,2,0}}}` || Highway at 1,468,709,000 +1000 || [http://ruletablerepository.googlecode.com/files/t14r140220380020.png http://ruletablerepository.googlecode.com/files/t14r140220380020_small.png] by Ed Pegg Jr ||
+|| `{{{1,4,0},{2,4,0},{3,1,0},{0,2,0}}}` || Highway at 550,000,000  || http://www.mathpuzzle.com/t14r140240310020.gif by Ed Pegg Jr ||
 || `{{{1,2,0},{2,2,0},{3,4,0},{0,8,0}}}` || Highway at 255,030,000 +10,000 || [http://ruletablerepository.googlecode.com/files/t14r120220340080.png http://ruletablerepository.googlecode.com/files/t14r120220340080_small.png] ||
-|| `{{{1,2,0},{2,2,0},{3,4,0},{0,4,0}}}` || Highway at 148,485,000 +1,000 || [http://ruletablerepository.googlecode.com/files/t14r120220340040.png http://ruletablerepository.googlecode.com/files/t14r120220340040_small.png] By Ed Pegg ||
-|| `{{{1,2,0},{2,2,0},{3,1,0},{0,4,0}}}` || Highway at 111,000,000<br>By Ed Pegg Jr  || http://www.mathpuzzle.com/t14r120220310040.gif ||
-|| `{{{1,4,0},{2,2,0},{3,1,0},{1,8,0}}}` || Highway at 80,301,600 +100 || [http://ruletablerepository.googlecode.com/files/t14r140220310180.png http://ruletablerepository.googlecode.com/files/t14r140220310180_small.png] By Ed Pegg ||
+|| `{{{1,2,0},{2,2,0},{3,4,0},{0,4,0}}}` || Highway at 148,485,000 +1,000 || [http://ruletablerepository.googlecode.com/files/t14r120220340040.png http://ruletablerepository.googlecode.com/files/t14r120220340040_small.png] By Ed Pegg Jr ||
+|| `{{{1,2,0},{2,2,0},{3,1,0},{0,4,0}}}` || Highway at 111,000,000<br>By Ed Pegg Jr || http://www.mathpuzzle.com/t14r120220310040.gif ||
+|| `{{{1,4,0},{2,2,0},{3,1,0},{1,8,0}}}` || Highway at 80,301,600 +100 || [http://ruletablerepository.googlecode.com/files/t14r140220310180.png http://ruletablerepository.googlecode.com/files/t14r140220310180_small.png] By Ed Pegg Jr ||
 || `{{{1,2,0},{2,1,0},{3,4,0},{1,2,0}}}` || Highway at 64,000,000<br>by Ed Pegg Jr  || http://www.mathpuzzle.com/t14r120210340120.gif ||
 
 == Unresolved 1-state 4-color relative movement turmites ==
