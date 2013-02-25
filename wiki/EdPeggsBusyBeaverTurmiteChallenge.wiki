@@ -42,8 +42,8 @@ Turmites (2-state 2-color) that last more than 50 million steps, or that have in
 || `{{{1,2,1},{0,4,0}},{{0,1,0},{1,1,1}}}`|| wedge at 67,689,229 || http://ruletablerepository.googlecode.com/files/{{{1,2,1},{0,4,0}},{{0,1,0},{1,1,1}}}.png ||
 || `{{{1,2,0},{1,4,1}},{{1,1,0},{0,4,1}}}` || trail at 62,000,000 steps || http://www.mathpuzzle.com/t22r120141110041.gif ||
 || `{{{0,2,1},{0,2,0}},{{1,2,1},{0,1,0}}}` <br> `{{{1,2,0},{0,1,1}},{{0,2,0},{0,2,1}}}` || trail at 15,717,000, interesting behavior || http://www.mathpuzzle.com/t22r021020121010.gif<br>by Ed Pegg ||
-|| `{{{1,2,0},{0,2,1}},{{1,2,0},{1,8,0}}}` <br> `{{{1,2,1},{1,8,1}},{{1,2,1},{0,2,0}}}` || Worm Trails - stuck at 4 million steps || [http://ruletablerepository.googlecode.com/files/t22r120021120180.png http://www.mathpuzzle.com/t22r120021120180.gif] ||
-|| `{{{0,2,1},{1,1,0}},{{1,1,0},{1,1,1}}}` || Quadruple highway at 1,799,000 +1000<br>Likes quadruple highways || [http://ruletablerepository.googlecode.com/files/t22r021110110111.png http://ruletablerepository.googlecode.com/files/t22r021110110111_small.png] by Ed Pegg ||
+|| `{{{1,2,0},{0,2,1}},{{1,2,0},{1,8,0}}}` <br> `{{{1,2,1},{1,8,1}},{{1,2,1},{0,2,0}}}` || "Worm Trails"<br>Stuck at 4,300,340 +10 || [http://ruletablerepository.googlecode.com/files/t22r120021120180.png http://www.mathpuzzle.com/t22r120021120180.gif] ||
+|| `{{{0,2,1},{1,1,0}},{{1,1,0},{1,1,1}}}` || Quadruple highway at 1,799,000 +1,000<br>Likes quadruple highways || [http://ruletablerepository.googlecode.com/files/t22r021110110111.png http://ruletablerepository.googlecode.com/files/t22r021110110111_small.png] by Ed Pegg ||
 || `{{{1,2,1},{0,8,1}},{{1,2,1},{1,1,0}}}`<br>`{{{1,2,0},{1,1,1}},{{1,2,0},{0,8,0}}}` || Trapped in a complex shape at 1,132,000 +1000 || http://ruletablerepository.googlecode.com/files/t22r121081121110.png<br>by Mark Jeronimus||
 || `{{{1,2,0},{1,8,1}},{{0,1,0},{1,2,0}}}`<br>`{{{0,1,1},{1,2,1}},{{1,2,1},{1,8,0}}}` || Trapped in a 10*10 cycle at 297,000 +1000 || http://ruletablerepository.googlecode.com/files/t22r120181010120.png ||
 || `{{{1,2,0},{1,8,1}},{{1,4,1},{0,8,0}}}` || interesting behavior, trail at 373,080 || by Ed Pegg ||
