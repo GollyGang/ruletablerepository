@@ -25,7 +25,7 @@ http://www.mathpuzzle.com/t13unresolved.gif
 || `{{{1,2,0},{2,8,0},{1,1,0}}}` || Still on grid after 10 billion steps. || 
 || `{{{1,4,0},{2,1,0},{0,2,0}}}` || Still on grid after 10 billion steps. || 
 || `{{{1,4,0},{2,2,0},{0,1,0}}}` || Still on grid after 10 billion steps. || 
-|| `{{{1,4,0},{2,2,0},{1,1,0}}}` || Binary counting after 2.8 billion and again after ~10 trillion steps but expected to be unpredictable again after that - Tim Hutton.<br>http://ruletablerepository.googlecode.com/files/t13r140220110_progress10trln.png || 
+|| `{{{1,4,0},{2,2,0},{1,1,0}}}` || Binary counting highways at 2,717,308,080 +10 and ~100 trillion steps but expected to be unpredictable again after that.<br>http://ruletablerepository.googlecode.com/files/t13r140220110_progress10trln.png || 
 
 == Resolved 2-state 2-color relative movement turmites ==
 
