@@ -17,14 +17,14 @@ Ed identified these unresolved machines. Add results below as you find them. The
 
 http://www.mathpuzzle.com/t13unresolved.gif
 
-|| `{{{1,2,0},{2,1,0},{0,8,0}}}` || Still chaotic at 749,869,528,065<br>See also: {{{1,2,0},{2,1,0},{3,8,0},{2,1,0}}} || 
-|| `{{{1,2,0},{2,1,0},{1,8,0}}}` || Still on grid after 10 billion steps. || 
-|| `{{{1,2,0},{2,2,0},{1,8,0}}}` || Still on grid after 10 billion steps. || 
-|| `{{{1,2,0},{2,8,0},{0,2,0}}}` || Still on grid after 10 billion steps. || 
-|| `{{{1,2,0},{2,8,0},{0,8,0}}}` || Still on grid after 10 billion steps. || 
-|| `{{{1,2,0},{2,8,0},{1,1,0}}}` || Still on grid after 10 billion steps. || 
-|| `{{{1,4,0},{2,1,0},{0,2,0}}}` || Still on grid after 10 billion steps. || 
-|| `{{{1,4,0},{2,2,0},{0,1,0}}}` || Still on grid after 10 billion steps. || 
+|| `{{{1,2,0},{2,1,0},{0,8,0}}}` || Still chaotic at 749,869,528,065<br>See also: `{{{1,2,0},{2,1,0},{3,8,0},{2,1,0}}}` || 
+|| `{{{1,2,0},{2,1,0},{1,8,0}}}` || Still chaotic at 10 billion steps. || 
+|| `{{{1,2,0},{2,2,0},{1,8,0}}}` || Still chaotic at 10 billion steps. || 
+|| `{{{1,2,0},{2,8,0},{0,2,0}}}` || Still chaotic at 10 billion steps. || 
+|| `{{{1,2,0},{2,8,0},{0,8,0}}}` || Still chaotic at 10 billion steps. || 
+|| `{{{1,2,0},{2,8,0},{1,1,0}}}` || Still chaotic at 10 billion steps. || 
+|| `{{{1,4,0},{2,1,0},{0,2,0}}}` || Still chaotic at 10 billion steps. || 
+|| `{{{1,4,0},{2,2,0},{0,1,0}}}` || Still chaotic at 10 billion steps. || 
 || `{{{1,4,0},{2,2,0},{1,1,0}}}` || Binary counting highways at 2,717,308,080 +10 and at ~10 trillion steps but expected to be unpredictable again after that -- Tim Hutton<br>See also: `{{{1,4,0},{2,2,0},{3,1,0},{2,2,0}}}`<br>http://ruletablerepository.googlecode.com/files/t13r140220110_progress10trln.png || 
 
 == Resolved 2-state 2-color relative movement turmites ==
