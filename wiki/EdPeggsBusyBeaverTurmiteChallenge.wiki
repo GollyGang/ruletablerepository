@@ -31,7 +31,7 @@ http://www.mathpuzzle.com/t13unresolved.gif
 
 Turmites (2-state 2-color) that last more than 50 million steps, or that have interesting behavior.
 
-|| `{{{1,2,0},{0,1,1}},{{0,2,0},{1,2,1}}}` || Highway at 3,511,339,000,000<br>(confirmation needed!)<br>First time highway detected at 39 millions.<br>Mark says: Confirming now. ETA: 2:30am UTC || [http://ruletablerepository.googlecode.com/files/t22r120011020121.png http://ruletablerepository.googlecode.com/files/t22r120011020121_small.png] by Georgi Gochev ||
+|| `{{{1,2,0},{0,1,1}},{{0,2,0},{1,2,1}}}` || Highway at 3,511,330,000,000 +10,000,000<br>First time highway detected at 39 millions. || [http://ruletablerepository.googlecode.com/files/t22r120011020121.png http://ruletablerepository.googlecode.com/files/t22r120011020121_small.png] by Georgi Gochev ||
 || `{{{1,2,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || *Highway at 8,362,028,000 +1000* || [http://ruletablerepository.googlecode.com/files/t22r121081181010.png http://ruletablerepository.googlecode.com/files/t22r121081181010_small.png] by Mark Jeronimus.<br>Slightly modified version of a rule by Georgi Gochev ||
 || `{{{1,2,1},{0,8,0}},{{1,2,0},{0,1,0}}}`<br>Mirror version:<br>`{{{1,8,1},{0,2,0}},{{1,8,0},{0,1,0}}}` || Wedge at 7,734,883,000  +1,000 || [http://ruletablerepository.googlecode.com/files/t22r121080120010.png http://ruletablerepository.googlecode.com/files/t22r121080120010_small.png] By Georgi Gochev ||
 || `{{{0,2,1},{1,2,0}},{{1,8,1},{0,4,0}}}` || Highway at 3,133,860,000 +10,000 || [http://ruletablerepository.googlecode.com/files/t22r021120181040.png http://ruletablerepository.googlecode.com/files/t22r021120181040_small.png] ||
