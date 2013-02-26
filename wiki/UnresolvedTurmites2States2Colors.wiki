@@ -9,8 +9,8 @@ There are about 700 unresolved 2-state 2-color turmites listed below.  This is a
 
 Don't worry about the dimensions if you make updates.  Leave the current pictures so that similar turmites can be spotted, but feel free to add new pictures. Lots of groupings of same-behavior turmites are still needed.
 
-|| `{{{1,2,0},{0,2,1}},{{0,2,1},{1,1,0}}}` || chaotic at 52,000,000 steps<br>population 23,921 <br>dimensions 19*19 || http://www.mathpuzzle.com/t22r120021021110.gif ||
-|| `{{{0,2,1},{0,8,0}},{{1,4,0},{1,2,1}}}` || chaotic at 31,000,000 steps<br>population 26,663 <br>dimensions 19*22 || http://www.mathpuzzle.com/t22r021080140121.gif ||
+|| `{{{1,2,0},{0,2,1}},{{0,2,1},{1,1,0}}}` || chaotic at 15,000,000,000 steps<br>population 23,921 <br>dimensions 19*19 || http://www.mathpuzzle.com/t22r120021021110.gif ||
+|| `{{{0,2,1},{0,8,0}},{{1,4,0},{1,2,1}}}` || chaotic at 15,000,000,000 steps<br>population 26,663 <br>dimensions 19*22 || http://www.mathpuzzle.com/t22r021080140121.gif ||
 || `{{{1,2,1},{0,2,0}},{{0,2,0},{0,8,1}}}` <br> `{{{0,2,1},{0,8,0}},{{1,2,0},{0,2,1}}}` || chaotic at 539,000,000 steps<br>population 189,000 <br>dimensions 29*30 || http://www.mathpuzzle.com/t22r121020020081.gif ||
 || `{{{1,1,1},{0,2,0}},{{0,2,0},{0,2,1}}}` <br> `{{{0,2,1},{0,2,0}},{{1,1,0},{0,2,1}}}` || chaotic at 556,000,000 steps<br>population 190,000 <br>dimensions 45*45 || http://www.mathpuzzle.com/t22r111020020021.gif ||
 || `{{{1,2,0},{0,4,1}},{{0,1,0},{0,8,0}}}` <br> `{{{0,1,1},{0,2,1}},{{1,8,1},{0,4,0}}}` || chaotic at 572,000,000 steps<br>population 326,000 <br>dimensions 36*42 || http://www.mathpuzzle.com/t22r120041010080.gif ||
@@ -21,21 +21,20 @@ Don't worry about the dimensions if you make updates.  Leave the current picture
 || `{{{0,4,1},{1,2,0}},{{1,4,1},{0,1,0}}}` || chaotic at 170,000,000 steps<br>population 96,000 <br>dimensions 30*31 || http://www.mathpuzzle.com/t22r041120141010.gif ||
 || `{{{0,2,1},{0,2,0}},{{1,2,0},{1,1,1}}}` || chaotic at 170,000,000 steps<br>population 89,000 <br>dimensions 27*34 || http://www.mathpuzzle.com/t22r021020120111.gif ||
 || `{{{0,4,1},{0,2,0}},{{1,2,0},{1,8,1}}}` <br> `{{{1,2,1},{1,8,0}},{{0,4,0},{0,2,1}}}` || chaotic at 170,000,000 steps<br>population 93,000 <br>dimensions 28*31 || http://www.mathpuzzle.com/t22r041020120181.gif ||
-|| `{{{0,4,1},{0,4,0}},{{1,2,1},{1,2,0}}}` <br> `{{{1,2,0},{0,2,1}},{{1,4,1},{0,4,0}}}` || chaotic at 40,000 steps<br>population 296 <br>dimensions 30*34 || http://www.mathpuzzle.com/t22r120021141040.gif ||
-|| `{{{0,2,1},{1,1,0}},{{1,2,1},{0,2,0}}}` || chaotic at 40,000 steps<br>population 305 <br>dimensions 27*40 || http://www.mathpuzzle.com/t22r021110121020.gif ||
+|| `{{{0,4,1},{0,4,0}},{{1,2,1},{1,2,0}}}` <br> `{{{1,2,0},{0,2,1}},{{1,4,1},{0,4,0}}}` || chaotic at 1,000,000,000 steps<br>population 296 <br>dimensions 30*34 || http://www.mathpuzzle.com/t22r120021141040.gif ||
+|| `{{{0,2,1},{1,1,0}},{{1,2,1},{0,2,0}}}` || chaotic at 1,000,000,000 steps<br>population 305 <br>dimensions 27*40 || http://www.mathpuzzle.com/t22r021110121020.gif ||
 || `{{{0,2,1},{0,2,0}},{{1,4,1},{0,1,0}}}` <br> `{{{1,4,0},{0,1,1}},{{0,2,0},{0,2,1}}}` || chaotic at 35,951,168 steps<br>population 48,010 <br>dimensions 30*40 || http://www.mathpuzzle.com/t22r140011020021.gif ||
 || `{{{0,1,1},{0,4,0}},{{1,2,0},{0,2,1}}}` <br> `{{{1,2,1},{0,2,0}},{{0,1,0},{0,4,1}}}` || chaotic at 35,951,168 steps<br>population 57,281 <br>dimensions 33*40 || http://www.mathpuzzle.com/t22r121020010041.gif ||
-|| `{{{1,2,0},{1,8,1}},{{0,8,1},{0,4,0}}}` || chaotic at 40,000 steps<br>population 330 <br>dimensions 31*35 || http://www.mathpuzzle.com/t22r120181081040.gif ||
-|| `{{{1,2,0},{0,4,1}},{{0,1,0},{0,2,0}}}` <br> `{{{0,1,1},{0,2,1}},{{1,2,1},{0,4,0}}}` || chaotic at 40,000 steps<br>population 337 <br>dimensions 38*43 || http://www.mathpuzzle.com/t22r011021121040.gif ||
-|| `{{{1,2,0},{0,2,1}},{{0,2,0},{1,8,1}}}` <br> `{{{0,2,1},{1,8,0}},{{1,2,1},{0,2,0}}}` || chaotic at 40,000 steps<br>population 337 <br>dimensions 38*40 || http://www.mathpuzzle.com/t22r021180121020.gif ||
-|| `{{{1,2,0},{0,4,1}},{{0,2,0},{0,1,0}}}` <br> `{{{0,2,1},{0,1,1}},{{1,2,1},{0,4,0}}}` || chaotic at 40,000 steps<br>population 354 <br>dimensions 33*39 || http://www.mathpuzzle.com/t22r021011121040.gif ||
+|| `{{{1,2,0},{0,4,1}},{{0,1,0},{0,2,0}}}` <br> `{{{0,1,1},{0,2,1}},{{1,2,1},{0,4,0}}}` || chaotic at 753,000,000 steps<br>population 337 <br>dimensions 38*43 || http://www.mathpuzzle.com/t22r011021121040.gif ||
+|| `{{{1,2,0},{0,2,1}},{{0,2,0},{1,8,1}}}` <br> `{{{0,2,1},{1,8,0}},{{1,2,1},{0,2,0}}}` || chaotic at 1,000,000,000 steps<br>population 337 <br>dimensions 38*40 || http://www.mathpuzzle.com/t22r021180121020.gif ||
+|| `{{{1,2,0},{0,4,1}},{{0,2,0},{0,1,0}}}` <br> `{{{0,2,1},{0,1,1}},{{1,2,1},{0,4,0}}}` || chaotic at 1,000,000,000 steps<br>population 354 <br>dimensions 33*39 || http://www.mathpuzzle.com/t22r021011121040.gif ||
 || `{{{1,2,1},{0,2,0}},{{0,4,1},{1,4,0}}}` || chaotic at 21,271,104 steps<br>population 35,923 <br>dimensions 34*35 || http://www.mathpuzzle.com/t22r121020041140.gif ||
 || `{{{1,2,0},{1,4,1}},{{0,4,1},{0,2,0}}}` || chaotic at 21,271,104 steps<br>population 35,980 <br>dimensions 34*38 || http://www.mathpuzzle.com/t22r120141041020.gif ||
-|| `{{{0,4,1},{0,2,0}},{{1,4,1},{0,1,0}}}` || chaotic at 40,000 steps<br>population 361 <br>dimensions 29*35 || http://www.mathpuzzle.com/t22r041020141010.gif ||
-|| `{{{1,2,1},{0,8,0}},{{0,2,1},{1,4,0}}}` || chaotic at 40,000 steps<br>population 371 <br>dimensions 28*38 || http://www.mathpuzzle.com/t22r121080021140.gif ||
+|| `{{{0,4,1},{0,2,0}},{{1,4,1},{0,1,0}}}` || chaotic at 12,000,000,000 steps<br>population 361 <br>dimensions 29*35 || http://www.mathpuzzle.com/t22r041020141010.gif ||
+|| `{{{1,2,1},{0,8,0}},{{0,2,1},{1,4,0}}}` || chaotic at 1,000,000,000 steps<br>population 371 <br>dimensions 28*38 || http://www.mathpuzzle.com/t22r121080021140.gif ||
 || `{{{0,2,1},{1,2,0}},{{1,2,1},{0,1,0}}}` || chaotic at 35,000,000 steps<br>population 43,047 <br>dimensions 25*61 || http://www.mathpuzzle.com/t22r021120121010.gif ||
 || `{{{1,2,0},{0,4,1}},{{1,2,0},{0,1,0}}}` || chaotic at 40,000 steps<br>population 394 <br>dimensions 42*43 || http://www.mathpuzzle.com/t22r120041120010.gif ||
-|| `{{{1,4,1},{0,2,0}},{{1,8,0},{0,4,0}}}` <br> `{{{1,2,1},{0,4,1}},{{1,4,0},{0,8,1}}}` || chaotic at 40,000 steps<br>population 402 <br>dimensions 23*33 || http://www.mathpuzzle.com/t22r121041140081.gif ||
+|| `{{{1,4,1},{0,2,0}},{{1,8,0},{0,4,0}}}` <br> `{{{1,2,1},{0,4,1}},{{1,4,0},{0,8,1}}}` || chaotic at 1,000,000,000 steps<br>population 402 <br>dimensions 23*33 || http://www.mathpuzzle.com/t22r121041140081.gif ||
 || `{{{0,2,1},{0,4,0}},{{1,1,0},{1,4,1}}}` || chaotic at 40,000 steps<br>population 402 <br>dimensions 38*39 || http://www.mathpuzzle.com/t22r021040110141.gif ||
 || `{{{1,2,1},{1,4,0}},{{0,1,0},{0,4,1}}}` || chaotic at 40,000 steps<br>population 403 <br>dimensions 37*39 || http://www.mathpuzzle.com/t22r121140010041.gif ||
 || `{{{1,4,0},{0,1,1}},{{0,2,0},{1,4,1}}}` || chaotic at 40,000 steps<br>population 407 <br>dimensions 37*39 || http://www.mathpuzzle.com/t22r140011020141.gif ||
@@ -43,27 +42,26 @@ Don't worry about the dimensions if you make updates.  Leave the current picture
 || `{{{0,1,1},{1,4,0}},{{1,4,1},{0,2,0}}}` || chaotic at 40,000 steps<br>population 407 <br>dimensions 38*39 || http://www.mathpuzzle.com/t22r011140141020.gif ||
 || `{{{1,4,0},{0,2,1}},{{0,1,0},{1,4,1}}}` || chaotic at 40,000 steps<br>population 407 <br>dimensions 38*39 || http://www.mathpuzzle.com/t22r140021010141.gif ||
 || `{{{1,2,0},{1,2,1}},{{1,8,1},{0,4,0}}}` || chaotic at 40,000 steps<br>population 416 <br>dimensions 48*56 || http://www.mathpuzzle.com/t22r120121181040.gif ||
-|| `{{{0,2,1},{0,4,0}},{{1,2,1},{1,1,0}}}` <br> `{{{1,2,0},{1,1,1}},{{0,2,0},{0,4,1}}}` || chaotic at 40,000 steps<br>population 433 <br>dimensions 34*41 || http://www.mathpuzzle.com/t22r120111020041.gif ||
+|| `{{{0,2,1},{0,4,0}},{{1,2,1},{1,1,0}}}` <br> `{{{1,2,0},{1,1,1}},{{0,2,0},{0,4,1}}}` || chaotic at 735,000,000 steps<br>population 433 <br>dimensions 34*41 || http://www.mathpuzzle.com/t22r120111020041.gif ||
 || `{{{1,2,0},{0,1,1}},{{1,4,1},{0,2,0}}}` || chaotic at 40,000 steps<br>population 436 <br>dimensions 34*41 || http://www.mathpuzzle.com/t22r120011141020.gif ||
-|| `{{{1,2,1},{1,2,0}},{{0,1,0},{0,4,1}}}` <br> `{{{1,4,0},{0,1,1}},{{0,2,0},{1,2,1}}}` <br> `{{{0,2,1},{1,2,0}},{{1,4,1},{0,1,0}}}` || chaotic at 23,000,000 steps<br>population 41,000 <br>dimensions 38*39 || http://www.mathpuzzle.com/t22r021120141010.gif ||
+|| `{{{1,2,1},{1,2,0}},{{0,1,0},{0,4,1}}}` <br> `{{{1,4,0},{0,1,1}},{{0,2,0},{1,2,1}}}` <br> `{{{0,2,1},{1,2,0}},{{1,4,1},{0,1,0}}}` || chaotic at 1,000,000,000,000 steps<br>population 41,000 <br>dimensions 38*39 || http://www.mathpuzzle.com/t22r021120141010.gif ||
 || `{{{1,2,1},{0,1,1}},{{1,4,0},{0,2,0}}}` || chaotic at 40,000 steps<br>population 442 <br>dimensions 39*44 || http://www.mathpuzzle.com/t22r121011140020.gif ||
-|| `{{{0,2,1},{0,8,1}},{{1,2,0},{0,2,1}}}` <br> `{{{1,2,1},{0,2,0}},{{0,2,0},{0,8,0}}}` || chaotic at 40,000 steps<br>population 446 <br>dimensions 43*67 || http://www.mathpuzzle.com/t22r121020020080.gif ||
 || `{{{1,2,1},{1,1,1}},{{1,4,0},{0,8,1}}}` || chaotic at 40,000 steps<br>population 447 <br>dimensions 30*32 || http://www.mathpuzzle.com/t22r121111140081.gif ||
 || `{{{1,2,0},{1,4,1}},{{0,2,1},{0,4,0}}}` || chaotic at 40,000 steps<br>population 456 <br>dimensions 36*38 || http://www.mathpuzzle.com/t22r120141021040.gif ||
 || `{{{0,2,1},{0,2,1}},{{1,4,0},{1,8,1}}}` || chaotic at 572,000,000 steps<br>population 273,000 <br>dimensions 27*27 || http://www.mathpuzzle.com/t22r021021140181.gif ||
 || `{{{1,2,1},{0,2,0}},{{0,2,1},{1,1,0}}}` || chaotic at 40,000 steps<br>population 457 <br>dimensions 43*44 || http://www.mathpuzzle.com/t22r121020021110.gif ||
-|| `{{{1,4,0},{0,2,1}},{{0,4,0},{1,1,1}}}` <br>  `{{{0,4,1},{1,1,0}},{{1,4,1},{0,2,0}}}` || chaotic at 40,000 steps<br>population 461 <br>dimensions 39*39 || http://www.mathpuzzle.com/t22r041110141020.gif ||
+|| `{{{1,4,0},{0,2,1}},{{0,4,0},{1,1,1}}}` <br>  `{{{0,4,1},{1,1,0}},{{1,4,1},{0,2,0}}}` || chaotic at 1,000,000,000 steps<br>population 461 <br>dimensions 39*39 || http://www.mathpuzzle.com/t22r041110141020.gif ||
 || `{{{1,2,0},{1,4,1}},{{0,8,1},{0,8,0}}}` || chaotic at 40,000 steps<br>population 463 <br>dimensions 35*40 || http://www.mathpuzzle.com/t22r120141081080.gif ||
 || `{{{1,4,1},{0,2,0}},{{1,8,0},{1,1,0}}}` || chaotic at 40,000 steps<br>population 465 <br>dimensions 30*35 || http://www.mathpuzzle.com/t22r141020180110.gif ||
-|| `{{{0,1,1},{0,4,1}},{{1,2,0},{0,2,1}}}` <br>  `{{{1,2,1},{0,2,0}},{{0,1,0},{0,4,0}}}` || chaotic at 40,000 steps<br>population 469 <br>dimensions 45*46 || http://www.mathpuzzle.com/t22r121020010040.gif ||
+|| `{{{0,1,1},{0,4,1}},{{1,2,0},{0,2,1}}}` <br>  `{{{1,2,1},{0,2,0}},{{0,1,0},{0,4,0}}}` || chaotic at 1,000,000,000 steps<br>population 469 <br>dimensions 45*46 || http://www.mathpuzzle.com/t22r121020010040.gif ||
 || `{{{1,2,0},{0,4,1}},{{1,1,0},{0,2,0}}}` || chaotic at 40,000 steps<br>population 470 <br>dimensions 38*38 || http://www.mathpuzzle.com/t22r120041110020.gif ||
 || `{{{1,2,0},{1,4,1}},{{1,2,0},{0,2,1}}}` || chaotic at 40,000 steps<br>population 471 <br>dimensions 42*42 || http://www.mathpuzzle.com/t22r120141120021.gif ||
 || `{{{0,2,1},{1,1,1}},{{1,4,1},{0,2,0}}}` || chaotic at 40,000 steps<br>population 473 <br>dimensions 43*48 || http://www.mathpuzzle.com/t22r021111141020.gif ||
 || `{{{1,4,1},{0,2,0}},{{1,2,0},{1,1,0}}}` || chaotic at 40,000 steps<br>population 475 <br>dimensions 31*42 || http://www.mathpuzzle.com/t22r141020120110.gif ||
-|| `{{{1,4,1},{1,1,0}},{{0,2,0},{0,4,1}}}` <br> `{{{0,2,1},{0,4,0}},{{1,4,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 480 <br>dimensions 39*39 || http://www.mathpuzzle.com/t22r021040140111.gif ||
+|| `{{{1,4,1},{1,1,0}},{{0,2,0},{0,4,1}}}` <br> `{{{0,2,1},{0,4,0}},{{1,4,0},{1,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 480 <br>dimensions 39*39 || http://www.mathpuzzle.com/t22r021040140111.gif ||
 || `{{{1,2,1},{1,1,1}},{{1,4,0},{0,2,1}}}` || chaotic at 40,000 steps<br>population 491 <br>dimensions 34*42 || http://www.mathpuzzle.com/t22r121111140021.gif ||
 || `{{{1,4,0},{1,2,1}},{{1,8,1},{0,4,0}}}` || chaotic at 40,000 steps<br>population 495 <br>dimensions 49*73 || http://www.mathpuzzle.com/t22r140121181040.gif ||
-|| `{{{1,4,1},{0,2,0}},{{0,1,0},{0,1,0}}}` <br>  `{{{0,1,1},{0,1,0}},{{1,4,0},{0,2,1}}}` || chaotic at 40,000 steps<br>population 499 <br>dimensions 34*41 || http://www.mathpuzzle.com/t22r011010140021.gif ||
+|| `{{{1,4,1},{0,2,0}},{{0,1,0},{0,1,0}}}` <br>  `{{{0,1,1},{0,1,0}},{{1,4,0},{0,2,1}}}` || chaotic at 1,000,000,000 steps<br>population 499 <br>dimensions 34*41 || http://www.mathpuzzle.com/t22r011010140021.gif ||
 || `{{{1,1,1},{0,2,1}},{{1,4,0},{0,2,1}}}` || chaotic at 54,000,000 steps<br>population 120,000 <br>dimensions 35*37 || http://www.mathpuzzle.com/t22r111021140021.gif ||
 || `{{{1,4,0},{1,2,1}},{{0,2,1},{0,8,0}}}` || chaotic at 33,000,000 steps<br>population 57,000 <br>dimensions 39*40 || http://www.mathpuzzle.com/t22r140121021080.gif ||
 || `{{{1,2,0},{1,4,1}},{{0,2,1},{0,2,0}}}` || chaotic at 40,000 steps<br>population 507 <br>dimensions 39*44 || http://www.mathpuzzle.com/t22r120141021020.gif ||
@@ -536,176 +534,139 @@ Don't worry about the dimensions if you make updates.  Leave the current picture
 || `{{{0,2,1},{1,1,0}},{{1,8,1},{0,4,0}}}` || chaotic at 40,000 steps<br>population 2617<br>dimensions 88*115 || http://www.mathpuzzle.com/t22r021110181040.gif ||
 || `{{{1,1,1},{0,2,0}},{{1,8,0},{0,8,0}}}` || chaotic at 40,000 steps<br>population 2620<br>dimensions 99*99 || http://www.mathpuzzle.com/t22r111020180080.gif ||
 || `{{{1,2,1},{0,8,0}},{{1,1,0},{0,1,0}}}` || chaotic at 40,000 steps<br>population 2620<br>dimensions 99*99 || http://www.mathpuzzle.com/t22r121080110010.gif ||
-|| `{{{0,1,1},{0,2,1}},{{1,8,1},{0,2,0}}}` <br> `{{{1,2,0},{0,8,1}},{{0,1,0},{0,8,0}}}` || chaotic at 40,000 steps<br>population 2637<br>dimensions 109*118 || http://www.mathpuzzle.com/t22r120081010080.gif ||
-|| `{{{1,2,0},{0,8,1}},{{1,8,0},{1,4,1}}}` || chaotic at 40,000 steps<br>population 2647<br>dimensions 73*73 || http://www.mathpuzzle.com/t22r120081180141.gif ||
-|| `{{{1,2,1},{0,1,0}},{{1,4,0},{1,1,0}}}` || chaotic at 40,000 steps<br>population 2651<br>dimensions 85*104 || http://www.mathpuzzle.com/t22r121010140110.gif ||
-|| `{{{0,1,1},{0,2,1}},{{1,2,1},{0,8,0}}}` <br> `{{{1,2,0},{0,8,1}},{{0,1,0},{0,2,0}}}` || chaotic at 40,000 steps<br>population 2652<br>dimensions 91*109 || http://www.mathpuzzle.com/t22r120081010020.gif ||
-|| `{{{0,2,1},{0,1,1}},{{1,8,1},{0,1,0}}}` <br> `{{{1,2,0},{0,1,1}},{{0,8,0},{0,1,0}}}` || chaotic at 40,000 steps<br>population 2655<br>dimensions 106*106 || http://www.mathpuzzle.com/t22r120011080010.gif ||
-|| `{{{0,2,1},{1,1,1}},{{1,1,0},{0,4,1}}}` <br> `{{{1,1,1},{0,4,0}},{{0,2,0},{1,1,0}}}` || chaotic at 40,000 steps<br>population 2663<br>dimensions 71*86 || http://www.mathpuzzle.com/t22r111040020110.gif ||
-|| `{{{1,1,1},{0,2,1}},{{1,2,0},{1,8,0}}}` || chaotic at 40,000 steps<br>population 2675<br>dimensions 71*71 || http://www.mathpuzzle.com/t22r111021120180.gif ||
-|| `{{{1,1,1},{0,1,0}},{{1,2,0},{0,8,1}}}` || chaotic at 40,000 steps<br>population 2676<br>dimensions 88*100 || http://www.mathpuzzle.com/t22r111010120081.gif ||
-|| `{{{0,2,1},{0,8,1}},{{1,8,1},{0,1,0}}}` <br> `{{{1,2,0},{0,1,1}},{{0,8,0},{0,2,0}}}` || chaotic at 40,000 steps<br>population 2689<br>dimensions 100*102 || http://www.mathpuzzle.com/t22r120011080020.gif ||
-|| `{{{0,2,1},{1,1,1}},{{1,1,0},{0,2,1}}}` || chaotic at 40,000 steps<br>population 2691<br>dimensions 83*125 || http://www.mathpuzzle.com/t22r021111110021.gif ||
-|| `{{{1,2,0},{1,8,1}},{{1,2,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 2692<br>dimensions 83*84 || http://www.mathpuzzle.com/t22r120181120011.gif ||
-|| `{{{1,2,1},{0,8,1}},{{1,1,0},{0,8,0}}}` || chaotic at 40,000 steps<br>population 2702<br>dimensions 91*104 || http://www.mathpuzzle.com/t22r121081110080.gif ||
-|| `{{{1,2,0},{1,8,1}},{{1,1,0},{0,4,0}}}` || chaotic at 40,000 steps<br>population 2708<br>dimensions 76*100 || http://www.mathpuzzle.com/t22r120181110040.gif ||
-|| `{{{1,2,0},{1,8,1}},{{0,8,1},{1,2,0}}}` || chaotic at 40,000 steps<br>population 2718<br>dimensions 61*77 || http://www.mathpuzzle.com/t22r120181081120.gif ||
-|| `{{{1,2,1},{0,1,1}},{{1,2,0},{0,8,1}}}` || chaotic at 40,000 steps<br>population 2720<br>dimensions 105*109 || http://www.mathpuzzle.com/t22r121011120081.gif ||
-|| `{{{1,2,1},{1,1,0}},{{0,2,1},{1,1,0}}}` || chaotic at 40,000 steps<br>population 2729<br>dimensions 60*69 || http://www.mathpuzzle.com/t22r121110021110.gif ||
-|| `{{{1,4,0},{0,2,1}},{{1,1,0},{1,2,1}}}` || chaotic at 40,000 steps<br>population 2733<br>dimensions 72*78 || http://www.mathpuzzle.com/t22r140021110121.gif ||
-|| `{{{1,2,0},{0,8,1}},{{1,2,1},{1,1,0}}}` || chaotic at 40,000 steps<br>population 2751<br>dimensions 74*85 || http://www.mathpuzzle.com/t22r120081121110.gif ||
-|| `{{{0,2,1},{0,8,0}},{{1,8,1},{0,1,0}}}` <br> `{{{1,2,0},{0,1,1}},{{0,8,0},{0,2,1}}}` || chaotic at 40,000 steps<br>population 2754<br>dimensions 114*126 || http://www.mathpuzzle.com/t22r120011080021.gif ||
-|| `{{{1,4,0},{1,2,1}},{{1,4,0},{1,8,0}}}` || chaotic at 40,000 steps<br>population 2766<br>dimensions 73*74 || http://www.mathpuzzle.com/t22r140121140180.gif ||
-|| `{{{0,2,1},{1,1,1}},{{1,1,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 2779<br>dimensions 88*94 || http://www.mathpuzzle.com/t22r021111110011.gif ||
-|| `{{{0,2,1},{0,4,1}},{{1,1,0},{1,4,1}}}` || chaotic at 40,000 steps<br>population 2780<br>dimensions 69*72 || http://www.mathpuzzle.com/t22r021041110141.gif ||
-|| `{{{0,1,1},{1,2,1}},{{1,2,0},{0,1,1}}}` <br> `{{{1,2,1},{0,1,0}},{{0,1,0},{1,2,0}}}` || chaotic at 40,000 steps<br>population 2796<br>dimensions 78*131 || http://www.mathpuzzle.com/t22r121010010120.gif ||
-|| `{{{0,2,1},{0,4,1}},{{1,2,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 2799<br>dimensions 74*81 || http://www.mathpuzzle.com/t22r021041120111.gif ||
-|| `{{{1,2,0},{1,8,1}},{{1,2,1},{0,1,0}}}` || chaotic at 40,000 steps<br>population 2807<br>dimensions 76*89 || http://www.mathpuzzle.com/t22r120181121010.gif ||
-|| `{{{1,2,0},{0,8,1}},{{1,8,0},{0,4,1}}}` || chaotic at 40,000 steps<br>population 2808<br>dimensions 85*120 || http://www.mathpuzzle.com/t22r120081180041.gif ||
-|| `{{{0,2,1},{0,1,0}},{{1,1,0},{1,8,1}}}` || chaotic at 40,000 steps<br>population 2817<br>dimensions 108*112 || http://www.mathpuzzle.com/t22r021010110181.gif ||
-|| `{{{1,2,1},{1,8,1}},{{1,1,0},{0,2,0}}}` || chaotic at 40,000 steps<br>population 2820<br>dimensions 70*74 || http://www.mathpuzzle.com/t22r121181110020.gif ||
-|| `{{{1,1,1},{1,1,0}},{{0,2,0},{0,8,1}}}` <br> `{{{0,2,1},{0,8,0}},{{1,1,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 2825<br>dimensions 109*109 || http://www.mathpuzzle.com/t22r021080110111.gif ||
-|| `{{{0,1,1},{1,2,1}},{{1,2,1},{0,8,0}}}` <br> `{{{1,2,0},{0,8,1}},{{0,1,0},{1,2,0}}}` || chaotic at 40,000 steps<br>population 2832<br>dimensions 82*122 || http://www.mathpuzzle.com/t22r120081010120.gif ||
-|| `{{{1,2,0},{1,1,1}},{{1,8,0},{0,2,0}}}` || chaotic at 40,000 steps<br>population 2838<br>dimensions 60*110 || http://www.mathpuzzle.com/t22r120111180020.gif ||
-|| `{{{0,1,1},{1,1,0}},{{1,2,1},{0,2,0}}}` <br> `{{{1,2,0},{0,2,1}},{{0,1,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 2850<br>dimensions 90*112 || http://www.mathpuzzle.com/t22r120021010111.gif ||
-|| `{{{1,4,1},{1,2,0}},{{0,1,0},{0,1,1}}}` <br> `{{{0,1,1},{0,1,0}},{{1,4,0},{1,2,1}}}` || chaotic at 40,000 steps<br>population 2859<br>dimensions 98*118 || http://www.mathpuzzle.com/t22r011010140121.gif ||
-|| `{{{1,2,1},{1,8,1}},{{1,1,0},{0,4,0}}}` || chaotic at 40,000 steps<br>population 2876<br>dimensions 79*91 || http://www.mathpuzzle.com/t22r121181110040.gif ||
-|| `{{{1,2,0},{1,4,1}},{{0,1,0},{0,2,1}}}` || chaotic at 170,000,000 steps<br>population 2886<br>dimensions 81*99 || http://www.mathpuzzle.com/t22r120141010021.gif ||
-|| `{{{1,2,0},{0,8,1}},{{1,1,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 2890<br>dimensions 91*117 || http://www.mathpuzzle.com/t22r120081110011.gif ||
-|| `{{{1,2,1},{0,8,1}},{{1,1,0},{0,2,1}}}` || chaotic at 40,000 steps<br>population 2894<br>dimensions 94*95 || http://www.mathpuzzle.com/t22r121081110021.gif ||
-|| `{{{1,2,0},{0,8,1}},{{1,8,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 2900<br>dimensions 99*107 || http://www.mathpuzzle.com/t22r120081180011.gif ||
-|| `{{{1,2,0},{1,2,1}},{{1,1,0},{0,4,0}}}` || chaotic at 40,000 steps<br>population 2902<br>dimensions 83*95 || http://www.mathpuzzle.com/t22r120121110040.gif ||
-|| `{{{1,1,1},{0,4,0}},{{0,2,0},{1,8,0}}}` <br> `{{{0,2,1},{1,8,1}},{{1,1,0},{0,4,1}}}` || chaotic at 40,000 steps<br>population 2923<br>dimensions 82*93 || http://www.mathpuzzle.com/t22r021181110041.gif ||
-|| `{{{1,2,0},{1,2,1}},{{1,4,0},{1,8,0}}}` || chaotic at 40,000 steps<br>population 2926<br>dimensions 65*69 || http://www.mathpuzzle.com/t22r120121140180.gif ||
-|| `{{{1,2,0},{0,1,1}},{{1,1,0},{1,2,0}}}` || chaotic at 40,000 steps<br>population 2930<br>dimensions 73*101 || http://www.mathpuzzle.com/t22r120011110120.gif ||
-|| `{{{1,2,0},{0,2,1}},{{1,1,0},{0,8,1}}}` || chaotic at 40,000 steps<br>population 2934<br>dimensions 80*139 || http://www.mathpuzzle.com/t22r120021110081.gif ||
-|| `{{{1,2,0},{0,1,1}},{{0,8,0},{1,2,1}}}` <br> `{{{0,2,1},{1,8,0}},{{1,8,1},{0,1,0}}}` || chaotic at 40,000 steps<br>population 2939<br>dimensions 91*111 || http://www.mathpuzzle.com/t22r021180181010.gif ||
-|| `{{{1,1,1},{0,2,0}},{{1,2,0},{0,8,0}}}` || chaotic at 40,000 steps<br>population 2966<br>dimensions 93*96 || http://www.mathpuzzle.com/t22r111020120080.gif ||
-|| `{{{1,2,1},{1,2,1}},{{1,1,0},{0,1,1}}}` <br> `{{{1,1,1},{0,1,0}},{{1,2,0},{1,2,0}}}` || chaotic at 40,000 steps<br>population 2969<br>dimensions 91*107 || http://www.mathpuzzle.com/t22r111010120120.gif ||
-|| `{{{1,2,0},{0,1,1}},{{1,8,0},{0,1,0}}}` || chaotic at 40,000 steps<br>population 2970<br>dimensions 83*123 || http://www.mathpuzzle.com/t22r120011180010.gif ||
-|| `{{{1,2,0},{0,1,1}},{{1,8,0},{1,8,1}}}` || chaotic at 40,000 steps<br>population 2973<br>dimensions 69*87 || http://www.mathpuzzle.com/t22r120011180181.gif ||
-|| `{{{1,2,0},{0,1,1}},{{1,1,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 2976<br>dimensions 88*113 || http://www.mathpuzzle.com/t22r120011110011.gif ||
-|| `{{{1,1,1},{0,2,0}},{{1,2,0},{1,8,0}}}` || chaotic at 40,000 steps<br>population 2983<br>dimensions 81*102 || http://www.mathpuzzle.com/t22r111020120180.gif ||
-|| `{{{0,2,1},{1,1,1}},{{1,1,0},{0,8,1}}}` <br> `{{{1,1,1},{0,2,0}},{{0,8,0},{1,1,0}}}` || chaotic at 40,000 steps<br>population 2999<br>dimensions 91*101 || http://www.mathpuzzle.com/t22r111020080110.gif ||
-|| `{{{1,4,1},{1,2,1}},{{1,1,0},{1,8,0}}}` || chaotic at 40,000 steps<br>population 3008<br>dimensions 71*72 || http://www.mathpuzzle.com/t22r141121110180.gif ||
-|| `{{{1,2,0},{0,1,1}},{{1,1,0},{0,2,1}}}` || chaotic at 40,000 steps<br>population 3026<br>dimensions 90*107 || http://www.mathpuzzle.com/t22r120011110021.gif ||
-|| `{{{1,2,0},{0,8,1}},{{1,1,0},{0,2,0}}}` || chaotic at 40,000 steps<br>population 3032<br>dimensions 99*101 || http://www.mathpuzzle.com/t22r120081110020.gif ||
-|| `{{{1,2,0},{0,1,1}},{{1,8,0},{1,1,0}}}` || chaotic at 40,000 steps<br>population 3047<br>dimensions 85*98 || http://www.mathpuzzle.com/t22r120011180110.gif ||
-|| `{{{1,1,1},{0,2,1}},{{1,8,0},{0,2,0}}}` || chaotic at 40,000 steps<br>population 3062<br>dimensions 80*129 || http://www.mathpuzzle.com/t22r111021180020.gif ||
-|| `{{{1,2,1},{0,8,0}},{{1,1,0},{0,8,1}}}` || chaotic at 40,000 steps<br>population 3070<br>dimensions 91*117 || http://www.mathpuzzle.com/t22r121080110081.gif ||
-|| `{{{1,2,0},{1,1,1}},{{1,2,1},{0,8,0}}}` || chaotic at 40,000 steps<br>population 3071<br>dimensions 88*94 || http://www.mathpuzzle.com/t22r120111121080.gif ||
-|| `{{{0,2,1},{0,8,1}},{{1,1,0},{1,8,1}}}` || chaotic at 40,000 steps<br>population 3078<br>dimensions 73*76 || http://www.mathpuzzle.com/t22r021081110181.gif ||
-|| `{{{1,1,1},{0,2,0}},{{1,8,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 3094<br>dimensions 91*126 || http://www.mathpuzzle.com/t22r111020180011.gif ||
-|| `{{{1,2,1},{0,8,0}},{{1,1,0},{1,8,0}}}` || chaotic at 40,000 steps<br>population 3100<br>dimensions 80*96 || http://www.mathpuzzle.com/t22r121080110180.gif ||
-|| `{{{1,2,1},{1,1,0}},{{1,4,1},{0,4,0}}}` || chaotic at 40,000 steps<br>population 3119<br>dimensions 75*80 || http://www.mathpuzzle.com/t22r121110141040.gif ||
-|| `{{{1,2,1},{0,8,0}},{{1,1,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 3122<br>dimensions 92*110 || http://www.mathpuzzle.com/t22r121080110011.gif ||
-|| `{{{1,2,1},{0,1,1}},{{1,1,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 3134<br>dimensions 99*102 || http://www.mathpuzzle.com/t22r121011110011.gif ||
-|| `{{{1,2,1},{0,8,1}},{{1,1,0},{0,8,1}}}` || chaotic at 40,000 steps<br>population 3142<br>dimensions 95*98 || http://www.mathpuzzle.com/t22r121081110081.gif ||
-|| `{{{1,2,1},{0,1,0}},{{1,4,1},{1,1,0}}}` || chaotic at 40,000 steps<br>population 3145<br>dimensions 88*115 || http://www.mathpuzzle.com/t22r121010141110.gif ||
-|| `{{{1,2,0},{0,1,1}},{{1,8,0},{1,2,0}}}` || chaotic at 40,000 steps<br>population 3164<br>dimensions 82*102 || http://www.mathpuzzle.com/t22r120011180120.gif ||
-|| `{{{1,2,0},{0,8,1}},{{0,1,0},{1,2,1}}}` || chaotic at 40,000 steps<br>population 3171<br>dimensions 99*102 || http://www.mathpuzzle.com/t22r120081010121.gif ||
-|| `{{{1,2,0},{1,1,1}},{{1,1,0},{0,8,0}}}` || chaotic at 40,000 steps<br>population 3197<br>dimensions 69*92 || http://www.mathpuzzle.com/t22r120111110080.gif ||
-|| `{{{0,1,1},{1,2,1}},{{1,8,1},{0,2,0}}}` <br> `{{{1,2,0},{0,8,1}},{{0,1,0},{1,8,0}}}` || chaotic at 40,000 steps<br>population 3216<br>dimensions 97*129 || http://www.mathpuzzle.com/t22r120081010180.gif ||
-|| `{{{1,2,0},{1,1,1}},{{1,2,0},{0,8,0}}}` || chaotic at 40,000 steps<br>population 3229<br>dimensions 68*102 || http://www.mathpuzzle.com/t22r120111120080.gif ||
-|| `{{{1,2,0},{0,1,1}},{{1,4,0},{1,1,0}}}` || chaotic at 40,000 steps<br>population 3233<br>dimensions 84*91 || http://www.mathpuzzle.com/t22r120011140110.gif ||
-|| `{{{1,2,0},{0,4,1}},{{1,8,0},{1,2,1}}}` || chaotic at 40,000 steps<br>population 3236<br>dimensions 76*81 || http://www.mathpuzzle.com/t22r120041180121.gif ||
-|| `{{{1,1,1},{0,1,0}},{{1,2,0},{0,1,0}}}` || chaotic at 40,000 steps<br>population 3242<br>dimensions 98*106 || http://www.mathpuzzle.com/t22r111010120010.gif ||
-|| `{{{1,2,1},{1,1,1}},{{1,1,0},{0,2,0}}}` || chaotic at 40,000 steps<br>population 3250<br>dimensions 73*95 || http://www.mathpuzzle.com/t22r121111110020.gif ||
-|| `{{{1,2,0},{0,1,1}},{{1,2,1},{1,8,0}}}` || chaotic at 40,000 steps<br>population 3261<br>dimensions 87*98 || http://www.mathpuzzle.com/t22r120011121180.gif ||
-|| `{{{1,4,0},{0,2,1}},{{1,1,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 3270<br>dimensions 78*79 || http://www.mathpuzzle.com/t22r140021110111.gif ||
-|| `{{{1,2,1},{0,1,1}},{{1,1,0},{0,8,1}}}` || chaotic at 40,000 steps<br>population 3300<br>dimensions 92*113 || http://www.mathpuzzle.com/t22r121011110081.gif ||
-|| `{{{1,1,1},{0,2,0}},{{1,8,0},{0,2,1}}}` || chaotic at 40,000 steps<br>population 3338<br>dimensions 101*117 || http://www.mathpuzzle.com/t22r111020180021.gif ||
-|| `{{{1,4,0},{1,2,1}},{{1,1,0},{0,8,0}}}` || chaotic at 40,000 steps<br>population 3406<br>dimensions 83*88 || http://www.mathpuzzle.com/t22r140121110080.gif ||
-|| `{{{1,2,0},{1,1,1}},{{1,8,0},{0,1,0}}}` || chaotic at 40,000 steps<br>population 3408<br>dimensions 78*91 || http://www.mathpuzzle.com/t22r120111180010.gif ||
-|| `{{{1,2,1},{0,8,1}},{{1,2,0},{1,1,0}}}` || chaotic at 40,000 steps<br>population 3421<br>dimensions 79*92 || http://www.mathpuzzle.com/t22r121081120110.gif ||
-|| `{{{1,2,0},{1,8,1}},{{1,8,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 3442<br>dimensions 92*111 || http://www.mathpuzzle.com/t22r120181180011.gif ||
-|| `{{{1,2,0},{1,1,1}},{{1,1,0},{0,2,1}}}` || chaotic at 40,000 steps<br>population 3450<br>dimensions 76*125 || http://www.mathpuzzle.com/t22r120111110021.gif ||
-|| `{{{0,2,1},{0,1,0}},{{1,8,1},{1,1,0}}}` || chaotic at 40,000 steps<br>population 3470<br>dimensions 100*121 || http://www.mathpuzzle.com/t22r021010181110.gif ||
-|| `{{{1,4,0},{1,1,1}},{{1,1,0},{0,2,0}}}` || chaotic at 40,000 steps<br>population 3482<br>dimensions 82*86 || http://www.mathpuzzle.com/t22r140111110020.gif ||
-|| `{{{1,2,1},{1,1,0}},{{1,4,0},{0,2,0}}}` || chaotic at 40,000 steps<br>population 3492<br>dimensions 77*98 || http://www.mathpuzzle.com/t22r121110140020.gif ||
-|| `{{{1,2,0},{0,1,1}},{{1,8,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 3492<br>dimensions 95*136 || http://www.mathpuzzle.com/t22r120011180011.gif ||
-|| `{{{1,2,0},{0,1,1}},{{1,8,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 3507<br>dimensions 75*92 || http://www.mathpuzzle.com/t22r120011180111.gif ||
-|| `{{{0,2,1},{0,8,1}},{{1,1,0},{0,1,1}}}` <br> `{{{1,1,1},{0,1,0}},{{0,2,0},{0,8,0}}}` || chaotic at 40,000 steps<br>population 3514<br>dimensions 117*117 || http://www.mathpuzzle.com/t22r111010020080.gif ||
-|| `{{{1,1,1},{0,2,1}},{{1,2,0},{1,1,0}}}` || chaotic at 40,000 steps<br>population 3516<br>dimensions 85*92 || http://www.mathpuzzle.com/t22r111021120110.gif ||
-|| `{{{0,1,1},{0,2,0}},{{1,8,0},{1,1,1}}}` <br> `{{{1,2,1},{1,1,0}},{{0,1,0},{0,8,1}}}` || chaotic at 40,000 steps<br>population 3524<br>dimensions 81*155 || http://www.mathpuzzle.com/t22r121110010081.gif ||
-|| `{{{1,1,1},{0,4,0}},{{0,2,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 3529<br>dimensions 81*83 || http://www.mathpuzzle.com/t22r111040020111.gif ||
-|| `{{{1,2,0},{0,1,1}},{{1,8,1},{1,1,0}}}` || chaotic at 40,000 steps<br>population 3561<br>dimensions 85*90 || http://www.mathpuzzle.com/t22r120011181110.gif ||
-|| `{{{1,2,1},{1,1,0}},{{1,1,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 3572<br>dimensions 88*92 || http://www.mathpuzzle.com/t22r121110110011.gif ||
-|| `{{{1,1,1},{1,1,0}},{{1,2,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 3583<br>dimensions 80*113 || http://www.mathpuzzle.com/t22r111110120011.gif ||
-|| `{{{1,2,1},{0,1,0}},{{1,1,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 3585<br>dimensions 90*98 || http://www.mathpuzzle.com/t22r121010110111.gif ||
-|| `{{{0,1,1},{1,1,0}},{{1,2,0},{0,4,1}}}` <br> `{{{1,2,1},{0,4,0}},{{0,1,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 3603<br>dimensions 79*89 || http://www.mathpuzzle.com/t22r121040010111.gif ||
-|| `{{{1,2,0},{1,8,1}},{{1,2,1},{0,8,0}}}` || chaotic at 40,000 steps<br>population 3641<br>dimensions 76*102 || http://www.mathpuzzle.com/t22r120181121080.gif ||
-|| `{{{0,2,1},{1,2,1}},{{1,8,1},{0,8,0}}}` || chaotic at 40,000 steps<br>population 3650<br>dimensions 93*119 || http://www.mathpuzzle.com/t22r021121181080.gif ||
-|| `{{{1,4,1},{0,2,1}},{{1,2,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 3663<br>dimensions 94*94 || http://www.mathpuzzle.com/t22r141021120111.gif ||
-|| `{{{1,2,1},{1,8,0}},{{0,1,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 3683<br>dimensions 124*153 || http://www.mathpuzzle.com/t22r121180010011.gif ||
-|| `{{{1,1,1},{0,1,0}},{{1,2,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 3684<br>dimensions 93*109 || http://www.mathpuzzle.com/t22r111010120111.gif ||
-|| `{{{0,1,1},{0,2,0}},{{1,2,1},{1,8,0}}}` <br> `{{{1,2,0},{1,8,1}},{{0,1,0},{0,2,1}}}` || chaotic at 40,000 steps<br>population 3728<br>dimensions 114*117 || http://www.mathpuzzle.com/t22r120181010021.gif ||
-|| `{{{1,1,1},{0,2,1}},{{1,8,0},{0,1,0}}}` || chaotic at 40,000 steps<br>population 3770<br>dimensions 97*116 || http://www.mathpuzzle.com/t22r111021180010.gif ||
-|| `{{{1,2,0},{1,8,1}},{{0,1,0},{0,1,1}}}` <br> `{{{0,1,1},{0,1,0}},{{1,2,1},{1,8,0}}}` || chaotic at 40,000 steps<br>population 3784<br>dimensions 104*120 || http://www.mathpuzzle.com/t22r011010121180.gif ||
-|| `{{{1,2,0},{1,1,1}},{{1,8,1},{0,1,0}}}` || chaotic at 40,000 steps<br>population 3800<br>dimensions 91*105 || http://www.mathpuzzle.com/t22r120111181010.gif ||
-|| `{{{1,4,0},{1,2,1}},{{1,1,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 3823<br>dimensions 95*125 || http://www.mathpuzzle.com/t22r140121110011.gif ||
-|| `{{{1,2,1},{1,1,1}},{{1,1,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 3835<br>dimensions 101*114 || http://www.mathpuzzle.com/t22r121111110011.gif ||
-|| `{{{1,2,1},{0,8,1}},{{1,1,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 3852<br>dimensions 101*109 || http://www.mathpuzzle.com/t22r121081110011.gif ||
-|| `{{{1,1,1},{0,1,0}},{{1,2,0},{1,1,0}}}` || chaotic at 40,000 steps<br>population 3916<br>dimensions 93*100 || http://www.mathpuzzle.com/t22r111010120110.gif ||
-|| `{{{1,2,1},{0,1,1}},{{1,4,1},{1,1,0}}}` || chaotic at 40,000 steps<br>population 3921<br>dimensions 89*95 || http://www.mathpuzzle.com/t22r121011141110.gif ||
-|| `{{{1,2,1},{0,1,1}},{{1,1,0},{0,8,0}}}` || chaotic at 40,000 steps<br>population 3924<br>dimensions 104*115 || http://www.mathpuzzle.com/t22r121011110080.gif ||
-|| `{{{0,2,1},{1,1,0}},{{1,2,0},{1,8,1}}}` || chaotic at 40,000 steps<br>population 3941<br>dimensions 80*91 || http://www.mathpuzzle.com/t22r021110120181.gif ||
-|| `{{{1,2,0},{0,1,1}},{{1,1,0},{0,1,0}}}` || chaotic at 40,000 steps<br>population 3950<br>dimensions 92*122 || http://www.mathpuzzle.com/t22r120011110010.gif ||
-|| `{{{1,2,1},{1,1,0}},{{0,1,0},{0,2,0}}}` || chaotic at 40,000 steps<br>population 3975<br>dimensions 94*109 || http://www.mathpuzzle.com/t22r121110010020.gif ||
-|| `{{{0,2,1},{1,8,1}},{{1,1,0},{0,1,1}}}` <br> `{{{1,1,1},{0,1,0}},{{0,2,0},{1,8,0}}}` || chaotic at 40,000 steps<br>population 3995<br>dimensions 115*123 || http://www.mathpuzzle.com/t22r111010020180.gif ||
-|| `{{{1,2,0},{0,8,1}},{{1,2,1},{1,8,0}}}` || chaotic at 40,000 steps<br>population 4038<br>dimensions 88*94 || http://www.mathpuzzle.com/t22r120081121180.gif ||
-|| `{{{1,2,1},{1,1,0}},{{1,1,0},{0,8,1}}}` || chaotic at 40,000 steps<br>population 4085<br>dimensions 86*98 || http://www.mathpuzzle.com/t22r121110110081.gif ||
-|| `{{{1,1,1},{0,2,0}},{{1,8,0},{1,1,0}}}` || chaotic at 40,000 steps<br>population 4086<br>dimensions 102*105 || http://www.mathpuzzle.com/t22r111020180110.gif ||
-|| `{{{1,1,1},{0,2,0}},{{1,8,0},{0,1,0}}}` || chaotic at 40,000 steps<br>population 4108<br>dimensions 102*141 || http://www.mathpuzzle.com/t22r111020180010.gif ||
-|| `{{{0,1,1},{1,1,0}},{{1,2,1},{0,8,0}}}` <br> `{{{1,2,0},{0,8,1}},{{0,1,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 4118<br>dimensions 111*125 || http://www.mathpuzzle.com/t22r120081010111.gif ||
-|| `{{{1,4,0},{0,2,1}},{{1,1,0},{1,8,1}}}` || chaotic at 40,000 steps<br>population 4125<br>dimensions 116*136 || http://www.mathpuzzle.com/t22r140021110181.gif ||
-|| `{{{1,2,1},{1,8,0}},{{1,4,1},{0,1,0}}}` || chaotic at 40,000 steps<br>population 4125<br>dimensions 125*128 || http://www.mathpuzzle.com/t22r121180141010.gif ||
-|| `{{{1,4,1},{0,1,1}},{{1,2,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 4161<br>dimensions 81*91 || http://www.mathpuzzle.com/t22r141011120111.gif ||
-|| `{{{1,4,1},{1,1,0}},{{1,2,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 4203<br>dimensions 81*106 || http://www.mathpuzzle.com/t22r141110120111.gif ||
-|| `{{{1,2,1},{1,1,0}},{{1,4,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 4222<br>dimensions 71*101 || http://www.mathpuzzle.com/t22r121110140111.gif ||
-|| `{{{1,1,1},{0,1,0}},{{1,2,0},{0,8,0}}}` || chaotic at 40,000 steps<br>population 4224<br>dimensions 109*114 || http://www.mathpuzzle.com/t22r111010120080.gif ||
-|| `{{{1,2,1},{0,2,0}},{{1,1,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 4227<br>dimensions 83*89 || http://www.mathpuzzle.com/t22r121020110111.gif ||
-|| `{{{1,2,1},{1,1,1}},{{1,1,0},{0,8,1}}}` || chaotic at 40,000 steps<br>population 4230<br>dimensions 95*130 || http://www.mathpuzzle.com/t22r121111110081.gif ||
-|| `{{{1,2,0},{1,2,1}},{{0,1,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 4231<br>dimensions 76*207 || http://www.mathpuzzle.com/t22r120121010011.gif ||
-|| `{{{1,2,1},{1,1,0}},{{1,4,0},{0,1,0}}}` || chaotic at 40,000 steps<br>population 4250<br>dimensions 81*96 || http://www.mathpuzzle.com/t22r121110140010.gif ||
-|| `{{{1,2,0},{1,1,1}},{{1,1,0},{0,4,1}}}` || chaotic at 40,000 steps<br>population 4284<br>dimensions 80*96 || http://www.mathpuzzle.com/t22r120111110041.gif ||
-|| `{{{1,1,1},{1,1,0}},{{1,2,0},{0,2,1}}}` || chaotic at 40,000 steps<br>population 4301<br>dimensions 91*96 || http://www.mathpuzzle.com/t22r111110120021.gif ||
-|| `{{{1,1,1},{0,2,0}},{{1,8,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 4334<br>dimensions 89*101 || http://www.mathpuzzle.com/t22r111020180111.gif ||
-|| `{{{1,2,1},{0,1,1}},{{1,1,0},{1,8,0}}}` || chaotic at 40,000 steps<br>population 4411<br>dimensions 91*100 || http://www.mathpuzzle.com/t22r121011110180.gif ||
-|| `{{{1,4,0},{1,1,1}},{{1,2,1},{0,1,0}}}` || chaotic at 40,000 steps<br>population 4413<br>dimensions 90*94 || http://www.mathpuzzle.com/t22r140111121010.gif ||
-|| `{{{1,2,0},{1,2,1}},{{1,2,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 4422<br>dimensions 70*141 || http://www.mathpuzzle.com/t22r120121120111.gif ||
-|| `{{{1,2,1},{1,1,0}},{{0,1,0},{0,4,0}}}` || chaotic at 40,000 steps<br>population 4519<br>dimensions 104*109 || http://www.mathpuzzle.com/t22r121110010040.gif ||
-|| `{{{1,2,0},{1,1,1}},{{1,1,0},{0,8,1}}}` || chaotic at 40,000 steps<br>population 4546<br>dimensions 112*114 || http://www.mathpuzzle.com/t22r120111110081.gif ||
-|| `{{{1,1,1},{0,4,1}},{{1,2,0},{1,8,0}}}` || chaotic at 40,000 steps<br>population 4583<br>dimensions 105*117 || http://www.mathpuzzle.com/t22r111041120180.gif ||
-|| `{{{1,2,0},{0,8,1}},{{1,1,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 4600<br>dimensions 95*97 || http://www.mathpuzzle.com/t22r120081110111.gif ||
-|| `{{{1,2,0},{0,1,1}},{{1,4,1},{1,1,0}}}` || chaotic at 40,000 steps<br>population 4606<br>dimensions 84*102 || http://www.mathpuzzle.com/t22r120011141110.gif ||
-|| `{{{1,2,0},{1,1,1}},{{1,1,0},{0,1,1}}}` || chaotic at 40,000 steps<br>population 4662<br>dimensions 106*122 || http://www.mathpuzzle.com/t22r120111110011.gif ||
-|| `{{{1,2,1},{1,1,0}},{{1,4,0},{1,2,0}}}` || chaotic at 40,000 steps<br>population 4760<br>dimensions 77*108 || http://www.mathpuzzle.com/t22r121110140120.gif ||
-|| `{{{1,4,1},{1,1,1}},{{1,2,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 4795<br>dimensions 84*88 || http://www.mathpuzzle.com/t22r141111120111.gif ||
-|| `{{{1,2,0},{0,8,1}},{{0,1,0},{0,1,1}}}` <br> `{{{0,1,1},{0,1,0}},{{1,2,1},{0,8,0}}}` || chaotic at 40,000 steps<br>population 4809<br>dimensions 134*153 || http://www.mathpuzzle.com/t22r011010121080.gif ||
-|| `{{{1,4,1},{1,2,1}},{{1,2,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 4860<br>dimensions 86*100 || http://www.mathpuzzle.com/t22r141121120111.gif ||
-|| `{{{1,2,1},{1,1,0}},{{1,4,0},{1,1,0}}}` || chaotic at 40,000 steps<br>population 4862<br>dimensions 86*97 || http://www.mathpuzzle.com/t22r121110140110.gif ||
-|| `{{{1,2,1},{0,8,0}},{{1,1,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 5002<br>dimensions 102*125 || http://www.mathpuzzle.com/t22r121080110111.gif ||
-|| `{{{0,2,1},{0,8,1}},{{1,1,0},{1,1,1}}}` <br> `{{{1,1,1},{1,1,0}},{{0,2,0},{0,8,0}}}` || chaotic at 40,000 steps<br>population 5079<br>dimensions 102*107 || http://www.mathpuzzle.com/t22r111110020080.gif ||
-|| `{{{0,2,1},{1,1,0}},{{1,1,0},{1,4,1}}}` || chaotic at 40,000 steps<br>population 5088<br>dimensions 88*100 || http://www.mathpuzzle.com/t22r021110110141.gif ||
-|| `{{{1,2,0},{0,2,1}},{{1,2,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 5354<br>dimensions 96*144 || http://www.mathpuzzle.com/t22r120021120111.gif ||
-|| `{{{1,2,1},{1,1,0}},{{1,1,0},{0,4,0}}}` || chaotic at 40,000 steps<br>population 5584<br>dimensions 95*102 || http://www.mathpuzzle.com/t22r121110110040.gif ||
-|| `{{{1,1,1},{1,1,0}},{{1,2,0},{0,2,0}}}` || chaotic at 40,000 steps<br>population 5684<br>dimensions 96*102 || http://www.mathpuzzle.com/t22r111110120020.gif ||
-|| `{{{0,2,1},{1,1,0}},{{1,4,0},{1,2,1}}}` || chaotic at 40,000 steps<br>population 5907<br>dimensions 92*107 || http://www.mathpuzzle.com/t22r021110140121.gif ||
-|| `{{{1,2,0},{0,1,1}},{{1,1,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 5947<br>dimensions 116*116 || http://www.mathpuzzle.com/t22r120011110111.gif ||
-|| `{{{1,1,1},{0,4,1}},{{1,2,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 6035<br>dimensions 94*105 || http://www.mathpuzzle.com/t22r111041120111.gif ||
-|| `{{{1,2,1},{1,8,0}},{{0,1,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 6766<br>dimensions 107*114 || http://www.mathpuzzle.com/t22r121180010111.gif ||
-|| `{{{1,2,1},{1,1,0}},{{1,4,1},{1,4,0}}}` || chaotic at 40,000 steps<br>population 6795<br>dimensions 93*130 || http://www.mathpuzzle.com/t22r121110141140.gif ||
-|| `{{{1,2,0},{1,2,1}},{{1,1,0},{1,8,0}}}` || chaotic at 40,000 steps<br>population 6830<br>dimensions 106*113 || http://www.mathpuzzle.com/t22r120121110180.gif ||
-|| `{{{1,2,0},{0,2,1}},{{1,8,0},{1,1,1}}}` || chaotic at 40,000 steps<br>population 6852<br>dimensions 100*182 || http://www.mathpuzzle.com/t22r120021180111.gif ||
-|| `{{{0,2,1},{1,1,0}},{{1,1,0},{1,8,1}}}` || chaotic at 40,000 steps<br>population 7015<br>dimensions 119*140 || http://www.mathpuzzle.com/t22r021110110181.gif ||
+|| `{{{0,1,1},{0,2,1}},{{1,8,1},{0,2,0}}}` <br> `{{{1,2,0},{0,8,1}},{{0,1,0},{0,8,0}}}` || chaotic at 867,000,000 steps<br>population 2637<br>dimensions 109*118 || http://www.mathpuzzle.com/t22r120081010080.gif ||
+|| `{{{1,2,1},{0,1,0}},{{1,4,0},{1,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 2651<br>dimensions 85*104 || http://www.mathpuzzle.com/t22r121010140110.gif ||
+|| `{{{0,2,1},{0,1,1}},{{1,8,1},{0,1,0}}}` <br> `{{{1,2,0},{0,1,1}},{{0,8,0},{0,1,0}}}` || chaotic at 607,000,000 steps<br>population 2655<br>dimensions 106*106 || http://www.mathpuzzle.com/t22r120011080010.gif ||
+|| `{{{0,2,1},{1,1,1}},{{1,1,0},{0,4,1}}}` <br> `{{{1,1,1},{0,4,0}},{{0,2,0},{1,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 2663<br>dimensions 71*86 || http://www.mathpuzzle.com/t22r111040020110.gif ||
+|| `{{{1,1,1},{0,2,1}},{{1,2,0},{1,8,0}}}` || chaotic at 1,000,000,000 steps<br>population 2675<br>dimensions 71*71 || http://www.mathpuzzle.com/t22r111021120180.gif ||
+|| `{{{1,1,1},{0,1,0}},{{1,2,0},{0,8,1}}}` || chaotic at 1,000,000,000 steps<br>population 2676<br>dimensions 88*100 || http://www.mathpuzzle.com/t22r111010120081.gif ||
+|| `{{{0,2,1},{0,8,1}},{{1,8,1},{0,1,0}}}` <br> `{{{1,2,0},{0,1,1}},{{0,8,0},{0,2,0}}}` || chaotic at 119,000,000 steps<br>population 2689<br>dimensions 100*102 || http://www.mathpuzzle.com/t22r120011080020.gif ||
+|| `{{{0,2,1},{1,1,1}},{{1,1,0},{0,2,1}}}` || chaotic at 434,000,000 steps<br>population 2691<br>dimensions 83*125 || http://www.mathpuzzle.com/t22r021111110021.gif ||
+|| `{{{1,2,0},{1,8,1}},{{1,2,0},{0,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 2692<br>dimensions 83*84 || http://www.mathpuzzle.com/t22r120181120011.gif ||
+|| `{{{1,2,1},{0,8,1}},{{1,1,0},{0,8,0}}}` || chaotic at 1,000,000,000 steps<br>population 2702<br>dimensions 91*104 || http://www.mathpuzzle.com/t22r121081110080.gif ||
+|| `{{{1,2,1},{1,1,0}},{{0,2,1},{1,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 2729<br>dimensions 60*69 || http://www.mathpuzzle.com/t22r121110021110.gif ||
+|| `{{{1,4,0},{0,2,1}},{{1,1,0},{1,2,1}}}` || chaotic at 4,000,000,000 steps<br>population 2733<br>dimensions 72*78 || http://www.mathpuzzle.com/t22r140021110121.gif ||
+|| `{{{1,2,0},{0,8,1}},{{1,2,1},{1,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 2751<br>dimensions 74*85 || http://www.mathpuzzle.com/t22r120081121110.gif ||
+|| `{{{0,2,1},{0,8,0}},{{1,8,1},{0,1,0}}}` <br> `{{{1,2,0},{0,1,1}},{{0,8,0},{0,2,1}}}` || chaotic at 153,000,000 steps<br>population 2754<br>dimensions 114*126 || http://www.mathpuzzle.com/t22r120011080021.gif ||
+|| `{{{0,2,1},{1,1,1}},{{1,1,0},{0,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 2779<br>dimensions 88*94 || http://www.mathpuzzle.com/t22r021111110011.gif ||
+|| `{{{0,2,1},{0,4,1}},{{1,1,0},{1,4,1}}}` || chaotic at 1,000,000,000 steps<br>population 2780<br>dimensions 69*72 || http://www.mathpuzzle.com/t22r021041110141.gif ||
+|| `{{{0,1,1},{1,2,1}},{{1,2,0},{0,1,1}}}` <br> `{{{1,2,1},{0,1,0}},{{0,1,0},{1,2,0}}}` || chaotic at 337,000,000 steps<br>population 2796<br>dimensions 78*131 || http://www.mathpuzzle.com/t22r121010010120.gif ||
+|| `{{{0,2,1},{0,4,1}},{{1,2,0},{1,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 2799<br>dimensions 74*81 || http://www.mathpuzzle.com/t22r021041120111.gif ||
+|| `{{{1,2,0},{1,8,1}},{{1,2,1},{0,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 2807<br>dimensions 76*89 || http://www.mathpuzzle.com/t22r120181121010.gif ||
+|| `{{{0,2,1},{0,1,0}},{{1,1,0},{1,8,1}}}` || chaotic at 1,000,000,000 steps<br>population 2817<br>dimensions 108*112 || http://www.mathpuzzle.com/t22r021010110181.gif ||
+|| `{{{1,2,1},{1,8,1}},{{1,1,0},{0,2,0}}}` || chaotic at 1,000,000,000 steps<br>population 2820<br>dimensions 70*74 || http://www.mathpuzzle.com/t22r121181110020.gif ||
+|| `{{{1,1,1},{1,1,0}},{{0,2,0},{0,8,1}}}` <br> `{{{0,2,1},{0,8,0}},{{1,1,0},{1,1,1}}}` || chaotic at 414,000,000 steps<br>population 2825<br>dimensions 109*109 || http://www.mathpuzzle.com/t22r021080110111.gif ||
+|| `{{{0,1,1},{1,2,1}},{{1,2,1},{0,8,0}}}` <br> `{{{1,2,0},{0,8,1}},{{0,1,0},{1,2,0}}}` || chaotic at 1,000,000,000 steps<br>population 2832<br>dimensions 82*122 || http://www.mathpuzzle.com/t22r120081010120.gif ||
+|| `{{{1,2,0},{1,1,1}},{{1,8,0},{0,2,0}}}` || chaotic at 459,000,000 steps<br>population 2838<br>dimensions 60*110 || http://www.mathpuzzle.com/t22r120111180020.gif ||
+|| `{{{0,1,1},{1,1,0}},{{1,2,1},{0,2,0}}}` <br> `{{{1,2,0},{0,2,1}},{{0,1,0},{1,1,1}}}` || chaotic at 220,000,000 steps<br>population 2850<br>dimensions 90*112 || http://www.mathpuzzle.com/t22r120021010111.gif ||
+|| `{{{1,2,1},{1,8,1}},{{1,1,0},{0,4,0}}}` || chaotic at 1,922,000,000 steps<br>population 2876<br>dimensions 79*91 || http://www.mathpuzzle.com/t22r121181110040.gif ||
+|| `{{{1,2,0},{1,4,1}},{{0,1,0},{0,2,1}}}` || chaotic at 1,000,000,000 steps<br>population 2886<br>dimensions 81*99 || http://www.mathpuzzle.com/t22r120141010021.gif ||
+|| `{{{1,2,0},{0,8,1}},{{1,1,0},{0,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 2890<br>dimensions 91*117 || http://www.mathpuzzle.com/t22r120081110011.gif ||
+|| `{{{1,2,0},{0,8,1}},{{1,8,0},{0,1,1}}}` || chaotic at 594,000,000 steps<br>population 2900<br>dimensions 99*107 || http://www.mathpuzzle.com/t22r120081180011.gif ||
+|| `{{{1,2,0},{1,2,1}},{{1,1,0},{0,4,0}}}` || chaotic at 532,000,000 steps<br>population 2902<br>dimensions 83*95 || http://www.mathpuzzle.com/t22r120121110040.gif ||
+|| `{{{1,1,1},{0,4,0}},{{0,2,0},{1,8,0}}}` <br> `{{{0,2,1},{1,8,1}},{{1,1,0},{0,4,1}}}` || chaotic at 1,000,000,000 steps<br>population 2923<br>dimensions 82*93 || http://www.mathpuzzle.com/t22r021181110041.gif ||
+|| `{{{1,2,0},{0,1,1}},{{1,1,0},{1,2,0}}}` || chaotic at 1,000,000,000 steps<br>population 2930<br>dimensions 73*101 || http://www.mathpuzzle.com/t22r120011110120.gif ||
+|| `{{{1,2,0},{0,2,1}},{{1,1,0},{0,8,1}}}` || chaotic at 170,000,000 steps<br>population 2934<br>dimensions 80*139 || http://www.mathpuzzle.com/t22r120021110081.gif ||
+|| `{{{1,2,0},{0,1,1}},{{0,8,0},{1,2,1}}}` <br> `{{{0,2,1},{1,8,0}},{{1,8,1},{0,1,0}}}` || chaotic at 490,000,000 steps<br>population 2939<br>dimensions 91*111 || http://www.mathpuzzle.com/t22r021180181010.gif ||
+|| `{{{1,2,1},{1,2,1}},{{1,1,0},{0,1,1}}}` <br> `{{{1,1,1},{0,1,0}},{{1,2,0},{1,2,0}}}` || chaotic at 117,000,000 steps<br>population 2969<br>dimensions 91*107 || http://www.mathpuzzle.com/t22r111010120120.gif ||
+|| `{{{1,2,0},{0,1,1}},{{1,8,0},{1,8,1}}}` || chaotic at 1,000,000,000 steps<br>population 2973<br>dimensions 69*87 || http://www.mathpuzzle.com/t22r120011180181.gif ||
+|| `{{{1,1,1},{0,2,0}},{{1,2,0},{1,8,0}}}` || chaotic at 1,000,000,000 steps<br>population 2983<br>dimensions 81*102 || http://www.mathpuzzle.com/t22r111020120180.gif ||
+|| `{{{0,2,1},{1,1,1}},{{1,1,0},{0,8,1}}}` <br> `{{{1,1,1},{0,2,0}},{{0,8,0},{1,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 2999<br>dimensions 91*101 || http://www.mathpuzzle.com/t22r111020080110.gif ||
+|| `{{{1,2,0},{0,1,1}},{{1,1,0},{0,2,1}}}` || chaotic at 819,000,000 steps<br>population 3026<br>dimensions 90*107 || http://www.mathpuzzle.com/t22r120011110021.gif ||
+|| `{{{1,2,0},{0,1,1}},{{1,8,0},{1,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 3047<br>dimensions 85*98 || http://www.mathpuzzle.com/t22r120011180110.gif ||
+|| `{{{1,1,1},{0,2,1}},{{1,8,0},{0,2,0}}}` || chaotic at 1,000,000,000 steps<br>population 3062<br>dimensions 80*129 || http://www.mathpuzzle.com/t22r111021180020.gif ||
+|| `{{{1,2,1},{0,8,0}},{{1,1,0},{0,8,1}}}` || chaotic at 1,000,000,000 steps<br>population 3070<br>dimensions 91*117 || http://www.mathpuzzle.com/t22r121080110081.gif ||
+|| `{{{1,2,0},{1,1,1}},{{1,2,1},{0,8,0}}}` || chaotic at 1,000,000,000 steps<br>population 3071<br>dimensions 88*94 || http://www.mathpuzzle.com/t22r120111121080.gif ||
+|| `{{{0,2,1},{0,8,1}},{{1,1,0},{1,8,1}}}` || chaotic at 1,000,000,000 steps<br>population 3078<br>dimensions 73*76 || http://www.mathpuzzle.com/t22r021081110181.gif ||
+|| `{{{1,1,1},{0,2,0}},{{1,8,0},{0,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 3094<br>dimensions 91*126 || http://www.mathpuzzle.com/t22r111020180011.gif ||
+|| `{{{1,2,1},{0,8,0}},{{1,1,0},{1,8,0}}}` || chaotic at 1,000,000,000 steps<br>population 3100<br>dimensions 80*96 || http://www.mathpuzzle.com/t22r121080110180.gif ||
+|| `{{{1,2,1},{0,8,0}},{{1,1,0},{0,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 3122<br>dimensions 92*110 || http://www.mathpuzzle.com/t22r121080110011.gif ||
+|| `{{{1,2,1},{0,1,1}},{{1,1,0},{0,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 3134<br>dimensions 99*102 || http://www.mathpuzzle.com/t22r121011110011.gif ||
+|| `{{{1,2,1},{0,8,1}},{{1,1,0},{0,8,1}}}` || chaotic at 1,000,000,000 steps<br>population 3142<br>dimensions 95*98 || http://www.mathpuzzle.com/t22r121081110081.gif ||
+|| `{{{1,2,1},{0,1,0}},{{1,4,1},{1,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 3145<br>dimensions 88*115 || http://www.mathpuzzle.com/t22r121010141110.gif ||
+|| `{{{1,2,0},{0,1,1}},{{1,8,0},{1,2,0}}}` || chaotic at 1,000,000,000 steps<br>population 3164<br>dimensions 82*102 || http://www.mathpuzzle.com/t22r120011180120.gif ||
+|| `{{{1,2,0},{1,1,1}},{{1,1,0},{0,8,0}}}` || chaotic at 1,000,000,000 steps<br>population 3197<br>dimensions 69*92 || http://www.mathpuzzle.com/t22r120111110080.gif ||
+|| `{{{0,1,1},{1,2,1}},{{1,8,1},{0,2,0}}}` <br> `{{{1,2,0},{0,8,1}},{{0,1,0},{1,8,0}}}` || chaotic at 564,000,000 steps<br>population 3216<br>dimensions 97*129 || http://www.mathpuzzle.com/t22r120081010180.gif ||
+|| `{{{1,2,0},{0,1,1}},{{1,4,0},{1,1,0}}}` || chaotic at 2,000,000,000 steps<br>population 3233<br>dimensions 84*91 || http://www.mathpuzzle.com/t22r120011140110.gif ||
+|| `{{{1,2,0},{0,4,1}},{{1,8,0},{1,2,1}}}` || chaotic at 2,000,000,000 steps<br>population 3236<br>dimensions 76*81 || http://www.mathpuzzle.com/t22r120041180121.gif ||
+|| `{{{1,1,1},{0,1,0}},{{1,2,0},{0,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 3242<br>dimensions 98*106 || http://www.mathpuzzle.com/t22r111010120010.gif ||
+|| `{{{1,2,1},{1,1,1}},{{1,1,0},{0,2,0}}}` || chaotic at 1,000,000,000 steps<br>population 3250<br>dimensions 73*95 || http://www.mathpuzzle.com/t22r121111110020.gif ||
+|| `{{{1,2,0},{0,1,1}},{{1,2,1},{1,8,0}}}` || chaotic at 1,000,000,000 steps<br>population 3261<br>dimensions 87*98 || http://www.mathpuzzle.com/t22r120011121180.gif ||
+|| `{{{1,4,0},{0,2,1}},{{1,1,0},{1,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 3270<br>dimensions 78*79 || http://www.mathpuzzle.com/t22r140021110111.gif ||
+|| `{{{1,2,1},{0,1,1}},{{1,1,0},{0,8,1}}}` || chaotic at 1,000,000,000 steps<br>population 3300<br>dimensions 92*113 || http://www.mathpuzzle.com/t22r121011110081.gif ||
+|| `{{{1,1,1},{0,2,0}},{{1,8,0},{0,2,1}}}` || chaotic at 1,000,000,000 steps<br>population 3338<br>dimensions 101*117 || http://www.mathpuzzle.com/t22r111020180021.gif ||
+|| `{{{1,4,0},{1,2,1}},{{1,1,0},{0,8,0}}}` || chaotic at 1,000,000,000 steps<br>population 3406<br>dimensions 83*88 || http://www.mathpuzzle.com/t22r140121110080.gif ||
+|| `{{{1,2,0},{1,1,1}},{{1,8,0},{0,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 3408<br>dimensions 78*91 || http://www.mathpuzzle.com/t22r120111180010.gif ||
+|| `{{{1,4,0},{1,1,1}},{{1,1,0},{0,2,0}}}` || chaotic at 1,000,000,000 steps<br>population 3482<br>dimensions 82*86 || http://www.mathpuzzle.com/t22r140111110020.gif ||
+|| `{{{1,2,1},{1,1,0}},{{1,4,0},{0,2,0}}}` || chaotic at 1,000,000,000 steps<br>population 3492<br>dimensions 77*98 || http://www.mathpuzzle.com/t22r121110140020.gif ||
+|| `{{{1,2,0},{0,1,1}},{{1,8,0},{1,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 3507<br>dimensions 75*92 || http://www.mathpuzzle.com/t22r120011180111.gif ||
+|| `{{{0,2,1},{0,8,1}},{{1,1,0},{0,1,1}}}` <br> `{{{1,1,1},{0,1,0}},{{0,2,0},{0,8,0}}}` || chaotic at 420,000,000 steps<br>population 3514<br>dimensions 117*117 || http://www.mathpuzzle.com/t22r111010020080.gif ||
+|| `{{{1,1,1},{0,2,1}},{{1,2,0},{1,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 3516<br>dimensions 85*92 || http://www.mathpuzzle.com/t22r111021120110.gif ||
+|| `{{{1,2,0},{0,1,1}},{{1,8,1},{1,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 3561<br>dimensions 85*90 || http://www.mathpuzzle.com/t22r120011181110.gif ||
+|| `{{{1,1,1},{1,1,0}},{{1,2,0},{0,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 3583<br>dimensions 80*113 || http://www.mathpuzzle.com/t22r111110120011.gif ||
+|| `{{{1,2,1},{0,1,0}},{{1,1,0},{1,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 3585<br>dimensions 90*98 || http://www.mathpuzzle.com/t22r121010110111.gif ||
+|| `{{{1,2,0},{1,8,1}},{{1,2,1},{0,8,0}}}` || chaotic at 1,000,000,000 steps<br>population 3641<br>dimensions 76*102 || http://www.mathpuzzle.com/t22r120181121080.gif ||
+|| `{{{0,2,1},{1,2,1}},{{1,8,1},{0,8,0}}}` || chaotic at 1,000,000,000  steps<br>population 3650<br>dimensions 93*119 || http://www.mathpuzzle.com/t22r021121181080.gif ||
+|| `{{{1,4,1},{0,2,1}},{{1,2,0},{1,1,1}}}` || chaotic at 1,000,000,000  steps<br>population 3663<br>dimensions 94*94 || http://www.mathpuzzle.com/t22r141021120111.gif ||
+|| `{{{1,2,1},{1,8,0}},{{0,1,0},{0,1,1}}}` || chaotic at 625,000,000 steps<br>population 3683<br>dimensions 124*153 || http://www.mathpuzzle.com/t22r121180010011.gif ||
+|| `{{{0,1,1},{0,2,0}},{{1,2,1},{1,8,0}}}` <br> `{{{1,2,0},{1,8,1}},{{0,1,0},{0,2,1}}}` || chaotic at 456,000,000 steps<br>population 3728<br>dimensions 114*117 || http://www.mathpuzzle.com/t22r120181010021.gif ||
+|| `{{{1,1,1},{0,2,1}},{{1,8,0},{0,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 3770<br>dimensions 97*116 || http://www.mathpuzzle.com/t22r111021180010.gif ||
+|| `{{{1,2,0},{1,8,1}},{{0,1,0},{0,1,1}}}` <br> `{{{0,1,1},{0,1,0}},{{1,2,1},{1,8,0}}}` || chaotic at 1,000,000,000 steps<br>population 3784<br>dimensions 104*120 || http://www.mathpuzzle.com/t22r011010121180.gif ||
+|| `{{{1,2,0},{1,1,1}},{{1,8,1},{0,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 3800<br>dimensions 91*105 || http://www.mathpuzzle.com/t22r120111181010.gif ||
+|| `{{{1,4,0},{1,2,1}},{{1,1,0},{0,1,1}}}` || chaotic at 1,000,000,000  steps<br>population 3823<br>dimensions 95*125 || http://www.mathpuzzle.com/t22r140121110011.gif ||
+|| `{{{1,2,1},{1,1,1}},{{1,1,0},{0,1,1}}}` || chaotic at 1,000,000,000  steps<br>population 3835<br>dimensions 101*114 || http://www.mathpuzzle.com/t22r121111110011.gif ||
+|| `{{{1,2,1},{0,8,1}},{{1,1,0},{0,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 3852<br>dimensions 101*109 || http://www.mathpuzzle.com/t22r121081110011.gif ||
+|| `{{{1,1,1},{0,1,0}},{{1,2,0},{1,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 3916<br>dimensions 93*100 || http://www.mathpuzzle.com/t22r111010120110.gif ||
+|| `{{{1,2,1},{0,1,1}},{{1,4,1},{1,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 3921<br>dimensions 89*95 || http://www.mathpuzzle.com/t22r121011141110.gif ||
+|| `{{{1,2,1},{0,1,1}},{{1,1,0},{0,8,0}}}` || chaotic at 861,000,000 steps<br>population 3924<br>dimensions 104*115 || http://www.mathpuzzle.com/t22r121011110080.gif ||
+|| `{{{0,2,1},{1,1,0}},{{1,2,0},{1,8,1}}}` || chaotic at 1,000,000,000 steps<br>population 3941<br>dimensions 80*91 || http://www.mathpuzzle.com/t22r021110120181.gif ||
+|| `{{{1,2,0},{0,1,1}},{{1,1,0},{0,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 3950<br>dimensions 92*122 || http://www.mathpuzzle.com/t22r120011110010.gif ||
+|| `{{{1,2,1},{1,1,0}},{{0,1,0},{0,2,0}}}` || chaotic at 1,000,000,000 steps<br>population 3975<br>dimensions 94*109 || http://www.mathpuzzle.com/t22r121110010020.gif ||
+|| `{{{0,2,1},{1,8,1}},{{1,1,0},{0,1,1}}}` <br> `{{{1,1,1},{0,1,0}},{{0,2,0},{1,8,0}}}` || chaotic at 1,000,000,000 steps<br>population 3995<br>dimensions 115*123 || http://www.mathpuzzle.com/t22r111010020180.gif ||
+|| `{{{1,2,0},{0,8,1}},{{1,2,1},{1,8,0}}}` || chaotic at 1,000,000,000 steps<br>population 4038<br>dimensions 88*94 || http://www.mathpuzzle.com/t22r120081121180.gif ||
+|| `{{{1,2,1},{1,1,0}},{{1,1,0},{0,8,1}}}` || chaotic at 1,000,000,000 steps<br>population 4085<br>dimensions 86*98 || http://www.mathpuzzle.com/t22r121110110081.gif ||
+|| `{{{1,1,1},{0,2,0}},{{1,8,0},{1,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 4086<br>dimensions 102*105 || http://www.mathpuzzle.com/t22r111020180110.gif ||
+|| `{{{1,1,1},{0,2,0}},{{1,8,0},{0,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 4108<br>dimensions 102*141 || http://www.mathpuzzle.com/t22r111020180010.gif ||
+|| `{{{1,4,0},{0,2,1}},{{1,1,0},{1,8,1}}}` || chaotic at 51,000,000 steps<br>population 4125<br>dimensions 116*136 || http://www.mathpuzzle.com/t22r140021110181.gif ||
+|| `{{{1,2,1},{1,8,0}},{{1,4,1},{0,1,0}}}` || chaotic at 48,000,000 steps<br>population 4125<br>dimensions 125*128 || http://www.mathpuzzle.com/t22r121180141010.gif ||
+|| `{{{1,4,1},{1,1,0}},{{1,2,0},{1,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 4203<br>dimensions 81*106 || http://www.mathpuzzle.com/t22r141110120111.gif ||
+|| `{{{1,2,1},{1,1,0}},{{1,4,0},{1,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 4222<br>dimensions 71*101 || http://www.mathpuzzle.com/t22r121110140111.gif ||
+|| `{{{1,1,1},{0,1,0}},{{1,2,0},{0,8,0}}}` || chaotic at 1,000,000,000 steps<br>population 4224<br>dimensions 109*114 || http://www.mathpuzzle.com/t22r111010120080.gif ||
+|| `{{{1,2,1},{0,2,0}},{{1,1,0},{1,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 4227<br>dimensions 83*89 || http://www.mathpuzzle.com/t22r121020110111.gif ||
+|| `{{{1,2,1},{1,1,1}},{{1,1,0},{0,8,1}}}` || chaotic at 1,000,000,000 steps<br>population 4230<br>dimensions 95*130 || http://www.mathpuzzle.com/t22r121111110081.gif ||
+|| `{{{1,2,0},{1,2,1}},{{0,1,0},{0,1,1}}}` || chaotic at 169,000,000 steps<br>population 4231<br>dimensions 76*207 || http://www.mathpuzzle.com/t22r120121010011.gif ||
+|| `{{{1,2,0},{1,1,1}},{{1,1,0},{0,4,1}}}` || chaotic at 1,000,000,000 steps<br>population 4284<br>dimensions 80*96 || http://www.mathpuzzle.com/t22r120111110041.gif ||
+|| `{{{1,1,1},{1,1,0}},{{1,2,0},{0,2,1}}}` || chaotic at 1,000,000,000 steps<br>population 4301<br>dimensions 91*96 || http://www.mathpuzzle.com/t22r111110120021.gif ||
+|| `{{{1,1,1},{0,2,0}},{{1,8,0},{1,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 4334<br>dimensions 89*101 || http://www.mathpuzzle.com/t22r111020180111.gif ||
+|| `{{{1,2,1},{0,1,1}},{{1,1,0},{1,8,0}}}` || chaotic at 1,000,000,000 steps<br>population 4411<br>dimensions 91*100 || http://www.mathpuzzle.com/t22r121011110180.gif ||
+|| `{{{1,4,0},{1,1,1}},{{1,2,1},{0,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 4413<br>dimensions 90*94 || http://www.mathpuzzle.com/t22r140111121010.gif ||
+|| `{{{1,2,0},{1,2,1}},{{1,2,0},{1,1,1}}}` || chaotic at 429,000,000 steps<br>population 4422<br>dimensions 70*141 || http://www.mathpuzzle.com/t22r120121120111.gif ||
+|| `{{{1,2,1},{1,1,0}},{{0,1,0},{0,4,0}}}` || chaotic at 1,000,000,000 steps<br>population 4519<br>dimensions 104*109 || http://www.mathpuzzle.com/t22r121110010040.gif ||
+|| `{{{1,2,0},{1,1,1}},{{1,1,0},{0,8,1}}}` || chaotic at 1,000,000,000 steps<br>population 4546<br>dimensions 112*114 || http://www.mathpuzzle.com/t22r120111110081.gif ||
+|| `{{{1,1,1},{0,4,1}},{{1,2,0},{1,8,0}}}` || chaotic at 1,000,000,000 steps<br>population 4583<br>dimensions 105*117 || http://www.mathpuzzle.com/t22r111041120180.gif ||
+|| `{{{1,2,0},{0,8,1}},{{1,1,0},{1,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 4600<br>dimensions 95*97 || http://www.mathpuzzle.com/t22r120081110111.gif ||
+|| `{{{1,2,0},{0,1,1}},{{1,4,1},{1,1,0}}}` || chaotic at 1,000,000,000 steps<br>population 4606<br>dimensions 84*102 || http://www.mathpuzzle.com/t22r120011141110.gif ||
+|| `{{{1,2,0},{1,1,1}},{{1,1,0},{0,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 4662<br>dimensions 106*122 || http://www.mathpuzzle.com/t22r120111110011.gif ||
+|| `{{{1,2,0},{0,8,1}},{{0,1,0},{0,1,1}}}` <br> `{{{0,1,1},{0,1,0}},{{1,2,1},{0,8,0}}}` || chaotic at 36,000,000 steps<br>population 4809<br>dimensions 134*153 || http://www.mathpuzzle.com/t22r011010121080.gif ||
+|| `{{{1,2,1},{0,8,0}},{{1,1,0},{1,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 5002<br>dimensions 102*125 || http://www.mathpuzzle.com/t22r121080110111.gif ||
+|| `{{{0,2,1},{0,8,1}},{{1,1,0},{1,1,1}}}` <br> `{{{1,1,1},{1,1,0}},{{0,2,0},{0,8,0}}}` || chaotic at 1,000,000,000 steps<br>population 5079<br>dimensions 102*107 || http://www.mathpuzzle.com/t22r111110020080.gif ||
+|| `{{{0,2,1},{1,1,0}},{{1,1,0},{1,4,1}}}` || chaotic at 1,000,000,000 steps<br>population 5088<br>dimensions 88*100 || http://www.mathpuzzle.com/t22r021110110141.gif ||
+|| `{{{1,2,0},{0,2,1}},{{1,2,0},{1,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 5354<br>dimensions 96*144 || http://www.mathpuzzle.com/t22r120021120111.gif ||
+|| `{{{1,2,1},{1,1,0}},{{1,1,0},{0,4,0}}}` || chaotic at 1,000,000,000 steps<br>population 5584<br>dimensions 95*102 || http://www.mathpuzzle.com/t22r121110110040.gif ||
+|| `{{{1,1,1},{1,1,0}},{{1,2,0},{0,2,0}}}` || chaotic at 1,000,000,000 steps<br>population 5684<br>dimensions 96*102 || http://www.mathpuzzle.com/t22r111110120020.gif ||
+|| `{{{0,2,1},{1,1,0}},{{1,4,0},{1,2,1}}}` || chaotic at 158,000,000 steps<br>population 5907<br>dimensions 92*107 || http://www.mathpuzzle.com/t22r021110140121.gif ||
+|| `{{{1,2,0},{0,1,1}},{{1,1,0},{1,1,1}}}` || chaotic at 415,000,000 steps<br>population 5947<br>dimensions 116*116 || http://www.mathpuzzle.com/t22r120011110111.gif ||
+|| `{{{1,1,1},{0,4,1}},{{1,2,0},{1,1,1}}}` || chaotic at 1,000,000,000 steps<br>population 6035<br>dimensions 94*105 || http://www.mathpuzzle.com/t22r111041120111.gif ||
+|| `{{{1,2,1},{1,8,0}},{{0,1,0},{1,1,1}}}` || chaotic at 137,000,000 steps<br>population 6766<br>dimensions 107*114 || http://www.mathpuzzle.com/t22r121180010111.gif ||
+|| `{{{1,2,1},{1,1,0}},{{1,4,1},{1,4,0}}}` || chaotic at 1,000,000,000 steps<br>population 6795<br>dimensions 93*130 || http://www.mathpuzzle.com/t22r121110141140.gif ||
+|| `{{{1,2,0},{0,2,1}},{{1,8,0},{1,1,1}}}` || chaotic at 343,000,000 steps<br>population 6852<br>dimensions 100*182 || http://www.mathpuzzle.com/t22r120021180111.gif ||
 || `{{{1,2,1},{1,1,0}},{{1,4,0},{1,8,0}}}` || chaotic at 215,000,000,000 steps<br>population 859,000,000<br>dimensions 102*167 || http://www.mathpuzzle.com/t22r121110140180.gif ||
 || `{{{0,2,1},{1,2,1}},{{1,8,1},{1,8,0}}}` <br> `{{{1,2,0},{1,2,1}},{{0,8,0},{1,8,0}}}` || chaotic at 1,000,000,000 steps<br>population 13,000,000<br>dimensions 116*138 || http://www.mathpuzzle.com/t22r021121181180.gif ||
 || `{{{1,2,1},{1,1,0}},{{1,1,0},{1,4,0}}}` || chaotic at 572,000,000 steps<br>population 6,860,000 <br>dimensions 102*130 || http://www.mathpuzzle.com/t22r121110110140.gif ||
 || `{{{1,4,1},{1,2,1}},{{1,8,0},{1,1,1}}}` || chaotic at 6,730,000,000 steps<br>population 84,000,000<br>dimensions 122*196 || http://www.mathpuzzle.com/t22r141121180111.gif ||
-|| `{{{1,2,1},{0,4,1}},{{1,1,0},{1,1,1}}}` || chaotic at 61,000,000 steps<br>population 2,730,000<br>dimensions 125*130 || http://www.mathpuzzle.com/t22r121041110111.gif ||
+|| `{{{1,2,1},{0,4,1}},{{1,1,0},{1,1,1}}}` || chaotic at 336,000,000 steps<br>population 2,730,000<br>dimensions 125*130 || http://www.mathpuzzle.com/t22r121041110111.gif ||
 || `{{{1,2,1},{1,1,0}},{{1,4,0},{0,8,1}}}` || chaotic at 556,000,000 steps<br>population 55,000,000<br>dimensions 163*171 || http://www.mathpuzzle.com/t22r121110140081.gif ||
 || `{{{1,4,1},{0,2,0}},{{1,8,0},{1,1,1}}}` || chaotic at 572,000,000 steps<br>population 57,000,000<br>dimensions 153*158 || http://www.mathpuzzle.com/t22r141020180111.gif ||
-|| `{{{1,2,1},{1,2,1}},{{1,1,0},{1,1,1}}}` || chaotic at 100,000,000 steps<br>population 3,940,429<br>dimensions 149*201 || http://www.mathpuzzle.com/t22r121121110111.gif ||
+|| `{{{1,2,1},{1,2,1}},{{1,1,0},{1,1,1}}}` || chaotic at 276,000,000 steps<br>population 3,940,429<br>dimensions 149*201 || http://www.mathpuzzle.com/t22r121121110111.gif ||
 
 Many of these need to be grouped together.
