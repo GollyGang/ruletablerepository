@@ -77,6 +77,7 @@ Turmites (1-state 4-color) that last more than 50 million steps.
 || `{{{1,2,0},{2,4,0},{3,2,0},{3,1,0}}}` || Dual Highway at 4,391,220,000 +10000<br>by Dean Hickerson || [http://ruletablerepository.googlecode.com/files/t14r120240320310.png http://ruletablerepository.googlecode.com/files/t14r120240320310_small.png]  ||
 || `{{{1,2,0},{2,4,0},{3,4,0},{0,8,0}}}` || Highway at 1,589,104,000 +1,000 || [http://ruletablerepository.googlecode.com/files/t14r120240340080.png http://ruletablerepository.googlecode.com/files/t14r120240340080_small.png] ||
 || `{{{1,4,0},{2,2,0},{3,8,0},{0,2,0}}}` || Highway at 1,468,709,000 +1000<br>by Ed Pegg Jr || [http://ruletablerepository.googlecode.com/files/t14r140220380020.png http://ruletablerepository.googlecode.com/files/t14r140220380020_small.png]  ||
+|| `{{{1,2,0},{2,4,0},{3,2,0},{0,1,0}}}` || Highway at 1,167,460,000 <br>by Georgi Gochev || http://ruletablerepository.googlecode.com/files/t14r120240320010_small.png  ||
 || `{{{1,4,0},{2,4,0},{3,1,0},{0,2,0}}}` || Highway at 674,273,000 +1,000 <br>by Ed Pegg Jr|| [http://ruletablerepository.googlecode.com/files/t14r140240310020.png http://ruletablerepository.googlecode.com/files/t14r140240310020_small.png]  ||
 || `{{{1,2,0},{2,2,0},{3,4,0},{0,8,0}}}` || Highway at 255,030,000 +10,000 || [http://ruletablerepository.googlecode.com/files/t14r120220340080.png http://ruletablerepository.googlecode.com/files/t14r120220340080_small.png] ||
 || `{{{1,2,0},{2,2,0},{3,4,0},{0,4,0}}}` || Highway at 148,485,000 +1,000 <br>By Ed Pegg Jr|| [http://ruletablerepository.googlecode.com/files/t14r120220340040.png http://ruletablerepository.googlecode.com/files/t14r120220340040_small.png]  ||
@@ -133,7 +134,6 @@ The population numbers are not the same as the area (number of unique visited ce
 || `{{{1,2,0},{2,4,0},{3,1,0},{0,8,0}}}` || 623,000,000  || Population 1,020,000  ||
 || `{{{1,2,0},{2,4,0},{3,1,0},{1,8,0}}}` || 186,000,000  ||  ||
 || `{{{1,2,0},{2,4,0},{3,1,0},{2,8,0}}}` || 5,253,000,000  || Population 4,579,000  ||
-|| `{{{1,2,0},{2,4,0},{3,2,0},{0,1,0}}}` || 113,000,000  ||  ||
 || `{{{1,2,0},{2,4,0},{3,2,0},{0,8,0}}}` || 105,000,000  ||  ||
 || `{{{1,2,0},{2,4,0},{3,2,0},{2,1,0}}}` || 6,058,000,000  || Population 4,523,000  ||
 || `{{{1,2,0},{2,4,0},{3,2,0},{3,1,0}}}` || 200,000,000  ||  ||
