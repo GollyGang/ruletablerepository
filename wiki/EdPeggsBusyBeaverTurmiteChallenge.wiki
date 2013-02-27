@@ -79,6 +79,7 @@ This is just a small subset of 1074 rules that are still unresolved at 102.4 mil
 Turmites (1-state 4-color) that last more than 50 million steps.
 
 || `{{{1,4,0},{2,2,0},{3,8,0},{0,8,0}}}` || *Highway at 6,650,200,000* <br>by Georgi Gochev || http://ruletablerepository.googlecode.com/files/t14r140220380080_small.png  ||
+|| `{{{1,2,0},{2,8,0},{3,1,0},{1,4,0}}}` || Wedge at 5,928,300,000 <br>by Georgi Gochev || http://ruletablerepository.googlecode.com/files/t14r120280310140_small.png  ||
 || `{{{1,4,0},{2,2,0},{3,2,0},{2,8,0}}}` || Highway at 4,915,000,000 <br>by Georgi Gochev || http://ruletablerepository.googlecode.com/files/t14r140220320280_small.png  ||
 || `{{{1,2,0},{2,4,0},{3,2,0},{3,1,0}}}` || Dual Highway at 4,391,220,000 +10000<br>by Dean Hickerson || [http://ruletablerepository.googlecode.com/files/t14r120240320310.png http://ruletablerepository.googlecode.com/files/t14r120240320310_small.png]  ||
 || `{{{1,2,0},{2,4,0},{3,4,0},{0,8,0}}}` || Highway at 1,589,104,000 +1,000 || [http://ruletablerepository.googlecode.com/files/t14r120240340080.png http://ruletablerepository.googlecode.com/files/t14r120240340080_small.png] ||
@@ -152,7 +153,6 @@ The population numbers are not the same as the area (number of unique visited ce
 || `{{{1,2,0},{2,8,0},{3,1,0},{0,4,0}}}` || Still chaotic at 11,000,000,000<br>Area = ~16,608,000 || [http://ruletablerepository.googlecode.com/files/t14r120280310040.png http://ruletablerepository.googlecode.com/files/t14r120280310040_small.png] ||
 || `{{{1,2,0},{2,8,0},{3,1,0},{0,8,0}}}` || 130,000,000  ||  ||
 || `{{{1,2,0},{2,8,0},{3,1,0},{1,1,0}}}` || 105,000,000  ||  ||
-|| `{{{1,2,0},{2,8,0},{3,1,0},{1,4,0}}}` || 119,000,000  ||  ||
 || `{{{1,2,0},{2,8,0},{3,1,0},{1,8,0}}}` || 1,361,000,000  || Population 2,154,000 ||
 || `{{{1,2,0},{2,8,0},{3,1,0},{2,8,0}}}` || Still chaotic at 10 billion steps. || See also: `{{{1,2,0},{2,8,0},{1,1,0}}}`<br>Because the 2nd and 4th instructions are equal, this is a trivial expansion of the rule<br>above. Only cells which have been visited once are color 1, all others 0, 2 or 3. ||
 || `{{{1,2,0},{2,8,0},{3,2,0},{0,1,0}}}` || 1,227,000,000  || Population 3,000,000 ||
