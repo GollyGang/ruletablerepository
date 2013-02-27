@@ -83,7 +83,7 @@ Turmites (1-state 4-color) that last more than a billion steps, or that have int
 
 == Unresolved 1-state 4-color relative movement turmites ==
 
-It would be good to get these to under a hundred. Behavior is still chaotic after the given number of steps run. If you run any of these for longer, and they don't resolve, put in your number of steps.
+There are currently *94* unresolved 1s4c turmites. Behavior is still chaotic after the given number of steps run. If you run any of these for longer, and they don't resolve, put in your number of steps.
 
 The population numbers are not the same as the area (number of unique visited cells), and as such will be on average 25% too low if a rule creates cells of state 0 within it's hull.
 
