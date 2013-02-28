@@ -200,7 +200,12 @@ The population numbers are not the same as the area (number of unique visited ce
 || `{{{1,2,0},{2,2,0},{3,4,0},{4,1,0},{0,1,0}}}` ||highway 499,990,000<br>by Ed Pegg Jr || ||
 || `{{{1,2,0},{2,1,0},{3,2,0},{4,8,0},{0,4,0}}}` ||highway at 485,664,513<br>by Ed Pegg Jr || ||
 || `{{{1,4,0},{2,1,0},{3,2,0},{4,1,0},{2,4,0}}}` ||highway at 148,978,433<br>by Ed Pegg Jr || ||
+|| `{{{1,2,0},{2,1,0},{3,4,0},{4,4,0},{4,1,0}}}` ||double highway at 136,800,000<br>by Georgi Gochev || ||
 || `{{{1,2,0},{2,4,0},{3,4,0},{4,2,0},{1,8,0}}}` ||trap at 35,300,000<br>by Ed Pegg Jr || ||
+
+== Unresolved 1-state 5-color relative movement turmites == 
+
+|| `{{{1,2,0},{2,2,0},{3,4,0},{4,4,0},{4,1,0}}}` || still working after 1 trillion || ||
 
 == Resolved 2-state 3-color relative movement turmites ==
 
