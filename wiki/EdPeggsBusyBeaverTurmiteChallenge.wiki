@@ -28,21 +28,33 @@ Turmites (1-state 3-color) that last more than 2 million steps.
 || `{{{1,4,0},{2,2,0},{1,8,0}}}` || Langton switchback at 18,490,000 +10,000<br>by Ed Pegg Jr || [http://ruletablerepository.googlecode.com/files/t13r140220180.png http://ruletablerepository.googlecode.com/files/t13r140220180_small.png]  ||
 || `{{{1,2,0},{2,4,0},{0,8,0}}}` || Highway at 2,669,000 +1,000<br>by Ed Pegg Jr || [http://ruletablerepository.googlecode.com/files/t13r120240080.png http://ruletablerepository.googlecode.com/files/t13r120240080_small.png]  ||
 
-== Unresolved 1-state 3-color relative movement turmites ==
 
-There are currently *9* unresolved 1-state 3-color turmites. The image below shows the state of the first eight rules after 20 million steps.
 
-http://www.mathpuzzle.com/t13unresolved.gif
+== Resolved 1-state 4-color relative movement turmites ==
 
-|| `{{{1,2,0},{2,1,0},{0,8,0}}}` || Still chaotic at 10 billion steps. || 
-|| `{{{1,2,0},{2,1,0},{1,8,0}}}` || Still chaotic at 749,869,528,065<br>See also: `{{{1,2,0},{2,1,0},{3,8,0},{2,1,0}}}` || 
-|| `{{{1,2,0},{2,2,0},{1,8,0}}}` || Still chaotic at 10 billion steps. <br>See also: `{{{1,2,0},{2,2,0},{3,8,0},{2,2,0}}}` || 
-|| `{{{1,2,0},{2,8,0},{0,2,0}}}` || Still chaotic at 10 billion steps. || 
-|| `{{{1,2,0},{2,8,0},{0,8,0}}}` || Still chaotic at 10 billion steps. || 
-|| `{{{1,2,0},{2,8,0},{1,1,0}}}` || Still chaotic at 10 billion steps.<br>See also: `{{{1,2,0},{2,8,0},{3,1,0},{2,8,0}}}` || 
-|| `{{{1,4,0},{2,1,0},{0,2,0}}}` || Still chaotic at 10 billion steps. || 
-|| `{{{1,4,0},{2,2,0},{0,1,0}}}` || Still chaotic at 10 billion steps. || 
-|| `{{{1,4,0},{2,2,0},{1,1,0}}}` || Binary counting highways at 2,717,308,080 +10 and at ~10 trillion steps but expected to be unpredictable again after that -- Tim Hutton<br>See also: `{{{1,4,0},{2,2,0},{3,1,0},{2,2,0}}}`<br>http://ruletablerepository.googlecode.com/files/t13r140220110_progress10trln.png || 
+Turmites (1-state 4-color) that last more than a billion steps, or that have interesting behavior (high-period highways, traps/wedges, islands, nice patterns).
+
+|| `{{{1,4,0},{2,2,0},{3,8,0},{0,8,0}}}` || *Highway at 6,650,200,000* <br>by Georgi Gochev || http://ruletablerepository.googlecode.com/files/t14r140220380080_small.png  ||
+|| `{{{1,2,0},{2,8,0},{3,1,0},{1,4,0}}}` || Wedge at 5,928,300,000 <br>by Georgi Gochev || http://ruletablerepository.googlecode.com/files/t14r120280310140_small.png  ||
+|| `{{{1,4,0},{2,2,0},{3,2,0},{2,8,0}}}` || Highway at 4,915,000,000 <br>by Georgi Gochev || http://ruletablerepository.googlecode.com/files/t14r140220320280_small.png  ||
+|| `{{{1,2,0},{2,4,0},{3,2,0},{3,1,0}}}` || Dual Highway at 4,391,220,000 +10000<br>by Dean Hickerson || [http://ruletablerepository.googlecode.com/files/t14r120240320310.png http://ruletablerepository.googlecode.com/files/t14r120240320310_small.png]  ||
+|| `{{{1,2,0},{2,4,0},{3,4,0},{0,8,0}}}` || Highway at 1,589,104,000 +1,000 || [http://ruletablerepository.googlecode.com/files/t14r120240340080.png http://ruletablerepository.googlecode.com/files/t14r120240340080_small.png] ||
+|| `{{{1,4,0},{2,2,0},{3,8,0},{0,2,0}}}` || Highway at 1,468,709,000 +1000<br>by Ed Pegg Jr || [http://ruletablerepository.googlecode.com/files/t14r140220380020.png http://ruletablerepository.googlecode.com/files/t14r140220380020_small.png]  ||
+|| `{{{1,2,0},{2,4,0},{3,2,0},{0,1,0}}}` || Highway at 1,167,460,000 <br>by Georgi Gochev || http://ruletablerepository.googlecode.com/files/t14r120240320010_small.png  ||
+|| `{{{1,2,0},{2,2,0},{3,4,0},{0,8,0}}}` || High-period highway at 255,030,000 +10,000<br>By Ed Pegg Jr || [http://ruletablerepository.googlecode.com/files/t14r120220340080.png http://ruletablerepository.googlecode.com/files/t14r120220340080_small.png] ||
+|| `{{{1,2,0},{2,2,0},{3,4,0},{0,4,0}}}` || High-period highway at 148,485,000 +1,000 <br>By Ed Pegg Jr|| [http://ruletablerepository.googlecode.com/files/t14r120220340040.png http://ruletablerepository.googlecode.com/files/t14r120220340040_small.png]  ||
+
+== Resolved 1-state 5-color relative movement turmites == 
+
+|| `{{{1,2,0},{2,4,0},{3,4,0},{4,4,0},{0,8,0}}}` || *Highway at 217,782,000,000 +10,000,000*<br>by Ed Pegg Jr<br>Part of Langton's Ant series || ||
+|| `{{{1,4,0},{2,2,0},{3,8,0},{4,8,0},{3,2,0}}}` ||highway at 869,794,833<br>by Ed Pegg Jr || ||
+|| `{{{1,2,0},{2,2,0},{3,4,0},{4,2,0},{4,1,0}}}` ||double highway at 775,686,809<br>by Ed Pegg Jr || ||
+|| `{{{1,2,0},{2,2,0},{3,4,0},{4,1,0},{0,1,0}}}` ||highway 499,990,000<br>by Ed Pegg Jr || ||
+|| `{{{1,2,0},{2,1,0},{3,2,0},{4,8,0},{0,4,0}}}` ||highway at 485,664,513<br>by Ed Pegg Jr || ||
+|| `{{{1,4,0},{2,1,0},{3,2,0},{4,1,0},{2,4,0}}}` ||highway at 148,978,433<br>by Ed Pegg Jr || ||
+|| `{{{1,2,0},{2,1,0},{3,4,0},{4,4,0},{4,1,0}}}` ||double highway at 136,800,000<br>by Georgi Gochev || ||
+|| `{{{1,2,0},{2,4,0},{3,4,0},{4,2,0},{1,8,0}}}` ||trap at 35,300,000<br>by Ed Pegg Jr || ||
+
 
 == Resolved 2-state 2-color relative movement turmites ==
 
@@ -67,33 +79,25 @@ Turmites (2-state 2-color) that last more than a billion steps, or that have int
 || `{{{0,2,1},{1,1,0}},{{1,1,0},{1,1,1}}}` || Quadruple highway at 1,799,000 +1,000<br>Likes quadruple highways<br>by Ed Pegg || [http://ruletablerepository.googlecode.com/files/t22r021110110111.png http://ruletablerepository.googlecode.com/files/t22r021110110111_small.png]  ||
 || `{{{1,2,1},{0,8,1}},{{1,2,1},{1,1,0}}}`<br>`{{{1,2,0},{1,1,1}},{{1,2,0},{0,8,0}}}` || Trapped in a complex shape at 1,132,000 +1000<br>An exhaustive search indicates this is the most<br>complex trap possible for all 2s2c turmites<br>starting in an empty world, and up to 1 billion<br>gens. by Mark Jeronimus || http://ruletablerepository.googlecode.com/files/t22r121081121110.png ||
 
+== Resolved 2-state 3-color relative movement turmites ==
 
-== Unresolved 2-state 2-color relative movement turmites ==
+|| `{{{1,1,1},{0,8,1},{1,1,0}},{{2,8,0},{1,1,0},{1,1,1}}}` || Diagonal highway at 1.9*10^61 steps<br>(19 333 473 344 990 976 752<br>614 231 423 479 612 677 954<br>364 906 857 285 205 055 952)<br>by Georgi Gochev||  http://www.mathpuzzle.com/{{{1,1,1},{0,8,1},{1,1,0}},{{2,8,0},{1,1,0},{1,1,1}}}.jpg||
 
-The list of *570* 2s2c turmites is at UnresolvedTurmites2States2Colors. All have been run to 1.6 billion steps. Listed below are interesting runs for over 500 billion, all others should go to the subpage.
+== Unresolved 1-state 3-color relative movement turmites ==
 
-|| `{{{1,2,0},{1,8,1}},{{1,8,1},{0,8,0}}}` || Still chaotic at 1,021,280,049,658<br>Area = ~209,174,272 || [http://ruletablerepository.googlecode.com/files/t22r120181181080.png http://ruletablerepository.googlecode.com/files/t22r120181181080_small.png] ||
-|| `{{{1,2,1},{0,4,0}},{{1,8,1},{1,8,0}}}` || Still chaotic at 567,287,499,009<br>Area = ~216,398,592|| [http://ruletablerepository.googlecode.com/files/t22r121040181180.png http://ruletablerepository.googlecode.com/files/t22r121040181180_small.png] ||
-|| `{{{1,2,1},{0,2,0}},{{1,4,1},{0,1,0}}}` || Still chaotic at 305,795,580,179<br>Area = ~180,359,552 || [http://ruletablerepository.googlecode.com/files/t22r121020141010.png http://ruletablerepository.googlecode.com/files/t22r121020141010_small.png] ||
-|| `{{{1,1,1},{0,2,0}},{{1,2,0},{0,1,1}}}` || Still chaotic at 113,486,027,265<br>Area = ~175,178,368 || [http://ruletablerepository.googlecode.com/files/t22r111020120011.png http://ruletablerepository.googlecode.com/files/t22r111020120011_small.png]||
-|| `{{{1,2,1},{1,8,1}},{{1,1,0},{0,4,0}}}` || Still chaotic at 21,536,408,833<br>Makes highways _within_ it's hull, then corrupts them.<br>by Mark Jeronimus || [http://ruletablerepository.googlecode.com/files/t22r121181110040.png http://ruletablerepository.googlecode.com/files/t22r121181110040_small.png]  ||
-|| `{{{0,4,1},{0,4,1}},{{1,2,1},{0,2,0}}}`<br>Rotated version:<br>`{{{1,2,0},{0,2,1}},{{0,4,0},{0,4,0}}}` || Still chaotic at 17,130,770,177<br>Maze-like and fractal-like structures.<br>The maze corridors are actually highways allowing<br>the turmite to travel vast distances with ease.<br>by Mark Jeronimus. Also ran to 9 billion by Ed Pegg. || [http://ruletablerepository.googlecode.com/files/t22r041041121020a.png http://ruletablerepository.googlecode.com/files/t22r041041121020a_small.png] [http://ruletablerepository.googlecode.com/files/t22r041041121020.png http://ruletablerepository.googlecode.com/files/t22r041041121020_small.png] [http://ruletablerepository.googlecode.com/files/t22r041041121020v.png http://ruletablerepository.googlecode.com/files/t22r041041121020v_small.png] [http://ruletablerepository.googlecode.com/files/t22r041041121020b.png http://ruletablerepository.googlecode.com/files/t22r041041121020b_small.png] ||
-|| `{{{0,1,1},{0,4,0}},{{1,2,0},{1,4,1}}}`<br>`{{{0,1,1},{1,4,0}},{{1,4,1},{0,8,0}}}`<br>`{{{0,2,1},{1,4,0}},{{1,4,1},{0,1,0}}}`<br>`{{{0,8,1},{0,4,0}},{{1,1,0},{1,4,1}}}`<br>`{{{1,1,1},{1,4,0}},{{0,8,0},{0,4,1}}}`<br>`{{{1,2,1},{1,4,0}},{{0,1,0},{0,4,1}}}`<br>`{{{1,4,0},{0,1,1}},{{0,2,0},{1,4,1}}}`<br>`{{{1,4,0},{0,8,1}},{{0,1,0},{1,4,1}}}` || Infinitely growing spiral with constantly<br>changing random interior.<br>by Mark Jeronimus<br>Ed Pegg says -- I don't think this<br>one counts as resolved, unless there is a proof.|| http://ruletablerepository.googlecode.com/files/t22r011140141080.png  ||
+There are currently *9* unresolved 1-state 3-color turmites. The image below shows the state of the first eight rules after 20 million steps.
 
-== Resolved 1-state 4-color relative movement turmites ==
+http://www.mathpuzzle.com/t13unresolved.gif
 
-Turmites (1-state 4-color) that last more than a billion steps, or that have interesting behavior (high-period highways, traps/wedges, islands, nice patterns).
-
-|| `{{{1,4,0},{2,2,0},{3,8,0},{0,8,0}}}` || *Highway at 6,650,200,000* <br>by Georgi Gochev || http://ruletablerepository.googlecode.com/files/t14r140220380080_small.png  ||
-|| `{{{1,2,0},{2,8,0},{3,1,0},{1,4,0}}}` || Wedge at 5,928,300,000 <br>by Georgi Gochev || http://ruletablerepository.googlecode.com/files/t14r120280310140_small.png  ||
-|| `{{{1,4,0},{2,2,0},{3,2,0},{2,8,0}}}` || Highway at 4,915,000,000 <br>by Georgi Gochev || http://ruletablerepository.googlecode.com/files/t14r140220320280_small.png  ||
-|| `{{{1,2,0},{2,4,0},{3,2,0},{3,1,0}}}` || Dual Highway at 4,391,220,000 +10000<br>by Dean Hickerson || [http://ruletablerepository.googlecode.com/files/t14r120240320310.png http://ruletablerepository.googlecode.com/files/t14r120240320310_small.png]  ||
-|| `{{{1,2,0},{2,4,0},{3,4,0},{0,8,0}}}` || Highway at 1,589,104,000 +1,000 || [http://ruletablerepository.googlecode.com/files/t14r120240340080.png http://ruletablerepository.googlecode.com/files/t14r120240340080_small.png] ||
-|| `{{{1,4,0},{2,2,0},{3,8,0},{0,2,0}}}` || Highway at 1,468,709,000 +1000<br>by Ed Pegg Jr || [http://ruletablerepository.googlecode.com/files/t14r140220380020.png http://ruletablerepository.googlecode.com/files/t14r140220380020_small.png]  ||
-|| `{{{1,2,0},{2,4,0},{3,2,0},{0,1,0}}}` || Highway at 1,167,460,000 <br>by Georgi Gochev || http://ruletablerepository.googlecode.com/files/t14r120240320010_small.png  ||
-|| `{{{1,2,0},{2,2,0},{3,4,0},{0,8,0}}}` || High-period highway at 255,030,000 +10,000<br>By Ed Pegg Jr || [http://ruletablerepository.googlecode.com/files/t14r120220340080.png http://ruletablerepository.googlecode.com/files/t14r120220340080_small.png] ||
-|| `{{{1,2,0},{2,2,0},{3,4,0},{0,4,0}}}` || High-period highway at 148,485,000 +1,000 <br>By Ed Pegg Jr|| [http://ruletablerepository.googlecode.com/files/t14r120220340040.png http://ruletablerepository.googlecode.com/files/t14r120220340040_small.png]  ||
-
+|| `{{{1,2,0},{2,1,0},{0,8,0}}}` || Still chaotic at 10 billion steps. || 
+|| `{{{1,2,0},{2,1,0},{1,8,0}}}` || Still chaotic at 749,869,528,065<br>See also: `{{{1,2,0},{2,1,0},{3,8,0},{2,1,0}}}` || 
+|| `{{{1,2,0},{2,2,0},{1,8,0}}}` || Still chaotic at 10 billion steps. <br>See also: `{{{1,2,0},{2,2,0},{3,8,0},{2,2,0}}}` || 
+|| `{{{1,2,0},{2,8,0},{0,2,0}}}` || Still chaotic at 10 billion steps. || 
+|| `{{{1,2,0},{2,8,0},{0,8,0}}}` || Still chaotic at 10 billion steps. || 
+|| `{{{1,2,0},{2,8,0},{1,1,0}}}` || Still chaotic at 10 billion steps.<br>See also: `{{{1,2,0},{2,8,0},{3,1,0},{2,8,0}}}` || 
+|| `{{{1,4,0},{2,1,0},{0,2,0}}}` || Still chaotic at 10 billion steps. || 
+|| `{{{1,4,0},{2,2,0},{0,1,0}}}` || Still chaotic at 10 billion steps. || 
+|| `{{{1,4,0},{2,2,0},{1,1,0}}}` || Binary counting highways at 2,717,308,080 +10 and at ~10 trillion steps but expected to be unpredictable again after that -- Tim Hutton<br>See also: `{{{1,4,0},{2,2,0},{3,1,0},{2,2,0}}}`<br>http://ruletablerepository.googlecode.com/files/t13r140220110_progress10trln.png || 
 
 == Unresolved 1-state 4-color relative movement turmites ==
 
@@ -196,23 +200,20 @@ The population numbers are not the same as the area (number of unique visited ce
 || `{{{1,4,0},{2,4,0},{3,2,0},{1,1,0}}}` || 10,000,000,000  || ||
 || `{{{1,4,0},{2,4,0},{3,2,0},{2,1,0}}}` || 10,000,000,000  ||   ||
 
-== Resolved 1-state 5-color relative movement turmites == 
+== Unresolved 2-state 2-color relative movement turmites ==
 
-|| `{{{1,2,0},{2,4,0},{3,4,0},{4,4,0},{0,8,0}}}` || *Highway at 217,782,000,000 +10,000,000*<br>by Ed Pegg Jr<br>Part of Langton's Ant series || ||
-|| `{{{1,4,0},{2,2,0},{3,8,0},{4,8,0},{3,2,0}}}` ||highway at 869,794,833<br>by Ed Pegg Jr || ||
-|| `{{{1,2,0},{2,2,0},{3,4,0},{4,2,0},{4,1,0}}}` ||double highway at 775,686,809<br>by Ed Pegg Jr || ||
-|| `{{{1,2,0},{2,2,0},{3,4,0},{4,1,0},{0,1,0}}}` ||highway 499,990,000<br>by Ed Pegg Jr || ||
-|| `{{{1,2,0},{2,1,0},{3,2,0},{4,8,0},{0,4,0}}}` ||highway at 485,664,513<br>by Ed Pegg Jr || ||
-|| `{{{1,4,0},{2,1,0},{3,2,0},{4,1,0},{2,4,0}}}` ||highway at 148,978,433<br>by Ed Pegg Jr || ||
-|| `{{{1,2,0},{2,1,0},{3,4,0},{4,4,0},{4,1,0}}}` ||double highway at 136,800,000<br>by Georgi Gochev || ||
-|| `{{{1,2,0},{2,4,0},{3,4,0},{4,2,0},{1,8,0}}}` ||trap at 35,300,000<br>by Ed Pegg Jr || ||
+The list of *570* 2s2c turmites is at UnresolvedTurmites2States2Colors. All have been run to 1.6 billion steps. Listed below are interesting runs for over 500 billion, all others should go to the subpage.
+
+|| `{{{1,2,0},{1,8,1}},{{1,8,1},{0,8,0}}}` || Still chaotic at 1,021,280,049,658<br>Area = ~209,174,272 || [http://ruletablerepository.googlecode.com/files/t22r120181181080.png http://ruletablerepository.googlecode.com/files/t22r120181181080_small.png] ||
+|| `{{{1,2,1},{0,4,0}},{{1,8,1},{1,8,0}}}` || Still chaotic at 567,287,499,009<br>Area = ~216,398,592|| [http://ruletablerepository.googlecode.com/files/t22r121040181180.png http://ruletablerepository.googlecode.com/files/t22r121040181180_small.png] ||
+|| `{{{1,2,1},{0,2,0}},{{1,4,1},{0,1,0}}}` || Still chaotic at 305,795,580,179<br>Area = ~180,359,552 || [http://ruletablerepository.googlecode.com/files/t22r121020141010.png http://ruletablerepository.googlecode.com/files/t22r121020141010_small.png] ||
+|| `{{{1,1,1},{0,2,0}},{{1,2,0},{0,1,1}}}` || Still chaotic at 113,486,027,265<br>Area = ~175,178,368 || [http://ruletablerepository.googlecode.com/files/t22r111020120011.png http://ruletablerepository.googlecode.com/files/t22r111020120011_small.png]||
+|| `{{{1,2,1},{1,8,1}},{{1,1,0},{0,4,0}}}` || Still chaotic at 21,536,408,833<br>Makes highways _within_ it's hull, then corrupts them.<br>by Mark Jeronimus || [http://ruletablerepository.googlecode.com/files/t22r121181110040.png http://ruletablerepository.googlecode.com/files/t22r121181110040_small.png]  ||
+|| `{{{0,4,1},{0,4,1}},{{1,2,1},{0,2,0}}}`<br>Rotated version:<br>`{{{1,2,0},{0,2,1}},{{0,4,0},{0,4,0}}}` || Still chaotic at 17,130,770,177<br>Maze-like and fractal-like structures.<br>The maze corridors are actually highways allowing<br>the turmite to travel vast distances with ease.<br>by Mark Jeronimus. Also ran to 9 billion by Ed Pegg. || [http://ruletablerepository.googlecode.com/files/t22r041041121020a.png http://ruletablerepository.googlecode.com/files/t22r041041121020a_small.png] [http://ruletablerepository.googlecode.com/files/t22r041041121020.png http://ruletablerepository.googlecode.com/files/t22r041041121020_small.png] [http://ruletablerepository.googlecode.com/files/t22r041041121020v.png http://ruletablerepository.googlecode.com/files/t22r041041121020v_small.png] [http://ruletablerepository.googlecode.com/files/t22r041041121020b.png http://ruletablerepository.googlecode.com/files/t22r041041121020b_small.png] ||
+|| `{{{0,1,1},{0,4,0}},{{1,2,0},{1,4,1}}}`<br>`{{{0,1,1},{1,4,0}},{{1,4,1},{0,8,0}}}`<br>`{{{0,2,1},{1,4,0}},{{1,4,1},{0,1,0}}}`<br>`{{{0,8,1},{0,4,0}},{{1,1,0},{1,4,1}}}`<br>`{{{1,1,1},{1,4,0}},{{0,8,0},{0,4,1}}}`<br>`{{{1,2,1},{1,4,0}},{{0,1,0},{0,4,1}}}`<br>`{{{1,4,0},{0,1,1}},{{0,2,0},{1,4,1}}}`<br>`{{{1,4,0},{0,8,1}},{{0,1,0},{1,4,1}}}` || Infinitely growing spiral with constantly<br>changing random interior.<br>by Mark Jeronimus<br>Ed Pegg says -- I don't think this<br>one counts as resolved, unless there is a proof.|| http://ruletablerepository.googlecode.com/files/t22r011140141080.png  ||
+
 
 == Unresolved 1-state 5-color relative movement turmites == 
 
 || `{{{1,2,0},{2,2,0},{3,4,0},{4,4,0},{4,1,0}}}` || still working after 1 trillion || ||
 
-== Resolved 2-state 3-color relative movement turmites ==
-
-|| `{{{1,1,1},{0,8,1},{1,1,0}},{{2,8,0},{1,1,0},{1,1,1}}}` || Diagonal highway at 1.9*10^61 steps<br>(19 333 473 344 990 976 752<br>614 231 423 479 612 677 954<br>364 906 857 285 205 055 952)<br>by Georgi Gochev||  http://www.mathpuzzle.com/{{{1,1,1},{0,8,1},{1,1,0}},{{2,8,0},{1,1,0},{1,1,1}}}.jpg||
-
-test
