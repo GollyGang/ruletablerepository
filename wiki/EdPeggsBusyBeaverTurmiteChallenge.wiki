@@ -3,6 +3,14 @@
 What turmite runs the longest before becoming predictable? 
 Subpage of TwoDimensionalTuringMachines.
 
+== Current Status == 
+
+||        || 2-color||3-color||4-color||5-color||6-color||
+||1-state|| 9,977 steps<br>`{{{1,2,0},{0,8,0}}}`<br>Langton's Ant ||  67,620,060 +10 steps<br>`{{{1,2,0},{2,1,0},{0,4,0}}}`<br>Hutton/Pegg<br>*9* unresolved ||  ~6,650,200,000 steps<br>`{{{1,4,0},{2,2,0},{3,8,0},{0,8,0}}}`<br>Georgi Gochev<br>*94* unresolved  ||  ~217,782,000,000 steps<br>`{{{1,2,0},{2,4,0},{3,4,0},{4,4,0},{0,8,0}}}`<br>Ed Pegg Jr<br>~650 unresolved ||  ??? || 
+||2-state|| ~3,511,330,000,000 steps<br>`{{{1,2,0},{0,1,1}},{{0,2,0},{1,2,1}}}`<br>Georgi Gochev<br>*570* unresolved||  1.9*10^61 steps<br>`{{{1,1,1},{0,8,1},{1,1,0}},{{2,8,0},{1,1,0},{1,1,1}}}`<br>Georgi Gochev ||  ??? ||  ??? ||  ??? || 
+||3-state|| ??? ||  ??? ||  ??? ||  ??? ||  ??? || 
+||4-state|| ??? ||  ??? ||  ??? ||  ??? ||  ??? || 
+
 == Langton's Ant Series ==
 Does anyone understand why these work? Can someone calculate numbers for more in the series?
 
@@ -62,8 +70,7 @@ Turmites (2-state 2-color) that last more than a billion steps, or that have int
 
 == Unresolved 2-state 2-color relative movement turmites ==
 
-A preliminary list of hundreds is at UnresolvedTurmites2States2Colors.
-This is just a small subset of 1074 rules that are still unresolved at 102.4 million.
+The list of *570* 2s2c turmites is at UnresolvedTurmites2States2Colors. All have been run to 1.6 billion steps. Listed below are interesting runs for over 500 billion, all others should go to the subpage.
 
 || `{{{1,2,0},{1,8,1}},{{1,8,1},{0,8,0}}}` || Still chaotic at 1,021,280,049,658<br>Area = ~209,174,272 || [http://ruletablerepository.googlecode.com/files/t22r120181181080.png http://ruletablerepository.googlecode.com/files/t22r120181181080_small.png] ||
 || `{{{1,2,1},{0,4,0}},{{1,8,1},{1,8,0}}}` || Still chaotic at 567,287,499,009<br>Area = ~216,398,592|| [http://ruletablerepository.googlecode.com/files/t22r121040181180.png http://ruletablerepository.googlecode.com/files/t22r121040181180_small.png] ||
