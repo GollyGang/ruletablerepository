@@ -192,6 +192,16 @@ The population numbers are not the same as the area (number of unique visited ce
 || `{{{1,4,0},{2,4,0},{3,2,0},{1,1,0}}}` || 10,000,000,000  || ||
 || `{{{1,4,0},{2,4,0},{3,2,0},{2,1,0}}}` || 10,000,000,000  ||   ||
 
+== Resolved 1-state 5-color relative movement turmites == 
+
+|| `{{{1,2,0},{2,4,0},{3,4,0},{4,4,0},{0,8,0}}}` || *Highway at 217,782,000,000 +10,000,000*<br>by Ed Pegg Jr<br>Part of Langton's Ant series || ||
+|| `{{{1,4,0},{2,2,0},{3,8,0},{4,8,0},{3,2,0}}}` ||highway at 869,794,833<br>by Ed Pegg Jr || ||
+|| `{{{1,2,0},{2,2,0},{3,4,0},{4,2,0},{4,1,0}}}` ||double highway at 775,686,809<br>by Ed Pegg Jr || ||
+|| `{{{1,2,0},{2,2,0},{3,4,0},{4,1,0},{0,1,0}}}` ||highway 499,990,000<br>by Ed Pegg Jr || ||
+|| `{{{1,2,0},{2,1,0},{3,2,0},{4,8,0},{0,4,0}}}` ||highway at 485,664,513<br>by Ed Pegg Jr || ||
+|| `{{{1,4,0},{2,1,0},{3,2,0},{4,1,0},{2,4,0}}}` ||highway at 148,978,433<br>by Ed Pegg Jr || ||
+|| `{{{1,2,0},{2,4,0},{3,4,0},{4,2,0},{1,8,0}}}` ||trap at 35,300,000<br>by Ed Pegg Jr || ||
+
 == Resolved 2-state 3-color relative movement turmites ==
 
 || `{{{1,1,1},{0,8,1},{1,1,0}},{{2,8,0},{1,1,0},{1,1,1}}}` || Diagonal highway at 1.9*10^61 steps<br>(19 333 473 344 990 976 752<br>614 231 423 479 612 677 954<br>364 906 857 285 205 055 952)<br>by Georgi Gochev||  http://www.mathpuzzle.com/{{{1,1,1},{0,8,1},{1,1,0}},{{2,8,0},{1,1,0},{1,1,1}}}.jpg||
