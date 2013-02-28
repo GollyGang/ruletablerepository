@@ -1,13 +1,13 @@
 = Ed Pegg Jr's Busy Beaver Turmite Challenge =
 
 What turmite runs the longest before becoming predictable? 
-Subpage of TwoDimensionalTuringMachines.
+Subpage of TwoDimensionalTuringMachines. Subpages include UnresolvedTurmites2States2Colors.
 
 == Current Status == 
 
 ||        || 2-color||3-color||4-color||5-color||6-color||
 ||1-state|| 9,977 steps<br>`{{{1,2,0},{0,8,0}}}`<br>Langton's Ant ||  67,620,060 +10 steps<br>`{{{1,2,0},{2,1,0},{0,4,0}}}`<br>Hutton/Pegg<br>*9* unresolved ||  ~6,650,200,000 steps<br>`{{{1,4,0},{2,2,0},{3,8,0},{0,8,0}}}`<br>Georgi Gochev<br>*94* unresolved  ||  ~217,782,000,000 steps<br>`{{{1,2,0},{2,4,0},{3,4,0},{4,4,0},{0,8,0}}}`<br>Ed Pegg Jr<br>~650 unresolved ||  ??? || 
-||2-state|| ~3,511,330,000,000 steps<br>`{{{1,2,0},{0,1,1}}`,<br>`{{0,2,0},{1,2,1}}}`<br>Georgi Gochev<br>*570* unresolved||  1.9*10^61 steps<br>`{{{1,1,1},{0,8,1},{1,1,0}}`,<br>`{{2,8,0},{1,1,0},{1,1,1}}}`<br>Georgi Gochev ||  ??? ||  ??? ||  ??? || 
+||2-state|| ~3,511,330,000,000 steps<br>`{{{1,2,0},{0,1,1}}`,<br>`{{0,2,0},{1,2,1}}}`<br>Georgi Gochev<br>[UnresolvedTurmites2States2Colors 570 unresolved] ||  1.9*10^61 steps<br>`{{{1,1,1},{0,8,1},{1,1,0}}`,<br>`{{2,8,0},{1,1,0},{1,1,1}}}`<br>Georgi Gochev ||  ??? ||  ??? ||  ??? || 
 ||3-state|| ??? ||  ??? ||  ??? ||  ??? ||  ??? || 
 ||4-state|| ??? ||  ??? ||  ??? ||  ??? ||  ??? || 
 
@@ -216,4 +216,3 @@ The list of *570* 2s2c turmites is at UnresolvedTurmites2States2Colors. All have
 == Unresolved 1-state 5-color relative movement turmites == 
 
 || `{{{1,2,0},{2,2,0},{3,4,0},{4,4,0},{4,1,0}}}` || still working after 1 trillion || ||
-
