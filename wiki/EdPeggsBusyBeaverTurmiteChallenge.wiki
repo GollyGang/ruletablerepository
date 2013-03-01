@@ -1,12 +1,12 @@
 = Ed Pegg Jr's Busy Beaver Turmite Challenge =
 
 What turmite runs the longest before becoming predictable? 
-Subpage of TwoDimensionalTuringMachines. Subpages include UnresolvedTurmites2States2Colors.
+Subpage of TwoDimensionalTuringMachines. Subpages include UnresolvedTurmites2States2Colors and UnresolvedTurmites1States5Colors.
 
 == Current Status == 
 
 ||        || 2-color||3-color||4-color||5-color||6-color||
-||1-state|| 9,977 steps<br>`{{{1,2,0},{0,8,0}}}`<br>Langton's Ant ||  67,620,060 +10 steps<br>`{{{1,2,0},{2,1,0},{0,4,0}}}`<br>Hutton/Pegg<br>[EdPeggsBusyBeaverTurmiteChallenge#Unresolved_1-state_3-color_relative_movement_turmites 9 unresolved] ||  ~6,650,200,000 steps<br>`{{{1,4,0},{2,2,0},{3,8,0},{0,8,0}}}`<br>Georgi Gochev<br>[EdPeggsBusyBeaverTurmiteChallenge#Unresolved_1-state_4-color_relative_movement_turmites 94 unresolved]  ||  ~217,782,000,000 steps<br>`{{{1,2,0},{2,4,0},{3,4,0},{4,4,0},{0,8,0}}}`<br>Ed Pegg Jr<br>~650 unresolved ||  ??? || 
+||1-state|| 9,977 steps<br>`{{{1,2,0},{0,8,0}}}`<br>Langton's Ant ||  67,620,060 +10 steps<br>`{{{1,2,0},{2,1,0},{0,4,0}}}`<br>Hutton/Pegg<br>[EdPeggsBusyBeaverTurmiteChallenge#Unresolved_1-state_3-color_relative_movement_turmites 9 unresolved] ||  ~6,650,200,000 steps<br>`{{{1,4,0},{2,2,0},{3,8,0},{0,8,0}}}`<br>Georgi Gochev<br>[EdPeggsBusyBeaverTurmiteChallenge#Unresolved_1-state_4-color_relative_movement_turmites 94 unresolved]  ||  ~217,782,000,000 steps<br>`{{{1,2,0},{2,4,0},{3,4,0},{4,4,0},{0,8,0}}}`<br>Ed Pegg Jr<br> [UnresolvedTurmites1States5Colors 615 unresolved] ||  ??? || 
 ||2-state|| ~3,511,330,000,000 steps<br>`{{{1,2,0},{0,1,1}}`,<br>`{{0,2,0},{1,2,1}}}`<br>Georgi Gochev<br>[UnresolvedTurmites2States2Colors 570 unresolved] ||  1.9*10^61 steps<br>`{{{1,1,1},{0,8,1},{1,1,0}}`,<br>`{{2,8,0},{1,1,0},{1,1,1}}}`<br>Georgi Gochev ||  ??? ||  ??? ||  ??? || 
 ||3-state|| ??? ||  ??? ||  ??? ||  ??? ||  ??? || 
 ||4-state|| ??? ||  ??? ||  ??? ||  ??? ||  ??? || 
@@ -202,6 +202,12 @@ The population numbers are not the same as the area (number of unique visited ce
 || `{{{1,4,0},{2,4,0},{3,2,0},{1,1,0}}}` || 10,000,000,000  || ||
 || `{{{1,4,0},{2,4,0},{3,2,0},{2,1,0}}}` || 10,000,000,000  ||   ||
 
+=== Unresolved 1-state 5-color relative movement turmites === 
+
+There are *615* turmites listed at UnresolvedTurmites1States5Colors.
+
+|| `{{{1,2,0},{2,2,0},{3,4,0},{4,4,0},{4,1,0}}}` || still working after 1 trillion || ||
+
 === Unresolved 2-state 2-color relative movement turmites ===
 
 The list of *570* 2s2c turmites is at UnresolvedTurmites2States2Colors. All have been run to 1.6 billion steps. Listed below are interesting runs for over 500 billion, all others should go to the subpage.
@@ -213,8 +219,3 @@ The list of *570* 2s2c turmites is at UnresolvedTurmites2States2Colors. All have
 || `{{{1,2,1},{1,8,1}},{{1,1,0},{0,4,0}}}` || Still chaotic at 21,536,408,833<br>Makes highways _within_ it's hull, then corrupts them.<br>by Mark Jeronimus || [http://ruletablerepository.googlecode.com/files/t22r121181110040.png http://ruletablerepository.googlecode.com/files/t22r121181110040_small.png]  ||
 || `{{{0,4,1},{0,4,1}},{{1,2,1},{0,2,0}}}`<br>Rotated version:<br>`{{{1,2,0},{0,2,1}},{{0,4,0},{0,4,0}}}` || Still chaotic at 17,130,770,177<br>Maze-like and fractal-like structures.<br>The maze corridors are actually highways allowing<br>the turmite to travel vast distances with ease.<br>by Mark Jeronimus. Also ran to 9 billion by Ed Pegg. || [http://ruletablerepository.googlecode.com/files/t22r041041121020a.png http://ruletablerepository.googlecode.com/files/t22r041041121020a_small.png] [http://ruletablerepository.googlecode.com/files/t22r041041121020.png http://ruletablerepository.googlecode.com/files/t22r041041121020_small.png] [http://ruletablerepository.googlecode.com/files/t22r041041121020v.png http://ruletablerepository.googlecode.com/files/t22r041041121020v_small.png] [http://ruletablerepository.googlecode.com/files/t22r041041121020b.png http://ruletablerepository.googlecode.com/files/t22r041041121020b_small.png] ||
 || `{{{0,1,1},{0,4,0}},{{1,2,0},{1,4,1}}}`<br>`{{{0,1,1},{1,4,0}},{{1,4,1},{0,8,0}}}`<br>`{{{0,2,1},{1,4,0}},{{1,4,1},{0,1,0}}}`<br>`{{{0,8,1},{0,4,0}},{{1,1,0},{1,4,1}}}`<br>`{{{1,1,1},{1,4,0}},{{0,8,0},{0,4,1}}}`<br>`{{{1,2,1},{1,4,0}},{{0,1,0},{0,4,1}}}`<br>`{{{1,4,0},{0,1,1}},{{0,2,0},{1,4,1}}}`<br>`{{{1,4,0},{0,8,1}},{{0,1,0},{1,4,1}}}` || Infinitely growing spiral with constantly<br>changing random interior.<br>by Mark Jeronimus<br>Ed Pegg says -- I don't think this<br>one counts as resolved, unless there is a proof.|| http://ruletablerepository.googlecode.com/files/t22r011140141080.png  ||
-
-
-=== Unresolved 1-state 5-color relative movement turmites === 
-
-|| `{{{1,2,0},{2,2,0},{3,4,0},{4,4,0},{4,1,0}}}` || still working after 1 trillion || ||
