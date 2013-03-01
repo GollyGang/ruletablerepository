@@ -37,7 +37,7 @@ Turmites (1-state 4-color) that last more than a billion steps, or that have int
 
 === Resolved 1-state 5-color relative movement turmites === 
 
-Turmites (1-state 5-color) that last more than a billion steps, or that have interesting behavior (high-period highways, traps/wedges, islands, nice patterns). There will eventually be a subpage with ~650 unresolved cases.
+Turmites (1-state 5-color) that last more than a billion steps, or that have interesting behavior (high-period highways, traps/wedges, islands, nice patterns). There are *615* unresolved turmites listed at the subpage, UnresolvedTurmites1States5Colors.
 
 || `{{{1,2,0},{2,4,0},{3,4,0},{4,4,0},{0,8,0}}}` || *Highway at 217,782,000,000 +10,000,000*<br>by Ed Pegg Jr<br>Part of Langton's Ant series || ||
 || `{{{1,4,0},{2,2,0},{3,8,0},{4,8,0},{3,2,0}}}` ||highway at 869,794,833<br>by Ed Pegg Jr || ||
