@@ -39,7 +39,7 @@ Some interesting rules to try or to study:
 
 ==Rules==
 
-These have all been run with about 1.6 billion steps. The exact number of iterations is unknown as the simulation stops when a certain size is reached. Some only ran for about 1 billion steps. Mark is still in the process of eliminating even more as a simulation of 6.4 billion steps is under way.
+These have all been run with at most 1 billion steps. Some have run less because their patterns grew so fast they hit my memory limit.
 
 || t22r011010120021 || gens: 1000000000<br>area: 8343639<br>maxVisits: 667<br>density: 17.97%<br>colors: 0.59% 0.41% || https://dl.dropbox.com/u/13260068/Turmites/t22r011010120021.png ||
 || t22r011010120041 || gens: 1000000000<br>area: 10710067<br>maxVisits: 438<br>density: 21.32%<br>colors: 0.62% 0.38% || https://dl.dropbox.com/u/13260068/Turmites/t22r011010120041.png ||
