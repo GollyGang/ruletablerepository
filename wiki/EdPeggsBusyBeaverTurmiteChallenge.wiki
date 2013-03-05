@@ -205,7 +205,10 @@ The population numbers are not the same as the area (number of unique visited ce
 
 === Unresolved 1-state 5-color relative movement turmites === 
 
-There are *615* turmites listed at UnresolvedTurmites1States5Colors.
+There are *615* turmites listed at UnresolvedTurmites1States5Colors. 
+
+I've run the first six of the list for 6 trillion steps. Here's step 5 trillion. 
+http://www.mathpuzzle.com/t15s5Tt.gif
 
 || `{{{1,2,0},{2,2,0},{3,4,0},{4,4,0},{4,1,0}}}` || still working after 1 trillion || ||
 
