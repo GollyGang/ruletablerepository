@@ -2,7 +2,7 @@
 
 = Introduction =
 
-There are 531 unique unresolved 2-state 2-color turmites at 1 billion iterations. This is a subpage of EdPeggsBusyBeaverTurmiteChallenge.
+There are 527 unique unresolved 2-state 2-color turmites at 1 billion iterations. This is a subpage of EdPeggsBusyBeaverTurmiteChallenge.
 
 I simulated all 2<sup>16</sup>=65,536 rules of the 2s2c turmites and noted how much of each type resolved at regular iteration steps (powers of 10).
 
@@ -39,577 +39,532 @@ Some interesting rules to try or to study:
 
 ==Rules==
 
-(outdated, will update soon)
-
 These have all been run with about 1.6 billion steps. The exact number of iterations is unknown as the simulation stops when a certain size is reached. Some only ran for about 1 billion steps. Mark is still in the process of eliminating even more as a simulation of 6.4 billion steps is under way.
 
-|| `{{{1,2,0},{0,1,1}},{{1,8,0},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011180040.png ||
-|| `{{{1,4,1},{1,2,1}},{{1,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141121120081.png ||
-|| `{{{1,4,1},{1,2,1}},{{1,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141121120011.png ||
-|| `{{{1,4,1},{1,2,1}},{{1,1,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141121110021.png ||
-|| `{{{1,4,1},{1,2,0}},{{1,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141120120011.png ||
-|| `{{{1,4,1},{1,1,1}},{{1,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141111121010.png ||
-|| `{{{1,4,1},{1,1,1}},{{1,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141111120011.png ||
-|| `{{{1,4,1},{1,1,1}},{{1,2,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141111120010.png ||
-|| `{{{1,4,1},{1,1,1}},{{1,1,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141111110021.png ||
-|| `{{{1,4,1},{0,4,0}},{{1,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141040120011.png ||
-|| `{{{1,4,1},{0,2,1}},{{1,8,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141021180011.png ||
-|| `{{{1,4,1},{0,2,1}},{{1,2,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141021120010.png ||
-|| `{{{1,4,1},{0,2,0}},{{1,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141020120081.png ||
-|| `{{{1,4,1},{0,2,0}},{{1,1,0},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141020110080.png ||
-|| `{{{1,4,1},{0,2,0}},{{1,1,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141020110021.png ||
-|| `{{{1,4,1},{0,2,0}},{{0,8,1},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141020081120.png ||
-|| `{{{1,4,1},{0,2,0}},{{0,2,1},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141020021180.png ||
-|| `{{{1,4,1},{0,1,1}},{{1,4,0},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141011140120.png ||
-|| `{{{1,4,1},{0,1,1}},{{1,2,0},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141011120180.png ||
-|| `{{{1,4,1},{0,1,1}},{{1,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141011120081.png ||
-|| `{{{1,4,1},{0,1,1}},{{1,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141011120011.png ||
-|| `{{{1,4,1},{0,1,1}},{{1,2,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141011120010.png ||
-|| `{{{1,4,1},{0,1,0}},{{1,2,0},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141010120110.png ||
-|| `{{{1,4,1},{0,1,0}},{{1,1,0},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141010110020.png ||
-|| `{{{1,4,1},{0,1,0}},{{0,2,1},{1,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141010021140.png ||
-|| `{{{1,4,1},{0,1,0}},{{0,2,1},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141010021120.png ||
-|| `{{{1,4,0},{1,2,1}},{{1,8,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r140121181080.png ||
-|| `{{{1,4,0},{1,2,1}},{{1,4,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r140121140081.png ||
-|| `{{{1,4,0},{1,2,1}},{{1,4,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r140121140011.png ||
-|| `{{{1,4,0},{1,2,1}},{{1,4,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r140121140010.png ||
-|| `{{{1,4,0},{1,1,1}},{{1,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r140111121010.png ||
-|| `{{{1,4,0},{0,2,1}},{{1,2,1},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r140021121040.png ||
-|| `{{{1,4,0},{0,2,1}},{{1,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r140021121010.png ||
-|| `{{{1,4,0},{0,2,1}},{{1,1,0},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r140021110120.png ||
-|| `{{{1,4,0},{0,1,1}},{{1,2,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r140011121110.png ||
-|| `{{{1,2,1},{1,8,1}},{{1,4,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121181141010.png ||
-|| `{{{1,2,1},{1,8,1}},{{1,4,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121181140010.png ||
-|| `{{{1,2,1},{1,8,1}},{{1,1,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121181110081.png ||
-|| `{{{1,2,1},{1,8,0}},{{0,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121180020081.png ||
-|| `{{{1,2,1},{1,2,1}},{{1,4,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121121140021.png ||
-|| `{{{1,2,1},{1,2,1}},{{1,4,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121121140011.png ||
-|| `{{{1,2,1},{1,1,1}},{{1,4,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121111141010.png ||
-|| `{{{1,2,1},{1,1,1}},{{1,4,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121111140021.png ||
-|| `{{{1,2,1},{1,1,1}},{{1,4,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121111140011.png ||
-|| `{{{1,2,1},{1,1,1}},{{1,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121111120081.png ||
-|| `{{{1,2,1},{1,1,1}},{{1,2,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121111120010.png ||
-|| `{{{1,2,1},{1,1,1}},{{1,1,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121111110081.png ||
-|| `{{{1,2,1},{1,1,1}},{{1,1,0},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121111110020.png ||
-|| `{{{1,2,1},{1,1,1}},{{1,1,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121111110011.png ||
-|| `{{{1,2,1},{1,1,0}},{{1,1,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121110110081.png ||
-|| `{{{1,2,1},{0,8,1}},{{1,2,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121081120010.png ||
-|| `{{{1,2,1},{0,8,1}},{{1,1,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121081110081.png ||
-|| `{{{1,2,1},{0,8,1}},{{1,1,0},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121081110080.png ||
-|| `{{{1,2,1},{0,8,1}},{{1,1,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121081110011.png ||
-|| `{{{1,2,1},{0,8,0}},{{1,4,0},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121080140120.png ||
-|| `{{{1,2,1},{0,8,0}},{{1,4,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121080140021.png ||
-|| `{{{1,2,1},{0,8,0}},{{1,4,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121080140010.png ||
-|| `{{{0,1,1},{0,1,0}},{{1,2,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011010120021.png ||
-|| `{{{0,1,1},{0,1,0}},{{1,2,0},{0,4,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011010120041.png ||
-|| `{{{0,1,1},{0,1,0}},{{1,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011010120081.png ||
-|| `{{{0,1,1},{0,1,0}},{{1,2,0},{1,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011010120111.png ||
-|| `{{{0,1,1},{0,1,0}},{{1,2,0},{1,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011010120181.png ||
-|| `{{{0,1,1},{0,1,0}},{{1,2,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011010121020.png ||
-|| `{{{0,1,1},{0,1,0}},{{1,2,1},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011010121120.png ||
-|| `{{{0,1,1},{0,1,0}},{{1,2,1},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011010121180.png ||
-|| `{{{0,1,1},{0,2,0}},{{1,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011020120081.png ||
-|| `{{{0,1,1},{0,2,0}},{{1,2,0},{1,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011020120111.png ||
-|| `{{{0,1,1},{0,2,0}},{{1,2,0},{1,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011020120121.png ||
-|| `{{{0,1,1},{0,2,0}},{{1,2,0},{1,4,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011020120141.png ||
-|| `{{{0,1,1},{0,2,0}},{{1,2,0},{1,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011020120181.png ||
-|| `{{{0,1,1},{0,2,0}},{{1,2,1},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011020121040.png ||
-|| `{{{0,1,1},{0,2,0}},{{1,2,1},{1,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011020121140.png ||
-|| `{{{0,1,1},{0,2,0}},{{1,2,1},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011020121180.png ||
-|| `{{{0,1,1},{0,2,0}},{{1,4,0},{1,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011020140111.png ||
-|| `{{{0,1,1},{0,2,0}},{{1,8,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011020180011.png ||
-|| `{{{0,1,1},{0,2,0}},{{1,8,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011020180021.png ||
-|| `{{{0,1,1},{0,2,0}},{{1,8,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011020180081.png ||
-|| `{{{0,1,1},{0,2,1}},{{1,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011021120011.png ||
-|| `{{{0,1,1},{0,2,1}},{{1,2,0},{0,4,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011021120041.png ||
-|| `{{{0,1,1},{0,2,1}},{{1,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011021120081.png ||
-|| `{{{0,1,1},{0,2,1}},{{1,2,1},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011021121040.png ||
-|| `{{{0,1,1},{0,2,1}},{{1,8,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011021180021.png ||
-|| `{{{0,1,1},{0,2,1}},{{1,8,0},{0,4,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011021180041.png ||
-|| `{{{0,1,1},{0,2,1}},{{1,8,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011021180081.png ||
-|| `{{{0,1,1},{0,2,1}},{{1,8,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011021181020.png ||
-|| `{{{0,1,1},{0,2,1}},{{1,8,1},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011021181040.png ||
-|| `{{{0,1,1},{0,4,0}},{{1,2,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011040121020.png ||
-|| `{{{0,1,1},{0,4,1}},{{1,2,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011041120021.png ||
-|| `{{{0,1,1},{0,4,1}},{{1,2,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011041121080.png ||
-|| `{{{0,1,1},{1,1,0}},{{1,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011110120011.png ||
-|| `{{{0,1,1},{1,1,0}},{{1,2,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011110120021.png ||
-|| `{{{0,1,1},{1,1,0}},{{1,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011110120081.png ||
-|| `{{{0,1,1},{1,1,0}},{{1,2,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011110121020.png ||
-|| `{{{0,1,1},{1,1,0}},{{1,2,1},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011110121040.png ||
-|| `{{{0,1,1},{1,2,0}},{{1,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011120120011.png ||
-|| `{{{0,1,1},{1,2,0}},{{1,2,1},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011120121040.png ||
-|| `{{{0,1,1},{1,2,1}},{{1,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011121120011.png ||
-|| `{{{0,1,1},{1,2,1}},{{1,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011121120081.png ||
-|| `{{{0,1,1},{1,2,1}},{{1,2,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011121121080.png ||
-|| `{{{0,1,1},{1,2,1}},{{1,4,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011121141080.png ||
-|| `{{{0,1,1},{1,2,1}},{{1,8,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011121180011.png ||
-|| `{{{0,1,1},{1,2,1}},{{1,8,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011121180021.png ||
-|| `{{{0,1,1},{1,2,1}},{{1,8,0},{0,4,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011121180041.png ||
-|| `{{{0,1,1},{1,2,1}},{{1,8,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011121181020.png ||
-|| `{{{0,1,1},{1,2,1}},{{1,8,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011121181080.png ||
-|| `{{{0,1,1},{1,4,0}},{{1,2,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011140121020.png ||
-|| `{{{0,1,1},{1,4,1}},{{1,2,0},{0,4,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011141120041.png ||
-|| `{{{0,2,1},{0,1,0}},{{1,1,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021010110081.png ||
-|| `{{{0,2,1},{0,1,0}},{{1,1,0},{1,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021010110111.png ||
-|| `{{{0,2,1},{0,1,0}},{{1,1,0},{1,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021010110181.png ||
-|| `{{{0,2,1},{0,1,0}},{{1,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021010120081.png ||
-|| `{{{0,2,1},{0,1,0}},{{1,2,0},{1,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021010120181.png ||
-|| `{{{0,2,1},{0,1,0}},{{1,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021010121010.png ||
-|| `{{{0,2,1},{0,1,0}},{{1,2,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021010121110.png ||
-|| `{{{0,2,1},{0,1,0}},{{1,2,1},{1,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021010121140.png ||
-|| `{{{0,2,1},{0,1,0}},{{1,2,1},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021010121180.png ||
-|| `{{{0,2,1},{0,1,0}},{{1,4,0},{1,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021010140121.png ||
-|| `{{{0,2,1},{0,1,0}},{{1,4,0},{1,4,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021010140141.png ||
-|| `{{{0,2,1},{0,1,0}},{{1,4,0},{1,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021010140181.png ||
-|| `{{{0,2,1},{0,1,0}},{{1,4,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021010141110.png ||
-|| `{{{0,2,1},{0,1,0}},{{1,4,1},{1,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021010141140.png ||
-|| `{{{0,2,1},{0,1,0}},{{1,8,1},{1,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021010181140.png ||
-|| `{{{0,2,1},{0,1,1}},{{1,1,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021011110011.png ||
-|| `{{{0,2,1},{0,1,1}},{{1,1,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021011110021.png ||
-|| `{{{0,2,1},{0,1,1}},{{1,1,0},{0,4,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021011110041.png ||
-|| `{{{0,2,1},{0,1,1}},{{1,1,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021011110081.png ||
-|| `{{{0,2,1},{0,1,1}},{{1,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021011120081.png ||
-|| `{{{0,2,1},{0,1,1}},{{1,8,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021011181010.png ||
-|| `{{{0,2,1},{0,1,1}},{{1,8,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021011181020.png ||
-|| `{{{0,2,1},{0,1,1}},{{1,8,1},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021011181040.png ||
-|| `{{{0,2,1},{0,1,1}},{{1,8,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021011181080.png ||
-|| `{{{0,2,1},{0,2,0}},{{1,1,0},{0,4,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021020110041.png ||
-|| `{{{0,2,1},{0,2,0}},{{1,1,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021020110081.png ||
-|| `{{{0,2,1},{0,2,0}},{{1,1,0},{1,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021020110111.png ||
-|| `{{{0,2,1},{0,2,0}},{{1,1,0},{1,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021020110181.png ||
-|| `{{{0,2,1},{0,2,0}},{{1,4,0},{1,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021020140111.png ||
-|| `{{{0,2,1},{0,2,0}},{{1,8,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021020181020.png ||
-|| `{{{0,2,1},{0,2,0}},{{1,8,1},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021020181180.png ||
-|| `{{{0,2,1},{0,2,1}},{{1,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021021120081.png ||
-|| `{{{0,2,1},{0,4,0}},{{1,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021040121010.png ||
-|| `{{{0,2,1},{0,4,0}},{{1,2,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021040121110.png ||
-|| `{{{0,2,1},{0,4,0}},{{1,2,1},{1,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021040121140.png ||
-|| `{{{0,2,1},{0,4,0}},{{1,8,1},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021040181040.png ||
-|| `{{{0,2,1},{0,8,0}},{{1,1,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021080110011.png ||
-|| `{{{0,2,1},{0,8,0}},{{1,1,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021080110081.png ||
-|| `{{{0,2,1},{0,8,0}},{{1,1,0},{1,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021080110111.png ||
-|| `{{{0,2,1},{0,8,0}},{{1,1,0},{1,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021080110121.png ||
-|| `{{{0,2,1},{0,8,0}},{{1,2,0},{1,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021080120121.png ||
-|| `{{{0,2,1},{0,8,0}},{{1,2,0},{1,4,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021080120141.png ||
-|| `{{{0,2,1},{0,8,0}},{{1,2,0},{1,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021080120181.png ||
-|| `{{{0,2,1},{0,8,0}},{{1,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021080121010.png ||
-|| `{{{0,2,1},{0,8,0}},{{1,2,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021080121110.png ||
-|| `{{{0,2,1},{0,8,0}},{{1,4,0},{1,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021080140111.png ||
-|| `{{{0,2,1},{0,8,0}},{{1,4,0},{1,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021080140181.png ||
-|| `{{{0,2,1},{0,8,0}},{{1,8,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021080181010.png ||
-|| `{{{0,2,1},{0,8,1}},{{1,1,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021081110011.png ||
-|| `{{{0,2,1},{0,8,1}},{{1,1,0},{0,4,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021081110041.png ||
-|| `{{{0,2,1},{0,8,1}},{{1,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021081120081.png ||
-|| `{{{0,2,1},{0,8,1}},{{1,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021081121010.png ||
-|| `{{{0,2,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021081181010.png ||
-|| `{{{0,2,1},{0,8,1}},{{1,8,1},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021081181040.png ||
-|| `{{{0,2,1},{1,1,0}},{{1,1,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021110110081.png ||
-|| `{{{0,2,1},{1,1,0}},{{1,8,1},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021110181040.png ||
-|| `{{{0,2,1},{1,1,1}},{{1,1,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021111110011.png ||
-|| `{{{0,2,1},{1,1,1}},{{1,1,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021111110021.png ||
-|| `{{{0,2,1},{1,1,1}},{{1,1,0},{0,4,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021111110041.png ||
-|| `{{{0,2,1},{1,1,1}},{{1,1,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021111110081.png ||
-|| `{{{0,2,1},{1,1,1}},{{1,4,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021111141010.png ||
-|| `{{{0,2,1},{1,1,1}},{{1,8,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021111181020.png ||
-|| `{{{0,2,1},{1,2,0}},{{1,2,1},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021120121040.png ||
-|| `{{{0,2,1},{1,2,0}},{{1,8,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021120181020.png ||
-|| `{{{0,2,1},{1,2,0}},{{1,8,1},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021120181040.png ||
-|| `{{{0,2,1},{1,2,1}},{{1,1,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021121110011.png ||
-|| `{{{0,2,1},{1,2,1}},{{1,8,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021121181080.png ||
-|| `{{{0,2,1},{1,4,0}},{{1,8,1},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021140181040.png ||
-|| `{{{0,2,1},{1,4,1}},{{1,1,0},{0,4,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021141110041.png ||
-|| `{{{0,2,1},{1,8,0}},{{1,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021180121010.png ||
-|| `{{{0,2,1},{1,8,0}},{{1,8,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021180181010.png ||
-|| `{{{0,2,1},{1,8,0}},{{1,8,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021180181080.png ||
-|| `{{{0,2,1},{1,8,1}},{{1,1,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021181110011.png ||
-|| `{{{0,2,1},{1,8,1}},{{1,1,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021181110021.png ||
-|| `{{{0,2,1},{1,8,1}},{{1,1,0},{0,4,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021181110041.png ||
-|| `{{{0,2,1},{1,8,1}},{{1,1,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021181110081.png ||
-|| `{{{0,2,1},{1,8,1}},{{1,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021181120081.png ||
-|| `{{{0,2,1},{1,8,1}},{{1,8,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021181181020.png ||
-|| `{{{0,4,1},{0,1,0}},{{1,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r041010121010.png ||
-|| `{{{0,4,1},{0,1,0}},{{1,2,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r041010121020.png ||
-|| `{{{0,4,1},{0,1,0}},{{1,2,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r041010121110.png ||
-|| `{{{0,4,1},{0,1,0}},{{1,2,1},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r041010121120.png ||
-|| `{{{0,4,1},{0,1,0}},{{1,4,0},{1,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r041010140121.png ||
-|| `{{{0,4,1},{0,1,1}},{{1,2,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r041011121020.png ||
-|| `{{{0,4,1},{1,2,0}},{{1,8,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r041120181010.png ||
-|| `{{{0,4,1},{1,2,1}},{{1,4,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r041121141010.png ||
-|| `{{{0,4,1},{1,2,1}},{{1,8,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r041121181080.png ||
-|| `{{{0,4,1},{1,4,0}},{{1,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r041140121010.png ||
-|| `{{{1,1,1},{0,1,0}},{{0,2,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111010020010.png ||
-|| `{{{1,1,1},{0,1,0}},{{0,2,0},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111010020110.png ||
-|| `{{{1,1,1},{0,1,0}},{{0,2,0},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111010020120.png ||
-|| `{{{1,1,1},{0,1,0}},{{0,2,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111010021110.png ||
-|| `{{{1,1,1},{0,1,0}},{{0,2,1},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111010021180.png ||
-|| `{{{1,1,1},{0,1,0}},{{0,4,1},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111010041120.png ||
-|| `{{{1,1,1},{0,1,0}},{{1,2,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111010120010.png ||
-|| `{{{1,1,1},{0,1,0}},{{1,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111010120011.png ||
-|| `{{{1,1,1},{0,1,0}},{{1,2,0},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111010120080.png ||
-|| `{{{1,1,1},{0,1,0}},{{1,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111010120081.png ||
-|| `{{{1,1,1},{0,1,0}},{{1,2,0},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111010120110.png ||
-|| `{{{1,1,1},{0,1,0}},{{1,2,0},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111010120120.png ||
-|| `{{{1,1,1},{0,1,0}},{{1,2,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111010121080.png ||
-|| `{{{1,1,1},{0,1,0}},{{1,2,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111010121110.png ||
-|| `{{{1,1,1},{0,1,0}},{{1,4,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111010141020.png ||
-|| `{{{1,1,1},{0,1,0}},{{1,4,1},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111010141120.png ||
-|| `{{{1,1,1},{0,1,1}},{{1,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111011121010.png ||
-|| `{{{1,1,1},{0,2,0}},{{0,2,0},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020020110.png ||
-|| `{{{1,1,1},{0,2,0}},{{0,2,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020021110.png ||
-|| `{{{1,1,1},{0,2,0}},{{0,2,1},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020021180.png ||
-|| `{{{1,1,1},{0,2,0}},{{0,4,1},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020041120.png ||
-|| `{{{1,1,1},{0,2,0}},{{0,8,0},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020080110.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020120011.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,2,0},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020120040.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020120081.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,2,0},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020120180.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020121010.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,4,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020140021.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,4,0},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020140110.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,4,0},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020140120.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,4,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020141110.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,8,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020180010.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,8,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020180011.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,8,0},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020180020.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,8,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020180021.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,8,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020180081.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,8,0},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020180110.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,8,0},{1,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020180111.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,8,0},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020180120.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,8,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020181110.png ||
-|| `{{{1,1,1},{0,2,0}},{{1,8,1},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111020181180.png ||
-|| `{{{1,1,1},{0,2,1}},{{1,2,0},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111021120040.png ||
-|| `{{{1,1,1},{0,2,1}},{{1,4,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111021140011.png ||
-|| `{{{1,1,1},{0,2,1}},{{1,4,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111021140081.png ||
-|| `{{{1,1,1},{0,2,1}},{{1,4,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111021141080.png ||
-|| `{{{1,1,1},{0,2,1}},{{1,4,1},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111021141180.png ||
-|| `{{{1,1,1},{0,2,1}},{{1,8,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111021180010.png ||
-|| `{{{1,1,1},{0,2,1}},{{1,8,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111021180011.png ||
-|| `{{{1,1,1},{0,2,1}},{{1,8,0},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111021180020.png ||
-|| `{{{1,1,1},{0,2,1}},{{1,8,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111021181020.png ||
-|| `{{{1,1,1},{0,2,1}},{{1,8,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111021181110.png ||
-|| `{{{1,1,1},{0,4,0}},{{0,2,0},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111040020080.png ||
-|| `{{{1,1,1},{0,4,0}},{{1,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111040120011.png ||
-|| `{{{1,1,1},{0,4,0}},{{1,2,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111040121110.png ||
-|| `{{{1,1,1},{0,4,1}},{{0,4,1},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111041041120.png ||
-|| `{{{1,1,1},{0,4,1}},{{1,2,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111041120021.png ||
-|| `{{{1,1,1},{0,4,1}},{{1,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111041121010.png ||
-|| `{{{1,1,1},{0,4,1}},{{1,2,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111041121020.png ||
-|| `{{{1,1,1},{0,4,1}},{{1,2,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111041121080.png ||
-|| `{{{1,1,1},{0,4,1}},{{1,2,1},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111041121120.png ||
-|| `{{{1,1,1},{0,4,1}},{{1,4,0},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111041140120.png ||
-|| `{{{1,1,1},{1,1,0}},{{0,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111110020011.png ||
-|| `{{{1,1,1},{1,1,0}},{{1,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111110120011.png ||
-|| `{{{1,1,1},{1,1,0}},{{1,2,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111110120021.png ||
-|| `{{{1,1,1},{1,1,0}},{{1,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111110120081.png ||
-|| `{{{1,1,1},{1,1,1}},{{1,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111111120011.png ||
-|| `{{{1,1,1},{1,2,1}},{{1,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111121121010.png ||
-|| `{{{1,1,1},{1,2,1}},{{1,4,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111121141020.png ||
-|| `{{{1,1,1},{1,2,1}},{{1,4,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111121141080.png ||
-|| `{{{1,1,1},{1,2,1}},{{1,8,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111121180010.png ||
-|| `{{{1,1,1},{1,2,1}},{{1,8,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111121180011.png ||
-|| `{{{1,1,1},{1,2,1}},{{1,8,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111121181080.png ||
-|| `{{{1,2,0},{0,1,1}},{{0,2,0},{0,4,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011020041.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,1,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011110010.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,1,0},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011110040.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,1,0},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011110120.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,2,0},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011120020.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,2,0},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011120080.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011120081.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,2,1},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011121040.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,2,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011121080.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,2,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011121110.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,2,1},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011121180.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,4,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011140011.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,4,0},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011140080.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,4,0},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011140110.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,4,0},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011140120.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,4,0},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011140180.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,4,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011141110.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,8,0},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011180020.png ||
-|| `{{{1,2,1},{0,8,0}},{{1,2,0},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121080120180.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,8,0},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011180110.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,8,0},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011180120.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,8,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011181080.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,8,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011181110.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,8,1},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011181120.png ||
-|| `{{{1,2,0},{0,2,1}},{{0,2,1},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120021021180.png ||
-|| `{{{1,2,0},{0,2,1}},{{0,8,0},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120021080180.png ||
-|| `{{{1,2,0},{0,2,1}},{{1,4,1},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120021141180.png ||
-|| `{{{1,2,0},{0,2,1}},{{1,8,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120021180010.png ||
-|| `{{{1,2,0},{0,2,1}},{{1,8,0},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120021180110.png ||
-|| `{{{1,2,0},{0,2,1}},{{1,8,0},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120021180180.png ||
-|| `{{{1,2,0},{0,2,1}},{{1,8,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120021181010.png ||
-|| `{{{1,2,0},{0,4,1}},{{1,2,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120041120010.png ||
-|| `{{{1,2,0},{0,4,1}},{{1,2,0},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120041120020.png ||
-|| `{{{1,2,0},{0,4,1}},{{1,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120041121010.png ||
-|| `{{{1,2,0},{0,4,1}},{{1,4,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120041140010.png ||
-|| `{{{1,2,0},{0,4,1}},{{1,8,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120041180010.png ||
-|| `{{{1,2,0},{0,4,1}},{{1,8,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120041180021.png ||
-|| `{{{1,2,0},{0,8,1}},{{0,8,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120081080010.png ||
-|| `{{{1,2,0},{0,8,1}},{{0,8,1},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120081081120.png ||
-|| `{{{1,2,0},{0,8,1}},{{1,1,0},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120081110080.png ||
-|| `{{{1,2,0},{0,8,1}},{{1,1,0},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120081110180.png ||
-|| `{{{1,2,0},{0,8,1}},{{1,2,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120081120010.png ||
-|| `{{{1,2,0},{0,8,1}},{{1,2,0},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120081120040.png ||
-|| `{{{1,2,0},{0,8,1}},{{1,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120081121010.png ||
-|| `{{{1,2,0},{0,8,1}},{{1,2,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120081121110.png ||
-|| `{{{1,2,0},{0,8,1}},{{1,2,1},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120081121180.png ||
-|| `{{{1,2,0},{0,8,1}},{{1,4,1},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120081141120.png ||
-|| `{{{1,2,0},{0,8,1}},{{1,8,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120081180011.png ||
-|| `{{{1,2,0},{0,8,1}},{{1,8,0},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120081180040.png ||
-|| `{{{1,2,0},{1,1,1}},{{0,2,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120111020081.png ||
-|| `{{{1,2,0},{1,1,1}},{{0,4,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120111041020.png ||
-|| `{{{1,2,0},{1,1,1}},{{0,8,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120111081080.png ||
-|| `{{{1,2,0},{1,1,1}},{{1,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120111120011.png ||
-|| `{{{1,2,0},{1,1,1}},{{1,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120111121010.png ||
-|| `{{{1,2,0},{1,1,1}},{{1,2,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120111121080.png ||
-|| `{{{1,2,0},{1,1,1}},{{1,4,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120111140011.png ||
-|| `{{{1,2,0},{1,1,1}},{{1,4,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120111141010.png ||
-|| `{{{1,2,0},{1,1,1}},{{1,4,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120111141080.png ||
-|| `{{{1,2,0},{1,1,1}},{{1,8,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120111180010.png ||
-|| `{{{1,2,0},{1,1,1}},{{1,8,0},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120111180020.png ||
-|| `{{{1,2,0},{1,1,1}},{{1,8,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120111180081.png ||
-|| `{{{1,2,0},{1,1,1}},{{1,8,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120111181010.png ||
-|| `{{{1,2,0},{1,2,1}},{{0,8,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120121081020.png ||
-|| `{{{1,2,0},{1,2,1}},{{1,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120121120011.png ||
-|| `{{{1,2,0},{1,4,1}},{{0,4,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120141041010.png ||
-|| `{{{1,2,0},{1,4,1}},{{0,8,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120141081010.png ||
-|| `{{{1,2,0},{1,4,1}},{{1,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120141120011.png ||
-|| `{{{1,2,0},{1,4,1}},{{1,4,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120141140011.png ||
-|| `{{{1,2,0},{1,8,1}},{{0,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120181020011.png ||
-|| `{{{1,2,0},{1,8,1}},{{0,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120181021010.png ||
-|| `{{{1,2,0},{1,8,1}},{{0,2,1},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120181021020.png ||
-|| `{{{1,2,0},{1,8,1}},{{0,2,1},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120181021040.png ||
-|| `{{{1,2,0},{1,8,1}},{{0,8,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120181081080.png ||
-|| `{{{1,2,0},{1,8,1}},{{1,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120181120011.png ||
-|| `{{{1,2,0},{1,8,1}},{{1,2,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120181121010.png ||
-|| `{{{1,2,0},{1,8,1}},{{1,2,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120181121080.png ||
-|| `{{{1,2,0},{1,8,1}},{{1,4,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120181140011.png ||
-|| `{{{1,2,0},{1,8,1}},{{1,4,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120181140021.png ||
-|| `{{{1,2,0},{1,8,1}},{{1,8,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120181181010.png ||
-|| `{{{1,2,0},{1,8,1}},{{1,8,1},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120181181080.png ||
-|| `{{{1,2,1},{0,1,0}},{{0,2,1},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121010021120.png ||
-|| `{{{1,2,1},{0,1,0}},{{0,2,1},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121010021180.png ||
-|| `{{{1,2,1},{0,1,0}},{{0,8,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121010081110.png ||
-|| `{{{1,2,1},{0,1,0}},{{0,8,1},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121010081120.png ||
-|| `{{{1,2,1},{0,1,0}},{{0,8,1},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121010081180.png ||
-|| `{{{1,2,1},{0,1,0}},{{1,1,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121010110011.png ||
-|| `{{{1,2,1},{0,1,0}},{{1,1,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121010110021.png ||
-|| `{{{1,2,1},{0,1,0}},{{1,1,0},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121010110080.png ||
-|| `{{{1,2,1},{0,1,0}},{{1,1,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121010110081.png ||
-|| `{{{1,2,1},{0,1,0}},{{1,1,0},{1,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121010110111.png ||
-|| `{{{1,2,1},{0,1,0}},{{1,4,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121010140010.png ||
-|| `{{{1,2,1},{0,1,0}},{{1,4,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121010140021.png ||
-|| `{{{1,2,1},{0,1,0}},{{1,4,0},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121010140080.png ||
-|| `{{{1,2,1},{0,1,0}},{{1,4,0},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121010140110.png ||
-|| `{{{1,2,1},{0,1,0}},{{1,4,0},{1,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121010140120.png ||
-|| `{{{1,2,1},{0,1,0}},{{1,4,0},{1,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121010140121.png ||
-|| `{{{1,2,1},{0,1,0}},{{1,4,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121010141110.png ||
-|| `{{{1,2,1},{0,1,1}},{{1,1,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121011110011.png ||
-|| `{{{1,2,1},{0,1,1}},{{1,1,0},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121011110080.png ||
-|| `{{{1,2,1},{0,1,1}},{{1,1,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121011110081.png ||
-|| `{{{1,2,1},{0,1,1}},{{1,1,0},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121011110180.png ||
-|| `{{{1,2,1},{0,1,1}},{{1,2,0},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121011120080.png ||
-|| `{{{1,2,1},{0,1,1}},{{1,2,0},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121011120110.png ||
-|| `{{{1,2,1},{0,1,1}},{{1,4,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121011140010.png ||
-|| `{{{1,2,1},{0,1,1}},{{1,4,0},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121011140110.png ||
-|| `{{{1,2,1},{0,1,1}},{{1,4,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121011141010.png ||
-|| `{{{1,2,1},{0,1,1}},{{1,4,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121011141110.png ||
-|| `{{{1,2,1},{0,1,1}},{{1,4,1},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121011141180.png ||
-|| `{{{1,2,1},{0,2,0}},{{0,2,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121020021110.png ||
-|| `{{{1,2,1},{0,2,0}},{{0,8,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121020081110.png ||
-|| `{{{1,2,1},{0,2,0}},{{1,1,0},{0,4,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121020110040.png ||
-|| `{{{1,2,1},{0,2,0}},{{1,1,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121020110081.png ||
-|| `{{{1,2,1},{0,2,0}},{{1,1,0},{1,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121020110111.png ||
-|| `{{{1,2,1},{0,2,0}},{{1,4,1},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121020141010.png ||
-|| `{{{1,2,1},{0,2,1}},{{1,4,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121021140021.png ||
-|| `{{{1,2,1},{0,4,0}},{{0,1,0},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121040010080.png ||
-|| `{{{1,2,1},{0,4,0}},{{0,2,1},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121040021110.png ||
-|| `{{{1,2,1},{0,4,1}},{{1,1,0},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121041110020.png ||
-|| `{{{1,2,1},{0,4,1}},{{1,1,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121041110021.png ||
-|| `{{{1,2,1},{0,4,1}},{{1,4,1},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121041141180.png ||
-|| `{{{1,2,1},{0,8,0}},{{0,2,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121080020010.png ||
-|| `{{{1,2,1},{0,8,0}},{{0,8,1},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121080081180.png ||
-|| `{{{1,2,1},{0,8,0}},{{1,1,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121080110011.png ||
-|| `{{{1,2,1},{0,8,0}},{{1,1,0},{0,2,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121080110021.png ||
-|| `{{{1,2,1},{0,8,0}},{{1,1,0},{0,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121080110080.png ||
-|| `{{{1,2,1},{0,8,0}},{{1,1,0},{0,8,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121080110081.png ||
-|| `{{{1,2,1},{0,8,0}},{{1,1,0},{1,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121080110111.png ||
-|| `{{{1,2,1},{0,8,0}},{{1,1,0},{1,8,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121080110180.png ||
-|| `{{{1,2,1},{0,8,0}},{{1,2,0},{0,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121080120010.png ||
-|| `{{{1,2,1},{0,8,0}},{{1,2,0},{0,2,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121080120020.png ||
-|| `{{{1,2,1},{0,8,0}},{{1,2,0},{1,1,0}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121080120110.png ||
-|| `{{{1,4,1},{1,4,0}},{{0,2,0},{0,1,1}}}` || Cloud.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141140020011.png ||
-|| `{{{0,1,1},{0,4,0}},{{1,4,0},{1,2,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r011040140121.png ||
-|| `{{{0,1,1},{1,4,0}},{{1,2,1},{0,4,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r011140121040.png ||
-|| `{{{0,2,1},{0,1,0}},{{1,2,0},{1,2,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r021010120121.png ||
-|| `{{{0,2,1},{0,1,0}},{{1,4,0},{0,8,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r021010140081.png ||
-|| `{{{0,2,1},{0,1,1}},{{1,2,1},{0,4,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r021011121040.png ||
-|| `{{{0,2,1},{0,2,0}},{{1,1,0},{0,2,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r021020110021.png ||
-|| `{{{0,2,1},{0,2,0}},{{1,2,0},{1,1,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r021020120111.png ||
-|| `{{{0,2,1},{0,2,0}},{{1,4,1},{0,1,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r021020141010.png ||
-|| `{{{0,2,1},{0,2,1}},{{1,2,0},{1,8,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r021021120181.png ||
-|| `{{{0,2,1},{0,4,0}},{{1,4,0},{1,1,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r021040140111.png ||
-|| `{{{0,2,1},{0,8,0}},{{1,2,0},{0,2,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r021080120021.png ||
-|| `{{{0,2,1},{0,8,0}},{{1,4,0},{1,2,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r021080140121.png ||
-|| `{{{0,2,1},{1,1,0}},{{1,2,1},{0,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r021110121020.png ||
-|| `{{{0,2,1},{1,1,1}},{{1,4,1},{0,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r021111141020.png ||
-|| `{{{0,2,1},{1,2,0}},{{1,2,1},{0,1,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r021120121010.png ||
-|| `{{{0,2,1},{1,4,1}},{{1,4,1},{0,1,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r021141141010.png ||
-|| `{{{0,2,1},{1,8,0}},{{1,2,1},{0,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r021180121020.png ||
-|| `{{{0,4,1},{0,2,0}},{{1,1,0},{1,8,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r041020110181.png ||
-|| `{{{0,4,1},{0,2,0}},{{1,2,0},{1,8,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r041020120181.png ||
-|| `{{{0,4,1},{0,2,0}},{{1,4,1},{0,1,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r041020141010.png ||
-|| `{{{0,4,1},{0,2,0}},{{1,4,1},{0,8,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r041020141080.png ||
-|| `{{{0,4,1},{0,4,0}},{{1,2,1},{1,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r041040121120.png ||
-|| `{{{0,4,1},{1,1,0}},{{1,2,1},{0,1,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r041110121010.png ||
-|| `{{{0,4,1},{1,2,0}},{{1,2,1},{0,4,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r041120121040.png ||
-|| `{{{0,4,1},{1,2,1}},{{1,4,1},{0,8,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r041121141080.png ||
-|| `{{{1,1,1},{0,2,0}},{{0,8,1},{1,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r111020081120.png ||
-|| `{{{1,1,1},{0,2,1}},{{0,2,1},{1,1,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r111021021110.png ||
-|| `{{{1,1,1},{0,2,1}},{{1,4,0},{0,2,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r111021140021.png ||
-|| `{{{1,1,1},{0,2,1}},{{1,4,0},{1,8,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r111021140180.png ||
-|| `{{{1,1,1},{0,4,0}},{{1,2,1},{1,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r111040121120.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,4,1},{0,8,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120011141080.png ||
-|| `{{{1,2,0},{0,2,1}},{{0,2,1},{1,1,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120021021110.png ||
-|| `{{{1,2,0},{0,2,1}},{{1,4,1},{1,1,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120021141110.png ||
-|| `{{{1,2,0},{1,1,1}},{{0,2,1},{0,1,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120111021010.png ||
-|| `{{{1,2,0},{1,4,1}},{{0,2,1},{0,4,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120141021040.png ||
-|| `{{{1,2,0},{1,4,1}},{{0,4,1},{0,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120141041020.png ||
-|| `{{{1,2,0},{1,4,1}},{{1,2,0},{0,2,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120141120021.png ||
-|| `{{{1,2,0},{1,8,1}},{{0,8,1},{0,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120181081020.png ||
-|| `{{{1,2,0},{1,8,1}},{{1,2,0},{0,4,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120181120041.png ||
-|| `{{{1,2,1},{0,2,0}},{{0,2,1},{1,4,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121020021140.png ||
-|| `{{{1,2,1},{0,2,0}},{{0,8,1},{1,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121020081120.png ||
-|| `{{{1,2,1},{0,2,0}},{{0,8,1},{1,8,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121020081180.png ||
-|| `{{{1,2,1},{0,4,0}},{{0,2,1},{1,4,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121040021140.png ||
-|| `{{{1,2,1},{0,4,0}},{{0,2,1},{1,8,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121040021180.png ||
-|| `{{{1,2,1},{0,4,0}},{{0,8,1},{1,8,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121040081180.png ||
-|| `{{{1,2,1},{0,4,1}},{{1,4,0},{0,8,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121041140081.png ||
-|| `{{{1,2,1},{0,8,0}},{{0,2,1},{1,4,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121080021140.png ||
-|| `{{{1,2,1},{0,8,0}},{{0,2,1},{1,8,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121080021180.png ||
-|| `{{{1,2,1},{1,1,1}},{{1,4,0},{0,8,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121111140081.png ||
-|| `{{{1,4,0},{0,1,1}},{{1,2,1},{0,8,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r140011121080.png ||
-|| `{{{1,4,0},{1,1,1}},{{1,2,1},{0,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r140111121020.png ||
-|| `{{{1,4,1},{0,2,0}},{{0,2,1},{1,1,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r141020021110.png ||
-|| `{{{1,4,1},{0,2,0}},{{1,1,0},{0,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r141020110020.png ||
-|| `{{{1,4,1},{0,2,0}},{{1,2,0},{0,1,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r141020120011.png ||
-|| `{{{1,4,1},{0,2,0}},{{1,2,0},{1,1,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r141020120110.png ||
-|| `{{{1,4,1},{0,2,0}},{{1,8,0},{1,1,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r141020180110.png ||
-|| `{{{1,4,1},{1,2,1}},{{1,1,0},{0,8,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r141121110080.png ||
-|| `{{{0,1,1},{0,4,0}},{{1,2,1},{1,8,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r011040121180.png ||
-|| `{{{0,1,1},{0,4,0}},{{1,2,0},{1,2,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r011040120121.png ||
-|| `{{{0,1,1},{0,4,0}},{{1,2,0},{0,2,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r011040120021.png ||
-|| `{{{0,1,1},{0,1,0}},{{1,4,0},{0,2,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r011010140021.png ||
-|| `{{{1,4,1},{1,2,0}},{{0,8,0},{0,1,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r141120080011.png ||
-|| `{{{1,4,1},{1,2,0}},{{0,2,0},{0,1,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r141120020011.png ||
-|| `{{{1,4,1},{0,2,1}},{{1,8,1},{0,1,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r141021181010.png ||
-|| `{{{1,4,1},{0,2,0}},{{1,2,0},{0,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r141020120020.png ||
-|| `{{{1,4,0},{1,4,1}},{{0,2,0},{0,1,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r140141020011.png ||
-|| `{{{1,4,0},{1,1,1}},{{1,4,0},{0,2,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r140111140021.png ||
-|| `{{{1,4,0},{0,2,1}},{{1,1,0},{0,8,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r140021110080.png ||
-|| `{{{1,4,0},{0,1,1}},{{1,2,0},{0,2,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r140011120021.png ||
-|| `{{{1,4,0},{0,1,1}},{{1,2,0},{0,1,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r140011120011.png ||
-|| `{{{1,2,1},{1,8,0}},{{0,2,0},{0,1,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121180020011.png ||
-|| `{{{1,2,1},{1,8,0}},{{0,1,0},{0,2,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121180010021.png ||
-|| `{{{1,2,1},{1,4,0}},{{0,2,0},{0,8,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121140020081.png ||
-|| `{{{1,2,1},{0,8,0}},{{0,2,0},{1,8,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121080020180.png ||
-|| `{{{1,2,1},{0,8,0}},{{0,1,0},{1,8,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121080010180.png ||
-|| `{{{1,2,1},{0,4,1}},{{1,8,1},{0,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121041181020.png ||
-|| `{{{1,2,1},{0,4,1}},{{1,8,1},{0,1,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121041181010.png ||
-|| `{{{1,2,1},{0,4,0}},{{0,1,0},{0,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121040010020.png ||
-|| `{{{1,2,1},{0,2,0}},{{0,2,1},{1,8,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121020021180.png ||
-|| `{{{1,2,1},{0,1,1}},{{1,4,0},{0,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121011140020.png ||
-|| `{{{1,2,1},{0,1,0}},{{1,4,0},{0,4,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r121010140041.png ||
-|| `{{{1,2,0},{1,2,1}},{{0,4,0},{0,1,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120121040011.png ||
-|| `{{{1,2,0},{0,8,1}},{{1,1,0},{0,4,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120081110040.png ||
-|| `{{{1,2,0},{0,8,1}},{{0,8,0},{1,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120081080120.png ||
-|| `{{{1,2,0},{0,8,1}},{{0,8,0},{0,8,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120081080081.png ||
-|| `{{{1,2,0},{0,4,1}},{{0,8,0},{0,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120041080020.png ||
-|| `{{{1,2,0},{0,4,1}},{{0,2,0},{1,2,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120041020121.png ||
-|| `{{{1,2,0},{0,2,1}},{{1,8,1},{1,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120021181120.png ||
-|| `{{{1,2,0},{0,2,1}},{{1,1,0},{1,8,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120021110180.png ||
-|| `{{{0,4,1},{1,2,0}},{{1,8,1},{0,2,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r041120181020.png ||
-|| `{{{1,1,1},{0,2,0}},{{0,2,0},{1,8,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r111020020180.png ||
-|| `{{{1,1,1},{0,4,0}},{{0,2,0},{1,4,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r111040020140.png ||
-|| `{{{1,1,1},{1,1,0}},{{0,2,0},{0,2,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r111110020021.png ||
-|| `{{{1,2,0},{0,1,1}},{{0,2,0},{1,8,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120011020181.png ||
-|| `{{{1,2,0},{0,2,1}},{{0,4,0},{1,2,1}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r120021040121.png ||
-|| `{{{1,4,1},{1,2,1}},{{1,2,1},{0,1,0}}}` || Cloud || https://dl.dropbox.com/u/13260068/Turmites/t22r141121121010.png ||
-|| `{{{1,4,1},{1,1,0}},{{1,2,0},{1,1,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141110120111.png ||
-|| `{{{1,4,1},{0,2,1}},{{1,2,0},{1,1,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141021120111.png ||
-|| `{{{1,4,1},{0,2,0}},{{1,8,0},{1,1,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141020180111.png ||
-|| `{{{1,2,1},{1,1,0}},{{1,4,1},{1,4,0}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121110141140.png ||
-|| `{{{1,2,1},{1,1,0}},{{1,4,0},{1,8,0}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121110140180.png ||
-|| `{{{1,2,1},{1,1,0}},{{1,4,0},{1,1,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121110140111.png ||
-|| `{{{1,2,1},{1,1,0}},{{1,4,0},{0,8,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121110140081.png ||
-|| `{{{1,2,1},{1,1,0}},{{1,4,0},{0,2,0}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121110140020.png ||
-|| `{{{1,2,1},{1,1,0}},{{1,1,0},{0,4,0}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121110110040.png ||
-|| `{{{1,2,1},{0,4,1}},{{1,1,0},{1,1,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121041110111.png ||
-|| `{{{1,2,0},{1,2,1}},{{1,2,0},{1,1,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120121120111.png ||
-|| `{{{1,2,0},{0,2,1}},{{1,2,0},{1,1,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120021120111.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,8,0},{1,8,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120011180181.png ||
-|| `{{{1,1,1},{1,4,1}},{{1,2,0},{1,1,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111141120111.png ||
-|| `{{{1,1,1},{1,1,0}},{{1,4,1},{0,2,0}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111110141020.png ||
-|| `{{{0,1,1},{1,1,0}},{{1,2,0},{1,8,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011110120181.png ||
-|| `{{{0,1,1},{0,4,1}},{{1,2,0},{1,1,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011041120111.png ||
-|| `{{{0,1,1},{0,2,1}},{{1,2,0},{1,1,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011021120111.png ||
-|| `{{{1,1,1},{1,1,0}},{{1,2,1},{0,8,0}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111110121080.png ||
-|| `{{{0,2,1},{0,1,1}},{{1,2,1},{1,8,0}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021011121180.png ||
-|| `{{{1,1,1},{1,1,0}},{{1,2,1},{0,1,0}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111110121010.png ||
-|| `{{{1,1,1},{1,1,0}},{{1,2,0},{1,2,0}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111110120120.png ||
-|| `{{{1,1,1},{1,1,0}},{{0,2,0},{0,8,0}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111110020080.png ||
-|| `{{{1,1,1},{0,4,1}},{{1,2,0},{1,1,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111041120111.png ||
-|| `{{{0,4,1},{0,4,1}},{{1,2,1},{0,2,0}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r041041121020.png ||
-|| `{{{0,2,1},{1,2,1}},{{1,8,1},{1,8,0}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021121181180.png ||
-|| `{{{0,2,1},{1,1,0}},{{1,4,0},{1,2,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021110140121.png ||
-|| `{{{0,2,1},{1,1,0}},{{1,2,0},{1,8,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021110120181.png ||
-|| `{{{0,2,1},{0,8,1}},{{1,1,0},{1,8,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021081110181.png ||
-|| `{{{0,2,1},{0,8,1}},{{1,1,0},{1,1,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021081110111.png ||
-|| `{{{0,2,1},{0,4,1}},{{1,8,1},{1,8,0}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r021041181180.png ||
-|| `{{{1,4,1},{1,2,1}},{{1,8,0},{1,1,1}}}` || Hash.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141121180111.png ||
-|| `{{{0,2,1},{0,4,1}},{{1,2,0},{1,1,1}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r021041120111.png ||
-|| `{{{0,2,1},{0,4,1}},{{1,1,0},{1,4,1}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r021041110141.png ||
-|| `{{{0,2,1},{0,2,1}},{{1,4,0},{1,8,1}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r021021140181.png ||
-|| `{{{0,2,1},{0,1,1}},{{1,2,0},{1,1,1}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r021011120111.png ||
-|| `{{{0,1,1},{0,2,1}},{{1,4,0},{1,8,1}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r011021140181.png ||
-|| `{{{0,1,1},{0,2,1}},{{1,2,0},{1,4,1}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r011021120141.png ||
-|| `{{{0,1,1},{0,1,1}},{{1,2,0},{1,2,1}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r011011120121.png ||
-|| `{{{0,4,1},{0,2,1}},{{1,4,0},{1,8,1}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r041021140181.png ||
-|| `{{{1,1,1},{1,2,0}},{{1,4,1},{0,2,0}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r111120141020.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,4,0},{1,1,1}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r120011140111.png ||
-|| `{{{1,2,0},{0,1,1}},{{1,8,0},{1,1,1}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r120011180111.png ||
-|| `{{{1,2,0},{0,4,1}},{{1,8,0},{1,2,1}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r120041180121.png ||
-|| `{{{1,2,0},{0,8,1}},{{1,4,0},{1,1,1}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r120081140111.png ||
-|| `{{{1,2,0},{0,8,1}},{{1,4,0},{1,2,1}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r120081140121.png ||
-|| `{{{1,2,0},{1,8,1}},{{1,4,0},{0,8,1}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r120181140081.png ||
-|| `{{{1,2,1},{1,1,0}},{{0,2,1},{1,1,0}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r121110021110.png ||
-|| `{{{1,2,1},{1,2,0}},{{1,4,1},{0,1,0}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r121120141010.png ||
-|| `{{{1,2,1},{1,4,1}},{{1,4,1},{0,1,0}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r121141141010.png ||
-|| `{{{1,4,0},{0,2,1}},{{1,4,0},{1,1,1}}}` || Hash || https://dl.dropbox.com/u/13260068/Turmites/t22r140021140111.png ||
-|| `{{{0,1,1},{0,2,0}},{{1,8,0},{0,4,1}}}` || Sieve.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011020180041.png ||
-|| `{{{0,1,1},{0,1,1}},{{1,2,1},{0,8,0}}}` || Sieve.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011011121080.png ||
-|| `{{{0,1,1},{0,1,1}},{{1,2,0},{0,8,1}}}` || Sieve.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011011120081.png ||
-|| `{{{0,1,1},{0,4,0}},{{1,2,0},{0,4,1}}}` || Sieve.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r011040120041.png ||
-|| `{{{1,4,0},{0,1,1}},{{1,2,1},{1,8,0}}}` || Sieve.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r140011121180.png ||
-|| `{{{1,1,1},{0,2,1}},{{1,2,0},{1,1,0}}}` || Other.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111021120110.png ||
-|| `{{{1,4,1},{1,2,1}},{{1,8,0},{0,1,0}}}` || Other.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r141121180010.png ||
-|| `{{{1,2,1},{1,8,1}},{{1,2,0},{0,1,0}}}` || Other.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121181120010.png ||
-|| `{{{1,2,1},{1,8,1}},{{1,1,0},{0,4,0}}}` || Other.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121181110040.png ||
-|| `{{{1,2,1},{1,8,1}},{{1,1,0},{0,2,0}}}` || Other.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121181110020.png ||
-|| `{{{1,2,1},{0,1,1}},{{1,2,0},{1,8,0}}}` || Other.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121011120180.png ||
-|| `{{{1,2,1},{0,1,0}},{{0,4,1},{1,1,0}}}` || Other.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r121010041110.png ||
-|| `{{{1,2,0},{1,8,1}},{{1,2,0},{0,8,1}}}` || Other.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120181120081.png ||
-|| `{{{1,2,0},{1,8,1}},{{1,2,0},{0,1,0}}}` || Other.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120181120010.png ||
-|| `{{{1,2,0},{0,8,1}},{{1,2,0},{1,2,0}}}` || Other.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120081120120.png ||
-|| `{{{1,2,0},{0,2,1}},{{1,8,0},{1,1,1}}}` || Other.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r120021180111.png ||
-|| `{{{1,1,1},{1,2,1}},{{1,8,1},{0,2,0}}}` || Other.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111121181020.png ||
-|| `{{{1,1,1},{1,2,0}},{{1,4,1},{0,8,0}}}` || Other.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111120141080.png ||
-|| `{{{1,1,1},{0,4,1}},{{1,2,0},{1,8,0}}}` || Other.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111041120180.png ||
-|| `{{{1,1,1},{0,2,1}},{{1,4,1},{1,1,0}}}` || Other.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111021141110.png ||
-|| `{{{1,1,1},{0,2,1}},{{1,2,1},{1,1,0}}}` || Other.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111021121110.png ||
-|| `{{{1,1,1},{0,2,1}},{{1,2,0},{1,8,0}}}` || Other.Unique || https://dl.dropbox.com/u/13260068/Turmites/t22r111021120180.png ||
-|| `{{{1,1,1},{0,2,0}},{{0,8,1},{1,4,0}}}` || Other || https://dl.dropbox.com/u/13260068/Turmites/t22r111020081140.png ||
-|| `{{{1,2,1},{0,1,1}},{{1,4,0},{1,8,0}}}` || Other || https://dl.dropbox.com/u/13260068/Turmites/t22r121011140180.png ||
+|| t22r011010120021 || gens: 1000000000<br>area: 8343639<br>maxVisits: 667<br>density: 17.97%<br>colors: 0.59% 0.41% || https://dl.dropbox.com/u/13260068/Turmites/t22r011010120021.png ||
+|| t22r011010120041 || gens: 1000000000<br>area: 10710067<br>maxVisits: 438<br>density: 21.32%<br>colors: 0.62% 0.38% || https://dl.dropbox.com/u/13260068/Turmites/t22r011010120041.png ||
+|| t22r011010120081 || gens: 1000000000<br>area: 7509563<br>maxVisits: 609<br>density: 21.87%<br>colors: 0.66% 0.34% || https://dl.dropbox.com/u/13260068/Turmites/t22r011010120081.png ||
+|| t22r011010120111 || gens: 1000000000<br>area: 3389507<br>maxVisits: 1090<br>density: 27.07%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011010120111.png ||
+|| t22r011010120181 || gens: 1000000000<br>area: 13559569<br>maxVisits: 309<br>density: 23.87%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011010120181.png ||
+|| t22r011010121020 || gens: 1000000000<br>area: 14177489<br>maxVisits: 467<br>density: 15.10%<br>colors: 0.70% 0.30% || https://dl.dropbox.com/u/13260068/Turmites/t22r011010121020.png ||
+|| t22r011010121120 || gens: 1000000000<br>area: 24588187<br>maxVisits: 303<br>density: 13.42%<br>colors: 0.49% 0.51% || https://dl.dropbox.com/u/13260068/Turmites/t22r011010121120.png ||
+|| t22r011010121180 || gens: 1000000000<br>area: 8797154<br>maxVisits: 448<br>density: 25.37%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011010121180.png ||
+|| t22r011010140021 || gens: 1000000000<br>area: 1158159<br>maxVisits: 3263<br>density: 26.46%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r011010140021.png ||
+|| t22r011011120081 || gens: 1000000000<br>area: 4245778<br>maxVisits: 779<br>density: 30.23%<br>colors: 0.61% 0.39% || https://dl.dropbox.com/u/13260068/Turmites/t22r011011120081.png ||
+|| t22r011011120121 || gens: 1000000000<br>area: 724332<br>maxVisits: 5661<br>density: 24.39%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r011011120121.png ||
+|| t22r011011121080 || gens: 1000000000<br>area: 4151048<br>maxVisits: 783<br>density: 30.77%<br>colors: 0.55% 0.45% || https://dl.dropbox.com/u/13260068/Turmites/t22r011011121080.png ||
+|| t22r011020120081 || gens: 1000000000<br>area: 7649269<br>maxVisits: 595<br>density: 21.97%<br>colors: 0.68% 0.32% || https://dl.dropbox.com/u/13260068/Turmites/t22r011020120081.png ||
+|| t22r011020120111 || gens: 1000000000<br>area: 9294290<br>maxVisits: 531<br>density: 20.26%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011020120111.png ||
+|| t22r011020120121 || gens: 1000000000<br>area: 2122288<br>maxVisits: 2454<br>density: 19.20%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011020120121.png ||
+|| t22r011020120141 || gens: 1000000000<br>area: 4292937<br>maxVisits: 982<br>density: 23.72%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011020120141.png ||
+|| t22r011020120181 || gens: 1000000000<br>area: 4476145<br>maxVisits: 918<br>density: 24.34%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011020120181.png ||
+|| t22r011020121040 || gens: 1000000000<br>area: 15498583<br>maxVisits: 390<br>density: 16.54%<br>colors: 0.64% 0.36% || https://dl.dropbox.com/u/13260068/Turmites/t22r011020121040.png ||
+|| t22r011020121140 || gens: 1000000000<br>area: 6287135<br>maxVisits: 1058<br>density: 15.03%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011020121140.png ||
+|| t22r011020121180 || gens: 1000000000<br>area: 15291400<br>maxVisits: 308<br>density: 21.23%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011020121180.png ||
+|| t22r011020140111 || gens: 1000000000<br>area: 12614607<br>maxVisits: 435<br>density: 18.22%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011020140111.png ||
+|| t22r011020180011 || gens: 1000000000<br>area: 11680845<br>maxVisits: 404<br>density: 21.19%<br>colors: 0.66% 0.34% || https://dl.dropbox.com/u/13260068/Turmites/t22r011020180011.png ||
+|| t22r011020180021 || gens: 1000000000<br>area: 11310296<br>maxVisits: 398<br>density: 22.21%<br>colors: 0.67% 0.33% || https://dl.dropbox.com/u/13260068/Turmites/t22r011020180021.png ||
+|| t22r011020180041 || gens: 1000000000<br>area: 4416016<br>maxVisits: 823<br>density: 27.51%<br>colors: 0.69% 0.31% || https://dl.dropbox.com/u/13260068/Turmites/t22r011020180041.png ||
+|| t22r011020180081 || gens: 1000000000<br>area: 5979367<br>maxVisits: 730<br>density: 22.91%<br>colors: 0.64% 0.36% || https://dl.dropbox.com/u/13260068/Turmites/t22r011020180081.png ||
+|| t22r011021120011 || gens: 1000000000<br>area: 9183900<br>maxVisits: 566<br>density: 19.24%<br>colors: 0.57% 0.43% || https://dl.dropbox.com/u/13260068/Turmites/t22r011021120011.png ||
+|| t22r011021120041 || gens: 1000000000<br>area: 2731624<br>maxVisits: 1614<br>density: 22.68%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011021120041.png ||
+|| t22r011021120081 || gens: 1000000000<br>area: 5485341<br>maxVisits: 781<br>density: 23.34%<br>colors: 0.54% 0.46% || https://dl.dropbox.com/u/13260068/Turmites/t22r011021120081.png ||
+|| t22r011021120111 || gens: 1000000000<br>area: 8009787<br>maxVisits: 471<br>density: 26.51%<br>colors: 0.06% 0.94% || https://dl.dropbox.com/u/13260068/Turmites/t22r011021120111.png ||
+|| t22r011021120141 || gens: 1000000000<br>area: 3122187<br>maxVisits: 1239<br>density: 25.85%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r011021120141.png ||
+|| t22r011021121040 || gens: 1000000000<br>area: 3027324<br>maxVisits: 2377<br>density: 13.90%<br>colors: 0.59% 0.41% || https://dl.dropbox.com/u/13260068/Turmites/t22r011021121040.png ||
+|| t22r011021140181 || gens: 1000000000<br>area: 1179449<br>maxVisits: 3419<br>density: 24.80%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r011021140181.png ||
+|| t22r011021180021 || gens: 1000000000<br>area: 5394402<br>maxVisits: 700<br>density: 26.48%<br>colors: 0.61% 0.39% || https://dl.dropbox.com/u/13260068/Turmites/t22r011021180021.png ||
+|| t22r011021180041 || gens: 1000000000<br>area: 5078974<br>maxVisits: 801<br>density: 24.58%<br>colors: 0.55% 0.45% || https://dl.dropbox.com/u/13260068/Turmites/t22r011021180041.png ||
+|| t22r011021180081 || gens: 1000000000<br>area: 4150016<br>maxVisits: 990<br>density: 24.34%<br>colors: 0.53% 0.47% || https://dl.dropbox.com/u/13260068/Turmites/t22r011021180081.png ||
+|| t22r011021181020 || gens: 1000000000<br>area: 8865848<br>maxVisits: 542<br>density: 20.81%<br>colors: 0.58% 0.42% || https://dl.dropbox.com/u/13260068/Turmites/t22r011021181020.png ||
+|| t22r011021181040 || gens: 1000000000<br>area: 2267817<br>maxVisits: 3498<br>density: 12.61%<br>colors: 0.78% 0.22% || https://dl.dropbox.com/u/13260068/Turmites/t22r011021181040.png ||
+|| t22r011040120021 || gens: 1000000000<br>area: 1537095<br>maxVisits: 2854<br>density: 22.80%<br>colors: 0.62% 0.38% || https://dl.dropbox.com/u/13260068/Turmites/t22r011040120021.png ||
+|| t22r011040120041 || gens: 1000000000<br>area: 2620994<br>maxVisits: 1229<br>density: 31.04%<br>colors: 0.61% 0.39% || https://dl.dropbox.com/u/13260068/Turmites/t22r011040120041.png ||
+|| t22r011040120121 || gens: 1000000000<br>area: 1168385<br>maxVisits: 3669<br>density: 23.33%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011040120121.png ||
+|| t22r011040121020 || gens: 1000000000<br>area: 7641760<br>maxVisits: 800<br>density: 16.36%<br>colors: 0.63% 0.37% || https://dl.dropbox.com/u/13260068/Turmites/t22r011040121020.png ||
+|| t22r011040121180 || gens: 1000000000<br>area: 1013596<br>maxVisits: 17641<br>density: 5.59%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011040121180.png ||
+|| t22r011040140121 || gens: 1000000000<br>area: 660312<br>maxVisits: 5154<br>density: 29.38%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011040140121.png ||
+|| t22r011040141020 || gens: 1000000000<br>area: 2276936<br>maxVisits: 1424<br>density: 30.84%<br>colors: 0.61% 0.39% || https://dl.dropbox.com/u/13260068/Turmites/t22r011040141020.png ||
+|| t22r011041120021 || gens: 1000000000<br>area: 2270397<br>maxVisits: 2279<br>density: 19.33%<br>colors: 0.63% 0.37% || https://dl.dropbox.com/u/13260068/Turmites/t22r011041120021.png ||
+|| t22r011041120111 || gens: 1000000000<br>area: 8661559<br>maxVisits: 401<br>density: 28.79%<br>colors: 0.03% 0.97% || https://dl.dropbox.com/u/13260068/Turmites/t22r011041120111.png ||
+|| t22r011041121080 || gens: 1000000000<br>area: 6993414<br>maxVisits: 743<br>density: 19.25%<br>colors: 0.60% 0.40% || https://dl.dropbox.com/u/13260068/Turmites/t22r011041121080.png ||
+|| t22r011110120011 || gens: 1000000000<br>area: 3452455<br>maxVisits: 1045<br>density: 27.72%<br>colors: 0.49% 0.51% || https://dl.dropbox.com/u/13260068/Turmites/t22r011110120011.png ||
+|| t22r011110120021 || gens: 1000000000<br>area: 3778365<br>maxVisits: 1120<br>density: 23.63%<br>colors: 0.37% 0.63% || https://dl.dropbox.com/u/13260068/Turmites/t22r011110120021.png ||
+|| t22r011110120081 || gens: 1000000000<br>area: 6901490<br>maxVisits: 574<br>density: 25.24%<br>colors: 0.46% 0.54% || https://dl.dropbox.com/u/13260068/Turmites/t22r011110120081.png ||
+|| t22r011110120181 || gens: 1000000000<br>area: 39869628<br>maxVisits: 264<br>density: 9.50%<br>colors: 0.01% 0.99% || https://dl.dropbox.com/u/13260068/Turmites/t22r011110120181.png ||
+|| t22r011110121040 || gens: 1000000000<br>area: 4070494<br>maxVisits: 1065<br>density: 23.07%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011110121040.png ||
+|| t22r011111120011 || gens: 1000000000<br>area: 2670308<br>maxVisits: 1509<br>density: 24.82%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011111120011.png ||
+|| t22r011120120011 || gens: 1000000000<br>area: 5034708<br>maxVisits: 779<br>density: 25.50%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011120120011.png ||
+|| t22r011120121040 || gens: 1000000000<br>area: 4746035<br>maxVisits: 902<br>density: 23.36%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011120121040.png ||
+|| t22r011121120011 || gens: 1000000000<br>area: 14631105<br>maxVisits: 392<br>density: 17.44%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011121120011.png ||
+|| t22r011121120081 || gens: 1000000000<br>area: 6255438<br>maxVisits: 759<br>density: 21.06%<br>colors: 0.48% 0.52% || https://dl.dropbox.com/u/13260068/Turmites/t22r011121120081.png ||
+|| t22r011121121080 || gens: 1000000000<br>area: 8310710<br>maxVisits: 502<br>density: 23.97%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011121121080.png ||
+|| t22r011121141080 || gens: 1000000000<br>area: 5620070<br>maxVisits: 755<br>density: 23.57%<br>colors: 0.63% 0.37% || https://dl.dropbox.com/u/13260068/Turmites/t22r011121141080.png ||
+|| t22r011121180011 || gens: 1000000000<br>area: 4072381<br>maxVisits: 876<br>density: 28.03%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011121180011.png ||
+|| t22r011121180021 || gens: 1000000000<br>area: 5361452<br>maxVisits: 731<br>density: 25.52%<br>colors: 0.52% 0.48% || https://dl.dropbox.com/u/13260068/Turmites/t22r011121180021.png ||
+|| t22r011121180041 || gens: 1000000000<br>area: 4184430<br>maxVisits: 877<br>density: 27.25%<br>colors: 0.38% 0.62% || https://dl.dropbox.com/u/13260068/Turmites/t22r011121180041.png ||
+|| t22r011121181020 || gens: 1000000000<br>area: 11177401<br>maxVisits: 476<br>density: 18.80%<br>colors: 0.48% 0.52% || https://dl.dropbox.com/u/13260068/Turmites/t22r011121181020.png ||
+|| t22r011121181080 || gens: 1000000000<br>area: 5024264<br>maxVisits: 888<br>density: 22.41%<br>colors: 0.54% 0.46% || https://dl.dropbox.com/u/13260068/Turmites/t22r011121181080.png ||
+|| t22r011140121020 || gens: 1000000000<br>area: 13387761<br>maxVisits: 477<br>density: 15.66%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011140121020.png ||
+|| t22r011140121040 || gens: 1000000000<br>area: 1028328<br>maxVisits: 6047<br>density: 16.08%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011140121040.png ||
+|| t22r011141120041 || gens: 1000000000<br>area: 4167643<br>maxVisits: 1072<br>density: 22.38%<br>colors: 0.68% 0.32% || https://dl.dropbox.com/u/13260068/Turmites/t22r011141120041.png ||
+|| t22r021010110081 || gens: 1000000000<br>area: 9392348<br>maxVisits: 456<br>density: 23.35%<br>colors: 0.68% 0.32% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010110081.png ||
+|| t22r021010110111 || gens: 1000000000<br>area: 2869309<br>maxVisits: 1157<br>density: 30.12%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010110111.png ||
+|| t22r021010110181 || gens: 1000000000<br>area: 7686047<br>maxVisits: 519<br>density: 25.07%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010110181.png ||
+|| t22r021010120081 || gens: 1000000000<br>area: 4735675<br>maxVisits: 853<br>density: 24.76%<br>colors: 0.65% 0.35% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010120081.png ||
+|| t22r021010120121 || gens: 1000000000<br>area: 1656428<br>maxVisits: 2272<br>density: 26.57%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010120121.png ||
+|| t22r021010120181 || gens: 1000000000<br>area: 3472870<br>maxVisits: 992<br>density: 29.03%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010120181.png ||
+|| t22r021010121010 || gens: 1000000000<br>area: 1995372<br>maxVisits: 1994<br>density: 25.13%<br>colors: 0.59% 0.41% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010121010.png ||
+|| t22r021010121110 || gens: 1000000000<br>area: 3682380<br>maxVisits: 1056<br>density: 25.72%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010121110.png ||
+|| t22r021010121140 || gens: 1000000000<br>area: 5727773<br>maxVisits: 718<br>density: 24.32%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010121140.png ||
+|| t22r021010121180 || gens: 1000000000<br>area: 5603689<br>maxVisits: 665<br>density: 26.84%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010121180.png ||
+|| t22r021010140081 || gens: 1000000000<br>area: 1151808<br>maxVisits: 3463<br>density: 25.07%<br>colors: 0.24% 0.76% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010140081.png ||
+|| t22r021010140121 || gens: 1000000000<br>area: 4112970<br>maxVisits: 901<br>density: 26.98%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010140121.png ||
+|| t22r021010140141 || gens: 1000000000<br>area: 4809861<br>maxVisits: 834<br>density: 24.93%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010140141.png ||
+|| t22r021010140181 || gens: 1000000000<br>area: 3921867<br>maxVisits: 1033<br>density: 24.68%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010140181.png ||
+|| t22r021010141110 || gens: 1000000000<br>area: 3779618<br>maxVisits: 1136<br>density: 23.29%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010141110.png ||
+|| t22r021010141140 || gens: 1000000000<br>area: 2280144<br>maxVisits: 1734<br>density: 25.29%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010141140.png ||
+|| t22r021010181020 || gens: 137197646<br>area: 16384<br>maxVisits: 17397<br>density: 48.13%<br>colors: 0.65% 0.35% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010181020.png ||
+|| t22r021010181140 || gens: 1000000000<br>area: 6022625<br>maxVisits: 790<br>density: 21.02%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010181140.png ||
+|| t22r021011110011 || gens: 1000000000<br>area: 5612724<br>maxVisits: 678<br>density: 26.28%<br>colors: 0.61% 0.39% || https://dl.dropbox.com/u/13260068/Turmites/t22r021011110011.png ||
+|| t22r021011110021 || gens: 1000000000<br>area: 5807206<br>maxVisits: 702<br>density: 24.53%<br>colors: 0.62% 0.38% || https://dl.dropbox.com/u/13260068/Turmites/t22r021011110021.png ||
+|| t22r021011110041 || gens: 1000000000<br>area: 6235129<br>maxVisits: 687<br>density: 23.35%<br>colors: 0.53% 0.47% || https://dl.dropbox.com/u/13260068/Turmites/t22r021011110041.png ||
+|| t22r021011110081 || gens: 1000000000<br>area: 6334750<br>maxVisits: 581<br>density: 27.17%<br>colors: 0.60% 0.40% || https://dl.dropbox.com/u/13260068/Turmites/t22r021011110081.png ||
+|| t22r021011120081 || gens: 1000000000<br>area: 3716225<br>maxVisits: 1012<br>density: 26.59%<br>colors: 0.62% 0.38% || https://dl.dropbox.com/u/13260068/Turmites/t22r021011120081.png ||
+|| t22r021011120111 || gens: 1000000000<br>area: 2167102<br>maxVisits: 1515<br>density: 30.46%<br>colors: 0.02% 0.98% || https://dl.dropbox.com/u/13260068/Turmites/t22r021011120111.png ||
+|| t22r021011121040 || gens: 1000000000<br>area: 1354290<br>maxVisits: 3392<br>density: 21.77%<br>colors: 0.58% 0.42% || https://dl.dropbox.com/u/13260068/Turmites/t22r021011121040.png ||
+|| t22r021011121180 || gens: 1000000000<br>area: 4091346<br>maxVisits: 955<br>density: 25.59%<br>colors: 0.48% 0.52% || https://dl.dropbox.com/u/13260068/Turmites/t22r021011121180.png ||
+|| t22r021011181010 || gens: 1000000000<br>area: 12131928<br>maxVisits: 365<br>density: 22.58%<br>colors: 0.60% 0.40% || https://dl.dropbox.com/u/13260068/Turmites/t22r021011181010.png ||
+|| t22r021011181020 || gens: 1000000000<br>area: 7119341<br>maxVisits: 740<br>density: 18.98%<br>colors: 0.59% 0.41% || https://dl.dropbox.com/u/13260068/Turmites/t22r021011181020.png ||
+|| t22r021011181040 || gens: 1000000000<br>area: 2849571<br>maxVisits: 1713<br>density: 20.49%<br>colors: 0.62% 0.38% || https://dl.dropbox.com/u/13260068/Turmites/t22r021011181040.png ||
+|| t22r021011181080 || gens: 1000000000<br>area: 10633152<br>maxVisits: 554<br>density: 16.98%<br>colors: 0.63% 0.37% || https://dl.dropbox.com/u/13260068/Turmites/t22r021011181080.png ||
+|| t22r021020110021 || gens: 1000000000<br>area: 1711062<br>maxVisits: 2278<br>density: 25.66%<br>colors: 0.83% 0.17% || https://dl.dropbox.com/u/13260068/Turmites/t22r021020110021.png ||
+|| t22r021020110041 || gens: 1000000000<br>area: 5601808<br>maxVisits: 799<br>density: 22.34%<br>colors: 0.65% 0.35% || https://dl.dropbox.com/u/13260068/Turmites/t22r021020110041.png ||
+|| t22r021020110081 || gens: 1000000000<br>area: 14390713<br>maxVisits: 387<br>density: 17.96%<br>colors: 0.67% 0.33% || https://dl.dropbox.com/u/13260068/Turmites/t22r021020110081.png ||
+|| t22r021020110111 || gens: 1000000000<br>area: 3062320<br>maxVisits: 1232<br>density: 26.51%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021020110111.png ||
+|| t22r021020110181 || gens: 1000000000<br>area: 3442172<br>maxVisits: 1207<br>density: 24.07%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021020110181.png ||
+|| t22r021020120111 || gens: 1000000000<br>area: 597630<br>maxVisits: 5620<br>density: 29.77%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021020120111.png ||
+|| t22r021020140111 || gens: 1000000000<br>area: 16436852<br>maxVisits: 351<br>density: 17.33%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021020140111.png ||
+|| t22r021020141010 || gens: 1000000000<br>area: 1350533<br>maxVisits: 3318<br>density: 22.32%<br>colors: 0.62% 0.38% || https://dl.dropbox.com/u/13260068/Turmites/t22r021020141010.png ||
+|| t22r021020181020 || gens: 1000000000<br>area: 2318465<br>maxVisits: 1587<br>density: 27.18%<br>colors: 0.57% 0.43% || https://dl.dropbox.com/u/13260068/Turmites/t22r021020181020.png ||
+|| t22r021020181180 || gens: 1000000000<br>area: 6256814<br>maxVisits: 658<br>density: 24.29%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021020181180.png ||
+|| t22r021021120081 || gens: 1000000000<br>area: 2577915<br>maxVisits: 1498<br>density: 25.90%<br>colors: 0.63% 0.37% || https://dl.dropbox.com/u/13260068/Turmites/t22r021021120081.png ||
+|| t22r021021120181 || gens: 1000000000<br>area: 22053<br>maxVisits: 4741870<br>density: 0.96%<br>colors: 0.26% 0.74% || https://dl.dropbox.com/u/13260068/Turmites/t22r021021120181.png ||
+|| t22r021021140181 || gens: 1000000000<br>area: 409378<br>maxVisits: 9131<br>density: 26.75%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r021021140181.png ||
+|| t22r021040121010 || gens: 1000000000<br>area: 2289798<br>maxVisits: 1760<br>density: 24.81%<br>colors: 0.53% 0.47% || https://dl.dropbox.com/u/13260068/Turmites/t22r021040121010.png ||
+|| t22r021040121110 || gens: 1000000000<br>area: 2935614<br>maxVisits: 2128<br>density: 16.01%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021040121110.png ||
+|| t22r021040140111 || gens: 1000000000<br>area: 1395193<br>maxVisits: 2873<br>density: 24.95%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021040140111.png ||
+|| t22r021040181040 || gens: 1000000000<br>area: 4327496<br>maxVisits: 1060<br>density: 21.80%<br>colors: 0.65% 0.35% || https://dl.dropbox.com/u/13260068/Turmites/t22r021040181040.png ||
+|| t22r021041110141 || gens: 1000000000<br>area: 3202000<br>maxVisits: 1198<br>density: 26.07%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r021041110141.png ||
+|| t22r021041120111 || gens: 1000000000<br>area: 4547625<br>maxVisits: 755<br>density: 29.13%<br>colors: 0.02% 0.98% || https://dl.dropbox.com/u/13260068/Turmites/t22r021041120111.png ||
+|| t22r021041181180 || gens: 1000000000<br>area: 5978139<br>maxVisits: 863<br>density: 19.38%<br>colors: 0.51% 0.49% || https://dl.dropbox.com/u/13260068/Turmites/t22r021041181180.png ||
+|| t22r021080110011 || gens: 1000000000<br>area: 5618528<br>maxVisits: 703<br>density: 25.32%<br>colors: 0.67% 0.33% || https://dl.dropbox.com/u/13260068/Turmites/t22r021080110011.png ||
+|| t22r021080110041 || gens: 1000000000<br>area: 4416016<br>maxVisits: 823<br>density: 27.51%<br>colors: 0.69% 0.31% || https://dl.dropbox.com/u/13260068/Turmites/t22r021080110041.png ||
+|| t22r021080110081 || gens: 1000000000<br>area: 7978846<br>maxVisits: 502<br>density: 24.97%<br>colors: 0.67% 0.33% || https://dl.dropbox.com/u/13260068/Turmites/t22r021080110081.png ||
+|| t22r021080110111 || gens: 1000000000<br>area: 11946813<br>maxVisits: 347<br>density: 24.12%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021080110111.png ||
+|| t22r021080110121 || gens: 1000000000<br>area: 6828041<br>maxVisits: 777<br>density: 18.85%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021080110121.png ||
+|| t22r021080120021 || gens: 1000000000<br>area: 922943<br>maxVisits: 4436<br>density: 24.42%<br>colors: 0.69% 0.31% || https://dl.dropbox.com/u/13260068/Turmites/t22r021080120021.png ||
+|| t22r021080120121 || gens: 1000000000<br>area: 5076636<br>maxVisits: 871<br>density: 22.62%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021080120121.png ||
+|| t22r021080120141 || gens: 1000000000<br>area: 3354615<br>maxVisits: 1205<br>density: 24.74%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021080120141.png ||
+|| t22r021080120181 || gens: 1000000000<br>area: 2304828<br>maxVisits: 1527<br>density: 28.41%<br>colors: 0.53% 0.47% || https://dl.dropbox.com/u/13260068/Turmites/t22r021080120181.png ||
+|| t22r021080121010 || gens: 1000000000<br>area: 3427289<br>maxVisits: 1208<br>density: 24.15%<br>colors: 0.63% 0.37% || https://dl.dropbox.com/u/13260068/Turmites/t22r021080121010.png ||
+|| t22r021080121110 || gens: 1000000000<br>area: 4331077<br>maxVisits: 976<br>density: 23.66%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021080121110.png ||
+|| t22r021080140111 || gens: 1000000000<br>area: 16716294<br>maxVisits: 425<br>density: 14.08%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021080140111.png ||
+|| t22r021080140121 || gens: 1000000000<br>area: 635075<br>maxVisits: 7838<br>density: 20.09%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021080140121.png ||
+|| t22r021080140181 || gens: 1000000000<br>area: 6093584<br>maxVisits: 899<br>density: 18.25%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021080140181.png ||
+|| t22r021080181010 || gens: 1000000000<br>area: 22151976<br>maxVisits: 301<br>density: 15.00%<br>colors: 0.63% 0.37% || https://dl.dropbox.com/u/13260068/Turmites/t22r021080181010.png ||
+|| t22r021080181120 || gens: 1000000000<br>area: 456960<br>maxVisits: 37316<br>density: 5.86%<br>colors: 0.51% 0.49% || https://dl.dropbox.com/u/13260068/Turmites/t22r021080181120.png ||
+|| t22r021081110011 || gens: 1000000000<br>area: 14142993<br>maxVisits: 293<br>density: 24.13%<br>colors: 0.61% 0.39% || https://dl.dropbox.com/u/13260068/Turmites/t22r021081110011.png ||
+|| t22r021081110041 || gens: 1000000000<br>area: 4295952<br>maxVisits: 1021<br>density: 22.80%<br>colors: 0.54% 0.46% || https://dl.dropbox.com/u/13260068/Turmites/t22r021081110041.png ||
+|| t22r021081110111 || gens: 1000000000<br>area: 9639921<br>maxVisits: 371<br>density: 27.96%<br>colors: 0.04% 0.96% || https://dl.dropbox.com/u/13260068/Turmites/t22r021081110111.png ||
+|| t22r021081110181 || gens: 1000000000<br>area: 5165642<br>maxVisits: 833<br>density: 23.24%<br>colors: 0.01% 0.99% || https://dl.dropbox.com/u/13260068/Turmites/t22r021081110181.png ||
+|| t22r021081120081 || gens: 1000000000<br>area: 4211048<br>maxVisits: 923<br>density: 25.73%<br>colors: 0.65% 0.35% || https://dl.dropbox.com/u/13260068/Turmites/t22r021081120081.png ||
+|| t22r021081121010 || gens: 1000000000<br>area: 4380724<br>maxVisits: 902<br>density: 25.31%<br>colors: 0.58% 0.42% || https://dl.dropbox.com/u/13260068/Turmites/t22r021081121010.png ||
+|| t22r021081181010 || gens: 1000000000<br>area: 20105405<br>maxVisits: 320<br>density: 15.54%<br>colors: 0.60% 0.40% || https://dl.dropbox.com/u/13260068/Turmites/t22r021081181010.png ||
+|| t22r021081181040 || gens: 1000000000<br>area: 2069746<br>maxVisits: 2167<br>density: 22.30%<br>colors: 0.44% 0.56% || https://dl.dropbox.com/u/13260068/Turmites/t22r021081181040.png ||
+|| t22r021110110081 || gens: 1000000000<br>area: 6375846<br>maxVisits: 635<br>density: 24.70%<br>colors: 0.43% 0.57% || https://dl.dropbox.com/u/13260068/Turmites/t22r021110110081.png ||
+|| t22r021110110141 || gens: 1000000000<br>area: 6637221<br>maxVisits: 553<br>density: 27.25%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r021110110141.png ||
+|| t22r021110120181 || gens: 1000000000<br>area: 4943234<br>maxVisits: 730<br>density: 27.71%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r021110120181.png ||
+|| t22r021110121020 || gens: 1000000000<br>area: 774058<br>maxVisits: 4510<br>density: 28.65%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021110121020.png ||
+|| t22r021110140121 || gens: 888042265<br>area: 31496092<br>maxVisits: 218<br>density: 12.93%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r021110140121.png ||
+|| t22r021110181040 || gens: 1000000000<br>area: 9212992<br>maxVisits: 596<br>density: 18.21%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021110181040.png ||
+|| t22r021111110011 || gens: 1000000000<br>area: 6606158<br>maxVisits: 569<br>density: 26.60%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021111110011.png ||
+|| t22r021111110021 || gens: 1000000000<br>area: 12212295<br>maxVisits: 498<br>density: 16.44%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021111110021.png ||
+|| t22r021111110041 || gens: 1000000000<br>area: 4941189<br>maxVisits: 726<br>density: 27.88%<br>colors: 0.36% 0.64% || https://dl.dropbox.com/u/13260068/Turmites/t22r021111110041.png ||
+|| t22r021111110081 || gens: 1000000000<br>area: 7891428<br>maxVisits: 497<br>density: 25.50%<br>colors: 0.48% 0.52% || https://dl.dropbox.com/u/13260068/Turmites/t22r021111110081.png ||
+|| t22r021111141010 || gens: 1000000000<br>area: 4349568<br>maxVisits: 1024<br>density: 22.45%<br>colors: 0.61% 0.39% || https://dl.dropbox.com/u/13260068/Turmites/t22r021111141010.png ||
+|| t22r021111141020 || gens: 1000000000<br>area: 1636911<br>maxVisits: 2472<br>density: 24.71%<br>colors: 0.63% 0.37% || https://dl.dropbox.com/u/13260068/Turmites/t22r021111141020.png ||
+|| t22r021111181020 || gens: 1000000000<br>area: 9330466<br>maxVisits: 503<br>density: 21.31%<br>colors: 0.52% 0.48% || https://dl.dropbox.com/u/13260068/Turmites/t22r021111181020.png ||
+|| t22r021120121010 || gens: 1000000000<br>area: 1072267<br>maxVisits: 3956<br>density: 23.57%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021120121010.png ||
+|| t22r021120121040 || gens: 1000000000<br>area: 2506017<br>maxVisits: 1940<br>density: 20.57%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021120121040.png ||
+|| t22r021120181020 || gens: 1000000000<br>area: 1923612<br>maxVisits: 2111<br>density: 24.63%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021120181020.png ||
+|| t22r021120181040 || gens: 1000000000<br>area: 2410240<br>maxVisits: 3645<br>density: 11.38%<br>colors: 0.49% 0.51% || https://dl.dropbox.com/u/13260068/Turmites/t22r021120181040.png ||
+|| t22r021121110011 || gens: 1000000000<br>area: 5291422<br>maxVisits: 947<br>density: 19.96%<br>colors: 0.51% 0.49% || https://dl.dropbox.com/u/13260068/Turmites/t22r021121110011.png ||
+|| t22r021121181080 || gens: 1000000000<br>area: 6530350<br>maxVisits: 620<br>density: 24.70%<br>colors: 0.54% 0.46% || https://dl.dropbox.com/u/13260068/Turmites/t22r021121181080.png ||
+|| t22r021121181180 || gens: 1000000000<br>area: 12965796<br>maxVisits: 451<br>density: 17.10%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r021121181180.png ||
+|| t22r021140181040 || gens: 1000000000<br>area: 4925800<br>maxVisits: 1123<br>density: 18.08%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021140181040.png ||
+|| t22r021141110041 || gens: 1000000000<br>area: 2589106<br>maxVisits: 1565<br>density: 24.68%<br>colors: 0.58% 0.42% || https://dl.dropbox.com/u/13260068/Turmites/t22r021141110041.png ||
+|| t22r021141141010 || gens: 1000000000<br>area: 1136486<br>maxVisits: 3147<br>density: 27.96%<br>colors: 0.46% 0.54% || https://dl.dropbox.com/u/13260068/Turmites/t22r021141141010.png ||
+|| t22r021180121010 || gens: 1000000000<br>area: 4069630<br>maxVisits: 999<br>density: 24.60%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021180121010.png ||
+|| t22r021180121020 || gens: 1000000000<br>area: 832639<br>maxVisits: 4204<br>density: 28.57%<br>colors: 0.51% 0.49% || https://dl.dropbox.com/u/13260068/Turmites/t22r021180121020.png ||
+|| t22r021180181010 || gens: 1000000000<br>area: 9647757<br>maxVisits: 477<br>density: 21.73%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021180181010.png ||
+|| t22r021180181080 || gens: 1000000000<br>area: 2410389<br>maxVisits: 1764<br>density: 23.52%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021180181080.png ||
+|| t22r021181110011 || gens: 1000000000<br>area: 9827561<br>maxVisits: 432<br>density: 23.55%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021181110011.png ||
+|| t22r021181110021 || gens: 1000000000<br>area: 4858259<br>maxVisits: 890<br>density: 23.13%<br>colors: 0.49% 0.51% || https://dl.dropbox.com/u/13260068/Turmites/t22r021181110021.png ||
+|| t22r021181110041 || gens: 1000000000<br>area: 4086216<br>maxVisits: 1078<br>density: 22.70%<br>colors: 0.39% 0.61% || https://dl.dropbox.com/u/13260068/Turmites/t22r021181110041.png ||
+|| t22r021181110081 || gens: 1000000000<br>area: 4277663<br>maxVisits: 896<br>density: 26.09%<br>colors: 0.51% 0.49% || https://dl.dropbox.com/u/13260068/Turmites/t22r021181110081.png ||
+|| t22r021181120081 || gens: 1000000000<br>area: 2130836<br>maxVisits: 1789<br>density: 26.23%<br>colors: 0.59% 0.41% || https://dl.dropbox.com/u/13260068/Turmites/t22r021181120081.png ||
+|| t22r021181181020 || gens: 1000000000<br>area: 2813258<br>maxVisits: 1289<br>density: 27.58%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021181181020.png ||
+|| t22r041010120141 || gens: 1000000000<br>area: 2310644<br>maxVisits: 1722<br>density: 25.13%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r041010120141.png ||
+|| t22r041010121010 || gens: 1000000000<br>area: 2935341<br>maxVisits: 1359<br>density: 25.07%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r041010121010.png ||
+|| t22r041010121020 || gens: 1000000000<br>area: 3911979<br>maxVisits: 935<br>density: 27.34%<br>colors: 0.52% 0.48% || https://dl.dropbox.com/u/13260068/Turmites/t22r041010121020.png ||
+|| t22r041010121110 || gens: 1000000000<br>area: 4299244<br>maxVisits: 945<br>density: 24.61%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r041010121110.png ||
+|| t22r041010121120 || gens: 1000000000<br>area: 2627593<br>maxVisits: 1375<br>density: 27.68%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r041010121120.png ||
+|| t22r041010140121 || gens: 1000000000<br>area: 1812539<br>maxVisits: 2212<br>density: 24.94%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r041010140121.png ||
+|| t22r041011121010 || gens: 1000000000<br>area: 5183582<br>maxVisits: 697<br>density: 27.68%<br>colors: 0.53% 0.47% || https://dl.dropbox.com/u/13260068/Turmites/t22r041011121010.png ||
+|| t22r041011121020 || gens: 1000000000<br>area: 1611753<br>maxVisits: 2667<br>density: 23.26%<br>colors: 0.49% 0.51% || https://dl.dropbox.com/u/13260068/Turmites/t22r041011121020.png ||
+|| t22r041020110181 || gens: 1000000000<br>area: 1904718<br>maxVisits: 2130<br>density: 24.65%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r041020110181.png ||
+|| t22r041020120181 || gens: 1000000000<br>area: 648860<br>maxVisits: 6110<br>density: 25.22%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r041020120181.png ||
+|| t22r041020141010 || gens: 1000000000<br>area: 773942<br>maxVisits: 4665<br>density: 27.70%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r041020141010.png ||
+|| t22r041020141080 || gens: 1000000000<br>area: 799647<br>maxVisits: 4951<br>density: 25.26%<br>colors: 0.24% 0.76% || https://dl.dropbox.com/u/13260068/Turmites/t22r041020141080.png ||
+|| t22r041021140181 || gens: 1000000000<br>area: 721234<br>maxVisits: 4686<br>density: 29.59%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r041021140181.png ||
+|| t22r041041121020 || gens: 1000000000<br>area: 10800300<br>maxVisits: 8074<br>density: 1.15%<br>colors: 0.44% 0.56% || https://dl.dropbox.com/u/13260068/Turmites/t22r041041121020.png ||
+|| t22r041110121010 || gens: 1000000000<br>area: 1406628<br>maxVisits: 2719<br>density: 26.15%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r041110121010.png ||
+|| t22r041110141010 || gens: 1000000000<br>area: 29<br>maxVisits: 146345686<br>density: 23.56%<br>colors: 0.48% 0.52% || https://dl.dropbox.com/u/13260068/Turmitest22r0411101410101.png ||
+|| t22r041120121020 || gens: 1000000000<br>area: 1977668<br>maxVisits: 2065<br>density: 24.49%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r041120121020.png ||
+|| t22r041120121040 || gens: 1000000000<br>area: 1435765<br>maxVisits: 3057<br>density: 22.78%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r041120121040.png ||
+|| t22r041120181010 || gens: 1000000000<br>area: 1964919<br>maxVisits: 2055<br>density: 24.77%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r041120181010.png ||
+|| t22r041120181020 || gens: 1000000000<br>area: 1730114<br>maxVisits: 2498<br>density: 23.14%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r041120181020.png ||
+|| t22r041121141010 || gens: 1000000000<br>area: 2236222<br>maxVisits: 1725<br>density: 25.92%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r041121141010.png ||
+|| t22r041121141080 || gens: 1000000000<br>area: 1506881<br>maxVisits: 2303<br>density: 28.82%<br>colors: 0.28% 0.72% || https://dl.dropbox.com/u/13260068/Turmites/t22r041121141080.png ||
+|| t22r041121181080 || gens: 1000000000<br>area: 3219754<br>maxVisits: 1164<br>density: 26.68%<br>colors: 0.37% 0.63% || https://dl.dropbox.com/u/13260068/Turmites/t22r041121181080.png ||
+|| t22r111010021110 || gens: 1000000000<br>area: 2934891<br>maxVisits: 1160<br>density: 29.37%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111010021110.png ||
+|| t22r111010021180 || gens: 1000000000<br>area: 2311371<br>maxVisits: 1412<br>density: 30.64%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111010021180.png ||
+|| t22r111010041120 || gens: 1000000000<br>area: 2935659<br>maxVisits: 1147<br>density: 29.70%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111010041120.png ||
+|| t22r111010120010 || gens: 1000000000<br>area: 8227673<br>maxVisits: 471<br>density: 25.80%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111010120010.png ||
+|| t22r111010120011 || gens: 1000000000<br>area: 4562761<br>maxVisits: 817<br>density: 26.83%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111010120011.png ||
+|| t22r111010120080 || gens: 1000000000<br>area: 8830383<br>maxVisits: 464<br>density: 24.41%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111010120080.png ||
+|| t22r111010120081 || gens: 1000000000<br>area: 9432096<br>maxVisits: 465<br>density: 22.80%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111010120081.png ||
+|| t22r111010120110 || gens: 1000000000<br>area: 8972983<br>maxVisits: 417<br>density: 26.73%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r111010120110.png ||
+|| t22r111010120120 || gens: 1000000000<br>area: 17113136<br>maxVisits: 350<br>density: 16.70%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r111010120120.png ||
+|| t22r111010121080 || gens: 1000000000<br>area: 7339142<br>maxVisits: 531<br>density: 25.66%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111010121080.png ||
+|| t22r111010121110 || gens: 1000000000<br>area: 7776664<br>maxVisits: 485<br>density: 26.51%<br>colors: 0.40% 0.60% || https://dl.dropbox.com/u/13260068/Turmites/t22r111010121110.png ||
+|| t22r111010141020 || gens: 1000000000<br>area: 5250869<br>maxVisits: 772<br>density: 24.67%<br>colors: 0.59% 0.41% || https://dl.dropbox.com/u/13260068/Turmites/t22r111010141020.png ||
+|| t22r111010141120 || gens: 1000000000<br>area: 5947602<br>maxVisits: 665<br>density: 25.28%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r111010141120.png ||
+|| t22r111011121010 || gens: 1000000000<br>area: 8459944<br>maxVisits: 430<br>density: 27.49%<br>colors: 0.53% 0.47% || https://dl.dropbox.com/u/13260068/Turmites/t22r111011121010.png ||
+|| t22r111020021110 || gens: 1000000000<br>area: 2194972<br>maxVisits: 1736<br>density: 26.24%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020021110.png ||
+|| t22r111020021180 || gens: 1000000000<br>area: 2131691<br>maxVisits: 1756<br>density: 26.71%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020021180.png ||
+|| t22r111020041120 || gens: 1000000000<br>area: 2335799<br>maxVisits: 1559<br>density: 27.46%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020041120.png ||
+|| t22r111020081120 || gens: 1000000000<br>area: 1745627<br>maxVisits: 2222<br>density: 25.78%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020081120.png ||
+|| t22r111020081140 || gens: 1000000000<br>area: 1682005<br>maxVisits: 2206<br>density: 26.95%<br>colors: 0.49% 0.51% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020081140.png ||
+|| t22r111020120011 || gens: 1000000000<br>area: 5906795<br>maxVisits: 750<br>density: 22.57%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020120011.png ||
+|| t22r111020120040 || gens: 1000000000<br>area: 3636457<br>maxVisits: 1171<br>density: 23.48%<br>colors: 0.55% 0.45% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020120040.png ||
+|| t22r111020120081 || gens: 1000000000<br>area: 6085147<br>maxVisits: 791<br>density: 20.78%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020120081.png ||
+|| t22r111020120180 || gens: 1000000000<br>area: 5614423<br>maxVisits: 690<br>density: 25.81%<br>colors: 0.39% 0.61% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020120180.png ||
+|| t22r111020121010 || gens: 1000000000<br>area: 9325787<br>maxVisits: 483<br>density: 22.20%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020121010.png ||
+|| t22r111020140021 || gens: 1000000000<br>area: 2833900<br>maxVisits: 1681<br>density: 20.99%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020140021.png ||
+|| t22r111020140110 || gens: 1000000000<br>area: 5726363<br>maxVisits: 733<br>density: 23.82%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020140110.png ||
+|| t22r111020140120 || gens: 1000000000<br>area: 4854077<br>maxVisits: 1005<br>density: 20.50%<br>colors: 0.53% 0.47% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020140120.png ||
+|| t22r111020141110 || gens: 1000000000<br>area: 5474256<br>maxVisits: 757<br>density: 24.13%<br>colors: 0.38% 0.62% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020141110.png ||
+|| t22r111020180010 || gens: 1000000000<br>area: 8823147<br>maxVisits: 490<br>density: 23.13%<br>colors: 0.48% 0.52% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020180010.png ||
+|| t22r111020180011 || gens: 1000000000<br>area: 8413577<br>maxVisits: 494<br>density: 24.06%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020180011.png ||
+|| t22r111020180020 || gens: 1000000000<br>area: 5577841<br>maxVisits: 751<br>density: 23.87%<br>colors: 0.49% 0.51% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020180020.png ||
+|| t22r111020180021 || gens: 1000000000<br>area: 7134618<br>maxVisits: 541<br>density: 25.91%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020180021.png ||
+|| t22r111020180081 || gens: 1000000000<br>area: 5571541<br>maxVisits: 889<br>density: 20.19%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020180081.png ||
+|| t22r111020180110 || gens: 1000000000<br>area: 7281053<br>maxVisits: 542<br>density: 25.34%<br>colors: 0.40% 0.60% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020180110.png ||
+|| t22r111020180111 || gens: 1000000000<br>area: 7420775<br>maxVisits: 500<br>density: 26.95%<br>colors: 0.17% 0.83% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020180111.png ||
+|| t22r111020180120 || gens: 1000000000<br>area: 4361317<br>maxVisits: 939<br>density: 24.42%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020180120.png ||
+|| t22r111020181110 || gens: 1000000000<br>area: 6961016<br>maxVisits: 473<br>density: 30.37%<br>colors: 0.37% 0.63% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020181110.png ||
+|| t22r111020181180 || gens: 1000000000<br>area: 6602364<br>maxVisits: 646<br>density: 23.45%<br>colors: 0.39% 0.61% || https://dl.dropbox.com/u/13260068/Turmites/t22r111020181180.png ||
+|| t22r111021021110 || gens: 1000000000<br>area: 1638702<br>maxVisits: 2094<br>density: 29.14%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111021021110.png ||
+|| t22r111021120040 || gens: 1000000000<br>area: 2342434<br>maxVisits: 2196<br>density: 19.44%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111021120040.png ||
+|| t22r111021120110 || gens: 1000000000<br>area: 5611879<br>maxVisits: 1266<br>density: 14.08%<br>colors: 0.25% 0.75% || https://dl.dropbox.com/u/13260068/Turmites/t22r111021120110.png ||
+|| t22r111021120180 || gens: 1000000000<br>area: 3097994<br>maxVisits: 1896<br>density: 17.02%<br>colors: 0.25% 0.75% || https://dl.dropbox.com/u/13260068/Turmites/t22r111021120180.png ||
+|| t22r111021121110 || gens: 1000000000<br>area: 4655471<br>maxVisits: 1437<br>density: 14.95%<br>colors: 0.25% 0.75% || https://dl.dropbox.com/u/13260068/Turmites/t22r111021121110.png ||
+|| t22r111021140011 || gens: 1000000000<br>area: 2136251<br>maxVisits: 1706<br>density: 27.44%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r111021140011.png ||
+|| t22r111021140021 || gens: 1000000000<br>area: 1256597<br>maxVisits: 3312<br>density: 24.03%<br>colors: 0.31% 0.69% || https://dl.dropbox.com/u/13260068/Turmites/t22r111021140021.png ||
+|| t22r111021140081 || gens: 1000000000<br>area: 2893023<br>maxVisits: 1969<br>density: 17.56%<br>colors: 0.38% 0.62% || https://dl.dropbox.com/u/13260068/Turmites/t22r111021140081.png ||
+|| t22r111021140180 || gens: 1000000000<br>area: 1773011<br>maxVisits: 2366<br>density: 23.84%<br>colors: 0.25% 0.75% || https://dl.dropbox.com/u/13260068/Turmites/t22r111021140180.png ||
+|| t22r111021141080 || gens: 1000000000<br>area: 5092277<br>maxVisits: 775<br>density: 25.34%<br>colors: 0.57% 0.43% || https://dl.dropbox.com/u/13260068/Turmites/t22r111021141080.png ||
+|| t22r111021141110 || gens: 1000000000<br>area: 5503701<br>maxVisits: 4942<br>density: 3.68%<br>colors: 0.24% 0.76% || https://dl.dropbox.com/u/13260068/Turmites/t22r111021141110.png ||
+|| t22r111021141180 || gens: 1000000000<br>area: 5279247<br>maxVisits: 685<br>density: 27.65%<br>colors: 0.26% 0.74% || https://dl.dropbox.com/u/13260068/Turmites/t22r111021141180.png ||
+|| t22r111021180010 || gens: 1000000000<br>area: 9230253<br>maxVisits: 454<br>density: 23.86%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111021180010.png ||
+|| t22r111021180011 || gens: 1000000000<br>area: 5676950<br>maxVisits: 724<br>density: 24.33%<br>colors: 0.49% 0.51% || https://dl.dropbox.com/u/13260068/Turmites/t22r111021180011.png ||
+|| t22r111021180020 || gens: 1000000000<br>area: 6682448<br>maxVisits: 591<br>density: 25.32%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111021180020.png ||
+|| t22r111021181020 || gens: 1000000000<br>area: 4239345<br>maxVisits: 1028<br>density: 22.95%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111021181020.png ||
+|| t22r111021181110 || gens: 1000000000<br>area: 5753073<br>maxVisits: 1518<br>density: 11.45%<br>colors: 0.26% 0.74% || https://dl.dropbox.com/u/13260068/Turmites/t22r111021181110.png ||
+|| t22r111040120011 || gens: 1000000000<br>area: 3466036<br>maxVisits: 1342<br>density: 21.50%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111040120011.png ||
+|| t22r111040121110 || gens: 1000000000<br>area: 6366776<br>maxVisits: 525<br>density: 29.92%<br>colors: 0.30% 0.70% || https://dl.dropbox.com/u/13260068/Turmites/t22r111040121110.png ||
+|| t22r111040121120 || gens: 1000000000<br>area: 1240748<br>maxVisits: 3155<br>density: 25.55%<br>colors: 0.38% 0.62% || https://dl.dropbox.com/u/13260068/Turmites/t22r111040121120.png ||
+|| t22r111041041120 || gens: 1000000000<br>area: 3391154<br>maxVisits: 1307<br>density: 22.56%<br>colors: 0.55% 0.45% || https://dl.dropbox.com/u/13260068/Turmites/t22r111041041120.png ||
+|| t22r111041120021 || gens: 1000000000<br>area: 2614122<br>maxVisits: 1808<br>density: 21.16%<br>colors: 0.63% 0.37% || https://dl.dropbox.com/u/13260068/Turmites/t22r111041120021.png ||
+|| t22r111041120111 || gens: 1000000000<br>area: 7524044<br>maxVisits: 459<br>density: 28.96%<br>colors: 0.01% 0.99% || https://dl.dropbox.com/u/13260068/Turmites/t22r111041120111.png ||
+|| t22r111041120180 || gens: 1000000000<br>area: 6878840<br>maxVisits: 1021<br>density: 14.24%<br>colors: 0.31% 0.69% || https://dl.dropbox.com/u/13260068/Turmites/t22r111041120180.png ||
+|| t22r111041121010 || gens: 1000000000<br>area: 7043187<br>maxVisits: 615<br>density: 23.09%<br>colors: 0.40% 0.60% || https://dl.dropbox.com/u/13260068/Turmites/t22r111041121010.png ||
+|| t22r111041121020 || gens: 1000000000<br>area: 4216347<br>maxVisits: 1331<br>density: 17.82%<br>colors: 0.38% 0.62% || https://dl.dropbox.com/u/13260068/Turmites/t22r111041121020.png ||
+|| t22r111041121080 || gens: 1000000000<br>area: 4214184<br>maxVisits: 971<br>density: 24.44%<br>colors: 0.48% 0.52% || https://dl.dropbox.com/u/13260068/Turmites/t22r111041121080.png ||
+|| t22r111041121120 || gens: 1000000000<br>area: 8667504<br>maxVisits: 560<br>density: 20.60%<br>colors: 0.34% 0.66% || https://dl.dropbox.com/u/13260068/Turmites/t22r111041121120.png ||
+|| t22r111041140120 || gens: 1000000000<br>area: 3037353<br>maxVisits: 1839<br>density: 17.90%<br>colors: 0.33% 0.67% || https://dl.dropbox.com/u/13260068/Turmites/t22r111041140120.png ||
+|| t22r111110120011 || gens: 1000000000<br>area: 5898441<br>maxVisits: 623<br>density: 27.21%<br>colors: 0.33% 0.67% || https://dl.dropbox.com/u/13260068/Turmites/t22r111110120011.png ||
+|| t22r111110120021 || gens: 1000000000<br>area: 7135968<br>maxVisits: 557<br>density: 25.16%<br>colors: 0.12% 0.88% || https://dl.dropbox.com/u/13260068/Turmites/t22r111110120021.png ||
+|| t22r111110120081 || gens: 1000000000<br>area: 8916902<br>maxVisits: 463<br>density: 24.22%<br>colors: 0.18% 0.82% || https://dl.dropbox.com/u/13260068/Turmites/t22r111110120081.png ||
+|| t22r111110120120 || gens: 1000000000<br>area: 19269066<br>maxVisits: 447<br>density: 11.61%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r111110120120.png ||
+|| t22r111110121010 || gens: 1000000000<br>area: 10040404<br>maxVisits: 400<br>density: 24.90%<br>colors: 0.05% 0.95% || https://dl.dropbox.com/u/13260068/Turmites/t22r111110121010.png ||
+|| t22r111110121080 || gens: 1000000000<br>area: 8052440<br>maxVisits: 426<br>density: 29.15%<br>colors: 0.03% 0.97% || https://dl.dropbox.com/u/13260068/Turmites/t22r111110121080.png ||
+|| t22r111110141020 || gens: 1000000000<br>area: 6192962<br>maxVisits: 538<br>density: 30.01%<br>colors: 0.03% 0.97% || https://dl.dropbox.com/u/13260068/Turmites/t22r111110141020.png ||
+|| t22r111111120011 || gens: 1000000000<br>area: 3172321<br>maxVisits: 1227<br>density: 25.69%<br>colors: 0.41% 0.59% || https://dl.dropbox.com/u/13260068/Turmites/t22r111111120011.png ||
+|| t22r111120141020 || gens: 1000000000<br>area: 3343680<br>maxVisits: 1302<br>density: 22.97%<br>colors: 0.01% 0.99% || https://dl.dropbox.com/u/13260068/Turmites/t22r111120141020.png ||
+|| t22r111120141080 || gens: 212788056<br>area: 37720405<br>maxVisits: 136057<br>density: 0.00%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111120141080.png ||
+|| t22r111121121010 || gens: 1000000000<br>area: 5865067<br>maxVisits: 662<br>density: 25.76%<br>colors: 0.38% 0.62% || https://dl.dropbox.com/u/13260068/Turmites/t22r111121121010.png ||
+|| t22r111121141020 || gens: 1000000000<br>area: 4336685<br>maxVisits: 1027<br>density: 22.45%<br>colors: 0.53% 0.47% || https://dl.dropbox.com/u/13260068/Turmites/t22r111121141020.png ||
+|| t22r111121141080 || gens: 1000000000<br>area: 3087934<br>maxVisits: 1281<br>density: 25.28%<br>colors: 0.44% 0.56% || https://dl.dropbox.com/u/13260068/Turmites/t22r111121141080.png ||
+|| t22r111121180010 || gens: 1000000000<br>area: 5918492<br>maxVisits: 1921<br>density: 8.80%<br>colors: 0.25% 0.75% || https://dl.dropbox.com/u/13260068/Turmites/t22r111121180010.png ||
+|| t22r111121180011 || gens: 1000000000<br>area: 5186354<br>maxVisits: 656<br>density: 29.39%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r111121180011.png ||
+|| t22r111121181020 || gens: 1000000000<br>area: 3072115<br>maxVisits: 1216<br>density: 26.77%<br>colors: 0.38% 0.62% || https://dl.dropbox.com/u/13260068/Turmites/t22r111121181020.png ||
+|| t22r111121181080 || gens: 1000000000<br>area: 3805806<br>maxVisits: 1016<br>density: 25.86%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r111121181080.png ||
+|| t22r111141120111 || gens: 1000000000<br>area: 10008472<br>maxVisits: 365<br>density: 27.37%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r111141120111.png ||
+|| t22r120011120020 || gens: 1000000000<br>area: 5002954<br>maxVisits: 1244<br>density: 16.07%<br>colors: 0.54% 0.46% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011120020.png ||
+|| t22r120011120080 || gens: 1000000000<br>area: 5734068<br>maxVisits: 660<br>density: 26.42%<br>colors: 0.51% 0.49% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011120080.png ||
+|| t22r120011120081 || gens: 1000000000<br>area: 5405778<br>maxVisits: 819<br>density: 22.59%<br>colors: 0.51% 0.49% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011120081.png ||
+|| t22r120011121040 || gens: 1000000000<br>area: 2473446<br>maxVisits: 1823<br>density: 22.18%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011121040.png ||
+|| t22r120011121080 || gens: 1000000000<br>area: 5623329<br>maxVisits: 672<br>density: 26.46%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011121080.png ||
+|| t22r120011121110 || gens: 1000000000<br>area: 4565487<br>maxVisits: 795<br>density: 27.55%<br>colors: 0.34% 0.66% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011121110.png ||
+|| t22r120011121180 || gens: 1000000000<br>area: 5118195<br>maxVisits: 727<br>density: 26.88%<br>colors: 0.32% 0.68% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011121180.png ||
+|| t22r120011140011 || gens: 1000000000<br>area: 3736214<br>maxVisits: 975<br>density: 27.45%<br>colors: 0.41% 0.59% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011140011.png ||
+|| t22r120011140080 || gens: 1000000000<br>area: 4639236<br>maxVisits: 1015<br>density: 21.24%<br>colors: 0.45% 0.55% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011140080.png ||
+|| t22r120011140110 || gens: 1000000000<br>area: 5282911<br>maxVisits: 687<br>density: 27.55%<br>colors: 0.29% 0.71% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011140110.png ||
+|| t22r120011140111 || gens: 1000000000<br>area: 107406<br>maxVisits: 70178<br>density: 13.27%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011140111.png ||
+|| t22r120011140120 || gens: 1000000000<br>area: 3532659<br>maxVisits: 1164<br>density: 24.32%<br>colors: 0.23% 0.77% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011140120.png ||
+|| t22r120011140180 || gens: 1000000000<br>area: 2943936<br>maxVisits: 1242<br>density: 27.35%<br>colors: 0.28% 0.72% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011140180.png ||
+|| t22r120011141080 || gens: 1000000000<br>area: 1215152<br>maxVisits: 16131<br>density: 5.10%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011141080.png ||
+|| t22r120011141110 || gens: 1000000000<br>area: 7071904<br>maxVisits: 481<br>density: 29.40%<br>colors: 0.30% 0.70% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011141110.png ||
+|| t22r120011180020 || gens: 1000000000<br>area: 7991094<br>maxVisits: 515<br>density: 24.30%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011180020.png ||
+|| t22r120011180040 || gens: 1000000000<br>area: 2363665<br>maxVisits: 1710<br>density: 24.74%<br>colors: 0.39% 0.61% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011180040.png ||
+|| t22r120011180110 || gens: 1000000000<br>area: 6390006<br>maxVisits: 570<br>density: 27.46%<br>colors: 0.40% 0.60% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011180110.png ||
+|| t22r120011180111 || gens: 1000000000<br>area: 4316910<br>maxVisits: 823<br>density: 28.15%<br>colors: 0.02% 0.98% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011180111.png ||
+|| t22r120011180120 || gens: 1000000000<br>area: 7806975<br>maxVisits: 608<br>density: 21.07%<br>colors: 0.39% 0.61% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011180120.png ||
+|| t22r120011180181 || gens: 1000000000<br>area: 3814059<br>maxVisits: 1034<br>density: 25.36%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011180181.png ||
+|| t22r120011181080 || gens: 1000000000<br>area: 4630897<br>maxVisits: 936<br>density: 23.07%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011181080.png ||
+|| t22r120011181110 || gens: 1000000000<br>area: 6870281<br>maxVisits: 545<br>density: 26.71%<br>colors: 0.32% 0.68% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011181110.png ||
+|| t22r120011181120 || gens: 1000000000<br>area: 4474364<br>maxVisits: 881<br>density: 25.37%<br>colors: 0.32% 0.68% || https://dl.dropbox.com/u/13260068/Turmites/t22r120011181120.png ||
+|| t22r120021021110 || gens: 1000000000<br>area: 502117<br>maxVisits: 12312<br>density: 16.18%<br>colors: 0.59% 0.41% || https://dl.dropbox.com/u/13260068/Turmites/t22r120021021110.png ||
+|| t22r120021021180 || gens: 1000000000<br>area: 4456034<br>maxVisits: 1084<br>density: 20.70%<br>colors: 0.61% 0.39% || https://dl.dropbox.com/u/13260068/Turmites/t22r120021021180.png ||
+|| t22r120021120111 || gens: 1000000000<br>area: 16392972<br>maxVisits: 286<br>density: 21.33%<br>colors: 0.10% 0.90% || https://dl.dropbox.com/u/13260068/Turmites/t22r120021120111.png ||
+|| t22r120021141040 || gens: 1000000000<br>area: 1323499<br>maxVisits: 3046<br>density: 24.81%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120021141040.png ||
+|| t22r120021141110 || gens: 1000000000<br>area: 1460508<br>maxVisits: 2585<br>density: 26.49%<br>colors: 0.38% 0.62% || https://dl.dropbox.com/u/13260068/Turmites/t22r120021141110.png ||
+|| t22r120021141180 || gens: 1000000000<br>area: 3507019<br>maxVisits: 944<br>density: 30.21%<br>colors: 0.31% 0.69% || https://dl.dropbox.com/u/13260068/Turmites/t22r120021141180.png ||
+|| t22r120021180010 || gens: 1000000000<br>area: 6604120<br>maxVisits: 863<br>density: 17.55%<br>colors: 0.58% 0.42% || https://dl.dropbox.com/u/13260068/Turmites/t22r120021180010.png ||
+|| t22r120021180110 || gens: 1000000000<br>area: 7091763<br>maxVisits: 665<br>density: 21.20%<br>colors: 0.47% 0.53% || https://dl.dropbox.com/u/13260068/Turmites/t22r120021180110.png ||
+|| t22r120021180111 || gens: 1000000000<br>area: 20601542<br>maxVisits: 837<br>density: 5.80%<br>colors: 0.17% 0.83% || https://dl.dropbox.com/u/13260068/Turmites/t22r120021180111.png ||
+|| t22r120021180180 || gens: 1000000000<br>area: 4083770<br>maxVisits: 807<br>density: 30.34%<br>colors: 0.44% 0.56% || https://dl.dropbox.com/u/13260068/Turmites/t22r120021180180.png ||
+|| t22r120021181010 || gens: 1000000000<br>area: 4378636<br>maxVisits: 1049<br>density: 21.77%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120021181010.png ||
+|| t22r120021181120 || gens: 1000000000<br>area: 1911412<br>maxVisits: 2126<br>density: 24.61%<br>colors: 0.30% 0.70% || https://dl.dropbox.com/u/13260068/Turmites/t22r120021181120.png ||
+|| t22r120041120010 || gens: 1000000000<br>area: 1965875<br>maxVisits: 2504<br>density: 20.31%<br>colors: 0.69% 0.31% || https://dl.dropbox.com/u/13260068/Turmites/t22r120041120010.png ||
+|| t22r120041120020 || gens: 1000000000<br>area: 3695888<br>maxVisits: 1514<br>density: 17.87%<br>colors: 0.58% 0.42% || https://dl.dropbox.com/u/13260068/Turmites/t22r120041120020.png ||
+|| t22r120041121010 || gens: 1000000000<br>area: 2502522<br>maxVisits: 1680<br>density: 23.79%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120041121010.png ||
+|| t22r120041140010 || gens: 1000000000<br>area: 3771166<br>maxVisits: 1253<br>density: 21.16%<br>colors: 0.62% 0.38% || https://dl.dropbox.com/u/13260068/Turmites/t22r120041140010.png ||
+|| t22r120041141020 || gens: 1000000000<br>area: 6348178<br>maxVisits: 1350<br>density: 11.67%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120041141020.png ||
+|| t22r120041180010 || gens: 1000000000<br>area: 4322076<br>maxVisits: 1366<br>density: 16.94%<br>colors: 0.61% 0.39% || https://dl.dropbox.com/u/13260068/Turmites/t22r120041180010.png ||
+|| t22r120041180021 || gens: 1000000000<br>area: 6294167<br>maxVisits: 757<br>density: 20.99%<br>colors: 0.62% 0.38% || https://dl.dropbox.com/u/13260068/Turmites/t22r120041180021.png ||
+|| t22r120041180121 || gens: 1000000000<br>area: 3784714<br>maxVisits: 910<br>density: 29.04%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r120041180121.png ||
+|| t22r120081081120 || gens: 1000000000<br>area: 2455659<br>maxVisits: 1518<br>density: 26.83%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120081081120.png ||
+|| t22r120081120010 || gens: 1000000000<br>area: 4569234<br>maxVisits: 828<br>density: 26.43%<br>colors: 0.51% 0.49% || https://dl.dropbox.com/u/13260068/Turmites/t22r120081120010.png ||
+|| t22r120081120040 || gens: 1000000000<br>area: 14733053<br>maxVisits: 424<br>density: 16.01%<br>colors: 0.47% 0.53% || https://dl.dropbox.com/u/13260068/Turmites/t22r120081120040.png ||
+|| t22r120081120120 || gens: 1000000000<br>area: 2936746<br>maxVisits: 1154<br>density: 29.51%<br>colors: 0.38% 0.62% || https://dl.dropbox.com/u/13260068/Turmites/t22r120081120120.png ||
+|| t22r120081121010 || gens: 1000000000<br>area: 5725994<br>maxVisits: 700<br>density: 24.95%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120081121010.png ||
+|| t22r120081121110 || gens: 1000000000<br>area: 5020100<br>maxVisits: 724<br>density: 27.51%<br>colors: 0.33% 0.67% || https://dl.dropbox.com/u/13260068/Turmites/t22r120081121110.png ||
+|| t22r120081121180 || gens: 1000000000<br>area: 5842556<br>maxVisits: 677<br>density: 25.28%<br>colors: 0.31% 0.69% || https://dl.dropbox.com/u/13260068/Turmites/t22r120081121180.png ||
+|| t22r120081140111 || gens: 1000000000<br>area: 2085196<br>maxVisits: 1586<br>density: 30.24%<br>colors: 0.01% 0.99% || https://dl.dropbox.com/u/13260068/Turmites/t22r120081140111.png ||
+|| t22r120081140121 || gens: 1000000000<br>area: 1184276<br>maxVisits: 3550<br>density: 23.79%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r120081140121.png ||
+|| t22r120081141120 || gens: 1000000000<br>area: 2327963<br>maxVisits: 1431<br>density: 30.02%<br>colors: 0.28% 0.72% || https://dl.dropbox.com/u/13260068/Turmites/t22r120081141120.png ||
+|| t22r120081180011 || gens: 1000000000<br>area: 10662032<br>maxVisits: 442<br>density: 21.22%<br>colors: 0.54% 0.46% || https://dl.dropbox.com/u/13260068/Turmites/t22r120081180011.png ||
+|| t22r120081180040 || gens: 1000000000<br>area: 3894549<br>maxVisits: 1050<br>density: 24.45%<br>colors: 0.56% 0.44% || https://dl.dropbox.com/u/13260068/Turmites/t22r120081180040.png ||
+|| t22r120081180120 || gens: 1000000000<br>area: 3673157<br>maxVisits: 1168<br>density: 23.31%<br>colors: 0.40% 0.60% || https://dl.dropbox.com/u/13260068/Turmites/t22r120081180120.png ||
+|| t22r120111021010 || gens: 1000000000<br>area: 1813987<br>maxVisits: 1994<br>density: 27.65%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120111021010.png ||
+|| t22r120111041020 || gens: 1000000000<br>area: 3030920<br>maxVisits: 1405<br>density: 23.48%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120111041020.png ||
+|| t22r120111081080 || gens: 1000000000<br>area: 4802179<br>maxVisits: 907<br>density: 22.96%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120111081080.png ||
+|| t22r120111120011 || gens: 1000000000<br>area: 3797209<br>maxVisits: 1017<br>density: 25.89%<br>colors: 0.40% 0.60% || https://dl.dropbox.com/u/13260068/Turmites/t22r120111120011.png ||
+|| t22r120111121010 || gens: 1000000000<br>area: 4532607<br>maxVisits: 857<br>density: 25.74%<br>colors: 0.33% 0.67% || https://dl.dropbox.com/u/13260068/Turmites/t22r120111121010.png ||
+|| t22r120111121080 || gens: 1000000000<br>area: 5008585<br>maxVisits: 747<br>density: 26.73%<br>colors: 0.33% 0.67% || https://dl.dropbox.com/u/13260068/Turmites/t22r120111121080.png ||
+|| t22r120111140011 || gens: 1000000000<br>area: 4446487<br>maxVisits: 858<br>density: 26.21%<br>colors: 0.38% 0.62% || https://dl.dropbox.com/u/13260068/Turmites/t22r120111140011.png ||
+|| t22r120111141010 || gens: 1000000000<br>area: 2443907<br>maxVisits: 1516<br>density: 26.99%<br>colors: 0.32% 0.68% || https://dl.dropbox.com/u/13260068/Turmites/t22r120111141010.png ||
+|| t22r120111141080 || gens: 1000000000<br>area: 3532699<br>maxVisits: 1027<br>density: 27.56%<br>colors: 0.30% 0.70% || https://dl.dropbox.com/u/13260068/Turmites/t22r120111141080.png ||
+|| t22r120111180010 || gens: 1000000000<br>area: 5230982<br>maxVisits: 1971<br>density: 9.70%<br>colors: 0.27% 0.73% || https://dl.dropbox.com/u/13260068/Turmites/t22r120111180010.png ||
+|| t22r120111180020 || gens: 1000000000<br>area: 8943385<br>maxVisits: 507<br>density: 22.05%<br>colors: 0.25% 0.75% || https://dl.dropbox.com/u/13260068/Turmites/t22r120111180020.png ||
+|| t22r120111180081 || gens: 1000000000<br>area: 3308443<br>maxVisits: 1159<br>density: 26.08%<br>colors: 0.33% 0.67% || https://dl.dropbox.com/u/13260068/Turmites/t22r120111180081.png ||
+|| t22r120111181010 || gens: 1000000000<br>area: 6844627<br>maxVisits: 510<br>density: 28.65%<br>colors: 0.32% 0.68% || https://dl.dropbox.com/u/13260068/Turmites/t22r120111181010.png ||
+|| t22r120121081020 || gens: 1000000000<br>area: 2283493<br>maxVisits: 1590<br>density: 27.54%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120121081020.png ||
+|| t22r120121120011 || gens: 1000000000<br>area: 13222927<br>maxVisits: 400<br>density: 18.91%<br>colors: 0.46% 0.54% || https://dl.dropbox.com/u/13260068/Turmites/t22r120121120011.png ||
+|| t22r120121120111 || gens: 1000000000<br>area: 12667854<br>maxVisits: 774<br>density: 10.20%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r120121120111.png ||
+|| t22r120121180041 || gens: 1000000000<br>area: 3073548<br>maxVisits: 1057<br>density: 30.78%<br>colors: 0.31% 0.69% || https://dl.dropbox.com/u/13260068/Turmites/t22r120121180041.png ||
+|| t22r120141011020 || gens: 994004085<br>area: 35250513<br>maxVisits: 3468<br>density: 0.81%<br>colors: 0.48% 0.52% || https://dl.dropbox.com/u/13260068/Turmites/t22r120141011020.png ||
+|| t22r120141021040 || gens: 1000000000<br>area: 1048447<br>maxVisits: 3791<br>density: 25.16%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120141021040.png ||
+|| t22r120141041010 || gens: 1000000000<br>area: 2533631<br>maxVisits: 1551<br>density: 25.45%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120141041010.png ||
+|| t22r120141041020 || gens: 1000000000<br>area: 1040606<br>maxVisits: 3888<br>density: 24.72%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120141041020.png ||
+|| t22r120141081010 || gens: 1000000000<br>area: 2752433<br>maxVisits: 1664<br>density: 21.83%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120141081010.png ||
+|| t22r120141120011 || gens: 1000000000<br>area: 3242788<br>maxVisits: 1205<br>density: 25.59%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120141120011.png ||
+|| t22r120141120021 || gens: 1000000000<br>area: 1289957<br>maxVisits: 3094<br>density: 25.06%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120141120021.png ||
+|| t22r120141140011 || gens: 1000000000<br>area: 3263361<br>maxVisits: 1197<br>density: 25.60%<br>colors: 0.44% 0.56% || https://dl.dropbox.com/u/13260068/Turmites/t22r120141140011.png ||
+|| t22r120181021010 || gens: 1000000000<br>area: 3115380<br>maxVisits: 1196<br>density: 26.84%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181021010.png ||
+|| t22r120181021020 || gens: 728715080<br>area: 13349827<br>maxVisits: 385<br>density: 14.18%<br>colors: 0.49% 0.51% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181021020.png ||
+|| t22r120181021040 || gens: 1000000000<br>area: 3967726<br>maxVisits: 1125<br>density: 22.40%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181021040.png ||
+|| t22r120181081020 || gens: 1000000000<br>area: 1343403<br>maxVisits: 2802<br>density: 26.57%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181081020.png ||
+|| t22r120181081080 || gens: 1000000000<br>area: 2108894<br>maxVisits: 1708<br>density: 27.76%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181081080.png ||
+|| t22r120181120010 || gens: 1000000000<br>area: 3068721<br>maxVisits: 1889<br>density: 17.25%<br>colors: 0.26% 0.74% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181120010.png ||
+|| t22r120181120011 || gens: 1000000000<br>area: 5071150<br>maxVisits: 742<br>density: 26.58%<br>colors: 0.40% 0.60% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181120011.png ||
+|| t22r120181120081 || gens: 1000000000<br>area: 2638766<br>maxVisits: 1433<br>density: 26.45%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181120081.png ||
+|| t22r120181121010 || gens: 1000000000<br>area: 5350003<br>maxVisits: 705<br>density: 26.51%<br>colors: 0.32% 0.68% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181121010.png ||
+|| t22r120181121080 || gens: 1000000000<br>area: 5773351<br>maxVisits: 673<br>density: 25.74%<br>colors: 0.31% 0.69% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181121080.png ||
+|| t22r120181140011 || gens: 1000000000<br>area: 5357054<br>maxVisits: 789<br>density: 23.66%<br>colors: 0.39% 0.61% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181140011.png ||
+|| t22r120181140021 || gens: 1000000000<br>area: 4062950<br>maxVisits: 1004<br>density: 24.51%<br>colors: 0.32% 0.68% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181140021.png ||
+|| t22r120181140081 || gens: 1000000000<br>area: 770880<br>maxVisits: 5398<br>density: 24.03%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181140081.png ||
+|| t22r120181181010 || gens: 1000000000<br>area: 4652367<br>maxVisits: 970<br>density: 22.16%<br>colors: 0.32% 0.68% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181181010.png ||
+|| t22r120181181080 || gens: 1000000000<br>area: 1952575<br>maxVisits: 2409<br>density: 21.26%<br>colors: 0.30% 0.70% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181181080.png ||
+|| t22r121010021120 || gens: 1000000000<br>area: 5328090<br>maxVisits: 998<br>density: 18.81%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121010021120.png ||
+|| t22r121010021180 || gens: 1000000000<br>area: 3954419<br>maxVisits: 908<br>density: 27.85%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121010021180.png ||
+|| t22r121010041110 || gens: 1000000000<br>area: 3220533<br>maxVisits: 1114<br>density: 27.87%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121010041110.png ||
+|| t22r121010081110 || gens: 1000000000<br>area: 2281743<br>maxVisits: 1543<br>density: 28.40%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121010081110.png ||
+|| t22r121010081120 || gens: 1000000000<br>area: 2534943<br>maxVisits: 1447<br>density: 27.26%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121010081120.png ||
+|| t22r121010081180 || gens: 1000000000<br>area: 4738431<br>maxVisits: 745<br>density: 28.33%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121010081180.png ||
+|| t22r121010110011 || gens: 1000000000<br>area: 4280401<br>maxVisits: 1042<br>density: 22.42%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121010110011.png ||
+|| t22r121010110021 || gens: 1000000000<br>area: 6401534<br>maxVisits: 674<br>density: 23.18%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121010110021.png ||
+|| t22r121010110080 || gens: 1000000000<br>area: 5486345<br>maxVisits: 615<br>density: 29.64%<br>colors: 0.49% 0.51% || https://dl.dropbox.com/u/13260068/Turmites/t22r121010110080.png ||
+|| t22r121010110081 || gens: 1000000000<br>area: 8580673<br>maxVisits: 463<br>density: 25.17%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121010110081.png ||
+|| t22r121010110111 || gens: 1000000000<br>area: 5779432<br>maxVisits: 662<br>density: 26.14%<br>colors: 0.33% 0.67% || https://dl.dropbox.com/u/13260068/Turmites/t22r121010110111.png ||
+|| t22r121010140010 || gens: 1000000000<br>area: 5444813<br>maxVisits: 752<br>density: 24.42%<br>colors: 0.59% 0.41% || https://dl.dropbox.com/u/13260068/Turmites/t22r121010140010.png ||
+|| t22r121010140021 || gens: 1000000000<br>area: 1592267<br>maxVisits: 2797<br>density: 22.45%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121010140021.png ||
+|| t22r121010140080 || gens: 1000000000<br>area: 4004531<br>maxVisits: 934<br>density: 26.74%<br>colors: 0.60% 0.40% || https://dl.dropbox.com/u/13260068/Turmites/t22r121010140080.png ||
+|| t22r121010140110 || gens: 1000000000<br>area: 9120375<br>maxVisits: 428<br>density: 25.62%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121010140110.png ||
+|| t22r121010140120 || gens: 1000000000<br>area: 3654700<br>maxVisits: 1125<br>density: 24.32%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121010140120.png ||
+|| t22r121010140121 || gens: 1000000000<br>area: 3988799<br>maxVisits: 1034<br>density: 24.25%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121010140121.png ||
+|| t22r121010141110 || gens: 1000000000<br>area: 6926181<br>maxVisits: 557<br>density: 25.92%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r121010141110.png ||
+|| t22r121011110011 || gens: 1000000000<br>area: 8062660<br>maxVisits: 507<br>density: 24.46%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121011110011.png ||
+|| t22r121011110080 || gens: 1000000000<br>area: 9389707<br>maxVisits: 414<br>density: 25.72%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121011110080.png ||
+|| t22r121011110081 || gens: 1000000000<br>area: 8320115<br>maxVisits: 495<br>density: 24.28%<br>colors: 0.48% 0.52% || https://dl.dropbox.com/u/13260068/Turmites/t22r121011110081.png ||
+|| t22r121011110180 || gens: 1000000000<br>area: 5891308<br>maxVisits: 1779<br>density: 9.54%<br>colors: 0.25% 0.75% || https://dl.dropbox.com/u/13260068/Turmites/t22r121011110180.png ||
+|| t22r121011120080 || gens: 1000000000<br>area: 5983568<br>maxVisits: 666<br>density: 25.09%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121011120080.png ||
+|| t22r121011120110 || gens: 1000000000<br>area: 3270107<br>maxVisits: 1814<br>density: 16.86%<br>colors: 0.25% 0.75% || https://dl.dropbox.com/u/13260068/Turmites/t22r121011120110.png ||
+|| t22r121011120180 || gens: 1000000000<br>area: 2784838<br>maxVisits: 1850<br>density: 19.41%<br>colors: 0.25% 0.75% || https://dl.dropbox.com/u/13260068/Turmites/t22r121011120180.png ||
+|| t22r121011140010 || gens: 1000000000<br>area: 5688573<br>maxVisits: 1133<br>density: 15.52%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121011140010.png ||
+|| t22r121011140020 || gens: 1000000000<br>area: 1755615<br>maxVisits: 2744<br>density: 20.76%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121011140020.png ||
+|| t22r121011140110 || gens: 1000000000<br>area: 2770252<br>maxVisits: 2278<br>density: 15.85%<br>colors: 0.17% 0.83% || https://dl.dropbox.com/u/13260068/Turmites/t22r121011140110.png ||
+|| t22r121011140180 || gens: 1000000000<br>area: 2613862<br>maxVisits: 1864<br>density: 20.52%<br>colors: 0.25% 0.75% || https://dl.dropbox.com/u/13260068/Turmites/t22r121011140180.png ||
+|| t22r121011141010 || gens: 1000000000<br>area: 7173591<br>maxVisits: 528<br>density: 26.40%<br>colors: 0.57% 0.43% || https://dl.dropbox.com/u/13260068/Turmites/t22r121011141010.png ||
+|| t22r121011141110 || gens: 1000000000<br>area: 6265661<br>maxVisits: 615<br>density: 25.95%<br>colors: 0.26% 0.74% || https://dl.dropbox.com/u/13260068/Turmites/t22r121011141110.png ||
+|| t22r121011141180 || gens: 1000000000<br>area: 4325899<br>maxVisits: 3188<br>density: 7.25%<br>colors: 0.26% 0.74% || https://dl.dropbox.com/u/13260068/Turmites/t22r121011141180.png ||
+|| t22r121020021110 || gens: 1000000000<br>area: 2237155<br>maxVisits: 2460<br>density: 18.17%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121020021110.png ||
+|| t22r121020021140 || gens: 1000000000<br>area: 1449503<br>maxVisits: 3057<br>density: 22.57%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121020021140.png ||
+|| t22r121020021180 || gens: 1000000000<br>area: 1868687<br>maxVisits: 2268<br>density: 23.60%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121020021180.png ||
+|| t22r121020081110 || gens: 1000000000<br>area: 2197638<br>maxVisits: 1621<br>density: 28.07%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121020081110.png ||
+|| t22r121020081120 || gens: 1000000000<br>area: 1782803<br>maxVisits: 2249<br>density: 24.94%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121020081120.png ||
+|| t22r121020081180 || gens: 1000000000<br>area: 1438596<br>maxVisits: 2493<br>density: 27.88%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121020081180.png ||
+|| t22r121020110040 || gens: 1000000000<br>area: 2614334<br>maxVisits: 1930<br>density: 19.82%<br>colors: 0.63% 0.37% || https://dl.dropbox.com/u/13260068/Turmites/t22r121020110040.png ||
+|| t22r121020110081 || gens: 1000000000<br>area: 5657190<br>maxVisits: 885<br>density: 19.97%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121020110081.png ||
+|| t22r121020110111 || gens: 1000000000<br>area: 7148722<br>maxVisits: 547<br>density: 25.57%<br>colors: 0.12% 0.88% || https://dl.dropbox.com/u/13260068/Turmites/t22r121020110111.png ||
+|| t22r121020110180 || gens: 1000000000<br>area: 2351747<br>maxVisits: 1779<br>density: 23.90%<br>colors: 0.37% 0.63% || https://dl.dropbox.com/u/13260068/Turmites/t22r121020110180.png ||
+|| t22r121020141010 || gens: 1000000000<br>area: 3811629<br>maxVisits: 1199<br>density: 21.88%<br>colors: 0.57% 0.43% || https://dl.dropbox.com/u/13260068/Turmites/t22r121020141010.png ||
+|| t22r121021120081 || gens: 1000000000<br>area: 10690894<br>maxVisits: 397<br>density: 23.56%<br>colors: 0.48% 0.52% || https://dl.dropbox.com/u/13260068/Turmites/t22r121021120081.png ||
+|| t22r121021140021 || gens: 1000000000<br>area: 2697257<br>maxVisits: 1916<br>density: 19.35%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r121021140021.png ||
+|| t22r121040021110 || gens: 1000000000<br>area: 2229371<br>maxVisits: 2100<br>density: 21.36%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121040021110.png ||
+|| t22r121040021140 || gens: 1000000000<br>area: 590909<br>maxVisits: 6337<br>density: 26.71%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121040021140.png ||
+|| t22r121040021180 || gens: 1000000000<br>area: 1108657<br>maxVisits: 3062<br>density: 29.46%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121040021180.png ||
+|| t22r121040081180 || gens: 1000000000<br>area: 1743327<br>maxVisits: 2021<br>density: 28.38%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121040081180.png ||
+|| t22r121041110020 || gens: 1000000000<br>area: 2370213<br>maxVisits: 2228<br>density: 18.94%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121041110020.png ||
+|| t22r121041110021 || gens: 1000000000<br>area: 3462332<br>maxVisits: 1272<br>density: 22.71%<br>colors: 0.55% 0.45% || https://dl.dropbox.com/u/13260068/Turmites/t22r121041110021.png ||
+|| t22r121041110111 || gens: 1000000000<br>area: 27285657<br>maxVisits: 1023<br>density: 3.58%<br>colors: 0.03% 0.97% || https://dl.dropbox.com/u/13260068/Turmites/t22r121041110111.png ||
+|| t22r121041140081 || gens: 1000000000<br>area: 605321<br>maxVisits: 6384<br>density: 25.88%<br>colors: 0.33% 0.67% || https://dl.dropbox.com/u/13260068/Turmites/t22r121041140081.png ||
+|| t22r121041141180 || gens: 1000000000<br>area: 13612056<br>maxVisits: 1829<br>density: 4.02%<br>colors: 0.46% 0.54% || https://dl.dropbox.com/u/13260068/Turmites/t22r121041141180.png ||
+|| t22r121080021140 || gens: 1000000000<br>area: 901480<br>maxVisits: 4779<br>density: 23.21%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121080021140.png ||
+|| t22r121080021180 || gens: 1000000000<br>area: 1370608<br>maxVisits: 2480<br>density: 29.42%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121080021180.png ||
+|| t22r121080081180 || gens: 1000000000<br>area: 4504300<br>maxVisits: 920<br>density: 24.13%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121080081180.png ||
+|| t22r121080110011 || gens: 1000000000<br>area: 8994610<br>maxVisits: 504<br>density: 22.06%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121080110011.png ||
+|| t22r121080110021 || gens: 1000000000<br>area: 6365050<br>maxVisits: 816<br>density: 19.25%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121080110021.png ||
+|| t22r121080110080 || gens: 1000000000<br>area: 5417847<br>maxVisits: 769<br>density: 24.00%<br>colors: 0.49% 0.51% || https://dl.dropbox.com/u/13260068/Turmites/t22r121080110080.png ||
+|| t22r121080110081 || gens: 1000000000<br>area: 7518991<br>maxVisits: 571<br>density: 23.29%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121080110081.png ||
+|| t22r121080110111 || gens: 1000000000<br>area: 8859995<br>maxVisits: 456<br>density: 24.75%<br>colors: 0.18% 0.82% || https://dl.dropbox.com/u/13260068/Turmites/t22r121080110111.png ||
+|| t22r121080110180 || gens: 1000000000<br>area: 5072116<br>maxVisits: 731<br>density: 26.97%<br>colors: 0.44% 0.56% || https://dl.dropbox.com/u/13260068/Turmites/t22r121080110180.png ||
+|| t22r121080120010 || gens: 1000000000<br>area: 11071722<br>maxVisits: 429<br>density: 21.05%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121080120010.png ||
+|| t22r121080120020 || gens: 1000000000<br>area: 11158512<br>maxVisits: 449<br>density: 19.96%<br>colors: 0.48% 0.52% || https://dl.dropbox.com/u/13260068/Turmites/t22r121080120020.png ||
+|| t22r121080120110 || gens: 1000000000<br>area: 7556825<br>maxVisits: 654<br>density: 20.23%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r121080120110.png ||
+|| t22r121080120180 || gens: 1000000000<br>area: 4771569<br>maxVisits: 913<br>density: 22.95%<br>colors: 0.46% 0.54% || https://dl.dropbox.com/u/13260068/Turmites/t22r121080120180.png ||
+|| t22r121080140010 || gens: 1000000000<br>area: 5141668<br>maxVisits: 799<br>density: 24.34%<br>colors: 0.52% 0.48% || https://dl.dropbox.com/u/13260068/Turmites/t22r121080140010.png ||
+|| t22r121080140021 || gens: 1000000000<br>area: 3516307<br>maxVisits: 1420<br>density: 20.03%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121080140021.png ||
+|| t22r121080140120 || gens: 1000000000<br>area: 5253467<br>maxVisits: 1107<br>density: 17.20%<br>colors: 0.57% 0.43% || https://dl.dropbox.com/u/13260068/Turmites/t22r121080140120.png ||
+|| t22r121081110011 || gens: 1000000000<br>area: 8706586<br>maxVisits: 433<br>density: 26.53%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121081110011.png ||
+|| t22r121081110080 || gens: 1000000000<br>area: 6669991<br>maxVisits: 649<br>density: 23.10%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121081110080.png ||
+|| t22r121081110081 || gens: 1000000000<br>area: 5494766<br>maxVisits: 746<br>density: 24.40%<br>colors: 0.49% 0.51% || https://dl.dropbox.com/u/13260068/Turmites/t22r121081110081.png ||
+|| t22r121081120010 || gens: 1000000000<br>area: 5806169<br>maxVisits: 703<br>density: 24.50%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r121081120010.png ||
+|| t22r121081120011 || gens: 1000000000<br>area: 184<br>maxVisits: 74679936<br>density: 7.28%<br>colors: 0.46% 0.54% || https://dl.dropbox.com/u/13260068/Turmites/t22r121081120011.png ||
+|| t22r121110021110 || gens: 1000000000<br>area: 3213348<br>maxVisits: 1114<br>density: 27.94%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r121110021110.png ||
+|| t22r121110110040 || gens: 1000000000<br>area: 7444892<br>maxVisits: 462<br>density: 29.07%<br>colors: 0.01% 0.99% || https://dl.dropbox.com/u/13260068/Turmites/t22r121110110040.png ||
+|| t22r121110110081 || gens: 1000000000<br>area: 7463756<br>maxVisits: 515<br>density: 26.02%<br>colors: 0.17% 0.83% || https://dl.dropbox.com/u/13260068/Turmites/t22r121110110081.png ||
+|| t22r121110110140 || gens: 1000000000<br>area: 9972725<br>maxVisits: 386<br>density: 25.98%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r121110110140.png ||
+|| t22r121110140020 || gens: 1000000000<br>area: 5341675<br>maxVisits: 665<br>density: 28.15%<br>colors: 0.03% 0.97% || https://dl.dropbox.com/u/13260068/Turmites/t22r121110140020.png ||
+|| t22r121110140111 || gens: 1000000000<br>area: 5988823<br>maxVisits: 733<br>density: 22.78%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r121110140111.png ||
+|| t22r121111110011 || gens: 1000000000<br>area: 8877298<br>maxVisits: 411<br>density: 27.41%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r121111110011.png ||
+|| t22r121111110020 || gens: 1000000000<br>area: 5584042<br>maxVisits: 1689<br>density: 10.60%<br>colors: 0.25% 0.75% || https://dl.dropbox.com/u/13260068/Turmites/t22r121111110020.png ||
+|| t22r121111110081 || gens: 1000000000<br>area: 7371099<br>maxVisits: 520<br>density: 26.09%<br>colors: 0.40% 0.60% || https://dl.dropbox.com/u/13260068/Turmites/t22r121111110081.png ||
+|| t22r121111120010 || gens: 1000000000<br>area: 3315268<br>maxVisits: 4795<br>density: 6.29%<br>colors: 0.25% 0.75% || https://dl.dropbox.com/u/13260068/Turmites/t22r121111120010.png ||
+|| t22r121111120081 || gens: 1000000000<br>area: 6966014<br>maxVisits: 580<br>density: 24.75%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r121111120081.png ||
+|| t22r121111140011 || gens: 1000000000<br>area: 2563925<br>maxVisits: 1386<br>density: 28.14%<br>colors: 0.41% 0.59% || https://dl.dropbox.com/u/13260068/Turmites/t22r121111140011.png ||
+|| t22r121111140021 || gens: 1000000000<br>area: 2204809<br>maxVisits: 3001<br>density: 15.11%<br>colors: 0.41% 0.59% || https://dl.dropbox.com/u/13260068/Turmites/t22r121111140021.png ||
+|| t22r121111140081 || gens: 1000000000<br>area: 968160<br>maxVisits: 4770<br>density: 21.65%<br>colors: 0.22% 0.78% || https://dl.dropbox.com/u/13260068/Turmites/t22r121111140081.png ||
+|| t22r121111141010 || gens: 1000000000<br>area: 3386017<br>maxVisits: 1180<br>density: 25.03%<br>colors: 0.40% 0.60% || https://dl.dropbox.com/u/13260068/Turmites/t22r121111141010.png ||
+|| t22r121120141010 || gens: 1000000000<br>area: 1455639<br>maxVisits: 2342<br>density: 29.33%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r121120141010.png ||
+|| t22r121121140011 || gens: 1000000000<br>area: 3201619<br>maxVisits: 1144<br>density: 27.30%<br>colors: 0.40% 0.60% || https://dl.dropbox.com/u/13260068/Turmites/t22r121121140011.png ||
+|| t22r121121140021 || gens: 1000000000<br>area: 4913641<br>maxVisits: 1592<br>density: 12.78%<br>colors: 0.39% 0.61% || https://dl.dropbox.com/u/13260068/Turmites/t22r121121140021.png ||
+|| t22r121141141010 || gens: 1000000000<br>area: 1596736<br>maxVisits: 2175<br>density: 28.79%<br>colors: 0.03% 0.97% || https://dl.dropbox.com/u/13260068/Turmites/t22r121141141010.png ||
+|| t22r121181110020 || gens: 1000000000<br>area: 3093344<br>maxVisits: 1859<br>density: 17.39%<br>colors: 0.25% 0.75% || https://dl.dropbox.com/u/13260068/Turmites/t22r121181110020.png ||
+|| t22r121181110040 || gens: 1000000000<br>area: 5985052<br>maxVisits: 1004<br>density: 16.64%<br>colors: 0.32% 0.68% || https://dl.dropbox.com/u/13260068/Turmites/t22r121181110040.png ||
+|| t22r121181110081 || gens: 1000000000<br>area: 4537746<br>maxVisits: 890<br>density: 24.76%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r121181110081.png ||
+|| t22r121181120010 || gens: 1000000000<br>area: 2834137<br>maxVisits: 1725<br>density: 20.45%<br>colors: 0.25% 0.75% || https://dl.dropbox.com/u/13260068/Turmites/t22r121181120010.png ||
+|| t22r121181120011 || gens: 1000000000<br>area: 183<br>maxVisits: 66977928<br>density: 8.16%<br>colors: 0.46% 0.54% || https://dl.dropbox.com/u/13260068/Turmites/t22r121181120011.png ||
+|| t22r121181140010 || gens: 1000000000<br>area: 3329603<br>maxVisits: 1639<br>density: 18.32%<br>colors: 0.33% 0.67% || https://dl.dropbox.com/u/13260068/Turmites/t22r121181140010.png ||
+|| t22r121181141010 || gens: 1000000000<br>area: 3849365<br>maxVisits: 987<br>density: 26.32%<br>colors: 0.46% 0.54% || https://dl.dropbox.com/u/13260068/Turmites/t22r121181141010.png ||
+|| t22r140011121080 || gens: 1000000000<br>area: 1216796<br>maxVisits: 26604<br>density: 3.09%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r140011121080.png ||
+|| t22r140011121110 || gens: 1000000000<br>area: 2418241<br>maxVisits: 1432<br>density: 28.88%<br>colors: 0.32% 0.68% || https://dl.dropbox.com/u/13260068/Turmites/t22r140011121110.png ||
+|| t22r140011121180 || gens: 1000000000<br>area: 3511664<br>maxVisits: 1140<br>density: 24.98%<br>colors: 0.30% 0.70% || https://dl.dropbox.com/u/13260068/Turmites/t22r140011121180.png ||
+|| t22r140021121010 || gens: 1000000000<br>area: 2633877<br>maxVisits: 2270<br>density: 16.73%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r140021121010.png ||
+|| t22r140021121040 || gens: 1000000000<br>area: 5207445<br>maxVisits: 1287<br>density: 14.92%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r140021121040.png ||
+|| t22r140021140111 || gens: 1000000000<br>area: 2518280<br>maxVisits: 1276<br>density: 31.12%<br>colors: 0.01% 0.99% || https://dl.dropbox.com/u/13260068/Turmites/t22r140021140111.png ||
+|| t22r140111121010 || gens: 1000000000<br>area: 7142792<br>maxVisits: 472<br>density: 29.66%<br>colors: 0.30% 0.70% || https://dl.dropbox.com/u/13260068/Turmites/t22r140111121010.png ||
+|| t22r140111121020 || gens: 1000000000<br>area: 1424984<br>maxVisits: 2893<br>density: 24.26%<br>colors: 0.38% 0.62% || https://dl.dropbox.com/u/13260068/Turmites/t22r140111121020.png ||
+|| t22r140111140021 || gens: 1000000000<br>area: 1915147<br>maxVisits: 2541<br>density: 20.55%<br>colors: 0.39% 0.61% || https://dl.dropbox.com/u/13260068/Turmites/t22r140111140021.png ||
+|| t22r140121140010 || gens: 1000000000<br>area: 2207779<br>maxVisits: 2503<br>density: 18.10%<br>colors: 0.33% 0.67% || https://dl.dropbox.com/u/13260068/Turmites/t22r140121140010.png ||
+|| t22r140121140011 || gens: 1000000000<br>area: 3934129<br>maxVisits: 930<br>density: 27.33%<br>colors: 0.39% 0.61% || https://dl.dropbox.com/u/13260068/Turmites/t22r140121140011.png ||
+|| t22r140121140081 || gens: 1000000000<br>area: 3351683<br>maxVisits: 1414<br>density: 21.10%<br>colors: 0.35% 0.65% || https://dl.dropbox.com/u/13260068/Turmites/t22r140121140081.png ||
+|| t22r140121181080 || gens: 1000000000<br>area: 3407543<br>maxVisits: 980<br>density: 29.95%<br>colors: 0.31% 0.69% || https://dl.dropbox.com/u/13260068/Turmites/t22r140121181080.png ||
+|| t22r141010021120 || gens: 1000000000<br>area: 3315179<br>maxVisits: 1105<br>density: 27.30%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r141010021120.png ||
+|| t22r141010021140 || gens: 1000000000<br>area: 2776254<br>maxVisits: 1497<br>density: 24.06%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r141010021140.png ||
+|| t22r141010110020 || gens: 1000000000<br>area: 2141543<br>maxVisits: 1710<br>density: 27.31%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r141010110020.png ||
+|| t22r141010120110 || gens: 1000000000<br>area: 2492142<br>maxVisits: 1471<br>density: 27.28%<br>colors: 0.41% 0.59% || https://dl.dropbox.com/u/13260068/Turmites/t22r141010120110.png ||
+|| t22r141011120010 || gens: 1000000000<br>area: 5517322<br>maxVisits: 1105<br>density: 16.40%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r141011120010.png ||
+|| t22r141011120011 || gens: 1000000000<br>area: 5408211<br>maxVisits: 775<br>density: 23.86%<br>colors: 0.59% 0.41% || https://dl.dropbox.com/u/13260068/Turmites/t22r141011120011.png ||
+|| t22r141011120081 || gens: 1000000000<br>area: 5309942<br>maxVisits: 889<br>density: 21.18%<br>colors: 0.52% 0.48% || https://dl.dropbox.com/u/13260068/Turmites/t22r141011120081.png ||
+|| t22r141011120180 || gens: 1000000000<br>area: 3426703<br>maxVisits: 1577<br>density: 18.51%<br>colors: 0.33% 0.67% || https://dl.dropbox.com/u/13260068/Turmites/t22r141011120180.png ||
+|| t22r141011140120 || gens: 1000000000<br>area: 2277035<br>maxVisits: 2384<br>density: 18.42%<br>colors: 0.33% 0.67% || https://dl.dropbox.com/u/13260068/Turmites/t22r141011140120.png ||
+|| t22r141020021110 || gens: 1000000000<br>area: 1606688<br>maxVisits: 2237<br>density: 27.82%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r141020021110.png ||
+|| t22r141020021180 || gens: 1000000000<br>area: 4385701<br>maxVisits: 1014<br>density: 22.49%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r141020021180.png ||
+|| t22r141020081120 || gens: 1000000000<br>area: 1910252<br>maxVisits: 3445<br>density: 15.20%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r141020081120.png ||
+|| t22r141020110020 || gens: 1000000000<br>area: 1345355<br>maxVisits: 3391<br>density: 21.92%<br>colors: 0.31% 0.69% || https://dl.dropbox.com/u/13260068/Turmites/t22r141020110020.png ||
+|| t22r141020110021 || gens: 1000000000<br>area: 2753441<br>maxVisits: 1782<br>density: 20.38%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r141020110021.png ||
+|| t22r141020110080 || gens: 1000000000<br>area: 2902101<br>maxVisits: 1719<br>density: 20.05%<br>colors: 0.38% 0.62% || https://dl.dropbox.com/u/13260068/Turmites/t22r141020110080.png ||
+|| t22r141020120011 || gens: 1000000000<br>area: 1542166<br>maxVisits: 2549<br>density: 25.44%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r141020120011.png ||
+|| t22r141020120081 || gens: 1000000000<br>area: 4006154<br>maxVisits: 1159<br>density: 21.54%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r141020120081.png ||
+|| t22r141020120110 || gens: 1000000000<br>area: 1935432<br>maxVisits: 3047<br>density: 16.96%<br>colors: 0.41% 0.59% || https://dl.dropbox.com/u/13260068/Turmites/t22r141020120110.png ||
+|| t22r141020180110 || gens: 1000000000<br>area: 998572<br>maxVisits: 4459<br>density: 22.46%<br>colors: 0.22% 0.78% || https://dl.dropbox.com/u/13260068/Turmites/t22r141020180110.png ||
+|| t22r141021120010 || gens: 1000000000<br>area: 2079567<br>maxVisits: 2446<br>density: 19.66%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r141021120010.png ||
+|| t22r141021120111 || gens: 1000000000<br>area: 5356952<br>maxVisits: 697<br>density: 26.78%<br>colors: 0.03% 0.97% || https://dl.dropbox.com/u/13260068/Turmites/t22r141021120111.png ||
+|| t22r141021180011 || gens: 1000000000<br>area: 3880217<br>maxVisits: 1074<br>density: 24.00%<br>colors: 0.60% 0.40% || https://dl.dropbox.com/u/13260068/Turmites/t22r141021180011.png ||
+|| t22r141040120011 || gens: 1000000000<br>area: 2406808<br>maxVisits: 1777<br>density: 23.38%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r141040120011.png ||
+|| t22r141110120111 || gens: 1000000000<br>area: 5727120<br>maxVisits: 653<br>density: 26.74%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r141110120111.png ||
+|| t22r141111110021 || gens: 1000000000<br>area: 5598312<br>maxVisits: 749<br>density: 23.85%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r141111110021.png ||
+|| t22r141111120010 || gens: 1000000000<br>area: 2841237<br>maxVisits: 2190<br>density: 16.07%<br>colors: 0.17% 0.83% || https://dl.dropbox.com/u/13260068/Turmites/t22r141111120010.png ||
+|| t22r141111120011 || gens: 1000000000<br>area: 8923793<br>maxVisits: 427<br>density: 26.24%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r141111120011.png ||
+|| t22r141120120011 || gens: 1000000000<br>area: 3815085<br>maxVisits: 894<br>density: 29.32%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r141120120011.png ||
+|| t22r141121110021 || gens: 1000000000<br>area: 5109024<br>maxVisits: 892<br>density: 21.94%<br>colors: 0.53% 0.47% || https://dl.dropbox.com/u/13260068/Turmites/t22r141121110021.png ||
+|| t22r141121110080 || gens: 1000000000<br>area: 1772003<br>maxVisits: 2359<br>density: 23.92%<br>colors: 0.25% 0.75% || https://dl.dropbox.com/u/13260068/Turmites/t22r141121110080.png ||
+|| t22r141121120011 || gens: 1000000000<br>area: 3606363<br>maxVisits: 1047<br>density: 26.48%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r141121120011.png ||
+|| t22r141121120081 || gens: 1000000000<br>area: 5203282<br>maxVisits: 1072<br>density: 17.93%<br>colors: 0.57% 0.43% || https://dl.dropbox.com/u/13260068/Turmites/t22r141121120081.png ||
+|| t22r141121180010 || gens: 1000000000<br>area: 2614541<br>maxVisits: 1830<br>density: 20.90%<br>colors: 0.25% 0.75% || https://dl.dropbox.com/u/13260068/Turmites/t22r141121180010.png ||
+|| t22r141121180111 || gens: 1000000000<br>area: 22287811<br>maxVisits: 329<br>density: 13.64%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r141121180111.png ||
