@@ -2,7 +2,7 @@
 
 = Introduction =
 
-There are 531 unique unresolved 2-state 2-color turmites. This is a subpage of EdPeggsBusyBeaverTurmiteChallenge.
+There are 531 unique unresolved 2-state 2-color turmites at 1 billion iterations. This is a subpage of EdPeggsBusyBeaverTurmiteChallenge.
 
 I simulated all 2<sup>16</sup>=65,536 rules of the 2s2c turmites and noted how much of each type resolved at regular iteration steps (powers of 10).
 
@@ -16,7 +16,7 @@ This table lists counts of resolved turmites for various classes.
 
 Notes:<br>
  * *0 and 10<sup>3</sup> iterations:* For some classes, it's unfeasible for me to check how much are unique.
- * *2:* A Unary highway looks similar to a Classic highway, except that the turmite travels back to the start every time it grows.<br>
+ * *2, 3, 4:* A Unary highway looks similar to a Classic highway, except that the turmite travels back to the start every time it grows.<br>
  * *15, 16:* This includes rotated squares (and diamonds), but not the parallelograms.
  * *16:* The growth ratio is asymptotic and limits to: c・iter<sup>2/3</sup>.<br>
 
