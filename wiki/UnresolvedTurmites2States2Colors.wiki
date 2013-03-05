@@ -24,14 +24,14 @@ Notes:<br>
 
 Some interesting rules to try or to study:
 
-|| t22r021010181020 || Unresolved || One-dimensional chaos. (2-wide) ||
+|| t22r021010181020 || Unresolved || One-dimensional chaos, 2-wide. ||
 || t22r021021120181 || Unresolved || Slowest growing rule. ||
-|| t22r041110141010 || Unresolved || One-dimensional chaos. (1-wide) ||
+|| t22r041110141010 || Unresolved || One-dimensional chaos, 1-wide. Extremely slow growing. ||
 || t22r111120141080 || Unresolved || Chaotic thick spiral with high visits-count spots. ||
 || t22r120081180041 || Resolved || Highest period highway. ||
 || t22r120081180111 || Resolved || Asymetrically growing double unary highway. One side grows twice as fast. ||
 || t22r120111120080 || Resolved || Most complex 'stuck'-pattern so far. ||
-|| t22r120141011020 || Unresolved || Spiral with embedded wedges (slightly chaotical) ||
+|| t22r120141011020 || Unresolved || Spiral with embedded wedges, slightly chaotical. ||
 || t22r121081120011<br>A different one:<br>t22r121181120011 || Unresolved || Two binary counters that interfere with each other to create one-dimensional chaos. ||
 || t22r121110140080<br>A smaller one:<br>t22r141021180111 || Resolved || Double highway which aren't co-linear. ||
 || t22r121181110040 || Unresolved || Spiral with chaotic highways internally. ||
