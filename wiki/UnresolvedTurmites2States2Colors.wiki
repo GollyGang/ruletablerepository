@@ -2,7 +2,7 @@
 
 = Introduction =
 
-There are 527 unique unresolved 2-state 2-color turmites at 1 billion iterations. This is a subpage of EdPeggsBusyBeaverTurmiteChallenge.
+There are 531 unique unresolved 2-state 2-color turmites at 1 billion iterations. This is a subpage of EdPeggsBusyBeaverTurmiteChallenge.
 
 I simulated all 2<sup>16</sup>=65,536 rules of the 2s2c turmites and noted how much of each type resolved at regular iteration steps (powers of 10).
 
@@ -92,6 +92,7 @@ These rules have all been run with at most 1 billion steps. A few have a 'gens' 
 || t22r011110120021 || gens: 1000000000<br>area: 3778365<br>maxVisits: 1120<br>density: 23.63%<br>colors: 0.37% 0.63% || https://dl.dropbox.com/u/13260068/Turmites/t22r011110120021.png ||
 || t22r011110120081 || gens: 1000000000<br>area: 6901490<br>maxVisits: 574<br>density: 25.24%<br>colors: 0.46% 0.54% || https://dl.dropbox.com/u/13260068/Turmites/t22r011110120081.png ||
 || t22r011110120181 || gens: 1000000000<br>area: 39869628<br>maxVisits: 264<br>density: 9.50%<br>colors: 0.01% 0.99% || https://dl.dropbox.com/u/13260068/Turmites/t22r011110120181.png ||
+|| t22r011110121020 || gens: 97597765<br>area: 4262199<br>maxVisits: 153<br>density: 14.97%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011110121020.png ||
 || t22r011110121040 || gens: 1000000000<br>area: 4070494<br>maxVisits: 1065<br>density: 23.07%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011110121040.png ||
 || t22r011111120011 || gens: 1000000000<br>area: 2670308<br>maxVisits: 1509<br>density: 24.82%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011111120011.png ||
 || t22r011120120011 || gens: 1000000000<br>area: 5034708<br>maxVisits: 779<br>density: 25.50%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r011120120011.png ||
@@ -124,7 +125,6 @@ These rules have all been run with at most 1 billion steps. A few have a 'gens' 
 || t22r021010140181 || gens: 1000000000<br>area: 3921867<br>maxVisits: 1033<br>density: 24.68%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010140181.png ||
 || t22r021010141110 || gens: 1000000000<br>area: 3779618<br>maxVisits: 1136<br>density: 23.29%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010141110.png ||
 || t22r021010141140 || gens: 1000000000<br>area: 2280144<br>maxVisits: 1734<br>density: 25.29%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010141140.png ||
-|| t22r021010181020 || gens: 137197646<br>area: 16384<br>maxVisits: 17397<br>density: 48.13%<br>colors: 0.65% 0.35% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010181020.png ||
 || t22r021010181140 || gens: 1000000000<br>area: 6022625<br>maxVisits: 790<br>density: 21.02%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021010181140.png ||
 || t22r021011110011 || gens: 1000000000<br>area: 5612724<br>maxVisits: 678<br>density: 26.28%<br>colors: 0.61% 0.39% || https://dl.dropbox.com/u/13260068/Turmites/t22r021011110011.png ||
 || t22r021011110021 || gens: 1000000000<br>area: 5807206<br>maxVisits: 702<br>density: 24.53%<br>colors: 0.62% 0.38% || https://dl.dropbox.com/u/13260068/Turmites/t22r021011110021.png ||
@@ -186,7 +186,6 @@ These rules have all been run with at most 1 billion steps. A few have a 'gens' 
 || t22r021110110141 || gens: 1000000000<br>area: 6637221<br>maxVisits: 553<br>density: 27.25%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r021110110141.png ||
 || t22r021110120181 || gens: 1000000000<br>area: 4943234<br>maxVisits: 730<br>density: 27.71%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r021110120181.png ||
 || t22r021110121020 || gens: 1000000000<br>area: 774058<br>maxVisits: 4510<br>density: 28.65%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021110121020.png ||
-|| t22r021110140121 || gens: 888042265<br>area: 31496092<br>maxVisits: 218<br>density: 12.93%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r021110140121.png ||
 || t22r021110181040 || gens: 1000000000<br>area: 9212992<br>maxVisits: 596<br>density: 18.21%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021110181040.png ||
 || t22r021111110011 || gens: 1000000000<br>area: 6606158<br>maxVisits: 569<br>density: 26.60%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021111110011.png ||
 || t22r021111110021 || gens: 1000000000<br>area: 12212295<br>maxVisits: 498<br>density: 16.44%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r021111110021.png ||
@@ -314,7 +313,6 @@ These rules have all been run with at most 1 billion steps. A few have a 'gens' 
 || t22r111110141020 || gens: 1000000000<br>area: 6192962<br>maxVisits: 538<br>density: 30.01%<br>colors: 0.03% 0.97% || https://dl.dropbox.com/u/13260068/Turmites/t22r111110141020.png ||
 || t22r111111120011 || gens: 1000000000<br>area: 3172321<br>maxVisits: 1227<br>density: 25.69%<br>colors: 0.41% 0.59% || https://dl.dropbox.com/u/13260068/Turmites/t22r111111120011.png ||
 || t22r111120141020 || gens: 1000000000<br>area: 3343680<br>maxVisits: 1302<br>density: 22.97%<br>colors: 0.01% 0.99% || https://dl.dropbox.com/u/13260068/Turmites/t22r111120141020.png ||
-|| t22r111120141080 || gens: 212788056<br>area: 37720405<br>maxVisits: 136057<br>density: 0.00%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r111120141080.png ||
 || t22r111121121010 || gens: 1000000000<br>area: 5865067<br>maxVisits: 662<br>density: 25.76%<br>colors: 0.38% 0.62% || https://dl.dropbox.com/u/13260068/Turmites/t22r111121121010.png ||
 || t22r111121141020 || gens: 1000000000<br>area: 4336685<br>maxVisits: 1027<br>density: 22.45%<br>colors: 0.53% 0.47% || https://dl.dropbox.com/u/13260068/Turmites/t22r111121141020.png ||
 || t22r111121141080 || gens: 1000000000<br>area: 3087934<br>maxVisits: 1281<br>density: 25.28%<br>colors: 0.44% 0.56% || https://dl.dropbox.com/u/13260068/Turmites/t22r111121141080.png ||
@@ -397,7 +395,6 @@ These rules have all been run with at most 1 billion steps. A few have a 'gens' 
 || t22r120121120011 || gens: 1000000000<br>area: 13222927<br>maxVisits: 400<br>density: 18.91%<br>colors: 0.46% 0.54% || https://dl.dropbox.com/u/13260068/Turmites/t22r120121120011.png ||
 || t22r120121120111 || gens: 1000000000<br>area: 12667854<br>maxVisits: 774<br>density: 10.20%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r120121120111.png ||
 || t22r120121180041 || gens: 1000000000<br>area: 3073548<br>maxVisits: 1057<br>density: 30.78%<br>colors: 0.31% 0.69% || https://dl.dropbox.com/u/13260068/Turmites/t22r120121180041.png ||
-|| t22r120141011020 || gens: 994004085<br>area: 35250513<br>maxVisits: 3468<br>density: 0.81%<br>colors: 0.48% 0.52% || https://dl.dropbox.com/u/13260068/Turmites/t22r120141011020.png ||
 || t22r120141021040 || gens: 1000000000<br>area: 1048447<br>maxVisits: 3791<br>density: 25.16%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120141021040.png ||
 || t22r120141041010 || gens: 1000000000<br>area: 2533631<br>maxVisits: 1551<br>density: 25.45%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120141041010.png ||
 || t22r120141041020 || gens: 1000000000<br>area: 1040606<br>maxVisits: 3888<br>density: 24.72%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120141041020.png ||
@@ -406,7 +403,6 @@ These rules have all been run with at most 1 billion steps. A few have a 'gens' 
 || t22r120141120021 || gens: 1000000000<br>area: 1289957<br>maxVisits: 3094<br>density: 25.06%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120141120021.png ||
 || t22r120141140011 || gens: 1000000000<br>area: 3263361<br>maxVisits: 1197<br>density: 25.60%<br>colors: 0.44% 0.56% || https://dl.dropbox.com/u/13260068/Turmites/t22r120141140011.png ||
 || t22r120181021010 || gens: 1000000000<br>area: 3115380<br>maxVisits: 1196<br>density: 26.84%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181021010.png ||
-|| t22r120181021020 || gens: 728715080<br>area: 13349827<br>maxVisits: 385<br>density: 14.18%<br>colors: 0.49% 0.51% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181021020.png ||
 || t22r120181021040 || gens: 1000000000<br>area: 3967726<br>maxVisits: 1125<br>density: 22.40%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181021040.png ||
 || t22r120181081020 || gens: 1000000000<br>area: 1343403<br>maxVisits: 2802<br>density: 26.57%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181081020.png ||
 || t22r120181081080 || gens: 1000000000<br>area: 2108894<br>maxVisits: 1708<br>density: 27.76%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r120181081080.png ||
@@ -500,7 +496,9 @@ These rules have all been run with at most 1 billion steps. A few have a 'gens' 
 || t22r121110110081 || gens: 1000000000<br>area: 7463756<br>maxVisits: 515<br>density: 26.02%<br>colors: 0.17% 0.83% || https://dl.dropbox.com/u/13260068/Turmites/t22r121110110081.png ||
 || t22r121110110140 || gens: 1000000000<br>area: 9972725<br>maxVisits: 386<br>density: 25.98%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r121110110140.png ||
 || t22r121110140020 || gens: 1000000000<br>area: 5341675<br>maxVisits: 665<br>density: 28.15%<br>colors: 0.03% 0.97% || https://dl.dropbox.com/u/13260068/Turmites/t22r121110140020.png ||
+|| t22r121110140081 || gens: 31503305<br>area: 4453122<br>maxVisits: 109<br>density: 6.49%<br>colors: 0.06% 0.94% || https://dl.dropbox.com/u/13260068/Turmites/t22r121110140081.png ||
 || t22r121110140111 || gens: 1000000000<br>area: 5988823<br>maxVisits: 733<br>density: 22.78%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r121110140111.png ||
+|| t22r121110140180 || gens: 57817129<br>area: 2835517<br>maxVisits: 214<br>density: 9.53%<br>colors: 0.00% 1.00% || https://dl.dropbox.com/u/13260068/Turmites/t22r121110140180.png ||
 || t22r121111110011 || gens: 1000000000<br>area: 8877298<br>maxVisits: 411<br>density: 27.41%<br>colors: 0.42% 0.58% || https://dl.dropbox.com/u/13260068/Turmites/t22r121111110011.png ||
 || t22r121111110020 || gens: 1000000000<br>area: 5584042<br>maxVisits: 1689<br>density: 10.60%<br>colors: 0.25% 0.75% || https://dl.dropbox.com/u/13260068/Turmites/t22r121111110020.png ||
 || t22r121111110081 || gens: 1000000000<br>area: 7371099<br>maxVisits: 520<br>density: 26.09%<br>colors: 0.40% 0.60% || https://dl.dropbox.com/u/13260068/Turmites/t22r121111110081.png ||
@@ -553,6 +551,7 @@ These rules have all been run with at most 1 billion steps. A few have a 'gens' 
 || t22r141020120081 || gens: 1000000000<br>area: 4006154<br>maxVisits: 1159<br>density: 21.54%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r141020120081.png ||
 || t22r141020120110 || gens: 1000000000<br>area: 1935432<br>maxVisits: 3047<br>density: 16.96%<br>colors: 0.41% 0.59% || https://dl.dropbox.com/u/13260068/Turmites/t22r141020120110.png ||
 || t22r141020180110 || gens: 1000000000<br>area: 998572<br>maxVisits: 4459<br>density: 22.46%<br>colors: 0.22% 0.78% || https://dl.dropbox.com/u/13260068/Turmites/t22r141020180110.png ||
+|| t22r141020180111 || gens: 50072778<br>area: 6849737<br>maxVisits: 110<br>density: 6.65%<br>colors: 0.06% 0.94% || https://dl.dropbox.com/u/13260068/Turmites/t22r141020180111.png ||
 || t22r141021120010 || gens: 1000000000<br>area: 2079567<br>maxVisits: 2446<br>density: 19.66%<br>colors: 0.50% 0.50% || https://dl.dropbox.com/u/13260068/Turmites/t22r141021120010.png ||
 || t22r141021120111 || gens: 1000000000<br>area: 5356952<br>maxVisits: 697<br>density: 26.78%<br>colors: 0.03% 0.97% || https://dl.dropbox.com/u/13260068/Turmites/t22r141021120111.png ||
 || t22r141021180011 || gens: 1000000000<br>area: 3880217<br>maxVisits: 1074<br>density: 24.00%<br>colors: 0.60% 0.40% || https://dl.dropbox.com/u/13260068/Turmites/t22r141021180011.png ||
