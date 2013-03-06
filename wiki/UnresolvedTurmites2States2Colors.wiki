@@ -2,7 +2,7 @@
 
 = Introduction =
 
-There are 531 unique unresolved 2-state 2-color turmites at 1 billion iterations. This is a subpage of EdPeggsBusyBeaverTurmiteChallenge.
+There are at most 511 (509?<sup>`*`</sup>) unique unresolved 2-state 2-color turmites at 10 billion iterations. This is a subpage of EdPeggsBusyBeaverTurmiteChallenge.
 
 I simulated all 2<sup>16</sup>=65,536 rules of the 2s2c turmites and noted how much of each type resolved at regular iteration steps (powers of 10).
 
