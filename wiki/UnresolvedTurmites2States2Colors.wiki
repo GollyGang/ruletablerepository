@@ -21,7 +21,7 @@ Notes:<br>
  * *2, 3, 4:* A Unary highway looks similar to a Classic highway, except that the turmite travels back to the start every time it grows.<br>
  * *15, 16:* This includes rotated squares (and diamonds), but not the parallelograms.
  * *16:* The growth ratio is asymptotic and limits to: c・iter<sup>2/3</sup>.<br>
- * *1e10:* Tentative numbers. Four rules are still simulating in Golly because none of my simulators have enough memory.
+ * *1e10:* Tentative numbers. Two rules are still simulating in Golly because none of my simulators have enough memory.
 
 ==Interesting rules==
 
