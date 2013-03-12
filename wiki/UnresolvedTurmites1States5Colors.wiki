@@ -2,7 +2,7 @@
 
 = Introduction =
 
-There are 615 unresolved 1-state 5-color turmites listed below.  This is a subpage of EdPeggsBusyBeaverTurmiteChallenge.
+There are 612 unresolved 1-state 5-color turmites listed below.  This is a subpage of EdPeggsBusyBeaverTurmiteChallenge.
 
 = Details =
 
