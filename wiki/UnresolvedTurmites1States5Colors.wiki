@@ -8,8 +8,9 @@ There are 615 unresolved 1-state 5-color turmites listed below.  This is a subpa
 
 All of these have been run at least 6 million steps.  They are sorted by the size of growth after 2 million steps.  
 
-I've run the first six of the list for 8 trillion steps. Here's step 5 trillion. 
-http://www.mathpuzzle.com/t15s5Tt.gif
+I've run the first six of the list for 20 trillion steps. Here's step 20 trillion, and 20T+1. 
+http://www.mathpuzzle.com/t15s20T.gif 
+http://www.mathpuzzle.com/t15s20T+1.gif
 
 || `{{{1,2,0},{2,4,0},{3,8,0},{4,4,0},{0,4,0}}}` || 6M || `{{{1,2,0},{2,8,0},{3,2,0},{4,8,0},{0,4,0}}}` || 6M || `{{{1,2,0},{2,8,0},{3,4,0},{4,2,0},{0,8,0}}}` || 6M || 
 || `{{{1,4,0},{2,2,0},{3,4,0},{4,8,0},{0,4,0}}}` || 6M || `{{{1,4,0},{2,2,0},{3,8,0},{4,2,0},{0,8,0}}}` || 6M || `{{{1,4,0},{2,4,0},{3,2,0},{4,4,0},{0,8,0}}}` || 6M || 
