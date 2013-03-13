@@ -206,7 +206,7 @@ The population numbers are not the same as the area (number of unique visited ce
 
 There are *612* turmites listed at UnresolvedTurmites1States5Colors. 
 
-I've run the first six of the list for 20 trillion steps. Here's step 20 trillion, and 20T+1. 
+I've run the first six of the list for 20 trillion steps. Here's step 20 trillion, and 20T+1. At around 21.5 trillion, I had a power failure.
 http://www.mathpuzzle.com/t15s20T.gif 
 http://www.mathpuzzle.com/t15s20T+1.gif
 
