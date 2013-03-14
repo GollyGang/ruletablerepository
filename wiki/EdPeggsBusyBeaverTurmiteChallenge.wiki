@@ -7,7 +7,7 @@ Subpage of TwoDimensionalTuringMachines. Subpages include UnresolvedTurmites2Sta
 
 ||        || 2-color||3-color||4-color||5-color||6-color||
 ||1-state|| 9,977 steps<br>`{{{1,2,0},{0,8,0}}}`<br>Langton's Ant ||  67,620,060 +10 steps<br>`{{{1,2,0},{2,1,0},{0,4,0}}}`<br>Hutton/Pegg<br>[EdPeggsBusyBeaverTurmiteChallenge#Unresolved_1-state_3-color_relative_movement_turmites 9 unresolved] ||  ~6,650,200,000 steps<br>`{{{1,4,0},{2,2,0},{3,8,0},{0,8,0}}}`<br>Georgi Gochev<br>[EdPeggsBusyBeaverTurmiteChallenge#Unresolved_1-state_4-color_relative_movement_turmites 94 unresolved]  ||  ~217,782,000,000 steps<br>`{{{1,2,0},{2,4,0},{3,4,0},{4,4,0},{0,8,0}}}`<br>Ed Pegg Jr<br> [UnresolvedTurmites1States5Colors 612 unresolved] ||  ??? || 
-||2-state|| ~3,511,330,000,000 steps<br>`{{{1,2,0},{0,1,1}}`,<br>`{{0,2,0},{1,2,1}}}`<br>Georgi Gochev<br>[UnresolvedTurmites2States2Colors 570 unresolved] ||  1.9*10^61 steps<br>`{{{1,1,1},{0,8,1},{1,1,0}}`,<br>`{{2,8,0},{1,1,0},{1,1,1}}}`<br>Georgi Gochev ||  ??? ||  ??? ||  ??? || 
+||2-state|| ~95,331,358,974,145 steps<br>`{{{0,1,1},{0,4,0}}`,<br>`{{1,4,0},{1,2,1}}}`<br>Georgi Gochev<br>[UnresolvedTurmites2States2Colors 570 unresolved] ||  1.9*10^61 steps<br>`{{{1,1,1},{0,8,1},{1,1,0}}`,<br>`{{2,8,0},{1,1,0},{1,1,1}}}`<br>Georgi Gochev ||  ??? ||  ??? ||  ??? || 
 ||3-state|| ??? ||  ??? ||  ??? ||  ??? ||  ??? || 
 ||4-state|| ??? ||  ??? ||  ??? ||  ??? ||  ??? || 
 
@@ -52,7 +52,8 @@ Turmites (1-state 5-color) that last more than a billion steps, or that have int
 
 Turmites (2-state 2-color) that last more than a billion steps, or that have interesting behavior (high-period highways, traps/wedges, islands, nice patterns). There are [UnresolvedTurmites2States2Colors 570 unresolved 2c2c turmites].
 
-|| `{{{1,2,0},{0,1,1}},{{0,2,0},{1,2,1}}}` || *Highway at 3,511,330,000,000 +10,000,000*<br>First time highway detected at 39 millions.<br>by Georgi Gochev || [http://ruletablerepository.googlecode.com/files/t22r120011020121.png http://ruletablerepository.googlecode.com/files/t22r120011020121_small.png]  ||
+|| `{{{0,1,1},{0,4,0}},{{1,4,0},{1,2,1}}}` || *Highway < 95,331,358,974,145*<br>by Mark Jeronimus|| [http://ruletablerepository.googlecode.com/files/t22r011040140121.png http://ruletablerepository.googlecode.com/files/t22r011040140121_small.png] [http://ruletablerepository.googlecode.com/files/t22r011040140121_detail.png http://ruletablerepository.googlecode.com/files/t22r011040140121_detail_small.png] ||
+|| `{{{1,2,0},{0,1,1}},{{0,2,0},{1,2,1}}}` || Highway at 3,511,330,000,000 +10,000,000<br>First time highway detected at 39 millions.<br>by Georgi Gochev || [http://ruletablerepository.googlecode.com/files/t22r120011020121.png http://ruletablerepository.googlecode.com/files/t22r120011020121_small.png]  ||
 || `{{{1,2,1},{0,8,1}},{{1,8,1},{0,1,0}}}` || Highway at 8,362,028,000 +1000<br>by Mark Jeronimus.<br>Slightly modified version of a rule by Georgi Gochev || [http://ruletablerepository.googlecode.com/files/t22r121081181010.png http://ruletablerepository.googlecode.com/files/t22r121081181010_small.png]  ||
 || `{{{1,2,1},{0,8,0}},{{1,2,0},{0,1,0}}}`<br>Mirror version:<br>`{{{1,8,1},{0,2,0}},{{1,8,0},{0,1,0}}}` || Wedge at 7,734,883,000  +1,000<br>By Georgi Gochev || [http://ruletablerepository.googlecode.com/files/t22r121080120010.png http://ruletablerepository.googlecode.com/files/t22r121080120010_small.png]  ||
 || `{{{0,2,1},{1,2,0}},{{1,8,1},{0,4,0}}}` || Highway at 3,133,860,000 +10,000<br>by Ed Pegg Jr || [http://ruletablerepository.googlecode.com/files/t22r021120181040.png http://ruletablerepository.googlecode.com/files/t22r021120181040_small.png] ||
