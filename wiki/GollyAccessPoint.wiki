@@ -369,7 +369,7 @@ A complex yet simple to use cellular automata that is based loosely off Particle
    While turmites store their orientation as part of their state, absolute turmites have no orientation. Fewer interesting examples are known. Included are some examples from <a href="http://wolframscience.com">Wolfram's NKS</a> including one recently discovered to be periodic. 
 </td></tr></table></td></tr>
 <tr><td>
-   <a href="get:http://ruletablerepository.googlecode.com/files/Iceskater%20for%20Golly%202.0.zip">Iceskater</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/Iceskater.zip">Iceskater</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A rule by Jordan Goldstein.
 </td></tr></table></td></tr>
@@ -461,13 +461,13 @@ A complex yet simple to use cellular automata that is based loosely off Particle
    A simple 2D model of a sandpile was found to self-organize itself to criticality. <a href="http://en.wikipedia.org/wiki/Bak%E2%80%93Tang%E2%80%93Wiesenfeld_sandpile">Wikipedia</a>
 </td></tr></table></td></tr>
 <tr><td>
-   <a href="get:http://ruletablerepository.googlecode.com/files/CyclicCA.table">CyclicCA</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/CyclicCA.zip">CyclicCA</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A rule investigated by David Griffeath. This rule is a very basic CA that shows
    competition emerging from a random initial seed.
 </td></tr></table></td></tr>
 <tr><td>
-   <a href="get:http://ruletablerepository.googlecode.com/files/JustFriends.table">JustFriends</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/JustFriends.zip">JustFriends</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    A non-totalistic 2D binary rule by David Bell.
 </td></tr></table></td></tr>
