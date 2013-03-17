@@ -384,8 +384,7 @@ A complex yet simple to use cellular automata that is based loosely off Particle
    is emulated in the Moore neighborhood.
 </td></tr></table></td></tr>
 <tr><td>
-   <a href="get:http://ruletablerepository.googlecode.com/files/BusyBeaver3.table">BusyBeaver3</a>
-   <a href="get:http://ruletablerepository.googlecode.com/files/BusyBeaver5.table">BusyBeaver5</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/BusyBeaver.zip">BusyBeaver</a>
 </td><td><table border="1" cellspacing="0" cellpadding="5" width="100%"><tr><td>
    Adam P. Goucher has made a program to convert m-state n-symbol Turing machines into rule tables.
    The two example machines are Busy Beavers, Turing machines that try to write as many
