@@ -10,7 +10,8 @@ Golly 2.5 introduces a new format for specifying rules.
 A file in the new format has a .rule extension and contains all the information about the rule:
 its name, documentation, table/tree data (used by the !RuleLoader algorithm), and any color/icon information.
 
-Before describing the syntax in detail, let's look at a simple example.  Here is !WireWorld.rule (supplied in Golly's Rules folder):
+Before describing the syntax in detail, let's look at an example.
+Here is !WireWorld.rule (supplied in Golly's Rules folder):
 {{{
 @RULE WireWorld
 
@@ -195,4 +196,23 @@ TO BE COMPLETED!!!
 
 = Deprecated files (.table, .tree, .colors, .icons) =
 
-!!!
+Golly still supports the old rule-related files with extensions of .table, .tree, .colors and .icons,
+but their use is discouraged.  To help speed up the transition to .rule files, Golly 2.5 has a
+couple of handy features:
+
+1. At the bottom of the Control menu is a new command called <b>Convert Old Rules</b>.
+This will convert all .table/tree/colors/icons files into corresponding .rule files
+(but existing .rule files will not be changed). It looks in the supplied Rules folder first,
+then in your user-specific rules folder (set in Preferences > Control).
+The results are displayed in the help window. If the conversion succeeds you'll be asked
+if you want to delete the .table/tree/colors/icons files.
+
+2. When Golly opens a .zip file containing .table/tree/colors/icons files it will automatically
+convert them into .rule files, but only if the zip file has no .rule files.
+Unlike the Convert Old Rules command, this conversion _will_ overwrite existing .rule files
+(in case the zip file contents have changed).
+
+Note that the downloadable zip files stored in the rule table repository have been modified
+to include both .rule files and .table/tree/colors/icons files.  Golly 2.5+ will ignore the
+deprecated files, while older versions will behave as before (the .rule files will be treated
+as pattern files).
