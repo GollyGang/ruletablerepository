@@ -161,7 +161,7 @@ XPM
 ".DEWED."
 }}}
 
-= Syntax =
+= The syntax of a .rule file =
 
 TO BE COMPLETED!!!
 
@@ -182,5 +182,17 @@ TO BE COMPLETED!!!
 !!!
 
 == @ICONS ==
+
+!!!
+
+= How Golly finds .rule files =
+
+!!!
+
+= How to override supplied or built-in rules =
+
+!!!
+
+= Deprecated files (.table, .tree, .colors, .icons) =
 
 !!!
