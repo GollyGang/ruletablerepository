@@ -6,7 +6,7 @@
 
 = Introduction =
 
-Golly 2.5 will introduce a new format for specifying rules.
+Golly 2.5 introduces a new format for specifying rules.
 A file in the new format has a .rule extension and contains all the information about the rule:
 its name, documentation, table/tree data (used by the !RuleLoader algorithm), and any color/icon information.
 
