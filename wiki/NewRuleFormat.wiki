@@ -4,6 +4,7 @@
 
 <wiki:toc max_depth="3" />
 
+
 = Introduction =
 
 Golly 2.5 introduces a new format for specifying rules.
@@ -162,6 +163,7 @@ XPM
 ".DEWED."
 }}}
 
+
 = The syntax of a .rule file =
 
 The .rule format is textual and consists of one or more sections.
@@ -169,6 +171,7 @@ Each section starts with a line of the form @XXX... where X is an uppercase lett
 If Golly sees a section it doesn't recognize it silently ignores it (this will allow us to add new
 sections in the future without breaking old versions of Golly). 
 The currently recognized sections are described below.
+
 
 == @RULE ==
 
@@ -190,11 +193,13 @@ so this is the place to include a description of the rule or any other documenta
 If the .rule file has a @TREE section that was created by a Python transition function
 then this is a good place to put the Python code.
 
+
 == @TABLE ==
 
 This section is optional. If present, it contains a transition table that can be loaded by the !RuleLoader algorithm.
 The contents of this section is identical to the contents of a .table file.
 A detailed specification is available in TheFormat page.
+
 
 == @TREE ==
 
@@ -213,6 +218,7 @@ There are also programs in Rules/!TreeGenerators that can transform a given tran
 C++, Perl, or Java into a .tree file.  The contents of the .tree file can then be copied into the @TREE section
 of a .rule file. 
 
+
 == @COLORS ==
 
 This section is optional and can be used to specify the RGB colors for one or more states using lines
@@ -227,7 +233,7 @@ Golly silently ignores any states that are invalid for the rule.
 To specify a color gradient for all live states (all states except 0) you can use a line with 6 numbers,
 like this: 
 {{{
-0 0 255  255 0 0   blue to red
+255 0 0  0 0 255   red to blue
 }}}
 In both cases, any text after the final number on each line is ignored.
 Blank lines or lines starting with "#" are also ignored.
@@ -236,37 +242,104 @@ Note that a .rule file is loaded after switching to the current algorithm's defa
 so you have the choice of completely changing all the default colors, or only changing some of them.
 Use Preferences > Color if you want to change the default colors.
 
+
 == @ICONS ==
 
-!!!
+This section is optional and can be used to override the default icons displayed for this rule
+(when Golly is in icon mode).
 
-=== Using XPM ===
 
-!!!
+=== Specifying icons using XPM ===
+
+Icon bitmaps can be specified using a simple subset of the XPM format.
+Here's a small example that describes two 7x7 icons suitable for a 3-state rule
+(icons are never used for state 0):
+{{{
+XPM
+/* width height num_colors chars_per_pixel */
+"7 14 2 1"
+/* colors */
+". c #000000"
+"A c #FFFFFF"
+/* icon for state 1 */
+"A......"
+".A....."
+"..A...."
+"...A..."
+"....A.."
+".....A."
+"......A"
+/* icon for state 2 */
+"......A"
+".....A."
+"....A.."
+"...A..."
+"..A...."
+".A....."
+"A......"
+}}}
+Any blank lines or lines starting with "#" or "/" are ignored. A line with XPM by itself indicates the start of a set of icon bitmaps at a particular size. The @ICONS section can contain any number of XPM subsections, and their order is not important. Three different icon sizes are currently supported: 7x7, 15x15 and 31x31 (for displaying at scales 1:8, 1:16 and 1:32 respectively). Any missing icon sizes will be created automatically by scaling a supplied size. Scaled icons can look rather ugly, so if you want good looking icons it's best to supply all three sizes.
+
+After seeing an XPM line, Golly then looks for lines containing strings delimited by double quotes. The first double quote must be at the start of the line (any text after the second double quote is ignored). The first string contains crucial header information in the form of 4 positive integers:
+
+  * The 1st number is the bitmap's width which also defines the icon size. If it is not 7, 15 or 31 then Golly simply ignores the rest of the XPM data. (This provides upward compatibility if we ever decide to support more sizes.)
+
+  * The 2nd number is the bitmap's height. This must be an integer multiple of the width — the number of icons is the height divided by the width.
+
+  * The 3rd number is the total number of different colors used in the bitmap. After the first string comes the strings that specify each color.
+
+  * The 4th number is the number of characters used to specify each pixel and must be 1 or 2. After the color strings comes the strings with the pixel data for each row of the bitmap. Each such string should contain width × chars_per_pixel characters.
+
+The total number of strings after the XPM line should be 1 + num_colors + height. You'll get an error message if there aren't enough strings. Any extra strings are ignored.
+
+The 1st icon specified is for state 1, the 2nd is for state 2, etc. If the number of icons supplied is fewer than the number of live states then the last icon is automatically duplicated. If there are more icons than required then the extra icons are simply ignored.
+
+
+=== Grayscale icons or multi-color icons ===
+
+Golly recognizes two types of icons: grayscale or multi-color. Grayscale icons only use shades of gray (including black and white), as in the above example. Any black areas will be transparent; ie. those pixels will be replaced by the color for state 0. White pixels will be replaced by the color for the cell's current state. Gray pixels are used to do anti-aliasing; ie. the darker the gray the greater the transparency. Using grayscale icons minimizes the amount of XPM data needed to describe a set of icons, especially if the icons use the same shape for each state (as in !WireWorld.rule).
+
+If a set of icons contains at least one color that isn't a shade of gray then the icons are said to be multi-colored. Any black pixels are still converted to the state 0 color, but non-black pixels are displayed without doing any substitutions.
+If you want to use multi-colored icons then you'll probably want a @COLORS section as well so that the non-icon colors match the icon colors as closely as possible. For example, if the icon for state 1 consists of red and blue triangles then it would be best to set the color of state 1 to purple in the @COLORS section. This minimizes "color shock" when switching between icon and non-icon display mode.
+
 
 === Requesting built-in icons ===
 
-!!!
+Instead of specifying icon bitmaps using XPM data, you might prefer to use Golly's built-in
+grayscale icons by supplying one of the following words on a line by itself: 
+
+  * *circles* — circular icons (normally used for Moore neighborhood rules). 
+
+  * *diamonds* — diamond-shaped icons (normally used for von Neumann neighborhood rules). 
+
+  * *hexagons* — hexagonal icons (normally used for hexagonal neighborhood rules). 
+
+  * *triangles* — triangular icons (only suitable for a 4-state rule that is emulating a triangular neighborhood).
+
 
 === Tools for creating icons ===
 
 !!!
 
+
 = How Golly finds .rule files =
 
 !!!
 
-= How to override supplied or built-in rules =
+
+= How to override the supplied or built-in rules =
 
 !!!
 
+
 = The easy way to install a .rule file =
 
-Golly provides a quick and easy way to install a new .rule file in the right place.
-Copy the rule contents to the clipboard, then select Golly's Paste command.
+Golly provides a quick and easy way to create a new .rule file in the right place.
+Simply copy the rule contents to the clipboard, then select Golly's Paste command.
 When Golly sees that the first line of the clipboard starts with @RULE it will
 save the text as rulename.rule in your rules folder (set in Preferences > Control)
-and switch to that rule.
+and then switch to that rule.
+
 
 = Deprecated files (.table, .tree, .colors, .icons) =
 
@@ -288,5 +361,5 @@ Unlike the Convert Old Rules command, this conversion _will_ overwrite existing 
 
 Note that the downloadable zip files stored in the rule table repository have been modified
 to include both .rule files and .table/tree/colors/icons files.  Golly 2.5+ will ignore the
-deprecated files, while older versions will behave as before (the .rule files will be treated
-as pattern files).
+deprecated files, while older versions of Golly will behave as before
+(the .rule files will be treated as pattern files).
