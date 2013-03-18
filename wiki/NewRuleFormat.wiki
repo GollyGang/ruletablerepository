@@ -2,7 +2,7 @@
 
 <h1>Contents:</h1>
 
-<wiki:toc max_depth="2" />
+<wiki:toc max_depth="3" />
 
 = Introduction =
 
@@ -164,11 +164,31 @@ XPM
 
 = The syntax of a .rule file =
 
-TO BE COMPLETED!!!
+The .rule format is textual and consists of one or more sections.
+Each section starts with a line of the form @XXX... where X is an uppercase letter.
+If Golly sees a section it doesn't recognize it silently ignores it (this will allow us to add new
+sections in the future without breaking old versions of Golly). 
+The currently recognized sections are described below.
 
 == @RULE ==
 
-!!!
+This is the only mandatory section. The first line of a .rule must start with @RULE followed by a space
+and then the rule name. For example:
+{{{
+@RULE WireWorld
+}}}
+The supplied rule name must match exactly the name of the .rule file. This helps Golly to avoid problems
+that can occur on case-sensitive file systems. When naming a new rule it's best to stick to the following
+conventions, especially if you'd like to share the .rule file with other Golly users: 
+
+  * Please capitalize all rule names and create files like Foo.rule rather than foo.rule. This helps to emphasize that rule names are important, especially on case-sensitive file systems. If the rule "foo" is specified inside a .rle or .mc file then Golly won't be able to find Foo.rule on a case-sensitive system like Linux. 
+
+  * To allow for possible future extensions in the way Golly handles rule names, it's best to use only letters and digits. Hyphens and underscores are also okay if you need some sort of separator. Note in particular that spaces and colons must not be used. 
+
+After the @RULE line and before the next section (or end of file) you can include any amount of arbitrary text,
+so this is the place to include a description of the rule or any other documentation.
+If the .rule file has a @TREE section that was created by a Python transition function
+then this is a good place to put the Python code.
 
 == @TABLE ==
 
@@ -186,6 +206,18 @@ TO BE COMPLETED!!!
 
 !!!
 
+=== Using XPM ===
+
+!!!
+
+=== Requesting built-in icons ===
+
+!!!
+
+=== Tools for creating icons ===
+
+!!!
+
 = How Golly finds .rule files =
 
 !!!
@@ -193,6 +225,14 @@ TO BE COMPLETED!!!
 = How to override supplied or built-in rules =
 
 !!!
+
+= The easy way to install a .rule file =
+
+Golly provides a quick and easy way to install a new .rule file in the right place.
+Copy the rule contents to the clipboard, then select Golly's Paste command.
+When Golly sees that the first line of the clipboard starts with @RULE it will
+save the text as rulename.rule in your rules folder (set in Preferences > Control)
+and switch to that rule.
 
 = Deprecated files (.table, .tree, .colors, .icons) =
 
