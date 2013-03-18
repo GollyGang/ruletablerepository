@@ -1,5 +1,9 @@
 #summary Describes the format of .rule files introduced in Golly 2.5.
 
+<h1>Contents:</h1>
+
+<wiki:toc max_depth="2" />
+
 = Introduction =
 
 Golly 2.5 will introduce a new format for specifying rules.
@@ -157,4 +161,26 @@ XPM
 ".DEWED."
 }}}
 
+= Syntax =
+
 TO BE COMPLETED!!!
+
+== @RULE ==
+
+!!!
+
+== @TABLE ==
+
+!!!
+
+== @TREE ==
+
+!!!
+
+== @COLORS ==
+
+!!!
+
+== @ICONS ==
+
+!!!
