@@ -192,7 +192,9 @@ then this is a good place to put the Python code.
 
 == @TABLE ==
 
-!!!
+This section is optional. If present, it contains a transition table that can be loaded by the RuleLoader algorithm.
+The contents of this section is identical to the contents of a .table file.
+A detailed specification is available in TheFormat page.
 
 == @TREE ==
 
