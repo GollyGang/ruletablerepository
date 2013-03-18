@@ -192,13 +192,26 @@ then this is a good place to put the Python code.
 
 == @TABLE ==
 
-This section is optional. If present, it contains a transition table that can be loaded by the RuleLoader algorithm.
+This section is optional. If present, it contains a transition table that can be loaded by the !RuleLoader algorithm.
 The contents of this section is identical to the contents of a .table file.
 A detailed specification is available in TheFormat page.
 
 == @TREE ==
 
-!!!
+This section is optional. If present, it contains a rule tree that can be loaded by the !RuleLoader algorithm.
+(If a .rule file also contains a @TABLE section, !RuleLoader will use the first one it finds.) 
+The contents of this section is identical to the contents of a .tree file.
+
+A detailed description of a rule tree can be found in Golly's Help > File Formats, but most people don't
+need to know these details because Golly provides a number of tools for creating rule trees.
+The make-ruletree.py script in Scripts/Python/Rule-Generators can convert a Python transition function
+(passed via the clipboard) into a rule tree.  The script will either create a new .rule file or update the @TREE
+section in an existing .rule file.  Another script, !RuleTableToTree.py, does much the same job using a
+requested .table file.
+
+There are also programs in Rules/!TreeGenerators that can transform a given transition function in
+C++, Perl, or Java into a .tree file.  The contents of the .tree file can then be copied into the @TREE section
+of a .rule file. 
 
 == @COLORS ==
 
