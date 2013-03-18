@@ -4,9 +4,9 @@
 
 Golly 2.5 will introduce a new format for specifying rules.
 A file in the new format has a .rule extension and contains all the information about the rule:
-its name, documentation, table/tree data (used by the RuleLoader algorithm), and any color/icon information.
+its name, documentation, table/tree data (used by the !RuleLoader algorithm), and any color/icon information.
 
-Before describing the syntax in detail, let's look at a simple example.  Here is WireWorld.rule (supplied in Golly's Rules folder):
+Before describing the syntax in detail, let's look at a simple example.  Here is !WireWorld.rule (supplied in Golly's Rules folder):
 {{{
 @RULE WireWorld
 
