@@ -327,7 +327,7 @@ grayscale icons by supplying one of the following words on a line by itself:
 !!!
 
 
-= How to override the supplied or built-in rules =
+= How to override a supplied or built-in rule =
 
 !!!
 
