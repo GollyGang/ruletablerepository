@@ -215,7 +215,26 @@ of a .rule file.
 
 == @COLORS ==
 
-!!!
+This section is optional and can be used to specify the RGB colors for one or more states using lines
+with 4 numbers, like these: 
+{{{
+0  48  48  48   dark gray
+1   0 128 255   light blue
+2 255 255 255   white
+3 255 128   0   orange
+}}}
+Golly silently ignores any states that are invalid for the rule.
+To specify a color gradient for all live states (all states except 0) you can use a line with 6 numbers,
+like this: 
+{{{
+0 0 255  255 0 0   blue to red
+}}}
+In both cases, any text after the final number on each line is ignored.
+Blank lines or lines starting with "#" are also ignored.
+
+Note that a .rule file is loaded after switching to the current algorithm's default color scheme,
+so you have the choice of completely changing all the default colors, or only changing some of them.
+Use Preferences > Color if you want to change the default colors.
 
 == @ICONS ==
 
