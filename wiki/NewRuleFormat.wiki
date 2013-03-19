@@ -212,7 +212,7 @@ need to know these details because Golly provides a number of tools for creating
 The make-ruletree.py script in Scripts/Python/Rule-Generators can convert a Python transition function
 (passed via the clipboard) into a rule tree.  The script will either create a new .rule file or update the @TREE
 section in an existing .rule file.  Another script, !RuleTableToTree.py, does much the same job using a
-requested .table file.
+requested .table file as input.
 
 There are also programs in Rules/!TreeGenerators that can transform a given transition function in
 C++, Perl, or Java into a .tree file.  The contents of the .tree file can then be copied into the @TREE section
@@ -319,7 +319,55 @@ grayscale icons by supplying one of the following words on a line by itself:
 
 === Tools for creating icons ===
 
-!!!
+One way to create XPM icons is to use a painting application that can write .xpm files.
+Their contents can then be pasted into a .rule file with a small amount of editing.
+
+Another way is to use two new scripts supplied with Golly 2.5 called icon-importer.py
+and icon-exporter.py (both can be found in Scripts/Python/Rule-Generators).
+These scripts allow Golly to be used as an icon editor.  Here's how:
+
+1. Switch to the rule whose icons you wish to change or create
+and then run icon-importer.py.
+This will create a new layer called "imported icons for _Rulename_"
+(this name will be used by icon-exporter.py, so don't change it).
+
+The new layer uses a Generations rule with the maximum number of
+states (//256) so we can have lots of colors.  The initial palette contains
+a grayscale gradient from white to black, followed by the colors used in the
+imported icons (if any), followed by three rainbow gradients (bright, pale, dark).
+You can change these colors by using Layer > Set Layer Colors.
+
+The script searches for _Rulename_.rule in your rules folder, then in
+the supplied Rules folder.  If found, it extracts any @ICONS data
+and displays the icon bitmaps in gray boxes.  The location of these
+boxes will be used by icon-exporter.py, so don't move them.
+If the icon data has no 31x31 icons then the script creates
+31x31 bitmaps by scaling up the 15x15 icons.
+
+2. Edit the icon bitmaps using Golly's editing capabilities.
+Golly isn't as powerful as a full-blown painting app, but hopefully it's
+sufficient for such small images.
+
+3. When you've finshed editing, run icon-exporter.py.
+This script extracts the icon data and creates a suitable @ICONS section
+for inclusion in _Rulename_.rule.
+The script will _not_ create or modify a .rule file in the supplied
+Rules folder.  If _Rulename_.rule already exists in your rules folder
+then the script _replaces_ any existing @ICONS section (and any
+@COLORS section if the icons are multi-color) so it won't clobber
+any other info in the file.
+
+If _Rulename_.rule doesn't exist in your rules folder then it will be
+created.  This file won't have any @TABLE or @TREE section, but
+that's perfectly valid.  It means either the rule is built-in
+(ie. recognized by a non-RuleLoader algorithm),
+or else the .rule file exists in the supplied Rules folder and the
+RuleLoader algorithm will use it when it can't find any
+@TABLE or @TREE section in the .rule file in your rules folder.
+
+Finally, icon-exporter.py creates a new layer called "icon test" which
+uses the original rule and displays a simple pattern containing
+all live states so you can check what the new icons look like.
 
 
 = How Golly finds .rule files =
