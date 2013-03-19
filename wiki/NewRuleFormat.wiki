@@ -371,7 +371,22 @@ all live states so you can check what the new icons look like.
 
 = How Golly finds .rule files =
 
-!!!
+There are two situations where Golly needs to look for a .rule file:
+
+1. If the !RuleLoader algorithm is asked to switch to a rule called "Foo" then it first
+looks for Foo.rule in your user-specific rules folder (set in Preferences > Control).
+If not found, or if Foo.rule has no @TABLE or @TREE section, it will then look
+for Foo.rule in the supplied Rules folder.  If Foo.rule doesn't exist then it will
+use the same search procedure to look for Foo.table, then Foo.tree.
+
+2. After switching to a new rule (not necessarily using !RuleLoader), Golly needs
+to look for color and/or icon information specific to that rule.  A similar search procedure
+to the one above is used again, where this time Golly looks for any @COLORS and/or @ICONS
+sections in Foo.rule.  However, unlike the above search, if Foo.rule is found in your rules folder
+but doesn't have any color/icon info then Golly will _not_ look for Foo.rule in the Rules folder.
+
+Note that the 2nd search always occurs after clicking OK in the Control menu's Set Rule dialog,
+even if the current rule wasn't changed.  This is a quick way to test changes to a .rule file.
 
 
 = How to override a supplied or built-in rule =
