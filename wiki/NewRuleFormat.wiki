@@ -169,8 +169,8 @@ XPM
 
 The .rule format is textual and consists of one or more sections.
 Each section starts with a line of the form @XXX... where X is an uppercase letter.
-If Golly sees a section it doesn't recognize it silently ignores it (this will allow us to add new
-sections in the future without breaking old versions of Golly). 
+Any unrecognized sections are silently ignored -- this will allow us to add new
+sections in the future without breaking old versions of Golly. 
 The currently recognized sections are described below.
 
 
