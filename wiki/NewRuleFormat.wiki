@@ -326,7 +326,7 @@ Another way is to use two new scripts supplied with Golly 2.5 called icon-import
 and icon-exporter.py (both can be found in Scripts/Python/Rule-Generators).
 These scripts allow Golly to be used as an icon editor.  Here's how:
 
-1. Switch to the rule whose icons you wish to change or create
+*Step 1:* Switch to the rule whose icons you wish to change or create
 and then run icon-importer.py.
 This will create a new layer called "imported icons for _Rulename_"
 (this name will be used by icon-exporter.py, so don't change it).
@@ -344,15 +344,15 @@ boxes will be used by icon-exporter.py, so don't move them.
 If the icon data has no 31x31 icons then the script creates
 31x31 bitmaps by scaling up the 15x15 icons.
 
-2. Edit the icon bitmaps using Golly's editing capabilities.
+*Step 2:* Edit the icon bitmaps using Golly's editing capabilities.
 Golly isn't as powerful as a full-blown painting app, but hopefully it's
 sufficient for such small images.
 
-3. When you've finshed editing, run icon-exporter.py.
-This script extracts the icon data and creates a suitable @ICONS section
-for inclusion in _Rulename_.rule.
-The script will _not_ create or modify a .rule file in the supplied
-Rules folder.  If _Rulename_.rule already exists in your rules folder
+*Step 3:* When you've finshed editing, run icon-exporter.py.
+This script will extract the icon data and create a suitable @ICONS section
+in _Rulename_.rule in your rules folder (the script will never create or
+modify a .rule file in the supplied Rules folder).
+If _Rulename_.rule already exists in your rules folder
 then the script _replaces_ any existing @ICONS section (and any
 @COLORS section if the icons are multi-color) so it won't clobber
 any other info in the file.
@@ -360,9 +360,9 @@ any other info in the file.
 If _Rulename_.rule doesn't exist in your rules folder then it will be
 created.  This file won't have any @TABLE or @TREE section, but
 that's perfectly valid.  It means either the rule is built-in
-(ie. recognized by a non-RuleLoader algorithm),
-or else the .rule file exists in the supplied Rules folder and the
-RuleLoader algorithm will use it when it can't find any
+(ie. recognized by a non-!RuleLoader algorithm),
+or else _Rulename_.rule also exists in the supplied Rules folder and
+so the !RuleLoader algorithm will use that file when it can't find any
 @TABLE or @TREE section in the .rule file in your rules folder.
 
 Finally, icon-exporter.py creates a new layer called "icon test" which
