@@ -375,7 +375,8 @@ all live states so you can check what the new icons look like.
 There are two situations where Golly needs to look for a .rule file:
 
 1. If the !RuleLoader algorithm is asked to switch to a rule called "Foo" then it first
-looks for Foo.rule in your user-specific rules folder (set in Preferences > Control).
+looks for Foo.rule in your user-specific rules folder
+(the location of this folder can be changed in Preferences > Control).
 If not found, or if Foo.rule has no @TABLE or @TREE section, it will then look
 for Foo.rule in the supplied Rules folder.  If Foo.rule doesn't exist then it will
 use the same search procedure to look for Foo.table, then Foo.tree.
@@ -393,8 +394,10 @@ even if the current rule wasn't changed.  This is a quick way to test changes to
 = How to override a supplied or built-in rule =
 
 The search procedure described above makes it easy to override a supplied .rule file,
-either completely or partially.  The following example will override the colors and icons
-used in the supplied !WireWorld.rule:
+either completely or partially.  Note that there is never any need to add or modify files
+in the supplied Rules folder.  For example, if you want to override the colors and icons
+used in the supplied !WireWorld.rule then you can create a file with the same name in
+your rules folder.  Its contents might look like this:
 
 {{{
 @RULE WireWorld
@@ -405,9 +408,12 @@ used in the supplied !WireWorld.rule:
 diamonds
 }}}
 
-It's also possible to override a built-in rule (ie. a rule recognized by all algorithms except
-!RuleLoader).  The following example uses a multi-colored icon to show a blue sphere
-on a white background:
+It's also possible to override a built-in rule (ie. a rule recognized by an algorithm other than
+!RuleLoader).  A built-in rule name can contain characters not allowed in file names ("/" and "\"),
+so Golly will substitute those characters with underscores when looking for the corresponding
+.rule file. For example, if you want to change the colors and/or icons for Life (B3/S23)
+then you'll need to create a file called B3_S23.rule.  This example uses a multi-colored icon
+to show a blue sphere on a white background:
 
 {{{
 @RULE B3_S23
@@ -538,11 +544,6 @@ XPM
 "........................EBBALAEDEDHCMCDBKE...................."
 ".............................................................."
 }}}
-
-Note that a built-in rule name can contain characters not allowed in file names ("/" and "\"),
-so Golly will substitute those characters with underscores when looking for the corresponding
-.rule file. For example, if you want to change the colors and/or icons for the Generations
-rule 12/34/6 then you'll need to create a file called 12_34_6.rule.
 
 
 = The easy way to install a new .rule file =
