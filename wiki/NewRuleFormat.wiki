@@ -393,6 +393,11 @@ even if the current rule wasn't changed.  This is a quick way to test changes to
 
 !!!
 
+Note that a built-in rule name can contain characters not allowed in file names ("/" and "\"),
+so Golly will substitute those characters with underscores when looking for the corresponding
+.rule file. For example, if you want to change the colors and/or icons for the Generations
+rule 12/34/6 then you'll need to create a file called 12_34_6.rule.
+
 
 = The easy way to install a .rule file =
 
