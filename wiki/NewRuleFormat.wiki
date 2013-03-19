@@ -412,7 +412,7 @@ It's also possible to override a built-in rule (ie. a rule recognized by an algo
 !RuleLoader).  A built-in rule name can contain characters not allowed in file names ("/" and "\"),
 so Golly will substitute those characters with underscores when looking for the corresponding
 .rule file. For example, if you want to change the colors and/or icons for Life (B3/S23)
-then you'll need to create a file called B3_S23.rule.  This example uses a multi-colored icon
+then you'll need to create a file called !B3_S23.rule.  This example uses a multi-colored icon
 to show a blue sphere on a white background:
 
 {{{
