@@ -329,20 +329,19 @@ These scripts allow Golly to be used as an icon editor.  Here's how:
 *Step 1:* Switch to the rule whose icons you wish to change or create
 and then run icon-importer.py.
 This will create a new layer called "imported icons for _Rulename_"
-(this name will be used by icon-exporter.py, so don't change it).
-
-The new layer uses a Generations rule with the maximum number of
-states (//256) so we can have lots of colors.  The initial palette contains
-a grayscale gradient from white to black, followed by the colors used in the
-imported icons (if any), followed by three rainbow gradients (bright, pale, dark).
-You can change these colors by using Layer > Set Layer Colors.
-
+(the name will be used by icon-exporter.py, so don't change it).
 The script searches for _Rulename_.rule in your rules folder, then in
 the supplied Rules folder.  If found, it extracts any @ICONS data
 and displays the icon bitmaps in gray boxes.  The location of these
 boxes will be used by icon-exporter.py, so don't move them.
 If the icon data has no 31x31 icons then the script creates
 31x31 bitmaps by scaling up the 15x15 icons.
+
+The new layer uses a Generations rule with the maximum number of
+states (//256) so we can have lots of colors.  The initial palette contains
+a grayscale gradient from white to black, followed by the colors used in the
+imported icons (if any), followed by three rainbow gradients (bright, pale, dark).
+You can change these colors by using Layer > Set Layer Colors.
 
 *Step 2:* Edit the icon bitmaps using Golly's editing capabilities.
 Golly isn't as powerful as a full-blown painting app, but hopefully it's
