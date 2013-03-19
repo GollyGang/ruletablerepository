@@ -13,6 +13,7 @@ its name, documentation, table/tree data (used by the !RuleLoader algorithm), an
 
 Before describing the syntax in detail, let's look at an example.
 Here is !WireWorld.rule (supplied in Golly's Rules folder):
+
 {{{
 @RULE WireWorld
 
@@ -391,7 +392,152 @@ even if the current rule wasn't changed.  This is a quick way to test changes to
 
 = How to override a supplied or built-in rule =
 
-!!!
+The search procedure described above makes it easy to override a supplied .rule file,
+either completely or partially.  The following example will override the colors and icons
+used in the supplied !WireWorld.rule:
+
+{{{
+@RULE WireWorld
+@COLORS
+0 0 0 0   black background
+0 255 0   255 255 0    green to yellow
+@ICONS
+diamonds
+}}}
+
+It's also possible to override a built-in rule (ie. a rule recognized by all algorithms except
+!RuleLoader).  The following example uses a multi-colored icon to show a blue sphere
+on a white background:
+
+{{{
+@RULE B3_S23
+
+Override the default colors and icons for Life (B3/S23).
+
+@COLORS
+
+0 255 255 255   white (matches icon background below)
+1 54 54 194     dark blue (average color of icon below)
+
+@ICONS
+
+# 7x7 and 15x15 icons will be created by scaling down this 31x31 icon:
+
+XPM
+/* width height num_colors chars_per_pixel */
+"31 31 78 2"
+/* colors */
+".. c #FFFFFF"   white background
+"BA c #CECEDE"
+"CA c #7B7BAD"
+"DA c #4A4A84"
+"EA c #18187B"
+"FA c #08006B"
+"GA c #18186B"
+"HA c #29297B"
+"IA c #6B6BAD"
+"JA c #ADADDE"
+"KA c #EFF7FF"
+"LA c #ADADC6"
+"MA c #39398C"
+"NA c #3939BD"
+"OA c #7B7BCE"
+"PA c #ADB5DE"
+"AB c #8C8CD6"
+"BB c #4A4A9C"
+"CB c #18188C"
+"DB c #EFEFEF"
+"EB c #EFEFFF"
+"FB c #525A9C"
+"GB c #08088C"
+"HB c #ADADE7"
+"IB c #DEDEEF"
+"JB c #D6D6F7"
+"KB c #DEE7F7"
+"LB c #BDBDEF"
+"MB c #525ABD"
+"NB c #21219C"
+"OB c #292984"
+"PB c #CECEE7"
+"AC c #ADB5CE"
+"BC c #2929BD"
+"CC c #7B7BDE"
+"DC c #BDC6E7"
+"EC c #CECEF7"
+"FC c #8C8CE7"
+"GC c #4242C6"
+"HC c #A5A5BD"
+"IC c #08087B"
+"JC c #3939CE"
+"KC c #5A5AC6"
+"LC c #BDBDF7"
+"MC c #BDBDDE"
+"NC c #6B6BD6"
+"OC c #9494DE"
+"PC c #3931DE"
+"AD c #1818AD"
+"BD c #2929CE"
+"CD c #9C9CC6"
+"DD c #10087B"
+"ED c #9C9CBD"
+"FD c #1818B5"
+"GD c #1818C6"
+"HD c #847BCE"
+"ID c #181094"
+"JD c #6B6BCE"
+"KD c #7B7BB5"
+"LD c #2121AD"
+"MD c #BDC6D6"
+"ND c #0808AD"
+"OD c #4A42B5"
+"PD c #00009C"
+"AE c #3942BD"
+"BE c #3129B5"
+"CE c #B5B5CE"
+"DE c #0000BD"
+"EE c #0000CE"
+"FE c #0000DE"
+"GE c #42427B"
+"HE c #C6CECE"
+"IE c #0000EF"
+"JE c #9494AD"
+"KE c #F7FFEF"
+"LE c #10086B"
+"ME c #7B849C"
+"NE c #0000F7"
+/* icon for state 1 */
+".............................................................."
+".............................................................."
+"......................BACADAEAFAGAHAIAJA......................"
+"................KALAMAFANAOAJAPAJAABBBCBEAIADB................"
+"..............EBFBGBNAHBIBDBJBKAKBEBJBLBMBNBOBPB.............."
+"............ACHABCCCDCECIBPBJBPBIBPBJBIBECFCGCCBCAKA.........."
+"..........HCICJCKCLBLCLBMCLBLBLBLBMCLBLBMCLCNCJCCBCAKA........"
+"........DBOBBCJCCCJAJAJAJAJAJAJAJAJAJAJAJAJAOCJCPCICAC........"
+"......KADAADBDBCABABOCABOCOCOCOCABOCABOCABCDFCJCBDBCDDBA......"
+"......EDGBFDGDADCCABOAOAOAOAOAOAOAOAHDOAHDCCCCNAADGDIDMA......"
+"....KAHAADFDFDADJDMBOAJDJDJDJDJDKDJDJDJDJDJDJDLDFDFDFDICBA...."
+"....MDFANDNDNDADODMBMBMBMBMBMBMBKCKCMBMBMBMBODADNDNDNDGBIA...."
+"....CAGBNDPDNDPDADGCODODODODODODNAODODGCODAEBCPDNDPDNDPDGA...."
+"....OBPDPDNDPDNDNDADBCBEBCBEBCBCBEBCBCBCNAADPDNDNDPDPDNDICPB.."
+"....ICNDNDPDNDNDNDPDNDADADADADADADADADADNDNDNDNDNDNDNDPDGBCE.."
+"....FANDNDDENDNDNDDENDDENDNDNDNDNDNDNDNDNDNDNDNDNDNDNDNDGBLA.."
+"....FANDDENDDEDENDDEDENDDENDDEDEDEDEDEDEDEDEDEDEDENDDEDEGBED.."
+"....GANDEEDEDEDEDEDEDEDEDEDEDEDENDDENDDEDEDEDEDEDEDEDEDEGBLA.."
+"....BBPDEEDEEEDEEEDEEEDEEEDEDEDEEEDEEEDEDEDEDEDEEEDEEEDEFABA.."
+"....EDGBDEEEDEEEEEEEDEEEDEEEEEEEEEEEEEEEEEEEEEEEEEDEEENDGADB.."
+"....KBICDEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEGBDA...."
+"......FBNDFEFEEEEEEEEEFEEEEEFEEEEEEEEEEEEEEEEEEEEEFEDEICHC...."
+"......IBEADEFEFEEEFEFEFEFEFEEEFEFEFEFEFEFEFEFEFEFEDEGBGEDB...."
+"........LAGBFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFENDGAHE......"
+"..........FBNDFEFEIEFEFEIEIEIEFEIEFEFEIEFEFEFEFEEEDDJEKE......"
+"..........EBFBIDEEIEIEIEFEFEFEIEFEIEIEIEIEIEIENDLEMEKE........"
+"..............CDGBDEIEIENENEIEIEIEIEIEIEIEGDPDGAJEKE.........."
+"................BAOBGBADFEIENEIENEIEIEEENDFAGECEKE............"
+"....................CDBBDDPDIDNDADPDICEAGEJEDB................"
+"........................EBBALAEDEDHCMCDBKE...................."
+".............................................................."
+}}}
 
 Note that a built-in rule name can contain characters not allowed in file names ("/" and "\"),
 so Golly will substitute those characters with underscores when looking for the corresponding
@@ -399,7 +545,7 @@ so Golly will substitute those characters with underscores when looking for the 
 rule 12/34/6 then you'll need to create a file called 12_34_6.rule.
 
 
-= The easy way to install a .rule file =
+= The easy way to install a new .rule file =
 
 Golly provides a quick and easy way to create a new .rule file in the right place.
 Simply copy the rule contents to the clipboard, then select Golly's Paste command.
