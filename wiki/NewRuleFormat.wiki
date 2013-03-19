@@ -399,8 +399,8 @@ used in the supplied !WireWorld.rule:
 {{{
 @RULE WireWorld
 @COLORS
-0 0 0 0   black background
-0 255 0   255 255 0    green to yellow
+0 0 0 0               black background
+0 255 0   255 255 0   live states fade from green to yellow
 @ICONS
 diamonds
 }}}
