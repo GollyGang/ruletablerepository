@@ -7,7 +7,7 @@ Subpage of TwoDimensionalTuringMachines. Subpages include UnresolvedTurmites2Sta
 
 ||        || 2-color||3-color||4-color||5-color||6-color||
 ||1-state|| 9,977 steps<br>`{{{1,2,0},{0,8,0}}}`<br>Langton's Ant ||  67,620,060 +10 steps<br>`{{{1,2,0},{2,1,0},{0,4,0}}}`<br>Hutton/Pegg<br>[EdPeggsBusyBeaverTurmiteChallenge#Unresolved_1-state_3-color_relative_movement_turmites 9 unresolved] ||  ~6,650,200,000 steps<br>`{{{1,4,0},{2,2,0},{3,8,0},{0,8,0}}}`<br>Georgi Gochev<br>[EdPeggsBusyBeaverTurmiteChallenge#Unresolved_1-state_4-color_relative_movement_turmites 94 unresolved]  ||  ~217,782,000,000 steps<br>`{{{1,2,0},{2,4,0},{3,4,0},{4,4,0},{0,8,0}}}`<br>Ed Pegg Jr<br> [UnresolvedTurmites1States5Colors 612 unresolved] ||  ??? || 
-||2-state|| 9,533,133,147,000 +2,000 steps<br>`{{{0,1,1},{0,4,0}}`,<br>`{{1,4,0},{1,2,1}}}`<br>Georgi Gochev<br>[UnresolvedTurmites2States2Colors 570 unresolved] ||  1.9*10^61 steps<br>`{{{1,1,1},{0,8,1},{1,1,0}}`,<br>`{{2,8,0},{1,1,0},{1,1,1}}}`<br>Georgi Gochev ||  ??? ||  ??? ||  ??? || 
+||2-state|| 9,533,133,147,000 +2,000 steps<br>`{{{0,1,1},{0,4,0}}`,<br>`{{1,4,0},{1,2,1}}}`<br>Mark Jeronimus<br>[UnresolvedTurmites2States2Colors 570 unresolved] ||  1.9*10^61 steps<br>`{{{1,1,1},{0,8,1},{1,1,0}}`,<br>`{{2,8,0},{1,1,0},{1,1,1}}}`<br>Georgi Gochev ||  ??? ||  ??? ||  ??? || 
 ||3-state|| ??? ||  ??? ||  ??? ||  ??? ||  ??? || 
 ||4-state|| ??? ||  ??? ||  ??? ||  ??? ||  ??? || 
 
