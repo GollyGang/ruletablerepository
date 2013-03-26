@@ -173,7 +173,7 @@ and patterns not included in Golly.
    old WWEs with none of the compromises or bugs, and with only 17 states.
 </td></tr></table></td></tr>
 <tr bgcolor="#F0F0FF"><td width="20%"><b>
-   <a href="get:http://ruletablerepository.googlecode.com/files/WireWorldMarked.zip">WireWorldMarked</a>
+   <a href="http://ruletablerepository.googlecode.com/files/WireWorldMarked.zip">WireWorldMarked</a>
 </b></td><td><table border="0" cellspacing="0" cellpadding="4" width="100%"><tr><td>
    A marked version of WireWorld. It supports six extra wire colors but no extra functionality.
    A marked version of the Quinapalus' Primes Computer is included.
