@@ -2,7 +2,7 @@
 
 = Introduction =
 
-There are 554 unique unresolved 2-state 2-color turmites left. This is a subpage of EdPeggsBusyBeaverTurmiteChallenge.
+There are 450 unique unresolved 2-state 2-color turmites left. This is a subpage of EdPeggsBusyBeaverTurmiteChallenge.
 
 I simulated all 2<sup>16</sup>=65,536 rules of the 2s2c turmites and noted below how much of each type resolved at regular iteration steps (powers of 10).
 
