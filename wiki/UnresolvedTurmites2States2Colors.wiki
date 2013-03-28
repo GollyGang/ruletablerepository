@@ -2,9 +2,7 @@
 
 = Introduction =
 
-There are 508 unique unresolved 2-state 2-color turmites left. This is a subpage of EdPeggsBusyBeaverTurmiteChallenge.
-
-To be exact, there are 3 rule I've run to the limits of all my experimental software, 55 rules that reached the maximum size of 8192×8192 of my automatic search program (so they are fast growing), and 451 rules that are smaller than that at 10 billion iterations. I'm currently manually simulating every remaining rule with <font color="#404040">Turmites! Fast</font> until that is out-of-memory too (world size: a diamond of size 2<sup>31</sup>, with diagonals of 46340 <font color="#404040" size="1">= sqrt(2<sup>31</sup>)</font>). This branch doesn't have a visits-counter and as such requires human assessment after each simulation. So far 3 of the 7 I simulated made a highway.
+There are 554 unique unresolved 2-state 2-color turmites left. This is a subpage of EdPeggsBusyBeaverTurmiteChallenge.
 
 I simulated all 2<sup>16</sup>=65,536 rules of the 2s2c turmites and noted below how much of each type resolved at regular iteration steps (powers of 10).
 
