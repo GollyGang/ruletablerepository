@@ -148,6 +148,7 @@ This section contains rules based on Conway's Game of Life, the most popular CA.
 || 2009 || [http://ruletablerepository.googlecode.com/files/simulators.zip Life Pattern Emulators] || Two rules, one by Dean Hickerson and one by Adam P. Goucher, designed to simulate two of Dean Hickerson's transcendental Life patterns - the Clouds pattern and Prime number generator, respectively. Included are the rule tables, sample patterns and equivalent Life patterns. || http://ruletablerepository.googlecode.com/files/clouds.PNG ||
 || 2011 || [https://ruletablerepository.googlecode.com/files/extendedlife.zip ExtendedLife] || Conway's Game of Life with a few extra special states. Idea and rule table by Martin Grant, a.k.a. "Extrementhusiast". || http://ruletablerepository.googlecode.com/files/extendedlife.png ||
 || 2012 || [http://ruletablerepository.googlecode.com/files/MilhinSA.zip MilhinSA] || 3 states, similar to Conway's Game of Life, by Milkhin Sergei. || http://ruletablerepository.googlecode.com/files/Steppers_Icon.png ||
+|| 2013 || [http://ruletablerepository.googlecode.com/files/SlowLife.zip SlowLife] || A variant of Life that shows births (green cells) and deaths (red cells) in every 2nd generation.  !SlowLife patterns work the same as in Life, but twice as slow. || http://ruletablerepository.googlecode.com/files/SlowLife.png ||
 
 == Miscellaneous ==
 
