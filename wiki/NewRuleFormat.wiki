@@ -549,10 +549,11 @@ XPM
 = The easy way to install a new .rule file =
 
 Golly provides a quick and easy way to create a new .rule file in the right place.
-Simply copy the rule contents to the clipboard, then select Golly's Paste command.
-When Golly sees that the first line of the clipboard starts with @RULE it will
+Simply copy the rule contents to the clipboard, then select the Open Clipboard
+command (in the File menu) or the Paste command (in the Edit menu).
+If the first line of the clipboard starts with "@RULE rulename" then Golly will
 save the text as rulename.rule in your rules folder (set in Preferences > Control)
-and then switch to that rule.
+and switch to that rule.
 
 
 = Deprecated files (.table, .tree, .colors, .icons) =
