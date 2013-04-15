@@ -456,6 +456,11 @@ and patterns not included in Golly.
    Idea and rule table by Martin Grant, a.k.a. "Extrementhusiast".
 </td></tr></table></td></tr>
 <tr bgcolor="#F0F0FF"><td width="20%"><b>
+   <a href="get:http://ruletablerepository.googlecode.com/files/MilhinSA.zip">MilhinSA</a>
+</b></td><td><table border="0" cellspacing="0" cellpadding="4" width="100%"><tr><td>
+   3 states, similar to Conway's Game of Life, by Milkhin Sergei.
+</td></tr></table></td></tr>
+<tr bgcolor="#FFFFFF"><td width="20%"><b>
    <a href="get:http://ruletablerepository.googlecode.com/files/SlowLife.zip">SlowLife</a>
 </b></td><td><table border="0" cellspacing="0" cellpadding="4" width="100%"><tr><td>
    A variant of Life that shows births (green cells) and deaths (red cells) in every 2nd generation.
