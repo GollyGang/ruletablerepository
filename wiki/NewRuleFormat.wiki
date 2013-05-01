@@ -169,6 +169,7 @@ XPM
 
 The .rule format is textual and consists of one or more sections.
 Each section starts with a line of the form @XXX... where X is an uppercase letter.
+If there is more than one section with the same name then only the first one is used.
 Any unrecognized sections are silently ignored -- this will allow us to add new
 sections in the future without breaking old versions of Golly. 
 The currently recognized sections are described below.
@@ -384,11 +385,48 @@ use the same search procedure to look for Foo.table, then Foo.tree.
 2. After switching to a new rule (not necessarily using !RuleLoader), Golly needs
 to look for color and/or icon information specific to that rule.  A similar search procedure
 to the one above is used again, where this time Golly looks for any @COLORS and/or @ICONS
-sections in Foo.rule.  However, unlike the above search, if Foo.rule is found in your rules folder
-but doesn't have any color/icon info then Golly will _not_ look for Foo.rule in the Rules folder.
+sections in Foo.rule.  (Unlike the above search, if Foo.rule is found in your rules folder but
+doesn't have any color/icon info then Golly will _not_ look for Foo.rule in the Rules folder.)
 
 Note that the 2nd search always occurs after clicking OK in the Control menu's Set Rule dialog,
 even if the current rule wasn't changed.  This is a quick way to test changes to a .rule file.
+
+
+= Related rules can share colors and/or icons  =
+
+If _rulename_.rule is missing either the @COLORS or @ICONS section, Golly checks to see if _rulename_
+contains a hyphen.  If it does then it looks for the missing color/icon data in another .rule file
+called _prefix_-shared.rule where _prefix_ consists of all the characters before the _final_ hyphen.
+(As in the above searches, it looks in your rules folder first, then in the supplied Rules folder.)
+This allows related rules to share a single set of colors and/or icons. 
+
+For example, suppose you have a set of related rules in files called Foo-1.rule, Foo-2.rule, etc.
+If you want all these rules to use the same colors then create a file called Foo-shared.rule:
+
+{{{
+@RULE Foo-shared
+This file contains the colors shared by Foo-* rules.
+
+@TABLE
+n_states:3
+neighborhood:Moore
+symmetries:none
+# do nothing
+
+@COLORS
+0 0 0 0     black
+1 255 0 0   red
+2 0 0 255   blue
+}}}
+
+Note that a shared .rule file should contain a valid @TABLE section with an
+appropriate value for n_states (the neighborhood setting doesn't really matter,
+as long as it's legal).  This allows the !RuleLoader algorithm to load it, which
+means you can switch to the Foo-shared rule in case you want to add/edit
+icons using icon-importer.py.
+
+For another good example, see Worm-shared.rule in Golly's Rules folder.
+It contains the icons shared by all the other Worm-... rules.
 
 
 = How to override a supplied or built-in rule =
@@ -401,9 +439,11 @@ your rules folder.  Its contents might look like this:
 
 {{{
 @RULE WireWorld
+
 @COLORS
 0 0 0 0               black background
 0 255 0   255 255 0   live states fade from green to yellow
+
 @ICONS
 diamonds
 }}}
