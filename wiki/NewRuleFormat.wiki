@@ -398,7 +398,7 @@ If _rulename_.rule is missing either the @COLORS or @ICONS section, Golly checks
 contains a hyphen.  If it does then it looks for the missing color/icon data in another .rule file
 called _prefix_-shared.rule where _prefix_ consists of all the characters before the _final_ hyphen.
 (As in the above searches, it looks in your rules folder first, then in the supplied Rules folder.)
-This allows related rules to share a single set of colors and/or icons. 
+This allows related rules to share a single source of colors and/or icons. 
 
 For example, suppose you have a set of related rules in files called Foo-1.rule, Foo-2.rule, etc.
 If you want all these rules to use the same colors then create a file called Foo-shared.rule:
