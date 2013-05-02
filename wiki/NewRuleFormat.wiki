@@ -188,7 +188,7 @@ conventions, especially if you'd like to share the .rule file with other Golly u
 
   * Please capitalize all rule names and create files like Foo.rule rather than foo.rule. This helps to emphasize that rule names are important, especially on case-sensitive file systems. If the rule "foo" is specified inside a .rle or .mc file then Golly won't be able to find Foo.rule on a case-sensitive system like Linux. 
 
-  * To allow for possible future extensions in the way Golly handles rule names, it's best to use only letters and digits. Hyphens and underscores are also okay if you need some sort of separator. Hyphens can allow a set of related rules to share colors and/or icons (see [NewRuleFormat#Related_rules_can_share_colors_and/or_icons below]). Note in particular that spaces and colons must not be used. 
+  * To allow for possible future extensions in the way Golly handles rule names, it's best to use only letters and digits. Hyphens and underscores are also okay if you need some sort of separator. Hyphens can allow a set of related rules to share colors and/or icons (see [#Related_rules_can_share_colors_and/or_icons below]). Note in particular that spaces and colons must not be used. 
 
 After the @RULE line and before the next section (or end of file) you can include any amount of arbitrary text,
 so this is the place to include a description of the rule or any other documentation.
