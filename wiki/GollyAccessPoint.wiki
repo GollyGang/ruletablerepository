@@ -12,8 +12,8 @@ page for more details about the rules listed below, including some nice images.
 
 <p>
 NOTE: Links flagged by "*" will load rules and patterns already included in the
-latest version of Golly (2.4). The other links will download external rules
-and patterns not included in Golly.
+latest version of Golly. The other links will download external rules
+and patterns not supplied with Golly.
 </p>
 
 <p>Contents:
