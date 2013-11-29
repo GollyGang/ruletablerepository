@@ -4,18 +4,17 @@
 
 Looking further ahead, here's a sketch of how the [TheFormat rule table format] might be extended to support future CA (see also: FutureWork). 
 
-  * Items in bold are those supported since Golly 2.1.
-  * Items marked with <b>`*`</b> are those supported since Golly 2.2.
-  * Items marked with <b>`**`</b> are supported in an emulation script: `Scripts/Python/RuleTableToTree.py` since Golly 2.2.
+  * Items in bold are those supported in Golly.
+  * Items marked with <b>`**`</b> are supported in a Golly emulation script: `Scripts/Python/RuleTableToTree.py`.
 
 These are just some ideas - please edit or comment to add your opinions. For a good survey on neighborhoods, see http://cell-auto.com/neighbourhood/
 
 <h2>Two-dimensional neighborhoods</h2>
 
 || neighborhood || transitions || symmetries || image ||
-|| <b>vonNeumann</b> || {{{c,n,e,s,w : c'}}} || <b>none</b>, rotate2, rotate (<b>rotate4</b>), rotate_reflect (<b>rotate4reflect</b>), <b>reflect_horizontal</b> (<b>reflect</b>), reflect_vertical, <b>permute^*^</b> || http://ruletablerepository.googlecode.com/files/vonNeumann.PNG ||
-|| <b>Moore</b> || {{{c,n,ne,e,se,s,sw,w,nw : c'}}} || <b>none</b>, rotate2, <b>rotate4</b>, <b>rotate8</b>, <b>rotate4reflect</b>, <b>rotate8reflect</b>, <b>reflect_horizontal</b> (<b>reflect</b>), reflect_vertical, direction_permutation, total_permutation (<b>permute^*^</b>) || http://ruletablerepository.googlecode.com/files/moore.PNG ||
-|| <b>hexagonal^*^</b> (see HexagonalNeighborhood) || {{{c,n,e,se,s,w,nw : c}}} || <b>none^*^</b>, <b>rotate2^*^</b>, <b>rotate3^*^</b>, <b>rotate6^*^</b>, <b>rotate6reflect^*^</b>, <b>permute^*^</b> || http://ruletablerepository.googlecode.com/files/hexagonal.PNG ||
+|| <b>vonNeumann</b> || {{{c,n,e,s,w : c'}}} || <b>none</b>, rotate2, rotate (<b>rotate4</b>), rotate_reflect (<b>rotate4reflect</b>), <b>reflect_horizontal</b> (<b>reflect</b>), reflect_vertical, <b>permute</b> || http://ruletablerepository.googlecode.com/files/vonNeumann.PNG ||
+|| <b>Moore</b> || {{{c,n,ne,e,se,s,sw,w,nw : c'}}} || <b>none</b>, rotate2, <b>rotate4</b>, <b>rotate8</b>, <b>rotate4reflect</b>, <b>rotate8reflect</b>, <b>reflect_horizontal</b> (<b>reflect</b>), reflect_vertical, direction_permutation, total_permutation (<b>permute</b>) || http://ruletablerepository.googlecode.com/files/moore.PNG ||
+|| <b>hexagonal</b> (see HexagonalNeighborhood) || {{{c,n,e,se,s,w,nw : c}}} || <b>none</b>, <b>rotate2</b>, <b>rotate3</b>, <b>rotate6</b>, <b>rotate6reflect</b>, <b>permute</b> || http://ruletablerepository.googlecode.com/files/hexagonal.PNG ||
 || <b>triangularVonNeumann^**^</b> || {{{c,n1,n2,n3 : c'}}} || <b>none^**^</b>, <b>rotate^**^</b>, <b>rotate_reflect^**^</b> (<b>permute^**^</b>) || http://ruletablerepository.googlecode.com/files/triangularVonNeumann.PNG ||
 || <b>triangularMoore^**^</b> || {{{c,n1..n12 : c'}}} || <b>none^**^</b>, <b>rotate^**^</b>, <b>rotate_reflect^**^</b>, layer_permutation, total_permutation (<b>permute^**^</b>) || http://ruletablerepository.googlecode.com/files/triangularMoore.PNG ||
 
@@ -29,7 +28,7 @@ These are just some ideas - please edit or comment to add your opinions. For a g
 <h2>One-dimensional neighborhoods and partitioning schemes</h2>
 
 || neighborhood || transitions || symmetries || image ||
-|| <b>oneDimensional^*^</b> || {{{c,w,e : c'}}} || <b>none^*^</b>, <b>reflect^*^</b> (<b>permute^*^</b>) || http://ruletablerepository.googlecode.com/files/1dRadius1.PNG ||
+|| <b>oneDimensional</b> || {{{c,w,e : c'}}} || <b>none</b>, <b>reflect</b> (<b>permute</b>) || http://ruletablerepository.googlecode.com/files/1dRadius1.PNG ||
 || oneDimensional_radius2 || {{{c,w2,w,e,e2 : c'}}} || none, reflect, permutation? || http://ruletablerepository.googlecode.com/files/1dRadius2.PNG ||
 || oneDimensional_partition2 ([http://cell-auto.com/neighbourhood/brickwall/index.html brick wall]) || {{{a,b : a',b'}}} || none, reflect || http://ruletablerepository.googlecode.com/files/BrickWall.GIF ||
 
@@ -69,7 +68,7 @@ There are some sets of cellular automata that are best supported independently, 
 || Larger than Life || range,bMin,bMax,sMin,sMax ||
 
 
-The final rule, Larger than Life, relies on large neighborhoods; these are not currently supported by Golly. At the time of writing, Mirek's Cellebration (MCell) is the only program capable of running these rules.
+The final rule, Larger than Life, relies on large neighborhoods; these are not currently supported by Golly. Mirek's Cellebration (MCell) is one program capable of running these rules.
 
 CA on Penrose tilings have been intensively investigated by Susan Stepney et al.
 
