@@ -82,6 +82,8 @@ and patterns not supplied with Golly.
 </b></td><td><table border="0" cellspacing="0" cellpadding="4" width="100%"><tr><td>
    Tim Hutton realised that Codd's rule table required three extra transitions in order
    to be able to sheath large complex structures.
+   With this rule, an implementation of Codd's self-replicating machine was created:
+   <a href="get:http://ruletablerepository.googlecode.com/files/Codd-self-rep.zip">Codd-self-rep.zip (12MB)</a>.
 </td></tr></table></td></tr>
 </table>
 </p>
