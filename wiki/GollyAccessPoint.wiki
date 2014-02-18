@@ -135,7 +135,7 @@ and patterns not supplied with Golly.
    Another loop from Sayama, that allows colliding loops to sometimes merge genetic content.
 </td></tr></table></td></tr>
 <tr bgcolor="#FFFFFF"><td width="20%"><b>
-   <a href="get:http://ruletablerepository.googlecode.com/files/Sexyloop.zip">Sexyloop</a>
+   <a href="get:http://ruletablerepository.googlecode.com/files/SexyLoop.zip">Sexyloop</a>
 </b></td><td><table border="0" cellspacing="0" cellpadding="4" width="100%"><tr><td>
    Nicolas Oros and Chrystopher L. Nehaniv modified Sayama's evoloop to allow the transfer of genetic material
    from one loop into another. The zip file contains 3 rule tables (Sexyloop-M1, Sexyloop-M2, F-sexyloop)
