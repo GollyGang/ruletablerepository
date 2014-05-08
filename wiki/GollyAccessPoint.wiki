@@ -217,7 +217,7 @@ and patterns not supplied with Golly.
    using fewer states than before.
 </td></tr></table></td></tr>
 <tr bgcolor="#FFFFFF"><td width="20%"><b>
-   <a href="get:https://ruletablerepository.googlecode.com/svn/trunk/downloads/Serizawa1.1.zip">Serizawa</a>
+   <a href="get:https://ruletablerepository.googlecode.com/svn-history/r967/trunk/downloads/Serizawa1.1.zip">Serizawa</a>
 </b></td><td><table border="0" cellspacing="0" cellpadding="4" width="100%"><tr><td>
    A 3-state von Neumann neighborhood rule capable of universal computation and construction. A quadratic self-replicator has not yet been implemented in this rule, but the latest archive includes Michael Simkin's linear self-constructing Geminoid puffer.
 </td></tr></table></td></tr>
