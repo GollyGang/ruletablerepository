@@ -170,6 +170,7 @@ If there is a rule that doesn't fit into one of the above sections, nor does it 
 || 2011 || [http://ruletablerepository.googlecode.com/files/Sand.zip Sand] || A rule by Andrew Trevorrow that mimics falling sand.  The zip file also contains a number of "sand guns" with various periods (thanks to Dean Hickerson). || http://ruletablerepository.googlecode.com/files/Sand.png ||
 || 2012 || [http://ruletablerepository.googlecode.com/files/Snakes.zip Snakes] || A rule by Dean Hickerson in which thin snake-like objects appear to move randomly. For more details, see README.txt in the zip file. || http://ruletablerepository.googlecode.com/files/Snakes.png ||
 || 2012 || [http://ruletablerepository.googlecode.com/files/ships2.zip Ships] || By Alan Tennant. For construction of large 4 state ships. Based on discoveries in WWEJ3. || http://i48.tinypic.com/2dlkd55.png ||
+|| 2013 || [https://ruletablerepository.googlecode.com/svn/trunk/downloads/Pilot.zip Pilot] || Pilot - rule with a 2-cell spaceship - it was meant to multiply by collisions and it showed up, that bigger soups are exploding. ||  ||
 
 ----
 
