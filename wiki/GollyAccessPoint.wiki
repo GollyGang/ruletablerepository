@@ -155,7 +155,7 @@ and patterns not supplied with Golly.
    to start new colonies. His Java implementation is included in the zip.
 </td></tr></table></td></tr>
 <tr bgcolor="#F0F0FF"><td width="20%"><b>
-   <a href="get:https://ruletablerepository.googlecode.com/svn/trunk/downloads/Petelka.zip">Petelka</a>
+   <a href="get:http://ruletablerepository.googlecode.com/svn/trunk/downloads/Petelka.zip">Petelka</a>
 </b></td><td><table border="0" cellspacing="0" cellpadding="4" width="100%"><tr><td>
    Petelka (Pętelka - "Little loop" in Polish) with variant Petelka-2 - rule with something similar to little loop. Probably it is not a loop beating the record of Chou-Reggia Loop, but I don't know which part of definition is not fulfilled. Petelka has also 1D replicator. In Petelka-2 the same pattern creates two loops.
 </td></tr></table></td></tr>
@@ -573,7 +573,7 @@ and patterns not supplied with Golly.
    A rule by Alan Tennant, for construction of large 4 state ships. Based on discoveries in WWEJ3.
 </td></tr></table></td></tr>
 <tr bgcolor="#F0F0FF"><td width="20%"><b>
-   <a href="get:https://ruletablerepository.googlecode.com/svn/trunk/downloads/Pilot.zip">Pilot</a>
+   <a href="get:http://ruletablerepository.googlecode.com/svn/trunk/downloads/Pilot.zip">Pilot</a>
 </b></td><td><table border="0" cellspacing="0" cellpadding="4" width="100%"><tr><td>
    Pilot - rule with a 2-cell spaceship - it was meant to multiply by collisions and it showed up, that bigger soups are exploding.
 </td></tr></table></td></tr>
