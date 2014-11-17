@@ -577,6 +577,11 @@ and patterns not supplied with Golly.
 </b></td><td><table border="0" cellspacing="0" cellpadding="4" width="100%"><tr><td>
    Pilot - rule with a 2-cell spaceship - it was meant to multiply by collisions and it showed up, that bigger soups are exploding.
 </td></tr></table></td></tr>
+<tr bgcolor="#F0F0FF"><td width="20%"><b>
+   <a href="get:http://ruletablerepository.googlecode.com/svn/trunk/downloads/BHL_traffic.zip">Biham–Middleton–Levine traffic model</a>
+</b></td><td><table border="0" cellspacing="0" cellpadding="4" width="100%"><tr><td>
+   A self-organizing cellular automaton traffic flow model. It consists of a number of cars represented by points on a lattice with a random starting position, where each car may be one of two types: those that only move downwards (blue), and those that only move towards the right (red). 
+</td></tr></table></td></tr>
 </table>
 </p>
 
