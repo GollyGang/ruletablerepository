@@ -1,0 +1,9 @@
+# Billiard Ball Machine
+
+n_states:2
+neighborhood:Margolus
+symmetries:rotate4reflect
+
+1,0,0,0 : 0,0,0,1  # balls travel 
+0,1,1,0 : 1,0,0,1  # balls collide head-on
+

@@ -1,0 +1,538 @@
+# Hutton32 -  a modified version of von Neumann's cellular automaton.
+# Tim Hutton <tim.hutton@gmail.com>
+#
+# Motivation: In the original von Neumann transition rules, lines of 
+# transmission states can extend themselves by writing out binary 
+# signal trains, e.g. 10000 for extend with a right-directed ordinary 
+# transmission state (OTS). But for construction, a dual-stranded 
+# construction arm (c-arm) is needed, simply because the arm must be 
+# retracted after each write. I noticed that there was room to add the
+# needed write-and-retract operation by modifying the transition rules 
+# slightly. This allows the machine to be greatly reduced in size and 
+# speed of replication.
+#
+# Another modification was made when it was noticed that the 
+# construction could be made rotationally invariant simply by basing 
+# the orientation of the written cell on the orientation of the one 
+# writing it. Instead of "write an up arrow" we have "turn left". This 
+# allows us to spawn offspring in different directions and to fill up 
+# the space with more and more copies in a manner inspired by
+# Langton's Loops. 
+#
+# Having modified the von Neumann CA transition rules, a new form of
+# self-replicator becomes possible, one that replicates much faster
+# and exhibits exponential growth in the initial stages.
+#
+# A single OTS line can now act as a c-arm in any direction. Below are 
+# the signal trains:
+#
+# 100000 : move forward (write an OTS arrow in the same direction)
+# 100010 : turn left
+# 10100  : turn right
+# 100001 : write a forward-directed OTS and retract
+# 100011 : write a left-directed OTS and retract
+# 10011  : write a reverse-directed OTS and retract
+# 10101  : write a right-directed OTS and retract
+# 101101 : write a forward-directed STS and retract
+# 110001 : write a left-directed STS and retract
+# 110101 : write a reverse-directed STS and retract
+# 111001 : write a right-directed STS and retract
+# 1111   : write a confluent state and retract
+# 101111 : retract
+#
+# Achieving these features without adding new states required making 
+# some slight changes elsewhere, though hopefully these don't affect 
+# the computation- or construction-universality of the CA. The most 
+# important effects are listed here:
+#
+# 1) OTS's cannot destroy special transmission states (STS's). This 
+#    functionality was used in von Neumann's construction and read-
+#    write arms but isn't needed for the logic organs, as far as I 
+#    know. The opposite operation is still enabled.
+# 2) STS lines can only construct one cell type: an OTS in the forward 
+#    direction. Some logic organs will need to be redesigned.
+#
+# Under this modified JvN rule, a self-replicator can be much smaller, 
+# consisting only of a tape contained within a repeater-emitter loop. 
+# One early example consisted of 5521 cells in total, and replicates 
+# in 44,201 timesteps, compared with 8 billion timesteps for the 
+# smallest known Nobili32 replicator. This became possible because the 
+# construction process runs at the same speed as a moving signal, 
+# allowing the tape to be simply stored in a repeater-emitter loop. 
+# The machine simply creates a loop of the right size (by counting 
+# tape circuits) before allowing the tape contents to fill up their 
+# new home.
+#
+# The rotational invariance allows the machine to make multiple copies 
+# oriented in different directions. The population growth starts off 
+# as exponential but soons slows down as the long tapes obstruct the 
+# new copies.
+#
+# Some context for these modifications to von Neumann's rule table:
+# Codd simplified vN's CA to a rotationally-invariant 8 states. 
+# Langton modified this to make a self-replicating repeater-emitter, 
+# his 'loops'. Other loops were made by Sayama, Perrier, Tempesti, 
+# Byl, Chou-Reggia, and others. So there are other CA derived from 
+# vN's that support faster replication than that achieveable here, and 
+# some of them retain the computation- and construction-universality
+# that von Neumann was considering. Our modifications are mostly a 
+# historical exploration of the possibility space around vN's CA, to 
+# explore the questions of why he made the design decisions he did.
+# In particular, why didn't von Neumann design for a tape loop stored 
+# within a repeater-emitter? It would have made his machine much 
+# simpler from the beginning. Why didn't he consider write-and-
+# retraction instead of designing a complicated c-arm procedure? Of 
+# course this is far from criticism of vN - his untimely death 
+# interrupted his work in this area. 
+#
+# Some details of the modifications are given below:
+#
+# The transition rules are as in Nobili32 (or JvN29), except the 
+# following:
+# 1) The end of an OTS wire, when writing a new cell, adopts one of 
+#    two states: excited OTS and excited STS, standing for bits 1 and 
+#    0 respectively. After writing the cell reverts to being an OTS.
+# 2) A sensitized cell that is about to revert to an arrow bases its 
+#     direction upon that of the excited arrow that is pointing to it. 
+# 3) A TS 'c', with a sensitized state 's' on its output that will 
+#    become an OTS next (based on the state of 'c'), reverts to the 
+#    ground state if any of 'c's input is 1, else it quiesces. 
+# 4) A TS 'c', with a sensitized state 's' on its output that will 
+#    become a confluent state next (based on the state of 'c'), 
+#    reverts to the first sensitized state S is any of 'c's input is 
+#    one, else it reverts to the ground state.
+# 5) A TS 'c', with an STS on its output, reverts to the ground state 
+#    if any of 'c's input is 1.
+#
+# The body of the machine looks fiddly but it only does these things:
+# 1) detect a unique mark on the tape as it goes round
+# 2) starts and stops a 6-period pulser
+# 3) codes for: extend, turn left, turn left, extend some more
+# 4) counts when 3 tape marks have gone past, and switches coder
+# 5) when finished writing an empty tape of the right length,
+#    divert the tape to copy itself into the new holder
+# 6) after the tape is copied across, it separates itself from its
+#    old tape to prevent infection spreading from multiple copies.
+#
+# Automatically produced file from a previous implementation, produced using
+# bottom-up merging of the transition rules.
+#
+# Where a variable appears more than once in a rule, it is constrained
+# to have the same value each time. 
+# e.g. for var a={1,2}: 1,a,a,0,2,0 is 2 rules, not 4
+#
+# rules: 296
+#
+# Golly rule-table format.
+# Each rule: C,N,E,S,W,C'
+#
+# Default for transitions not listed: no change
+#
+n_states:32
+neighborhood:vonNeumann
+symmetries:none
+var a={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var b={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var c={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var d={0,8}
+var e={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var f={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var g={0,1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var h={0,1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var i={0,1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,22,23,24,25,26,27,28,29,30,31}
+var j={0,1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31}
+var k={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,24,25,26,27,28,29,30,31}
+var l={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18,19,20,21,22,23,25,26,27,28,29,30,31}
+var m={5,7}
+var n={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,24,25,26,27,28,29,30,31}
+var o={15,23}
+var p={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,25,26,27,28,29,30,31}
+var q={0,1,2,3,4,6,7,9,10,11,12,13,14,15,16,21,22,24,25,26,27,28,29,30,31}
+var r={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31}
+var s={13,27,28,29,31}
+var t={9,10,11,12,13,14,15,16,25,26,27,28,29,30,31}
+var u={14,27,28,30,31}
+var v={0,1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,22,23,24,25,26,30}
+var w={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,22,23,24,25,26,27,28,29,30,31}
+var x={5,8,17,18,19,20,23}
+var y={16,27,28,30,31}
+var z={0,1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,23,24,25,26,29}
+var A={16,24,27,28,30,31}
+var B={5,8,17,18,19,20}
+var C={0,1,2,3,4,6,7,9,10,11,12,13,14,15,16,21,22,23,25,26,27,28,29,30,31}
+var D={15,27,28,29,31}
+var E={0,1,2,3,4,6,7,9,10,11,12,13,14,15,16,22,23,24,25,26,27,28,29,30,31}
+var F={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,24,25,26,30}
+var G={0,1,2,3,4,6,7,9,10,11,12,13,14,15,16,21,23,24,25,26,27,28,29,30,31}
+var H={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18,19,20,21,22,23,25,26,29}
+var I={0,1,2,3}
+var J={4,5,6,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,24,25,26,27,28,29,30,31}
+var K={4,8,17,18,19,20}
+var L={4,5,6,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,25,26,27,28,29,30,31}
+var M={4,5,6,8,9,10,11,12,13,14,15,16,17,18,19,20,22,23,24,25,26,27,28,29,30,31}
+var N={4,5,6,8,9,10,11,12,13,14,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31}
+var O={17,18,19,20,23}
+var P={21,27,28,29,31}
+var Q={17,18,19,20,24}
+var R={22,27,28,30,31}
+var S={17,18,19,20,21}
+var T={17,18,19,20,22}
+var U={24,27,28,30,31}
+var V={23,27,28,29,31}
+var W={0,1,2,3,4,5,6,7,8,9,10,11,13,14,15,17,18,19,20,21,22,23,25,26,29}
+var X={1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var Y={0,1,2,3,4,5,6,7,8,9,11,12,13,15,16,17,18,19,20,21,23,24,25,26,29}
+var Z={0,1,2,3,4,5,6,7,8,10,11,12,14,15,16,17,18,19,20,22,23,24,25,26,30}
+var aa={1,2,3,4}
+var ab={5,6,7,8}
+var ac={5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var ad={0,1,2,3,4,5,6,7,8,10,11,12,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var ae={9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var af={0,1,2,3,4,5,6,7,8}
+var ag={0,1,2,3,4,5,6,7,8,9,11,12,13,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var ah={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var ai={0,1,2,3,4,5,6,7,8,9,10,12,13,14,16,17,18,19,20,21,22,24,25,26,30}
+var aj={5,6,7,8,9,10,11,12,13,14,15,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var ak={9,10,11,12,13,14,15,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var al={0,9,10,11,12,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var am={5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var an={0,1,2,3,4,5,6,7,8,9}
+var ao={0,1,2,3,4,5,6,7,8,9,10,11,12,13}
+var ap={0,1,2,3,4,5,6,7,8,9,10,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var aq={1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var ar={5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var as={9,10,11,12,13,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}
+var at={25,27}
+var au={0,1,2,3,4,5,6,7,8,25,26,27,28,29,30,31}
+var av={0,1,2,3,4,5,6,7,8,9,10,12,13,14,15,16,17,18,19,20,21,22,24,25,26,27,28,29,30,31}
+var aw={0,1,2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31}
+var ax={0,1,2,3,4,5,6,7,8,10,11,12,14,15,16,17,18,19,20,22,23,24,25,26,27,28,29,30,31}
+var ay={0,1,2,3,4,5,6,7,8,9,11,12,13,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31}
+var az={9,10,11,13,14,15,16,17,18,19,20,21,22,23}
+var aA={9,10,11,13,14,15,17,18,19,21,22,23}
+var aB={9,10,12,13,14,16,17,18,20,21,22,24}
+var aC={0,1,2,3,4,5,6,7,8,9,11,12,13,15,16,17,19,20,21,23,24,25,26,27,28,29,30,31}
+var aD={25,30,31}
+var aE={10,18}
+var aF={0,1,2,3,4,5,6,7,8,10,11,12,14,15,16,18,19,20,22,23,24,25,26,27,28,29,30,31}
+var aG={25,29,31}
+var aH={9,17}
+var aI={25,29,30}
+var aJ={11,15,19}
+var aK={9,11,12,13,15,16,17,19,20,21,23,24}
+var aL={11,19}
+var aM={10,11,12,14,15,16,18,19,20,22,23,24}
+var aN={0,1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18,19,20,22,23,24,25,26,27,28,29,30,31}
+var aO={14,18}
+var aP={0,1,2,3,4,5,6,7,8,13,17,25,26,27,28,29,30,31}
+var aQ={0,1,2,3,4,5,6,7,8,14,18,25,26,27,28,29,30,31}
+var aR={0,1,2,3,4,5,6,7,8,17,25,26,27,28,29,30,31}
+var aS={12,20}
+var aT={12,16,20}
+var aU={9,10,12,13,14,16,17,18,19,20,21,22,24}
+var aV={15,19}
+var aW={26,28}
+var aX={0,1,2,3,4,5,6,7,8,9,10,11,13,14,15,16,17,18,19,20,21,22,23,25,26,27,28,29,30,31}
+var aY={0,1,2,3,4,5,6,7,8,10,11,12}
+var aZ={0,1,2,3,4,5,6,7,8,9,10,12,13,14,16,17,18,19,20,21,22,24,25,26,27,28,29,30,31}
+var ba={27,29,30,31}
+var bb={13,17}
+var bc={29,31}
+var bd={29,30}
+var be={30,31}
+0,a,b,c,13,1
+d,e,f,g,21,9
+0,a,b,14,h,1
+d,e,f,22,i,10
+0,a,15,g,h,1
+d,e,23,j,i,11
+0,16,f,g,h,1
+d,24,k,j,i,12
+1,e,f,g,h,2
+1,a,b,c,13,3
+1,a,b,14,h,3
+1,a,15,g,h,3
+1,16,f,g,h,3
+2,e,f,g,h,4
+2,a,b,c,13,5
+2,a,b,14,h,5
+2,a,15,g,h,5
+2,16,f,g,h,5
+3,e,f,g,h,6
+3,a,b,c,13,7
+3,a,b,14,h,7
+3,a,15,g,h,7
+3,16,f,g,h,7
+4,e,f,g,h,8
+4,a,b,c,13,11
+4,a,b,14,i,12
+4,a,b,14,21,11
+4,a,15,j,i,9
+4,a,15,g,21,11
+4,a,15,22,i,12
+4,16,k,j,i,10
+4,16,f,g,21,11
+4,16,f,22,i,12
+4,16,23,j,i,9
+5,l,k,j,i,7
+5,a,b,c,13,17
+5,e,f,g,21,12
+5,a,b,14,i,18
+m,a,b,14,21,25
+5,e,f,22,i,9
+5,a,15,j,i,19
+m,a,15,g,21,25
+5,a,15,22,i,26
+5,e,23,j,i,10
+5,16,k,j,i,20
+m,16,f,g,21,25
+5,16,f,22,i,26
+5,16,23,j,i,27
+5,24,k,j,i,11
+6,e,n,j,i,17
+6,a,b,c,13,19
+6,e,f,g,21,18
+6,a,b,14,i,20
+6,a,b,14,21,19
+6,e,f,22,i,19
+6,a,15,g,21,19
+6,a,15,22,i,20
+6,e,23,j,i,20
+6,16,k,j,i,18
+6,16,f,g,21,19
+6,16,f,22,i,20
+6,16,o,j,i,17
+7,l,k,j,i,15
+7,a,b,c,13,25
+7,e,f,g,21,20
+7,a,b,14,i,25
+7,e,f,22,i,17
+7,a,15,g,i,25
+7,e,23,j,i,18
+7,16,f,g,i,25
+7,24,k,j,i,19
+8,a,b,c,13,10
+8,a,b,14,i,11
+8,a,b,14,21,10
+8,a,15,j,i,12
+8,a,15,g,21,10
+8,a,15,22,i,11
+8,16,k,j,i,9
+8,16,f,g,21,10
+8,16,f,22,i,11
+8,16,23,j,i,12
+9,p,q,r,s,13
+t,a,b,c,21,0
+9,p,q,u,v,13
+t,a,b,22,w,0
+9,a,x,r,s,0
+9,a,x,u,v,0
+t,a,23,r,w,0
+9,y,q,z,v,13
+9,A,B,z,v,0
+t,24,n,r,w,0
+10,C,n,r,s,14
+10,C,n,u,v,14
+10,C,D,z,v,14
+10,B,n,r,s,0
+10,B,n,u,v,0
+10,B,D,z,v,0
+11,p,n,u,E,15
+11,p,n,u,B,0
+11,p,D,z,E,15
+11,p,D,z,B,0
+11,y,F,z,E,15
+11,y,F,z,B,0
+12,p,n,G,s,16
+12,p,n,B,s,0
+12,p,D,G,v,16
+12,p,D,B,v,0
+12,y,F,G,v,16
+12,y,F,B,v,0
+13,H,I,z,v,21
+13,H,J,z,v,9
+13,p,K,r,s,0
+13,p,K,u,v,0
+13,H,7,z,v,0
+13,p,7,r,s,1
+13,p,7,u,v,1
+13,y,K,z,v,0
+13,y,7,z,v,1
+14,I,F,z,v,22
+14,L,F,z,v,10
+14,K,n,r,s,0
+14,K,n,u,v,0
+14,K,D,z,v,0
+14,7,F,z,v,0
+14,7,n,r,s,1
+14,7,n,u,v,1
+14,7,D,z,v,1
+15,H,F,z,I,23
+15,H,F,z,M,11
+15,H,F,z,7,0
+15,p,n,u,K,0
+15,p,n,u,7,1
+15,p,D,z,K,0
+15,p,D,z,7,1
+15,y,F,z,K,0
+15,y,F,z,7,1
+16,H,F,I,v,24
+16,H,F,N,v,12
+16,p,n,K,s,0
+16,H,F,7,v,0
+16,p,n,7,s,1
+16,p,D,K,v,0
+16,p,D,7,v,1
+16,y,F,K,v,0
+16,y,F,7,v,1
+O,a,b,c,13,0
+17,e,f,g,P,21
+Q,a,b,14,c,0
+17,e,f,R,v,21
+S,a,15,b,c,0
+T,16,a,b,c,0
+17,U,f,z,v,21
+18,e,f,g,P,22
+18,e,f,R,v,22
+18,e,V,z,v,22
+19,e,f,R,h,23
+19,e,V,z,h,23
+19,U,F,z,h,23
+20,e,f,g,P,24
+20,e,V,g,v,24
+20,U,F,g,v,24
+21,p,0,r,w,17
+21,W,X,Y,Z,17
+21,a,aa,b,13,13
+21,a,aa,14,h,13
+21,e,ab,g,9,9
+21,a,ac,b,13,0
+21,e,ab,10,ad,9
+21,a,ac,14,h,0
+21,H,ae,z,v,17
+21,0,9,10,af,17
+21,12,ab,ag,ad,9
+21,16,aa,g,h,13
+21,16,ac,g,h,0
+22,0,n,r,w,18
+22,ah,ai,Y,Z,18
+22,aa,a,b,13,14
+22,aa,a,14,h,14
+22,aa,15,g,h,14
+22,ab,f,g,9,10
+22,aj,a,b,13,0
+22,ab,f,10,ad,10
+22,aj,a,14,h,0
+22,ab,11,ag,ad,10
+22,aj,15,g,h,0
+22,ak,F,z,v,18
+22,9,0,10,af,18
+23,W,ai,Y,h,19
+23,H,F,z,al,19
+23,e,f,10,ab,11
+23,p,n,r,0,19
+23,a,b,14,aa,15
+23,a,b,14,am,0
+23,0,11,an,al,19
+23,e,11,ag,ab,11
+23,0,D,ao,0,19
+23,a,15,g,aa,15
+23,a,15,g,am,0
+23,12,ap,ag,ab,11
+23,16,f,g,aa,15
+23,16,f,g,am,0
+24,p,n,0,w,20
+24,W,ai,aq,Z,20
+24,a,b,aa,13,16
+24,e,f,ab,9,12
+24,a,b,ar,13,0
+24,H,F,as,v,20
+24,e,11,ab,ad,12
+24,0,11,9,af,20
+24,a,15,aa,h,16
+24,a,15,ar,h,0
+24,12,ap,ab,ad,12
+24,16,f,aa,h,16
+24,16,f,ar,h,0
+at,au,av,aw,13,26
+at,au,av,14,ax,26
+at,au,15,ay,ax,26
+at,az,au,aw,13,26
+at,az,au,14,ax,26
+at,aA,aB,aC,13,26
+aD,aA,aB,aE,13,29
+at,aA,aB,14,aF,26
+aG,aA,aB,14,aH,30
+aI,aA,aB,14,13,31
+aD,aA,aJ,aK,13,29
+aG,aA,aL,14,aM,30
+at,az,15,au,aN,26
+at,aA,15,aK,aF,26
+aD,aA,15,aK,aH,29
+aD,aA,15,aE,aM,29
+at,az,15,aO,aP,26
+aI,aA,15,14,aM,31
+at,az,19,aQ,13,26
+at,az,19,14,aR,26
+aD,aS,aB,aK,13,29
+aG,aT,aB,14,aM,30
+aD,aS,15,aK,aM,29
+at,16,au,ay,ax,26
+at,16,aU,au,aN,26
+at,16,aB,aK,aF,26
+aG,16,aB,aK,aH,30
+aI,16,aB,aK,13,31
+aG,16,aB,aE,aM,30
+at,16,aU,aO,aP,26
+aG,16,aL,aK,aM,30
+at,16,aV,aK,aP,26
+aI,16,15,aK,aM,31
+at,16,aV,aO,aM,26
+at,20,aB,aQ,13,26
+at,20,aB,14,aR,26
+at,20,15,aK,aP,26
+at,20,15,aO,aM,26
+at,20,19,aK,13,26
+at,20,19,14,aM,26
+aW,l,k,j,i,27
+26,aX,av,aw,13,28
+aW,p,n,10,w,27
+26,aX,av,14,ax,28
+aW,p,n,aw,9,27
+aW,p,11,aw,aN,27
+26,0,11,14,aY,27
+26,aX,15,ay,ax,28
+26,0,15,ao,9,27
+26,0,15,10,aY,27
+aW,12,av,aw,aN,27
+26,12,0,14,aY,27
+26,16,aZ,ay,ax,28
+ba,l,k,j,i,25
+27,p,n,10,w,25
+27,p,n,aw,9,25
+27,p,11,aw,aN,25
+27,0,11,14,aY,25
+27,0,15,ao,9,25
+27,0,15,10,aY,25
+27,aA,aB,14,bb,26
+27,aA,aB,18,13,26
+27,aA,15,aK,bb,26
+27,aA,15,aO,aM,26
+27,aA,19,aK,13,26
+27,aA,19,14,aM,26
+27,12,av,aw,aN,25
+27,12,0,14,aY,25
+27,16,aB,aK,bb,26
+27,16,aB,aO,aM,26
+27,16,aV,aK,aM,26
+27,20,aB,aK,13,26
+27,20,aB,14,aM,26
+27,20,15,aK,aM,26
+bc,p,k,14,i,30
+bd,p,n,14,13,31
+bd,p,15,14,i,31
+bc,16,k,j,i,30
+bd,16,n,j,13,31
+bd,16,15,j,i,31
+be,l,n,j,13,29
+be,l,15,j,i,29

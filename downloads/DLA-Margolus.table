@@ -1,0 +1,23 @@
+# Diffusion Limited Aggregation, in a Margolus neighborhood CA
+
+n_states:3
+neighborhood:Margolus
+symmetries:rotate4reflect
+
+# In the Margolus nhood, the transition a,b,c,d,e,f,g,h means:
+#  a  b     -->    e  f
+#  c  d            g  h
+
+# 0: vacuum
+# 1: gas particle
+# 2: stuck particle
+
+# random gas-like rules:
+1,0,0,0 : 0,0,0,1 # a diagonally-travelling particle keeps going
+1,1,0,0 : 1,1,0,0 # two particles collide
+0,1,1,0 : 1,0,0,1 # two particles collide head-on
+1,1,1,0 : 1,1,0,1 # three particles pass through each other
+
+# plus aggregation rules: (these seem to suffice)
+1,0,2,0 : 2,0,2,0
+1,0,2,2 : 2,0,2,2

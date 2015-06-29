@@ -1,0 +1,344 @@
+
+#
+# Codd, E.F., _Cellular_Automata_, Academic Press 1968 (ACM Monograph #3).
+#
+# Originally distributed with XLife as codd.r
+#
+# Several corrections have been made from the XLife version, to match Codd's 
+# printed transition table. Stasis transitions have been taken out. More 
+# importantly, some extra transitions have been added, to deal with sheathing-
+# signal collision cases that Codd hadn't considered. These additions are at the
+# bottom of the file and clearly marked. Hopefully these changes can be
+# considered to be the intent of Codd's work, if not his exact specification. 
+# Just to be clear, these changes change nothing about the way the examples in 
+# Codd's book work, and only affect rarely-encountered situations.
+# Contact: Tim Hutton <tim.hutton@gmail.com>
+#
+n_states:8
+neighborhood:vonNeumann
+symmetries:rotate4
+
+var a={4,5}
+var b={2,3}
+var c={2,3}
+var d={4,5,6,7}
+var e={4,5,6}
+var f={0,1}
+var g={1,2}
+var h={0,1,2}
+var i={1,2,6}
+var j={1,6}
+var k={4,5}
+var l={4,6,7}
+var m={1,2,3}
+var n={6,7}
+var o={1,2,7}
+var p={0,2,3}
+
+# Almost all configurations with neighborhoods in [0-3] are stable
+# These are the exceptions (Codd's `short table', page 66)
+0,1,2,1,2,1        # Path self-repair
+3,0,0,0,2,2        # Path self-repair
+3,0,1,0,2,2        # Gate control
+3,0,1,0,3,0        # Gate control
+2,1,2,3,2,3        # Gate control
+3,1,2,3,2,2        # Gate control
+0,0,2,1,3,1        # Path end self-repair
+0,1,2,3,2,6        # Echo generation
+0,1,2,2,2,7        # Echo generation
+
+# The long table
+0,0,2,7,2,1        # j
+0,0,3,6,3,1        # i
+0,1,1,2,d,1        # fi = fan-in
+0,1,1,e,2,1        # fi
+0,1,2,1,d,1        # fi
+0,1,2,2,d,1        # p = signal propagation
+0,1,2,3,5,1        # p
+0,1,2,4,2,1        # p
+0,1,2,4,4,1        # fo = fan-out
+0,1,2,5,b,1        # p (was fi)
+0,1,2,5,5,1        # fo
+0,1,2,6,2,1        # p
+0,1,2,6,6,1        # fo
+0,1,2,7,b,1        # p
+0,1,2,7,7,1        # fo
+0,1,3,2,4,1        # p
+0,1,3,d,2,1        # pg - propagation at gate (subordinate path)
+0,1,3,7,3,1        # t7 = transforming to 07
+0,1,4,2,2,1        # p
+0,1,4,2,4,1        # fo
+0,1,4,3,2,1        # p
+0,1,4,4,2,1        # fo
+0,1,5,2,b,1        # p
+0,1,5,2,5,1        # fo
+0,1,5,3,2,1        # p
+0,1,5,5,2,1        # fo
+0,1,6,2,2,1        # p
+0,1,6,2,6,1        # fo
+0,1,6,6,2,1        # fo
+0,1,7,2,2,1        # p
+0,1,7,2,7,1        # fo
+0,1,7,7,2,1        # fo
+0,0,0,f,6,2        # k
+0,0,0,2,5,2        # xl = extend left
+0,0,0,2,6,2        # sh = sheathing
+0,0,0,4,2,2        # xr = extend right
+0,0,0,6,1,2        # k
+0,0,0,6,2,2        # sh
+0,0,0,6,6,2        # sh
+0,0,1,0,6,2        # sh
+0,0,1,1,6,2        # k
+0,0,1,2,6,2        # sh
+0,0,1,6,1,2        # k
+0,0,1,6,2,2        # sh
+0,0,1,6,6,2        # sh
+0,0,2,0,6,2        # g = gate control
+0,0,2,2,6,2        # sh
+0,0,2,6,g,2        # sh
+0,0,6,1,1,2        # k
+0,0,6,2,1,2        # sh
+0,0,6,2,2,2        # sh
+0,0,6,2,6,2        # sh
+0,0,6,6,1,2        # sh
+0,1,1,1,6,2        # k
+0,1,1,6,6,2        # sh
+0,2,2,2,6,2        # sh
+0,2,2,6,6,2        # sh
+0,0,0,0,7,3        # k
+0,0,0,1,5,3        # i
+0,0,0,5,1,3        # i
+0,0,1,0,7,3        # e
+0,0,2,0,7,3        # g
+1,0,0,0,4,0        # e
+1,0,0,1,4,0        # e
+1,0,0,4,1,0        # e
+1,0,1,0,4,0        # e
+1,0,1,1,4,0        # e
+1,0,1,4,1,0        # e
+1,0,4,1,1,0        # e
+1,1,1,1,4,0        # e
+1,0,0,3,6,2        # i
+1,0,0,6,3,2        # i
+
+# error in codd.r:  10107[23]    # s = sense
+1,0,1,0,7,2        # s = sense 
+1,0,0,0,7,3        # s
+
+1,0,0,2,4,4        # xr
+1,0,b,4,c,4        # pe = path end
+1,1,1,2,4,4        # fo
+1,1,g,4,2,4        # fo,p
+1,1,2,g,4,4        # fo,p
+1,1,2,4,3,4        # pg
+1,1,2,7,7,4        # fi
+1,1,4,2,2,4        # p
+1,1,7,2,7,4        # fi
+1,1,7,7,2,4        # fi
+
+1,2,b,2,4,4        # pe
+1,2,b,4,3,4        # pe
+1,2,2,4,4,4        # c = collision
+1,2,3,2,4,4        # pe
+1,b,3,3,4,4        # pe
+1,2,4,2,2,4        # c
+1,2,4,3,3,4        # pe
+
+1,0,0,5,2,5        # xl
+1,0,1,0,5,5        # i
+1,0,b,5,c,5        # pe
+1,1,1,2,5,5        # fo
+1,1,g,5,2,5        # fo,p
+1,1,2,g,5,5        # fo,p
+1,1,2,4,4,5        # fi
+1,1,2,5,3,5        # pg
+1,1,4,2,4,5        # fi
+1,1,4,4,2,5        # fi
+1,1,5,2,2,5        # p
+1,2,2,b,5,5        # pe
+1,2,2,5,3,5        # pe
+1,2,2,5,5,5        # c
+1,2,3,b,5,5        # pe
+1,2,3,5,3,5        # pe
+1,2,5,2,5,5        # c
+1,2,5,3,3,5        # pe
+1,3,3,3,5,5        # pe
+1,0,0,h,6,6        # sh
+1,0,0,6,i,6        # sh
+1,0,1,h,6,6        # sh
+1,0,1,6,i,6        # sh
+1,0,2,2,6,6        # pe
+1,0,2,6,1,6        # sh
+1,0,b,6,c,6        # pe
+1,0,6,0,6,6        # sh
+1,0,6,1,j,6        # sh
+1,0,6,2,g,6        # sh,pe
+1,0,6,2,6,6        # c
+1,0,6,0,6,6        # sh
+1,0,6,1,j,6        # sh
+1,0,6,2,i,6        # sh,pe,c
+1,0,6,6,1,6        # sh
+1,1,1,1,5,6        # i
+1,1,1,2,6,6        # fo
+1,1,1,6,2,6        # fo
+1,1,2,1,6,6        # fo
+1,1,2,2,6,6        # p
+1,1,2,5,5,6        # fi
+1,1,2,6,2,6        # p
+1,1,2,6,3,6        # pg
+1,1,2,6,6,6        # fi
+1,1,5,2,5,6        # fi
+1,1,5,5,2,6        # fi
+1,1,6,2,2,6        # p
+1,1,6,2,6,6        # fi
+1,1,6,6,2,6        # fi
+1,2,2,b,6,6        # pe
+1,2,2,6,3,6        # pe
+1,2,2,6,6,6        # c
+1,2,3,b,6,6        # pe
+1,2,3,6,3,6        # pe
+1,2,6,2,6,6        # c
+1,2,6,3,3,6        # pe
+1,3,3,3,6,6        # pe
+1,0,2,7,b,7        # pe
+1,0,3,7,b,7        # pe
+1,1,1,2,7,7        # fo
+1,1,1,7,2,7        # fo
+1,1,2,g,7,7        # fo,p
+1,1,2,7,b,7        # p,pg
+1,1,3,e,3,7        # t7
+1,1,3,7,3,7        # t7
+1,1,7,2,2,7        # p
+1,2,2,b,7,7        # pe
+1,2,2,7,3,7        # pe
+1,2,2,7,7,7        # c
+1,2,3,b,7,7        # pe
+1,2,3,7,3,7        # pe
+1,2,7,2,7,7        # c
+1,2,7,3,3,7        # pe
+1,3,3,3,7,7        # pe
+2,0,h,0,6,0        # k,k,g
+2,0,0,f,7,1        # s,x
+2,0,0,7,1,1        # x = extend
+2,0,1,0,7,1        # s
+2,0,1,1,7,1        # x
+2,0,1,7,1,1        # x
+2,0,7,1,1,1        # x
+2,1,1,1,7,1        # x
+
+2,0,0,2,5,3        # qm = cell q change of state
+2,0,0,4,2,3        # pm = cell p change of state
+2,0,1,4,2,3        # pm (was missing in codd.r)
+2,0,2,0,7,3        # g
+2,0,2,5,1,3        # qm
+2,0,3,0,n,3        # g
+2,2,3,2,d,3        # g (was missing in codd.r)
+3,0,0,2,n,0        # r,m
+3,0,0,6,2,0        # r
+3,0,0,7,2,0        # m
+3,0,1,6,2,0        # pm
+3,0,1,7,2,0        # m
+3,0,2,6,1,0        # qm
+3,0,2,7,1,0        # m
+3,0,0,0,6,1        # s
+3,0,0,2,5,1        # qm
+3,0,0,4,2,1        # pm
+3,2,3,2,d,2        # g
+
+3,0,1,0,6,4        # e
+3,0,1,0,7,7        # j
+4,0,0,0,1,0        # e
+4,0,0,1,2,0        # fi
+4,0,0,2,1,0        # fi
+4,0,1,0,2,0        # fi
+4,0,1,1,2,0        # fo
+4,0,1,2,1,0        # fo
+4,0,1,2,2,0        # p
+4,0,2,1,1,0        # fo
+4,0,2,1,2,0        # p
+4,0,2,2,1,0        # p
+4,0,3,1,2,0        # pg
+4,0,0,0,2,1        # xr
+4,0,0,2,2,1        # c
+4,0,2,0,2,1        # pe
+4,0,2,2,2,1        # pe
+4,0,2,2,3,1        # pe
+4,0,2,3,2,1        # pe
+4,0,2,3,3,1        # pe
+4,0,3,2,2,1        # pe
+4,0,3,2,3,1        # pe
+4,0,3,3,2,1        # pe
+4,0,3,3,3,1        # pe
+5,0,0,0,1,0        # i
+5,0,0,1,2,0        # fi
+5,0,0,2,1,0        # fi
+5,0,1,0,2,0        # fi
+5,0,1,1,2,0        # fo
+5,0,1,2,1,0        # fo
+5,0,1,2,2,0        # p
+5,0,2,1,1,0        # fo
+5,0,2,1,2,0        # p
+5,0,2,2,1,0        # p
+5,0,3,1,2,0        # pg
+5,0,0,0,2,1        # xl
+5,0,0,2,2,1        # c
+5,0,2,p,b,1        # pe
+5,0,3,b,c,1        # pe (was missing in codd.r)
+6,0,0,0,1,0        # sh
+6,0,0,1,1,0        # sh
+6,0,0,1,2,0        # fi
+6,0,0,2,1,0        # fi
+6,0,1,0,1,0        # sh
+6,0,1,0,2,0        # fi
+6,0,1,1,1,0        # i
+6,0,1,1,2,0        # fo
+6,0,1,2,1,0        # fo
+6,0,1,2,2,0        # p
+6,0,2,1,1,0        # fo
+6,0,2,1,2,0        # p
+6,0,2,2,1,0        # p
+6,0,2,2,3,0        # pe
+6,0,2,3,2,0        # pe
+6,0,2,3,3,0        # pe
+6,0,3,1,2,0        # pg
+6,0,3,2,2,0        # pe
+6,0,3,2,3,0        # pe
+6,0,3,3,2,0        # pe
+6,0,3,3,3,0        # pe
+6,1,2,3,2,0        # s
+6,0,0,0,0,1        # sh
+6,0,0,0,2,1        # sh
+6,0,0,2,2,1        # c
+6,0,2,0,2,1        # pe
+6,0,2,2,2,1        # sh
+7,0,0,0,1,0        # j
+7,0,1,1,2,0        # fo
+7,0,1,2,1,0        # fo
+7,0,1,2,2,0        # p
+7,0,2,1,1,0        # fo
+7,0,2,1,2,0        # p
+7,0,2,2,1,0        # p
+7,0,2,2,3,0        # pe
+7,0,2,3,2,0        # pe
+7,0,2,3,3,0        # pe
+7,0,3,1,2,0        # pg
+7,0,3,1,3,0        # pe
+7,0,3,2,2,0        # pe
+7,0,3,2,3,0        # pe
+7,0,3,3,2,0        # pe
+7,0,3,3,3,0        # pe
+7,1,2,2,2,0        # s
+7,0,0,0,2,1        # pe
+7,0,0,2,2,1        # c
+7,0,2,0,2,1        # pe
+7,0,2,2,2,1        # x
+# End of Codd's original ruleset
+
+# TJH added some extra cases for collisions between sheathing-signals:
+# (see top of file)
+# for 2-way collisions:
+0,0,6,6,2,2         # sh
+0,6,6,0,2,2         # sh (reflected form of above)
+# for 3-way collisions:
+1,6,6,6,0,6         # sh
+
