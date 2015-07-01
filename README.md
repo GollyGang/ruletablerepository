@@ -8,11 +8,11 @@ _A library of the rule tables and related source code for specific cellular auto
 
 ## Contents ##
 
-  * [The Rules](https://github.com/timhutton/ruletablerepository/wiki/TheRules) - the CA rule tables.
-  * [The Format](https://github.com/timhutton/ruletablerepository/wiki/TheFormat), RoadMap - about the rule table file format.
-  * [Using Rule Tables](https://github.com/timhutton/ruletablerepository/wiki/UsingRuleTables) - how to use rule tables, in your own program or elsewhere.
-  * [Submitting New Rules](https://github.com/timhutton/ruletablerepository/wiki/SubmittingNewRules) - how to submit new rules, and the guidelines.
-  * [Future Work](https://github.com/timhutton/ruletablerepository/wiki/FutureWork)
+  * [The Rules](https://github.com/gollygang/ruletablerepository/wiki/TheRules) - the CA rule tables.
+  * [The Format](https://github.com/gollygang/ruletablerepository/wiki/TheFormat), RoadMap - about the rule table file format.
+  * [Using Rule Tables](https://github.com/gollygang/ruletablerepository/wiki/UsingRuleTables) - how to use rule tables, in your own program or elsewhere.
+  * [Submitting New Rules](https://github.com/gollygang/ruletablerepository/wiki/SubmittingNewRules) - how to submit new rules, and the guidelines.
+  * [Future Work](https://github.com/gollygang/ruletablerepository/wiki/FutureWork)
 
 ## Aims ##
 
