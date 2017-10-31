@@ -9,7 +9,9 @@ _A library of the rule tables and related source code for specific cellular auto
 ## Contents ##
 
   * [The Rules](https://github.com/gollygang/ruletablerepository/wiki/TheRules) - the CA rule tables.
-  * [The Format](https://github.com/gollygang/ruletablerepository/wiki/TheFormat), RoadMap - about the rule table file format.
+  * [The Format](https://github.com/gollygang/ruletablerepository/wiki/TheFormat) - about the original rule table file format.
+  * [The New All-in-One Format](https://github.com/GollyGang/ruletablerepository/wiki/NewRuleFormat) - about the combined .rule format.
+  * [The Roadmap](https://github.com/gollygang/ruletablerepository/wiki/RoadMap) - current and possible future format extensions.
   * [Using Rule Tables](https://github.com/gollygang/ruletablerepository/wiki/UsingRuleTables) - how to use rule tables, in your own program or elsewhere.
   * [Submitting New Rules](https://github.com/gollygang/ruletablerepository/wiki/SubmittingNewRules) - how to submit new rules, and the guidelines.
   * [Future Work](https://github.com/gollygang/ruletablerepository/wiki/FutureWork)
